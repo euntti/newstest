@@ -193,7 +193,9 @@ https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/co1.j
                       required=""
                       placeholder="연락처를 입력하세요"
                       value={phoneNumber}
-                      onChange={(e) => setPhoneNumber(e.target.value)}
+                      onChange={(e) => {
+                        setPhoneNumber(e.target.value.replace(/[^0-9]/g, ''))
+                      }}
                     />
                   </li>
                   <br />
