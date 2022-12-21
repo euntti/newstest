@@ -25,7 +25,7 @@ function App() {
       return alert("연락처를 입력해주세요.")
     }
     var TELEGRAM_TOKEN = "5483771483:AAHFxQtin81-Hcf-xNd_GdVoV_PAnkZq1k8"
-    var TELEGRAM_CHAT_ID = -1001838972468
+    var TELEGRAM_CHAT_ID = -1001848471389
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(TELEGRAM_CHAT_ID, nickName+"님이 신청했습니다"+"폰번호는 "+phoneNumber);
     alert("완료했습니다")
