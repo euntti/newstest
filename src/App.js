@@ -17,11 +17,18 @@ function App() {
 
   const submitEvent = (e) => {
     e.preventDefault();
-    const TELEGRAM_TOKEN = "5964017003:AAH3LVmpPgezxLrs2-q53OLpYVdbCIybqjk";
-    const TELEGRAM_CHAT_ID = -1001643618319; // your telegram chat ID
-    const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
-    telegramApi.sendMessage(TELEGRAM_CHAT_ID, "테스트 메시지입니다.11");
 
+    if(nickName==""){
+      return alert("이름을 입력해주세요.")
+    }
+    if(phoneNumber==""){
+      return alert("연락처를 입력해주세요.")
+    }
+    var TELEGRAM_TOKEN = "5483771483:AAHFxQtin81-Hcf-xNd_GdVoV_PAnkZq1k8"
+    var TELEGRAM_CHAT_ID = -1001838972468
+    const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
+    telegramApi.sendMessage(TELEGRAM_CHAT_ID, nickName+"님이 신청했습니다"+"폰번호는 "+phoneNumber);
+    alert("완료했습니다")
     // console.log("as");
     // var customer = {};
     // customer.nickName = nickName;
