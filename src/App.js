@@ -3,11 +3,47 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import TelegramApi from "node-telegram-api";
+import Modal from 'react-modal';
+
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    zIndex:999
+  },
+};
+
 
 function App() {
   const [users, setUsers] = useState([]);
   const [nickName, setNickName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  let subtitle;
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [check1,setCheck1] = useState(false)
+  const [check2,setCheck2] = useState(false)
+  const [check3,setCheck3] = useState(false)
+
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = '#f00';
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+
+
 
   const getCustomer = () => {
     axios.get("http://localhost:3000/users").then((res) => {
@@ -25,7 +61,7 @@ function App() {
       return alert("연락처를 입력해주세요.")
     }
     var TELEGRAM_TOKEN = "5483771483:AAHFxQtin81-Hcf-xNd_GdVoV_PAnkZq1k8"
-    var TELEGRAM_CHAT_ID = -1001848471389
+    var TELEGRAM_CHAT_ID = -1001833134365
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(TELEGRAM_CHAT_ID, nickName+"님이 신청했습니다"+"폰번호는 "+phoneNumber);
     alert("완료했습니다")
@@ -206,11 +242,12 @@ https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/co1.j
                         id="privacy"
                         name="agree1"
                         value="1"
-                        checked=""
+                        checked={check1}
+                        onChange={(e)=>setCheck1(e.target.checked)}
                       />
                       개인정보취급방침동의
                     </label>
-                    <span class="txtbtn" data-id="fixedbox_1">
+                    <span onClick={openModal} class="txtbtn" data-id="fixedbox_1">
                       보기
                     </span>
                     <label>
@@ -219,11 +256,12 @@ https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/co1.j
                         id="privacy"
                         name="agree2"
                         value="1"
-                        checked=""
+                        checked={check2}
+                        onChange={(e)=>setCheck2(e.target.checked)}
                       />
                       마케팅수신동의
                     </label>
-                    <span class="txtbtn" data-id="fixedbox_2">
+                    <span onClick={openModal} class="txtbtn" data-id="fixedbox_1">
                       보기
                     </span>
                     <label>
@@ -232,7 +270,8 @@ https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/co1.j
                         id="privacy"
                         name="agree3"
                         value="1"
-                        checked=""
+                        checked={check3}
+                        onChange={(e)=>setCheck3(e.target.checked)}
                       />
                       광고성문자수신동의
                     </label>
@@ -259,6 +298,28 @@ https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/co1.j
           </div>
         </div>
       </div>
+      <div>
+      <button onClick={openModal}>Open Modal</button>
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div>최은영</div>
+        {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
+        <button onClick={closeModal}>close</button>
+        <div>I am a modal</div>
+        <form>
+          <input />
+          <button>tab navigation</button>
+          <button>stays</button>
+          <button>inside</button>
+          <button>the modal</button>
+        </form> */}
+      </Modal>
+    </div>
     </div>
   );
 }

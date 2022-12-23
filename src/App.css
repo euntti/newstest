@@ -132,7 +132,7 @@ table {
   font-size: 0.9em;
 }
 .inputBoxs {
-  z-index: 2;
+  /* z-index: 2; */
   position: relative;
   background-image: url(https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/back.jpeg);
   background-size: auto 100%;
