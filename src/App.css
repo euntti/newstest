@@ -224,5 +224,6 @@ table {
   .App .btnArea button{
     width:80vw;
     height:50px;
+    cursor: pointer;
   }
 }
