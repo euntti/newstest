@@ -5,12 +5,15 @@ function App() {
     <div className="container">
       <div className="sub">
         <div className="App">
-          <img
-            src={"/img/logo.png"}
-            style={{ width: 800, height: 1023, marginLeft: 20 }}
-            alt="BigCo Inc.  "
-          />
-          <div>
+          <div className="appPictureContainer">
+            <img
+              className="appPicture"
+              src={"/img/logo.png"}
+              // style={{ width: 800, height: 1023, marginLeft: 20 }}
+              alt="logo "
+            />
+          </div>
+          <div className="nameArea">
             <input type="text" className="username" placeholder="이름"></input>
           </div>
           <div className="phone">
@@ -20,9 +23,9 @@ function App() {
               </option>
             </select>{" "}
             -{"\t"}
-            <input type="text" className="phone" placeholder="연락처"></input> -
+            <input type="text" className="phone" placeholder="0000"></input> -
             {"\t"}
-            <input type="text" className="phone" placeholder="연락처"></input>
+            <input type="text" className="phone" placeholder="0000"></input>
           </div>
           <div className="btnArea">
             <button>신청하기 </button>

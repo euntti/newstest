@@ -136,6 +136,11 @@ table {
 }
 .sub {
 }
+.appPicture{
+  width:800px;
+  height:1023px;
+  margin-left:20px;
+}
 .username {
   width: 800px;
   height: 48px;
@@ -182,5 +187,42 @@ table {
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media (max-width: 600px) {
+  .container{
+    display:flex;
+    justify-content: center;
+  }
+  .App{
+   
+  }
+  .appPictureContainer{
+    display:flex;
+    justify-content:center;
+  }
+  .appPicture{
+    width:90vw;
+    margin-left:0px;
+    /* width:10vw; */
+    /* height:300px; */
+  }
+  .nameArea{
+    /* background-color: red; */
+    width:100%;
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+  }
+  .nameArea input{
+    width:80vw;
+  }
+  .App .phone{
+    display:flex;
+    flex-direction: column;
+  }
+  .App .btnArea button{
+    width:80vw;
+    height:50px;
   }
 }
