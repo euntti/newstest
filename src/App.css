@@ -219,7 +219,15 @@ table {
   }
   .App .phone{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    /* background-color:red; */
+  }
+  .App .phone select{
+    width:15vw;
+  }
+  .App .phone input{
+    width:20vw;
+    height:40px;
   }
   .App .btnArea button{
     width:80vw;
