@@ -1,6 +1,12 @@
 import "./App.css";
 import TelegramApi from "node-telegram-api";
 import { useState } from "react";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from "react-device-detect";
 
 function App() {
   const [userName, setUserName] = useState("");
@@ -31,12 +37,21 @@ function App() {
       <div className="sub">
         <div className="App">
           <div className="appPictureContainer">
-            <img
-              className="appPicture"
-              src={"/img/logo.png"}
-              // style={{ width: 800, height: 1023, marginLeft: 20 }}
-              alt="logo "
-            />
+            {isBrowser ? (
+              <img
+                className="appPicture"
+                src={"/img/logo.png"}
+                // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                alt="logo "
+              />
+            ) : (
+              <img
+                className="appPicture"
+                src={"/img/ms.jpeg"}
+                // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                alt="logo "
+              />
+            )}
           </div>
           <div className="nameArea">
             <input
