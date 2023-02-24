@@ -114,17 +114,7 @@ function Main2() {
           <div className="content-wrap">
             <div className="content">
               <p class="imgbox banner">
-                <a
-                  href="http://coinstock7.co.kr/image/?adcode=testbg"
-                  target="_blank"
-                >
-                  <img
-                    src="
-
-https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/co1.jpeg"
-                    alt=""
-                  />
-                </a>
+                <img src={"/img/test1.png"} alt="" />
               </p>
               <p>
                 <b>"가상화폐로 매월 1억씩 수익내고있어요"</b>
