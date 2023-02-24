@@ -131,14 +131,14 @@ function Main2() {
                 <br />
                 김진환 씨의 최근 수익인증
               </p>
-              <p class="imgbox banner">
+              {/* <p class="imgbox banner">
                 <a
                   href="http://coinstock7.co.kr/image/?adcode=testbg"
                   target="_blank"
                 >
                   <img src="/img/test1.png" alt="" />
                 </a>
-              </p>
+              </p> */}
               <div class="imgdesc">[김진환씨의 최근 수익 인증]</div>
               <p>
                 김씨는 손실복구 차원 으로 안전한 투자상품을 찾아보다 기사를 통해
