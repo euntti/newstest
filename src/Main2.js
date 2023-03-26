@@ -302,10 +302,20 @@ function Main2() {
               </div>
             </div>
           </div>
+          <div className="footerInfo">
+            <div>상호명:(주)SB Global </div>
+            <div>대표자:허승우 </div>
+            <div>
+              소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
+            </div>
         </div>
+        </div>
+        
       </div>
+   
+   
       <div>
-        <button onClick={openModal}>Open Modal</button>
+        {/* <button onClick={openModal}>Open Modal</button> */}
         <Modal
           isOpen={modalIsOpen}
           onAfterOpen={afterOpenModal}
@@ -326,6 +336,7 @@ function Main2() {
         </form> */}
         </Modal>
       </div>
+      
     </div>
   );
 }
