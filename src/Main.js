@@ -13,6 +13,11 @@ function App() {
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
 
+  const [check1,setCheck1] = useState(false)
+  const [check2,setCheck2] = useState(false)
+  const [check3,setCheck3] = useState(false)
+
+
   const submitEvent = (e) => {
     e.preventDefault();
     if (userName == "") {
@@ -53,6 +58,8 @@ function App() {
               />
             )}
           </div>
+          <h3 style={{fontSize:9,display:'flex',justifyContent:'flex-end'}}>(AD)</h3>
+          <h4 style={{fontSize:9,display:'flex',justifyContent:'flex-end'}}>해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</h4>
           <div className="nameArea">
             <input
               type="text"
@@ -81,11 +88,48 @@ function App() {
               placeholder="0000"
               onChange={(e) => setPhone2(e.target.value)}
             ></input>
+            
+          </div>
+          <div style={{marginLeft:10}}>
+            <label>
+              <input
+                type="checkbox"
+                id="privacy"
+                name="agree1"
+                value="1"
+                checked={check1}
+                onChange={(e) => setCheck1(e.target.checked)}
+              />
+              개인정보취급방침동의
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                id="privacy"
+                name="agree2"
+                value="1"
+                checked={check2}
+                onChange={(e) => setCheck2(e.target.checked)}
+              />
+              마케팅수신동의
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                id="privacy"
+                name="agree3"
+                value="1"
+                checked={check3}
+                onChange={(e) => setCheck3(e.target.checked)}
+              />
+              광고성문자수신동의
+            </label>
           </div>
           <div className="btnArea">
             <button onClick={(e) => submitEvent(e)}>신청하기 </button>
           </div>
         </div>
+        
         <div className="footerInfo">
           <div>상호명:(주)SB Global </div>
           <div>대표자:허승우 </div>
