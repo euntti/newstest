@@ -116,7 +116,7 @@ function Main2() {
               <p class="imgbox banner">
                 <img
                   style={{ width: 620, height: "auto" }}
-                  src={"/img/sbnews1.jpg"}
+                  src={"/img/sbstock1.png"}
                   alt=""
                 />
               </p>
