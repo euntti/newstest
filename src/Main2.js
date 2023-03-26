@@ -302,6 +302,8 @@ function Main2() {
               </div>
             </div>
           </div>
+          <h3 style={{fontSize:9,display:'flex',justifyContent:'flex-end'}}>(AD)</h3>
+          <h4 style={{fontSize:9,display:'flex',justifyContent:'flex-end'}}>해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</h4>
           <div className="footerInfo">
             <div>상호명:(주)SB Global </div>
             <div>대표자:허승우 </div>
@@ -323,7 +325,7 @@ function Main2() {
           style={customStyles}
           contentLabel="Example Modal"
         >
-          <div>최은영</div>
+          <div>aa</div>
           {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
         <button onClick={closeModal}>close</button>
         <div>I am a modal</div>
