@@ -107,7 +107,7 @@ function Main2() {
           <div className="writer">
             <div class="writer-info">
               기자 - 김연화ㅣ 조회수 : 1432 ㅣ 날짜 :{""}
-              <span id="regdate">2023-02-25</span>
+              <span id="regdate">2023-03-25</span>
             </div>
           </div>
 
