@@ -77,12 +77,42 @@ function App() {
           <div className="App">
             <div className="appPictureContainer">
               {isBrowser ? (
-                <img
-                  className="appPicture"
-                  src={"/img/logo.png"}
-                  // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                  alt="logo "
-                />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  {/* <img
+                    className="appPicture"
+                    src={"/img/logo.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  /> */}
+                  <img
+                    src={"/img/theme1.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  />
+                  <img
+                    src={"/img/theme2.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  />{" "}
+                  <img
+                    style={{ width: 500 }}
+                    src={"/img/theme3.jpeg"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  />
+                  <div
+                    style={{ color: "#fff", fontSize: 30, margin: "30px 0" }}
+                  >
+                    지금 바로 30일 무료체험 시작하세요 !
+                  </div>
+                </div>
               ) : (
                 <img
                   className="appPicture"
@@ -92,26 +122,6 @@ function App() {
                 />
               )}
             </div>
-            <h3
-              style={{
-                fontSize: 9,
-                display: "flex",
-                justifyContent: "flex-end",
-                color: "#fff",
-              }}
-            >
-              (AD)
-            </h3>
-            <h4
-              style={{
-                fontSize: 9,
-                display: "flex",
-                justifyContent: "flex-end",
-                color: "#fff",
-              }}
-            >
-              해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.
-            </h4>
           </div>
           <div></div>
         </div>
@@ -123,13 +133,14 @@ function App() {
           <div>
             <ColorRing
               visible={true}
-              height="80"
-              width="80"
+              height="160"
+              width="160"
               ariaLabel="blocks-loading"
               wrapperStyle={{}}
               wrapperClass="blocks-wrapper"
               colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
             />
+            <div style={{ color: "#fff", fontSize: 35 }}>Loading....</div>
           </div>
           <div
             style={{ display: "flex", justifyContent: "center", marginTop: 20 }}
@@ -246,6 +257,7 @@ function App() {
             </div>
           </div>
         </Slider>
+
         <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
@@ -256,6 +268,26 @@ function App() {
           </div>
         </div>
       </div>
+      <h3
+        style={{
+          fontSize: 9,
+          display: "flex",
+          justifyContent: "center",
+          color: "#fff",
+        }}
+      >
+        (AD)
+      </h3>
+      <h4
+        style={{
+          fontSize: 9,
+          display: "flex",
+          justifyContent: "center",
+          color: "#fff",
+        }}
+      >
+        해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.
+      </h4>
     </div>
   );
 }
