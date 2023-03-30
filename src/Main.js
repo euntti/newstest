@@ -69,7 +69,7 @@ function App() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         width: "100vw",
-        height: "100%",
+        height: "100vh",
       }}
     >
       <div className="container">
@@ -96,11 +96,11 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />
-                  <img
+                  {/* <img
                     src={"/img/theme2.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
-                  />{" "}
+                  />{" "} */}
                   <img
                     style={{ width: 500 }}
                     src={"/img/theme3.jpeg"}
@@ -140,12 +140,12 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />
-                  <img
+                  {/* <img
                     style={{ width: 300 }}
                     src={"/img/theme2.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
-                  />{" "}
+                  />{" "} */}
                   <img
                     style={{ width: 300 }}
                     src={"/img/theme3.jpeg"}
