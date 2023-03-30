@@ -114,12 +114,50 @@ function App() {
                   </div>
                 </div>
               ) : (
-                <img
-                  className="appPicture"
-                  src={"/img/ms.jpeg"}
-                  // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                  alt="logo "
-                />
+                // <img
+                //   className="appPicture"
+                //   src={"/img/ms.jpeg"}
+                //   // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                //   alt="logo "
+                // />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  {/* <img
+                    className="appPicture"
+                    src={"/img/logo.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  /> */}
+                  <img
+                    style={{ width: 300 }}
+                    src={"/img/theme1.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  />
+                  <img
+                    style={{ width: 300 }}
+                    src={"/img/theme2.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  />{" "}
+                  <img
+                    style={{ width: 300 }}
+                    src={"/img/theme3.jpeg"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  />
+                  <div
+                    style={{ color: "#fff", fontSize: 20, margin: "30px 0" }}
+                  >
+                    지금 바로 30일 무료체험 시작하세요 !
+                  </div>
+                </div>
               )}
             </div>
           </div>
@@ -252,7 +290,11 @@ function App() {
             </div>
             <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
-                <img src={"/img/btn.gif"}></img>{" "}
+                {isBrowser ? (
+                  <img src={"/img/btn.gif"}></img>
+                ) : (
+                  <img style={{ width: 300 }} src={"/img/btn.gif"}></img>
+                )}
               </button>
             </div>
           </div>
