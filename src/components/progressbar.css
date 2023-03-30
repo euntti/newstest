@@ -1,7 +1,7 @@
 .progressbar {
   /* Size */
   width: 450px;
-  height: 75px;
+  height: 45px;
 
   /* Content alignment */
   display: flex;
@@ -35,7 +35,9 @@
   /* Content alignment */
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
+  padding-top: 15px;
 }
 
 .progressbar-text-container {

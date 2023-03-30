@@ -1,21 +1,36 @@
 import "./App.css";
 import TelegramApi from "node-telegram-api";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   BrowserView,
   MobileView,
   isBrowser,
   isMobile,
 } from "react-device-detect";
+import Progressbar from "./components/progressbar";
+import Slider from "react-slick";
+import { ColorRing } from "react-loader-spinner";
+import AnimatedNumbers from "react-animated-numbers";
 
 function App() {
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
+  const [num, setNum] = useState(331231);
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
+
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setProgress(100);
+    }, 3000);
+    return () => {
+      clearInterval(id);
+    };
+  }, []);
 
   const submitEvent = (e) => {
     e.preventDefault();
@@ -36,9 +51,17 @@ function App() {
     );
     alert("신청되었습니다.");
   };
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
   return (
     <div
-      className="container"
       style={{
         backgroundImage: `url("/img/light.jpeg")`,
         backgroundRepeat: "no-repeat",
@@ -49,106 +72,180 @@ function App() {
         height: "100%",
       }}
     >
-      <div className="sub">
-        <div className="App">
-          <div className="appPictureContainer">
-            {isBrowser ? (
-              <img
-                className="appPicture"
-                src={"/img/logo.png"}
-                // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                alt="logo "
-              />
-            ) : (
-              <img
-                className="appPicture"
-                src={"/img/ms.jpeg"}
-                // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                alt="logo "
-              />
-            )}
+      <div className="container">
+        <div className="sub">
+          <div className="App">
+            <div className="appPictureContainer">
+              {isBrowser ? (
+                <img
+                  className="appPicture"
+                  src={"/img/logo.png"}
+                  // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                  alt="logo "
+                />
+              ) : (
+                <img
+                  className="appPicture"
+                  src={"/img/ms.jpeg"}
+                  // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                  alt="logo "
+                />
+              )}
+            </div>
+            <h3
+              style={{
+                fontSize: 9,
+                display: "flex",
+                justifyContent: "flex-end",
+                color: "#fff",
+              }}
+            >
+              (AD)
+            </h3>
+            <h4
+              style={{
+                fontSize: 9,
+                display: "flex",
+                justifyContent: "flex-end",
+                color: "#fff",
+              }}
+            >
+              해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.
+            </h4>
           </div>
-          <h3
-            style={{ fontSize: 9, display: "flex", justifyContent: "flex-end" }}
-          >
-            (AD)
-          </h3>
-          <h4
-            style={{ fontSize: 9, display: "flex", justifyContent: "flex-end" }}
-          >
-            해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.
-          </h4>
-          <div className="nameArea">
-            <input
-              type="text"
-              className="username"
-              placeholder="이름"
-              onChange={(e) => setUserName(e.target.value)}
-            ></input>
-          </div>
-          <div className="phone">
-            <select>
-              <option key="1" value="1">
-                010
-              </option>
-            </select>{" "}
-            -{"\t"}
-            <input
-              type="text"
-              className="phone"
-              placeholder="0000"
-              onChange={(e) => setPhone1(e.target.value)}
-            ></input>{" "}
-            -{"\t"}
-            <input
-              type="text"
-              className="phone"
-              placeholder="0000"
-              onChange={(e) => setPhone2(e.target.value)}
-            ></input>
-          </div>
-          <div style={{ marginLeft: 10 }}>
-            <label style={{ color: "#fff" }}>
-              <input
-                type="checkbox"
-                id="privacy"
-                name="agree1"
-                value="1"
-                checked={check1}
-                onChange={(e) => setCheck1(e.target.checked)}
-              />
-              개인정보취급방침동의
-            </label>
-            <label style={{ color: "#fff" }}>
-              <input
-                type="checkbox"
-                id="privacy"
-                name="agree2"
-                value="1"
-                checked={check2}
-                onChange={(e) => setCheck2(e.target.checked)}
-              />
-              마케팅수신동의
-            </label>
-            <label style={{ color: "#fff" }}>
-              <input
-                type="checkbox"
-                id="privacy"
-                name="agree3"
-                value="1"
-                checked={check3}
-                onChange={(e) => setCheck3(e.target.checked)}
-              />
-              광고성문자수신동의
-            </label>
-          </div>
-          <div className="btnArea">
-            <button onClick={(e) => submitEvent(e)}>
-              <img src={"/img/btn.gif"}></img>{" "}
-            </button>
-          </div>
+          <div></div>
         </div>
-
+      </div>
+      <div
+        style={{ display: "block", position: "relative", textAlign: "center" }}
+      >
+        <Slider {...settings}>
+          <div>
+            <ColorRing
+              visible={true}
+              height="80"
+              width="80"
+              ariaLabel="blocks-loading"
+              wrapperStyle={{}}
+              wrapperClass="blocks-wrapper"
+              colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
+            />
+          </div>
+          <div
+            style={{ display: "flex", justifyContent: "center", marginTop: 20 }}
+          >
+            <Progressbar value={progress} />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginTop: 25,
+              }}
+            >
+              <h2
+                style={{
+                  fontSize: 35,
+                  display: "flex",
+                  alignItems: "center",
+                  color: "#fff",
+                }}
+              >
+                신청자 수
+              </h2>
+              <AnimatedNumbers
+                includeComma
+                animateToNumber={num}
+                fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
+                locale="en-US"
+                configs={[{ mass: 1, tension: 220, friction: 100 }]}
+              />
+              <h2
+                style={{
+                  fontSize: 35,
+                  color: "#fff",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                명
+              </h2>
+            </div>
+            <div style={{ fontSize: 25, color: "#fffc02 " }}>
+              거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
+            </div>
+          </div>
+          <div>
+            <div className="nameArea">
+              <input
+                type="text"
+                className="username"
+                placeholder="이름"
+                onChange={(e) => setUserName(e.target.value)}
+              ></input>
+            </div>
+            <div className="phone">
+              <select>
+                <option key="1" value="1">
+                  010
+                </option>
+              </select>{" "}
+              -{"\t"}
+              <input
+                type="text"
+                className="phone"
+                placeholder="0000"
+                onChange={(e) => setPhone1(e.target.value)}
+              ></input>{" "}
+              -{"\t"}
+              <input
+                type="text"
+                className="phone"
+                placeholder="0000"
+                onChange={(e) => setPhone2(e.target.value)}
+              ></input>
+            </div>
+            <div style={{ marginLeft: 10 }}>
+              <label style={{ color: "#fff" }}>
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="agree1"
+                  value="1"
+                  checked={check1}
+                  onChange={(e) => setCheck1(e.target.checked)}
+                />
+                개인정보취급방침동의
+              </label>
+              <label style={{ color: "#fff" }}>
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="agree2"
+                  value="1"
+                  checked={check2}
+                  onChange={(e) => setCheck2(e.target.checked)}
+                />
+                마케팅수신동의
+              </label>
+              <label style={{ color: "#fff" }}>
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="agree3"
+                  value="1"
+                  checked={check3}
+                  onChange={(e) => setCheck3(e.target.checked)}
+                />
+                광고성문자수신동의
+              </label>
+            </div>
+            <div className="btnArea">
+              <button onClick={(e) => submitEvent(e)}>
+                <img src={"/img/btn.gif"}></img>{" "}
+              </button>
+            </div>
+          </div>
+        </Slider>
         <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
