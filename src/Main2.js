@@ -352,7 +352,16 @@ function Main2() {
                   </ul>
                 </div>
               </Slider>
-
+              <h3 style={{fontSize:9,display:'flex',justifyContent:'center'}}>(AD)</h3>
+              <h4 style={{fontSize:9,display:'flex',justifyContent:'center'}}>해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</h4>
+              <div className="footerInfo">
+                <div style={{color:"#000"}}>상호명:(주)SB Global </div>
+                <div style={{color:"#000"}}>대표자:허승우 </div>
+                <div style={{color:"#000"}}>사업자등록번호: 231-46-00771 </div>
+                <div style={{color:"#000"}}>
+                  소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
+                </div>
+              </div>
               {/* <div className="inputBoxs">
                 <h1>급등종목 무료제공 오픈 프로모션</h1>
                 <h3>당장 급등할 종목 받기</h3>
@@ -463,28 +472,7 @@ function Main2() {
           </div>
         </div>
       </div>
-      <div>
-        <button onClick={openModal}>Open Modal</button>
-        <Modal
-          isOpen={modalIsOpen}
-          onAfterOpen={afterOpenModal}
-          onRequestClose={closeModal}
-          style={customStyles}
-          contentLabel="Example Modal"
-        >
-          <div>최은영</div>
-          {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form> */}
-        </Modal>
-      </div>
+    
     </div>
   );
 }
