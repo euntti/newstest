@@ -68,7 +68,7 @@ function App() {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        width: "100vw",
+        width: "100%",
         height: "100%",
       }}
     >
@@ -183,45 +183,93 @@ function App() {
           <div
             style={{ display: "flex", justifyContent: "center", marginTop: 20 }}
           >
-            <Progressbar value={progress} />
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                marginTop: 25,
-              }}
-            >
-              <h2
-                style={{
-                  fontSize: 35,
-                  display: "flex",
-                  alignItems: "center",
-                  color: "#fff",
-                }}
-              >
-                신청자 수
-              </h2>
-              <AnimatedNumbers
-                includeComma
-                animateToNumber={num}
-                fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
-                locale="en-US"
-                configs={[{ mass: 1, tension: 220, friction: 100 }]}
-              />
-              <h2
-                style={{
-                  fontSize: 35,
-                  color: "#fff",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                명
-              </h2>
-            </div>
-            <div style={{ fontSize: 25, color: "#fffc02 " }}>
-              거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
-            </div>
+            {isBrowser ? (
+              <>
+                <Progressbar value={progress} />
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: 25,
+                  }}
+                >
+                  <h2
+                    style={{
+                      fontSize: 35,
+                      display: "flex",
+                      alignItems: "center",
+                      color: "#fff",
+                    }}
+                  >
+                    신청자 수
+                  </h2>
+                  <AnimatedNumbers
+                    includeComma
+                    animateToNumber={num}
+                    fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
+                    locale="en-US"
+                    configs={[{ mass: 1, tension: 220, friction: 100 }]}
+                  />
+                  <h2
+                    style={{
+                      fontSize: 35,
+                      color: "#fff",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    명
+                  </h2>
+                </div>
+                <div style={{ fontSize: 25, color: "#fffc02 " }}>
+                  거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
+                </div>
+              </>
+            ) : (
+              <>
+                <div style={{ width: 300 }}>
+                  <Progressbar value={progress} />
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: 25,
+                  }}
+                >
+                  <h2
+                    style={{
+                      fontSize: 35,
+                      display: "flex",
+                      alignItems: "center",
+                      color: "#fff",
+                    }}
+                  >
+                    신청자 수
+                  </h2>
+                  <AnimatedNumbers
+                    includeComma
+                    animateToNumber={num}
+                    fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
+                    locale="en-US"
+                    configs={[{ mass: 1, tension: 220, friction: 100 }]}
+                  />
+                  <h2
+                    style={{
+                      fontSize: 35,
+                      color: "#fff",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    명
+                  </h2>
+                </div>
+                <div style={{ fontSize: 25, color: "#fffc02 " }}>
+                  거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
+                </div>
+              </>
+            )}
           </div>
           <div>
             <div className="nameArea">
