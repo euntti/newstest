@@ -13,10 +13,9 @@ function App() {
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
 
-  const [check1,setCheck1] = useState(false)
-  const [check2,setCheck2] = useState(false)
-  const [check3,setCheck3] = useState(false)
-
+  const [check1, setCheck1] = useState(false);
+  const [check2, setCheck2] = useState(false);
+  const [check3, setCheck3] = useState(false);
 
   const submitEvent = (e) => {
     e.preventDefault();
@@ -38,7 +37,18 @@ function App() {
     alert("신청되었습니다.");
   };
   return (
-    <div className="container">
+    <div
+      className="container"
+      style={{
+        backgroundImage: `url("/img/light.jpeg")`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        width: "100vw",
+        height: "100%",
+      }}
+    >
       <div className="sub">
         <div className="App">
           <div className="appPictureContainer">
@@ -58,8 +68,16 @@ function App() {
               />
             )}
           </div>
-          <h3 style={{fontSize:9,display:'flex',justifyContent:'flex-end'}}>(AD)</h3>
-          <h4 style={{fontSize:9,display:'flex',justifyContent:'flex-end'}}>해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</h4>
+          <h3
+            style={{ fontSize: 9, display: "flex", justifyContent: "flex-end" }}
+          >
+            (AD)
+          </h3>
+          <h4
+            style={{ fontSize: 9, display: "flex", justifyContent: "flex-end" }}
+          >
+            해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.
+          </h4>
           <div className="nameArea">
             <input
               type="text"
@@ -88,10 +106,9 @@ function App() {
               placeholder="0000"
               onChange={(e) => setPhone2(e.target.value)}
             ></input>
-            
           </div>
-          <div style={{marginLeft:10}}>
-            <label>
+          <div style={{ marginLeft: 10 }}>
+            <label style={{ color: "#fff" }}>
               <input
                 type="checkbox"
                 id="privacy"
@@ -102,7 +119,7 @@ function App() {
               />
               개인정보취급방침동의
             </label>
-            <label>
+            <label style={{ color: "#fff" }}>
               <input
                 type="checkbox"
                 id="privacy"
@@ -113,7 +130,7 @@ function App() {
               />
               마케팅수신동의
             </label>
-            <label>
+            <label style={{ color: "#fff" }}>
               <input
                 type="checkbox"
                 id="privacy"
@@ -126,15 +143,17 @@ function App() {
             </label>
           </div>
           <div className="btnArea">
-            <button onClick={(e) => submitEvent(e)}>신청하기 </button>
+            <button onClick={(e) => submitEvent(e)}>
+              <img src={"/img/btn.gif"}></img>{" "}
+            </button>
           </div>
         </div>
-        
-        <div className="footerInfo">
-          <div>상호명:(주)SB Global </div>
-          <div>대표자:허승우 </div>
 
-          <div>사업자등록번호: 231-46-00771 </div>
+        <div className="footerInfo">
+          <div>상호명:(주)SB 글로벌 투자그룹 </div>
+          <div>대표자:엄원택 </div>
+
+          <div>사업자등록번호: 178-88-01858 </div>
           <div>
             소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
           </div>

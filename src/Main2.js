@@ -109,7 +109,17 @@ function Main2() {
     autoplaySpeed: 2000,
   };
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: `url("/img/light.jpeg")`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        width: "100vw",
+        height: "100%",
+      }}
+    >
       <div className="nav">
         <div>SB투자클럽</div>
       </div>
