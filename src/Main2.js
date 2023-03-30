@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import TelegramApi from "node-telegram-api";
 import Modal from "react-modal";
+import Progressbar from "./components/progressbar";
+import Slider from "react-slick";
+import { ColorRing } from "react-loader-spinner";
 
 const customStyles = {
   content: {
@@ -27,6 +30,15 @@ function Main2() {
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
 
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setProgress(100);
+    }, 2000);
+    return () => {
+      clearInterval(id);
+    };
+  }, []);
   function openModal() {
     setIsOpen(true);
   }
@@ -87,8 +99,16 @@ function Main2() {
   useEffect(() => {
     getCustomer();
   }, []);
-
-  return  (
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
+  return (
     <div>
       <div className="nav">
         <div>SB투자클럽</div>
@@ -107,7 +127,7 @@ function Main2() {
           <div className="writer">
             <div class="writer-info">
               기자 - 김연화ㅣ 조회수 : 1432 ㅣ 날짜 :{""}
-              <span id="regdate">2023-03-25</span>
+              <span id="regdate">2023-02-25</span>
             </div>
           </div>
 
@@ -116,19 +136,18 @@ function Main2() {
               <p class="imgbox banner">
                 <img
                   style={{ width: 620, height: "auto" }}
-                  src={"/img/sbstock1.png"}
+                  src={"/img/news1.png"}
                   alt=""
                 />
               </p>
               <p>
-                <b>월 소득 300만원 이였던 50대 男 수입이 5배 증가한 비결은 ?</b>
+                <b>"가상화폐로 매월 1억씩 수익내고있어요"</b>
                 <br />
                 김진환 씨(50대) 인터뷰中
               </p>
               <p>
-              월 300씩 생기는 급여보다 5배 많은 추가 소득이 생기고 있는
-              50대 男 ㅇㅇㅇ씨가 투자 노하우를 밝혀 누리꾼들 사이에 화제가 되고있습니다
-
+                월 300만원 벌던 직장인에서 월 1억씩 버는 50대 김진환씨가 투자
+                노하우를 밝혀 화제가 되고있다.
                 <br />
                 {/* 김진환 씨의 최근 수익인증 */}
               </p>
@@ -148,24 +167,17 @@ function Main2() {
                 재테크 정보 제공 업체였다.
               </p>
               <p>
-              男 김oo은 늘어가는 지출소득에서 위기감을 느껴 여러가지 투자상품을 찾아보다
-              기사/광고를 통해 'SB글로벌'이라는 투자그룹을 알게 되었다
-                <br />'SB 글로벌'업체는 손실복구와 안정적인 부수입원을 제공하는 투자전문 회사였고
-                주식과 가상화폐 투자를 통한 안정적인 투자 정보를 제공 해주고 있었다
-              </p>
-              <p>
-                우연히
+                때마침
                 {"\t"}
-                <br/>주식/가상화폐 무료 종목 추천 프로모션이 진행되고 있어서
-                가벼운 마음으로 신청을 해서 참여하게 되었고
-                다양한 교육 시스템과 추천 받은 종목들로 투자를 하다보니 
-                어느샌가 급여보다 더 많은 추가 수입이 생기는걸 확인 할 수 있었다
+                <b>주식종목및 코인정보 무료 제공 이벤트</b>를 하고 있어서
+                이벤트를 참여하게 되었고, 추천해주는 주식과 가상화폐 종목들이
+                모두 상승하는것을 두눈으로 확인할 수 있었다.
               </p>
               <p>
-              신뢰가 생긴 男은 다양한 종목들로 폭 넓은 투자를 시작했고
-              그 결과 한달만에 투자 원금에 5배가 넘는 수익을 챙길 수 있었다
+                신뢰가 생긴 김씨는 실제로 투자를 하기 시작하였고, 일주일 만에
+                원금의 3배가 넘는 돈을 벌 수 있었다.
                 <br />
-                지금은 <b>매월 수입 이상의 5배 수익</b>을 꾸준히 늘리고 있다.
+                지금은 <b>매월 1억 이상의 수익</b>을 꾸준히 늘리고 있다.
               </p>
               {/* <p class="imgbox banner">
                 <a
@@ -179,42 +191,168 @@ function Main2() {
                 </a>
               </p> */}
               <p>
-              한번도 주식/가상화폐를 통한 투자를 해본적이 없는 男이였지만
-              순차적인 교육 커리큘럼과 안전한 종목추천을 통해서 매수,매도를 반복해
-              실력을 쌓아갔고
+                김씨는 가상화폐 투자를 한번도 해보지 않았지만 'SB투자클럽'의
+                트레이더거 정확한 매수,매도 타이밍을 알려주기 때문에 그대로
+                따라하기만 하면서 수익을 내기 시작했다.
               </p>
               <p>
-                현재는{" "}
-                <b>전문직 종사자와 비교해봐도 손색이 없을 정도로
-                폭 넓은 투자지식을 겸비</b> 하게 되었다.
+                7개월쯤 되었을 땐 월급보다 투자로 버는 돈이 더 커져 과감하게
+                직장까지 그만뒀다. 김씨는 이 재테크의 가장 큰 장점은{" "}
+                <b>손실은 최소화하고, 수익률은 높힐 수 있는점</b> 이라고 밝혔다.
               </p>
               <p>
-              현재는 직장에서의 월급보다 훨씬 많은 부가적인 수입을 챙기고 있고
-              점차 늘어가는 목돈은 현재도 속도를 붙여 현재 진행중이다
+                현재 김씨가 이용중인 'SB투자클럽'은 최근 고객들의 수익 인증이
+                늘어나고 있어, 하루에도 수백 건의 문의가 들어오고 있다고 한다.
               </p>
               <p>
-              현재 男이 관계를 맺고 있는 'SB 글로벌'은 다년간 안정적인
-              투자정보제공을 해옴으로써 여러가지 수상경력을 포함해
-              정보이용을 하고 싶은 고객이 포화상태고 
-              수많은 문의가 폭주하고 있는 상황이라고 한다.
+                이에 'SB투자클럽'에서는 신규 런칭 이벤트로 선착순 300명에게
+                "급등 주식&코인 종목 무료제공 이벤트"를 제공하고 있다.
               </p>
+              <p>
+                하단에 이름과 연락처만 적으면 급등할 주식&가상화폐 종목을 받아볼
+                수 있으며, 앞으로도 "목돈"을 모으기 위한 서민들의 관심은 더해질
+                전망이다.
+              </p>
+              <Slider {...settings}>
+                <div>
+                  <span
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      height: "50vh",
+                    }}
+                  >
+                    <ColorRing
+                      visible={true}
+                      height="80"
+                      width="80"
+                      ariaLabel="blocks-loading"
+                      wrapperStyle={{}}
+                      wrapperClass="blocks-wrapper"
+                      colors={[
+                        "#e15b64",
+                        "#f47e60",
+                        "#f8b26a",
+                        "#abbd81",
+                        "#849b87",
+                      ]}
+                    />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      height: "50vh",
+                    }}
+                  >
+                    <Progressbar value={progress} />
+                  </span>
+                </div>
+                <div className="inputBoxs">
+                  <h1>급등종목 무료제공 오픈 프로모션</h1>
+                  <h3>당장 급등할 종목 받기</h3>
+                  <ul>
+                    <li id="line01">
+                      <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
+                    </li>
+                    <li id="line02">
+                      개인정보는 암호화하여 안전하게 처리됩니다.
+                    </li>
+                    <li id="line03" cond="off">
+                      <span>급등주를 7일동안 받아보세요.</span>
+                    </li>
+                    <br />
+                    <li>
+                      <input
+                        type="text"
+                        id="f1"
+                        name="user_name"
+                        required=""
+                        placeholder="성함을 입력하세요"
+                        value={nickName}
+                        onChange={(e) => setNickName(e.target.value)}
+                      />
+                    </li>
+                    <li>
+                      <input
+                        type="text"
+                        id="f1"
+                        name="user_name"
+                        required=""
+                        placeholder="연락처를 입력하세요"
+                        value={phoneNumber}
+                        onChange={(e) => {
+                          setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
+                        }}
+                      />
+                    </li>
+                    <br />
+                    <li id="chkline">
+                      <label>
+                        <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check1}
+                          onChange={(e) => setCheck1(e.target.checked)}
+                        />
+                        개인정보취급방침동의
+                      </label>
+                      <span
+                        onClick={openModal}
+                        class="txtbtn"
+                        data-id="fixedbox_1"
+                      >
+                        보기
+                      </span>
+                      <label>
+                        <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree2"
+                          value="1"
+                          checked={check2}
+                          onChange={(e) => setCheck2(e.target.checked)}
+                        />
+                        마케팅수신동의
+                      </label>
+                      <span
+                        onClick={openModal}
+                        class="txtbtn"
+                        data-id="fixedbox_1"
+                      >
+                        보기
+                      </span>
+                      <label>
+                        <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree3"
+                          value="1"
+                          checked={check3}
+                          onChange={(e) => setCheck3(e.target.checked)}
+                        />
+                        광고성문자수신동의
+                      </label>
+                    </li>
+                    <li id="smtbtn">
+                      <input
+                        id="btn"
+                        type="submit"
+                        value="급등종목 무료제공 이벤트 신청하기"
+                        onClick={submitEvent}
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </Slider>
 
-              <p>
-              보다 나은 혜택을 위해 현재 'SB 글로벌'에서는 
-              신규 문의건에 한해서 이벤트를 진행중이며
-              매달 선착순 200명에게 '양질의 정보'를 30일간 무료제공을 하고 있다
-              </p>
-              <p>
-                하단에 정보만 적으면 급등할 종목을 받아볼
-                수 있으며, 급증하는 물가지수로 인해 어려운 경제속에서 이러한 
-                투자는 서민들의 관심이 더욱 많아질 전망이다
-              </p>
-              <p>
-              마지막으로 男 고민 할 시간에 행동으로 옮긴 자기자신이
-              현명했다고 말하며 인터뷰를 마무리했다
-              </p>
-
-              <div className="inputBoxs">
+              {/* <div className="inputBoxs">
                 <h1>급등종목 무료제공 오픈 프로모션</h1>
                 <h3>당장 급등할 종목 받기</h3>
                 <ul>
@@ -225,7 +363,7 @@ function Main2() {
                     개인정보는 암호화하여 안전하게 처리됩니다.
                   </li>
                   <li id="line03" cond="off">
-                    <span>급등주를 30일동안 받아보세요.</span>
+                    <span>급등주를 7일동안 받아보세요.</span>
                   </li>
                   <br />
                   <li>
@@ -311,7 +449,7 @@ function Main2() {
                     />
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div>
                 {users.map((user, idx) => (
                   <div key={idx} style={{ display: "flex" }}>
@@ -322,23 +460,10 @@ function Main2() {
               </div>
             </div>
           </div>
-          <h3 style={{fontSize:9,display:'flex',justifyContent:'flex-end'}}>(AD)</h3>
-          <h4 style={{fontSize:9,display:'flex',justifyContent:'flex-end'}}>해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</h4>
-          <div className="footerInfo">
-            <div>상호명:(주)SB Global </div>
-            <div>대표자:허승우 </div>
-            <div>사업자등록번호: 231-46-00771 </div>
-            <div>
-              소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
-            </div>
         </div>
-        </div>
-        
       </div>
-   
-   
       <div>
-        {/* <button onClick={openModal}>Open Modal</button> */}
+        <button onClick={openModal}>Open Modal</button>
         <Modal
           isOpen={modalIsOpen}
           onAfterOpen={afterOpenModal}
@@ -346,7 +471,7 @@ function Main2() {
           style={customStyles}
           contentLabel="Example Modal"
         >
-          <div>aa</div>
+          <div>최은영</div>
           {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
         <button onClick={closeModal}>close</button>
         <div>I am a modal</div>
@@ -359,9 +484,8 @@ function Main2() {
         </form> */}
         </Modal>
       </div>
-      
     </div>
-    );
+  );
 }
 
 export default Main2;
