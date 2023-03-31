@@ -103,14 +103,14 @@ function App() {
                   />{" "} */}
                   <img
                     style={{ width: 500 }}
-                    src={"/img/theme3.jpeg"}
+                    src={"/img/theme4.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />
                   <div
                     style={{ color: "#fff", fontSize: 30, margin: "30px 0" }}
                   >
-                    지금 바로 30일 무료체험 시작하세요 !
+                    1억만들기 프로젝트 30일 무료체험 신청하세요
                   </div>
                 </div>
               ) : (
@@ -148,14 +148,14 @@ function App() {
                   />{" "} */}
                   <img
                     style={{ width: 300 }}
-                    src={"/img/theme3.jpeg"}
+                    src={"/img/theme4.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />
                   <div
                     style={{ color: "#fff", fontSize: 20, margin: "30px 0" }}
                   >
-                    지금 바로 30일 무료체험 시작하세요 !
+                    1억만들기 프로젝트 30일 무료체험 신청하세요
                   </div>
                 </div>
               )}
