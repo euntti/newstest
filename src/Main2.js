@@ -110,8 +110,8 @@ function Main2() {
     autoplaySpeed: 2000,
   };
   return (
-    <div
-    >
+    <div>
+      <div>
       <div className="nav">
         <div>SB그룹</div>
       </div>
