@@ -200,7 +200,7 @@ function Main2() {
                 <br />
               </p>
                <p class="mainhead">
-                  <b>"SB그룹 실제 AI 퀀트비 이용사진"</b>
+                  <b> ►SB그룹 실제 AI 퀀트비 이용사진◀︎</b>
                 </p>
                <p class="imgbox banner">
                 <img
