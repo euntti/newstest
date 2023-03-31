@@ -366,7 +366,7 @@ function Main2() {
                 소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
                 </div>
               </div>
-      </div>
+      <div>
               </div>
               {/* <div className="inputBoxs">
                 <h1>급등종목 무료제공 오픈 프로모션</h1>
