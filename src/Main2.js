@@ -130,8 +130,8 @@ function Main2() {
           </div>
           <div className="writer">
             <div class="writer-info">
-              기자 - 김연화ㅣ 조회수 : 1432 ㅣ 날짜 :{""}
-              <span id="regdate">2023-03-25</span>
+              기자 - 주진석ㅣ 조회수 : 1809 ㅣ 날짜 :{""}
+              <span id="regdate">2023-03-30</span>
             </div>
           </div>
 
@@ -140,7 +140,7 @@ function Main2() {
               <p class="imgbox banner">
                 <img
                   style={{ width: 620, height: "auto" }}
-                  src={"/img/sbstock1.png"}
+                  src={"/img/sbmain11.png"}
                   alt=""
                 />
               </p>
