@@ -119,6 +119,11 @@ table {
   font-size: 13px;
   text-align: center;
 }
+.mainhead2{
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
 .content .imgbox {
   margin-top: 15px;
   margin-bottom: 0;
