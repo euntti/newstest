@@ -159,12 +159,11 @@ function Main2() {
                 {/* 김진환 씨의 최근 수익인증 */}
               </p>
               <p class="imgbox banner">
-                <a
-                  href="http://coinstock7.co.kr/image/?adcode=testbg"
-                  target="_blank"
-                >
-                  <img src="/img/sbmain2.png" alt="" />
-                </a>
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/sbmain11.png"}
+                  alt=""
+                />
               </p>
               {/* <div class="imgdesc">[김진환씨의 최근 수익 인증]</div> */}
               <p>
