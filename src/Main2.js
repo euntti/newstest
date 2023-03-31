@@ -113,7 +113,7 @@ function Main2() {
     <div
     >
       <div className="nav">
-        <div>SB투자클럽</div>
+        <div>SB그룹</div>
       </div>
       <div className="box_container">
         <div className="box">
@@ -122,7 +122,7 @@ function Main2() {
             <div className="head">
               <h1 className="title">
                 아직도 손실만 보고 계신가요?{" "}
-                <p><span class="color1">" SB글로벌 투자그룹 "</span> </p>
+                <p><span class="color1">" SB그룹 "</span> </p>
                 <p>억대를 모을 수 있게 한 투자 노하우</p>
                 어떤 노하우이길래? "
               </h1>
@@ -152,14 +152,14 @@ function Main2() {
               <p>
                 <p>지난 15일 종합투자S 취재진들이 확인해본결과,</p>
                 2022년 1월부터 2022년 12월까지 AI프로그램을 병행한 
-                <p>SB투자그룹만의 투자 전략을 통해 
+                <p>SB그룹 만의 투자 전략을 통해 
                 4월,9월을 제한 나머지 달은 모두 수익이였으며 4월,9월을 포함해 일평균으로 계산시 일 60.7% 수익률이 확인됐다.</p>
                 
                 <br />
                 {/* 김진환 씨의 최근 수익인증 */}
               </p>
               <p class="mainhead">
-                  <b>"SB글로벌 투자그룹 실 고객들의 수익인증"</b>
+                  <b>"SB그룹 실 고객들의 수익인증"</b>
               </p>
               <p class="imgbox banner">
                 <img
@@ -183,7 +183,7 @@ function Main2() {
                 
               </p>
               <p>
-                SB투자그룹 대표이사는
+                SB그룹 대표이사는
                 {"\t"}
                 <b>"인공지능 (퀀트비) AI인공지능
                 프로그램의 결과값과 전문 트레이더들이 한번 더 대조 하고 맞춤 교육도 진행하다 보니 더욱 높은 수익률을 보장한다" </b>
@@ -357,17 +357,36 @@ function Main2() {
                   </ul>
                 </div>
               </Slider>
-              <h3 style={{fontSize:9,display:'flex',justifyContent:'center'}}>(AD)</h3>
-              <h4 style={{fontSize:9,display:'flex',justifyContent:'center'}}>해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</h4>
-              <div className="footerInfo1">
-                <div>상호명:(주)SB 글로벌 투자그룹 </div>
-                <div>대표자:엄원택 </div>
+              <div className="footerInfo">
+          <div>상호명:(주)SB 글로벌 투자그룹 </div>
+          <div>대표자:엄원택 </div>
 
-                <div>사업자등록번호: 178-88-01858 </div>
-                <div>
-                소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
-                </div>
-              </div>
+          <div>사업자등록번호: 178-88-01858 </div>
+          <div>
+            소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
+          </div>
+        </div>
+      </div>
+      <h3
+        style={{
+          fontSize: 9,
+          display: "flex",
+          justifyContent: "center",
+          color: "#fff",
+        }}
+      >
+        (AD)
+      </h3>
+      <h4
+        style={{
+          fontSize: 9,
+          display: "flex",
+          justifyContent: "center",
+          color: "#fff",
+        }}
+      >
+        해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.
+      </h4>
       <div>
               </div>
               {/* <div className="inputBoxs">
