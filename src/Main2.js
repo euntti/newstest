@@ -158,6 +158,9 @@ function Main2() {
                 <br />
                 {/* 김진환 씨의 최근 수익인증 */}
               </p>
+              <p class="mainhead">
+                  <b>"SB글로벌 투자그룹 실 고객들의 수익인증"</b>
+              </p>
               <p class="imgbox banner">
                 <img
                   style={{ width: 620, height: "auto" }}

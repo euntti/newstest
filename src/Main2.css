@@ -114,6 +114,11 @@ table {
   font-size: 17px;
   letter-spacing: 0;
 }
+.mainhead{
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+}
 .content .imgbox {
   margin-top: 15px;
   margin-bottom: 0;
@@ -221,13 +226,7 @@ table {
   font-size: 13px;
   color: rgb(0, 0, 0);
   }
-.mainhead{
-  padding-bottom: 10px;
-  font-weight: bold;
-  font-size: 13px;
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
+
 
 @media (max-width: 700px) {
   .box_container{
