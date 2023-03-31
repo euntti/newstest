@@ -379,7 +379,7 @@ function Main2() {
       
       <h4
         style={{
-          fontSize: 9,
+          fontSize: 4,
           display: "flex",
           justifyContent: "center",
           color: "#fff",
