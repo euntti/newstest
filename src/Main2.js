@@ -158,10 +158,10 @@ function Main2() {
                 <br />
                 {/* 김진환 씨의 최근 수익인증 */}
               </p>
-              <p class="mainhead">
+               <p class="mainhead">
                   <b>"SB그룹 실 고객들의 수익인증"</b>
-              </p>
-              <p class="imgbox banner">
+                </p>
+               <p class="imgbox banner">
                 <img
                   style={{ width: 620, height: "auto" }}
                   src={"/img/sbmain2.png"}
@@ -198,6 +198,16 @@ function Main2() {
               <p>
                 얼마 안남은 2분기에도 프로모션을 진행한다고 하니 많은 문의가 몰릴 것으로 예상된다.
                 <br />
+              </p>
+               <p class="mainhead">
+                  <b>"SB그룹 실제 AI 퀀트비 이용사진"</b>
+                </p>
+               <p class="imgbox banner">
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/quantbee.png"}
+                  alt=""
+                />
               </p>
               <p class="mainhead2">
                 <b>"아무것도 바꾸지 않으면 아무것도 변하지 않는다"</b>
