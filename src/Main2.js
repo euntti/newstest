@@ -122,7 +122,7 @@ function Main2() {
             <div className="head">
               <h1 className="title">
                 아직도 손실만 보고 계신가요?{" "}
-                <span class="color1">" SB글로벌 투자그룹 "</span> 
+                <p><span class="color1">" SB글로벌 투자그룹 "</span> </p>
                 <p>억대를 모을 수 있게 한 투자 노하우</p>
                 <span class="color1">" 어떤 노하우이길래? "</span> 
               </h1>
