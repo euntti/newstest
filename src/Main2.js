@@ -376,7 +376,7 @@ function Main2() {
         }}
       >
       </h3>
-      <div className="footerInfo1">
+      
       <h4
         style={{
           fontSize: 9,
@@ -385,9 +385,8 @@ function Main2() {
           color: "#fff",
         }}
       >
-       <div>AD - 해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</div>
+       <div className="footerInfo1"> AD - 해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</div>
       </h4>
-       </div>
       <div>
               </div>
               {/* <div className="inputBoxs">
