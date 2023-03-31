@@ -1,3 +1,4 @@
+
 import logo from "./logo.svg";
 import "./Main2.css";
 import { useState, useEffect } from "react";
@@ -120,8 +121,9 @@ function Main2() {
           <div className="inner">
             <div className="head">
               <h1 className="title">
-                월 300만원씩벌던 50대 男{" "}
-                <span class="color1">“월 1억씩버는“</span> 그의 비결은?
+                아직도 손실만 보고 계신가요?{" "}
+                <span class="color1">" SB글로벌 투자그룹 "</span> 억대를 모을 수 있게 한 투자 노하우
+                <span class="color1">" 어떤 노하우이길래? "</span> 
               </h1>
             </div>
           </div>
@@ -478,3 +480,4 @@ function Main2() {
 }
 
 export default Main2;
+
