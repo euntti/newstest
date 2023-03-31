@@ -163,7 +163,7 @@ function Main2() {
                   href="http://coinstock7.co.kr/image/?adcode=testbg"
                   target="_blank"
                 >
-                  <img src="/img/test1.png" alt="" />
+                  <img src="/img/sbmain2.png" alt="" />
                 </a>
               </p>
               {/* <div class="imgdesc">[김진환씨의 최근 수익 인증]</div> */}
@@ -357,7 +357,7 @@ function Main2() {
               </Slider>
               <h3 style={{fontSize:9,display:'flex',justifyContent:'center'}}>(AD)</h3>
               <h4 style={{fontSize:9,display:'flex',justifyContent:'center'}}>해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</h4>
-              <div className="footerInfo">
+              <div className="footerInfo1">
                 <div>상호명:(주)SB 글로벌 투자그룹 </div>
                 <div>대표자:엄원택 </div>
 
