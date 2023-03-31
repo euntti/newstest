@@ -357,7 +357,7 @@ function Main2() {
                   </ul>
                 </div>
               </Slider>
-              <div className="footerInfo">
+         <div className="footerInfo1">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
 
@@ -375,8 +375,8 @@ function Main2() {
           color: "#fff",
         }}
       >
-        (AD)
       </h3>
+      <div className="footerInfo1">
       <h4
         style={{
           fontSize: 9,
@@ -387,6 +387,7 @@ function Main2() {
       >
         해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.
       </h4>
+       </div>
       <div>
               </div>
               {/* <div className="inputBoxs">
