@@ -11,8 +11,11 @@ import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 import AnimatedNumbers from "react-animated-numbers";
+import axios from "axios";
+import useDidMountEffect from "./hooks/useDidMountEffect";
 
 function App() {
+  axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
@@ -32,6 +35,16 @@ function App() {
     };
   }, []);
 
+  const insertHistory = () => {
+    axios.post("/visit").then((res) => {
+      console.log("res==", res);
+    });
+  };
+
+  useDidMountEffect(() => {
+    insertHistory();
+  }, []);
+
   const submitEvent = (e) => {
     e.preventDefault();
     if (userName == "") {
@@ -40,6 +53,17 @@ function App() {
     if (phone1 == "" || phone2 == "") {
       return alert("번호를 입력해주세요.");
     }
+
+    const phoneNumber = `010-${phone1}-${phone2}`;
+    const name = userName;
+    const param = {
+      phoneNumber: phoneNumber,
+      name: name,
+    };
+    axios.post("/client", param).then((res) => {
+      console.log("res=", res);
+    });
+
     // const TELEGRAM_TOKEN = "5964017003:AAH3LVmpPgezxLrs2-q53OLpYVdbCIybqjk";
     // const TELEGRAM_CHAT_ID = -1001643618319; // your telegram chat ID
     const TELEGRAM_TOKEN = "5483771483:AAHFxQtin81-Hcf-xNd_GdVoV_PAnkZq1k8";
