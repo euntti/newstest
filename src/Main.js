@@ -36,6 +36,9 @@ function App() {
     insertHistory();
   }, []);
   useEffect(() => {
+    insertHistory();
+  }, []);
+  useEffect(() => {
     const id = setInterval(() => {
       setProgress(100);
     }, 3000);
