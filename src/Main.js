@@ -26,15 +26,6 @@ function App() {
   const [check3, setCheck3] = useState(false);
 
   const [progress, setProgress] = useState(0);
-  useEffect(() => {
-    const id = setInterval(() => {
-      setProgress(100);
-    }, 3000);
-    return () => {
-      clearInterval(id);
-    };
-  }, []);
-
   const insertHistory = () => {
     axios.post("/visit").then((res) => {
       console.log("res==", res);
@@ -43,6 +34,14 @@ function App() {
 
   useDidMountEffect(() => {
     insertHistory();
+  }, []);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setProgress(100);
+    }, 3000);
+    return () => {
+      clearInterval(id);
+    };
   }, []);
 
   const submitEvent = (e) => {
