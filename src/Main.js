@@ -15,7 +15,7 @@ import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
 
 function App() {
-  axios.defaults.baseURL = "http://localhost:8080";
+  axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
