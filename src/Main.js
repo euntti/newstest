@@ -15,7 +15,7 @@ import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
 
 function App() {
-  axios.defaults.baseURL = "https://sbstock.co.kr";
+  axios.defaults.baseURL = "http://localhost:8080";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
@@ -404,6 +404,26 @@ function App() {
       >
         해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.
       </h4>
+      <h1
+        style={{
+          color: "#fff",
+          fontSize: 50,
+          textAlign: "center",
+          marginTop: 20,
+        }}
+      >
+        고객 후기
+      </h1>
+      <div
+        style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
+      >
+        <img src="/img/screenshot/sb1.jpg" />
+        <img src="/img/screenshot/sb2.jpg" />
+        <img src="/img/screenshot/sb3.jpg" />
+        <img src="/img/screenshot/sb4.jpg" />
+        <img src="/img/screenshot/sb5.jpg" />
+        <img src="/img/screenshot/sb6.jpg" />
+      </div>
     </div>
   );
 }
