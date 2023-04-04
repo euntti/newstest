@@ -154,82 +154,7 @@ function Main2() {
                 2022년 1월부터 2022년 12월까지 AI프로그램을 병행한 
                 <p>SB그룹 만의 투자 전략을 통해 
                 4월 , 9월을 제한 나머지 달은 모두 수익이였으며 4월,9월을 포함해 일평균으로 계산시 일 60.7% 수익률이 확인됐다.</p>
-                
-                <br />
-                {/* 김진환 씨의 최근 수익인증 */}
-              </p>
-               <p class="mainhead">
-                  <b>"SB그룹 실 고객들의 수익인증"</b>
-                </p>
-               <p class="imgbox banner">
-                <img
-                  style={{ width: 620, height: "auto" }}
-                  src={"/img/sbmain2.png"}
-                  alt=""
-                />
-              </p>
-              {/* <div class="imgdesc">[김진환씨의 최근 수익 인증]</div> */}
-              <p>
-               여기서 놀라운 사실은 2022년 6월에 무료로 시작한 손실복구 프로모션 복구율이 
-               78.8% 이상 이였고
-                <br />이로 인해 많은 문의가 왔었다고 한다
-              </p>
-
-              <p>
-                4차산업혁명에
-                {"\t"}
-                <b>좋은 예 라 보이며 기존 개인투자자들이 일일히 확인해야되는것과 달리 AI프로그램이 실시간으로 변동하는 
-                모든 차트흐름과 시장흐름을 분석하여 높은 수익률로 보이는 추세이다.</b>
-                
-              </p>
-              <p>
-                SB그룹 대표이사는
-                {"\t"}
-                <b>"인공지능 (퀀트박스) AI인공지능
-                프로그램의 결과값과 전문 트레이더들이 한번 더 대조 하고 맞춤 교육도 진행하다 보니 더욱 높은 수익률을 보장한다" </b>
-                추가적으로 연령,성별,나이 구분없이 1:1 눈높이 맞춤 트레이닝으로 보다 이해하기 쉽게 케어 하고있다고 덧붙혔습니다.
-              </p>
-              <p>
-               더욱 더 
-                {"\t"}
-                <b>놀라운 사실은 2023년 1월에 무료로 시작한 손실복구 프로모션 복구율이 78.8% 이상 이였고 이로 인해 많은 문의가 왔었다고 한다.  </b>
-                
-              </p>
-              <p>
-                얼마 안남은 2분기에도 프로모션을 진행한다고 하니 많은 문의가 몰릴 것으로 예상된다.
-                <br />
-              </p>
-               <p class="mainhead">
-                  <b> ►SB그룹 실제 AI 퀀트박스 이용사진◀︎</b>
-                </p>
-               <p class="imgbox banner">
-                <img
-                  style={{ width: 620, height: "auto" }}
-                  src={"/img/quantbee.png"}
-                  alt=""
-                />
-              </p>
-              <p class="mainhead2">
-                <b>"아무것도 바꾸지 않으면 아무것도 변하지 않는다"</b>
-                <br />
-              </p>
-              <p class="mainhead2">
-                <b>"안전하고 영리한 투자노하우! 정확한 가치투자에 의해 당신의 꿈을 실현합니다"</b>
-                <br />
-              </p>
-              {/* <p class="imgbox banner">
-                <a
-                  href="http://coinstock7.co.kr/image/?adcode=testbg"
-                  target="_blank"
-                >
-                  <img
-                    src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/co3.jpeg"
-                    alt=""
-                  />
-                </a>
-              </p> */}
-            
-              <Slider {...settings}>
+                <Slider {...settings}>
                 <div>
                   <span
                     style={{
@@ -367,6 +292,81 @@ function Main2() {
                   </ul>
                 </div>
               </Slider>
+                <br />
+                {/* 김진환 씨의 최근 수익인증 */}
+              </p>
+               <p class="mainhead">
+                  <b>"SB그룹 실 고객들의 수익인증"</b>
+                </p>
+               <p class="imgbox banner">
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/sbmain2.png"}
+                  alt=""
+                />
+              </p>
+              {/* <div class="imgdesc">[김진환씨의 최근 수익 인증]</div> */}
+              <p>
+               여기서 놀라운 사실은 2022년 6월에 무료로 시작한 손실복구 프로모션 복구율이 
+               78.8% 이상 이였고
+                <br />이로 인해 많은 문의가 왔었다고 한다
+              </p>
+
+              <p>
+                4차산업혁명에
+                {"\t"}
+                <b>좋은 예 라 보이며 기존 개인투자자들이 일일히 확인해야되는것과 달리 AI프로그램이 실시간으로 변동하는 
+                모든 차트흐름과 시장흐름을 분석하여 높은 수익률로 보이는 추세이다.</b>
+                
+              </p>
+              <p>
+                SB그룹 대표이사는
+                {"\t"}
+                <b>"인공지능 (퀀트박스) AI인공지능
+                프로그램의 결과값과 전문 트레이더들이 한번 더 대조 하고 맞춤 교육도 진행하다 보니 더욱 높은 수익률을 보장한다" </b>
+                추가적으로 연령,성별,나이 구분없이 1:1 눈높이 맞춤 트레이닝으로 보다 이해하기 쉽게 케어 하고있다고 덧붙혔습니다.
+              </p>
+              <p>
+               더욱 더 
+                {"\t"}
+                <b>놀라운 사실은 2023년 1월에 무료로 시작한 손실복구 프로모션 복구율이 78.8% 이상 이였고 이로 인해 많은 문의가 왔었다고 한다.  </b>
+                
+              </p>
+              <p>
+                얼마 안남은 2분기에도 프로모션을 진행한다고 하니 많은 문의가 몰릴 것으로 예상된다.
+                <br />
+              </p>
+               <p class="mainhead">
+                  <b> ►SB그룹 실제 AI 퀀트박스 이용사진◀︎</b>
+                </p>
+               <p class="imgbox banner">
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/quantbee.png"}
+                  alt=""
+                />
+              </p>
+              <p class="mainhead2">
+                <b>"아무것도 바꾸지 않으면 아무것도 변하지 않는다"</b>
+                <br />
+              </p>
+              <p class="mainhead2">
+                <b>"안전하고 영리한 투자노하우! 정확한 가치투자에 의해 당신의 꿈을 실현합니다"</b>
+                <br />
+              </p>
+              {/* <p class="imgbox banner">
+                <a
+                  href="http://coinstock7.co.kr/image/?adcode=testbg"
+                  target="_blank"
+                >
+                  <img
+                    src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/co3.jpeg"
+                    alt=""
+                  />
+                </a>
+              </p> */}
+            
+              
          <div className="footerInfo1">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
