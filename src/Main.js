@@ -89,7 +89,9 @@ function App() {
   return (
     <div
       style={{
-        backgroundImage: `url("/img/bg.jpeg")`,
+        backgroundImage: isMobile
+          ? `url("/img/mbg.jpeg")`
+          : `url("/img/bg.jpeg")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
