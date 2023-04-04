@@ -355,6 +355,7 @@ function Main2() {
                   src={"/img/review1.png"}
                   alt=""
                 />
+                </p>
               <p class="mainhead2">
                 <b>"아무것도 바꾸지 않으면 아무것도 변하지 않는다"</b>
                 <br />
