@@ -346,6 +346,15 @@ function Main2() {
                   alt=""
                 />
               </p>
+              <p class="mainhead">
+                  <b> ►SB그룹 실고객님들의 후기◀︎</b>
+                </p>
+                <p class="imgbox banner">
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/review1.png"}
+                  alt=""
+                />
               <p class="mainhead2">
                 <b>"아무것도 바꾸지 않으면 아무것도 변하지 않는다"</b>
                 <br />
