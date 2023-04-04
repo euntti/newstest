@@ -89,7 +89,7 @@ function App() {
   return (
     <div
       style={{
-        backgroundImage: `url("/img/light.png")`,
+        backgroundImage: `url("/img/bg.jpeg")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
