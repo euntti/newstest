@@ -416,15 +416,25 @@ function App() {
       >
         고객 후기
       </h1>
-      <div
-        style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
-      >
-        <img src="/img/screenshot/sb1.jpeg" />
-        <img src="/img/screenshot/sb2.jpeg" />
-        <img src="/img/screenshot/sb3.jpeg" />
-        <img src="/img/screenshot/sb4.jpeg" />
-        <img src="/img/screenshot/sb5.jpeg" />
-        <img src="/img/screenshot/sb6.jpeg" />
+      <div className="imgGrid">
+        <div>
+          <img src="/img/screenshot/sb1.jpeg" />
+        </div>
+        <div>
+          <img src="/img/screenshot/sb2.jpeg" />
+        </div>
+        <div>
+          <img src="/img/screenshot/sb3.jpeg" />
+        </div>
+        <div>
+          <img src="/img/screenshot/sb4.jpeg" />
+        </div>
+        <div>
+          <img src="/img/screenshot/sb5.jpeg" />
+        </div>
+        <div>
+          <img src="/img/screenshot/sb6.jpeg" />
+        </div>
       </div>
     </div>
   );
