@@ -419,12 +419,12 @@ function App() {
       <div
         style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }}
       >
-        <img src="/img/screenshot/sb1.jpg" />
-        <img src="/img/screenshot/sb2.jpg" />
-        <img src="/img/screenshot/sb3.jpg" />
-        <img src="/img/screenshot/sb4.jpg" />
-        <img src="/img/screenshot/sb5.jpg" />
-        <img src="/img/screenshot/sb6.jpg" />
+        <img src="/img/screenshot/sb1.jpeg" />
+        <img src="/img/screenshot/sb2.jpeg" />
+        <img src="/img/screenshot/sb3.jpeg" />
+        <img src="/img/screenshot/sb4.jpeg" />
+        <img src="/img/screenshot/sb5.jpeg" />
+        <img src="/img/screenshot/sb6.jpeg" />
       </div>
     </div>
   );
