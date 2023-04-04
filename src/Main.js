@@ -90,7 +90,7 @@ function App() {
     <div
       style={{
         backgroundImage: isMobile
-          ? `url("/img/mbg.jpeg")`
+          ? `url("/img/mbg.png")`
           : `url("/img/bg.jpeg")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
