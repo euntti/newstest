@@ -95,8 +95,8 @@ function App() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        width: "100%",
+        backgroundAttachment: "fixed",
+        // width: "auto",
         height: "100%",
       }}
     >
