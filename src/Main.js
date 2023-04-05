@@ -36,6 +36,8 @@ function App() {
     insertHistory();
   }, []);
   useEffect(() => {
+    var referrer = document.referrer;
+    window.localStorage.setItem("visit", referrer);
     insertHistory();
   }, []);
   useEffect(() => {
