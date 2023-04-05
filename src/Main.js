@@ -27,7 +27,11 @@ function App() {
 
   const [progress, setProgress] = useState(0);
   const insertHistory = () => {
-    axios.post("/visit").then((res) => {
+    const visitReq = {
+      visitUrl: document.referrer,
+    };
+
+    axios.post("/visit", visitReq).then((res) => {
       console.log("res==", res);
     });
   };
@@ -36,8 +40,6 @@ function App() {
     insertHistory();
   }, []);
   useEffect(() => {
-    var referrer = document.referrer;
-    window.localStorage.setItem("visit", referrer);
     insertHistory();
   }, []);
   useEffect(() => {
