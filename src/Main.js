@@ -124,7 +124,7 @@ function App() {
                     alt="logo "
                   /> */}
                   <img
-                    src={"/img/m_main00.jpg"}
+                    src={"/img/theme1.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />
