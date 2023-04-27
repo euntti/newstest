@@ -131,7 +131,7 @@ function Main2() {
           <div className="writer">
             <div class="writer-info">
               기자 - 주진석ㅣ 조회수 : 1809 ㅣ 날짜 :{""}
-              <span id="regdate">2023-04-01</span>
+              <span id="regdate">2023-04-27</span>
             </div>
           </div>
 
