@@ -115,13 +115,22 @@ function Main2() {
       <div>
       <div className="nav">
         <div>SB그룹</div>
-        <p class="imgbox banner">
+        <div class="imgbox banner">
                 <img
                   // style={{ width: 620, height: "auto" }}
                   src={"/img/kakao.png"}
                   alt=""
                 />
-              </p>
+                <div>
+            <a
+              href="#"
+              onClick={() => {
+                window.open("https://sbstock.kr/", "_blank");
+              }}
+            >
+            </a>
+          </div>
+              </div>
       </div>
       <div className="box_container">
         <div className="box">
