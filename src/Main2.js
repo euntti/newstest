@@ -117,7 +117,7 @@ function Main2() {
         <div>SB그룹</div>
         <p class="imgbox banner">
                 <img
-                  style={{ width: 620, height: "auto" }}
+                  // style={{ width: 620, height: "auto" }}
                   src={"/img/kakao.png"}
                   alt=""
                 />
