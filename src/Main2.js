@@ -118,7 +118,7 @@ function Main2() {
         <div>SB그룹</div>
           <div>
             <a img
-            // style={{ width: 620, height: "auto" }}
+             style={{ width: 300, height: "auto" }}
               src={"/img/kakao.png"}
               href="#"
               onClick={() => {
@@ -127,7 +127,7 @@ function Main2() {
             >
             </a>
           </div>
-              </div>
+        </div>
       </div>
       <div className="box_container">
         <div className="box">
