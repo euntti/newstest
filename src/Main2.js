@@ -114,7 +114,7 @@ function Main2() {
       <div>
       <div className="nav">
         <div>SB그룹</div>
-        <p class="box banner">
+        <div class="box banner">
                 <img src="/img/kakao.png"></img>
               {/* {isMobile && <img src="/static/images/mNotice.jpeg"></img>} */}
               <a
