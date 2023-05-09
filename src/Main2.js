@@ -182,7 +182,7 @@ function Main2() {
                   </span>
                 </div> */}
                 <div>
-                  <span
+                  {/* <span
                     style={{
                       display: "flex",
                       justifyContent: "center",
@@ -191,7 +191,7 @@ function Main2() {
                     }}
                   >
                     <Progressbar value={progress} />
-                  </span>
+                  </span> */}
                 </div>
                 <div className="inputBoxs">
                   <h1>급등종목 30일 무료제공 프로모션</h1>
