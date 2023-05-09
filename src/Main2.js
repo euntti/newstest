@@ -155,7 +155,7 @@ function Main2() {
                 <p>SB그룹 만의 투자 전략을 통해 
                 4월 , 9월을 제한 나머지 달은 모두 수익이였으며 4월,9월을 포함해 일평균으로 계산시 일 60.7% 수익률이 확인됐다.</p>
                 <Slider {...settings}>
-                <div>
+                {/* <div>
                   <span
                     style={{
                       display: "flex",
@@ -180,7 +180,7 @@ function Main2() {
                       ]}
                     />
                   </span>
-                </div>
+                </div> */}
                 <div>
                   <span
                     style={{
