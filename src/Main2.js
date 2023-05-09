@@ -8,7 +8,7 @@ import Modal from "react-modal";
 import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
-import { Modal } from "react-responsive-modal";
+
 
 const customStyles = {
   content: {
