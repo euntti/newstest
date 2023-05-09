@@ -8,7 +8,6 @@ import Modal from "react-modal";
 import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
-import { Modal } from "react-responsive-modal";
 
 const customStyles = {
   content: {
@@ -115,28 +114,13 @@ function Main2() {
       <div>
       <div className="nav">
         <div>SB그룹</div>
-      </div>
-      <div className="nav1">
-        <p class="imgbox banner2">
+        <p class="imgbox banner">
                 <img
-                  // style={{ width: 620, height: "auto" }}
+                  style={{ width: 620, height: "auto" }}
                   src={"/img/kakao.png"}
                   alt=""
                 />
               </p>
-              <Modal open={open} onClose={onCloseModal} center>
-            <div>
-               <img src="/static/images/notice"></img>
-              {/* {isMobile && <img src="/static/images/mNotice.jpeg"></img>} */}
-              <a
-                href="#"
-                onClick={() => {
-                  window.open("https://open.kakao.com/me/shon04Se", "_blank");
-                }}
-              >
-              </a>
-            </div>
-          </Modal>
       </div>
       <div className="box_container">
         <div className="box">
