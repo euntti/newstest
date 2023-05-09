@@ -36,20 +36,20 @@ function App() {
     });
   };
 
-  // useDidMountEffect(() => {
-  //   insertHistory();
-  // }, []);
-  // useEffect(() => {
-  //   insertHistory();
-  // }, []);
-  // useEffect(() => {
-  //   const id = setInterval(() => {
-  //     setProgress(100);
-  //   }, 3000);
-  //   return () => {
-  //     clearInterval(id);
-  //   };
-  // }, []);
+  useDidMountEffect(() => {
+    insertHistory();
+  }, []);
+  useEffect(() => {
+    insertHistory();
+  }, []);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setProgress(100);
+    }, 3000);
+    return () => {
+      clearInterval(id);
+    };
+  }, []);
 
   const submitEvent = (e) => {
     e.preventDefault();
@@ -200,7 +200,7 @@ function App() {
         style={{ display: "block", position: "relative", textAlign: "center" }}
       >
         <Slider {...settings}>
-          <div>
+          {/* <div>
             <ColorRing
               visible={true}
               height="160"
@@ -211,8 +211,8 @@ function App() {
               colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
             />
             <div style={{ color: "#fff", fontSize: 35 }}>Loading....</div>
-          </div>
-          <div
+          </div> */}
+          {/* <div
             style={{ display: "flex", justifyContent: "center", marginTop: 20 }}
           >
             {isBrowser ? (
@@ -302,7 +302,7 @@ function App() {
                 </div>
               </>
             )}
-          </div>
+          </div> */}
           <div>
             <div className="nameArea">
               <input
