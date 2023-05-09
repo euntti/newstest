@@ -8,6 +8,7 @@ import Modal from "react-modal";
 import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
+import { Modal } from "react-responsive-modal";
 
 const customStyles = {
   content: {
@@ -114,13 +115,56 @@ function Main2() {
       <div>
       <div className="nav">
         <div>SB그룹</div>
-        <p class="imgbox banner">
+      </div>
+      <div className="nav1">
+        <p class="imgbox banner2">
                 <img
-                  style={{ width: 620, height: "auto" }}
+                  // style={{ width: 620, height: "auto" }}
                   src={"/img/kakao.png"}
                   alt=""
                 />
               </p>
+              <Modal open={open} onClose={onCloseModal} center>
+            <div>
+               <img src="/static/images/notice"></img>
+              {/* {isMobile && <img src="/static/images/mNotice.jpeg"></img>} */}
+              <a
+                href="#"
+                onClick={() => {
+                  window.open("https://open.kakao.com/me/shon04Se", "_blank");
+                }}
+              >
+                {isDesktop ? (
+                  <button
+                    style={{
+                      position: "absolute",
+                      bottom: "2%",
+                      right: "36%",
+                      backgroundColor: "#f25700",
+                      color: "yellow",
+                      fontFamily: "GmarketSansMedium",
+                      padding: 15,
+                    }}
+                  >
+                  </button>
+                ) : (
+                  <></>
+                  // <button
+                  //   style={{
+                  //     position: "absolute",
+                  //     bottom: "2%",
+                  //     right: "20%",
+                  //     backgroundColor: "#000",
+                  //     color: "orange",
+                  //     padding: 5,
+                  //   }}
+                  // >
+                  //   1:1 카톡 상담가능{" "}
+                  // </button>
+                )}
+              </a>
+            </div>
+          </Modal>
       </div>
       <div className="box_container">
         <div className="box">
