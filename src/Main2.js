@@ -122,7 +122,7 @@ function Main2() {
                   src={"/img/kakao.png"}
                   alt=""
                 />
-                <div>
+
             <a
               href="#"
               onClick={() => {
@@ -539,8 +539,6 @@ function Main2() {
           </div>
         </div>
       </div>
-    
-    </div>
   );
 }
 
