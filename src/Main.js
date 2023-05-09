@@ -36,20 +36,20 @@ function App() {
     });
   };
 
-  useDidMountEffect(() => {
-    insertHistory();
-  }, []);
-  useEffect(() => {
-    insertHistory();
-  }, []);
-  useEffect(() => {
-    const id = setInterval(() => {
-      setProgress(100);
-    }, 3000);
-    return () => {
-      clearInterval(id);
-    };
-  }, []);
+  // useDidMountEffect(() => {
+  //   insertHistory();
+  // }, []);
+  // useEffect(() => {
+  //   insertHistory();
+  // }, []);
+  // useEffect(() => {
+  //   const id = setInterval(() => {
+  //     setProgress(100);
+  //   }, 3000);
+  //   return () => {
+  //     clearInterval(id);
+  //   };
+  // }, []);
 
   const submitEvent = (e) => {
     e.preventDefault();
