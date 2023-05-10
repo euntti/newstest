@@ -308,9 +308,6 @@ function App() {
           </div> */}
           <div>
           <div className="namephone">
-             <input type="text" class="username" placeholder="이름"></input>
-            <span>-</span>
-            <input type="number" class="phone" placeholder="휴대폰" maxlength="11" max="99999999999"></input>
             {/* <div className="nameArea">
               <input
                 type="text"
@@ -318,15 +315,22 @@ function App() {
                 placeholder="이름"
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
-            </div>
+            </div> */}
             <div className="phone">
-               {/*<select>
+               {/* {<select>
                 <option key="1" value="1">
                   010
                 </option> 
               </select>{" "}
-              -{"\t"}*/}
-              {/* <input
+              -{"\t"}} */}
+              <input
+               type="text"
+               className="username"
+               placeholder="이름"
+               onChange={(e) => setUserName(e.target.value)}
+              ></input>{" "}
+              {"\t"}
+              { <input
                 type="number"
                 className="phone"
                 placeholder="휴대폰"
@@ -334,18 +338,8 @@ function App() {
                 maxlength="11" 
                 oninput="maxLengthCheck(this)"
                 max="99999999999"
-              ></input>{" "}
-              -{"\t"} */} 
-              {/* <input
-                type="number"
-                className="phone"
-                placeholder="0000"
-                onChange={(e) => setPhone2(e.target.value)}
-                maxlength="4" 
-                oninput="maxLengthCheck(this)"
-                max="9999"
-              ></input> */}
-            {/* </div> */}
+              ></input> }
+            </div>
           </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
