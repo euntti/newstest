@@ -145,7 +145,7 @@ function App() {
                   <div
                     style={{ color: "#fff", fontSize: 30, margin: "30px 0" }}
                   >
-                    1억만들기 프로젝트 30일 무료체험 신청하세요
+                    1억만들기 프로젝트 30일 무료체험 신청하세요!!
                   </div>
                 </div>
               ) : (
