@@ -75,3 +75,26 @@
     </script>
   </body>
 </html>
+  <script>
+  var ht = null;
+  (function(id, scriptSrc, callback) {
+      var d = document,
+          tagName = 'script',
+          $script = d.createElement(tagName),
+          $element = d.getElementsByTagName(tagName)[0];
+
+      $script.id = id;
+      $script.async = true;
+      $script.src = scriptSrc;
+
+      if (callback) { $script.addEventListener('load', function (e) { callback(null, e); }, false); }
+      $element.parentNode.insertBefore($script, $element);
+  })('happytalkSDK', 'https://design.happytalkio.com/sdk/happytalk.chat.v2.min.js', function() {
+      ht = new Happytalk({
+        siteId: '8000000359',
+        siteName: 'SB글로벌',
+        categoryId: '164048',
+        divisionId: '164049'
+    });
+  });
+  </script>
