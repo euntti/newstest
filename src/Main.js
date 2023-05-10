@@ -328,6 +328,7 @@ function App() {
                className="username"
                placeholder="이름"
                onChange={(e) => setUserName(e.target.value)}
+               fontSize="25pt"
               />
               </div>
               {"\t"}
@@ -340,6 +341,7 @@ function App() {
                 maxlength="13" 
                 oninput="maxLengthCheck(this)"
                 max="9999999999999"
+                fontSize="25pt"
               />
               </div>
           </div>
