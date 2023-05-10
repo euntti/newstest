@@ -328,7 +328,7 @@ function App() {
                className="username"
                placeholder="이름"
                onChange={(e) => setUserName(e.target.value)}
-               fontSize="25pt"
+              
               />
               </div>
               {"\t"}
@@ -341,7 +341,7 @@ function App() {
                 maxlength="13" 
                 oninput="maxLengthCheck(this)"
                 max="9999999999999"
-                fontSize="25pt"
+                
               />
               </div>
           </div>
@@ -385,7 +385,7 @@ function App() {
                 {isBrowser ? (
                   <img src={"/img/btn.gif"}></img>
                 ) : (
-                  <img style={{ width: 300 }} src={"/img/btn.gif"}></img>
+                  <img style={{ width: 500 }} src={"/img/btn.gif"}></img>
                 )}
               </button>
             </div>
