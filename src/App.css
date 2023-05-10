@@ -141,22 +141,17 @@ table {
   height: 1023px;
   margin-left: 20px;
 }
-.namephone{
-  display: inline-flex;
-}
-
 .username {
-  width: 200px;
+  width: 300px;
   height: 48px;
   margin-left: 12px;
   margin-bottom: 10px;
 }
-
-/* .phone {
+.phone {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-} */
+}
 .phone select {
   width: 240px;
   height: 48px;
@@ -230,22 +225,22 @@ table {
   }
   .nameArea {
     /* background-color: red; */
-    width: 10%;
+    width: 100%;
     margin-top: 20px;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
   }
   .nameArea input {
-    width: 50vw;
+    width: 80vw;
   }
   .App .phone {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     /* background-color:red; */
   }
-  /* .App .phone select {
+  .App .phone select {
     width: 15vw;
-  } */
+  }
   .App .phone input {
     width: 20vw;
     height: 40px;

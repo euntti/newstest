@@ -18,7 +18,7 @@ function App() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
-  // const [phone2, setPhone2] = useState("");
+  const [phone2, setPhone2] = useState("");
   const [num, setNum] = useState(331231);
 
   const [check1, setCheck1] = useState(false);
@@ -136,16 +136,16 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />{" "} */}
-                  {/* <img
+                  <img
                     style={{ width: 500 }}
                     src={"/img/theme4.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
-                  /> */}
+                  />
                   <div
                     style={{ color: "#fff", fontSize: 30, margin: "30px 0" }}
                   >
-                    1억만들기 프로젝트 30일 무료체험 신청하세요!!
+                    1억만들기 프로젝트 30일 무료체험 신청하세요
                   </div>
                 </div>
               ) : (
@@ -181,16 +181,16 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />{" "} */}
-                  {/* <img
+                  <img
                     style={{ width: 300 }}
                     src={"/img/theme4.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
-                  /> */}
+                  />
                   <div
                     style={{ color: "#fff", fontSize: 20, margin: "30px 0" }}
                   >
-                    1억만들기 프로젝트 30일 무료체험 신청하세요!!!!
+                    1억만들기 프로젝트 30일 무료체험 신청하세요
                   </div>
                 </div>
               )}
@@ -306,8 +306,7 @@ function App() {
               </>
             )}
           </div> */}
-        <div>
-          <div className="namephone">
+          <div>
             <div className="nameArea">
               <input
                 type="text"
@@ -317,23 +316,23 @@ function App() {
               ></input>
             </div>
             <div className="phone">
-              {/* <select>
+              <select>
                 <option key="1" value="1">
                   010
                 </option>
               </select>{" "}
-              -{"\t"} */}
+              -{"\t"}
               <input
                 type="text"
                 className="phone"
-                placeholder="00000000000"
+                placeholder="0000"
                 onChange={(e) => setPhone1(e.target.value)}
-                maxlength="11" 
+                maxlength="4" 
                 oninput="maxLengthCheck(this)"
-                max="99999999999"
+                max="9999"
               ></input>{" "}
               -{"\t"}
-              {/* <input
+              <input
                 type="text"
                 className="phone"
                 placeholder="0000"
@@ -341,9 +340,8 @@ function App() {
                 maxlength="4" 
                 oninput="maxLengthCheck(this)"
                 max="9999"
-              ></input> */}
+              ></input>
             </div>
-          </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
                 <input
@@ -388,8 +386,7 @@ function App() {
                 )}
               </button>
             </div>
-          
-        </div>
+          </div>
         </Slider>
 
         <div className="footerInfo">
