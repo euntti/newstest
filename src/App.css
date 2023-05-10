@@ -255,7 +255,7 @@ table {
     /* padding-left: 10px;
     width: 80vw;
     height: 50px; */
-   
+    justify-content: center;
     
   }
   .App .phone {
@@ -267,7 +267,7 @@ table {
     /* width: 15vw; */
   }
   .App .phone input {
-  
+    justify-content: center;
     /* padding-left: 10px;
     width: 80vw;
     height: 50px;
