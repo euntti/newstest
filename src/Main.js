@@ -327,6 +327,9 @@ function App() {
                 className="phone"
                 placeholder="0000"
                 onChange={(e) => setPhone1(e.target.value)}
+                maxlength="4" 
+                oninput="maxLengthCheck(this)"
+                max="9999"
               ></input>{" "}
               -{"\t"}
               <input
@@ -334,6 +337,9 @@ function App() {
                 className="phone"
                 placeholder="0000"
                 onChange={(e) => setPhone2(e.target.value)}
+                maxlength="4" 
+                oninput="maxLengthCheck(this)"
+                max="9999"
               ></input>
             </div>
             <div style={{ marginLeft: 10 }}>
