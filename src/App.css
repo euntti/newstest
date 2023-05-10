@@ -260,7 +260,7 @@ table {
     height: 50px; */
     justify-content: center;
     height:75px;
-    width: 550px;
+    width: 450px;
   }
   .App .phone {
     display: block;
@@ -277,7 +277,7 @@ table {
     height: 50px;
     justify-content: center */
     height:75px;
-    width: 550px;
+    width: 400px;
   }
   .App .btnArea button {
     display: flex; 
