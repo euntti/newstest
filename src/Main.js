@@ -18,7 +18,7 @@ function App() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
-  const [phone2, setPhone2] = useState("");
+  // const [phone2, setPhone2] = useState("");
   const [num, setNum] = useState(331231);
 
   const [check1, setCheck1] = useState(false);
@@ -326,14 +326,14 @@ function App() {
               <input
                 type="text"
                 className="phone"
-                placeholder="0000"
+                placeholder="00000000000"
                 onChange={(e) => setPhone1(e.target.value)}
-                maxlength="4" 
+                maxlength="11" 
                 oninput="maxLengthCheck(this)"
-                max="9999"
+                max="99999999999"
               ></input>{" "}
               -{"\t"}
-              <input
+              {/* <input
                 type="text"
                 className="phone"
                 placeholder="0000"
@@ -341,7 +341,7 @@ function App() {
                 maxlength="4" 
                 oninput="maxLengthCheck(this)"
                 max="9999"
-              ></input>
+              ></input> */}
             </div>
           </div>
             <div style={{ marginLeft: 10 }}>
