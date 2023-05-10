@@ -62,7 +62,7 @@ function App() {
   
     
     
-    const phoneNumber = `010-${phone1}-`;
+    const phoneNumber = `${phone1}`;
     const name = userName;
     const param = {
       phoneNumber: phoneNumber,
@@ -97,7 +97,7 @@ function App() {
     <div
       style={{
         backgroundImage: isMobile
-          ? `url("/img/bg.png")`
+          ? `url("/img/bg.jpeg")`
           : `url("/img/bg.jpeg")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
