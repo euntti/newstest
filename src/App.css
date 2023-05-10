@@ -213,7 +213,8 @@ table {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-@media (max-width: 600px) (max-height: 2200px){
+@media (max-width: 600px) 
+{
   .container {
     display: flex;
     justify-content: center;
@@ -231,16 +232,16 @@ table {
     /* height:300px; */
   }
   .namephone{
-    display: inline-flex;
+    display: flex;
   }
-  .nameArea {
+  .namephone {
     /* background-color: red; */
     width: 50%;
     margin-top: 20px;
     display: flex;
     justify-content: center;
   }
-  .nameArea input {
+  .namephone input {
     width: 80vw;
   }
   .App .phone {
