@@ -245,6 +245,7 @@ table {
   }
   .namephone input {
     width: 80vw;
+    height: 50px;
   }
   .App .phone {
     display: block;
@@ -255,8 +256,8 @@ table {
     width: 15vw;
   }
   .App .phone input {
-    width: 20vw;
-    height: 40px;
+    width: 80vw;
+    height: 50px;
   }
   .App .btnArea button {
     width: 80vw;
