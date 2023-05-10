@@ -59,13 +59,16 @@ function App() {
     if (phone1 == "" || phone2 == "") {
       return alert("번호를 입력해주세요.");
     }
-
+  
+    <input type="number" maxlength="4" oninput="maxLengthCheck(this)"/>
+    
     const phoneNumber = `010-${phone1}-${phone2}`;
     const name = userName;
     const param = {
       phoneNumber: phoneNumber,
       name: name,
     };
+    
     axios.post("/client", param).then((res) => {
       console.log("res=", res);
     });
