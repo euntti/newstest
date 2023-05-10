@@ -385,7 +385,7 @@ function App() {
                 {isBrowser ? (
                   <img src={"/img/btn.gif"}></img>
                 ) : (
-                  <img style={{ width:"375px" height:"45px"  }} src={"/img/btn.gif"}></img>
+                  <img style={{ width:"375px"  }} src={"/img/btn.gif"}></img>
                 )}
               </button>
             </div>
