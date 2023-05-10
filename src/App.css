@@ -234,21 +234,20 @@ table {
   .nameArea{
     display: flex;
   }
-  .namephone{
-    display: flex;
-  }
+
   .namephone {
     /* background-color: red; */
     width: 50%;
     margin-top: 20px;
-    display: flex;
+    margin-bottom: 10px;
+    display: block;
     justify-content: center;
   }
   .namephone input {
     width: 80vw;
   }
   .App .phone {
-    display: flex;
+    display: block;
     flex-direction: row;
     /* background-color:red; */
   }
