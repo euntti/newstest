@@ -213,7 +213,7 @@ table {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 600px) (max-height: 2200px){
   .container {
     display: flex;
     justify-content: center;

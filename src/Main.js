@@ -97,14 +97,14 @@ function App() {
     <div
       style={{
         backgroundImage: isMobile
-          ? `url("/img/mbg.png")`
+          ? `url("/img/bg.png")`
           : `url("/img/bg.jpeg")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         // width: "auto",
-        height: "100%",
+        height: "2200px",
       }}
     >
       <div className="container">
