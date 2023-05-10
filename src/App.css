@@ -259,8 +259,8 @@ table {
     width: 80vw;
     height: 50px; */
     justify-content: center;
-    height: 55px;
-    width: 350px;
+    height: 45px;
+    width: 370px;
   }
   .App .phone {
     display: block;
@@ -276,8 +276,8 @@ table {
     width: 80vw;
     height: 50px;
     justify-content: center */
-    height: 55px;
-    width: 360px;
+    height: 50px;
+    width: 370px;
   }
   .App .btnArea button {
     display: flex; 
