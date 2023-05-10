@@ -323,7 +323,7 @@ function App() {
               </select>{" "}
               -{"\t"}
               <input
-                type="text"
+                type="number"
                 className="phone"
                 placeholder="0000"
                 onChange={(e) => setPhone1(e.target.value)}
@@ -332,15 +332,15 @@ function App() {
                 max="9999"
               ></input>{" "}
               -{"\t"}
-              <input
-                type="text"
+              {/* <input
+                type="number"
                 className="phone"
                 placeholder="0000"
                 onChange={(e) => setPhone2(e.target.value)}
                 maxlength="4" 
                 oninput="maxLengthCheck(this)"
                 max="9999"
-              ></input>
+              ></input> */}
             </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
