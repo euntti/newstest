@@ -244,7 +244,7 @@ table {
     justify-content: center;
   }
   .namephone input {
-    margin-left: 10px;
+    padding-left: 10px;
     width: 80vw;
     height: 50px;
   }
@@ -257,7 +257,7 @@ table {
     width: 15vw;
   }
   .App .phone input {
-    margin-left: 10px;
+    padding-left: 10px;
     width: 80vw;
     height: 50px;
   }
