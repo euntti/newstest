@@ -136,12 +136,12 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />{" "} */}
-                  <img
+                  {/* <img
                     style={{ width: 500 }}
                     src={"/img/theme4.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
-                  />
+                  /> */}
                   <div
                     style={{ color: "#fff", fontSize: 30, margin: "30px 0" }}
                   >
@@ -181,12 +181,12 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />{" "} */}
-                  <img
+                  {/* <img
                     style={{ width: 300 }}
                     src={"/img/theme4.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
-                  />
+                  /> */}
                   <div
                     style={{ color: "#fff", fontSize: 20, margin: "30px 0" }}
                   >
