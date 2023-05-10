@@ -148,9 +148,10 @@ table {
 }
 .username {
   display: flex;
-  width: 200px;
+  width: 198px;
   height: 48px;
   margin-left: 12px;
+  margin-right: 4px;
   margin-bottom: 10px;
 }
 .phone {
@@ -159,7 +160,7 @@ table {
   align-items: center;
 }
 .phone select {
-  width: 498px;
+  width: 484px;
   height: 48px;
   margin: 0 12.5px 0;
 }
