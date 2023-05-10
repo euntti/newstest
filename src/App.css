@@ -239,15 +239,15 @@ table {
   .namephone {
     /* background-color: red; */
     width: 50%;
-    /* margin-top: 20px;
-    margin-bottom: 10px; */
+    margin-top: 20px;
+    margin-bottom: 10px;
     display: block;
     justify-content: center;
+    padding-left: 50px;
     
   }
   .namephone input {
-    flex:1;
-    padding: 10px;
+    padding-left: 10px;
     width: 80vw;
     height: 50px;
   }
@@ -260,15 +260,14 @@ table {
     width: 15vw;
   }
   .App .phone input {
-    flex:1;
-    padding: 10px;
+    padding-left: 50px;
     width: 80vw;
     height: 50px;
     justify-content: center
   }
   .App .btnArea button {
-    width: 300px;
-    height: 10px;
+    /* width: 80vw;
+    height: 50px; */
     cursor: pointer;
   }
   .imgGrid {
