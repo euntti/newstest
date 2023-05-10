@@ -328,11 +328,11 @@ function App() {
                className="username"
                placeholder="이름"
                onChange={(e) => setUserName(e.target.value)}
-              ></input>{" "}
+              />
               </div>
               {"\t"}
               <div className="phone">
-              { <input
+               <input
                 type="number"
                 className="phone"
                 placeholder="휴대폰"
@@ -340,7 +340,7 @@ function App() {
                 maxlength="13" 
                 oninput="maxLengthCheck(this)"
                 max="9999999999999"
-              ></input> }
+              />
               </div>
           </div>
             <div style={{ marginLeft: 10 }}>
