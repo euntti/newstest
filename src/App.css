@@ -281,11 +281,12 @@ table {
   }
   .App .btnArea button {
     display: flex; 
-    height: 45px;
     width: 500px;
+    height: 75px;
     /* height: 50px; */
     cursor: pointer;
   }
+  
   .imgGrid {
     display: block;
   }
