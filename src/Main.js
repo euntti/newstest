@@ -136,12 +136,12 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />{" "} */}
-                  <img
+                  {/* <img
                     style={{ width: 500 }}
                     src={"/img/theme4.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
-                  />
+                  /> */}
                   <div
                     style={{ color: "#fff", fontSize: 30, margin: "30px 0" }}
                   >
@@ -181,12 +181,12 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />{" "} */}
-                  <img
+                  {/* <img
                     style={{ width: 300 }}
                     src={"/img/theme4.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
-                  />
+                  /> */}
                   <div
                     style={{ color: "#fff", fontSize: 20, margin: "30px 0" }}
                   >
@@ -306,7 +306,8 @@ function App() {
               </>
             )}
           </div> */}
-          <div>
+        <div>
+          <div className="namephone">
             <div className="nameArea">
               <input
                 type="text"
@@ -342,6 +343,7 @@ function App() {
                 max="9999"
               ></input>
             </div>
+          </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
                 <input
@@ -386,7 +388,8 @@ function App() {
                 )}
               </button>
             </div>
-          </div>
+          
+        </div>
         </Slider>
 
         <div className="footerInfo">
