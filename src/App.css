@@ -141,12 +141,17 @@ table {
   height: 1023px;
   margin-left: 20px;
 }
+.namephone{
+  display: inline-flex;
+}
+
 .username {
-  width: 300px;
+  width: 200px;
   height: 48px;
   margin-left: 12px;
   margin-bottom: 10px;
 }
+
 .phone {
   display: inline-flex;
   justify-content: center;
