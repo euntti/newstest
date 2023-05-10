@@ -56,13 +56,13 @@ function App() {
     if (userName == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phone1 == "" || phone2 == "") {
+    if (phone1 == "" ) {
       return alert("번호를 입력해주세요.");
     }
   
-    <input type="number" maxlength="4" oninput="maxLengthCheck(this)"/>
     
-    const phoneNumber = `010-${phone1}-${phone2}`;
+    
+    const phoneNumber = `010-${phone1}-`;
     const name = userName;
     const param = {
       phoneNumber: phoneNumber,
@@ -80,7 +80,7 @@ function App() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `휴대폰 번호 010-${phone1}-${phone2} ${userName}님이 신청하였습니다. `
+      `휴대폰 번호 ${phone1} ${userName}님이 신청하였습니다. `
     );
     alert("신청되었습니다.");
   };
@@ -335,9 +335,9 @@ function App() {
                 className="phone"
                 placeholder="휴대폰"
                 onChange={(e) => setPhone1(e.target.value)}
-                maxlength="11" 
+                maxlength="13" 
                 oninput="maxLengthCheck(this)"
-                max="99999999999"
+                max="9999999999999"
               ></input> }
             </div>
           </div>
