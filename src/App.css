@@ -230,13 +230,13 @@ table {
   }
   .nameArea {
     /* background-color: red; */
-    width: 50%;
+    width: 10%;
     margin-top: 20px;
     display: inline-flex;
     justify-content: center;
   }
   .nameArea input {
-    width: 20vw;
+    width: 50vw;
   }
   .App .phone {
     display: inline-flex;
