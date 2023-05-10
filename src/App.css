@@ -145,6 +145,7 @@ table {
   display: inline-flex;
 }
 .username {
+  display: inline-flex;
   width: 200px;
   height: 48px;
   margin-left: 12px;
