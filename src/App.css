@@ -143,6 +143,8 @@ table {
 }
 .namephone{
   display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 .username {
   display: inline-flex;
