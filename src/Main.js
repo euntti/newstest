@@ -317,19 +317,19 @@ function App() {
             </div>
             <div className="phone">
               <select>
-                <option key="1" value="1">
+                {/* <option key="1" value="1">
                   010
-                </option>
+                </option> */}
               </select>{" "}
               -{"\t"}
               <input
                 type="number"
                 className="phone"
-                placeholder="0000"
+                placeholder="휴대폰"
                 onChange={(e) => setPhone1(e.target.value)}
-                maxlength="4" 
+                maxlength="11" 
                 oninput="maxLengthCheck(this)"
-                max="9999"
+                max="99999999999"
               ></input>{" "}
               -{"\t"}
               {/* <input
