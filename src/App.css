@@ -236,7 +236,7 @@ table {
     justify-content: center;
   }
   .nameArea input {
-    width: 80vw;
+    width: 20vw;
   }
   .App .phone {
     display: inline-flex;
