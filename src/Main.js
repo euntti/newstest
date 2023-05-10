@@ -316,12 +316,12 @@ function App() {
               ></input>
             </div>
             <div className="phone">
-              <select>
-                {/* <option key="1" value="1">
+               {/*<select>
+                <option key="1" value="1">
                   010
-                </option> */}
+                </option> 
               </select>{" "}
-              -{"\t"}
+              -{"\t"}*/}
               <input
                 type="number"
                 className="phone"
