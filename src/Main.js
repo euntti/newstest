@@ -316,20 +316,22 @@ function App() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
-            <div className="phone">
+            <div className="namephone">
                {/* {<select>
                 <option key="1" value="1">
                   010
                 </option> 
               </select>{" "}
               -{"\t"}} */}
-              <input
+               <input
                type="text"
                className="username"
                placeholder="이름"
                onChange={(e) => setUserName(e.target.value)}
               ></input>{" "}
+              </div>
               {"\t"}
+              <div className="phone">
               { <input
                 type="number"
                 className="phone"
@@ -339,7 +341,7 @@ function App() {
                 oninput="maxLengthCheck(this)"
                 max="9999999999999"
               ></input> }
-            </div>
+              </div>
           </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
@@ -353,7 +355,7 @@ function App() {
                 />
                 개인정보취급방침동의
               </label>
-              <label style={{ color: "#fff" }}>
+              {/* <label style={{ color: "#fff" }}>
                 <input
                   type="checkbox"
                   id="privacy"
@@ -363,7 +365,7 @@ function App() {
                   onChange={(e) => setCheck2(e.target.checked)}
                 />
                 마케팅수신동의
-              </label>
+              </label> */}
               <label style={{ color: "#fff" }}>
                 <input
                   type="checkbox"
