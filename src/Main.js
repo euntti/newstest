@@ -307,6 +307,10 @@ function App() {
             )}
           </div> */}
           <div>
+          <div className="namephone">
+             <input type="text" class="username" placeholder="이름"></input>
+            <span>-</span>
+            <input type="number" class="phone" placeholder="휴대폰" maxlength="11" max="99999999999"></input>
             <div className="nameArea">
               <input
                 type="text"
@@ -342,6 +346,7 @@ function App() {
                 max="9999"
               ></input> */}
             </div>
+          </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
                 <input
