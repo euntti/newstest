@@ -239,27 +239,24 @@ table {
     display: block;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    
   }
 
   .namephone {
    
     /* background-color: red; */
-    padding: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
+
+    
     display: block;
     justify-content: center;
-    padding-left: 50px; 
     
   }
   .namephone input {
     /* padding-left: 10px;
     width: 80vw;
     height: 50px; */
-    padding: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
+   
+    
   }
   .App .phone {
     display: block;
@@ -267,12 +264,10 @@ table {
     /* background-color:red; */
   }
   .App .phone select {
-    width: 15vw;
+    /* width: 15vw; */
   }
   .App .phone input {
-    padding: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
+  
     /* padding-left: 10px;
     width: 80vw;
     height: 50px;
