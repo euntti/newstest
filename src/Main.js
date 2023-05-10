@@ -311,7 +311,7 @@ function App() {
              <input type="text" class="username" placeholder="이름"></input>
             <span>-</span>
             <input type="number" class="phone" placeholder="휴대폰" maxlength="11" max="99999999999"></input>
-            <div className="nameArea">
+            {/* <div className="nameArea">
               <input
                 type="text"
                 className="username"
@@ -326,7 +326,7 @@ function App() {
                 </option> 
               </select>{" "}
               -{"\t"}*/}
-              <input
+              {/* <input
                 type="number"
                 className="phone"
                 placeholder="휴대폰"
@@ -335,7 +335,7 @@ function App() {
                 oninput="maxLengthCheck(this)"
                 max="99999999999"
               ></input>{" "}
-              -{"\t"}
+              -{"\t"} */} 
               {/* <input
                 type="number"
                 className="phone"
@@ -345,7 +345,7 @@ function App() {
                 oninput="maxLengthCheck(this)"
                 max="9999"
               ></input> */}
-            </div>
+            {/* </div> */}
           </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
