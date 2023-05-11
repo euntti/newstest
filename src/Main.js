@@ -63,7 +63,7 @@ function App() {
     
     
     const phoneNumber = `${phone1}`;
-    const name = userName;
+    const name = `${userName}`;
     const param = {
       phoneNumber: phoneNumber,
       name: name,
@@ -385,7 +385,7 @@ function App() {
                 {isBrowser ? (
                   <img src={"/img/btn.gif"}></img>
                 ) : (
-                  <img style={{ width:"375px"  }} src={"/img/btn.gif"}></img>
+                  <img style={{ width:"390px"  }} src={"/img/btn.gif"}></img>
                 )}
               </button>
             </div>
