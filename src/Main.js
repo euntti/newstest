@@ -393,6 +393,7 @@ function App() {
           </div>
         </Slider>
         <div className="profit">
+              <img src={"/img/titleprofit.png"}></img>
               <img src={"/img/profit.jpeg"}></img>
               : (
               <img style={{ width:"390px"  }} ></img>
