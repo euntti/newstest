@@ -170,8 +170,8 @@ function App() {
                     alt="logo "
                   /> */}
                   <img
-                    style={{ width: 300 }}
-                    src={"/img/theme1.png"}
+                    style={{ width: 400 }}
+                    src={"/img/mbg.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />
