@@ -339,9 +339,8 @@ function App() {
                 placeholder="휴대폰"
                 onChange={(e) => setPhone1(e.target.value)}
                 pattern="[0-1]{3}[0-9]{4}[0-9]{4}"
-                required
                 maxlength="13" 
-                oninput="maxLengthCheck(this)"
+                required
                 
               />
               </div>
