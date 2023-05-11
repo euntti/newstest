@@ -57,7 +57,7 @@ function App() {
       return alert("이름을 입력해주세요.");
     }
     if (phone1 == "" ) {
-      return alert("번호를 입력해주세요.");
+      return alert("'-'없이 입력을 해주세요.");
     }
   
     
