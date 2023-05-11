@@ -14,6 +14,7 @@ import AnimatedNumbers from "react-animated-numbers";
 import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
 
+
 function App() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
@@ -35,7 +36,7 @@ function App() {
       console.log("res==", res);
     });
   };
-
+  
   useDidMountEffect(() => {
     insertHistory();
   }, []);
@@ -80,7 +81,7 @@ function App() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `휴대폰 번호 ${phone1} ${e}님이 신청하였습니다. `
+      `휴대폰 번호 ${phone1} ${UserName}님이 신청하였습니다. `
     );
     alert("신청되었습니다.");
   };
