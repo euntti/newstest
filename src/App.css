@@ -197,7 +197,7 @@ table {
 .midprofit{
   display: block;
   justify-content: center;
-  align-items: center;
+  
   width: 600px;
 }
 .profit {
@@ -205,9 +205,7 @@ table {
   display: block;
   width: 600px;
   height: 75px;
-  margin-left: 12px;
-  margin-right: 4px;
-  margin-bottom: 10px;
+  
   
 }
 .profit1 {
@@ -215,9 +213,7 @@ table {
   display: block;
   width: 600px;
   height: 75px;
-  margin-left: 12px;
-  margin-right: 4px;
-  margin-bottom: 10px;
+ 
 }
 
 .footerInfo {
@@ -318,8 +314,6 @@ table {
     cursor: pointer;
   }
   .midprofit{
-    
-    align-items: center;
     display: block;
     justify-content: center;
     width: 370px;
