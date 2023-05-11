@@ -392,9 +392,11 @@ function App() {
           </div>
         </Slider>
         <div className="profit">
-        <img 
-              src={"/img/titleprofit.png"}></img>
-             
+        {isBrowser ? (
+                  <img src={"/img/titleprofit.png"}></img>
+                ) : (
+                  <img style={{ width:"390px"  }} src={"/img/mtitleprofit.png"}></img>
+                )}
         </div>
         <div className="profit1">
               <img src={"/img/profit.jpeg"}></img>
