@@ -141,7 +141,7 @@ table {
   height: 1023px;
   margin-left: 20px;
 }
-.namephone{
+.namephone1{
   display: inline-flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -243,14 +243,12 @@ table {
     align-items: center;
     }
   
-  .namephone {
+  .namephone1 {
    /* background-color: red; */
    display: block;
    flex-direction: row;
-   height: 45px;
-   width: 370px;
   }
-  .namephone input {
+  .namephone1 input {
     /* padding-left: 10px;
     width: 80vw;
     height: 50px; */
