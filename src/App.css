@@ -304,18 +304,14 @@ table {
     /* height: 50px; */
     cursor: pointer;
   }
-  .midprofit{
+  .App .midprofit{
     display: block;
     justify-content: center;
     width: 200px;
   }
-  .profit {
+  .App .profit {
     border-image-width: 370px;
     display: block;
-    justify-content: center;
-    width:200px;
-  }
-  .profit input {
     justify-content: center;
     width:200px;
   }
