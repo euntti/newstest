@@ -393,9 +393,13 @@ function App() {
           </div>
         </Slider>
         <div className="profit">
-              <img src={"/img/titleprofit.png"}></img>
-              <img src={"/img/profit.jpeg"}></img>
-             
+              <img 
+              style={{ width: 400 }}
+              src={"/img/titleprofit.png"}></img>
+              <img
+              style={{ width: 400 }} 
+              src={"/img/profit.jpeg"}></img>
+              
             </div>
         <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
