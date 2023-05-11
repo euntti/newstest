@@ -395,9 +395,9 @@ function App() {
         <img 
               src={"/img/titleprofit.png"}></img>
               </div>
-          <div className="profit1">
+          {/* <div className="profit1">
               <img src={"/img/profit.jpeg"}></img>
-            </div>  
+            </div>   */}
         {/* <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
@@ -407,7 +407,7 @@ function App() {
             소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
           </div>
         </div> */}
-      </div>
+      {/* </div>
       <h3
         style={{
           fontSize: 9,
@@ -439,7 +439,7 @@ function App() {
         </h1>
         <div className="imgGrid">
 
-        </div>
+        </div> */}
       </div>
     );
 }
