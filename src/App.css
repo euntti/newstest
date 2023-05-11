@@ -203,6 +203,12 @@ table {
   display: block;
   width: 600px;
   justify-content: center;
+  
+}
+.profit1 {
+  display: block;
+  width: 600px;
+  justify-content: center;
 }
 
 .footerInfo {
@@ -305,13 +311,16 @@ table {
   .App .midprofit{
     display: block;
     justify-content: center;
-    width: 200px;
+    width: 370px;
   }
   .App .profit {
-    border-image-width: 370px;
-    display: block;
     justify-content: center;
-    width:200px;
+    width: 370px;
+    
+  }
+  .App .profit1 {
+    justify-content: center;
+    width: 370px;
   }
   /* .container {
     margin-top: 50px;
