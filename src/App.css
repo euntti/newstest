@@ -304,13 +304,17 @@ table {
     /* height: 50px; */
     cursor: pointer;
   }
+  .midprofit{
+    display: block;
+    justify-content: center;
+    width: 370px;
+  }
   .App .profit {
     display: block;
     justify-content: center;
   }
   .App .profit input {
     justify-content: center;
-    height: 45px;
     width: 370px;
   }
   .container {
