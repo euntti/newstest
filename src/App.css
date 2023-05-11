@@ -141,7 +141,7 @@ table {
   height: 1023px;
   margin-left: 20px;
 }
-.namephone1{
+.nameArea{
   display: inline-flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -242,7 +242,7 @@ table {
     
     
   }
-  .namephone1 {
+  .username {
    
     /* background-color: red; */
     
@@ -250,7 +250,7 @@ table {
     justify-content: center;
     
   }
-  .namephone1 input {
+  .username input {
     /* padding-left: 10px;
     width: 80vw;
     height: 50px; */
