@@ -194,12 +194,7 @@ table {
   flex-direction: column;
   align-items: center;
 }
-.midprofit{
-  display: block;
-  justify-content: center;
-  
-  width: 600px;
-}
+
 .profit {
   justify-content: center;
   display: block;
@@ -312,11 +307,6 @@ table {
  
     /* height: 50px; */
     cursor: pointer;
-  }
-  .midprofit{
-    display: block;
-    justify-content: center;
-    width: 500px;
   }
    .profit {
     display: block;
