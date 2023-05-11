@@ -196,10 +196,10 @@ table {
 }
 
 .profit {
-  display: flex;
+  display: block;
   height: 75px;
   justify-content: center;
-  width: 2000px;
+  width: 800px;
   
 }
 .profit1 {
