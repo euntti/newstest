@@ -195,18 +195,19 @@ table {
   align-items: center;
 }
 .midprofit{
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
+  width: 600px;
 }
 .profit {
-  display: block;
+  
   width: 600px;
   justify-content: center;
   
 }
 .profit1 {
-  display: block;
+  
   width: 600px;
   justify-content: center;
 }
@@ -309,6 +310,8 @@ table {
     cursor: pointer;
   }
   .App .midprofit{
+    
+    align-items: center;
     display: block;
     justify-content: center;
     width: 370px;
