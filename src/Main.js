@@ -82,7 +82,7 @@ function App() {
       TELEGRAM_CHAT_ID,
       `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. `
     );
-    alert("신청되었습니다.");
+    alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
   };
   const settings = {
     dots: false,
