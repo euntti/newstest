@@ -316,16 +316,18 @@ table {
   .midprofit{
     display: block;
     justify-content: center;
-    width: 370px;
+    width: 500px;
   }
    .profit {
+    display: block;
     justify-content: center;
-    width: 370px;
+    width: 500px;
     
   }
   .profit1 {
+    display: block;
     justify-content: center;
-    width: 370px;
+    width: 500px;
   }
   /* .container {
     margin-top: 50px;
