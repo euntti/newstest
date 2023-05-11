@@ -391,7 +391,7 @@ function App() {
             </div>
           </div>
         </Slider>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}></div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <div className="midprofit">
         <div className="profit">
         <img 
@@ -401,6 +401,7 @@ function App() {
               <img src={"/img/profit.jpeg"}></img>
             </div>  
       </div>
+    </div>
         <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
