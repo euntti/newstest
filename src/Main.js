@@ -14,7 +14,6 @@ import AnimatedNumbers from "react-animated-numbers";
 import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
 
-
 function App() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
@@ -36,7 +35,7 @@ function App() {
       console.log("res==", res);
     });
   };
-  
+
   useDidMountEffect(() => {
     insertHistory();
   }, []);
@@ -64,7 +63,7 @@ function App() {
     
     
     const phoneNumber = `${phone1}`;
-    const name = `${userName}`;
+    const name = userName;
     const param = {
       phoneNumber: phoneNumber,
       name: name,
@@ -81,7 +80,7 @@ function App() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName} 휴대폰 번호 ${phone1} 님이 신청하였습니다. `
+      `휴대폰 번호 ${phone1} ${e}님이 신청하였습니다. `
     );
     alert("신청되었습니다.");
   };
@@ -171,8 +170,8 @@ function App() {
                     alt="logo "
                   /> */}
                   <img
-                    style={{ width: 400 }}
-                    src={"/img/mbg.png"}
+                    style={{ width: 300 }}
+                    src={"/img/theme1.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />
@@ -317,7 +316,7 @@ function App() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
-            <div className="username">
+            <div className="namephone">
                {/* {<select>
                 <option key="1" value="1">
                   010
@@ -326,7 +325,7 @@ function App() {
               -{"\t"}} */}
                <input
                type="text"
-               className="userName"
+               className="username"
                placeholder="이름"
                onChange={(e) => setUserName(e.target.value)}
               
@@ -339,10 +338,9 @@ function App() {
                 className="phone"
                 placeholder="휴대폰"
                 onChange={(e) => setPhone1(e.target.value)}
-                pattern="[0-1]{3}[0-9]{4}[0-9]{4}"
                 maxlength="13" 
+                oninput="maxLengthCheck(this)"
                 max="9999999999999"
-                required
                 
               />
               </div>
@@ -407,7 +405,7 @@ function App() {
       <h3
         style={{
           fontSize: 9,
-          display: "flex", 
+          display: "flex",
           justifyContent: "center",
           color: "#fff",
         }}
