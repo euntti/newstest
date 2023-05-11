@@ -142,11 +142,11 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                  <div
+                  {/* <div
                     style={{ color: "#fff", fontSize: 30, margin: "30px 0" }}
                   >
                     1억만들기 프로젝트 30일 무료체험 신청하세요
-                  </div>
+                  </div> */}
                 </div>
               ) : (
                 // <img
@@ -187,11 +187,11 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                  <div
+                  {/* <div
                     style={{ color: "#fff", fontSize: 20, margin: "30px 0" }}
                   >
                     1억만들기 프로젝트 30일 무료체험 신청하세요
-                  </div>
+                  </div> */}
                 </div>
               )}
             </div>
