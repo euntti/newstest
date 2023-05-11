@@ -309,19 +309,19 @@ table {
     /* height: 50px; */
     cursor: pointer;
   }
-  .App .midprofit{
+  .midprofit{
     
     align-items: center;
     display: block;
     justify-content: center;
     width: 370px;
   }
-  .App .profit {
+   .profit {
     justify-content: center;
     width: 370px;
     
   }
-  .App .profit1 {
+  .profit1 {
     justify-content: center;
     width: 370px;
   }
