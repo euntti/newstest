@@ -197,7 +197,7 @@ table {
 
 .profit {
   display: block;
-  height: 75px;
+ 
   justify-content: center;
   width: 2000px;
   
@@ -205,7 +205,7 @@ table {
 .profit1 {
   display: flex;
   justify-content: center;
-  width: 2000px;
+  
  
 }
 
