@@ -309,22 +309,22 @@ table {
     justify-content: center;
     width: 200px;
   }
-  .App .profit {
+  .profit {
     display: block;
     justify-content: center;
     width:200px;
   }
-  .App .profit input {
+  .profit input {
     justify-content: center;
     width:200px;
   }
-  .container {
+  /* .container {
     margin-top: 50px;
   }
   .container img {
     width: 100%;
     height: 150px;
-  }
+  } */
   .imgGrid {
     display: block;
   }
