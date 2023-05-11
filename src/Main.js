@@ -380,6 +380,7 @@ function App() {
                 광고성문자수신동의
               </label>
             </div>
+          
             <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
@@ -392,13 +393,11 @@ function App() {
           </div>
         </Slider>
         <div className="profit">
-              <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
                   <img src={"/img/profit.jpeg"}></img>
                 ) : (
                   <img style={{ width:"390px"  }} src={"/img/btn.gif"}></img>
                 )}
-              </button>
             </div>
         <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
