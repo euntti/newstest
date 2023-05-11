@@ -412,7 +412,7 @@ function App() {
           color: "#fff",
         }}
       >
-        (AD)ㅇ
+        (AD)
       </h3>
       <h4
         style={{
