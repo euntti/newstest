@@ -241,17 +241,12 @@ table {
     display: block;
     justify-content: center;
     align-items: center;
-    
-    
-  }
-
+    }
+  
   .namephone {
-   
-    /* background-color: red; */
-
-    
-    display: block;
-    justify-content: center;
+   /* background-color: red; */
+   display: block;
+   flex-direction: row;
     
   }
   .namephone input {
