@@ -201,15 +201,23 @@ table {
   width: 600px;
 }
 .profit {
-  
-  width: 600px;
   justify-content: center;
+  display: block;
+  width: 600px;
+  height: 75px;
+  margin-left: 12px;
+  margin-right: 4px;
+  margin-bottom: 10px;
   
 }
 .profit1 {
-  
-  width: 600px;
   justify-content: center;
+  display: block;
+  width: 600px;
+  height: 75px;
+  margin-left: 12px;
+  margin-right: 4px;
+  margin-bottom: 10px;
 }
 
 .footerInfo {
