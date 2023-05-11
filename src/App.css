@@ -247,7 +247,8 @@ table {
    /* background-color: red; */
    display: block;
    flex-direction: row;
-    
+   height: 45px;
+   width: 370px;
   }
   .namephone input {
     /* padding-left: 10px;
