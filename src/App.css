@@ -194,13 +194,15 @@ table {
   flex-direction: column;
   align-items: center;
 }
-
+.midprofit{
+  display: block;
+  justify-content: center;
+  
+  width: 600px;
+}
 .profit {
   justify-content: center;
   display: block;
-  width: 600px;
-  height: 75px;
-  
   
 }
 .profit1 {
@@ -308,6 +310,7 @@ table {
     /* height: 50px; */
     cursor: pointer;
   }
+  
    .profit {
     display: block;
     justify-content: center;
