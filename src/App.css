@@ -307,15 +307,16 @@ table {
   .midprofit{
     display: block;
     justify-content: center;
-    width: 370px;
+    width: 200px;
   }
   .App .profit {
     display: block;
     justify-content: center;
+    width:200px;
   }
   .App .profit input {
     justify-content: center;
-    width: 370px;
+    width:200px;
   }
   .container {
     margin-top: 50px;
