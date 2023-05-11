@@ -342,7 +342,6 @@ function App() {
                 required
                 maxlength="13" 
                 oninput="maxLengthCheck(this)"
-                max="9999999999999"
                 
               />
               </div>
