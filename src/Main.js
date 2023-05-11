@@ -81,7 +81,7 @@ function App() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      ` ${userName} ${phone1} 님이 신청하였습니다. `
+      `휴대폰 번호 ${phone1} ${e}님이 신청하였습니다. `
     );
     alert("신청되었습니다.");
   };
@@ -326,7 +326,7 @@ function App() {
               -{"\t"}} */}
                <input
                type="text"
-               className="userName"
+               className="username"
                placeholder="이름"
                onChange={(e) => setUserName(e.target.value)}
               
@@ -412,7 +412,7 @@ function App() {
           color: "#fff",
         }}
       >
-        (AD)1
+        (AD)ㅇ
       </h3>
       <h4
         style={{
