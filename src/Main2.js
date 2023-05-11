@@ -87,7 +87,7 @@ function Main2() {
       TELEGRAM_CHAT_ID,
       nickName + "님이 신청했습니다" + "폰번호는 " + phoneNumber
     );
-    alert("완료했습니다");
+    alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다. ");
     // console.log("as");
     // var customer = {};
     // customer.nickName = nickName;
