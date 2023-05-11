@@ -94,7 +94,7 @@ function App() {
     autoplaySpeed: 3000,
   };
   return (
-    <><div
+    <div
       style={{
         backgroundImage: isMobile
           ? `url("/img/bg.jpeg")`
@@ -121,31 +121,32 @@ function App() {
                   }}
                 >
                   {/* <img
-              className="appPicture"
-              src={"/img/logo.png"}
-              // style={{ width: 800, height: 1023, marginLeft: 20 }}
-              alt="logo "
-            /> */}
+                    className="appPicture"
+                    src={"/img/logo.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  /> */}
                   <img
                     src={"/img/theme1.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo " />
+                    alt="logo "
+                  />
                   {/* <img
-              src={"/img/theme2.png"}
-              // style={{ width: 800, height: 1023, marginLeft: 20 }}
-              alt="logo "
-            />{" "} */}
+                    src={"/img/theme2.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  />{" "} */}
                   {/* <img
-              style={{ width: 500 }}
-              src={"/img/theme4.png"}
-              // style={{ width: 800, height: 1023, marginLeft: 20 }}
-              alt="logo "
-            /> */}
+                    style={{ width: 500 }}
+                    src={"/img/theme4.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  /> */}
                   {/* <div
-              style={{ color: "#fff", fontSize: 30, margin: "30px 0" }}
-            >
-              1억만들기 프로젝트 30일 무료체험 신청하세요
-            </div> */}
+                    style={{ color: "#fff", fontSize: 30, margin: "30px 0" }}
+                  >
+                    1억만들기 프로젝트 30일 무료체험 신청하세요
+                  </div> */}
                 </div>
               ) : (
                 // <img
@@ -163,33 +164,34 @@ function App() {
                   }}
                 >
                   {/* <img
-              className="appPicture"
-              src={"/img/logo.png"}
-              // style={{ width: 800, height: 1023, marginLeft: 20 }}
-              alt="logo "
-            /> */}
+                    className="appPicture"
+                    src={"/img/logo.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  /> */}
                   <img
                     style={{ width: 400 }}
                     src={"/img/mbg.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo " />
+                    alt="logo "
+                  />
                   {/* <img
-              style={{ width: 300 }}
-              src={"/img/theme2.png"}
-              // style={{ width: 800, height: 1023, marginLeft: 20 }}
-              alt="logo "
-            />{" "} */}
+                    style={{ width: 300 }}
+                    src={"/img/theme2.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  />{" "} */}
                   {/* <img
-              style={{ width: 300 }}
-              src={"/img/theme4.png"}
-              // style={{ width: 800, height: 1023, marginLeft: 20 }}
-              alt="logo "
-            /> */}
+                    style={{ width: 300 }}
+                    src={"/img/theme4.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  /> */}
                   {/* <div
-              style={{ color: "#fff", fontSize: 20, margin: "30px 0" }}
-            >
-              1억만들기 프로젝트 30일 무료체험 신청하세요
-            </div> */}
+                    style={{ color: "#fff", fontSize: 20, margin: "30px 0" }}
+                  >
+                    1억만들기 프로젝트 30일 무료체험 신청하세요
+                  </div> */}
                 </div>
               )}
             </div>
@@ -202,143 +204,147 @@ function App() {
       >
         <Slider {...settings}>
           {/* <div>
-      <ColorRing
-        visible={true}
-        height="160"
-        width="160"
-        ariaLabel="blocks-loading"
-        wrapperStyle={{}}
-        wrapperClass="blocks-wrapper"
-        colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
-      />
-      <div style={{ color: "#fff", fontSize: 35 }}>Loading....</div>
-    </div> */}
+            <ColorRing
+              visible={true}
+              height="160"
+              width="160"
+              ariaLabel="blocks-loading"
+              wrapperStyle={{}}
+              wrapperClass="blocks-wrapper"
+              colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
+            />
+            <div style={{ color: "#fff", fontSize: 35 }}>Loading....</div>
+          </div> */}
           {/* <div
-      style={{ display: "flex", justifyContent: "center", marginTop: 20 }}
-    >
-      {isBrowser ? (
-        <>
-          <Progressbar value={progress} />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: 25,
-            }}
+            style={{ display: "flex", justifyContent: "center", marginTop: 20 }}
           >
-            <h2
-              style={{
-                fontSize: 35,
-                display: "flex",
-                alignItems: "center",
-                color: "#fff",
-              }}
-            >
-              신청자 수
-            </h2>
-            <AnimatedNumbers
-              includeComma
-              animateToNumber={num}
-              fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
-              locale="en-US"
-              configs={[{ mass: 1, tension: 220, friction: 100 }]}
-            />
-            <h2
-              style={{
-                fontSize: 35,
-                color: "#fff",
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              명
-            </h2>
-          </div>
-          <div style={{ fontSize: 25, color: "#fffc02 " }}>
-            거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
-          </div>
-        </>
-      ) : (
-        <>
-          <div style={{ width: 300 }}>
-            <Progressbar value={progress} />
-          </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: 25,
-            }}
-          >
-            <h2
-              style={{
-                fontSize: 35,
-                display: "flex",
-                alignItems: "center",
-                color: "#fff",
-              }}
-            >
-              신청자 수
-            </h2>
-            <AnimatedNumbers
-              includeComma
-              animateToNumber={num}
-              fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
-              locale="en-US"
-              configs={[{ mass: 1, tension: 220, friction: 100 }]}
-            />
-            <h2
-              style={{
-                fontSize: 35,
-                color: "#fff",
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              명
-            </h2>
-          </div>
-          <div style={{ fontSize: 25, color: "#fffc02 " }}>
-            거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
-          </div>
-        </>
-      )}
-    </div> */}
+            {isBrowser ? (
+              <>
+                <Progressbar value={progress} />
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: 25,
+                  }}
+                >
+                  <h2
+                    style={{
+                      fontSize: 35,
+                      display: "flex",
+                      alignItems: "center",
+                      color: "#fff",
+                    }}
+                  >
+                    신청자 수
+                  </h2>
+                  <AnimatedNumbers
+                    includeComma
+                    animateToNumber={num}
+                    fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
+                    locale="en-US"
+                    configs={[{ mass: 1, tension: 220, friction: 100 }]}
+                  />
+                  <h2
+                    style={{
+                      fontSize: 35,
+                      color: "#fff",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    명
+                  </h2>
+                </div>
+                <div style={{ fontSize: 25, color: "#fffc02 " }}>
+                  거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
+                </div>
+              </>
+            ) : (
+              <>
+                <div style={{ width: 300 }}>
+                  <Progressbar value={progress} />
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: 25,
+                  }}
+                >
+                  <h2
+                    style={{
+                      fontSize: 35,
+                      display: "flex",
+                      alignItems: "center",
+                      color: "#fff",
+                    }}
+                  >
+                    신청자 수
+                  </h2>
+                  <AnimatedNumbers
+                    includeComma
+                    animateToNumber={num}
+                    fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
+                    locale="en-US"
+                    configs={[{ mass: 1, tension: 220, friction: 100 }]}
+                  />
+                  <h2
+                    style={{
+                      fontSize: 35,
+                      color: "#fff",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    명
+                  </h2>
+                </div>
+                <div style={{ fontSize: 25, color: "#fffc02 " }}>
+                  거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
+                </div>
+              </>
+            )}
+          </div> */}
           <div>
-            <div className="nameArea">
-              {/* <div className="nameArea">
-      <input
-        type="text"
-        className="username"
-        placeholder="이름"
-        onChange={(e) => setUserName(e.target.value)}
-      ></input>
-    </div> */}
-              <div className="namephone ">
-                {/* {<select>
-     <option key="1" value="1">
-       010
-     </option>
-   </select>{" "}
-   -{"\t"}} */}
-                <input
-                  type="text"
-                  className="username"
-                  placeholder="이름"
-                  onChange={(e) => setUserName(e.target.value)} />
+          <div className="nameArea">
+            {/* <div className="nameArea">
+              <input
+                type="text"
+                className="username"
+                placeholder="이름"
+                onChange={(e) => setUserName(e.target.value)}
+              ></input>
+            </div> */}
+            <div className="namephone ">
+               {/* {<select>
+                <option key="1" value="1">
+                  010
+                </option> 
+              </select>{" "}
+              -{"\t"}} */}
+               <input
+               type="text"
+               className="username"
+               placeholder="이름"
+               onChange={(e) => setUserName(e.target.value)}
+              
+              />
               </div>
               {"\t"}
               <div className="phone">
-                <input
-                  type="number"
-                  className="phone"
-                  placeholder="휴대폰"
-                  onChange={(e) => setPhone1(e.target.value)}
-                  maxlength="13"
-                  oninput="maxLengthCheck(this)"
-                  max="9999999999999" />
+               <input
+                type="number"
+                className="phone"
+                placeholder="휴대폰"
+                onChange={(e) => setPhone1(e.target.value)}
+                maxlength="13" 
+                oninput="maxLengthCheck(this)"
+                max="9999999999999"
+                
+              />
               </div>
-            </div>
+          </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
                 <input
@@ -347,20 +353,21 @@ function App() {
                   name="agree1"
                   value="1"
                   checked={check1}
-                  onChange={(e) => setCheck1(e.target.checked)} />
+                  onChange={(e) => setCheck1(e.target.checked)}
+                />
                 개인정보취급방침동의
               </label>
               {/* <label style={{ color: "#fff" }}>
-      <input
-        type="checkbox"
-        id="privacy"
-        name="agree2"
-        value="1"
-        checked={check2}
-        onChange={(e) => setCheck2(e.target.checked)}
-      />
-      마케팅수신동의
-    </label> */}
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="agree2"
+                  value="1"
+                  checked={check2}
+                  onChange={(e) => setCheck2(e.target.checked)}
+                />
+                마케팅수신동의
+              </label> */}
               <label style={{ color: "#fff" }}>
                 <input
                   type="checkbox"
@@ -368,44 +375,51 @@ function App() {
                   name="agree3"
                   value="1"
                   checked={check3}
-                  onChange={(e) => setCheck3(e.target.checked)} />
+                  onChange={(e) => setCheck3(e.target.checked)}
+                />
                 광고성문자수신동의
               </label>
             </div>
-            <div className="btnArea">
+          <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
                   <img src={"/img/btn.gif"}></img>
                 ) : (
-                  <img style={{ width: "390px" }} src={"/img/btn.gif"}></img>
+                  <img style={{ width:"390px"  }} src={"/img/btn.gif"}></img>
                 )}
               </button>
             </div>
           </div>
         </Slider>
         <div className="profit">
-          <img style={"390px"} src={"/img/titleprofit.png"}>
-        </img>
-      
-      <div className="footerInfo">
-        <div>상호명:(주)SB 글로벌 투자그룹 </div>
-        <div>대표자:엄원택 </div>
+        <img 
+              src={"/img/titleprofit.png"}></img>
+             
+        </div>
+        <div className="profit1">
+              <img src={"/img/profit.jpeg"}></img>
+            </div>  
+        <div className="footerInfo">
+          <div>상호명:(주)SB 글로벌 투자그룹 </div>
+          <div>대표자:엄원택 </div>
 
-        <div>사업자등록번호: 178-88-01858 </div>
-        <div>
-          소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
+          <div>사업자등록번호: 178-88-01858 </div>
+          <div>
+            소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
+          </div>
         </div>
       </div>
-    </div><h3
-      style={{
-        fontSize: 9,
-        display: "flex",
-        justifyContent: "center",
-        color: "#fff",
-      }}
-    >
+      <h3
+        style={{
+          fontSize: 9,
+          display: "flex",
+          justifyContent: "center",
+          color: "#fff",
+        }}
+      >
         (AD)
-      </h3><h4
+      </h3>
+      <h4
         style={{
           fontSize: 9,
           display: "flex",
@@ -414,7 +428,8 @@ function App() {
         }}
       >
         해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.
-      </h4><h1
+      </h4>
+      <h1
         style={{
           color: "#fff",
           fontSize: 50,
@@ -422,9 +437,10 @@ function App() {
           marginTop: 20,
         }}
       >
-      </h1><div className="imgGrid">
+        </h1>
+        <div className="imgGrid">
 
-      </div></>
+        </div>
       </div>
     );
 }
