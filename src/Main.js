@@ -391,7 +391,7 @@ function App() {
             </div>
           </div>
         </Slider>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div style={{ width:"400px" , justifyContent: 'center', alignItems: 'center' }}>
       <div className="midprofit">
         <div className="profit">
         <img 
