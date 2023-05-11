@@ -1,4 +1,4 @@
-import "./Main3.css";
+import "./App2.css";
 import TelegramApi from "node-telegram-api";
 import { useState, useEffect } from "react";
 import {
@@ -14,7 +14,12 @@ import AnimatedNumbers from "react-animated-numbers";
 import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
 
-function Main3() {
+import logo from "./logo.svg";
+import Modal from "react-modal";
+
+
+
+function App2() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
@@ -447,4 +452,4 @@ function Main3() {
     );
 }
 
-export default Main3;
+export default App2;
