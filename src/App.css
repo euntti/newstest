@@ -304,6 +304,15 @@ table {
     /* height: 50px; */
     cursor: pointer;
   }
+  .App .profit {
+    display: block;
+    justify-content: center;
+  }
+  .App .profit input {
+    justify-content: center;
+    height: 45px;
+    width: 370px;
+  }
   .container {
     margin-top: 50px;
   }
