@@ -310,6 +310,7 @@ table {
     width: 200px;
   }
   .profit {
+    border-image-width: 370px;
     display: block;
     justify-content: center;
     width:200px;
