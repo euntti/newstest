@@ -316,7 +316,7 @@ function App() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
-            <div className="namephone input">
+            <div className="namephone ">
                {/* {<select>
                 <option key="1" value="1">
                   010
