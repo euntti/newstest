@@ -81,7 +81,7 @@ function App() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      ` ${e} ${phone1} 님이 신청하였습니다. `
+      ` ${userName} ${phone1} 님이 신청하였습니다. `
     );
     alert("신청되었습니다.");
   };
