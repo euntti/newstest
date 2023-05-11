@@ -80,7 +80,7 @@ function App() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `휴대폰 번호 ${phone1} ${username}님이 신청하였습니다. `
+      `휴대폰 번호 ${phone1} ${e}님이 신청하였습니다. `
     );
     alert("신청되었습니다.");
   };
@@ -334,13 +334,15 @@ function App() {
               {"\t"}
               <div className="phone">
                <input
-                type="tel"
+                type="number"
                 className="phone"
                 placeholder="휴대폰"
                 onChange={(e) => setPhone1(e.target.value)}
                 pattern="[0-1]{3}[0-9]{4}[0-9]{4}"
-                maxlength="13" 
                 required
+                maxlength="13" 
+                oninput="maxLengthCheck(this)"
+                
               />
               </div>
           </div>
