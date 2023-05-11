@@ -201,15 +201,17 @@ table {
   width: 600px;
 }
 .profit {
+  display: flex;
+  height: 75px;
   justify-content: center;
-  display: block;
+  width: 800px;
   
 }
 .profit1 {
-  justify-content: center;
-  display: block;
-  width: 600px;
+  display: flex;
   height: 75px;
+  justify-content: center;
+  width: 2000px;
  
 }
 
