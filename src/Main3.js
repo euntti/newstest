@@ -396,7 +396,7 @@ function App2() {
             </div>
           </div>
         </Slider>
-        <div className="profit">
+        {/* <div className="profit">
         {isBrowser ? (
                   <img src={"/img/titleprofit.png"}></img>
                 ) : (
@@ -405,7 +405,7 @@ function App2() {
         </div>
         <div className="profit1">
               <img src={"/img/profit.jpeg"}></img>
-            </div>  
+            </div>   */}
         <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
