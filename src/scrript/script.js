@@ -11,27 +11,21 @@
   <script>
     const popupTrigger = document.getElementById('popup-trigger');
     
-        popupTrigger.addEventListener('click', () => {
+        popupTrigger.addEventListener('click', () ={
       // 팝업 창 요소 생성
-      const popupWrapper = document.createElement('div');
+      popupWrapper = document.createElement('div');
       popupWrapper.classList.add('popup-wrapper');
       const popup = document.createElement('div');
       popup.classList.add('popup');
-      popup.innerHTML = `
-        <h2>Popup Title</h2>
-        <p>Popup content goes here.</p>
-        <div class="popup-close">
-          <a href="#">Close</a>
-        </div>
-      `;
+      popup.innerHTML = `index1.html`;
       popupWrapper.appendChild(popup);
       document.body.appendChild(popupWrapper);
       
       // 팝업 창 닫기
       const popupClose = popup.querySelector('.popup-close a');
-      popupClose.addEventListener('click', () => {
+      popupClose.addEventListener('click', () =
         document.body.removeChild(popupWrapper);
-      });
+      );
       
       // 팝업 창 열기
       popupWrapper.classList.add('active');
