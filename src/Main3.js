@@ -360,7 +360,8 @@ function App2() {
                   checked={check1}
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
-                개인정보취급방침동의
+                (필수)개인정보취급방침동의
+                <a href="javascript:void(0);" onclick="privacy_pop('show', '.pop-policy',2)">[보기]</a>
               </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
@@ -382,7 +383,8 @@ function App2() {
                   checked={check3}
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
-                광고성문자수신동의
+                (필수)광고성문자수신동의
+                <a href="javascript:void(0);" onclick="privacy_pop('show', '.pop-policy',2)">[보기]</a>
               </label>
             </div>
           <div className="btnArea">
