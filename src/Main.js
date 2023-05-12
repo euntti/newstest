@@ -355,6 +355,7 @@ function App() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                 개인정보취급방침동의
+                <a href="javascript:void(0);" onclick="privacy_pop('show', '.pop-policy',2)">[보기]</a>
               </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
@@ -377,6 +378,7 @@ function App() {
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 광고성문자수신동의
+                <a href="javascript:void(0);" onclick="privacy_pop('show', '.pop-policy',2)">[보기]</a>
               </label>
             </div>
           <div className="btnArea">
