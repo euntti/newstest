@@ -378,7 +378,7 @@ function App() {
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 광고성문자수신동의
-                <a href="javascript:void(0);" onclick="privacy_pop('show', '.pop-policy',2)">[보기]</a>
+                <a href="javascript:void(0);" onclick="Popup1('show', '.popup',2)">[보기]</a>
               </label>
             </div>
           <div className="btnArea">
