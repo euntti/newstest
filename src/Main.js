@@ -334,14 +334,13 @@ function App() {
               {"\t"}
               <div className="phone">
                <input
-                type="number"
+                type="tel"
                 className="phone"
                 placeholder="휴대폰"
                 onChange={(e) => setPhone1(e.target.value)}
                 maxlength="13" 
-                oninput="maxLengthCheck(this)"
-                max="9999999999999"
-                
+                onkeypress="onlynumber(this)"
+              
               />
               </div>
           </div>
