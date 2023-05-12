@@ -381,7 +381,6 @@ function App() {
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 광고성문자수신동의
-                <button id="popup-trigger">보기</button>
               </label>
               
             </div>
