@@ -28,12 +28,12 @@ popupTrigger.addEventListener('click', function() {
   <button id="popup-trigger">Open Popup</button>
   
   <script>
-    const popupTrigger = document.getElementById('popup-trigger');
+    !{function const popupTrigger = document.getElementById('popup-trigger');
     
         popupTrigger.addEventListener('click', () ={
       // 팝업 창 요소 생성
       popupWrapper = document.createElement('div');
-      popupWrapper.classList.add('popup-wrapper');
+      popupWrapper r.classList.add('popup-wrapper');
       const popup = document.createElement('div');
       popup.classList.add('popup');
       popup.innerHTML = `index1.html`;
@@ -44,10 +44,10 @@ popupTrigger.addEventListener('click', function() {
       const popupClose = popup.querySelector('.popup-close a');
       popupClose.addEventListener('click', () =
         document.body.removeChild(popupWrapper);
-      );
+      )};
       
       // 팝업 창 열기
-      popupWrapper.classList.add('active');
+      {popupWrapper.classList.add('active');
     });
   </script>
 </body>
