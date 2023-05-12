@@ -1,4 +1,23 @@
+// popup 생성
+const popupWrapper = document.createElement('div');
+popupWrapper.classList.add('popup-wrapper');
 
+const popup = document.createElement('div');
+popup.classList.add('popup');
+
+const closeBtn = document.createElement('button');
+closeBtn.classList.add('close-btn');
+closeBtn.textContent = 'X';
+
+popup.appendChild(closeBtn);
+popupWrapper.appendChild(popup);
+document.body.appendChild(popupWrapper);
+
+// 버튼 클릭 시 팝업 토글
+const popupTrigger = document.getElementById('popup-trigger');
+popupTrigger.addEventListener('click', function() {
+  popupWrapper.classList.toggle('active');
+});
 <html>
 <head>
   <meta charset="utf-8" />
