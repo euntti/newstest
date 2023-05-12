@@ -381,52 +381,31 @@ function App() {
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 광고성문자수신동의
-                
-                <html>          
-                <head>
-	<meta charset="UTF-8">
-	<title>Popup Example</title>
-</head>
-<body>
-	<h1>Popup Example</h1>
-	<button id="popup-trigger">Open Popup</button>
-	<div id="popup-wrapper" class="popup-wrapper">
-		<div class="popup">
-			<div class="popup-close"><a href="#">Close</a></div>
-			<div id="popup-content"></div>
-		</div>
-	</div>
-	<script>
-	(function() {
-	  const popupTrigger = document.getElementById('popup-trigger');
-	  const popupWrapper = document.getElementById('popup-wrapper');
-	  const popupContent = document.getElementById('popup-content');
-	  
-	  popupTrigger.addEventListener('click', () => {
-	    // 팝업 창 열기
-	    popupWrapper.style.display = 'flex';
-	    
-	    // 페이지 가져오기
-	    const xhr = new XMLHttpRequest();
-	    xhr.onreadystatechange = function() {
-	      if (this.readyState === 4 && this.status === 200) {
-	        popupContent.innerHTML = this.responseText;
-	      }
-	    };
-	    xhr.open('GET', 'popup-page.html', true);
-	    xhr.send();
-	  });
-	  
-	  const popupClose = document.querySelector('.popup-close a');
-	  popupClose.addEventListener('click', () => {
-	    // 팝업 창 닫기
-	    popupWrapper.style.display = 'none';
-	    popupContent.innerHTML = '';
-	  });
-	})();
-	</script>
-</body>
-</html>
+                <button id="popup-trigger">보기</button>
+                <script>
+                const popupTrigger = document.getElementById('popup-trigger');
+
+                popupTrigger.addEventListener('click', () => {
+                // 팝업 창 요소 생성
+                const popupWrapper = document.createElement('div');
+                popupWrapper.classList.add('popup-wrapper');
+                const popup = document.createElement('div');
+                 popup.classList.add('popup');
+                popup.innerHTML = '<iframe src="popip-page.html"></iframe>'; 
+                popupWrapper.appendChild(popup);
+                document.body.appendChild(popupWrapper);
+
+                // 팝업 창 닫기
+                const popupClose = popup.querySelector('.popup-close a');
+                popupClose.addEventListener('click', () => {
+                document.body.removeChild(popupWrapper);
+                });
+
+    // 팝업 창 열기
+    popupWrapper.classList.add('active');
+  });
+</script>
+              </label>
               
             </div>
           <div className="btnArea">
