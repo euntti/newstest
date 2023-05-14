@@ -395,7 +395,7 @@ function App() {
             </div>
           </div>
         </Slider>
-        <div className="profit">
+            <div className="profit">
         {isBrowser ? (
                   <img src={"/img/titleprofit.png"}></img>
                 ) : (
