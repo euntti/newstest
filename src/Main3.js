@@ -201,7 +201,6 @@ function App2() {
               )}
             </div>
           </div>
-          <div></div>
         </div>
       </div>
       <div
