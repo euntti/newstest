@@ -13,8 +13,6 @@ import { ColorRing } from "react-loader-spinner";
 import AnimatedNumbers from "react-animated-numbers";
 import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
-import "react-responsive-modal/styles.css";
-import { Modal } from "react-responsive-modal";
 
 function App() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
@@ -308,7 +306,6 @@ function App() {
               </>
             )}
           </div> */}
-          </Slider>
           <div>
           <div className="nameArea">
             {/* <div className="nameArea">
@@ -357,7 +354,7 @@ function App() {
                   checked={check1}
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
-                (필수)개인정보취급방침동의,
+                개인정보취급방침동의
                 <a href="javascript:void(0);" onclick="privacy_pop('show', '.pop-policy',2)">[보기]</a>
               </label>
               {/* <label style={{ color: "#fff" }}>
@@ -372,7 +369,6 @@ function App() {
                 마케팅수신동의
               </label> */}
               <label style={{ color: "#fff" }}>
-             
                 <input
                   type="checkbox"
                   id="privacy"
@@ -381,9 +377,9 @@ function App() {
                   checked={check3}
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
-                (필수)광고성문자수신동의
+                광고성문자수신동의
+                <a href="javascript:void(0);" onclick="Popup1('show', '.popup',2)">[보기]</a>
               </label>
-              
             </div>
           <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
@@ -395,7 +391,8 @@ function App() {
               </button>
             </div>
           </div>
-            <div className="profit">
+        </Slider>
+        <div className="profit">
         {isBrowser ? (
                   <img src={"/img/titleprofit.png"}></img>
                 ) : (
