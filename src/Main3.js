@@ -394,10 +394,7 @@ function App2() {
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 [필수]광고성문자수신동의
-                function openPopup() {
-                var popupContainer = document.getElementById('popup-container');
-                popupContainer.style.display = 'block';
-                }
+                
               </label>
             </div>
           <div className="btnArea">
