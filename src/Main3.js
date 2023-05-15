@@ -49,6 +49,11 @@ function App2() {
   const saveButton = document.getElementById('save-button');
   const closeButton = document.getElementById('close-button');
 
+  openButton.addEventListener('click', function() {
+    popupContainer.style.display = 'block';
+  });
+  
+
   useDidMountEffect(() => {
     insertHistory();
   }, []);
@@ -371,7 +376,8 @@ function App2() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                 [필수]개인정보취급방침동의
-                <a href="#" onclick="openPopup(); return false;">[보기]</a>
+                <button id="open-button" onclick="openPopup()">보기</button>
+               
               </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
@@ -393,8 +399,9 @@ function App2() {
                   checked={check3}
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
+                <div className="보기1">
                 [필수]광고성문자수신동의
-                
+                </div>
               </label>
             </div>
           <div className="btnArea">
