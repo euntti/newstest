@@ -371,12 +371,8 @@ function App2() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                 [필수]개인정보취급방침동의
-                 openButton.addEventListener('[보기]', 
-                () = {popupContainer.style.display = 'block'});
+                <a href="index.html;" onclick="popup">[보기]</a>
 
-                {/* // 닫기 버튼 클릭 이벤트 핸들러 */}
-                closeButton.addEventListener('[닫기]', () = {
-                popupContainer.style.display = 'none'});
               </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
