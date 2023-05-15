@@ -371,10 +371,10 @@ function App2() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                 [필수]개인정보취급방침동의
-                <a href="보기"
+                <a href="#"
                 onClick={() => {
                 window.open("index1.html/", "_blank");
-              }} />
+              }} /> (보기)
               </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
@@ -397,9 +397,10 @@ function App2() {
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 [필수]광고성문자수신동의
-                <a function onclick () {
-                var popup = window.open('index1.html', '팝업 창', 'width=500,height=400');
-                popup.focus();}>
+                <a href="#"
+                onClick={() => {
+                window.open("index1.html/", "_blank");
+              }} /> (보기)
               </label>
             </div>
           <div className="btnArea">
