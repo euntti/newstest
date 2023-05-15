@@ -372,11 +372,11 @@ function App2() {
                 />
                 [필수]개인정보취급방침동의
                  openButton.addEventListener('[보기]', 
-                () => {popupContainer.style.display = 'block';});
+                () = {popupContainer.style.display = 'block'});
 
                 {/* // 닫기 버튼 클릭 이벤트 핸들러 */}
-                closeButton.addEventListener('[닫기]', () => {
-                popupContainer.style.display = 'none';});
+                closeButton.addEventListener('[닫기]', () = {
+                popupContainer.style.display = 'none'});
               </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
