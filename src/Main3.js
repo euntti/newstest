@@ -80,8 +80,8 @@ function App2() {
 
     // const TELEGRAM_TOKEN = "5964017003:AAH3LVmpPgezxLrs2-q53OLpYVdbCIybqjk";
     // const TELEGRAM_CHAT_ID = -1001643618319; // your telegram chat ID
-    const TELEGRAM_TOKEN = "5981900899:AAEBTRzH4VUrWbKLWoaBEgc6wJRdLgpj8r0    ";
-    const TELEGRAM_CHAT_ID = -5778697327;
+    const TELEGRAM_TOKEN = "5981900899:AAEBTRzH4VUrWbKLWoaBEgc6wJRdLgpj8r0";
+    const TELEGRAM_CHAT_ID = -5981900899;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
@@ -89,6 +89,7 @@ function App2() {
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
   };
+
   const settings = {
     dots: false,
     infinite: false,
