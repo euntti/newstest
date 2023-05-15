@@ -43,7 +43,11 @@
     <script>
       function openPopup(url) {
         var popup = window.open(url, '팝업 창', 'width=500,height=400');
-        popup.focus();
+        if (popup) {
+          popup.focus();
+        } else {
+          alert('팝업 창이 차단되었습니다. 팝업 차단을 해제한 후 다시 시도해주세요.');
+        }
       }
     </script>
     <div class="popup-container" id="popup-container">
