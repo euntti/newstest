@@ -49,11 +49,6 @@ function App2() {
   const saveButton = document.getElementById('save-button');
   const closeButton = document.getElementById('close-button');
 
-  openButton.addEventListener('click', function() {
-    popupContainer.style.display = 'block';
-  });
-  
-
   useDidMountEffect(() => {
     insertHistory();
   }, []);
