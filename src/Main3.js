@@ -371,7 +371,7 @@ function App2() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                 [필수]개인정보취급방침동의
-                <button id="open-button" onclick="openPopup()">보기</button>
+                <button id="open-button" onclick="openPopup('index1.html')">보기</button>
                
               </label>
               {/* <label style={{ color: "#fff" }}>
