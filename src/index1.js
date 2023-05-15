@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index1.css';
+import './App2.css';
 import App from './App2';
 import reportWebVitals from './reportWebVitals';
 
-<a href="#" onclick="openPopup(); return false;">[보기]</a>
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
