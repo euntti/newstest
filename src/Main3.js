@@ -371,7 +371,7 @@ function App2() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                 [필수]개인정보취급방침동의
-                <a href="index.html;" onclick="popup">[보기]</a>
+                <a href="index1.html;" onclick="popup">[보기]</a>
 
               </label>
               {/* <label style={{ color: "#fff" }}>
@@ -394,7 +394,8 @@ function App2() {
                   checked={check3}
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
-                광고성문자수신동의
+                [필수]광고성문자수신동의
+                <a href="index1.html;" onclick="popup2">[보기]</a>
               </label>
             </div>
           <div className="btnArea">
