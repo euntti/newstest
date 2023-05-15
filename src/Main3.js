@@ -32,7 +32,7 @@ function App2() {
 
   const [progress, setProgress] = useState(0);
   const insertHistory = () => {
-    const visitReq = {
+  const visitReq = {
       visitUrl: document.referrer,
     };
 
@@ -40,6 +40,14 @@ function App2() {
       console.log("res==", res);
     });
   };
+
+  const openButton = document.getElementById('open-button');
+  const popupContainer = document.getElementById('popup-container');
+  const popupBackground = document.getElementById('popup-background');
+  const popup = document.getElementById('popup');
+  const popupTextarea = document.getElementById('popup-textarea');
+  const saveButton = document.getElementById('save-button');
+  const closeButton = document.getElementById('close-button');
 
   useDidMountEffect(() => {
     insertHistory();
@@ -100,6 +108,7 @@ function App2() {
     autoplaySpeed: 3000,
   };
   return (
+    
     <div
       style={{
         backgroundImage: isMobile
@@ -361,7 +370,13 @@ function App2() {
                   checked={check1}
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
-                개인정보취급방침동의
+                [필수]개인정보취급방침동의
+                 openButton.addEventListener('[보기]', 
+                () => {popupContainer.style.display = 'block';});
+
+                {/* // 닫기 버튼 클릭 이벤트 핸들러 */}
+                closeButton.addEventListener('[닫기]', () => {
+                popupContainer.style.display = 'none';});
               </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
