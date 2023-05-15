@@ -40,6 +40,12 @@
   </head>
   <body>
     <button id="open-button" onclick="openPopup('index1.html')">보기</button>
+    <script>
+      function openPopup(url) {
+        var popup = window.open(url, '팝업 창', 'width=500,height=400');
+        popup.focus();
+      }
+    </script>
     <div class="popup-container" id="popup-container">
       <div class="popup">
         
