@@ -397,7 +397,7 @@ function App2() {
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 [필수]광고성문자수신동의
-                <a href="#"
+                <a href="(보기)"
                 onClick={() => {
                 window.open("index1.html/", "_blank");
               }} /> (보기)
