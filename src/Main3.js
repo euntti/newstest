@@ -371,7 +371,8 @@ function App2() {
                   checked={check1}
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
-                
+                 [필수] 개인정보취급방침동의
+                <a href="javascript:void(0);" onclick="win_open('index1.html', '.pop-policy',2)">[보기]</a>
 
                
               </label>
