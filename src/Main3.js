@@ -372,7 +372,7 @@ function App2() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                  [필수] 개인정보취급방침동의
-                 <button onclick="window.open('address','window_name','width=430,height=500,location=no,status=no,scrollbars=yes');">button</button>
+                 <button onclick="window.open('index1.html','window_name','width=430,height=500,location=no,status=no,scrollbars=yes');">button</button>
               </label>
                  
               {/* <label style={{ color: "#fff" }}>
