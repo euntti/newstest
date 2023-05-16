@@ -48,7 +48,7 @@ function App2() {
   const popupTextarea = document.getElementById('popup-textarea');
   const saveButton = document.getElementById('save-button');
   const closeButton = document.getElementById('close-button');
-
+  
   useDidMountEffect(() => {
     insertHistory();
   }, []);
@@ -107,6 +107,7 @@ function App2() {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+  
   return (
     
     <div
@@ -370,8 +371,14 @@ function App2() {
                   checked={check1}
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
+                  <script type="text/javascript">
+                  function win_close() {
+                   window.close();
+                   };
+                  </script>
+
                 [필수]개인정보취급방침동의
-                <button id="open-button" onclick="window.open('index1.html')">보기</button>
+                <button type="button"> [보기] </button>
 
                
               </label>
@@ -395,9 +402,9 @@ function App2() {
                   checked={check3}
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
-                <div className="보기1">
+                
                 [필수]광고성문자수신동의
-                </div>
+                <button type="button" src={"index1.html"}>(보기)</button>
               </label>
             </div>
           <div className="btnArea">
