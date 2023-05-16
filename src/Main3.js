@@ -16,7 +16,7 @@ import useDidMountEffect from "./hooks/useDidMountEffect";
 
 import logo from "./logo.svg";
 import Modal from "react-modal";
-
+document.write("This is written from JavaScript");
 
 
 function App2() {
