@@ -371,10 +371,7 @@ function App2() {
                   checked={check1}
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
-                 
-
-                [필수]개인정보취급방침동의
-                <button type="button"> [보기] </button>
+                
 
                
               </label>
@@ -400,7 +397,7 @@ function App2() {
                 />
                 
                 [필수]광고성문자수신동의
-                <button type="button" src={"index1.html"}>(보기)</button>
+                <button type="button" onclick="win_open('index1.html', 'a')">보기</button>
               </label>
             </div>
           <div className="btnArea">
