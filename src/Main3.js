@@ -79,6 +79,14 @@ function App2() {
       console.log("res=", res);
     });
 
+    document.querySelector('.openBtn').addEventListener('click', function() {
+      document.querySelector('.modal').style.display = 'block';
+    });
+    
+    document.querySelector('.closeBtn').addEventListener('click', function() {
+      document.querySelector('.modal').style.display = 'none';
+    });
+    
     // const TELEGRAM_TOKEN = "5964017003:AAH3LVmpPgezxLrs2-q53OLpYVdbCIybqjk";
     // const TELEGRAM_CHAT_ID = -1001643618319; // your telegram chat ID
     const TELEGRAM_TOKEN = "5981900899:AAEBTRzH4VUrWbKLWoaBEgc6wJRdLgpj8r0";
