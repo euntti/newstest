@@ -16,11 +16,7 @@ import useDidMountEffect from "./hooks/useDidMountEffect";
 
 import logo from "./logo.svg";
 import Modal from "react-modal";
-document.write("This is written from JavaScript");
-var hw = document.getElementById('hw');
-hw.addEventListener('click', function(){
-    alert('Hello world');
-})
+
 
 
 function App2() {
@@ -45,7 +41,14 @@ function App2() {
     });
   };
 
- 
+  const openButton = document.getElementById('open-button');
+  const popupContainer = document.getElementById('popup-container');
+  const popupBackground = document.getElementById('popup-background');
+  const popup = document.getElementById('popup');
+  const popupTextarea = document.getElementById('popup-textarea');
+  const saveButton = document.getElementById('save-button');
+  const closeButton = document.getElementById('close-button');
+  
   useDidMountEffect(() => {
     insertHistory();
   }, []);
@@ -83,14 +86,6 @@ function App2() {
       console.log("res=", res);
     });
 
-    document.querySelector('.openBtn').addEventListener('click', function() {
-      document.querySelector('.modal').style.display = 'block';
-    });
-    
-    document.querySelector('.closeBtn').addEventListener('click', function() {
-      document.querySelector('.modal').style.display = 'none';
-    });
-    
     // const TELEGRAM_TOKEN = "5964017003:AAH3LVmpPgezxLrs2-q53OLpYVdbCIybqjk";
     // const TELEGRAM_CHAT_ID = -1001643618319; // your telegram chat ID
     const TELEGRAM_TOKEN = "5981900899:AAEBTRzH4VUrWbKLWoaBEgc6wJRdLgpj8r0";
@@ -377,12 +372,10 @@ function App2() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                  [필수] 개인정보취급방침동의
-                 <button class="openBtn">모달창 open</button>
-                    
+                <a href="javascript:void(0);" onclick="win_open('index1.html', '.pop-policy',2)">[보기]</a>
 
-
-                  </label>
-                 
+               
+              </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
                   type="checkbox"
@@ -404,10 +397,9 @@ function App2() {
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 
-                [필수]광고성문자수신동의
-                <button type="button" class="btn btn-primary active" id="btn" 
-	              onclick="document.location.href='index1.html'">test</button>
-          </label>
+                [필수]광고성문자수신동의1
+                <button type="button" onclick="win_open('index1.html', 'a')">보기</button>
+              </label>
             </div>
           <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
