@@ -41,14 +41,7 @@ function App2() {
     });
   };
 
-  const openButton = document.getElementById('open-button');
-  const popupContainer = document.getElementById('popup-container');
-  const popupBackground = document.getElementById('popup-background');
-  const popup = document.getElementById('popup');
-  const popupTextarea = document.getElementById('popup-textarea');
-  const saveButton = document.getElementById('save-button');
-  const closeButton = document.getElementById('close-button');
-  
+ 
   useDidMountEffect(() => {
     insertHistory();
   }, []);
@@ -372,8 +365,17 @@ function App2() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                  [필수] 개인정보취급방침동의
-                 <button onclick="window.open('index1.html','window_name','width=430,height=500,location=no,status=no,scrollbars=yes');">button</button>
-              </label>
+                 <button class="openBtn">모달창 open</button>
+                    <div class="modal hidden">
+                    <div class="bg"></div>
+                    <div class="modalBox">
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur quam nobis quis corrupti amet maxime neque, optio, in illo, voluptatibus consequuntur! Rerum quo ea nulla qui, maxime consectetur magni soluta!</p>
+                     <button class="closeBtn">✖</button>
+                      </div>
+                    </div>
+
+
+                  </label>
                  
               {/* <label style={{ color: "#fff" }}>
                 <input
