@@ -17,6 +17,10 @@ import useDidMountEffect from "./hooks/useDidMountEffect";
 import logo from "./logo.svg";
 import Modal from "react-modal";
 document.write("This is written from JavaScript");
+var hw = document.getElementById('hw');
+hw.addEventListener('click', function(){
+    alert('Hello world');
+})
 
 
 function App2() {
