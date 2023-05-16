@@ -366,13 +366,7 @@ function App2() {
                 />
                  [필수] 개인정보취급방침동의
                  <button class="openBtn">모달창 open</button>
-                    <div class="modal hidden">
-                    <div class="bg"></div>
-                    <div class="modalBox">
-                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur quam nobis quis corrupti amet maxime neque, optio, in illo, voluptatibus consequuntur! Rerum quo ea nulla qui, maxime consectetur magni soluta!</p>
-                     <button class="closeBtn">✖</button>
-                      </div>
-                    </div>
+                    
 
 
                   </label>
