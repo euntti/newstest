@@ -371,11 +371,7 @@ function App2() {
                   checked={check1}
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
-                  <script type="text/javascript">
-                  function win_close() {
-                   window.close();
-                   };
-                  </script>
+                 
 
                 [필수]개인정보취급방침동의
                 <button type="button"> [보기] </button>
