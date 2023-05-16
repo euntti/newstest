@@ -401,8 +401,9 @@ function App2() {
                 />
                 
                 [필수]광고성문자수신동의
-                <button type="button" onclick="win_open('index1.html', 'a')">보기</button>
-              </label>
+                <button type="button" class="btn btn-primary active" id="btn" 
+	              onclick="document.location.href='index1.html'">test</button>
+          </label>
             </div>
           <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
