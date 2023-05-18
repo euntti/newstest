@@ -26,10 +26,12 @@ function App2() {
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
   const [num, setNum] = useState(331231);
+  const [time, setTime ]= useState("");
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
+  const [check4, setCheck4] = useState(false);
 
   const [progress, setProgress] = useState(0);
   const insertHistory = () => {
@@ -41,40 +43,6 @@ function App2() {
       console.log("res==", res);
     });
   };
-
-  const loremIpsum = document.getElementById("lorem-ipsum")
-  fetch("https://baconipsum.com/api/?type=all-meat&paras=200&format=html")
-    .then(response => response.text())
-    .then(result => loremIpsum.innerHTML = result)
-  const modal = document.getElementById("modal")
-  function modalOn() {
-  modal.style.display = "flex"
-  }
-  function isModalOn() {
-    return modal.style.display === "flex"
-  }
-  function modalOff() {
-    modal.style.display = "none"
-  }
-  const btnModal = document.getElementById("btn-modal")
-  btnModal.addEventListener("click", e => {
-    modalOn()
-  })
-  const closeBtn = modal.querySelector(".close-area")
-  closeBtn.addEventListener("click", e => {
-    modalOff()
-  })
-  modal.addEventListener("click", e => {
-    const evTarget = e.target
-    if(evTarget.classList.contains("modal-overlay")) {
-        modalOff()
-    }
-  })
-window.addEventListener("keyup", e => {
-    if(isModalOn() && e.key === "Escape") {
-        modalOff()
-    }
-  })
 
   useDidMountEffect(() => {
     insertHistory();
@@ -99,14 +67,20 @@ window.addEventListener("keyup", e => {
     if (phone1 == "" ) {
       return alert("'-'없이 입력을 해주세요.");
     }
+    if(time==""){
+      return alert("통화시간 선택해주세요");
+    }
+
   
     
     
     const phoneNumber = `${phone1}`;
     const name = `${userName}`;
+    const time = `${time}`;
     const param = {
       phoneNumber: phoneNumber,
       name: name,
+      time: time,
     };
     
     axios.post("/client", param).then((res) => {
@@ -120,7 +94,7 @@ window.addEventListener("keyup", e => {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. `
+      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
   };
@@ -384,6 +358,37 @@ window.addEventListener("keyup", e => {
                 maxlength="13" 
                 oninput="maxLengthCheck(this)"
                 max="9999999999999"
+                
+              />
+              </div>
+              <div className="time">
+              <select>
+                <option key="17" value="17">
+                  06:00-09:00
+                  09:00-10:00
+                  10:00-11:00
+                  11:00-12:00
+                  12:00-13:00
+                  13:00-14:00
+                  14:00-15:00
+                  15:00-16:00
+                  16;00-17:00
+                  17:00-18:00
+                  18:00-19:00
+                  19:00-20:00
+                  20:00-21:00
+                  21:00-22:00
+                  22:00-23:00
+                  23:00-24:00
+                  24:00-06:00
+                </option> 
+              </select>{" 선택해주세요"}
+
+               <input
+                type="time"
+                className="time"
+                placeholder="통화가능시간"
+               onChange={(e) => settime(e.target.value)}
                 
               />
               </div>
