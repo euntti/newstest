@@ -20,6 +20,7 @@ import Modal from "react-modal";
 
 
 function App2() {
+  
   axios.defaults.baseURL = "https://sbstock.kr/test";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
@@ -41,14 +42,40 @@ function App2() {
     });
   };
 
-  const openButton = document.getElementById('open-button');
-  const popupContainer = document.getElementById('popup-container');
-  const popupBackground = document.getElementById('popup-background');
-  const popup = document.getElementById('popup');
-  const popupTextarea = document.getElementById('popup-textarea');
-  const saveButton = document.getElementById('save-button');
-  const closeButton = document.getElementById('close-button');
-  
+  const loremIpsum = document.getElementById("lorem-ipsum")
+  fetch("https://baconipsum.com/api/?type=all-meat&paras=200&format=html")
+    .then(response => response.text())
+    .then(result => loremIpsum.innerHTML = result)
+  const modal = document.getElementById("modal")
+  function modalOn() {
+  modal.style.display = "flex"
+  }
+  function isModalOn() {
+    return modal.style.display === "flex"
+  }
+  function modalOff() {
+    modal.style.display = "none"
+  }
+  const btnModal = document.getElementById("btn-modal")
+  btnModal.addEventListener("click", e => {
+    modalOn()
+  })
+  const closeBtn = modal.querySelector(".close-area")
+  closeBtn.addEventListener("click", e => {
+    modalOff()
+  })
+  modal.addEventListener("click", e => {
+    const evTarget = e.target
+    if(evTarget.classList.contains("modal-overlay")) {
+        modalOff()
+    }
+  })
+window.addEventListener("keyup", e => {
+    if(isModalOn() && e.key === "Escape") {
+        modalOff()
+    }
+  })
+
   useDidMountEffect(() => {
     insertHistory();
   }, []);
