@@ -372,9 +372,8 @@ function App2() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                  [필수] 개인정보취급방침동의
-                <a href="javascript:void(0);" onclick="win_open('index1.html', '.pop-policy',2)">[보기]</a>
+                 <a href="javascript:void(0);" onclick="window.open('popup.html', 'pop01', 'top=10, left=10, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no');">버튼</a>
 
-               
               </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
