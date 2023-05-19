@@ -359,7 +359,7 @@ function App2() {
               </div>
               <div className="time">
               <select>
-                <option key="1" value="9">
+                <option key="9" value="9">
                   06:00-09:00
                   09:00-11:00
                   11:00-13:00
