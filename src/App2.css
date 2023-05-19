@@ -146,6 +146,15 @@ table {
   flex-wrap: nowrap;
   justify-content: center;
 }
+.select{display: flex;
+  width: 600px;
+  height: 75px;
+  margin-left: 12px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  font-size: 18pt;
+
+}
 .time {display: flex;
   width: 600px;
   height: 75px;
