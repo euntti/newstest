@@ -357,12 +357,12 @@ function App2() {
               </div>
               <div className="time">
                 통화가능시간
-              <select class="form-control input-sm" id="startTime" name="startTime">
-              <c:forEach var="i"  begin="9" end="17">
-             <option value="${i}">${i>9?i:'0'}${i>9?'':i}</option>
+                <select class="form-control input-sm" id="startTime" name="startTime">
+                <c:forEach var="i" begin="9" end="17">
+                <option value="${i}">${i > 9 ? i : '0' + i}${i > 9 ? '' : i}</option>
               </c:forEach>
-              </select>
-              </div>
+            </select>
+    </div>
           </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
