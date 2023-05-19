@@ -141,6 +141,13 @@ table {
   height: 1023px;
   margin-left: 20px;
 }
+.nameArea{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  
+ }
+
 .namephone{
   display: inline-flex;
   flex-wrap: nowrap;
@@ -164,7 +171,7 @@ table {
 .username {
   display: flex;
   width: 608px;
-  height: 81px;
+  height: 81  px;
   margin-left: 12px;
   margin-right: 4px;
   margin-bottom: 10px;
@@ -277,8 +284,7 @@ table {
     justify-content: center;
     align-items: center;
     
-    
-  }
+   }
 
   .namephone {
    
