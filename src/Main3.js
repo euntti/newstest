@@ -359,8 +359,10 @@ function App2() {
               </div>
               <div className="time">
               <select>
-              <option value="${i}">${i > 9 ? i : '0' + i}${i > 9 ? '' : i}</option>
-              </select>{" 통화가능시간 "}
+                <option key="1" value="1">
+                  010
+                </option> 
+              </select>{" "}
               
     </div>
           </div>
