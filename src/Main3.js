@@ -358,15 +358,10 @@ function App2() {
               />
               </div>
               <div className="time">
-                <select>
-                  
-                </select>
-                
-            <select class="form-control input-sm" id="startTime" name="startTime"/>
-
-            {<select>
+              <select>
               <option value="${i}">${i > 9 ? i : '0' + i}${i > 9 ? '' : i}</option>
-              </select>{" 통화가능시간 "}}
+              </select>{" 통화가능시간 "}
+              
     </div>
           </div>
             <div style={{ marginLeft: 10 }}>
