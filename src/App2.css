@@ -146,8 +146,8 @@ table {
   flex-wrap: nowrap;
   justify-content: center;
 }
-.time select {display: flex;
-  width: 680px;
+.time select {
+  width: 600px;
   height: 75px;
   margin-left: 12px;
   margin-right: 4px;
