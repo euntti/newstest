@@ -1,3 +1,4 @@
+
 import "./App2.css";
 import TelegramApi from "node-telegram-api";
 import { useState, useEffect } from "react";
@@ -13,11 +14,6 @@ import { ColorRing } from "react-loader-spinner";
 import AnimatedNumbers from "react-animated-numbers";
 import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
-
-import logo from "./logo.svg";
-import Modal from "react-modal";
-
-
 
 function App2() {
   
@@ -110,7 +106,6 @@ function App2() {
   };
   
   return (
-    
     <div
       style={{
         backgroundImage: isMobile
@@ -121,7 +116,7 @@ function App2() {
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         // width: "auto",
-        height: "1800px",
+        height: "3000px",
       }}
     >
       <div className="container">
@@ -351,45 +346,13 @@ function App2() {
               {"\t"}
               <div className="phone">
                <input
-                type="number"
+                type="tel"
                 className="phone"
                 placeholder="휴대폰"
                 onChange={(e) => setPhone1(e.target.value)}
                 maxlength="13" 
-                oninput="maxLengthCheck(this)"
-                max="9999999999999"
-                
-              />
-              </div>
-              <div className="time">
-              <select>
-                <option key="17" value="17">
-                  06:00-09:00
-                  09:00-10:00
-                  10:00-11:00
-                  11:00-12:00
-                  12:00-13:00
-                  13:00-14:00
-                  14:00-15:00
-                  15:00-16:00
-                  16;00-17:00
-                  17:00-18:00
-                  18:00-19:00
-                  19:00-20:00
-                  20:00-21:00
-                  21:00-22:00
-                  22:00-23:00
-                  23:00-24:00
-                  24:00-06:00
-                </option> 
-              </select>{"통화가능한시간 선택해주세요"}
-
-               <input
-                type="time"
-                className="time"
-                placeholder="통화가능시간"
-               onChange={(e) => settime(e.target.value)}
-                
+                onkeypress="onlynumber(this)"
+              
               />
               </div>
           </div>
@@ -403,7 +366,8 @@ function App2() {
                   checked={check1}
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
-                 [필수] 개인정보취급방침동의
+                개인정보취급방침동의
+                <a href="javascript:void(0);" onclick="privacy_pop('show', '.pop-policy',2)">[보기]</a>
               </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
@@ -425,9 +389,9 @@ function App2() {
                   checked={check3}
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
-                
-                [필수]광고성문자수신동의1
-               </label>
+                광고성문자수신동의
+                <a href="javascript:void(0);" onclick="Popup1('show', '.popup',2)">[보기]</a>
+              </label>
             </div>
           <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
@@ -440,7 +404,7 @@ function App2() {
             </div>
           </div>
         </Slider>
-        {/* <div className="profit">
+        <div className="profit">
         {isBrowser ? (
                   <img src={"/img/titleprofit.png"}></img>
                 ) : (
@@ -449,7 +413,7 @@ function App2() {
         </div>
         <div className="profit1">
               <img src={"/img/profit.jpeg"}></img>
-            </div>   */}
+            </div>  
         <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
