@@ -358,20 +358,35 @@ function App2() {
               />
               </div>
               <div className="time">
+              
               <select>
-              <option key="9" value="1">
-              <div>
-              <span>06:00-09:00</span>
-              <span>09:00-11:00</span>
-              <span>11:00-13:00</span>
-              <span>13:00-15:00</span>
-              <span>15:00-17:00</span>
-              <span>17:00-19:00</span>
-             <span>19:00-21:00</span>
-             <span>21:00-23:00</span>
-            <span>23:00-06:00</span>
-            </div>
+              <option value="1">
+               06:00-09:00
+              </option>
+              <option value="2">
+              09:00-11:00
+             </option>
+            <option value="3">
+             11:00-13:00
+             </option>
+            <option value="4">
+             13:00-15:00
             </option>
+            <option value="5">
+             15:00-17:00
+            </option>
+            <option value="6">
+             17:00-19:00
+            </option>
+            <option value="7">
+            19:00-21:00
+            </option>
+          <option value="8">
+             21:00-23:00
+          </option>
+          <option value="9">
+            23:00-06:00
+         </option>
               </select>{"통화가능시간 "}
               
     </div>
