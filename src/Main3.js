@@ -40,6 +40,7 @@ function App2() {
     });
   };
 
+  
   useDidMountEffect(() => {
     insertHistory();
   }, []);
@@ -66,6 +67,7 @@ function App2() {
     if(time==""){
       return alert("통화시간 선택해주세요");
     }
+
 
   
     
@@ -356,12 +358,9 @@ function App2() {
               />
               </div>
               <div className="time">
-                
-            <select class="form-control input-sm" id="startTime" name="startTime"/>
-
-            {<select>
-              <option value="${i}">${i > 9 ? i : '0' + i}${i > 9 ? '' : i}</option>
-              </select>{" 통화가능시간 "}}
+                <select>
+                <option value="${i}">${i > 9 ? i : '0' + i}${i > 9 ? '' : i}</option>
+              </select>{" 통화가능시간 "}
     </div>
           </div>
             <div style={{ marginLeft: 10 }}>
