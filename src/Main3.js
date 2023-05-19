@@ -382,7 +382,7 @@ function App2() {
                   23:00-24:00
                   24:00-06:00
                 </option> 
-              </select>{" 선택해주세요"}
+              </select>{"통화가능한시간 선택해주세요"}
 
                <input
                 type="time"
@@ -404,8 +404,6 @@ function App2() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                  [필수] 개인정보취급방침동의
-                 <a href="javascript:void(0);" onclick="window.open('popup.html', 'pop01', 'top=10, left=10, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no');">버튼</a>
-
               </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
@@ -429,8 +427,7 @@ function App2() {
                 />
                 
                 [필수]광고성문자수신동의1
-                <button type="button" onclick="win_open('index1.html', 'a')">보기</button>
-              </label>
+               </label>
             </div>
           <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
