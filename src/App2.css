@@ -155,13 +155,9 @@ table {
   font-size: 18pt;
 
 }
-.time {display: flex;
-  width: 600px;
-  height: 75px;
-  margin-left: 12px;
-  margin-right: 4px;
-  margin-bottom: 10px;
-  font-size: 18pt;
+.time {width: 484px;
+  height: 48px;
+  margin: 0 12.5px 0;
 }
 
 .username {
