@@ -360,6 +360,9 @@ function App2() {
               <div className="time">
               
               <select>
+              <option value="0">
+               통화가능시간(필수)
+              </option>
               <option value="1">
                06:00-09:00
               </option>

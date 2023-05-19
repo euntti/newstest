@@ -147,7 +147,7 @@ table {
   justify-content: center;
 }
 .time select {display: flex;
-  width: 600px;
+  width: 950px;
   height: 75px;
   margin-left: 12px;
   margin-right: 4px;
@@ -155,7 +155,8 @@ table {
   font-size: 18pt;
 
 }
-.time {display: flex;
+.time {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
