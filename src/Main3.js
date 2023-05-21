@@ -75,11 +75,11 @@ function App2() {
     
     const phoneNumber = `${phone1}`;
     const name = `${userName}`;
-    const time = `${time}`;
+    const selectedTime = `${time}`;
     const param = {
       phoneNumber: phoneNumber,
       name: name,
-      time: time,
+      time: selectedTime,
     };
     
     axios.post("/client", param).then((res) => {
