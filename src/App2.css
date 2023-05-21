@@ -148,15 +148,6 @@ table {
   
  }
 
-.namephone{
-  position: absolute;
-  left: 50%;
-  right:50%;
-  transform: translate(-50%,-50%);
-  display: inline-flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
 
 .time select {
   width: 608px;
