@@ -28,6 +28,7 @@ function App2() {
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
   const [check4, setCheck4] = useState(false);
+  const [check5, setCheck5] = useState(false);
 
   const [progress, setProgress] = useState(0);
   const insertHistory = () => {
