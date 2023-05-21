@@ -319,7 +319,7 @@ table {
   .time select {
     justify-content: center;
     height: 45px;
-    width: 370px;
+    width: 500px;
   }
   .App .btnArea button {
     display: flex; 
