@@ -316,7 +316,9 @@ table {
     height: 45px;
     width: 370px;
   }
-  .time select {
+  .time select {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
    
   }
   .time {
