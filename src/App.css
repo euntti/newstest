@@ -313,11 +313,11 @@ table {
     height: 45px;
     width: 370px;
   }
-  .App.time select {
+  .App .time select {
     display: block;
     justify-content: center;
     height: 45px;
-    width: 500px;
+    width: 550px;
   }
   .App.time {
     display: block;
@@ -327,7 +327,7 @@ table {
     height: 50px;
     justify-content: center */
     height: 45px;
-    width: 370px;
+    width: 550px;
    
   }
   .App .btnArea button {
