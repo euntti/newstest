@@ -176,7 +176,6 @@ table {
 }
 .time select {
   width: 608px;
-  
   height: 60px;
   font-size: 15pt;
 
@@ -314,12 +313,11 @@ table {
     height: 45px;
     width: 370px;
   }
-  .time select {
+  .App .time select {
     display: block;
     justify-content: center;
     height: 45px;
     width: 550px;
-    margin-left: 12px;
   }
   .App.time {
     display: block;
