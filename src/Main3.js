@@ -361,7 +361,7 @@ function App2() {
               <div className="time">
               
               <select value={time} onChange={(e) => setTime(e.target.value)}>
-              <option value="통화가능시간(필수)">
+              <option value="">
                통화가능시간(필수)
               </option>
               <option value="06:00-09:00">
