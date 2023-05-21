@@ -316,6 +316,11 @@ table {
     height: 45px;
     width: 370px;
   }
+  .time select {
+    justify-content: center;
+    height: 45px;
+    width: 370px;
+  }
   .App .btnArea button {
     display: flex; 
     width: 500px;
