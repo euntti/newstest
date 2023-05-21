@@ -361,34 +361,34 @@ function App2() {
               <div className="time">
               
               <select value={time} onChange={(e) => setTime(e.target.value)}>
-              <option value="0">
+              <option value="통화가능시간(필수)">
                통화가능시간(필수)
               </option>
-              <option value="1">
+              <option value="06:00-09:00">
                06:00-09:00
               </option>
-              <option value="2">
+              <option value="09:00-11:00">
               09:00-11:00
              </option>
-            <option value="3">
+            <option value="11:00-13:00">
              11:00-13:00
              </option>
-            <option value="4">
+            <option value="13:00-15:00">
              13:00-15:00
             </option>
-            <option value="5">
+            <option value="15:00-17:00">
              15:00-17:00
             </option>
-            <option value="6">
+            <option value="17:00-19:00">
              17:00-19:00
             </option>
-            <option value="7">
+            <option value="19:00-21:00">
             19:00-21:00
             </option>
-          <option value="8">
+          <option value="21:00-23:00">
              21:00-23:00
           </option>
-          <option value="9">
+          <option value="23:00-06:00">
             23:00-06:00
          </option>
               </select>{"통화가능시간 "}
