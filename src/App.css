@@ -317,9 +317,7 @@ table {
     width: 370px;
   }
   .time select {
-    justify-content: center;
-    height: 45px;
-    width: 500px;
+   
   }
   .time {
     display: flex;
