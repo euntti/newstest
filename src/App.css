@@ -321,10 +321,10 @@ table {
     height: 45px;
     width: 500px;
   }
-  .time  {
+  .time {
+    display: flex;
     justify-content: center;
-    height: 45px;
-    width: 500px;
+    width: 400px;
   }
   .App .btnArea button {
     display: flex; 
