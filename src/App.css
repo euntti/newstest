@@ -323,10 +323,13 @@ table {
    
   }
   .App.time {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    width: 500px;
+    /* padding-left: 10px;
+    width: 80vw;
+    height: 50px;
+    justify-content: center */
+    height: 45px;
+    width: 370px;
    
   }
   .App .btnArea button {
