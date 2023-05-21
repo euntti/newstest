@@ -322,6 +322,7 @@ table {
    
   }
   .App.time {
+    display: block;
     justify-content: center;
     /* padding-left: 10px;
     width: 80vw;
