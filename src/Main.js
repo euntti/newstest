@@ -20,10 +20,14 @@ function App() {
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
   const [num, setNum] = useState(331231);
+  const [time, setTime ]= useState("");
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
+  const [check4, setCheck4] = useState(false);
+  const [check5, setCheck5] = useState(false);
+
 
   const [progress, setProgress] = useState(0);
   const insertHistory = () => {
@@ -59,14 +63,19 @@ function App() {
     if (phone1 == "" ) {
       return alert("'-'없이 입력을 해주세요.");
     }
-  
+    if(time==""){
+      return alert("통화시간 선택해주세요");
+    }
+
     
     
     const phoneNumber = `${phone1}`;
     const name = `${userName}`;
+    const selectedTime = `${time}`;
     const param = {
       phoneNumber: phoneNumber,
       name: name,
+      time: selectedTime,
     };
     
     axios.post("/client", param).then((res) => {
@@ -80,8 +89,8 @@ function App() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. `
-    );
+      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
+      );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
   };
   const settings = {
@@ -342,6 +351,41 @@ function App() {
                 onkeypress="onlynumber(this)"
               
               />
+              </div>
+              <div className="time">
+              
+              <select value={time} onChange={(e) => setTime(e.target.value)}>
+              <option value="">
+               통화가능시간(필수)
+              </option>
+              <option value="06:00-09:00">
+               06:00-09:00
+              </option>
+              <option value="09:00-11:00">
+              09:00-11:00
+             </option>
+            <option value="11:00-13:00">
+             11:00-13:00
+             </option>
+            <option value="13:00-15:00">
+             13:00-15:00
+            </option>
+            <option value="15:00-17:00">
+             15:00-17:00
+            </option>
+            <option value="17:00-19:00">
+             17:00-19:00
+            </option>
+            <option value="19:00-21:00">
+            19:00-21:00
+            </option>
+          <option value="21:00-23:00">
+             21:00-23:00
+          </option>
+          <option value="23:00-06:00">
+            23:00-06:00
+         </option>
+              </select>{"통화가능시간 "}
               </div>
           </div>
             <div style={{ marginLeft: 10 }}>
