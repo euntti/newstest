@@ -150,10 +150,9 @@ table {
 
 
 .time select {
-  width: 608px;
+  width: 900px;
   height: 60px;
-  margin-left: 30px;
-  margin-right: 4px;
+  margin-left: 10px;
   margin-bottom: 10px;
   font-size: 18pt;
 
