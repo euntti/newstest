@@ -178,14 +178,14 @@ table {
   width: 608px;
   height: 60px;
   font-size: 15pt;
-  margin-left: 12px;
+  
 
 }
 .time {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  margin-left: 12px;
 }
 
 .btnArea {
