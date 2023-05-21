@@ -322,8 +322,7 @@ table {
   .time {
     display: flex;
     justify-content: center;
-    width: 400px;
-  margin-right: 50px;
+    width: auto;
   }
   .App .btnArea button {
     display: flex; 
