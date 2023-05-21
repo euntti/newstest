@@ -319,7 +319,8 @@ table {
   .App.time select {
     display: block;
     justify-content: center;
-   
+    height: 45px;
+    width: 370px;
   }
   .App.time {
     display: block;
