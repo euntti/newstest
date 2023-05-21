@@ -360,7 +360,7 @@ function App2() {
               </div>
               <div className="time">
               
-              <select>
+              <select value={time} onChange={(e) => setTime(e.target.value)}>
               <option value="0">
                통화가능시간(필수)
               </option>
