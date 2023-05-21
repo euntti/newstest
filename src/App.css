@@ -316,7 +316,8 @@ table {
     height: 45px;
     width: 370px;
   }
-  .App.time select {margin: 0;
+  .App.time select {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
    
@@ -326,9 +327,7 @@ table {
     justify-content: center;
     align-items: center;
     width: 500px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   
   }
   .App .btnArea button {
     display: flex; 
