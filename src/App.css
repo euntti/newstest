@@ -317,9 +317,8 @@ table {
     width: 370px;
   }
   .App.time select {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    display: block;
+    justify-content: center;
    
   }
   .App.time {
