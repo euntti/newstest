@@ -327,7 +327,7 @@ table {
     height: 45px;
     width: 800px;
   }
-  .App.time input {
+  .App .time {
     background-color:red;
     align-items: center;
     display: block;
