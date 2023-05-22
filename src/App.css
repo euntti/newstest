@@ -175,6 +175,8 @@ table {
   font-size: 18pt;
 }
 .time select {
+  justify-content: center;
+  align-items: center;
   display: flex;
   width: 600px;
   height: 75px;
