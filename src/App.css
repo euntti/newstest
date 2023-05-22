@@ -320,6 +320,7 @@ table {
     width: 370px;
   }
   .App .time select {
+    background-color:red;
     display: block;
     justify-content: center;
     height: 45px;
