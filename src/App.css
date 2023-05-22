@@ -187,9 +187,9 @@ table {
 }
 .time {
   display: flex;
-  width: 600px;
+  width: 800px;
   height: 75px;
-  margin-left: 290px;
+  margin-left: 275px;
   margin-right: 4px;
   margin-bottom: 10px;
   font-size: 18pt;
