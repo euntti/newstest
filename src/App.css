@@ -189,10 +189,12 @@ table {
   display: flex;
   width: 600px;
   height: 75px;
-  margin-left: 12px;
+  margin-left: 290px;
   margin-right: 4px;
   margin-bottom: 10px;
   font-size: 18pt;
+  align-items: center;
+  justify-content: center;
 }
 
 .btnArea {

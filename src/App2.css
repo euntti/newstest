@@ -150,18 +150,24 @@ table {
 
 
 .time select {
-  width: 608px;
-  height: 60px;
-  margin-left: 10px;
+  display: flex;
+  width: 600px;
+  height: 75px;
+  margin-left: 12px;
+  margin-right: 4px;
   margin-bottom: 10px;
   font-size: 18pt;
-
 }
 .time {
   display: flex;
-  justify-content: center;
+  width: 800px;
+  height: 75px;
+  margin-left: 275px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  font-size: 18pt;
   align-items: center;
-  
+  justify-content: center;
 }
 
 .username {
