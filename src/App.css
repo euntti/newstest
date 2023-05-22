@@ -323,9 +323,10 @@ table {
     display: block;
     justify-content: center;
     height: 45px;
-    width: 900px;
+    width: 550px;
   }
   .App.time {
+    align-items: center;
     display: block;
     justify-content: center;
     /* padding-left: 10px;
