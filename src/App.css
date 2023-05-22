@@ -188,6 +188,8 @@ table {
 
 }
 .time {
+  justify-content: center;
+  align-items: center;
   display: flex;
   width: 800px;
   height: 75px;
