@@ -338,7 +338,7 @@ table {
     justify-content: center */
     height: 45px;
     width: 800px;
-    margin-right: 40px;
+    margin-right: 100px;
   }
   .App .btnArea button {
     display: flex; 
