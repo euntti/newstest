@@ -22,7 +22,7 @@ function App() {
     const input = e.target.value;
 
     // 휴대폰 번호 형식을 검증하는 정규식
-    const phoneRegex = /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/;
+    const phoneRegex = ^01(?:0|1|[6-9])-(?:\\d{3}|\\d{4})-\\d{4}$;
 
     if (phoneRegex.test(input)) {
       setPhone1(input);
