@@ -175,17 +175,24 @@ table {
   font-size: 18pt;
 }
 .time select {
-  width: 608px;
-  height: 60px;
-  font-size: 15pt;
+  display: flex;
+  width: 600px;
+  height: 75px;
+  margin-left: 12px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  font-size: 18pt;
   
 
 }
 .time {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 40px;
+  width: 600px;
+  height: 75px;
+  margin-left: 12px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  font-size: 18pt;
 }
 
 .btnArea {
