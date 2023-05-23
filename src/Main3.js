@@ -384,14 +384,9 @@ function App2() {
                 type="tel"
                 className="phone"
                 placeholder="휴대폰"
-                value={phone}
-                onChange={handlePhoneChange}
+                value={phone1}
+                onChange={(handlePhoneChange=> setPhone1(e.target.value))}
                 maxLength="13"
-                onkeypress={(event) => {
-                  if (event.key === "Enter") {
-                    event.preventDefault();
-                  }
-                }}
                 />
               </div>
               <div className="time">
