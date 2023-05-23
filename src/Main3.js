@@ -538,4 +538,4 @@ function App2() {
   );
 }
 
-export default Main3;
+export default App2;
