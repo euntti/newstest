@@ -39,13 +39,11 @@ function App2() {
   const handlePhoneChange = (event) => {
     const input = event.target.value;
   
-    // 휴대폰 번호 형식을 검증하는 정규식
     const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
   
     if (phoneRegex.test(input)) {
       setPhone1(input);
     } else {
-      // 유효한 형식이 아닌 경우에는 상태값을 업데이트하지 않거나 에러 처리를 수행할 수 있습니다.
       setPhone1("");
     }
   };
@@ -383,7 +381,7 @@ function App2() {
               {"\t"}
               <div className="phone">
                 <input
-                type="number"
+                type="tel"
                 className="phone"
                 placeholder="휴대폰"
                 value={phone1}
