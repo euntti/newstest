@@ -1,14 +1,6 @@
 
-
-// import React from "react";
-
-// const Main3 = () => {
-//   return <div>Main3</div>;
-// };
-
-// export default Main3;
-
 import "./App2.css";
+import React from "react"
 import TelegramApi from "node-telegram-api";
 import { useState, useEffect } from "react";
 import {
@@ -35,6 +27,10 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
   },
 };
+
+const Main3 = () => {
+  return <div>Main3</div>
+}
 
 function App2() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
