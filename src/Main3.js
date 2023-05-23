@@ -41,6 +41,10 @@ function App2() {
     if (phoneRegex.test(input)) {
       setPhone1(input);
     }
+    const handlePhoneChange = (event) => {
+      const input = event.target.value;
+      setPhone1(input);
+    };
   const [phone2, setPhone2] = useState("");
   const [num, setNum] = useState(331231);
   const [time, setTime] = useState("");
