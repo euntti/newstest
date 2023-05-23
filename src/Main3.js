@@ -383,7 +383,7 @@ function App2() {
               {"\t"}
               <div className="phone">
                 <input
-                type="tel"
+                type="number"
                 className="phone"
                 placeholder="휴대폰"
                 value={phone1}
