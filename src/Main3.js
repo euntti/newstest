@@ -384,7 +384,7 @@ function App2() {
                 type="tel"
                 className="phone"
                 placeholder="휴대폰"
-                value={phone1}
+                value={phone}
                 onChange={handlePhoneChange}
                 maxLength="13"
                 onkeypress={(event) => {
