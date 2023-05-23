@@ -36,15 +36,13 @@ function App2() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
-  const handlePhoneChange = (event) => {
-    const input = event.target.value;
-  
+  const handlePhoneChange = (e) => {
+    const inputValue = e.target.value;
+    
     const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
   
-    if (phoneRegex.test(input)) {
-      setPhone1(input);
-    } else {
-      setPhone1("");
+    if (phoneRegex.test(inputValue)) {
+      setPhone1(inputValue);
     }
   };
 
@@ -381,11 +379,11 @@ function App2() {
               {"\t"}
               <div className="phone">
                 <input
-                type="tel"
+                 type="tel"
                 className="phone"
                 placeholder="휴대폰"
                 value={phone1}
-                onChange={(handlePhoneChange=> setPhone1(e.target.value))}
+                onChange={handlePhoneChange}
                 maxLength="13"
                 />
               </div>
