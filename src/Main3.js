@@ -49,7 +49,7 @@ function App2() {
       setPhone1("");
     }
   };
-  
+
   const [phone2, setPhone2] = useState("");
   const [num, setNum] = useState(331231);
   const [time, setTime] = useState("");
@@ -383,13 +383,17 @@ function App2() {
               {"\t"}
               <div className="phone">
                 <input
-                  type="tel"
-                  className="phone"
-                  placeholder="휴대폰"
-                  value={phone1}
-                  onChange={handlePhoneChange}
-                  maxlength="13"
-                  onkeypress="onlynumber(this)"
+                type="tel"
+                className="phone"
+                placeholder="휴대폰"
+                value={phone1}
+                onChange={handlePhoneChange}
+                maxLength="13"
+                onkeypress={(event) => {
+                  if (event.key === "Enter") {
+                    event.preventDefault();
+                  }
+                }}
                 />
               </div>
               <div className="time">
