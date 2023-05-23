@@ -13,6 +13,18 @@ import { ColorRing } from "react-loader-spinner";
 import AnimatedNumbers from "react-animated-numbers";
 import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
+import Modal from "react-modal";
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    // right: "auto",
+    // bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
 
 function App() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
@@ -20,7 +32,7 @@ function App() {
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
   const [num, setNum] = useState(331231);
-  const [time, setTime ]= useState("");
+  const [time, setTime] = useState("");
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
@@ -28,6 +40,16 @@ function App() {
   const [check4, setCheck4] = useState(false);
   const [check5, setCheck5] = useState(false);
 
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [modalIsOpen2, setIsOpen2] = useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   const [progress, setProgress] = useState(0);
   const insertHistory = () => {
@@ -60,15 +82,13 @@ function App() {
     if (userName == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phone1 == "" ) {
+    if (phone1 == "") {
       return alert("'-'없이 입력을 해주세요.");
     }
-    if(time==""){
+    if (time == "") {
       return alert("통화시간 선택해주세요");
     }
 
-    
-    
     const phoneNumber = `${phone1}`;
     const name = `${userName}`;
     const selectedTime = `${time}`;
@@ -77,7 +97,7 @@ function App() {
       name: name,
       time: selectedTime,
     };
-    
+
     axios.post("/client", param).then((res) => {
       console.log("res=", res);
     });
@@ -90,8 +110,10 @@ function App() {
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
       `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
-      );
-    alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
+    );
+    alert(
+      "[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다."
+    );
   };
   const settings = {
     dots: false,
@@ -316,8 +338,8 @@ function App() {
             )}
           </div> */}
           <div>
-          <div className="nameArea">
-            {/* <div className="nameArea">
+            <div className="nameArea">
+              {/* <div className="nameArea">
               <input
                 type="text"
                 className="username"
@@ -325,69 +347,47 @@ function App() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
-            <div className="namephone ">
-               {/* {<select>
+              <div className="namephone ">
+                {/* {<select>
                 <option key="1" value="1">
                   010
                 </option> 
               </select>{" "}
               -{"\t"}} */}
-               <input
-               type="text"
-               className="username"
-               placeholder="이름"
-               onChange={(e) => setUserName(e.target.value)}
-              
-              />
+                <input
+                  type="text"
+                  className="username"
+                  placeholder="이름"
+                  onChange={(e) => setUserName(e.target.value)}
+                />
               </div>
               {"\t"}
               <div className="phone">
-               <input
-                type="tel"
-                className="phone"
-                placeholder="휴대폰"
-                onChange={(e) => setPhone1(e.target.value)}
-                maxlength="13" 
-                onkeypress="onlynumber(this)"
-              
-              />
+                <input
+                  type="tel"
+                  className="phone"
+                  placeholder="휴대폰"
+                  onChange={(e) => setPhone1(e.target.value)}
+                  maxlength="13"
+                  onkeypress="onlynumber(this)"
+                />
               </div>
               <div className="time">
-              
-              <select value={time} onChange={(e) => setTime(e.target.value)}>
-              <option value="">
-               통화가능시간(필수)
-              </option>
-              <option value="06:00-09:00">
-               06:00-09:00
-              </option>
-              <option value="09:00-11:00">
-              09:00-11:00
-             </option>
-            <option value="11:00-13:00">
-             11:00-13:00
-             </option>
-            <option value="13:00-15:00">
-             13:00-15:00
-            </option>
-            <option value="15:00-17:00">
-             15:00-17:00
-            </option>
-            <option value="17:00-19:00">
-             17:00-19:00
-            </option>
-            <option value="19:00-21:00">
-            19:00-21:00
-            </option>
-          <option value="21:00-23:00">
-             21:00-23:00
-          </option>
-          <option value="23:00-06:00">
-            23:00-06:00
-         </option>
-              </select>{"통화가능시간 "}
+                <select value={time} onChange={(e) => setTime(e.target.value)}>
+                  <option value="">통화가능시간(필수)</option>
+                  <option value="06:00-09:00">06:00-09:00</option>
+                  <option value="09:00-11:00">09:00-11:00</option>
+                  <option value="11:00-13:00">11:00-13:00</option>
+                  <option value="13:00-15:00">13:00-15:00</option>
+                  <option value="15:00-17:00">15:00-17:00</option>
+                  <option value="17:00-19:00">17:00-19:00</option>
+                  <option value="19:00-21:00">19:00-21:00</option>
+                  <option value="21:00-23:00">21:00-23:00</option>
+                  <option value="23:00-06:00">23:00-06:00</option>
+                </select>
+                {"통화가능시간 "}
               </div>
-          </div>
+            </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
                 <input
@@ -399,7 +399,13 @@ function App() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                 개인정보취급방침동의
-                <a href="javascript:void(0);" onclick="privacy_pop('show', '.pop-policy',2)">[보기]</a>
+                <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen2(true)}
+                  // onclick="privacy_pop('show', '.pop-policy',2)"
+                >
+                  [보기]
+                </a>
               </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
@@ -422,30 +428,36 @@ function App() {
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 광고성문자수신동의
-                <a href="javascript:void(0);" onclick="Popup1('show', '.popup',2)">[보기]</a>
+                <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen(true)}
+                  // onclick="Popup1('show', '.popup',2)"
+                >
+                  [보기]
+                </a>
               </label>
             </div>
-          <div className="btnArea">
+            <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
                   <img src={"/img/btn.gif"}></img>
                 ) : (
-                  <img style={{ width:"390px"  }} src={"/img/btn.gif"}></img>
+                  <img style={{ width: "390px" }} src={"/img/btn.gif"}></img>
                 )}
               </button>
             </div>
           </div>
         </Slider>
         <div className="profit">
-        {isBrowser ? (
-                  <img src={"/img/titleprofit.png"}></img>
-                ) : (
-                  <img style={{ width:"390px"  }} src={"/img/mtitleprofit.png"}></img>
-                )}
+          {isBrowser ? (
+            <img src={"/img/titleprofit.png"}></img>
+          ) : (
+            <img style={{ width: "390px" }} src={"/img/mtitleprofit.png"}></img>
+          )}
         </div>
         <div className="profit1">
-              <img src={"/img/profit.jpeg"}></img>
-            </div>  
+          <img src={"/img/profit.jpeg"}></img>
+        </div>
         <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
@@ -483,13 +495,42 @@ function App() {
           textAlign: "center",
           marginTop: 20,
         }}
+      ></h1>
+      <div className="imgGrid"></div>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
       >
-        </h1>
-        <div className="imgGrid">
-
+        <div>
+          광고성 정보수신 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자 :
+          청개구리 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
+          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
+          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
+          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
+          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
+          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
         </div>
-      </div>
-    );
+      </Modal>
+      <Modal
+        isOpen={modalIsOpen2}
+        onRequestClose={() => setIsOpen2(false)}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div>
+          개인정보 제3자 제공 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자
+          : 청개구리 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
+          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
+          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
+          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
+          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
+          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
+        </div>
+      </Modal>
+    </div>
+  );
 }
 
 export default App;
