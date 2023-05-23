@@ -105,14 +105,6 @@ function App2() {
       return alert("통화시간 선택해주세요");
     }
 
-     const inputValue = e.target.value;
-    
-    const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
-  
-    if (phoneRegex.test(inputValue)) {
-      setPhone1(inputValue);
-    }
-
     const phoneNumber = `${phone1}`;
     const name = `${userName}`;
     const selectedTime = `${time}`;
@@ -381,6 +373,7 @@ function App2() {
                   type="text"
                   className="username"
                   placeholder="이름"
+                  maxLength="4"
                   onChange={(e) => setUserName(e.target.value)}
                 />
               </div>
