@@ -1,3 +1,13 @@
+
+
+// import React from "react";
+
+// const Main3 = () => {
+//   return <div>Main3</div>;
+// };
+
+// export default Main3;
+
 import "./App2.css";
 import TelegramApi from "node-telegram-api";
 import { useState, useEffect } from "react";
@@ -13,24 +23,26 @@ import { ColorRing } from "react-loader-spinner";
 import AnimatedNumbers from "react-animated-numbers";
 import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
+import Modal from "react-modal";
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    // right: "auto",
+    // bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+  },
+};
 
 function App2() {
-
-  axios.defaults.baseURL = "https://sbstock.kr/test";
+  axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
-  const handlePhoneChange = (e) => {
-    const input = e.target.value;
-
-    // 휴대폰 번호 형식을 검증하는 정규식
-    const phoneRegex = /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/;
-
-    if (phoneRegex.test(input)) {
-      setPhone1(input);
-    }
   const [phone2, setPhone2] = useState("");
   const [num, setNum] = useState(331231);
-  const [time, setTime ]= useState("");
+  const [time, setTime] = useState("");
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
@@ -38,9 +50,20 @@ function App2() {
   const [check4, setCheck4] = useState(false);
   const [check5, setCheck5] = useState(false);
 
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [modalIsOpen2, setIsOpen2] = useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   const [progress, setProgress] = useState(0);
   const insertHistory = () => {
-  const visitReq = {
+    const visitReq = {
       visitUrl: document.referrer,
     };
 
@@ -69,10 +92,10 @@ function App2() {
     if (userName == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phone1 == "" ) {
+    if (phone1 == "") {
       return alert("'-'없이 입력을 해주세요.");
     }
-    if(time==""){
+    if (time == "") {
       return alert("통화시간 선택해주세요");
     }
 
@@ -110,7 +133,6 @@ function App2() {
     autoplay: true,
     autoplaySpeed: 3000,
   };
-
   return (
     <div
       style={{
@@ -325,8 +347,8 @@ function App2() {
             )}
           </div> */}
           <div>
-          <div className="nameArea">
-            {/* <div className="nameArea">
+            <div className="nameArea">
+              {/* <div className="nameArea">
               <input
                 type="text"
                 className="username"
@@ -334,71 +356,47 @@ function App2() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
-            <div className="namephone ">
-               {/* {<select>
+              <div className="namephone ">
+                {/* {<select>
                 <option key="1" value="1">
                   010
-                </option>
+                </option> 
               </select>{" "}
               -{"\t"}} */}
-               <input
-               type="text"
-               className="username"
-               placeholder="이름"
-               onChange={(e) => setUserName(e.target.value)}
-
-              />
+                <input
+                  type="text"
+                  className="username"
+                  placeholder="이름"
+                  onChange={(e) => setUserName(e.target.value)}
+                />
               </div>
               {"\t"}
               <div className="phone">
-               <input
-               type="tel"
-               className="phone"
-               placeholder="휴대폰"
-               value={phone1}
-               onChange={handlePhoneChange}
-               maxLength="13"
-               onkeypress="onlynumber(this)"
-
-              />
+                <input
+                  type="tel"
+                  className="phone"
+                  placeholder="휴대폰"
+                  onChange={(e) => setPhone1(e.target.value)}
+                  maxlength="13"
+                  onkeypress="onlynumber(this)"
+                />
               </div>
               <div className="time">
-
-              <select value={time} onChange={(e) => setTime(e.target.value)}>
-              <option value="">
-               통화가능시간(필수)
-              </option>
-              <option value="06:00-09:00">
-               06:00-09:00
-              </option>
-              <option value="09:00-11:00">
-              09:00-11:00
-             </option>
-            <option value="11:00-13:00">
-             11:00-13:00
-             </option>
-            <option value="13:00-15:00">
-             13:00-15:00
-            </option>
-            <option value="15:00-17:00">
-             15:00-17:00
-            </option>
-            <option value="17:00-19:00">
-             17:00-19:00
-            </option>
-            <option value="19:00-21:00">
-            19:00-21:00
-            </option>
-          <option value="21:00-23:00">
-             21:00-23:00
-          </option>
-          <option value="23:00-06:00">
-            23:00-06:00
-         </option>
-              </select>{"통화가능시간 "}
-
-    </div>
-          </div>
+                <select value={time} onChange={(e) => setTime(e.target.value)}>
+                  <option value="">통화가능시간(필수)</option>
+                  <option value="06:00-09:00">06:00-09:00</option>
+                  <option value="09:00-11:00">09:00-11:00</option>
+                  <option value="11:00-13:00">11:00-13:00</option>
+                  <option value="13:00-15:00">13:00-15:00</option>
+                  <option value="15:00-17:00">15:00-17:00</option>
+                  <option value="17:00-19:00">17:00-19:00</option>
+                  <option value="19:00-21:00">19:00-21:00</option>
+                  <option value="21:00-23:00">21:00-23:00</option>
+                  <option value="23:00-06:00">23:00-06:00</option>
+                </select>
+                {"통화가능시간 "}
+              </div>
+            </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
                 <input
@@ -410,7 +408,13 @@ function App2() {
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                 개인정보취급방침동의
-                <a href="javascript:void(0);" onclick="privacy_pop('show', '.pop-policy',2)">[보기]</a>
+                <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen2(true)}
+                  // onclick="privacy_pop('show', '.pop-policy',2)"
+                >
+                  [보기]
+                </a>
               </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
@@ -433,30 +437,36 @@ function App2() {
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 광고성문자수신동의
-                <a href="javascript:void(0);" onclick="Popup1('show', '.popup',2)">[보기]</a>
+                <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen(true)}
+                  // onclick="Popup1('show', '.popup',2)"
+                >
+                  [보기]
+                </a>
               </label>
             </div>
-          <div className="btnArea">
+            <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
                   <img src={"/img/btn.gif"}></img>
                 ) : (
-                  <img style={{ width:"390px"  }} src={"/img/btn.gif"}></img>
+                  <img style={{ width: "390px" }} src={"/img/btn.gif"}></img>
                 )}
               </button>
             </div>
           </div>
         </Slider>
         <div className="profit">
-        {isBrowser ? (
-                  <img src={"/img/titleprofit.png"}></img>
-                ) : (
-                  <img style={{ width:"390px"  }} src={"/img/mtitleprofit.png"}></img>
-                )}
+          {isBrowser ? (
+            <img src={"/img/titleprofit.png"}></img>
+          ) : (
+            <img style={{ width: "390px" }} src={"/img/mtitleprofit.png"}></img>
+          )}
         </div>
         <div className="profit1">
-              <img src={"/img/profit.jpeg"}></img>
-            </div>
+          <img src={"/img/profit.jpeg"}></img>
+        </div>
         <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
@@ -494,20 +504,42 @@ function App2() {
           textAlign: "center",
           marginTop: 20,
         }}
+      ></h1>
+      <div className="imgGrid"></div>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
       >
-        </h1>
-        <div className="imgGrid">
-
+        <div>
+          광고성 정보수신 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자 :
+          SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
+          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
+          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
+          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
+          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
+          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
         </div>
-      </div>
-    );
+      </Modal>
+      <Modal
+        isOpen={modalIsOpen2}
+        onRequestClose={() => setIsOpen2(false)}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div>
+          개인정보 제3자 제공 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자
+          : SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
+          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
+          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
+          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
+          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
+          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
+        </div>
+      </Modal>
+    </div>
+  );
 }
-}
-
-import React from "react";
-
-const Main3 = () => {
-  return <div>Main3</div>;
-};
 
 export default Main3;
