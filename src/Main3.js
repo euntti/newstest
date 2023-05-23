@@ -36,15 +36,20 @@ function App2() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
-  const phoneRegex = '/^(010|011|016|017|018|019)-[^0][0-0]{3,4}-[0-9]{4}/';
-
+  const handlePhoneChange = (event) => {
+    const input = event.target.value;
+  
+    // 휴대폰 번호 형식을 검증하는 정규식
+    const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
+  
     if (phoneRegex.test(input)) {
       setPhone1(input);
+    } else {
+      // 유효한 형식이 아닌 경우에는 상태값을 업데이트하지 않거나 에러 처리를 수행할 수 있습니다.
+      setPhone1("");
     }
-    const handlePhoneChange = (event) => {
-      const input = event.target.value;
-      setPhone1(input);
-    };
+  };
+  
   const [phone2, setPhone2] = useState("");
   const [num, setNum] = useState(331231);
   const [time, setTime] = useState("");
