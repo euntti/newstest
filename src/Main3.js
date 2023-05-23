@@ -36,6 +36,11 @@ function App2() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
+  const phoneRegex = /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/;
+
+    if (phoneRegex.test(input)) {
+      setPhone1(input);
+    }
   const [phone2, setPhone2] = useState("");
   const [num, setNum] = useState(331231);
   const [time, setTime] = useState("");
@@ -372,7 +377,8 @@ function App2() {
                   type="tel"
                   className="phone"
                   placeholder="휴대폰"
-                  onChange={(e) => setPhone1(e.target.value)}
+                  value={phone1}
+                  onChange={handlePhoneChange}
                   maxlength="13"
                   onkeypress="onlynumber(this)"
                 />
