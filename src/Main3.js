@@ -36,7 +36,7 @@ function App2() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
-  const phoneRegex = /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/;
+  const phoneRegex = '/^(010|011|016|017|018|019)-[^0][0-0]{3,4}-[0-9]{4}/';
 
     if (phoneRegex.test(input)) {
       setPhone1(input);
