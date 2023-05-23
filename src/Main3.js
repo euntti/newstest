@@ -27,7 +27,7 @@ function App2() {
     const phoneRegex = /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/;
 
     if (phoneRegex.test(input)) {
-      setPhone(input);
+      setPhone1(input);
     }
   const [phone2, setPhone2] = useState("");
   const [num, setNum] = useState(331231);
