@@ -113,6 +113,30 @@ function App4() {
     autoplay: true,
     autoplaySpeed: 2000,
   };
+
+  <table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Username</th>
+      <th>Telephone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2023-05-25</td>
+      <td>김*영</td>
+      <td>010-****-8245</td>
+    </tr>
+    <tr>
+      <td>2023-05-25</td>
+      <td>최*필</td>
+      <td>010-****-8108</td>
+    </tr>
+    <!-- 다른 사용자 데이터도 여기에 추가해주세요 -->
+  </tbody>
+</table>
+
   return (
     <div>
       <div>
