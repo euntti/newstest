@@ -231,7 +231,7 @@ function App4() {
               </Slider>
                 <div className="inputBoxs">
                   <h1>급등종목 30일 무료제공 프로모션</h1>
-                  <h3>하루3분투자로 1억만들기</h3>
+                  <h3>하루 3분 투자로 1억만들기</h3>
                   <ul>
                     <li id="line01">
                       <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
@@ -240,7 +240,7 @@ function App4() {
                       개인정보는 암호화하여 안전하게 처리됩니다.
                     </li>
                     <li id="line03" cond="off">
-                      <span>급등주를 30일동안 받아보세요.</span>
+                      <span> 30일 급등주 신청하기.</span>
                     </li>
                     <br />
                     <li>
@@ -287,17 +287,6 @@ function App4() {
                       >
                         보기
                       </span>
-                      <label>
-                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree2"
-                          value="1"
-                          checked={check2}
-                          onChange={(e) => setCheck2(e.target.checked)}
-                        />
-                        마케팅수신동의
-                      </label>
                       <span
                         onClick={openModal}
                         class="txtbtn"
@@ -331,12 +320,12 @@ function App4() {
                 {/* 김진환 씨의 최근 수익인증 */}
               </p>
                <p class="mainhead">
-                  <b>"SB그룹 실 고객들의 수익인증"</b>
+                  <b>"하루 3분 투자로 3개월 수익1억 가능한 가상화폐는? "</b>
                 </p>
                <p class="imgbox banner">
                 <img
                   style={{ width: 620, height: "auto" }}
-                  src={"/img/sbmain2.png"}
+                  src={"/img/stock.png"}
                   alt=""
                 />
               </p>
