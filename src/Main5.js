@@ -347,6 +347,17 @@ function App4() {
                   </ul>
                   </div>
                 <br />
+                <div className="latest">
+                  <div className="latimgbox">
+                    <img
+                    style={{ width: 620, height: "auto" }}
+                    src={"/img/member.png"}
+                    alt=""
+                    />
+                  </div>
+
+
+                </div>
               {/* <p>
                 SB그룹 대표이사는
                 {"\t"}
@@ -362,7 +373,7 @@ function App4() {
               </p>
               <p>
                 얼마 안남은 2분기에도 프로모션을 진행한다고 하니 많은 문의가 몰릴 것으로 예상된다. */}
-                <br />
+                {/* <br />
                 <p class="mainhead2">
                 <b>"아무것도 바꾸지 않으면 아무것도 변하지 않는다"</b>
                 <br />
@@ -370,8 +381,8 @@ function App4() {
               <p class="mainhead2">
                 <b>"안전하고 영리한 투자노하우! 정확한 가치투자에 의해 당신의 꿈을 실현합니다"</b>
                 {/* <br />
-              </p> */}
-              </p>
+              </p> */} 
+              {/* </p>
                <p class="mainhead">
                   <b> ►SB그룹 실제 AI 퀀트박스 이용사진◀︎</b>
                 </p>
@@ -392,7 +403,7 @@ function App4() {
                   src={"/img/review1.png"}
                   alt=""
                 />
-                </p>
+                </p> */}
           
               {/* <p class="imgbox banner">
                 <a
