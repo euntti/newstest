@@ -9,6 +9,9 @@ import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 
 
+const Main5 = () => {
+    return <div>Main5</div>
+  }
 
 const customStyles = {
   content: {
