@@ -417,21 +417,45 @@ function App4() {
 </table>
                 </div>
                 <div className="news">
-                  오늘의 주요 기사 
-                  <div className="news1"></div>
+                  <strong class="title">오늘의 주요 기사</strong> 
+                    <div className="news1">
                     <img
                     style={{ width: 220, height: "auto" }}
                     src={"/img/sbnews1.png"}
                     alt=""
                     />
-                    <span>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
-                     <img
+                    <span
+                    style={{
+                      display: "block",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
+                    </div>
+                    <div className="news2">
+                       <img
                     style={{ width: 220, height: "auto" }}
                     src={"/img/sbnews2.png"}
                     alt=""
                     />
-                    <span>이번주 안으로 300% 급등할 종목 찾았다! 바로 풀매수 가자! </span>
-
+                    <span >이번주 안으로 300% 급등할 종목 찾았다! 바로 풀매수 가자! </span>
+                    </div>
+                    <div className="news3">
+                      <img
+                     style={{ width: 220, height: "auto" }}
+                      src={"/img/sbnews1.png"}
+                      alt=""
+                     />
+                      <span>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
+                    </div>
+                      <div className="news4">
+                      <img
+                       style={{ width: 220, height: "auto" }}
+                      src={"/img/sbnews1.png"}
+                      alt=""
+                     />
+                      <span>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
+                    </div>
                 </div>
                 <div className="talk"> 
                     <img
