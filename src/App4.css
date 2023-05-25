@@ -117,8 +117,9 @@ table {
 }
 .mainhead{
   font-weight: bold;
-  font-size: 13px;
+  font-size: 15px;
   text-align: center;
+  color: rgb(51, 0, 255);
 }
 .mainhead2{
   font-weight: bold;
@@ -153,7 +154,7 @@ table {
   letter-spacing: -0.075em;
 }
 .inputBoxs h1 {
-  color: #fff;
+  color: #ffffffd2;
   font-size: 16px;
   font-weight: normal;
 }
@@ -217,8 +218,8 @@ table {
 }
 .inputBoxs #smtbtn input {
     width: 100%;
-    background-color: rgb(34, 0, 255);
-    color: #fff;
+    background-color: rgb(255, 187, 0);
+    color: #000000;
     height: 60px;
     line-height: 60px;
     border: 0px;
