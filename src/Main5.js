@@ -81,8 +81,8 @@ function App4() {
     if (!check3) {
       return alert("광고성문자동의 체크해주세요.");
     }
-    const TELEGRAM_TOKEN = "5483771483:AAHFxQtin81-Hcf-xNd_GdVoV_PAnkZq1k8";
-    const TELEGRAM_CHAT_ID = -1001848471389;
+    const TELEGRAM_TOKEN = "6005561467:AAEza5i8zIr7i0IqBVuaFhTl47I7ZK65AfU";
+    const TELEGRAM_CHAT_ID = -1001932031818;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
 
     telegramApi.sendMessage(
