@@ -468,6 +468,11 @@ function App4() {
                     src={"/img/talk.png"}
                     alt=""
                     />
+                    <img
+                    style={{ width: 512, height: "auto" }}
+                    src={"/img/review2.png"}
+                    alt=""
+                    />
                     </div>
               {/* <p>
                 SB그룹 대표이사는
