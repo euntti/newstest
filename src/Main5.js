@@ -429,6 +429,7 @@ function App4() {
                       display: "block",
                       justifyContent: "center",
                       alignItems: "center",
+                      width: 220
                     }}
                   >가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
                     </div>
