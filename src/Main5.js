@@ -230,7 +230,7 @@ function App4() {
                 
               </Slider>
                 <div className="inputBoxs">
-                  <img className={style.backgroundImage} src={"/img/inbox.png"}></img>
+                <img inputBoxs={style.backgroundImage} src={"/img/inbox.png"} />
                   <h1>급등종목 30일 무료제공 프로모션</h1>
                   <h3>하루3분투자로 1억만들기</h3>
                   <ul>
@@ -328,6 +328,7 @@ function App4() {
                     </li>
                   </ul>
                   </div>
+                       
                 <br />
                 {/* 김진환 씨의 최근 수익인증 */}
               </p>
