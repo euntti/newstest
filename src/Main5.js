@@ -230,8 +230,7 @@ function App4() {
                 
               </Slider>
                 <div className="inputBoxs">
-                  <img className={style.backgroundImage} src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/back.jpeg" />
- 
+                  <img className={style.backgroundImage} src={"/img/inbox.png"}></img>
                   <h1>급등종목 30일 무료제공 프로모션</h1>
                   <h3>하루3분투자로 1억만들기</h3>
                   <ul>
