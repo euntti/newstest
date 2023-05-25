@@ -469,7 +469,7 @@ function App4() {
                     alt=""
                     />
                     <img
-                    style={{ width: 512, height: "auto" }}
+                    style={{ width: 600, height: "auto" }}
                     src={"/img/review2.png"}
                     alt=""
                     />
