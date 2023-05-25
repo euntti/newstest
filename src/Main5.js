@@ -348,14 +348,68 @@ function App4() {
                   </div>
                 <br />
                 <div className="latest">
-                  <div className="latimgbox">
+                  <div className="latimgbox" id="latest_list">
                     <img
-                    style={{ width: 620, height: "auto" }}
+                    style={{ width: 660, height: "auto" }}
                     src={"/img/member.png"}
                     alt=""
                     />
                   </div>
+                 
+                                <ul>
+                                    <li>
+                                        <div class="date">2023-05-25</div>
+                                        <div class="username">김*영</div>
+                                        <div class="tel">010-****-8245</div>
+                                    </li>
+                                    <li>
+                                        <div class="date">2023-05-25</div>
+                                        <div class="username">최*필</div>
+                                        <div class="tel">010-****-8108</div>
+                                    </li>
+                                    <li>
+                                        <div class="date">2023-05-25</div>
+                                        <div class="username">이*라</div>
+                                        <div class="tel">010-****-1978</div>
+                                    </li>
+                                    <li>
+                                        <div class="date">2023-05-25</div>
+                                        <div class="username">박*희</div>
+                                        <div class="tel">010-****-9357</div>
+                                    </li>
+                                    <li>
+                                        <div class="date">2023-05-25</div>
+                                        <div class="username">김*철</div>
+                                        <div class="tel">010-****-8956</div>
+                                    </li>
+                                    <li>
+                                        <div class="date">2023-05-25</div>
+                                        <div class="username">정*구</div>
+                                        <div class="tel">010-****-5349</div>
+                                    </li>
+                                    <li>
+                                        <div class="date">2023-05-25</div>
+                                        <div class="username">이*영</div>
+                                        <div class="tel">010-****-1194</div>
+                                    </li>
+                                    <li>
+                                        <div class="date">2023-05-25</div>
+                                        <div class="username">박*국</div>
+                                        <div class="tel">010-****-7191</div>
+                                    </li>
+                                    <li>
+                                        <div class="date">2023-05-25</div>
+                                        <div class="username">이*란</div>
+                                        <div class="tel">010-****-8546</div>
+                                    </li>
+                                    <li>
+                                        <div class="date">2023-05-25</div>
+                                        <div class="username">지*권</div>
+                                        <div class="tel">010-****-1751</div>
+                                    </li>
 
+                                </ul>
+                            
 
                 </div>
               {/* <p>
