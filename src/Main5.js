@@ -462,6 +462,13 @@ function App4() {
                     <span>이번주 안으로 300% 급등할 종목 찾았다! 바로 풀매수 가자! </span>
 
                 </div>
+                <div className="talk"> 
+                    <img
+                    style={{ width: 512, height: "auto" }}
+                    src={"/img/talk.png"}
+                    alt=""
+                    />
+                    </div>
               {/* <p>
                 SB그룹 대표이사는
                 {"\t"}
