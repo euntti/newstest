@@ -250,7 +250,7 @@ table {
   align-items: center;
   display: flex;
 }
-.news1.img{
+.news .img{
   justify-content: center;
   align-items: center;
   display: flex;
