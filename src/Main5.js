@@ -133,43 +133,61 @@ function App4() {
       </div>
       <div className="box_container">
         <div className="box">
-          <div className="subTitle">■제테크 핫이슈</div>
+          <div className="subTitle">■ 떠오르는 이슈</div>
           <div className="inner">
             <div className="head">
               <h1 className="title">
-                아직도 손실만 보고 계신가요?{" "}
-                <p><span class="color1">" SB그룹 "</span> </p>
-                <p>억대를 모을 수 있게 한 투자 노하우</p>
-                어떤 노하우이길래? "
+                하루에 3분투자로 {" "}
+                <p><span class="color1">" 억대 만들기 노하우는 ?"</span> </p>
+                {/* <p>억대를 모을 수 있게 한 투자 노하우</p>
+                어떤 노하우이길래? " */}
               </h1>
             </div>
           </div>
           <div className="writer">
             <div class="writer-info">
-              기자 - 주진석ㅣ 조회수 : 1809 ㅣ 날짜 :{""}
-              <span id="regdate">2023-04-27</span>
+              기자 - 김진우ㅣ 조회수 : 1202 ㅣ 날짜 :{""}
+              <span id="regdate">2023-05-27</span>
             </div>
           </div>
 
           <div className="content-wrap">
             <div className="content">
-              <p class="imgbox banner">
+              {/* <p class="imgbox banner">
                 <img
                   style={{ width: 620, height: "auto" }}
-                  src={"/img/sbmain11.png"}
+                  src={"/img/sbmain41.png"}
                   alt=""
                 />
-              </p>
+              </p> */}
               <p>
-                <b>"가상화폐로 매월 1억씩 수익내고있어요"</b>
+                <b>"가상화폐 3분투자로 1억씩 수익내고있어요"</b>
                 <br />
                 김진환 씨(50대) 인터뷰中
               </p>
               <p>
-                <p>지난 15일 종합투자S 취재진들이 확인해본결과,</p>
-                2022년 1월부터 2022년 12월까지 AI프로그램을 병행한 
-                <p>SB그룹 만의 투자 전략을 통해 
-                4월 , 9월을 제한 나머지 달은 모두 수익이였으며 4월,9월을 포함해 일평균으로 계산시 일 60.7% 수익률이 확인됐다.</p>
+                <p>최근 부동산, 주식, 가상화폐 모두 하락장이라 손실보고 있는 분들이 많을텐데요
+                    이런 하락장에서도 손실없이 큰돈 벌 수 있는 재테크 '노하우' 알려드리겠습니다. </p>
+
+                    <p class="imgbox banner">
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/sbmain41.png"}
+                  alt=""
+                />
+              </p>
+
+                제가 했던 재테크는 "가상화폐 재테크"인데요
+                <p>저도 아는 지인통해 알게되었는데요 'SB그룹' 이라는 기업에서 출시한 상품이었어요!
+                    방법은 아주 간단하답니다</p>
+                <p><span class="color1">
+                  첫째. A.I 분석 프로그램으로 추천해준 코인 매수
+                  둘째. 정해준 목표가 도달시 매도
+                  셋째. 목표가 도달하지 않고 하락시 정해준 손절가에 손절</span></p>
+                  <p></p>
+                <p>이 3가지만 똑같이 따라하니 꾸준히 수익이 났어요</p>
+                <p>가끔 하락할때가 있는데 '손절가'에 손절하면 손실이 크지 않고, 
+                상승하는 경우가 더 많으니 결국 손실없이 수익을 낼 수 있었어요</p>
                 <Slider {...settings}>
                 {/* <div>
                   <span
@@ -209,6 +227,8 @@ function App4() {
                     <Progressbar value={progress} />
                   </span> */}
                 </div>
+                
+              </Slider>
                 <div className="inputBoxs">
                   <h1>급등종목 30일 무료제공 프로모션</h1>
                   <h3>1억 만들기 프로젝트 무료체험 신청</h3>
@@ -306,8 +326,7 @@ function App4() {
                       />
                     </li>
                   </ul>
-                </div>
-              </Slider>
+                  </div>
                 <br />
                 {/* 김진환 씨의 최근 수익인증 */}
               </p>
