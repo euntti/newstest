@@ -358,14 +358,24 @@ function App4() {
                     alt=""
                     />
                   </div>
-                 
-                                <ul>
+                    <table>
+                    <thead>
+                      <tr>
+                       <th>Date</th>
+                       <th>Username</th>
+                       <th>Telephone</th>
+                       </tr>
+                      </thead>
+                       <tbody>
+                        <tr>
+                       <div class="date">2023-05-25</div>
+                      <div class="username">김*영</div>
+                       <div class="tel">010-****-8245</div>
+                       </tr>
+                       </tbody>
+                       </table>
                                     <li>
-                                        <div class="date">2023-05-25</div>
-                                        <div class="username">김*영</div>
-                                        <div class="tel">010-****-8245</div>
-                                    </li>
-                                    <li>
+                                    
                                         <div class="date">2023-05-25</div>
                                         <div class="username">최*필</div>
                                         <div class="tel">010-****-8108</div>
@@ -411,8 +421,7 @@ function App4() {
                                         <div class="tel">010-****-1751</div>
                                     </li>
 
-                                </ul>
-                            
+                                
                                 <table>
   <thead>
     <tr>
