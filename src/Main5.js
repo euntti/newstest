@@ -181,9 +181,9 @@ function App4() {
                 <p>저도 아는 지인통해 알게되었는데요 'SB그룹' 이라는 기업에서 출시한 상품이었어요!
                     방법은 아주 간단하답니다</p>
                 <p><span class="color1">
-                  첫째. A.I 분석 프로그램으로 추천해준 코인 매수
-                  둘째. 정해준 목표가 도달시 매도
-                  셋째. 목표가 도달하지 않고 하락시 정해준 손절가에 손절</span></p>
+                  <p>첫째. A.I 분석 프로그램으로 추천해준 코인 매수</p>
+                  <p>둘째. 정해준 목표가 도달시 매도</p>
+                  <p>셋째. 목표가 도달하지 않고 하락시 정해준 손절가에 손절</p></span></p>
                   <p></p>
                 <p>이 3가지만 똑같이 따라하니 꾸준히 수익이 났어요</p>
                 <p>가끔 하락할때가 있는데 '손절가'에 손절하면 손실이 크지 않고, 
@@ -215,7 +215,7 @@ function App4() {
                     />
                   </span>
                 </div> */}
-                <div>
+                {/* <div> */}
                   {/* <span
                     style={{
                       display: "flex",
@@ -226,12 +226,14 @@ function App4() {
                   >
                     <Progressbar value={progress} />
                   </span> */}
-                </div>
+                {/* </div> */}
                 
               </Slider>
                 <div className="inputBoxs">
+                  <img className={style.backgroundImage} src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/back.jpeg" />
+ 
                   <h1>급등종목 30일 무료제공 프로모션</h1>
-                  <h3>1억 만들기 프로젝트 무료체험 신청</h3>
+                  <h3>하루3분투자로 1억만들기</h3>
                   <ul>
                     <li id="line01">
                       <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
