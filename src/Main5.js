@@ -456,7 +456,7 @@ function App4() {
                     <span>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
                      <img
                     style={{ width: 220, height: "auto" }}
-                    src={"/img/sbnews1.png"}
+                    src={"/img/sbnews2.png"}
                     alt=""
                     />
                     <span>이번주 안으로 300% 급등할 종목 찾았다! 바로 풀매수 가자! </span>
