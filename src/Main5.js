@@ -63,6 +63,10 @@ function App4() {
     });
   };
 
+  const dateElement = document.getElementById("date");
+  const today = new Date().toISOString().slice(0, 10);
+  dateElement.innerText = today;
+  
   const submitEvent = (e) => {
     e.preventDefault();
 
@@ -100,6 +104,7 @@ function App4() {
     //   getCustomer();
     // });
   };
+
 
   useEffect(() => {
     getCustomer();
@@ -416,6 +421,7 @@ function App4() {
   </tbody>
 </table>
  </div>
+                
                 <div className="news">
                   <strong class="title">오늘의 주요 기사</strong> 
                   <div className="news11" style={{ display: "flex" }}>
