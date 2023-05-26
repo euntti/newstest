@@ -11,10 +11,6 @@ import { ColorRing } from "react-loader-spinner";
 
 const Main5 = () => {
     return <div>Main5</div>
-    const dateElement = document.getElementById("date");
-  const today = new Date().toISOString().slice(0, 10);
-  dateElement.innerText = today;
-  
   }
 
 const customStyles = {
@@ -30,6 +26,10 @@ const customStyles = {
 };
 
 function App4() {
+  const dateElement = document.getElementById("date");
+  const today = new Date().toISOString().slice(0, 10);
+  dateElement.innerText = today;
+
   const [users, setUsers] = useState([]);
   const [nickName, setNickName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -420,6 +420,8 @@ function App4() {
   </tbody>
 </table>
  </div>
+ 
+
                 <div className="news">
                   <strong class="title">오늘의 주요 기사</strong> 
                   <div className="news11" style={{ display: "flex" }}>
