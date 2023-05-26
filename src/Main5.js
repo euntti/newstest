@@ -239,7 +239,7 @@ function App4() {
                <p class="mainhead">
                   <b>"하루 3분 투자로 3개월 수익1억 가능한 가상화폐는? "</b>
                 </p>
-               <p class="imgbox banner">
+               <p class="imgboxbanner">
                 <img
                   style={{ width: 620, height: "auto" }}
                   src={"/img/stock.png"}

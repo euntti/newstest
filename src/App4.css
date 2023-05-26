@@ -356,19 +356,9 @@ table {
   .news {
     border: 1px solid #ff9500;
     padding: 20px;
+    max-width: 100%;
   }
-  .news1 {
-    width: 300px;
-  }
-  .news2 {
-    width: 300px;
-  }
-  .news3 {
-    width: 300px;
-  }
-  .news4 {
-    width: 300px;
-  }
+
   .content .imgbox img {
     max-width: 100%;
     margin: 0 auto;
@@ -379,6 +369,9 @@ table {
     justify-content: center;
     align-items: center;
     height: 100%;
+  }
+  .imgboxbanner{
+    max-width: 100%;
   }
   .talk2 img{
     width: 400px;
