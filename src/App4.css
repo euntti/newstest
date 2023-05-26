@@ -259,6 +259,9 @@ table {
 .talk{
   max-width: 100%;
 }
+.talk2{
+  max-width: 100%;
+}
 @media (max-width: 700px) {
   .box_container{
     width:auto;
@@ -301,6 +304,9 @@ table {
     justify-content: center;
     align-items: center;
     height: 100%;
+  }
+  .talk2{
+    max-width: 100%;
   }
   
 }
