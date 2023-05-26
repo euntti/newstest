@@ -485,13 +485,12 @@ function App4() {
                     </div>
                 </div>
                 <div className="talk" style={{ display: "flex" }}>
-                  <div className="talk1">
                     <img
                     style={{ width: 512, height: "auto" }}
                     src={"/img/talk.png"}
                     alt=""
                     />
-                    </div>
+                  
                     <img
                     style={{ width: 600, height: "auto"  }}
                     src={"/img/review2.png"}
