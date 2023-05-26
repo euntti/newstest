@@ -490,7 +490,7 @@ function App4() {
                     src={"/img/talk.png"}
                     alt=""
                     />
-                  
+                    수익
                     <img
                     style={{ width: 600, height: "auto"  }}
                     src={"/img/review2.png"}
