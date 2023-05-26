@@ -362,11 +362,11 @@ function App4() {
                   </div>
                   <table className="tablelive" >
                    <thead>
-                    <tr>
+                    {/* <tr>
                     <th>Date</th>
                     <th>Username</th>
                     <th>Telephone</th>
-                    </tr>
+                    </tr> */}
                     </thead>
                   <tbody>
                     <tr>
