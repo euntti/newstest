@@ -484,17 +484,21 @@ function App4() {
                     </div>
                     </div>
                 </div>
-                <div className="talk"> 
+                <div className="talk" style={{ display: "flex" }}>
+                  <div className="talk1">
                     <img
                     style={{ width: 512, height: "auto" }}
                     src={"/img/talk.png"}
                     alt=""
                     />
+                    </div>
+                    <div className="talk2">
                     <img
-                    style={{ width: 600, height: "auto" }}
+                    style={{ width: 600, height: "auto"  }}
                     src={"/img/review2.png"}
                     alt=""
                     />
+                    </div>
                     </div>
               {/* <p>
                 SB그룹 대표이사는
