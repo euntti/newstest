@@ -259,8 +259,8 @@ table {
 .talk{
   max-width: 100%;
 }
-.talk2{
-  max-width: 100%;
+.talk2 img{
+  width: 600px;
 }
 @media (max-width: 700px) {
   .box_container{

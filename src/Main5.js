@@ -495,7 +495,7 @@ function App4() {
                     </div>
                     <div className="talk2">
                     <img
-                    style={{ width: 600, height: "auto"  }}
+                    style={{ height: "auto"  }}
                     src={"/img/review2.png"}
                     alt=""
                     />
