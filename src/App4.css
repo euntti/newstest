@@ -292,6 +292,9 @@ table {
     margin: 0 auto;
   }
   .talk2 {
-    width: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-width: 100%;
   }
 }
