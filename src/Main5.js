@@ -492,13 +492,11 @@ function App4() {
                     alt=""
                     />
                     </div>
-                    <div className="talk2">
                     <img
                     style={{ width: 600, height: "auto"  }}
                     src={"/img/review2.png"}
                     alt=""
                     />
-                    </div>
                     </div>
               {/* <p>
                 SB그룹 대표이사는
