@@ -434,28 +434,46 @@ function App4() {
                   >가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
                     </div>
                     <div className="news2">
-                       <img
+                    <img
                     style={{ width: 220, height: "auto" }}
-                    src={"/img/sbnews2.png"}
+                    src={"/img/sbnews1.png"}
                     alt=""
                     />
-                    <span >이번주 안으로 300% 급등할 종목 찾았다! 바로 풀매수 가자! </span>
+                    <span
+                    style={{
+                      display: "block",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      width: 220
+                    }}>이번주 안으로 300% 급등할 종목 찾았다! 바로 풀매수 가자! </span>
                     </div>
                     <div className="news3">
-                      <img
-                     style={{ width: 220, height: "auto" }}
-                      src={"/img/sbnews1.png"}
-                      alt=""
-                     />
-                      <span>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
+                    <img
+                    style={{ width: 220, height: "auto" }}
+                    src={"/img/sbnews1.png"}
+                    alt=""
+                    />
+                    <span
+                    style={{
+                      display: "block",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      width: 220
+                    }}>ㅇㄹㅇㄹ</span>
                     </div>
                       <div className="news4">
                       <img
-                       style={{ width: 220, height: "auto" }}
-                      src={"/img/sbnews1.png"}
-                      alt=""
-                     />
-                      <span>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
+                    style={{ width: 220, height: "auto" }}
+                    src={"/img/sbnews1.png"}
+                    alt=""
+                    />
+                    <span
+                    style={{
+                      display: "block",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      width: 220
+                    }}>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
                     </div>
                 </div>
                 <div className="talk"> 
