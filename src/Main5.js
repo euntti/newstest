@@ -415,9 +415,10 @@ function App4() {
    
   </tbody>
 </table>
-                </div>
+ </div>
                 <div className="news">
                   <strong class="title">오늘의 주요 기사</strong> 
+                  <div className="news11" style={{ display: "flex" }}>
                     <div className="news1">
                     <img
                     style={{ width: 220, height: "auto" }}
@@ -447,6 +448,8 @@ function App4() {
                       width: 220
                     }}>이번주 안으로 300% 급등할 종목 찾았다! 바로 풀매수 가자! </span>
                     </div>
+                    </div>
+                    <div className="news22" style={{ display: "flex" }}></div>
                     <div className="news3">
                     <img
                     style={{ width: 220, height: "auto" }}
@@ -475,6 +478,7 @@ function App4() {
                       width: 220
                     }}>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
                     </div>
+                  </div>
                 </div>
                 <div className="talk"> 
                     <img
