@@ -393,6 +393,11 @@ function App4() {
                   </div>
                   <table className="tablelive" >
                    <thead>
+                    <tr>
+                    <th>Date</th>
+                    <th>Username</th>
+                    <th>Telephone</th>
+                    </tr>
                     </thead>
                   <tbody>
                     <tr>
@@ -414,7 +419,7 @@ function App4() {
                     <td id="date-cell-4">2023-05-26</td>
                     <td>이*영</td>
                     <td>010-****-5504</td>
-                    </tr>
+                  </tr>
     <tr>
       <td id="date-cell-5">2023-05-26</td>
       <td>지*우</td>
