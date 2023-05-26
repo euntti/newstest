@@ -300,16 +300,7 @@ table {
   }
   .talk1 {
     max-width: 100%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    
   }
-  .talk2 {
-    max-width: 100%;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
+ 
 }
