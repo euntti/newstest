@@ -250,6 +250,9 @@ table {
   align-items: center;
   display: flex;
 }
+.news11 .news1 {
+  margin-right: 20px;
+}
 .news {
   border: 1px solid #ff9500;
   padding: 20px;
