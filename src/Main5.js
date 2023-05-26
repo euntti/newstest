@@ -8,6 +8,9 @@ import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 
+const dateElement = document.getElementById("date");
+  const today = new Date().toISOString().slice(0, 10);
+  dateElement.innerText = today;
 
 const Main5 = () => {
     return <div>Main5</div>
@@ -25,6 +28,7 @@ const customStyles = {
   },
 };
 
+
 function App4() {
   const [users, setUsers] = useState([]);
   const [nickName, setNickName] = useState("");
@@ -34,7 +38,7 @@ function App4() {
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
-
+  
   const [progress, setProgress] = useState(0);
   useEffect(() => {
     const id = setInterval(() => {
@@ -66,7 +70,6 @@ function App4() {
   const dateElement = document.getElementById("date");
   const today = new Date().toISOString().slice(0, 10);
   dateElement.innerText = today;
-  
   const submitEvent = (e) => {
     e.preventDefault();
 
