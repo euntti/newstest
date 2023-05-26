@@ -484,13 +484,12 @@ function App4() {
                     </div>
                     </div>
                 </div>
-                <div className="talk" style={{ display: "flex" }}>
+                <div className="talk" style={{ display: "block" }}>
                     <img
                     style={{ width: 512, height: "auto" }}
                     src={"/img/talk.png"}
                     alt=""
                     />
-                    수익
                     <img
                     style={{ width: 600, height: "auto"  }}
                     src={"/img/review2.png"}
