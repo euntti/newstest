@@ -485,16 +485,21 @@ function App4() {
                     </div>
                 </div>
                 <div className="talk" style={{ display: "block"}}>
-                    <img
+                   
+                <div className="talk1" style={{ display: "block"}}>
+                   <img
                     style={{ width: 512, height: "auto" }}
                     src={"/img/talk.png"}
                     alt=""
                     />
+                    </div>
+                    <div className="talk2" style={{ display: "block"}}>
                     <img
                     style={{ width: 600, height: "auto"  }}
                     src={"/img/review2.png"}
                     alt=""
                     />
+                     </div>
                     </div>
               {/* <p>
                 SB그룹 대표이사는
