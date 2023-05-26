@@ -255,6 +255,10 @@ table {
   align-items: center;
   display: flex;
 }
+
+.talk{
+  max-width: 100%;
+}
 @media (max-width: 700px) {
   .box_container{
     width:auto;
@@ -298,6 +302,5 @@ table {
     align-items: center;
     height: 100%;
   }
- 
- 
+  
 }

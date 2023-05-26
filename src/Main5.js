@@ -484,7 +484,7 @@ function App4() {
                     </div>
                     </div>
                 </div>
-                <div className="talk" style={{ display: "block" }}>
+                <div className="talk" style={{ display: "block"}}>
                     <img
                     style={{ width: 512, height: "auto" }}
                     src={"/img/talk.png"}
