@@ -306,7 +306,7 @@ table {
     height: 100%;
   }
   .talk2{
-    max-width: 100%;
+    width: 400px;
   }
-  
+
 }
