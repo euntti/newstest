@@ -436,7 +436,7 @@ function App4() {
                       alignItems: "center",
                       width: 220
                     }}
-                  >가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
+                  >가상화폐 투자!'이것'하나만 매수하면 1년뒤 부자될수있다</span>
                     </div>
                     <div className="news2">
                     <img
@@ -484,9 +484,9 @@ function App4() {
                     </div>
                     </div>
                 </div>
+
                 <div className="talk" style={{ display: "block"}}>
-                   
-                <div className="talk1">
+                   <div className="talk1">
                    <img
                     style={{ width: 512, height: "auto" }}
                     src={"/img/talk.png"}
