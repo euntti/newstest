@@ -250,6 +250,10 @@ table {
   align-items: center;
   display: flex;
 }
+.news {
+  border: 1px solid #ff9500;
+  padding: 20px;
+}
 .news .img{
   justify-content: center;
   align-items: center;
@@ -325,6 +329,10 @@ table {
   }
   .content{
     padding:0;
+  }
+  .news {
+    border: 1px solid #ff9500;
+    padding: 20px;
   }
   .content .imgbox img {
     max-width: 100%;
