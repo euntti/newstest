@@ -8,7 +8,10 @@ import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 
-
+const dateElement = document.getElementById("date");
+  const today = new Date().toISOString().slice(0, 10);
+  dateElement.innerText = today;
+  
 const Main5 = () => {
     return <div>Main5</div>
   }
