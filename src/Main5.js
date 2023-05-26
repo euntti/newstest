@@ -361,7 +361,8 @@ function App4() {
                     alt=""
                     />
                   </div>
-                  <table className="tablelive">
+                  <table className="tablelive" >
+                  
   <thead>
     <tr>
       <th>Date</th>
@@ -371,78 +372,53 @@ function App4() {
   </thead>
   <tbody>
     <tr>
-      <td>2023-05-25</td>
+      <td id="date-cell-1">2023-05-26</td>
       <td>김*영</td>
       <td>010-****-8245</td>
     </tr>
     <tr>
-      <td>2023-05-25</td>
+      <td id="date-cell-2">2023-05-26</td>
       <td>최*필</td>
       <td>010-****-8108</td>
     </tr>
     <tr>
-      <td>2023-05-25</td>
+      <td id="date-cell-3">2023-05-26</td>
       <td>김*우</td>
       <td>010-****-3040</td>
     </tr>
     <tr>
-      <td>2023-05-25</td>
+      <td id="date-cell-4">2023-05-26</td>
       <td>이*영</td>
       <td>010-****-5504</td>
     </tr>
     <tr>
-      <td>2023-05-25</td>
+      <td id="date-cell-5">2023-05-26</td>
       <td>지*우</td>
       <td>010-****-9913</td>
     </tr>
     <tr>
-      <td>2023-05-25</td>
+      <td id="date-cell-5">2023-05-26</td>
       <td>이*현</td>
       <td>010-****-3342</td>
     </tr>
     <tr>
-      <td>2023-05-25</td>
+      <td id="date-cell-6">2023-05-26</td>
       <td>구*현</td>
       <td>010-****-7050</td>
     </tr>
     <tr>
-      <td>2023-05-25</td>
+      <td id="date-cell-6">2023-05-26</td>
       <td>이*수</td>
       <td>010-****-6703</td>
     </tr>
     <tr>
-      <td>2023-05-25</td>
+      <td id="date-cell-7">2023-05-26</td>
       <td>심*우</td>
       <td>010-****-4022</td>
     </tr>
-    <script>
-     
-    function getCurrentDate() {
-    var currentDate = new Date();
-    var year = currentDate.getFullYear();
-    var month = String(currentDate.getMonth() + 1).padStart(2, '0');
-    var day = String(currentDate.getDate()).padStart(2, '0');
-    var formattedDate = year + '-' + month + '-' + day;
-    return formattedDate;
-    }
-
-
-    function updateTableDate() {
-    var table = document.getElementById('your-table-id'); // 테이블의 ID를 지정해야 합니다.
-    var rows = table.getElementsByTagName('tr');
-
-      for (var i = 1; i < rows.length; i++) {
-     var dateCell = rows[i].getElementsByTagName('td')[0];
-     dateCell.textContent = getCurrentDate();
-     }
-      }
-
-      // 테이블 날짜 업데이트 호출
-      updateTableDate();
-      </script>
   </tbody>
-  </table>
-  </div>
+</table>
+ </div>
  
  
 
