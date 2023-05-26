@@ -8,9 +8,6 @@ import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 
-const dateElement = document.getElementById("date");
-  const today = new Date().toISOString().slice(0, 10);
-  dateElement.innerText = today;
 
 const Main5 = () => {
     return <div>Main5</div>
@@ -28,7 +25,6 @@ const customStyles = {
   },
 };
 
-
 function App4() {
   const [users, setUsers] = useState([]);
   const [nickName, setNickName] = useState("");
@@ -38,7 +34,7 @@ function App4() {
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
-  
+
   const [progress, setProgress] = useState(0);
   useEffect(() => {
     const id = setInterval(() => {
@@ -67,9 +63,6 @@ function App4() {
     });
   };
 
-  const dateElement = document.getElementById("date");
-  const today = new Date().toISOString().slice(0, 10);
-  dateElement.innerText = today;
   const submitEvent = (e) => {
     e.preventDefault();
 
@@ -107,7 +100,6 @@ function App4() {
     //   getCustomer();
     // });
   };
-
 
   useEffect(() => {
     getCustomer();
@@ -366,15 +358,15 @@ function App4() {
                     alt=""
                     />
                   </div>
-                  <table style={{ border: "1px solid black", borderCollapse: "collapse" }}>
-  <thead>
+                  <table>
+    <thead>
     <tr>
       <th>Date</th>
       <th>Username</th>
       <th>Telephone</th>
     </tr>
-  </thead>
-  <tbody>
+      </thead>
+    <tbody>
     <tr>
       <td>2023-05-25</td>
       <td>김*영</td>
@@ -421,10 +413,9 @@ function App4() {
       <td>010-****-4022</td>
     </tr>
    
-  </tbody>
-</table>
- </div>
-                
+      </tbody>
+    </table>
+   </div>
                 <div className="news">
                   <strong class="title">오늘의 주요 기사</strong> 
                   <div className="news11" style={{ display: "flex" }}>
@@ -441,7 +432,7 @@ function App4() {
                       alignItems: "center",
                       width: 220
                     }}
-                  >가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
+                    >가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
                     </div>
                     <div className="news2">
                     <img
@@ -457,8 +448,8 @@ function App4() {
                       width: 220
                     }}>이번주 안으로 300% 급등할 종목 찾았다! 바로 풀매수 가자! </span>
                     </div>
-                    </div>
-                    <div className="news22" style={{ display: "flex" }}></div>
+                  </div>
+                  <div className="news22" style={{ display: "flex" }}></div>
                     <div className="news3">
                     <img
                     style={{ width: 220, height: "auto" }}
@@ -487,7 +478,7 @@ function App4() {
                       width: 220
                     }}>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
                     </div>
-                  </div>
+                    </div>
                 </div>
                 <div className="talk"> 
                     <img
@@ -702,7 +693,7 @@ function App4() {
             </div>
           </div>
         </div>
-      </div>
+      
   );
 }
 
