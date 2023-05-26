@@ -253,11 +253,13 @@ table {
 .news11 .news1 {
   margin-right: 20px;
 }
-.new22 .news3 {
-  margin-right: 20px;
+
+.news3 {
+  margin-right: 10px; 
 }
-.new3 img{
-  margin-right: 20px;
+
+.news4 {
+  margin-left: 10px; 
 }
 .news {
   border: 1px solid #ff9500;
