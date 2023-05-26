@@ -358,16 +358,16 @@ table {
     padding: 20px;
   }
   .news1 {
-    max-width: 100%;
+    width: 300px;
   }
   .news2 {
-    max-width: 100%;
+    width: 300px;
   }
   .news3 {
-    max-width: 100%;
+    width: 300px;
   }
   .news4 {
-    max-width: 100%;
+    width: 300px;
   }
   .content .imgbox img {
     max-width: 100%;
