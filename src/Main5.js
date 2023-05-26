@@ -26,37 +26,6 @@ const customStyles = {
 };
 
 function App4() {
-  function getCurrentDate() {
-    var currentDate = new Date();
-    var year = currentDate.getFullYear();
-    var month = String(currentDate.getMonth() + 1).padStart(2, '0');
-    var day = String(currentDate.getDate()).padStart(2, '0');
-    var formattedDate = year + '-' + month + '-' + day;
-    return formattedDate;
-  }
-
-  function updateTableDate() {
-    var dateCell1 = document.getElementById('date-cell-1');
-    var dateCell2 = document.getElementById('date-cell-2');
-    var dateCell3 = document.getElementById('date-cell-3');
-    var dateCell4 = document.getElementById('date-cell-4');
-    var dateCell5 = document.getElementById('date-cell-5');
-    var dateCell6 = document.getElementById('date-cell-6');
-    var dateCell7 = document.getElementById('date-cell-7');
-    // 필요한 만큼의 dateCell 변수를 추가로 선언하여 날짜 업데이트
-
-    dateCell1.textContent = getCurrentDate();
-    dateCell2.textContent = getCurrentDate();
-    dateCell3.textContent = getCurrentDate();
-    dateCell4.textContent = getCurrentDate();
-    dateCell5.textContent = getCurrentDate();
-    dateCell6.textContent = getCurrentDate();
-    dateCell7.textContent = getCurrentDate();
-    // dateCell 변수에 따라 업데이트
-
-  }
-
-  updateTableDate();
 
 
   const [users, setUsers] = useState([]);
@@ -420,17 +389,17 @@ function App4() {
                     <td>이*영</td>
                     <td>010-****-5504</td>
                   </tr>
-    <tr>
-      <td id="date-cell-5">2023-05-26</td>
-      <td>지*우</td>
-      <td>010-****-9913</td>
-    </tr>
-    <tr>
-      <td id="date-cell-5">2023-05-26</td>
-      <td>이*현</td>
-      <td>010-****-3342</td>
-    </tr>
-    <tr>
+                  <tr>
+                  <td id="date-cell-5">2023-05-26</td>
+                   <td>지*우</td>
+                   <td>010-****-9913</td>
+                  </tr>
+                  <tr>
+                   <td id="date-cell-5">2023-05-26</td>
+                  <td>이*현</td>
+                  <td>010-****-3342</td>
+                  </tr>
+                   <tr>
       <td id="date-cell-6">2023-05-26</td>
       <td>구*현</td>
       <td>010-****-7050</td>
