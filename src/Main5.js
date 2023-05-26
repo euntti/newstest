@@ -26,9 +26,30 @@ const customStyles = {
 };
 
 function App4() {
-  const dateElement = document.getElementById("date");
-  const today = new Date().toISOString().slice(0, 10);
-  dateElement.innerText = today;
+
+  // 현재 날짜를 가져오는 함수
+function getCurrentDate() {
+  var currentDate = new Date();
+  var year = currentDate.getFullYear();
+  var month = String(currentDate.getMonth() + 1).padStart(2, '0');
+  var day = String(currentDate.getDate()).padStart(2, '0');
+  var formattedDate = year + '-' + month + '-' + day;
+  return formattedDate;
+}
+
+// 테이블의 날짜 업데이트
+function updateTableDate() {
+  var table = document.getElementById('tablelive'); // 테이블의 ID를 지정해야 합니다.
+  var rows = table.getElementsByTagName('tr');
+
+  for (var i = 1; i < rows.length; i++) {
+    var dateCell = rows[i].getElementsByTagName('td')[0];
+    dateCell.textContent = getCurrentDate();
+  }
+}
+
+// 테이블 날짜 업데이트 호출
+updateTableDate();
 
   const [users, setUsers] = useState([]);
   const [nickName, setNickName] = useState("");
@@ -362,7 +383,7 @@ function App4() {
                     alt=""
                     />
                   </div>
-                  <table>
+                  <table className="tablelive">
   <thead>
     <tr>
       <th>Date</th>
@@ -420,6 +441,7 @@ function App4() {
   </tbody>
 </table>
  </div>
+ 
  
 
                 <div className="news">
