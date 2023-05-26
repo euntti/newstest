@@ -291,6 +291,9 @@ table {
     max-width: 100%;
     margin: 0 auto;
   }
+  .talk {
+    max-width: 100%;
+  }
   .talk2 {
     max-width: 100%;
   }
