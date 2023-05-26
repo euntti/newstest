@@ -359,14 +359,14 @@ function App4() {
                     />
                   </div>
                   <table>
-    <thead>
+  <thead>
     <tr>
       <th>Date</th>
       <th>Username</th>
       <th>Telephone</th>
     </tr>
-      </thead>
-    <tbody>
+  </thead>
+  <tbody>
     <tr>
       <td>2023-05-25</td>
       <td>김*영</td>
@@ -413,9 +413,9 @@ function App4() {
       <td>010-****-4022</td>
     </tr>
    
-      </tbody>
-    </table>
-   </div>
+  </tbody>
+</table>
+ </div>
                 <div className="news">
                   <strong class="title">오늘의 주요 기사</strong> 
                   <div className="news11" style={{ display: "flex" }}>
@@ -432,7 +432,7 @@ function App4() {
                       alignItems: "center",
                       width: 220
                     }}
-                    >가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
+                  >가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
                     </div>
                     <div className="news2">
                     <img
@@ -449,7 +449,7 @@ function App4() {
                     }}>이번주 안으로 300% 급등할 종목 찾았다! 바로 풀매수 가자! </span>
                     </div>
                   </div>
-                  <div className="news22" style={{ display: "flex" }}></div>
+                  <div className="news22" style={{ display: "flex" }}>
                     <div className="news3">
                     <img
                     style={{ width: 220, height: "auto" }}
@@ -693,7 +693,7 @@ function App4() {
             </div>
           </div>
         </div>
-      
+      </div>
   );
 }
 
