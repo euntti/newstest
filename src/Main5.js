@@ -358,7 +358,7 @@ function App4() {
                     alt=""
                     />
                   </div>
-                  <table>
+                  <table style={{ border: "1px solid black", borderCollapse: "collapse" }}>
   <thead>
     <tr>
       <th>Date</th>
