@@ -384,6 +384,7 @@ table {
 }
 
 .news11 {
+  max-width: 460px;
   display: flex;
   justify-content: space-between;
 }
