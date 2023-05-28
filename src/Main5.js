@@ -435,11 +435,10 @@ function App4() {
                       justifyContent: "center",
                       alignItems: "center",
                      
-                    }}
-                  >가상화폐 투자z!'이것'하나만 매수하면 1년뒤 부자될수있다</span>
+                    }}>ㅇㄹㅇㄹ</span>
                     </div>
-                    <div className="news2">
-                    <img
+                      <div className="news2">
+                      <img
                     style={{ width: 220, height: "auto" }}
                     src={"/img/sbnews1.png"}
                     alt=""
@@ -449,10 +448,10 @@ function App4() {
                       display: "block",
                       justifyContent: "center",
                       alignItems: "center",
-                      
-                    }}>이번주 안으로 300% 급등할 종목 찾았다! 바로 풀매수 가자! </span>
+                     
+                    }}>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
                     </div>
-                  </div>
+                    </div>
                   <div className="news22" style={{ display: "flex" }}>
                     <div className="news3">
                     <img
