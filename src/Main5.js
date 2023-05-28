@@ -355,7 +355,7 @@ function App4() {
                 <div className="latest">
                   <div className="latimgbox" id="latest_list">
                     <img
-                    style={{ width: 660, height: "auto" }}
+                    style={{ width: "100%", height: "auto" }}
                     src={"/img/member.png"}
                     alt=""
                     />
