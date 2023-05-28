@@ -390,11 +390,7 @@ table {
   margin: 0 0 0 0;
 }
 
-.news1,
-.news2 {
-  flex: 1;
-  max-width: 220px;
-}
+
 .news img {
   width: 100%;
   height: auto;
