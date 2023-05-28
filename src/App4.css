@@ -343,7 +343,11 @@ table {
   .content{
     padding:0;
   }
- 
+  .latest img{ 
+    width: 100%;
+    height: auto;
+
+  }
   .news img {
     width: 200px;
     height: auto;
@@ -383,7 +387,7 @@ table {
     width: 100%;
   }
 
-  .imgboxbanner{
+  .imgboxbanner2{
     max-width: 100%;
   }
 
