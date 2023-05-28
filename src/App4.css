@@ -266,7 +266,7 @@ table {
   max-width: 100%;
 }
 .talk2 img{
-  width: 600px;
+  max-width: 100%;
 }
 .latest {
   display: flex;
@@ -349,14 +349,14 @@ table {
 
   }
   .news img {
-    width: 200px;
+    width: 180px;
     height: auto;
   }
   
   .news span {
     display: block;
     text-align: center;
-    width: 220px;
+    width: 180px;
   }
 
   .news1,
