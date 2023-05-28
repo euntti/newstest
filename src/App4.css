@@ -383,13 +383,6 @@ table {
   margin: 0 5px; /* 이미지와 기사 간격 조정 */
 }
 
-.news11 {
-  max-width: 460px;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 0 0 0;
-}
-
 
 .news img {
   width: 100%;
