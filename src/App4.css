@@ -407,4 +407,8 @@ table {
     width: 100%;
   }
 
+  .imgboxbanner{
+    max-width: 100%;
+  }
+
 }
