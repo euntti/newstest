@@ -425,7 +425,7 @@ function App4() {
                   <div className="news11" style={{ display: "flex" }}>
                     <div className="news1">
                     <img
-                    style={{ width: 220, height: "auto" }}
+                    style={{ width: "100%", height: "auto" }}
                     src={"/img/sbnews1.png"}
                     alt=""
                     />
@@ -439,7 +439,7 @@ function App4() {
                     </div>
                       <div className="news2">
                       <img
-                    style={{ width: 220, height: "auto" }}
+                    style={{ width: "100%", height: "auto" }}
                     src={"/img/sbnews1.png"}
                     alt=""
                     />
@@ -455,7 +455,7 @@ function App4() {
                   <div className="news22" style={{ display: "flex" }}>
                     <div className="news3">
                     <img
-                    style={{ width: 220, height: "auto" }}
+                    style={{ width:"100%", height: "auto" }}
                     src={"/img/sbnews1.png"}
                     alt=""
                     />
@@ -469,7 +469,7 @@ function App4() {
                     </div>
                       <div className="news4">
                       <img
-                    style={{ width: 220, height: "auto" }}
+                    style={{ width: "100%", height: "auto" }}
                     src={"/img/sbnews1.png"}
                     alt=""
                     />
