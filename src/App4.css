@@ -370,6 +370,9 @@ table {
   display: flex;
   justify-content: center;
   margin-top: 20px; /* 필요한 여백 설정 */
+  margin: 20px;
+  width: 100%;
+  
   }
 
   .news1,
