@@ -375,16 +375,7 @@ table {
   
   }
 
-  .news1,
-  .news2,
-  .news3,
-  .news4 {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 5px; /* 이미지와 기사 간격 조정 */
-}
+
 
 
 .news img {
