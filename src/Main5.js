@@ -9,7 +9,6 @@ import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 
 
-
 const Main5 = () => {
     return <div>Main5</div>
   }
@@ -25,89 +24,6 @@ const customStyles = {
     zIndex: 999,
   },
 };
-
-let rollingData = [
-  '서울',
-  '대구',
-  '부산',
-  '경기',
-  '울산',
-  '포항',
-  '전주',
-  '강원',
-  '대전',
-  '광주',
-  '제주',
-  '해남'
-]    // 롤링할 데이터를 넣으면 됩니다 갯수 제한 없어요
-
-let timer = 2000 // 롤링되는 주기 입니다 (1000 => 1초)
-
-let first = document.getElementById('first'),
-second = document.getElementById('second'),
-third = document.getElementById('third')
-let move = 2
-let dataCnt = 1
-let listCnt = 1
-
-//위 선언은 따로 완전히 수정하지 않는 한 조정할 필요는 없습니다.
-
-first.children[0].innerHTML = rollingData[0]
-
-setInterval(() => {
-if(move == 2){
-first.classList.remove('card_sliding')
-first.classList.add('card_sliding_after')
-
-second.classList.remove('card_sliding_after')
-second.classList.add('card_sliding')
-
-third.classList.remove('card_sliding_after')
-third.classList.remove('card_sliding')
-
-move = 0
-} else if (move == 1){
-first.classList.remove('card_sliding_after')
-first.classList.add('card_sliding')
-
-second.classList.remove('card_sliding_after')
-second.classList.remove('card_sliding')
-
-third.classList.remove('card_sliding')
-third.classList.add('card_sliding_after')
-
-move = 2
-} else if (move == 0) {
-first.classList.remove('card_sliding_after')
-first.classList.remove('card_sliding')
-
-second.classList.remove('card_sliding')
-second.classList.add('card_sliding_after')
-
-third.classList.remove('card_sliding_after')
-third.classList.add('card_sliding')
-
-move = 1
-}
-
-if(dataCnt < (rollingData.length - 1)) {
-document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
-dataCnt++
-} else if(dataCnt == rollingData.length - 1) {
-document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
-dataCnt = 0
-}
-
-if(listCnt < 2) {
-listCnt++
-} else if (listCnt == 2) {
-listCnt = 0
-}
-
-console.log(listCnt)
-}, timer);
-
-
 
 function App4() {
 
@@ -200,6 +116,8 @@ function App4() {
     autoplaySpeed: 2000,
   };
 
+  
+
   return (
     <div>
       <div>
@@ -226,7 +144,8 @@ function App4() {
               <h1 className="title">
                 하루에 3분투자로 {" "}
                 <p><span class="color1">" 억대 만들기 노하우는 ?"</span> </p>
-             
+                {/* <p>억대를 모을 수 있게 한 투자 노하우</p>
+                어떤 노하우이길래? " */}
               </h1>
             </div>
           </div>
@@ -239,7 +158,13 @@ function App4() {
 
           <div className="content-wrap">
             <div className="content">
-             
+              {/* <p class="imgbox banner">
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/sbmain41.png"}
+                  alt=""
+                />
+              </p> */}
               <p>
                 <b>"가상화폐 3분투자로 1억씩 수익내고있어요"</b>
                 <br />
@@ -268,7 +193,48 @@ function App4() {
                 <p>이 3가지만 똑같이 따라하니 꾸준히 수익이 났어요</p>
                 <p>가끔 하락할때가 있는데 '손절가'에 손절하면 손실이 크지 않고, 
                 상승하는 경우가 더 많으니 결국 손실없이 수익을 낼 수 있었어요</p>
+                {/* <Slider {...settings}> */}
+                {/* <div>
+                  <span
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      height: "50vh",
+                    }}
+                  >
+                    <ColorRing
+                      visible={true}
+                      height="80"
+                      width="80"
+                      ariaLabel="blocks-loading"
+                      wrapperStyle={{}}
+                      wrapperClass="blocks-wrapper"
+                      colors={[
+                        "#e15b64",
+                        "#f47e60",
+                        "#f8b26a",
+                        "#abbd81",
+                        "#849b87",
+                      ]}
+                    />
+                  </span>
+                </div> */}
+                {/* <div> */}
+                  {/* <span
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      height: "50vh",
+                    }}
+                  >
+                    <Progressbar value={progress} />
+                  </span> */}
+                {/* </div> */}
                 
+              {/* </Slider> */}
+                {/* 김진환 씨의 최근 수익인증 */}
               </p>
                <p class="mainhead">
                   <b>"하루 3분 투자로 3개월 수익1억 가능한 가상화폐는? "</b>
@@ -386,7 +352,7 @@ function App4() {
                   </ul>
                   </div>
                 <br />
-        
+                <Slider {...settings}>
                 <div className="latest">
                   <div className="latimgbox" id="latest_list">
                     <img
@@ -452,6 +418,72 @@ function App4() {
   </tbody>
 </table>
  </div>
+ </Slider>
+{/*  
+
+                <div className="news" >
+                  <strong class="title">오늘의 주요 기사</strong> 
+                  <div className="news11" style={{ display: "flex" }}>
+                    <div className="news1">
+                    <img
+                    style={{ width: "100%", height: "auto" }}
+                    src={"/img/sbnews1.png"}
+                    alt=""
+                    />
+                    <span
+                    style={{
+                      display: "block",
+                      justifyContent: "center",
+                      alignItems: "center",
+                     
+                    }}>ㅇㄹㅇㄹ</span>
+                    </div>
+                      <div className="news2">
+                      <img
+                    style={{ width: "100%", height: "auto" }}
+                    src={"/img/sbnews1.png"}
+                    alt=""
+                    />
+                    <span
+                    style={{
+                      display: "block",
+                      justifyContent: "center",
+                      alignItems: "center",
+                     
+                    }}>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
+                    </div>
+                    </div>
+                  <div className="news22" style={{ display: "flex" }}>
+                    <div className="news3">
+                    <img
+                    style={{ width:"100%", height: "auto" }}
+                    src={"/img/sbnews1.png"}
+                    alt=""
+                    />
+                    <span
+                    style={{
+                      display: "block",
+                      justifyContent: "center",
+                      alignItems: "center",
+                     
+                    }}>ㅇㄹㅇㄹ</span>
+                    </div>
+                      <div className="news4">
+                      <img
+                    style={{ width: "100%", height: "auto" }}
+                    src={"/img/sbnews1.png"}
+                    alt=""
+                    />
+                    <span
+                    style={{
+                      display: "block",
+                      justifyContent: "center",
+                      alignItems: "center",
+                     
+                    }}>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
+                    </div>
+                    </div>
+                </div> */}
 
                 <div className="talk" style={{ display: "block"}}>
                    <div className="talk1">
@@ -469,14 +501,64 @@ function App4() {
                     />
                      </div>
                     </div>
-                    <div class="rolling_box">
-                    <ul id ="rolling_box">
-                     <li class="card_sliding" id ="first"><p></p></li>
-                     <li class="" id ="second"><p></p></li>
-                     <li class="" id ="third"><p></p></li>
-                   </ul>
-                  </div>
-        
+              {/* <p>
+                SB그룹 대표이사는
+                {"\t"}
+                <b>"인공지능 (퀀트박스) AI인공지능
+                프로그램의 결과값과 전문 트레이더들이 한번 더 대조 하고 맞춤 교육도 진행하다 보니 더욱 높은 수익률을 보장한다" </b>
+                추가적으로 연령,성별,나이 구분없이 1:1 눈높이 맞춤 트레이닝으로 보다 이해하기 쉽게 케어 하고있다고 덧붙혔습니다.
+              </p>
+              <p>
+               더욱 더 
+                {"\t"}
+                <b>놀라운 사실은 2023년 1월에 무료로 시작한 손실복구 프로모션 복구율이 78.8% 이상 이였고 이로 인해 많은 문의가 왔었다고 한다.  </b>
+                
+              </p>
+              <p>
+                얼마 안남은 2분기에도 프로모션을 진행한다고 하니 많은 문의가 몰릴 것으로 예상된다. */}
+                {/* <br />
+                <p class="mainhead2">
+                <b>"아무것도 바꾸지 않으면 아무것도 변하지 않는다"</b>
+                <br />
+              </p>
+              <p class="mainhead2">
+                <b>"안전하고 영리한 투자노하우! 정확한 가치투자에 의해 당신의 꿈을 실현합니다"</b>
+                {/* <br />
+              </p> */} 
+              {/* </p>
+               <p class="mainhead">
+                  <b> ►SB그룹 실제 AI 퀀트박스 이용사진◀︎</b>
+                </p>
+               <p class="imgbox banner">
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/quantbee.png"}
+                  alt=""
+                />
+              </p>
+              
+              <p class="mainhead">
+                  <b> ►SB그룹 실고객님들의 후기◀︎</b>
+                </p>
+                <p class="imgbox banner">
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/review1.png"}
+                  alt=""
+                />
+                </p> */}
+          
+              {/* <p class="imgbox banner">
+                <a
+                  href="http://coinstock7.co.kr/image/?adcode=testbg"
+                  target="_blank"
+                >
+                  <img
+                    src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/co3.jpeg"
+                    alt=""
+                  />
+                </a>
+              </p> */}
             
               
          <div className="footerInfo1">
