@@ -418,7 +418,7 @@ function App4() {
 </table>
  </div>
  
- 
+{/*  
 
                 <div className="news" >
                   <strong class="title">오늘의 주요 기사</strong> 
@@ -482,7 +482,7 @@ function App4() {
                     }}>가상화폐 투자, '이것'하나만 매수하면 1년뒤 부자될수있다</span>
                     </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="talk" style={{ display: "block"}}>
                    <div className="talk1">
