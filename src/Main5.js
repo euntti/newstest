@@ -231,8 +231,8 @@ function App4() {
   ];
   const timer = 2000;
   let move = 2;
-  let dataCnt = 3;
-  let listCnt = 3;
+  let dataCnt = 2;
+  let listCnt = 1;
   
   const first = document.getElementById('first');
   const second = document.getElementById('second');
