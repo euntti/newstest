@@ -420,7 +420,7 @@ function App4() {
  
  
 
-                <div className="news" style={{ width: "100%", height: "auto" }}>
+                <div className="news" >
                   <strong class="title">오늘의 주요 기사</strong> 
                   <div className="news11" style={{ display: "flex" }}>
                     <div className="news1">
