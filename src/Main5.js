@@ -231,13 +231,17 @@ function App4() {
   ];
   const timer = 2000;
   let move = 2;
-  let dataCnt = 1;
-  let listCnt = 1;
+  let dataCnt = 3;
+  let listCnt = 3;
   
   const first = document.getElementById('first');
   const second = document.getElementById('second');
   const third = document.getElementById('third');
   
+  // first.children[0].innerHTML = rollingData[0];
+  // second.children[0].innerHTML = rollingData[1];
+  // third.children[0].innerHTML = rollingData[2];
+
   // first.children[0].innerHTML = rollingData[0];
   
   setInterval(() => {
