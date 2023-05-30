@@ -494,14 +494,14 @@ function App4() {
                      </ul>
                   </div>
 
-                  <table className="tablelive" >
-                   <thead>
+                  {/* <table className="tablelive" >
+                   <thead> */}
                     {/* <tr>
                     <th>Date</th>
                     <th>Username</th>
                     <th>Telephone</th>
                     </tr> */}
-                    </thead>
+                    {/* </thead>
                   <tbody>
                     <tr>
                     <td id="date-cell-1">2023-05-26</td>
@@ -549,7 +549,7 @@ function App4() {
       <td>010-****-4022</td>
     </tr>
   </tbody>
-</table>
+</table> */}
  </div>
 
                 <div className="talk" style={{ display: "block"}}>
