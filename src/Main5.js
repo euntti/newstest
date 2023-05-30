@@ -214,15 +214,13 @@ function App4() {
       <div className="nav">
         <div>주식투자갤러리</div>
           <div>
-            <a img
-             style={{ width: 300, height: "auto" }}
-              src={"/img/kakao.png"}
-              href="#"
-              onClick={() => {
-                window.open("https://sbstock.kr/", "_blank");
-              }}
-            >
-            </a>
+          <div className="talk1">
+                   <img
+                    style={{ width: 302, height: "auto" }}
+                    src={"/img/talk.png"}
+                    alt=""
+                    />
+                    </div>
           </div>
         </div>
       </div>
