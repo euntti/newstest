@@ -7,7 +7,7 @@ import Modal from "react-modal";
 import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 const Main5 = () => {
@@ -530,12 +530,12 @@ function App4() {
                 </ul>
               </div> */}
               <div>
-                {users.map((user, idx) => (
-                  <div key={idx} style={{ display: "flex" }}>
-                    <div>{user.nickName}</div>
-                    <div>{user.phoneNumber}</div>
-                  </div>
-                ))}
+              {users.map((user, idx) => (
+               <div key={idx} style={{ display: "flex" }}>
+                <div>{user.nickName}</div>
+                 <div>{user.phoneNumber}</div>
+               </div>
+             ))}
               </div>
             </div>
           </div>
