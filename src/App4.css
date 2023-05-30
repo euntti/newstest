@@ -59,6 +59,20 @@ table {
   font-size:25px;
   letter-spacing:1px;
 }
+.consulting{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  border: none;
+  border-radius: 16px;
+  background: royalblue;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  box-shadow: 0px 5px 15px gray;
+  cursor: pointer;
+}
 .box_container{
   display:flex;
   justify-content:center
