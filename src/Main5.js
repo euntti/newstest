@@ -199,7 +199,8 @@ function App4() {
     window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
   
-    
+
+
   useEffect(() => {
     getCustomer();
   }, []);
@@ -213,6 +214,84 @@ function App4() {
     autoplaySpeed: 2000,
   };
 
+  const rollingData = [
+    '서울',
+    '대구',
+    '부산',
+    '경기',
+    '울산',
+    '포항',
+    '전주',
+    '강원',
+    '대전',
+    '광주',
+    '제주',
+    '해남'
+  ];
+  const timer = 2000;
+  let move = 2;
+  let dataCnt = 1;
+  let listCnt = 1;
+  
+  const first = document.getElementById('first');
+  const second = document.getElementById('second');
+  const third = document.getElementById('third');
+  
+  first.children[0].innerHTML = rollingData[0];
+  
+  setInterval(() => {
+    if (move === 2) {
+      first.classList.remove('card_sliding');
+      first.classList.add('card_sliding_after');
+  
+      second.classList.remove('card_sliding_after');
+      second.classList.add('card_sliding');
+  
+      third.classList.remove('card_sliding_after');
+      third.classList.remove('card_sliding');
+  
+      move = 0;
+    } else if (move === 1) {
+      first.classList.remove('card_sliding_after');
+      first.classList.add('card_sliding');
+  
+      second.classList.remove('card_sliding_after');
+      second.classList.remove('card_sliding');
+  
+      third.classList.remove('card_sliding');
+      third.classList.add('card_sliding_after');
+  
+      move = 2;
+    } else if (move === 0) {
+      first.classList.remove('card_sliding_after');
+      first.classList.remove('card_sliding');
+  
+      second.classList.remove('card_sliding');
+      second.classList.add('card_sliding_after');
+  
+      third.classList.remove('card_sliding_after');
+      third.classList.add('card_sliding');
+  
+      move = 1;
+    }
+  
+    if (dataCnt < rollingData.length - 1) {
+      document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
+      dataCnt++;
+    } else if (dataCnt === rollingData.length - 1) {
+      document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
+      dataCnt = 0;
+    }
+  
+    if (listCnt < 2) {
+      listCnt++;
+    } else if (listCnt === 2) {
+      listCnt = 0;
+    }
+  
+    console.log(listCnt);
+  }, timer);
+  
   return (
     <div>
       <div>
@@ -406,6 +485,15 @@ function App4() {
                     alt=""
                     />
                   </div>
+
+                  <div class="rolling_box">
+                    <ul id ="rolling_box">
+                    <li class="card_sliding" id ="first"><p></p></li>
+                   <li class="" id ="second"><p></p></li>
+                    <li class="" id ="third"><p></p></li>
+                     </ul>
+                  </div>
+
                   <table className="tablelive" >
                    <thead>
                     {/* <tr>
