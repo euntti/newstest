@@ -195,6 +195,11 @@ function App4() {
     // });
   };
 
+  const sendKaKao = () => {
+    window.open("https://open.kakao.com/me/shon04Se", "_blank")
+    };
+  
+    
   useEffect(() => {
     getCustomer();
   }, []);
