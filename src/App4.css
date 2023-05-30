@@ -348,8 +348,8 @@ table {
 }
 
 .rolling_box ul li {
-  width: 200px;
-  height: 100%;
+  width: 100%;
+  height: 50px;
   transition: .5s;
   position:absolute;
   transition: top .75s;
