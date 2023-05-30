@@ -100,41 +100,43 @@
   </script>
    -->
    <!DOCTYPE html>
-    <html>
-    <head>
-      <title>Index Page</title>
-      <script src="main5.js"></script> <!-- main5.js 파일 로드 -->
-    </head>
-    <body>
-   <script>
+<html>
+<head>
+  <title>Index Page</title>
+</head>
+<body>
+  <div id="first"></div>
+  <div id="second"></div>
+  <div id="third"></div>
+  <div id="rolling_box"></div>
 
+  <script src="main5.js"></script>
+
+  <script>
     let rollingData = [
-                        '서울',
-                        '대구',
-                        '부산',
-                        '경기',
-                        '울산',
-                        '포항',
-                        '전주',
-                        '강원',
-                        '대전',
-                        '광주',
-                        '제주',
-                        '해남'
-                      ]    // 롤링할 데이터를 넣으면 됩니다 갯수 제한 없어요
+      '서울',
+      '대구',
+      '부산',
+      '경기',
+      '울산',
+      '포항',
+      '전주',
+      '강원',
+      '대전',
+      '광주',
+      '제주',
+      '해남'
+    ];
 
-    let timer = 2000 // 롤링되는 주기 입니다 (1000 => 1초)
+    let timer = 2000;
+    let first = document.getElementById('first');
+    let second = document.getElementById('second');
+    let third = document.getElementById('third');
+    let move = 2;
+    let dataCnt = 1;
+    let listCnt = 1;
 
-    let first = document.getElementById('first'),
-        second = document.getElementById('second'),
-        third = document.getElementById('third')
-    let move = 2
-    let dataCnt = 1
-    let listCnt = 1
-
-    //위 선언은 따로 완전히 수정하지 않는 한 조정할 필요는 없습니다.
-
-    first.children[0].innerHTML = rollingData[0]
+    first.innerHTML = rollingData[0];
 
     setInterval(() => {
         if(move == 2){
