@@ -489,7 +489,7 @@ function App4() {
                   <div class="rolling_box">
                 
                     <ul id ="rolling_box"
-                    style={{ width: "100%", height: "auto" }}>
+                    style={{ width: "100%", height: "600px" }}>
                     <li class="card_sliding" id ="first"><p></p></li>
                    <li class="" id ="second"><p></p></li>
                     <li class="" id ="third"><p></p></li>
