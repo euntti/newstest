@@ -313,25 +313,6 @@ table {
   text-align: center;
   width: 100%;
 }
-
-        
-        .consulting{
-          width: 100px;
-          height: 100px;
-          margin: 4px;
-        }
-
-        .fixed {
-          position: fixed;
-        }
-
-        .bottom-right {
-            bottom: 10px;
-            right: 10px;
-          }
-
-      
-  
 @media (max-width: 700px) {
   .box_container{
     width:auto;
