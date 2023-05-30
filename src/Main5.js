@@ -570,16 +570,7 @@ function App4() {
                     />
                      </div>
                     </div>
-                    <div class="rolling_box">
-                    <ul id ="rolling_box">
-                     <li class="card_sliding" id ="first"><p></p></li>
-                     <li class="" id ="second"><p></p></li>
-                     <li class="" id ="third"><p></p></li>
-                   </ul>
-                  </div>
-        
-            
-              
+                    
          <div className="footerInfo1">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
