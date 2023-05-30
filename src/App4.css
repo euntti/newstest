@@ -284,6 +284,9 @@ table {
 }
 .talk2 img{
   max-width: 100%;
+  justify-content: center;
+  align-items: center;
+
 }
 .latest {
   display: flex;
