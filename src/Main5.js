@@ -208,10 +208,6 @@ function App4() {
     autoplaySpeed: 2000,
   };
 
-  const sendKaKao = () => {
-    window.open("https://open.kakao.com/me/shon04Se", "_blank")
-    };
-    
   return (
     <div>
       <div>
@@ -488,9 +484,7 @@ function App4() {
                      <li class="" id ="third"><p></p></li>
                    </ul>
                   </div>
-                  <div onClick={() => sendKaKao()} className={style.consulting1}>
-                    <img src="/img/kakao.png" />
-                      </div>
+        
             
               
          <div className="footerInfo1">
