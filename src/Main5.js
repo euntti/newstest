@@ -101,7 +101,7 @@ const Main5 = () => {
 };
 
       }
-      
+
       const sendKaKao = () => {
         window.open("https://open.kakao.com/me/shon04Se", "_blank")
         };
@@ -635,7 +635,7 @@ function App4() {
             </div>
           </div>
         </div>
-      </div>
+    
   );
 }
 
