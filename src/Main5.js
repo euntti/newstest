@@ -237,7 +237,7 @@ function App4() {
   const second = document.getElementById('second');
   const third = document.getElementById('third');
   
-  first.children[0].innerHTML = rollingData[0];
+  // first.children[0].innerHTML = rollingData[0];
   
   setInterval(() => {
     if (move === 2) {
@@ -291,7 +291,7 @@ function App4() {
   
     console.log(listCnt);
   }, timer);
-  
+
   return (
     <div>
       <div>
