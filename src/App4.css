@@ -330,10 +330,10 @@ table {
 }
 
 .rolling_box{
-  width: 300px;
-  height: 100px;
+  width: 660 px;
+  height: 178px;
   text-align: center;
-  border: 1px solid #848484;
+  border: 2px solid #848484;
   transform: translateY(0); 
 }
 
@@ -369,7 +369,7 @@ table {
 
 .rolling_box ul li p {
   font-size: 30px;
-  line-height: 100px;
+  line-height: 50px;
   font-weight: bold;
 }
 
