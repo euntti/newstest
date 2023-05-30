@@ -280,15 +280,21 @@ function App4() {
       document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
       document.getElementById('rolling_box').children[(listCnt + 1) % 3].children[0].innerHTML = rollingData[dataCnt + 1];
       document.getElementById('rolling_box').children[(listCnt + 2) % 3].children[0].innerHTML = rollingData[dataCnt + 2];
+
       dataCnt++;
     } else if (dataCnt === rollingData.length - 1) {
       document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
       document.getElementById('rolling_box').children[(listCnt + 1) % 3].children[0].innerHTML = rollingData[0];
       document.getElementById('rolling_box').children[(listCnt + 2) % 3].children[0].innerHTML = rollingData[1];
+
       dataCnt = 0;
     }
   
-   
+    if (listCnt < 2) {
+      listCnt++;
+    } else if (listCnt === 2) {
+      listCnt = 0;
+    }
   
     console.log(listCnt);
   }, timer);
