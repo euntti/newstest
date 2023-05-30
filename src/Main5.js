@@ -214,10 +214,10 @@ function App4() {
       <div className="nav">
         <div>주식투자갤러리</div>
           <div>
-          <div className="talk1">
+          <div onClick={() => sendKaKao()} className="consulting">
                    <img
                     style={{ width: 302, height: "auto" }}
-                    src={"/img/talk.png"}
+                    src={"/img/kakao.png"}
                     alt=""
                     />
                     </div>
