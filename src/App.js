@@ -10,10 +10,7 @@ const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
-      <Switch>
-        <Route exact path="/index.html" component={Main5} /> {/* index.html 경로에 Main5 컴포넌트 렌더링 */}
-        {/* 다른 페이지에 대한 라우팅 설정 */}
-      </Switch>
+      
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/news" element={<Main2 />}></Route>
