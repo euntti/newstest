@@ -480,14 +480,16 @@ function App4() {
                 <div className="latest">
                   <div className="latimgbox" id="latest_list">
                     <img
-                    style={{ width: "100%", height: "600px" }}
+                    style={{ width: "100%", height: "auto" }}
                     src={"/img/member.png"}
                     alt=""
                     />
                   </div>
 
                   <div class="rolling_box">
-                    <ul id ="rolling_box">
+                
+                    <ul id ="rolling_box"
+                    style={{ width: "100%", height: "auto" }}>
                     <li class="card_sliding" id ="first"><p></p></li>
                    <li class="" id ="second"><p></p></li>
                     <li class="" id ="third"><p></p></li>
