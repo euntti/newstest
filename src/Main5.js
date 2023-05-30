@@ -193,7 +193,7 @@ function App4() {
                 <p>이 3가지만 똑같이 따라하니 꾸준히 수익이 났어요</p>
                 <p>가끔 하락할때가 있는데 '손절가'에 손절하면 손실이 크지 않고, 
                 상승하는 경우가 더 많으니 결국 손실없이 수익을 낼 수 있었어요</p>
-                <Slider {...settings}>
+                {/* <Slider {...settings}> */}
                 {/* <div>
                   <span
                     style={{
@@ -233,7 +233,7 @@ function App4() {
                   </span> */}
                 {/* </div> */}
                 
-              </Slider>
+              {/* </Slider> */}
                 {/* 김진환 씨의 최근 수익인증 */}
               </p>
                <p class="mainhead">
@@ -352,6 +352,7 @@ function App4() {
                   </ul>
                   </div>
                 <br />
+                <Slider {...settings}>
                 <div className="latest">
                   <div className="latimgbox" id="latest_list">
                     <img
@@ -417,7 +418,7 @@ function App4() {
   </tbody>
 </table>
  </div>
- 
+ </Slider>
 {/*  
 
                 <div className="news" >
