@@ -102,10 +102,6 @@ const Main5 = () => {
 
       }
 
-      const sendKaKao = () => {
-        window.open("https://open.kakao.com/me/shon04Se", "_blank")
-        };
-      
 const customStyles = {
   content: {
     top: "50%",
@@ -212,6 +208,10 @@ function App4() {
     autoplaySpeed: 2000,
   };
 
+  const sendKaKao = () => {
+    window.open("https://open.kakao.com/me/shon04Se", "_blank")
+    };
+    
   return (
     <div>
       <div>
@@ -489,9 +489,8 @@ function App4() {
                    </ul>
                   </div>
                   <div onClick={() => sendKaKao()} className={style.consulting1}>
-                     <img src="/img/kakao.png" />
-        </div>
-        </div>
+                    <img src="/img/kakao.png" />
+                      </div>
             
               
          <div className="footerInfo1">
@@ -635,7 +634,7 @@ function App4() {
             </div>
           </div>
         </div>
-    
+      </div>
   );
 }
 
