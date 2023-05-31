@@ -124,7 +124,6 @@ function App4() {
   const [nickName, setNickName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   let subtitle;
-  const [modalIsOpen, setIsOpen] = useState(false);
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
@@ -138,19 +137,27 @@ function App4() {
       clearInterval(id);
     };
   }, []);
+ 
+  const handlePhoneChange = (e) => {
+    const inputValue = e.target.value;
+    
+    const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
+  
+    if (phoneRegex.test(inputValue)) {
+      setPhone1(inputValue);
+    }
+  };
+  
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [modalIsOpen2, setIsOpen2] = useState(false);
+
   function openModal() {
     setIsOpen(true);
-  }
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = "#f00";
   }
 
   function closeModal() {
     setIsOpen(false);
   }
-
   const getCustomer = () => {
     axios.get("http://localhost:3000/users").then((res) => {
       setUsers(res.data);
@@ -199,7 +206,7 @@ function App4() {
     window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
   
-
+    
 
   useEffect(() => {
     getCustomer();
