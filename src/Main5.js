@@ -221,65 +221,68 @@ function App4() {
     autoplaySpeed: 2000,
   };
 
-  const RollingList = () => {
-    const rollingData = [
-      '김*영 010-****-8245',
-      '박*주 010-****-2543',
-      '최*팔 010-****-7786',
-      '심*정 010-****-9406',
-      '최*영 010-****-3066',
-      '이*수 010-****-2657',
-      '김*영 010-****-9007',
-      '김*양 010-****-3025',
-      '이*연 010-****-6055',
-      '정*정 010-****-1059',
-      '신*영 010-****-4405',
-      '공*구 010-****-2034',
-      '지*리 010-****-3374',
-    ];
-    const timer = 2000;
-    const moveRef = useRef(2);
-    const dataCntRef = useRef(2);
-    const listCntRef = useRef(1);
-    const rollingBoxRef = useRef(null);
+  const rollingData = [
+    '김*영 010-****-8245',
+    '박*주 010-****-2543',
+    '최*팔 010-****-7786',
+    '심*정 010-****-9406',
+    '최*영 010-****-3066',
+    '이*수 010-****-2657',
+    '김*영 010-****-9007',
+    '김*양 010-****-3025',
+    '이*연 010-****-6055',
+    '정*정 010-****-1059',
+    '신*영 010-****-4405',
+    '공*구 010-****-2034',
+    '지*리 010-****-3374',
+  ];
+  const timer = 2000;
+  let move = 2;
+  let dataCnt = 2;
+  let listCnt = 1;
   
-    useEffect(() => {
-      const interval = setInterval(() => {
-        const first = rollingBoxRef.current.children[0];
-        const second = rollingBoxRef.current.children[1];
-        const third = rollingBoxRef.current.children[2];
+  const first = document.getElementById('first');
+  const second = document.getElementById('second');
+  const third = document.getElementById('third');
   
-        if (moveRef.current === 2) {
-          first.classList.remove('card_sliding');
-          first.classList.add('card_sliding_after');
+  // first.children[0].innerHTML = rollingData[0];
+  // second.children[0].innerHTML = rollingData[1];
+  // third.children[0].innerHTML = rollingData[2];
+
+  // first.children[0].innerHTML = rollingData[0];
   
-          second.classList.remove('card_sliding_after');
-          second.classList.add('card_sliding');
+  setInterval(() => {
+    if (move === 2) {
+      first.classList.remove('card_sliding');
+      first.classList.add('card_sliding_after');
   
-          third.classList.remove('card_sliding_after');
-          third.classList.remove('card_sliding');
+      second.classList.remove('card_sliding_after');
+      second.classList.add('card_sliding');
   
-          moveRef.current = 0;
-        } else if (moveRef.current === 1) {
-          first.classList.remove('card_sliding_after');
-          first.classList.add('card_sliding');
+      third.classList.remove('card_sliding_after');
+      third.classList.remove('card_sliding');
   
-          second.classList.remove('card_sliding_after');
-          second.classList.remove('card_sliding');
+      move = 0;
+    } else if (move === 1) {
+      first.classList.remove('card_sliding_after');
+      first.classList.add('card_sliding');
   
-          third.classList.remove('card_sliding');
-          third.classList.add('card_sliding_after');
+      second.classList.remove('card_sliding_after');
+      second.classList.remove('card_sliding');
   
-          moveRef.current = 2;
-        } else if (moveRef.current === 0) {
-          first.classList.remove('card_sliding_after');
-          first.classList.remove('card_sliding');
+      third.classList.remove('card_sliding');
+      third.classList.add('card_sliding_after');
   
-          second.classList.remove('card_sliding');
-          second.classList.add('card_sliding_after');
+      move = 2;
+    } else if (move === 0) {
+      first.classList.remove('card_sliding_after');
+      first.classList.remove('card_sliding');
   
-          third.classList.remove('card_sliding_after');
-          third.classList.add('card_sliding');
+      second.classList.remove('card_sliding');
+      second.classList.add('card_sliding_after');
+  
+      third.classList.remove('card_sliding_after');
+      third.classList.add('card_sliding');
   
       move = 1;
     }
