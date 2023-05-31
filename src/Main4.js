@@ -439,16 +439,20 @@ function App3() {
                         required=""
                         placeholder="성함을 입력하세요"
                         value={nickName}
+                        maxLength={4}
                         onChange={(e) => setNickName(e.target.value)}
                       />
                     </li>
                     <li>
                       <input
-                        type="text"
+                        type="number"
                         id="f1"
                         name="user_name"
                         required=""
                         placeholder="연락처를 입력하세요"
+                        onkeyPress="onlyNumber(this)"
+                       maxLength={13}
+                       pattern="[0-9]{13}"
                         value={phoneNumber}
                         onChange={(e) => {
                           setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
