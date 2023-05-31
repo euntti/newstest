@@ -361,6 +361,7 @@ table {
 .card_sliding{
   top: 0 !important;
   z-index: 100 !important;
+  height: 100px;
   transform: translateY(0); 
 } 
 
