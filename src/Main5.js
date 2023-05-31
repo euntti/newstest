@@ -303,6 +303,7 @@ function App4() {
     console.log(listCnt);
   }, timer);
 
+  
   return (
     <div>
       <div>
@@ -334,7 +335,7 @@ function App4() {
           <div className="writer">
             <div class="writer-info">
               기자 - 김진우ㅣ 조회수 : 1202 ㅣ 날짜 :{""}
-              <span id="regdate">2023-06-01</span>
+              <span id="regdate">2023-06-02</span>
             </div>
           </div>
 
@@ -565,6 +566,40 @@ function App4() {
 </table> */}
  </div>
 
+      <div className="imgGrid">
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div>
+          광고성 정보수신 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자 :
+          SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
+          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
+          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
+          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
+          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
+          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
+        </div>
+      </Modal>
+      <Modal
+        isOpen={modalIsOpen2}
+        onRequestClose={() => setIsOpen2(false)}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div>
+          개인정보 제3자 제공 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자
+          : SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
+          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
+          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
+          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
+          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
+          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
+        </div>
+      </Modal>
+    </div>
                 <div className="talk" style={{ display: "block"}}>
                    <div className="talk1">
                    <img
@@ -612,8 +647,7 @@ function App4() {
       >
        <div className="footerInfo1"> AD - 해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</div>
       </h4>
-      <div>
-              </div>
+      
               {/* <div className="inputBoxs">
                 <h1>급등종목 무료제공 오픈 프로모션</h1>
                 <h3>당장 급등할 종목 받기</h3>
@@ -723,48 +757,10 @@ function App4() {
             </div>
           </div>
         </div>
-        <h1
-        style={{
-          color: "#fff",
-          fontSize: 50,
-          textAlign: "center",
-          marginTop: 20,
-        }}
-      ></h1>
-      <div className="imgGrid"></div>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <div>
-          광고성 정보수신 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자 :
-          SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
-          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
-          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
-          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
-          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
-          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
-        </div>
-      </Modal>
-      <Modal
-        isOpen={modalIsOpen2}
-        onRequestClose={() => setIsOpen2(false)}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <div>
-          개인정보 제3자 제공 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자
-          : SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
-          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
-          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
-          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
-          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
-          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
-        </div>
-      </Modal>
+        
       </div>
+      
+      
   );
 }
 
