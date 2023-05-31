@@ -8,7 +8,8 @@ import Modal from "react-modal";
 import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React from 'react';
 
 
 const customStyles = {
