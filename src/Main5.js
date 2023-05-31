@@ -123,11 +123,21 @@ function App4() {
   const [users, setUsers] = useState([]);
   const [nickName, setNickName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  let subtitle;
+    let subtitle;
+  const onlyNumber = (e) => {
+    const keyCode = e.keyCode || e.which;
+    const keyValue = String.fromCharCode(keyCode);
+
+    if (!/^[0-9]+$/.test(keyValue)) {
+      e.preventDefault();
+    }
+  };
+
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
 
+  
   const [progress, setProgress] = useState(0);
   useEffect(() => {
     const id = setInterval(() => {
@@ -182,24 +192,24 @@ function App4() {
     if (!check3) {
       return alert("광고성문자동의 체크해주세요.");
     }
+    const phoneNumber = `${phoneNumber}`;
+    const name = `${nickName}`;
+    const param = {
+      phoneNumber: phoneNumber,
+      name: nickName,
+    };
+
     const TELEGRAM_TOKEN = "6005561467:AAEza5i8zIr7i0IqBVuaFhTl47I7ZK65AfU";
     const TELEGRAM_CHAT_ID = -1001932031818;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
 
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      nickName + "님이 신청했습니다" + "폰번호는 " + phoneNumber
+      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
     );
-    alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다. ");
-    // console.log("as");
-    // var customer = {};
-    // customer.nickName = nickName;
-    // customer.phoneNumber = phoneNumber;
-
-    // axios.post("http://localhost:3000/users", customer).then((res) => {
-    //   alert("등록을 성공했습니다.");
-    //   getCustomer();
-    // });
+    alert(
+      "[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다."
+    );
   };
 
   const sendKaKao = () => {
@@ -341,7 +351,7 @@ function App4() {
           <div className="writer">
             <div class="writer-info">
               기자 - 김진우ㅣ 조회수 : 1202 ㅣ 날짜 :{""}
-              <span id="regdate">2023-05-27</span>
+              <span id="regdate">2023-05-31</span>
             </div>
           </div>
 
@@ -620,8 +630,7 @@ function App4() {
       >
        <div className="footerInfo1"> AD - 해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</div>
       </h4>
-      <div>
-              </div>
+
               {/* <div className="inputBoxs">
                 <h1>급등종목 무료제공 오픈 프로모션</h1>
                 <h3>당장 급등할 종목 받기</h3>
