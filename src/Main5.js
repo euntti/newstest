@@ -439,44 +439,42 @@ function App4() {
                     </li>
                     <br />
                     <li id="chkline">
-                    <div style={{ marginLeft: 10 }}>
-              <label style={{ color: "#fff" }}>
-                <input
-                  type="checkbox"
-                  id="privacy"
-                  name="agree1"
-                  value="1"
-                  checked={check1}
-                  onChange={(e) => setCheck1(e.target.checked)}
-                />
-                개인정보취급방침동의
-                <a
-                  href="javascript:void(0);"
-                  onClick={() => setIsOpen2(true)}
-                  // onclick="privacy_pop('show', '.pop-policy',2)"
-                >
-                  [보기]
-                </a>
-              </label>
-              <label style={{ color: "#fff" }}>
-                <input
-                  type="checkbox"
-                  id="privacy"
-                  name="agree3"
-                  value="1"
-                  checked={check3}
-                  onChange={(e) => setCheck3(e.target.checked)}
-                />
-                광고성문자수신동의
-                <a
-                  href="javascript:void(0);"
-                  onClick={() => setIsOpen(true)}
-                  // onclick="Popup1('show', '.popup',2)"
-                >
-                  [보기]
-                </a>
-              </label>
-            </div>
+                      <label>
+                        <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check1}
+                          onChange={(e) => setCheck1(e.target.checked)}
+                        />
+                        개인정보취급방침동의
+                      </label>
+                      <span
+                        onClick={openModal}
+                        class="txtbtn"
+                        data-id="fixedbox_1"
+                      >
+                        보기
+                      </span>
+                      <span
+                        onClick={openModal}
+                        class="txtbtn"
+                        data-id="fixedbox_1"
+                      >
+                        보기
+                      </span>
+                      <label>
+                        <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree3"
+                          value="1"
+                          checked={check3}
+                          onChange={(e) => setCheck3(e.target.checked)}
+                        />
+                        광고성문자수신동의
+                      </label>
                     </li>
                     <li id="smtbtn">
                       <input
@@ -721,14 +719,22 @@ function App4() {
                  <div>{user.phoneNumber}</div>
                </div>
              ))}
-             
               </div>
             </div>
           </div>
-        </div>  
-        <Modal
-              isOpen={modalIsOpen}
-              onRequestClose={closeModal}
+        </div>
+        <h1
+        style={{
+          color: "#fff",
+          fontSize: 50,
+          textAlign: "center",
+          marginTop: 20,
+        }}
+      ></h1>
+      <div className="imgGrid"></div>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
       >
