@@ -333,7 +333,7 @@ function Main2() {
                 <br />
                 {/* 김진환 씨의 최근 수익인증 */}
               </p>
-               {/* <p class="mainhead">
+               <p class="mainhead">
                   <b>"SB그룹 실 고객들의 '주식' 수익인증"</b>
                 </p>
                <p class="imgbox banner">
@@ -342,7 +342,7 @@ function Main2() {
                   src={"/img/sbmain2.png"}
                   alt=""
                 />
-              </p> */}
+              </p> 
               <p class="mainhead">
                   <b>"SB그룹 실 고객들의 '코인' 수익인증"</b>
                 </p>
