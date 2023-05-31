@@ -246,7 +246,7 @@ table {
     height: 50px; /* 원하는 높이 값으로 설정해주세요 */
     box-sizing: border-box;
   }
-  
+
 @media (max-width: 700px) {
   .box_container{
     width:auto;
@@ -258,6 +258,11 @@ table {
     font-weight: normal;
     border: 0;
   }
+  .inputBoxs #smtbtn input {
+    width: 100%;
+    font-size: 0.5em;
+  }
+
   .inner{
     display: block;
     padding-bottom: 5px;
