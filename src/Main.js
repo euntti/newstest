@@ -374,7 +374,7 @@ function App() {
               {"\t"}
               <div className="phone">
                 <input
-                  type="tel"
+                  type="number"
                   className="phone"
                   placeholder="휴대폰"
                   onChange={(e) => setPhone1(e.target.value)}
