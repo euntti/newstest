@@ -44,6 +44,7 @@ function Main2() {
   };
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [modalIsOpen2, setIsOpen2] = useState(false);
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
@@ -57,6 +58,7 @@ function Main2() {
       clearInterval(id);
     };
   }, []);
+
   function openModal() {
     setIsOpen(true);
   }
