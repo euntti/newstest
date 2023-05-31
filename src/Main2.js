@@ -273,7 +273,10 @@ function Main2() {
                         onChange={(e) => {
                           setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
                         }}
+                        style="width: 50%;
+                        height: 50px;"
                       />
+                      
                     </li>
                     <br />
                     <li id="chkline">
