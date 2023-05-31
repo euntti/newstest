@@ -456,6 +456,13 @@ function App4() {
                           onChange={(e) => setCheck1(e.target.checked)}
                         />
                         개인정보취급방침동의
+                <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen2(true)}
+                  // onclick="privacy_pop('show', '.pop-policy',2)"
+                >
+                  [보기]
+                </a>
                       </label>
                       
                       <label>
@@ -468,6 +475,13 @@ function App4() {
                           onChange={(e) => setCheck3(e.target.checked)}
                         />
                         광고성문자수신동의
+                <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen(true)}
+                  // onclick="Popup1('show', '.popup',2)"
+                >
+                  [보기]
+                </a>
                       </label>
                     </li>
                     <li id="smtbtn">
