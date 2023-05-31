@@ -410,13 +410,13 @@ function Main2() {
               <p class="mainhead">
                   {/* <b> ►SB그룹 실고객님들의 댓글◀︎</b> */}
                 </p>
-                <p class="imgbox banner">
+                {/* <p class="imgbox banner">
                 <img
                   style={{ width: 620, height: "auto" }}
                   src={"/img/review1.png"}
                   alt=""
                 />
-                </p>
+                </p> */}
           
               {/* <p class="imgbox banner">
                 <a
