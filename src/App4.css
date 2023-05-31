@@ -331,51 +331,55 @@ table {
   text-align: center;
   width: 100%;
 }
-
-.rolling_box{
+.rolling_box {
   width: 660px;
   height: 178px;
   text-align: center;
   border: 2px solid #848484;
-  transform: translateY(0); 
+  transform: translateY(0);
+  overflow: hidden; /* 추가 */
 }
 
 .rolling_box ul {
   width: 100%;
   height: 30px;
-  overflow: hidden;
   position: relative;
+  padding: 0; /* 추가 */
+  margin: 0; /* 추가 */
+  list-style: none; /* 추가 */
 }
 
 .rolling_box ul li {
   width: 100%;
   height: 50px;
   transition: .5s;
-  position:absolute;
+  position: absolute;
   transition: top .75s;
   top: 100%;
   z-index: 1;
   background-color: #ffffff;
 }
 
-.card_sliding{
+.card_sliding {
   top: 0 !important;
   z-index: 100 !important;
   height: 100px;
-  transform: translateY(0); 
-} 
+  transform: translateY(0);
+}
 
-.card_sliding_after{
+.card_sliding_after {
   top: -100% !important;
   z-index: 10 !important;
   height: 100px;
-  transform: translateY(0); 
+  transform: translateY(0);
 }
 
 .rolling_box ul li p {
   font-size: 30px;
   line-height: 50px;
   font-weight: bold;
+  margin: 0; /* 추가 */
+  padding: 0; /* 추가 */
 }
 
 .before_slide {
