@@ -9,6 +9,7 @@ import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function openModal() {
   setIsOpen(true);
