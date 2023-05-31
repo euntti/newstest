@@ -178,7 +178,7 @@ table {
 }
 .inputBoxs ul li{
   padding:2px 0;
-  max-width: 560px;
+  max-width: 100%;
 }
 .inputBoxs #line01{
   text-align: center;
