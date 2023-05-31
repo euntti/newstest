@@ -259,8 +259,7 @@ function Main2() {
                         onChange={(e) => setNickName(e.target.value)}
                       />
                     </li>
-                    <li >
-                    
+                    <li>
                       <input
                       type="number"
                         id="f1"
