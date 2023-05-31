@@ -9,7 +9,13 @@ import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 
+function openModal() {
+  setIsOpen(true);
+}
 
+function closeModal() {
+  setIsOpen(false);
+}
 
 const customStyles = {
   content: {
@@ -27,6 +33,14 @@ function Main2() {
   const [users, setUsers] = useState([]);
   const [nickName, setNickName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const onlyNumber = (e) => {
+    const keyCode = e.keyCode || e.which;
+    const keyValue = String.fromCharCode(keyCode);
+
+    if (!/^[0-9]+$/.test(keyValue)) {
+      e.preventDefault();
+    }
+  };
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
   const [check1, setCheck1] = useState(false);
@@ -229,16 +243,20 @@ function Main2() {
                         required=""
                         placeholder="성함을 입력하세요"
                         value={nickName}
+                        maxLength={4}
                         onChange={(e) => setNickName(e.target.value)}
                       />
                     </li>
                     <li>
                       <input
-                        type="text"
+                      type="number"
                         id="f1"
                         name="user_name"
                         required=""
                         placeholder="연락처를 입력하세요"
+                        onkeyPress="onlyNumber(this)"
+                       maxLength={13}
+                       pattern="[0-9]{13}"
                         value={phoneNumber}
                         onChange={(e) => {
                           setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
@@ -257,32 +275,14 @@ function Main2() {
                           onChange={(e) => setCheck1(e.target.checked)}
                         />
                         개인정보취급방침동의
+                        <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen2(true)}
+                  // onclick="privacy_pop('show', '.pop-policy',2)"
+                >
+                  [보기]
+                </a>
                       </label>
-                      <span
-                        onClick={openModal}
-                        class="txtbtn"
-                        data-id="fixedbox_1"
-                      >
-                        보기
-                      </span>
-                      <label>
-                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree2"
-                          value="1"
-                          checked={check2}
-                          onChange={(e) => setCheck2(e.target.checked)}
-                        />
-                        마케팅수신동의
-                      </label>
-                      <span
-                        onClick={openModal}
-                        class="txtbtn"
-                        data-id="fixedbox_1"
-                      >
-                        보기
-                      </span>
                       <label>
                         <input
                           type="checkbox"
@@ -293,6 +293,13 @@ function Main2() {
                           onChange={(e) => setCheck3(e.target.checked)}
                         />
                         광고성문자수신동의
+                        <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen(true)}
+                  // onclick="Popup1('show', '.popup',2)"
+                >
+                  [보기]
+                </a>
                       </label>
                     </li>
                     <li id="smtbtn">
@@ -534,7 +541,49 @@ function Main2() {
             </div>
           </div>
         </div>
+        <h1
+        style={{
+          color: "#fff",
+          fontSize: 50,
+          textAlign: "center",
+          marginTop: 20,
+        }}
+      ></h1>
+      <div className="imgGrid"></div>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div>
+          광고성 정보수신 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자 :
+          SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
+          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
+          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
+          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
+          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
+          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
+        </div>
+      </Modal>
+      <Modal
+        isOpen={modalIsOpen2}
+        onRequestClose={() => setIsOpen2(false)}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div>
+          개인정보 제3자 제공 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자
+          : SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
+          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
+          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
+          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
+          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
+          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
+        </div>
+      </Modal>
       </div>
+     
   );
 }
 
