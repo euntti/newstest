@@ -450,20 +450,7 @@ function App4() {
                         />
                         개인정보취급방침동의
                       </label>
-                      <span
-                        onClick={openModal}
-                        class="txtbtn"
-                        data-id="fixedbox_1"
-                      >
-                        보기
-                      </span>
-                      <span
-                        onClick={openModal}
-                        class="txtbtn"
-                        data-id="fixedbox_1"
-                      >
-                        보기
-                      </span>
+                      
                       <label>
                         <input
                           type="checkbox"
