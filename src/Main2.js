@@ -288,26 +288,16 @@ function Main2() {
                           onChange={(e) => setCheck1(e.target.checked)}
                         />
                         개인정보취급방침동의
+                        <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen2(true)}
+                  // onclick="privacy_pop('show', '.pop-policy',2)"
+                >
+                  [보기]
+                </a>
                       </label>
                      
-                      <label>
-                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree2"
-                          value="1"
-                          checked={check2}
-                          onChange={(e) => setCheck2(e.target.checked)}
-                        />
-                        마케팅수신동의
-                      </label>
-                      <span
-                        onClick={openModal}
-                        class="txtbtn"
-                        data-id="fixedbox_1"
-                      >
-                        보기
-                      </span>
+                
                       <label>
                         <input
                           type="checkbox"
@@ -318,6 +308,13 @@ function Main2() {
                           onChange={(e) => setCheck3(e.target.checked)}
                         />
                         광고성문자수신동의
+                        <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen(true)}
+                  // onclick="Popup1('show', '.popup',2)"
+                >
+                  [보기]
+                </a>
                       </label>
                     </li>
                     <li id="smtbtn">
