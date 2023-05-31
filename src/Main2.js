@@ -261,18 +261,15 @@ function Main2() {
                     </li>
                     <li>  
                       <input
-                      type="number"
-                  
+                        type="number"
                         name="user_name"
-                  
                         placeholder="연락처를 입력하세요"
                         onkeyPress="onlyNumber(this)"
                        maxLength={13}
                        pattern="[0-9]{13}"
                         value={phoneNumber}
-                        onChange={(e) => {
-                          setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
-                        }}
+                    
+                        onChange={(e) => setPhoneNumber(e.target.value)}
                        
                       />
                       
