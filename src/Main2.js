@@ -264,14 +264,16 @@ function Main2() {
                         type="number"
                         name="user_name"
                         placeholder="연락처를 입력하세요"
-                        onkeyPress="onlyNumber(this)"
-                       maxLength={13}
-                       pattern="[0-9]{13}"
+                        onKeyDown={(e) => {
+                          if (e.target.value.length >= 13) {
+                            e.preventDefault();
+                          }
+                        }}
+                        pattern="01[0-9]-[0-9]{4}-[0-9]{4}"
                         value={phoneNumber}
-                    
                         onChange={(e) => setPhoneNumber(e.target.value)}
-                       
                       />
+                      
                       
                     </li>
                     <br />
