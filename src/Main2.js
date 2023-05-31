@@ -234,7 +234,7 @@ function Main2() {
                   </span> */}
                 </div>
                 <div className="inputBoxs">
-                  <h1>급등종목 30일 무료제공 프로모션</h1>
+                  <h1>주식&코인 급등 30일 무료제공 프로모션</h1>
                   <h3>1억 만들기 프로젝트 무료체험 신청</h3>
                   <ul>
                     <li id="line01">
@@ -408,7 +408,7 @@ function Main2() {
               </p>
               
               <p class="mainhead">
-                  <b> ►SB그룹 실고객님들의 댓글◀︎</b>
+                  {/* <b> ►SB그룹 실고객님들의 댓글◀︎</b> */}
                 </p>
                 <p class="imgbox banner">
                 <img
