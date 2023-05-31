@@ -89,6 +89,9 @@ table {
 .color1 {
   color: #f00;
 }
+.color2 {
+  font-weight: bold;
+}
 .writer{
   padding: 6px 10px;
   border-bottom: 1px solid #ccc;
