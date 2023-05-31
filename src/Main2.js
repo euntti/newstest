@@ -162,6 +162,13 @@ function Main2() {
 
           <div className="content-wrap">
             <div className="content">
+               {/* <p class="imgbox banner">
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/stock11.jpg"}
+                  alt=""
+                />
+              </p>  */}
               <p>
                 <b>"주식투자&가상화폐로 매월 3천이상의 꾸준한 수익을 내고 있어요.</b>
                    <b>SB그룹 만의 AI프로그램으로 추천해준 주식,코인을 매수하고 트레이더분들이 정해준
