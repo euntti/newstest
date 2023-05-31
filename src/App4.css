@@ -368,6 +368,7 @@ table {
 .card_sliding_after{
   top: -100% !important;
   z-index: 10 !important;
+  height: 100px;
   transform: translateY(0); 
 }
 
