@@ -163,11 +163,7 @@ function Main2() {
           <div className="content-wrap">
             <div className="content">
                <p class="imgbox banner">
-                <img
-                  style={{ width: 620, height: "auto" }}
-                  src={}
-                  alt=""
-                />
+               
               </p> 
               <p>
                 <b>"주식투자&가상화폐로 매월 3천이상의 꾸준한 수익을 내고 있어요.</b>
