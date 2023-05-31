@@ -583,7 +583,7 @@ function App4() {
                     </div>
                     <div className="talk2">
                     <img
-                    style={{ height: "auto"  }}
+                    style={{  width: "100%",height: "auto"  }}
                     src={"/img/review2.png"}
                     alt=""
                     />
