@@ -147,8 +147,8 @@ function Main2() {
             <div className="head">
               <h1 className="title">
                 아직도 손실만 보고 계신가요?{" "}
-                {/* <p>억대를 모을 수 있게 한 투자 노하우</p>
-                어떤 노하우이길래? " */}
+                <p>억대를 모을 수 있게 한 투자 노하우</p>
+                어떤 노하우이길래? "
                 <p><span class="color1">" SB그룹의 무상 손실복구 서비스 "</span> </p>
               </h1>
             </div>
@@ -244,7 +244,7 @@ function Main2() {
                       개인정보는 암호화하여 안전하게 처리됩니다.
                     </li>
                     <li id="line03" cond="off">
-                      <span>전문가들의 고급정보를 <br>30일동안 받아보세요.</br></span>
+                      <span>전문가들의 고급정보를 <br></br>30일동안 받아보세요.</span>
                     </li>
                     <br />
                     <li>
