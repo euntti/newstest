@@ -144,10 +144,10 @@ function App4() {
     const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
   
     if (phoneRegex.test(inputValue)) {
-      setPhone1(inputValue);
+      setPhoneNumber(inputValue);
     }
   };
-  
+
   const [modalIsOpen, setIsOpen] = useState(false);
   const [modalIsOpen2, setIsOpen2] = useState(false);
 
