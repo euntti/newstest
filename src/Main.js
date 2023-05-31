@@ -370,7 +370,6 @@ function App() {
                   onChange={(e) => setPhone1(e.target.value)}
                   maxlength="13"
                   onkeypress="onlynumber(this)"
-                  
                 />
               </div>
               <div className="time">
