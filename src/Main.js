@@ -358,6 +358,7 @@ function App() {
                   type="text"
                   className="username"
                   placeholder="이름"
+                  maxLength={4}
                   onChange={(e) => setUserName(e.target.value)}
                 />
               </div>
@@ -368,8 +369,9 @@ function App() {
                   className="phone"
                   placeholder="휴대폰"
                   onChange={(e) => setPhone1(e.target.value)}
-                  maxlength="13"
                   onkeypress="onlynumber(this)"
+                  maxLength={13}
+                  pattern="[0-9]{13}"
                 />
               </div>
               <div className="time">
