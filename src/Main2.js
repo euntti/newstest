@@ -244,7 +244,7 @@ function Main2() {
                       개인정보는 암호화하여 안전하게 처리됩니다.
                     </li>
                     <li id="line03" cond="off">
-                      <span>급등주를 30일동안 받아보세요.</span>
+                      <span>전문가들의 고급정보를 30일동안 받아보세요.</span>
                     </li>
                     <br />
                     <li>
@@ -323,7 +323,7 @@ function Main2() {
                       <input
                         id="btn"
                         type="submit"
-                        value="급등종목 무료제공 이벤트 신청하기"
+                        value="30일 무료체험 이벤트 신청하기"
                         onClick={submitEvent}
                       />
                     </li>
