@@ -36,6 +36,9 @@ function Main2() {
       formattedNumber = formattedNumber.replace(/(\d{3})(\d{3})(\d{0,4})/, "$1-$2-$3"); // 첫 번째와 두 번째 하이픈 추가
     }
     setPhoneNumber(formattedNumber);
+
+    const inputValue = e.target.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
+    setPhoneNumber(inputValue);
   };
 
   let subtitle;
@@ -263,7 +266,7 @@ function Main2() {
                     </li>
                     <li>  
                       <input
-                       type="text"
+                       type="tel"
                        name="user_name"
                        placeholder="연락처를 입력하세요"
                        maxLength={13}
