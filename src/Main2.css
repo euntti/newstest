@@ -246,6 +246,7 @@ table {
     height: 50px; /* 원하는 높이 값으로 설정해주세요 */
     box-sizing: border-box;
   }
+  
 @media (max-width: 700px) {
   .box_container{
     width:auto;
