@@ -731,6 +731,47 @@ function App4() {
             </div>
           </div>
         </div>
+        <h1
+        style={{
+          color: "#fff",
+          fontSize: 50,
+          textAlign: "center",
+          marginTop: 20,
+        }}
+      ></h1>
+      <div className="imgGrid"></div>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div>
+          광고성 정보수신 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자 :
+          SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
+          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
+          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
+          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
+          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
+          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
+        </div>
+      </Modal>
+      <Modal
+        isOpen={modalIsOpen2}
+        onRequestClose={() => setIsOpen2(false)}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div>
+          개인정보 제3자 제공 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자
+          : SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
+          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
+          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
+          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
+          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
+          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
+        </div>
+      </Modal>
       </div>
   );
 }
