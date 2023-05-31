@@ -259,12 +259,12 @@ function Main2() {
                         onChange={(e) => setNickName(e.target.value)}
                       />
                     </li>
-                    <li>
+                    <li>  
                       <input
                       type="number"
-                        id="f1"
+                  
                         name="user_name"
-                        required=""
+                  
                         placeholder="연락처를 입력하세요"
                         onkeyPress="onlyNumber(this)"
                        maxLength={13}
