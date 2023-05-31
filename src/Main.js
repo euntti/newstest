@@ -31,6 +31,15 @@ function App() {
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
+  const onlyNumber = (e) => {
+    const keyCode = e.keyCode || e.which;
+    const keyValue = String.fromCharCode(keyCode);
+
+    if (!/^[0-9]+$/.test(keyValue)) {
+      e.preventDefault();
+    }
+  };
+
   const [num, setNum] = useState(331231);
   const [time, setTime] = useState("");
 
@@ -369,7 +378,7 @@ function App() {
                   className="phone"
                   placeholder="휴대폰"
                   onChange={(e) => setPhone1(e.target.value)}
-                  onkeypress="onlynumber(this)"
+                  onKeyPress="onlynumber(this)"
                   maxLength={13}
                   pattern="[0-9]{13}"
                 />
