@@ -263,17 +263,12 @@ function Main2() {
                     </li>
                     <li>  
                       <input
-                        type="number"
-                        name="user_name"
-                        placeholder="연락처를 입력하세요"
-                        onKeyDown={(e) => {
-                          if (e.target.value.length >= 13) {
-                            e.preventDefault();
-                          }
-                        }}
-                        pattern="01[0-9]-[0-9]{4}-[0-9]{4}"
-                        value={phoneNumber}
-                        onChange={(e) => setPhoneNumber(e.target.value)}
+                       type="text"
+                       name="user_name"
+                       placeholder="연락처를 입력하세요"
+                       maxLength={13}
+                       value={phoneNumber}
+                       onChange={handlePhoneNumberChange}
                       />
                       
                       
