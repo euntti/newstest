@@ -144,7 +144,7 @@ function App() {
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         // width: "auto",
-        height: "1700px",
+        height: "1400px",
       }}
     >
       <div className="container">
