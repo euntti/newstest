@@ -28,14 +28,16 @@ function Main2() {
   const [users, setUsers] = useState([]);
   const [nickName, setNickName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const onlyNumber = (e) => {
-    const keyCode = e.keyCode || e.which;
-    const keyValue = String.fromCharCode(keyCode);
-
-    if (!/^[0-9]+$/.test(keyValue)) {
-      e.preventDefault();
+  const handlePhoneNumberChange = (e) => {
+    let formattedNumber = e.target.value.replace(/-/g, ""); // 하이픈 제거
+    if (formattedNumber.length > 2 && formattedNumber.length < 6) {
+      formattedNumber = formattedNumber.replace(/(\d{3})(\d{1,3})/, "$1-$2"); // 첫 번째 하이픈 추가
+    } else if (formattedNumber.length >= 6) {
+      formattedNumber = formattedNumber.replace(/(\d{3})(\d{3})(\d{0,4})/, "$1-$2-$3"); // 첫 번째와 두 번째 하이픈 추가
     }
+    setPhoneNumber(formattedNumber);
   };
+
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
   const [check1, setCheck1] = useState(false);
