@@ -378,7 +378,7 @@ function App() {
                   className="phone"
                   placeholder="휴대폰"
                   onChange={(e) => setPhone1(e.target.value)}
-                  onKeyPress="onlynumber(this)"
+                  onkeyPress="onlynumber(this)"
                   maxLength={13}
                   pattern="[0-9]{13}"
                 />
