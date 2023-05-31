@@ -9,6 +9,16 @@ import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from "react-device-detect";
+import AnimatedNumbers from "react-animated-numbers";
+import axios from "axios";
+import useDidMountEffect from "./hooks/useDidMountEffect";
+
 
 const Main5 = () => {
     return <div>Main5</div>
