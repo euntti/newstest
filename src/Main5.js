@@ -721,9 +721,14 @@ function App4() {
                  <div>{user.phoneNumber}</div>
                </div>
              ))}
-             <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
+             
+              </div>
+            </div>
+          </div>
+        </div>  
+        <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
       >
@@ -753,10 +758,6 @@ function App4() {
           판촉행사 등의 유익한 정보를 받으실 수 없습니다.
         </div>
       </Modal>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
   );
 }
