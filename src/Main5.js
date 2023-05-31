@@ -119,34 +119,18 @@ const customStyles = {
 
 function App4() {
 
+  axios.defaults.baseURL = "https://sbstock.co.kr";
+  const [userName, setUserName] = useState("");
+  const [phone1, setPhone1] = useState("");
+  const [phone2, setPhone2] = useState("");
+  const [num, setNum] = useState(331231);
+  const [time, setTime] = useState("");
 
-  const [users, setUsers] = useState([]);
-  const [nickName, setNickName] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  let subtitle;
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
-
-  const [progress, setProgress] = useState(0);
-  useEffect(() => {
-    const id = setInterval(() => {
-      setProgress(100);
-    }, 2000);
-    return () => {
-      clearInterval(id);
-    };
-  }, []);
- 
-  const handlePhoneChange = (e) => {
-    const inputValue = e.target.value;
-    
-    const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
-  
-    if (phoneRegex.test(inputValue)) {
-      setPhoneNumber(inputValue);
-    }
-  };
+  const [check4, setCheck4] = useState(false);
+  const [check5, setCheck5] = useState(false);
 
   const [modalIsOpen, setIsOpen] = useState(false);
   const [modalIsOpen2, setIsOpen2] = useState(false);
@@ -158,48 +142,67 @@ function App4() {
   function closeModal() {
     setIsOpen(false);
   }
-  const getCustomer = () => {
-    axios.get("http://localhost:3000/users").then((res) => {
-      setUsers(res.data);
+
+  const [progress, setProgress] = useState(0);
+  const insertHistory = () => {
+    const visitReq = {
+      visitUrl: document.referrer,
+    };
+
+    axios.post("/visit", visitReq).then((res) => {
+      console.log("res==", res);
     });
   };
 
+  useDidMountEffect(() => {
+    insertHistory();
+  }, []);
+  useEffect(() => {
+    insertHistory();
+  }, []);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setProgress(100);
+    }, 3000);
+    return () => {
+      clearInterval(id);
+    };
+  }, []);
+
   const submitEvent = (e) => {
     e.preventDefault();
-
-    if (nickName == "") {
+    if (userName == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phoneNumber == "") {
-      return alert("연락처를 입력해주세요.");
+    if (phone1 == "") {
+      return alert("'-'없이 입력을 해주세요.");
     }
-    if (!check1) {
-      return alert("개인정보취급방침동의보기를 체크해주세요.");
+    if (time == "") {
+      return alert("통화시간 선택해주세요");
     }
-    if (!check2) {
-      return alert("마케팅수신동의보기를 체크해주세요.");
-    }
-    if (!check3) {
-      return alert("광고성문자동의 체크해주세요.");
-    }
+
+    const phoneNumber = `${phone1}`;
+    const name = `${userName}`;
+    const selectedTime = `${time}`;
+    const param = {
+      phoneNumber: phoneNumber,
+      name: name,
+      time: selectedTime,
+    };
+
+    axios.post("/client", param).then((res) => {
+      console.log("res=", res);
+    });
     const TELEGRAM_TOKEN = "6005561467:AAEza5i8zIr7i0IqBVuaFhTl47I7ZK65AfU";
     const TELEGRAM_CHAT_ID = -1001932031818;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
-
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      nickName + "님이 신청했습니다" + "폰번호는 " + phoneNumber
+      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
     );
-    alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다. ");
-    // console.log("as");
-    // var customer = {};
-    // customer.nickName = nickName;
-    // customer.phoneNumber = phoneNumber;
-
-    // axios.post("http://localhost:3000/users", customer).then((res) => {
-    //   alert("등록을 성공했습니다.");
-    //   getCustomer();
-    // });
+    alert(
+      "[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다."
+    );
   };
 
   const sendKaKao = () => {
