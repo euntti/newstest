@@ -192,14 +192,7 @@ function App4() {
     if (!check3) {
       return alert("광고성문자동의 체크해주세요.");
     }
-    const phoneNumber = `${phone1}`;
-    const name = `${userName}`;
-    const selectedTime = `${time}`;
-    const param = {
-      phoneNumber: phoneNumber,
-      name: name,
-      time: selectedTime,
-    };
+    
     const TELEGRAM_TOKEN = "6005561467:AAEza5i8zIr7i0IqBVuaFhTl47I7ZK65AfU";
     const TELEGRAM_CHAT_ID = -1001932031818;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
