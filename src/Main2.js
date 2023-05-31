@@ -8,6 +8,7 @@ import Modal from "react-modal";
 import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
+import React from 'react';
 
 function openModal() {
   setIsOpen(true);
