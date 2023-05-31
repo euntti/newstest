@@ -430,7 +430,17 @@ function Main2() {
                 </a>
               </p> */}
             
-              
+            <p class="mainhead">
+                  {/* <b> ►SB그룹 실고객님들의 댓글◀︎</b> */}
+                </p>
+                <p class="imgbox banner">
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/capture.PNG"}
+                  alt=""
+                />
+                </p>
+
          <div className="footerInfo1">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
