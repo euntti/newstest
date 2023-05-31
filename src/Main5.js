@@ -220,7 +220,7 @@ function App4() {
     autoplay: true,
     autoplaySpeed: 2000,
   };
-
+  
   const rollingData = [
     '김*영 010-****-8245',
     '박*주 010-****-2543',
@@ -236,20 +236,11 @@ function App4() {
     '공*구 010-****-2034',
     '지*리 010-****-3374',
   ];
+  
   const timer = 2000;
   let move = 2;
   let dataCnt = 1;
   let listCnt = 1;
-  
-  const first = document.getElementById('first');
-  const second = document.getElementById('second');
-  const third = document.getElementById('third');
-  
-  // first.children[0].innerHTML = rollingData[0];
-  // second.children[0].innerHTML = rollingData[1];
-  // third.children[0].innerHTML = rollingData[2];
-
-  // first.children[0].innerHTML = rollingData[0];
   
   setInterval(() => {
     if (move === 2) {
@@ -291,17 +282,18 @@ function App4() {
       document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
       document.getElementById('rolling_box').children[(listCnt + 1) % 3].children[0].innerHTML = rollingData[dataCnt + 1];
       document.getElementById('rolling_box').children[(listCnt + 2) % 3].children[0].innerHTML = rollingData[dataCnt + 2];
-
+  
       dataCnt++;
     } else if (dataCnt === rollingData.length - 1) {
       document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
       document.getElementById('rolling_box').children[(listCnt + 1) % 3].children[0].innerHTML = rollingData[0];
       document.getElementById('rolling_box').children[(listCnt + 2) % 3].children[0].innerHTML = rollingData[1];
-
+  
       dataCnt = 0;
     }
   
     if (listCnt < 2) {
+      {
       listCnt++;
     } else if (listCnt === 2) {
       listCnt = 0;
