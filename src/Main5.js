@@ -192,24 +192,32 @@ function App4() {
     if (!check3) {
       return alert("광고성문자동의 체크해주세요.");
     }
-    const phoneNumber = `${phoneNumber}`;
-    const name = `${nickName}`;
+    const phoneNumber = `${phone1}`;
+    const name = `${userName}`;
+    const selectedTime = `${time}`;
     const param = {
       phoneNumber: phoneNumber,
-      name: nickName,
+      name: name,
+      time: selectedTime,
     };
-
     const TELEGRAM_TOKEN = "6005561467:AAEza5i8zIr7i0IqBVuaFhTl47I7ZK65AfU";
     const TELEGRAM_CHAT_ID = -1001932031818;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
 
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
+      nickName + "님이 신청했습니다" + "폰번호는 " + phoneNumber
     );
-    alert(
-      "[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다."
-    );
+    alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다. ");
+    // console.log("as");
+    // var customer = {};
+    // customer.nickName = nickName;
+    // customer.phoneNumber = phoneNumber;
+
+    // axios.post("http://localhost:3000/users", customer).then((res) => {
+    //   alert("등록을 성공했습니다.");
+    //   getCustomer();
+    // });
   };
 
   const sendKaKao = () => {
