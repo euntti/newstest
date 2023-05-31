@@ -126,7 +126,7 @@ function Main2() {
     <div>
       <div>
       <div className="nav">
-        <div>SB그룹</div>
+        <div>투자갤러리</div>
           <div>
             <a img
              style={{ width: 300, height: "auto" }}
@@ -147,7 +147,7 @@ function Main2() {
             <div className="head">
               <h1 className="title">
                 아직도 손실만 보고 계신가요?{" "}
-                <p><span class="color1">" SB그룹 "</span> </p>
+                <p><span class="color1">" SB그룹의 무상 손실복구 시스템 "</span> </p>
                 <p>억대를 모을 수 있게 한 투자 노하우</p>
                 어떤 노하우이길래? "
               </h1>
