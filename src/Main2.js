@@ -335,21 +335,25 @@ function Main2() {
                   <b>"SB그룹 실 고객들의 '주식' 수익인증"</b>
                 </p>
                <p class="imgbox banner">
+               <a href="http://www.sbstock.kr" target="_blank">
                 <img
                   style={{ width: 620, height: "auto" }}
                   src={"/img/sbmain2.png"}
                   alt=""
                 />
+                </a>
               </p> 
               <p class="mainhead">
                   <b>"SB그룹 실 고객들의 '코인' 수익인증"</b>
                 </p>
                <p class="imgboxbanner2">
+               <a href="http://www.sbstock.kr" target="_blank">
                 <img
                   style={{ width: "100%", height: "auto" }}
                   src={"/img/stock.png"}
                   alt=""
                 />
+                </a>
               </p>
               {/* <div class="imgdesc">[김진환씨의 최근 수익 인증]</div> */}
               <p>
@@ -398,11 +402,13 @@ function Main2() {
                   <b> ►SB그룹 실제 AI 퀀트박스 이용사진◀︎</b>
                 </p>
                <p class="imgbox banner">
-                <img
-                  style={{ width: 620, height: "auto" }}
-                  src={"/img/quantbee.png"}
-                  alt=""
-                />
+               <a href="http://www.sbstock.kr" target="_blank">
+                  <img
+                   style={{ width: 620, height: "auto" }}
+                   src={"/img/quantbee.png"}
+                   alt=""
+                   />
+                  </a>
               </p>
               
               <p class="mainhead">
@@ -432,11 +438,13 @@ function Main2() {
                   {/* <b> ►SB그룹 실고객님들의 댓글◀︎</b> */}
                 </p>
                 <p class="imgbox banner">
+                <a href="http://www.sbstock.kr" target="_blank">
                 <img
                   style={{ width: 620, height: "auto" }}
                   src={"/img/capture.png"}
                   alt=""
                 />
+                </a>
                 </p>
 
          <div className="footerInfo1">
