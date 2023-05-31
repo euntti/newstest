@@ -215,7 +215,7 @@ function App4() {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -238,7 +238,7 @@ function App4() {
   ];
   const timer = 2000;
   let move = 2;
-  let dataCnt = 2;
+  let dataCnt = 1;
   let listCnt = 1;
   
   const first = document.getElementById('first');
