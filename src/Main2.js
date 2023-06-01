@@ -322,6 +322,7 @@ function Main2() {
                         id="btn"
                         type="submit"
                         value="30일 무료체험 이벤트 신청하기"
+                        style={{ fontSize: "20px" }}
                         onClick={submitEvent}
                       />
                     </li>
