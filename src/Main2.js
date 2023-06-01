@@ -131,9 +131,7 @@ function Main2() {
     <div>
       <div>
       <div className="nav">
-      <a href="http://www.sbstock.kr" target="_blank">
         <div>투자갤러리</div>
-        </a>
           <div>
             <a img
              style={{ width: 300, height: "auto" }}
@@ -449,36 +447,36 @@ function Main2() {
                 </a>
                 </p>
 
-                <div className="footerInfo1" style={{ textAlign: "center" }}>
-                <div>상호명:(주)SB 글로벌 투자그룹</div>
-                <div>대표자:엄원택</div>
-                <div>사업자등록번호: 178-88-01858</div>
-                <div>소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매</div>
-                </div>
-              </div>
-              <h3
-              style={{
-              fontSize: 9,
-              display: "flex",
-              justifyContent: "center",
-              color: "#fff",
-              textAlign: "center"
-              }}
-              ></h3>
+         <div className="footerInfo1">
+          <div>상호명:(주)SB 글로벌 투자그룹 </div>
+          <div>대표자:엄원택 </div>
+
+          <div>사업자등록번호: 178-88-01858 </div>
+          <div>
+            소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
+          </div>
+        </div>
+      </div>
+      <h3
+        style={{
+          fontSize: 9,
+          display: "flex",
+          justifyContent: "center",
+          color: "#fff",
+        }}
+      >
+      </h3>
       
-               <h4
-              style={{
-              fontSize: 4,
-             display: "flex",
-            justifyContent: "center",
-            color: "#fff",
-            textAlign: "center"
-              }}
-              >
-       <div className="footerInfo1">
-                  AD - 해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.
-               </div>
-                  </h4>
+      <h4
+        style={{
+          fontSize: 4,
+          display: "flex",
+          justifyContent: "center",
+          color: "#fff",
+        }}
+      >
+       <div className="footerInfo1"> AD - 해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</div>
+      </h4>
       <div>
               </div>
               {/* <div className="inputBoxs">

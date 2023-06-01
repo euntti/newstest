@@ -5,7 +5,6 @@ import Main2 from "./Main2";
 import Main3 from "./Main3";
 import Main4 from "./Main4";
 import Main5 from "./Main5";
-import Main6 from "./Main6";
 
 const App = () => {
   return (
@@ -17,7 +16,6 @@ const App = () => {
           <Route path="/test" element={<Main3 />}></Route>
           <Route path="/notice" element={<Main4 />}></Route>
           <Route path="/gallery" element={<Main5 />}></Route>
-          <Route path="/member" element={<Main6 />}></Route>
 
 
           {/* 상단에 위치하는 라우트들의 규칙을 모두 확인, 일치하는 라우트가 없는경우 처리 */}
