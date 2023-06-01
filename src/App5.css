@@ -286,6 +286,8 @@ table {
   
   .rounded-option-horizontal option {
     padding: 5px 10px;
+    background-color: #ffffff;
+    color: #000000;
   }
   
 .news {

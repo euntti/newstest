@@ -46,6 +46,8 @@ function App5() {
     }
   };
 
+  const [investmentPreference, setinvestmentPreference] = useState("");
+
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
@@ -322,7 +324,7 @@ function App5() {
                       />
                     </li>
                     <li>
-                    <select
+                        <select
                         name="investment_preference"
                         required
                          value={investmentPreference}
