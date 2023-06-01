@@ -9,8 +9,6 @@ import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
-import React, { useEffect } from 'react';
-
 
 function App5() {
 
