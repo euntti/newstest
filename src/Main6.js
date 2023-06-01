@@ -119,19 +119,51 @@ const customStyles = {
 
 function App5() {
 
+    const authButton = useState("");
+    const cellnumInput = useState("");
+    const marryRadios = useState("");
+    const ageRadios = useState("");
+    const areaRadios = useState("");
+    const area2Radios = useState("");
+    const agreeCheckbox = useState("");
+    const agree2Checkbox = useState("");
+    const submitButton = useState("");          
+
+    const handleAuthSubmit = () => {
+        authSubmit(form, 'S', '/leadersclick/admin/inc/auth_proc_aligo.asp', '825', 'cellnum');
+      };
+      
+      <button onClick={handleAuthSubmit}>인증</button>
+
+      const handleSubmit = () => {
+        consult_input_check('consultFrm', 'https://leaderscpa.com');
+      };
+      
+      <button onClick={handleSubmit}>폼 전송</button>
 
   const [users, setUsers] = useState([]);
-  const [nickName, setNickName] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-    let subtitle;
-  const onlyNumber = (e) => {
+  const [name, setNickName] = useState("");
+
+    const handleNameChange = (e) => {
+  setNickName(e.target.value);
+};
+
+    <input type="text" value={name} onChange={handleNameChange} />
+
+  
+        let subtitle;
+    const onlyNumber = (e) => {
     const keyCode = e.keyCode || e.which;
     const keyValue = String.fromCharCode(keyCode);
-
+    
     if (!/^[0-9]+$/.test(keyValue)) {
       e.preventDefault();
     }
   };
+  const [form, consultFrm] = useState([]);
+
+const [phoneNumber, setPhoneNumber] = useState("");
+
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
@@ -358,65 +390,6 @@ function App5() {
 
           <div className="content-wrap">
             <div className="content">
-             
-              <p>
-                <b>"가상화폐 3분투자로 1억씩 수익내고있어요"</b>
-                <br />
-                김진환 씨(50대) 인터뷰中
-              </p>
-              <p>
-                <p>최근 부동산, 주식, 가상화폐 모두 하락장이라 손실보고 있는 분들이 많을텐데요
-                    이런 하락장에서도 손실없이 큰돈 벌 수 있는 재테크 '노하우' 알려드리겠습니다. </p>
-
-                    <p class="imgbox banner">
-                <img
-                  style={{ width: 620, height: "auto" }}
-                  src={"/img/sbmain41.png"}
-                  alt=""
-                />
-              </p>
-
-                제가 했던 재테크는 "가상화폐 재테크"인데요
-                <p>저도 아는 지인통해 알게되었는데요 'SB그룹' 이라는 기업에서 출시한 상품이었어요!
-                    방법은 아주 간단하답니다</p>
-                <p><span class="color1">
-                  <div>첫째. A.I 분석 프로그램으로 추천해준 코인 매수</div>
-                  <div>둘째. 정해준 목표가 도달시 매도</div>
-                  <div>셋째. 목표가 도달하지 않고 하락시 정해준 손절가에 손절</div></span></p>
-                  <p></p>
-                <p>이 3가지만 똑같이 따라하니 꾸준히 수익이 났어요</p>
-                <p>가끔 하락할때가 있는데 '손절가'에 손절하면 손실이 크지 않고, 
-                상승하는 경우가 더 많으니 결국 손실없이 수익을 낼 수 있었어요</p>
-                
-              </p>
-               <p class="mainhead">
-                  <b>"하루 3분 투자로 3개월 수익1억 가능한 가상화폐는? "</b>
-                </p>
-               <p class="imgboxbanner2">
-                <img
-                  style={{ width: "100%", height: "auto" }}
-                  src={"/img/stock.png"}
-                  alt=""
-                />
-              </p>
-              {/* <div class="imgdesc">[김진환씨의 최근 수익 인증]</div> */}
-              <p>
-               여기서 놀라지 마세요 누구나 하실수있는 간단한 투자! </p>
-               <p> "3분 재테크"의 가장 큰 장점은 시간도 시간이지만
-                하락장에서도 돈을 벌 수 있다는것입니다.
-                대부분의 사람들이 감으로 투자하는 경우가 많은데
-                 A.I 분석프로그램으로 코인을 분석 및 추천을 해주어 정확도가 매우 높은 편입니다.
-                <br />이로 인해 문의가 폭주하고 있습니다.
-              </p>
-
-              <p>
-                최근에 바쁜 사회속 빠르게 그렇지만 확실한 수익을 나고 싶은 고객들을 위해
-                <span class="color1">"3분 투자로 1억만들기 이벤트" </span>를 진행하고 있으니 아래 링크 확인부탁드립니다. 
-                {/* {"\t"}
-                <b>좋은 예 라 보이며 기존 개인투자자들이 일일히 확인해야되는것과 달리 AI프로그램이 실시간으로 변동하는 
-                모든 차트흐름과 시장흐름을 분석하여 높은 수익률로 보이는 추세이다.</b> */}
-                
-              </p>
               <div className="inputBoxs">
                   <h1>급등종목 30일 무료제공 프로모션</h1>
                   <h3>하루 3분 투자로 1억만들기</h3>
@@ -472,13 +445,13 @@ function App5() {
                           onChange={(e) => setCheck1(e.target.checked)}
                         />
                         개인정보취급방침동의
-                <a
-                  href="javascript:void(0);"
-                  onClick={() => setIsOpen2(true)}
-                  // onclick="privacy_pop('show', '.pop-policy',2)"
-                >
-                  [보기]
-                </a>
+                        <a
+                          href="javascript:void(0);"
+                           onClick={() => setIsOpen2(true)}
+                        // onclick="privacy_pop('show', '.pop-policy',2)"
+                        >
+                        [보기]
+                        </a>
                       </label>
                       
                       <label>
@@ -521,8 +494,15 @@ function App5() {
                     />
                   </div>
 
+                  <div className="newbox">
+                    <div className="content">
+                        <div className="newBoxs">
+
+                </div>
+                    </div>
+                    </div>
+
                   <div class="rolling_box">
-                
                     <ul id ="rolling_box"
                     style={{ width: "100%", height: "50px" }}>
                     <li class="card_sliding" id ="first"><p></p></li>
@@ -604,7 +584,77 @@ function App5() {
                     alt=""
                     />
                      </div>
-                    </div>
+                    </div>  
+
+                    <article class="form_wrap">
+						<form name="consultFrm" method="post">
+				
+
+
+        <div className="newbox">
+                    <div className="content">
+                        <div className="newBoxs">
+
+               
+        <div name="consultFrm" class="form_wrap_inner"> 
+        {/* <!-- 변경된 부분 --> */}
+   
+      <div class="fl clear">
+        <label for="u_name" class="fl">요청자명</label>
+        <input type="text" name="name" id="u_name" maxlength="10" class="fl u_name"/>
+      </div>
+      <div class="fl clear">
+        <label for="u_hp" class="fl">휴대폰</label>
+        <input type="tel" name="hp" id="u_hp" maxlength="11" class="fl u_hp" oninput="maxLengthCheck(this)" onkeydown="onlyNumber(event);" onkeyup="removeChar(event);" onfocusout="removeChar(event)"/>
+        <button type="button" class="fl" onclick="authSubmit(document.consultFrm, 'S', '/leadersclick/admin/inc/auth_proc_aligo.asp','825','cellnum');">인증</button>
+        <input type="number" name="cellnum" id="cellnum" maxlength="6" class="fl u_num" placeholder="인증번호 입력" oninput="maxLengthCheck(this)"/>
+        <span style="display:none;" id="countdown">0</span>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    <dl class="check1 clear">
+					<dt>희망항목</dt>
+					<dd><input type="radio" name="marry" id="subject1" value="급등종목"><label for="subject1">급등종목</label></input></dd>
+					<dd><input type="radio" name="marry" id="subject2" value="테마종목"><label for="subject2">테마종목</label></input></dd>
+					<dd><input type="radio" name="marry" id="subject3" value="가치투자"><label for="subject3">가치투자</label></input></dd>
+					<dd><input type="radio" name="marry" id="subject4" value="스윙종목"><label for="subject4">스윙종목</label></input></dd>
+					<dd><input type="radio" name="marry" id="subject5" value="인공지능"><label for="subject5">인공지능</label></input></dd>
+					<dd><input type="radio" name="marry" id="subject6" value="단기투자"><label for="subject6">단기투자</label></input></dd>
+					<dd><input type="radio" name="marry" id="subject7" value="원금회복"><label for="subject7">원금회복</label></input></dd>
+					<dd><input type="radio" name="marry" id="subject8" value="투자초보"><label for="subject8">투자초보</label></input></dd>
+				</dl>
+				<dl class="check2 clear">
+					<dt>희망수익률</dt>
+					<dd><input type="radio" name="age" id="hope1" value="5% 목표"><label for="hope1">5% 목표</label></input></dd>
+					<dd><input type="radio" name="age" id="hope2" value="10% 목표"><label for="hope2">10% 목표</label></input></dd>
+					<dd><input type="radio" name="age" id="hope3" value="15% 목표"><label for="hope3">15% 목표</label></input></dd>
+					<dd><input type="radio" name="age" id="hope4" value="20% 목표"><label for="hope4">20% 목표</label></input></dd>
+					<dd><input type="radio" name="age" id="hope5" value="25% 목표"><label for="hope5">25% 목표</label></input></dd>
+					<dd><input type="radio" name="age" id="hope6" value="30% 목표"><label for="hope6">30% 목표</label></input></dd>
+				</dl>
+				<dl class="check3 clear">
+					<dt>희망수익금</dt>
+					<dd><input type="radio" name="area" id="profit1" value="5백만 원"><label for="profit1">5백만 원</label></input></dd>
+					<dd><input type="radio" name="area" id="profit2" value="1천만 원"><label for="profit2">1천만 원</label></input></dd>
+					<dd><input type="radio" name="area" id="profit3" value="3천만 원"><label for="profit3">3천만 원</label></input></dd>
+					<dd><input type="radio" name="area" id="profit4" value="5천만 원"><label for="profit4">5천만 원</label></input></dd>
+					<dd><input type="radio" name="area" id="profit5" value="7천만 원"><label for="profit5">7천만 원</label></input></dd>
+					<dd><input type="radio" name="area" id="profit6" value="1억 원 이상"><label for="profit6">1억 원 이상 </label></input></dd>
+				</dl>
+				<dl class="check4 clear">
+					<dt>투자성향</dt>
+					<dd><input type="radio" name="area2" id="type1" value="안정형"><label for="type1">안정형</label></input></dd>
+					<dd><input type="radio" name="area2" id="type2" value="안정 추구형"><label for="type2">안정 추구형</label></input></dd>
+					<dd><input type="radio" name="area2" id="type3" value="위험 추구형"><label for="type3">위험 추구형</label></input></dd>
+					<dd><input type="radio" name="area2" id="type4" value="적극 투자형"><label for="type4">적극 투자형</label></input></dd>
+					<dd><input type="radio" name="area2" id="type5" value="공격 투자형"><label for="type5">공격 투자형</label></input></dd>
+				</dl>
+				
+                    
+                    </form>
+		</article>
                     
          <div className="footerInfo1">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
@@ -636,105 +686,6 @@ function App5() {
       >
        <div className="footerInfo1"> AD - 해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</div>
       </h4>
-
-              {/* <div className="inputBoxs">
-                <h1>급등종목 무료제공 오픈 프로모션</h1>
-                <h3>당장 급등할 종목 받기</h3>
-                <ul>
-                  <li id="line01">
-                    <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
-                  </li>
-                  <li id="line02">
-                    개인정보는 암호화하여 안전하게 처리됩니다.
-                  </li>
-                  <li id="line03" cond="off">
-                    <span>급등주를 7일동안 받아보세요.</span>
-                  </li>
-                  <br />
-                  <li>
-                    <input
-                      type="text"
-                      id="f1"
-                      name="user_name"
-                      required=""
-                      placeholder="성함을 입력하세요"
-                      value={nickName}
-                      onChange={(e) => setNickName(e.target.value)}
-                    />
-                  </li>
-                  <li>
-                    <input
-                      type="text"
-                      id="f1"
-                      name="user_name"
-                      required=""
-                      placeholder="연락처를 입력하세요"
-                      value={phoneNumber}
-                      onChange={(e) => {
-                        setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
-                      }}
-                    />
-                  </li>
-                  <br />
-                  <li id="chkline">
-                    <label>
-                      <input
-                        type="checkbox"
-                        id="privacy"
-                        name="agree1"
-                        value="1"
-                        checked={check1}
-                        onChange={(e) => setCheck1(e.target.checked)}
-                      />
-                      개인정보취급방침동의
-                    </label>
-                    <span
-                      onClick={openModal}
-                      class="txtbtn"
-                      data-id="fixedbox_1"
-                    >
-                      보기
-                    </span>
-                    <label>
-                      <input
-                        type="checkbox"
-                        id="privacy"
-                        name="agree2"
-                        value="1"
-                        checked={check2}
-                        onChange={(e) => setCheck2(e.target.checked)}
-                      />
-                      마케팅수신동의
-                    </label>
-                    <span
-                      onClick={openModal}
-                      class="txtbtn"
-                      data-id="fixedbox_1"
-                    >
-                      보기
-                    </span>
-                    <label>
-                      <input
-                        type="checkbox"
-                        id="privacy"
-                        name="agree3"
-                        value="1"
-                        checked={check3}
-                        onChange={(e) => setCheck3(e.target.checked)}
-                      />
-                      광고성문자수신동의
-                    </label>
-                  </li>
-                  <li id="smtbtn">
-                    <input
-                      id="btn"
-                      type="submit"
-                      value="급등종목 무료제공 이벤트 신청하기"
-                      onClick={submitEvent}
-                    />
-                  </li>
-                </ul>
-              </div> */}
               <div>
               {users.map((user, idx) => (
                <div key={idx} style={{ display: "flex" }}>
@@ -792,3 +743,4 @@ function App5() {
 }
 
 export default App5;
+
