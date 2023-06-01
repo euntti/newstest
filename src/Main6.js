@@ -307,10 +307,7 @@ function App5() {
                          >
                         <option value="">투자성향 선택</option>
                         <option value="안정형"></option>
-                        <option value="안정추구형"></option>
-                        <option value="위험추구형"></option>
-                        <option value="적극투자형"></option>
-                        <option value="공격투자형"></option>
+                       
                         </select>
                     </li>
                     <br />
