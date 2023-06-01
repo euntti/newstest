@@ -28,34 +28,55 @@ const customStyles = {
 
 function App5() {
 
-    const authButton = useState("");
-    const cellnumInput = useState("");
-    const marryRadios = useState("");
-    const ageRadios = useState("");
-    const areaRadios = useState("");
-    const area2Radios = useState("");
-    const agreeCheckbox = useState("");
-    const agree2Checkbox = useState("");
-    const submitButton = useState("");          
-
-    const handleAuthSubmit = () => {
-        authSubmit(form, 'S', '/leadersclick/admin/inc/auth_proc_aligo.asp', '825', 'cellnum');
-      };
+    const ConsultForm = () => {
+        const [authButton, setAuthButton] = useState("");
+        const [cellnumInput, setCellnumInput] = useState("");
+        const [marryRadios, setMarryRadios] = useState("");
+        const [ageRadios, setAgeRadios] = useState("");
+        const [areaRadios, setAreaRadios] = useState("");
+        const [area2Radios, setArea2Radios] = useState("");
+        const [agreeCheckbox, setAgreeCheckbox] = useState(false);
+        const [agree2Checkbox, setAgree2Checkbox] = useState(false);
+        const [submitButton, setSubmitButton] = useState("");
       
-      <button onClick={handleAuthSubmit}>인증</button>
-
-      const handleSubmit = () => {
-        consult_input_check('consultFrm', 'https://leaderscpa.com');
-      };
+        const handleAuthSubmit = () => {
+          authSubmit(document.consultFrm, 'S', '/leadersclick/admin/inc/auth_proc_aligo.asp', '825', 'cellnum');
+        };
       
-      <button onClick={handleSubmit}>폼 전송</button>
-
-  const [users, setUsers] = useState([]);
-  const [name, setNickName] = useState("");
-
-    const handleNameChange = (e) => {
-  setNickName(e.target.value);
-};
+        const handleSubmit = () => {
+          consult_input_check('consultFrm', 'https://leaderscpa.com');
+        };
+      
+        const handleNameChange = (e) => {
+          setNickName(e.target.value);
+        };
+      
+        const handlePhoneChange = (e) => {
+          const inputValue = e.target.value;
+      
+          const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
+      
+          if (phoneRegex.test(inputValue)) {
+            setPhoneNumber(inputValue);
+          }
+        };
+      
+        const [users, setUsers] = useState([]);
+        const [nickName, setNickName] = useState("");
+        const [phoneNumber, setPhoneNumber] = useState("");
+      
+        useEffect(() => {
+          const fetchUsers = async () => {
+            try {
+              const response = await axios.get("http://localhost:3000/users");
+              setUsers(response.data);
+            } catch (error) {
+              console.error("Error fetching users:", error);
+            }
+          };
+      
+          fetchUsers();
+        }, []);
 
     <input type="text" value={name} onChange={handleNameChange} />
 
@@ -71,7 +92,6 @@ function App5() {
   };
   const [form, consultFrm] = useState([]);
 
-const [phoneNumber, setPhoneNumber] = useState("");
 
 
   const [check1, setCheck1] = useState(false);
@@ -89,15 +109,7 @@ const [phoneNumber, setPhoneNumber] = useState("");
     };
   }, []);
  
-  const handlePhoneChange = (e) => {
-    const inputValue = e.target.value;
-    
-    const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
-  
-    if (phoneRegex.test(inputValue)) {
-      setPhoneNumber(inputValue);
-    }
-  };
+ 
 
   const [modalIsOpen, setIsOpen] = useState(false);
   const [modalIsOpen2, setIsOpen2] = useState(false);
@@ -256,6 +268,8 @@ const [phoneNumber, setPhoneNumber] = useState("");
   
     console.log(listCnt);
   }, timer);
+
+}
 
   return (
     <div>
