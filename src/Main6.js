@@ -10,9 +10,9 @@ import { ColorRing } from "react-loader-spinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 
-const Main5 = () => {
-    return <div>Main5</div>
-    const Main5 = () => {
+const Main6 = () => {
+    return <div>Main6</div>
+    const Main6 = () => {
       let rollingData = [
         '서울',
         '대구',
