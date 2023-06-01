@@ -11,14 +11,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 import React, { useEffect } from 'react';
 
-const Main6 = () => {
-    return <div>Main6</div>
-   
-      }
-
-
-
-
 
 function App5() {
 
@@ -87,7 +79,10 @@ function App5() {
     }
     if (phoneNumber == "") {
       return alert("연락처를 입력해주세요.");
-    }
+    } 
+    if (investmentPreference == "") {
+        return alert("투자성향을 선택해주세요.");
+      }
     if (!check1) {
       return alert("개인정보취급방침동의보기를 체크해주세요.");
     }
@@ -316,7 +311,7 @@ function App5() {
                     <li>
                         <select
                         name="investment_preference"
-                        required
+                        required=""
                          value={investmentPreference}
                         onChange={(e) => setInvestmentPreference(e.target.value)}
                         className="rounded-option-horizontal"
