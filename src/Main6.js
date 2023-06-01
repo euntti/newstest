@@ -359,6 +359,11 @@ function App5() {
           <div className="content-wrap">
             <div className="content">
              
+              <p>
+                <b>"가상화폐 3분투자로 1억씩 수익내고있어요"</b>
+                <br />
+                김진환 씨(50대) 인터뷰中
+              </p>
             
 
                     <p class="imgbox banner">
@@ -397,20 +402,15 @@ function App5() {
                       />
                     </li>
                     <li>
-                    <select
-                        name="investment_preference"
-                            required
-                            value={investmentPreference}
-                         onChange={(e) => setInvestmentPreference(e.target.value)}
-                        className="rounded-option-horizontal"
-                            >
-                        <option value="">투자성향 선택</option>
-                        <option value="안정형">안정형</option>
-                        <option value="안정추구형">안정추구형</option>
-                        <option value="위험추구형">위험추구형</option>
-                        <option value="적극투자형">적극투자형</option>
-                        <option value="공격투자형">공격투자형</option>
-                        </select>
+                    <input
+                       type="tel"
+                       name="user_name"
+                       placeholder="연락처를 입력하세요"
+                       maxLength={13}
+                       value={phoneNumber}
+                       onChange={handlePhoneNumberChange}
+                      />
+                      
                     </li>
                     <li>
                     <input
