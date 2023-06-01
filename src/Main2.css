@@ -81,6 +81,11 @@ table {
 .head{
   padding:0 20px 20px;
 }
+.span, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .title{
   font-size: 40px;
   line-height: 1.2;
