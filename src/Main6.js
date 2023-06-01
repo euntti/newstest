@@ -452,18 +452,38 @@ function App5() {
                             <div className="newbox">
                     <div className="content">
                         <div className="newBoxs">
-                             <div name="consultFrm" class="form_wrap_inner"> 
-                            <div class="fl clear">
-                            <label for="u_name" class="fl">요청자명</label>
-                            <input type="text" name="name" id="u_name" maxlength="10" class="fl u_name"/>
-                            </div>
-<div class="fl clear">
-<label for="u_hp" class="fl">휴대폰</label>
-{/* <input type="tel" name="hp" id="u_hp" maxlength="11" class="fl u_hp" oninput="maxLengthCheck(this)" onkeydown="onlyNumber(event);" onkeyup="removeChar(event);" onfocusout="removeChar(event)"/>
-<button type="button" class="fl" onclick="authSubmit(document.consultFrm, 'S', '/leadersclick/admin/inc/auth_proc_aligo.asp','825','cellnum');">인증</button>
-<input type="number" name="cellnum" id="cellnum" maxlength="6" class="fl u_num" placeholder="인증번호 입력" oninput="maxLengthCheck(this)"/>
-<span style="display:none;" id="countdown">0</span> */}
-</div>
+                        <li>
+                            신청자명
+                      <input
+                       type="text"
+                       id="f1"
+                       name="user_name"
+                       required=""
+                       placeholder="성함을 입력하세요"
+                       value={nickName}
+                       maxLength={4}
+                       onChange={(e) => setNickName(e.target.value)}
+                        
+                      />
+                    </li>
+                        <li>
+                            휴대폰
+                      <input
+                       type="number"
+    
+                       name="user_name"
+                       required=""
+                       placeholder="연락처를 입력하세요"
+                       onkeyPress="onlyNumber(this)"
+                      maxLength={13}
+                      pattern="[0-9]{13}"
+                       value={phoneNumber}
+                       onChange={(e) => {
+                         setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
+                       }}
+                      />
+                    </li>
+                        
         
        
                     <dl class="check1 clear">
@@ -503,7 +523,7 @@ function App5() {
 					<dd><input type="radio" name="area2" id="type4" value="적극 투자형"><label for="type4">적극 투자형</label></input></dd>
 					<dd><input type="radio" name="area2" id="type5" value="공격 투자형"><label for="type5">공격 투자형</label></input></dd>
 				</dl>
-				</div>
+				
                 </div>
                 </div>
                 </div>
