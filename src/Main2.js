@@ -249,7 +249,7 @@ function Main2() {
                       개인정보는 암호화하여 안전하게 처리됩니다.
                     </li>
                     <li id="line03" cond="off">
-                      <span>전문가들의 고급정보를 <b>30일동안 받아보세요.</b></span>
+                      <span>애널시트들의 기밀정보를 <p>30일동안 받아보세요.</p></span>
                     </li>
                     <br />
                     <li>
