@@ -322,19 +322,20 @@ function App5() {
                       />
                     </li>
                     <li>
-                      <input
-                       type="number"
-                        name="user_name"
-                       required=""
-                       placeholder="연락처를 입력하세요"
-                       onkeyPress="onlyNumber(this)"
-                      maxLength={13}
-                      pattern="[0-9]{13}"
-                       value={phoneNumber}
-                       onChange={(e) => {
-                         setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
-                       }}
-                      />
+                    <select
+                        name="investment_preference"
+                        required
+                         value={investmentPreference}
+                        onChange={(e) => setInvestmentPreference(e.target.value)}
+                        className="rounded-option-horizontal"
+                         >
+                        <option value="">투자성향 선택</option>
+                        <option value="안정형">안정형</option>
+                        <option value="안정추구형">안정추구형</option>
+                        <option value="위험추구형">위험추구형</option>
+                        <option value="적극투자형">적극투자형</option>
+                        <option value="공격투자형">공격투자형</option>
+                        </select>
                     </li>
                     <br />
                     <li id="chkline">

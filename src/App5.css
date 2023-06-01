@@ -266,6 +266,28 @@ table {
   display: flex;
 }
 
+.rounded-option-horizontal {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .rounded-option-horizontal select {
+    flex: 1;
+    padding: 5px 10px;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  
+  .rounded-option-horizontal option {
+    padding: 5px 10px;
+  }
+  
 .news {
   border: 1px solid #ff9500;
   padding: 20px;
