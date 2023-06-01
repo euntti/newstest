@@ -453,17 +453,17 @@ function App5() {
                     <div className="content">
                         <div className="newBoxs">
                              <div name="consultFrm" class="form_wrap_inner"> 
-                <div class="fl clear">
-        <label for="u_name" class="fl">요청자명</label>
-        <input type="text" name="name" id="u_name" maxlength="10" class="fl u_name"/>
-         </div>
-        <div class="fl clear">
-        <label for="u_hp" class="fl">휴대폰</label>
-        <input type="tel" name="hp" id="u_hp" maxlength="11" class="fl u_hp" oninput="maxLengthCheck(this)" onkeydown="onlyNumber(event);" onkeyup="removeChar(event);" onfocusout="removeChar(event)"/>
-        <button type="button" class="fl" onclick="authSubmit(document.consultFrm, 'S', '/leadersclick/admin/inc/auth_proc_aligo.asp','825','cellnum');">인증</button>
-        <input type="number" name="cellnum" id="cellnum" maxlength="6" class="fl u_num" placeholder="인증번호 입력" oninput="maxLengthCheck(this)"/>
-        <span style="display:none;" id="countdown">0</span>
-        </div>
+                            <div class="fl clear">
+                            <label for="u_name" class="fl">요청자명</label>
+                            <input type="text" name="name" id="u_name" maxlength="10" class="fl u_name"/>
+                            </div>
+<div class="fl clear">
+<label for="u_hp" class="fl">휴대폰</label>
+<input type="tel" name="hp" id="u_hp" maxlength="11" class="fl u_hp" oninput="maxLengthCheck(this)" onkeydown="onlyNumber(event);" onkeyup="removeChar(event);" onfocusout="removeChar(event)"/>
+<button type="button" class="fl" onclick="authSubmit(document.consultFrm, 'S', '/leadersclick/admin/inc/auth_proc_aligo.asp','825','cellnum');">인증</button>
+<input type="number" name="cellnum" id="cellnum" maxlength="6" class="fl u_num" placeholder="인증번호 입력" oninput="maxLengthCheck(this)"/>
+<span style="display:none;" id="countdown">0</span>
+</div>
         
        
     <dl class="check1 clear">
