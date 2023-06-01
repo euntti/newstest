@@ -258,14 +258,6 @@ function App5() {
 
           <div className="content-wrap">
             <div className="content">
-             
-             
-                    
-              
-             
-              
-
-         
               <div className="inputBox">
                   <h1>급등종목 30일 무료제공 프로모션</h1>
                   <h3>하루 3분 투자로 1억만들기</h3>
@@ -314,14 +306,13 @@ function App5() {
                         required=""
                          value={investmentPreference}
                         onChange={(e) => setInvestmentPreference(e.target.value)}
-                        className="rounded-option-horizontal"
                          >
                         <option value="">투자성향 선택</option>
-                        <option value="안정형">안정형</option>
-                        <option value="안정추구형">안정추구형</option>
-                        <option value="위험추구형">위험추구형</option>
-                        <option value="적극투자형">적극투자형</option>
-                        <option value="공격투자형">공격투자형</option>
+                        <option value="안정형"></option>
+                        <option value="안정추구형"></option>
+                        <option value="위험추구형"></option>
+                        <option value="적극투자형"></option>
+                        <option value="공격투자형"></option>
                         </select>
                     </li>
                     <br />
