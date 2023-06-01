@@ -10,97 +10,6 @@ import { ColorRing } from "react-loader-spinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 
-const Main6 = () => {
-    return <div>Main6</div>
-    const Main5 = () => {
-      let rollingData = [
-        '서울',
-        '대구',
-        '부산',
-        '경기',
-        '울산',
-        '포항',
-        '전주',
-        '강원',
-        '대전',
-        '광주',
-        '제주',
-        '해남'
-      ];
-    
-      let timer = 2000;
-      let first = document.getElementById('first');
-      let second = document.getElementById('second');
-      let third = document.getElementById('third');
-      let move = 2;
-      let dataCnt = 1;
-      let listCnt = 1;
-    
-      first.innerHTML = rollingData[0];
-    
-      setInterval(() => {
-        if(move == 2){
-          first.classList.remove('card_sliding')
-          first.classList.add('card_sliding_after')
-
-          second.classList.remove('card_sliding_after')
-          second.classList.add('card_sliding')
-
-          third.classList.remove('card_sliding_after')
-          third.classList.remove('card_sliding')
-
-          move = 0
-      } else if (move == 1){
-          first.classList.remove('card_sliding_after')
-          first.classList.add('card_sliding')
-
-          second.classList.remove('card_sliding_after')
-          second.classList.remove('card_sliding')
-
-          third.classList.remove('card_sliding')
-          third.classList.add('card_sliding_after')
-
-          move = 2
-      } else if (move == 0) {
-          first.classList.remove('card_sliding_after')
-          first.classList.remove('card_sliding')
-
-          second.classList.remove('card_sliding')
-          second.classList.add('card_sliding_after')
-
-          third.classList.remove('card_sliding_after')
-          third.classList.add('card_sliding')
-
-          move = 1
-      }
-      
-      if(dataCnt < (rollingData.length - 1)) {
-          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
-              dataCnt++
-      } else if(dataCnt == rollingData.length - 1) {
-          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
-          dataCnt = 0
-      }
-
-      if(listCnt < 2) {
-          listCnt++
-      } else if (listCnt == 2) {
-          listCnt = 0
-      }
-
-      console.log(listCnt)
-  }, timer);
-  return (
-    <>
-      <div id="first"></div>
-      <div id="second"></div>
-      <div id="third"></div>
-      <div id="rolling_box"></div>
-    </>
-  );
-};
-
-      }
 
 const customStyles = {
   content: {
@@ -288,11 +197,6 @@ const [phoneNumber, setPhoneNumber] = useState("");
   const second = document.getElementById('second');
   const third = document.getElementById('third');
   
-  // first.children[0].innerHTML = rollingData[0];
-  // second.children[0].innerHTML = rollingData[1];
-  // third.children[0].innerHTML = rollingData[2];
-
-  // first.children[0].innerHTML = rollingData[0];
   
   setInterval(() => {
     if (move === 2) {
@@ -510,64 +414,7 @@ const [phoneNumber, setPhoneNumber] = useState("");
                     <li class="" id ="third"><p></p></li>
                      </ul>
                   </div>
-
-                  {/* <table className="tablelive" >
-                   <thead> */}
-                    {/* <tr>
-                    <th>Date</th>
-                    <th>Username</th>
-                    <th>Telephone</th>
-                    </tr> */}
-                    {/* </thead>
-                  <tbody>
-                    <tr>
-                    <td id="date-cell-1">2023-05-26</td>
-                    <td>김*영</td>
-                    <td>010-****-8245</td>
-                    </tr>
-                    <tr>
-                    <td id="date-cell-2">2023-05-26</td>
-                    <td>최*필</td>
-                    <td>010-****-8108</td>
-                    </tr>
-                    <tr>
-                    <td id="date-cell-3">2023-05-26</td>
-                    <td>김*우</td>
-                    <td>010-****-3040</td>
-                    </tr>
-                    <tr>
-                    <td id="date-cell-4">2023-05-26</td>
-                    <td>이*영</td>
-                    <td>010-****-5504</td>
-                  </tr>
-                  <tr>
-                  <td id="date-cell-5">2023-05-26</td>
-                   <td>지*우</td>
-                   <td>010-****-9913</td>
-                  </tr>
-                  <tr>
-                   <td id="date-cell-5">2023-05-26</td>
-                  <td>이*현</td>
-                  <td>010-****-3342</td>
-                  </tr>
-                   <tr>
-      <td id="date-cell-6">2023-05-26</td>
-      <td>구*현</td>
-      <td>010-****-7050</td>
-    </tr>
-    <tr>
-      <td id="date-cell-6">2023-05-26</td>
-      <td>이*수</td>
-      <td>010-****-6703</td>
-    </tr>
-    <tr>
-      <td id="date-cell-7">2023-05-26</td>
-      <td>심*우</td>
-      <td>010-****-4022</td>
-    </tr>
-  </tbody>
-</table> */}
- </div>
+</div>
 
                 <div className="talk" style={{ display: "block"}}>
                    <div className="talk1">
@@ -588,32 +435,23 @@ const [phoneNumber, setPhoneNumber] = useState("");
 
                     <article class="form_wrap">
 						<form name="consultFrm" method="post">
-				
-
-
-        <div className="newbox">
+                            <div className="newbox">
                     <div className="content">
                         <div className="newBoxs">
-
-               
-        <div name="consultFrm" class="form_wrap_inner"> 
-        {/* <!-- 변경된 부분 --> */}
-   
-      <div class="fl clear">
+                             <div name="consultFrm" class="form_wrap_inner"> 
+                <div class="fl clear">
         <label for="u_name" class="fl">요청자명</label>
         <input type="text" name="name" id="u_name" maxlength="10" class="fl u_name"/>
-      </div>
-      <div class="fl clear">
+         </div>
+        <div class="fl clear">
         <label for="u_hp" class="fl">휴대폰</label>
         <input type="tel" name="hp" id="u_hp" maxlength="11" class="fl u_hp" oninput="maxLengthCheck(this)" onkeydown="onlyNumber(event);" onkeyup="removeChar(event);" onfocusout="removeChar(event)"/>
         <button type="button" class="fl" onclick="authSubmit(document.consultFrm, 'S', '/leadersclick/admin/inc/auth_proc_aligo.asp','825','cellnum');">인증</button>
         <input type="number" name="cellnum" id="cellnum" maxlength="6" class="fl u_num" placeholder="인증번호 입력" oninput="maxLengthCheck(this)"/>
         <span style="display:none;" id="countdown">0</span>
         </div>
-        </div>
-        </div>
-        </div>
-        </div>
+        
+       
     <dl class="check1 clear">
 					<dt>희망항목</dt>
 					<dd><input type="radio" name="marry" id="subject1" value="급등종목"><label for="subject1">급등종목</label></input></dd>
@@ -651,8 +489,11 @@ const [phoneNumber, setPhoneNumber] = useState("");
 					<dd><input type="radio" name="area2" id="type4" value="적극 투자형"><label for="type4">적극 투자형</label></input></dd>
 					<dd><input type="radio" name="area2" id="type5" value="공격 투자형"><label for="type5">공격 투자형</label></input></dd>
 				</dl>
-				
-                    
+				</div>
+        
+        </div>
+        </div>
+                </div>
                     </form>
 		</article>
                     
