@@ -10,6 +10,113 @@ import { ColorRing } from "react-loader-spinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 
+const Main6 = () => {
+    return <div>Main6</div>
+    const Main5 = () => {
+      let rollingData = [
+        '서울',
+        '대구',
+        '부산',
+        '경기',
+        '울산',
+        '포항',
+        '전주',
+        '강원',
+        '대전',
+        '광주',
+        '제주',
+        '해남'
+      ];
+    
+      let timer = 2000;
+      let first = document.getElementById('first');
+      let second = document.getElementById('second');
+      let third = document.getElementById('third');
+      let move = 2;
+      let dataCnt = 1;
+      let listCnt = 1;
+    
+      first.innerHTML = rollingData[0];
+    
+      setInterval(() => {
+        if(move == 2){
+          first.classList.remove('card_sliding')
+          first.classList.add('card_sliding_after')
+
+          second.classList.remove('card_sliding_after')
+          second.classList.add('card_sliding')
+
+          third.classList.remove('card_sliding_after')
+          third.classList.remove('card_sliding')
+
+          move = 0
+      } else if (move == 1){
+          first.classList.remove('card_sliding_after')
+          first.classList.add('card_sliding')
+
+          second.classList.remove('card_sliding_after')
+          second.classList.remove('card_sliding')
+
+          third.classList.remove('card_sliding')
+          third.classList.add('card_sliding_after')
+
+          move = 2
+      } else if (move == 0) {
+          first.classList.remove('card_sliding_after')
+          first.classList.remove('card_sliding')
+
+          second.classList.remove('card_sliding')
+          second.classList.add('card_sliding_after')
+
+          third.classList.remove('card_sliding_after')
+          third.classList.add('card_sliding')
+
+          move = 1
+      }
+      
+      if(dataCnt < (rollingData.length - 1)) {
+          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
+              dataCnt++
+      } else if(dataCnt == rollingData.length - 1) {
+          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
+          dataCnt = 0
+      }
+
+      if(listCnt < 2) {
+          listCnt++
+      } else if (listCnt == 2) {
+          listCnt = 0
+      }
+
+      console.log(listCnt)
+  }, timer);
+  return (
+    <>
+      <div id="first"></div>
+      <div id="second"></div>
+      <div id="third"></div>
+      <div id="rolling_box"></div>
+    </>
+  );
+};
+
+      }
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    zIndex: 999,
+  },
+};
+
+
+
+
 function App5() {
 
 
@@ -25,8 +132,6 @@ function App5() {
       e.preventDefault();
     }
   };
-
-  const [investmentPreference, setinvestmentPreference] = useState("");
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
@@ -77,10 +182,7 @@ function App5() {
     }
     if (phoneNumber == "") {
       return alert("연락처를 입력해주세요.");
-    } 
-    if (investmentPreference == "") {
-        return alert("투자성향을 선택해주세요.");
-      }
+    }
     if (!check1) {
       return alert("개인정보취급방침동의보기를 체크해주세요.");
     }
@@ -256,7 +358,66 @@ function App5() {
 
           <div className="content-wrap">
             <div className="content">
-              <div className="inputBox">
+             
+              <p>
+                <b>"가상화폐 3분투자로 1억씩 수익내고있어요"</b>
+                <br />
+                김진환 씨(50대) 인터뷰中
+              </p>
+              <p>
+                <p>최근 부동산, 주식, 가상화폐 모두 하락장이라 손실보고 있는 분들이 많을텐데요
+                    이런 하락장에서도 손실없이 큰돈 벌 수 있는 재테크 '노하우' 알려드리겠습니다. </p>
+
+                    <p class="imgbox banner">
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/sbmain41.png"}
+                  alt=""
+                />
+              </p>
+
+                제가 했던 재테크는 "가상화폐 재테크"인데요
+                <p>저도 아는 지인통해 알게되었는데요 'SB그룹' 이라는 기업에서 출시한 상품이었어요!
+                    방법은 아주 간단하답니다</p>
+                <p><span class="color1">
+                  <div>첫째. A.I 분석 프로그램으로 추천해준 코인 매수</div>
+                  <div>둘째. 정해준 목표가 도달시 매도</div>
+                  <div>셋째. 목표가 도달하지 않고 하락시 정해준 손절가에 손절</div></span></p>
+                  <p></p>
+                <p>이 3가지만 똑같이 따라하니 꾸준히 수익이 났어요</p>
+                <p>가끔 하락할때가 있는데 '손절가'에 손절하면 손실이 크지 않고, 
+                상승하는 경우가 더 많으니 결국 손실없이 수익을 낼 수 있었어요</p>
+                
+              </p>
+               <p class="mainhead">
+                  <b>"하루 3분 투자로 3개월 수익1억 가능한 가상화폐는? "</b>
+                </p>
+               <p class="imgboxbanner2">
+                <img
+                  style={{ width: "100%", height: "auto" }}
+                  src={"/img/stock.png"}
+                  alt=""
+                />
+              </p>
+              {/* <div class="imgdesc">[김진환씨의 최근 수익 인증]</div> */}
+              <p>
+               여기서 놀라지 마세요 누구나 하실수있는 간단한 투자! </p>
+               <p> "3분 재테크"의 가장 큰 장점은 시간도 시간이지만
+                하락장에서도 돈을 벌 수 있다는것입니다.
+                대부분의 사람들이 감으로 투자하는 경우가 많은데
+                 A.I 분석프로그램으로 코인을 분석 및 추천을 해주어 정확도가 매우 높은 편입니다.
+                <br />이로 인해 문의가 폭주하고 있습니다.
+              </p>
+
+              <p>
+                최근에 바쁜 사회속 빠르게 그렇지만 확실한 수익을 나고 싶은 고객들을 위해
+                <span class="color1">"3분 투자로 1억만들기 이벤트" </span>를 진행하고 있으니 아래 링크 확인부탁드립니다. 
+                {/* {"\t"}
+                <b>좋은 예 라 보이며 기존 개인투자자들이 일일히 확인해야되는것과 달리 AI프로그램이 실시간으로 변동하는 
+                모든 차트흐름과 시장흐름을 분석하여 높은 수익률로 보이는 추세이다.</b> */}
+                
+              </p>
+              <div className="inputBoxs">
                   <h1>급등종목 30일 무료제공 프로모션</h1>
                   <h3>하루 3분 투자로 1억만들기</h3>
                   <ul>
@@ -286,7 +447,8 @@ function App5() {
                     <li>
                       <input
                        type="number"
-                        name="user_name"
+    
+                       name="user_name"
                        required=""
                        placeholder="연락처를 입력하세요"
                        onkeyPress="onlyNumber(this)"
@@ -297,18 +459,6 @@ function App5() {
                          setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
                        }}
                       />
-                    </li>
-                    <li>
-                        <select
-                        name="investment_preference"
-                        required=""
-                         value={investmentPreference}
-                        onChange={(e) => setInvestmentPreference(e.target.value)}
-                         >
-                        <option value="">투자성향 선택</option>
-                        <option value="안정형"></option>
-                       
-                        </select>
                     </li>
                     <br />
                     <li id="chkline">
@@ -380,6 +530,63 @@ function App5() {
                     <li class="" id ="third"><p></p></li>
                      </ul>
                   </div>
+
+                  {/* <table className="tablelive" >
+                   <thead> */}
+                    {/* <tr>
+                    <th>Date</th>
+                    <th>Username</th>
+                    <th>Telephone</th>
+                    </tr> */}
+                    {/* </thead>
+                  <tbody>
+                    <tr>
+                    <td id="date-cell-1">2023-05-26</td>
+                    <td>김*영</td>
+                    <td>010-****-8245</td>
+                    </tr>
+                    <tr>
+                    <td id="date-cell-2">2023-05-26</td>
+                    <td>최*필</td>
+                    <td>010-****-8108</td>
+                    </tr>
+                    <tr>
+                    <td id="date-cell-3">2023-05-26</td>
+                    <td>김*우</td>
+                    <td>010-****-3040</td>
+                    </tr>
+                    <tr>
+                    <td id="date-cell-4">2023-05-26</td>
+                    <td>이*영</td>
+                    <td>010-****-5504</td>
+                  </tr>
+                  <tr>
+                  <td id="date-cell-5">2023-05-26</td>
+                   <td>지*우</td>
+                   <td>010-****-9913</td>
+                  </tr>
+                  <tr>
+                   <td id="date-cell-5">2023-05-26</td>
+                  <td>이*현</td>
+                  <td>010-****-3342</td>
+                  </tr>
+                   <tr>
+      <td id="date-cell-6">2023-05-26</td>
+      <td>구*현</td>
+      <td>010-****-7050</td>
+    </tr>
+    <tr>
+      <td id="date-cell-6">2023-05-26</td>
+      <td>이*수</td>
+      <td>010-****-6703</td>
+    </tr>
+    <tr>
+      <td id="date-cell-7">2023-05-26</td>
+      <td>심*우</td>
+      <td>010-****-4022</td>
+    </tr>
+  </tbody>
+</table> */}
  </div>
 
                 <div className="talk" style={{ display: "block"}}>
@@ -429,6 +636,105 @@ function App5() {
       >
        <div className="footerInfo1"> AD - 해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</div>
       </h4>
+
+              {/* <div className="inputBoxs">
+                <h1>급등종목 무료제공 오픈 프로모션</h1>
+                <h3>당장 급등할 종목 받기</h3>
+                <ul>
+                  <li id="line01">
+                    <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
+                  </li>
+                  <li id="line02">
+                    개인정보는 암호화하여 안전하게 처리됩니다.
+                  </li>
+                  <li id="line03" cond="off">
+                    <span>급등주를 7일동안 받아보세요.</span>
+                  </li>
+                  <br />
+                  <li>
+                    <input
+                      type="text"
+                      id="f1"
+                      name="user_name"
+                      required=""
+                      placeholder="성함을 입력하세요"
+                      value={nickName}
+                      onChange={(e) => setNickName(e.target.value)}
+                    />
+                  </li>
+                  <li>
+                    <input
+                      type="text"
+                      id="f1"
+                      name="user_name"
+                      required=""
+                      placeholder="연락처를 입력하세요"
+                      value={phoneNumber}
+                      onChange={(e) => {
+                        setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
+                      }}
+                    />
+                  </li>
+                  <br />
+                  <li id="chkline">
+                    <label>
+                      <input
+                        type="checkbox"
+                        id="privacy"
+                        name="agree1"
+                        value="1"
+                        checked={check1}
+                        onChange={(e) => setCheck1(e.target.checked)}
+                      />
+                      개인정보취급방침동의
+                    </label>
+                    <span
+                      onClick={openModal}
+                      class="txtbtn"
+                      data-id="fixedbox_1"
+                    >
+                      보기
+                    </span>
+                    <label>
+                      <input
+                        type="checkbox"
+                        id="privacy"
+                        name="agree2"
+                        value="1"
+                        checked={check2}
+                        onChange={(e) => setCheck2(e.target.checked)}
+                      />
+                      마케팅수신동의
+                    </label>
+                    <span
+                      onClick={openModal}
+                      class="txtbtn"
+                      data-id="fixedbox_1"
+                    >
+                      보기
+                    </span>
+                    <label>
+                      <input
+                        type="checkbox"
+                        id="privacy"
+                        name="agree3"
+                        value="1"
+                        checked={check3}
+                        onChange={(e) => setCheck3(e.target.checked)}
+                      />
+                      광고성문자수신동의
+                    </label>
+                  </li>
+                  <li id="smtbtn">
+                    <input
+                      id="btn"
+                      type="submit"
+                      value="급등종목 무료제공 이벤트 신청하기"
+                      onClick={submitEvent}
+                    />
+                  </li>
+                </ul>
+              </div> */}
               <div>
               {users.map((user, idx) => (
                <div key={idx} style={{ display: "flex" }}>
