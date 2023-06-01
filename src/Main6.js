@@ -279,7 +279,7 @@ function App5() {
               
 
          
-              <div className="inputBoxs">
+              <div className="inputBox">
                   <h1>급등종목 30일 무료제공 프로모션</h1>
                   <h3>하루 3분 투자로 1억만들기</h3>
                   <ul>
@@ -309,8 +309,7 @@ function App5() {
                     <li>
                       <input
                        type="number"
-    
-                       name="user_name"
+                        name="user_name"
                        required=""
                        placeholder="연락처를 입력하세요"
                        onkeyPress="onlyNumber(this)"
