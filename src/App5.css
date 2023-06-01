@@ -289,7 +289,12 @@ table {
     background-color: #ffffff;
     color: #000000;
   }
-  
+
+  .rounded-option-horizontal {
+    border-radius: 5px;
+    /* 추가적인 스타일 속성들 */
+  }
+
 .news {
   border: 1px solid #ff9500;
   padding: 20px;
