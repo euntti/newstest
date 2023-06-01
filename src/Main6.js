@@ -496,7 +496,7 @@ function App5() {
                         <option value="안정추구형">안정추구형</option>
                          <option value="위험추구형">위험추구형</option>
                          <option value="적극투자형">적극투자형</option>
-                        <option value="공격투자형">공격투자형</option>
+                        <option value="공격투자형">공격투자형1</option>
                         </select>
                         </li>
                     <br />
