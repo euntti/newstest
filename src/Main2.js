@@ -241,7 +241,7 @@ function Main2() {
                 <div className="inputBoxs">
                   <h1>주식&코인 급등 30일 무료제공 프로모션</h1>
                   
-                  <h3 style="font-size: 24px; font-weight: bold; color: #333333;">1억만들기 <b style="color: #ff0000;">프로젝트 무료체험신청</b></h3>
+                  <h3 >1억만들기 <p>프로젝트 무료체험신청</p></h3>
                   <ul>
                     <li id="line01">
                       <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
