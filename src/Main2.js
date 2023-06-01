@@ -240,8 +240,8 @@ function Main2() {
                 </div>
                 <div className="inputBoxs">
                   <h1>주식&코인 급등 30일 무료제공 프로모션</h1>
-                  <h3>
-                  1억 만들기 <b>프로젝트 무료체험 신청</b></h3>
+                  
+                  <h3 style="font-size: 24px; font-weight: bold; color: #333333;">1억만들기 <b style="color: #ff0000;">프로젝트 무료체험신청</b></h3>
                   <ul>
                     <li id="line01">
                       <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
@@ -249,8 +249,9 @@ function Main2() {
                     <li id="line02">
                       개인정보는 암호화하여 안전하게 처리됩니다.
                     </li>
-                    <li id="line03" cond="off" >
-                      <span>애널리스트들의 기밀정보<b>30일동안 받아보세요.</b></span>
+                    <li id="line03" cond="off" style="line-height: 1.5;">
+  
+                      <span>애널리스트들의 기밀정보<p>30일동안 받아보세요.</p></span>
                     </li>
                     <br />
                     <li>
