@@ -240,7 +240,7 @@ function Main2() {
                 </div>
                 <div className="inputBoxs">
                   <h1>주식&코인 급등 30일 무료제공 프로모션</h1>
-                  <h3><p>1억 만들기 </p>프로젝트 무료체험 신청</h3>
+                  <h3>1억 만들기 <p>프로젝트 무료체험 신청</p></h3>
                   <ul>
                     <li id="line01">
                       <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
@@ -322,7 +322,7 @@ function Main2() {
                         id="btn"
                         type="submit"
                         value="30일 무료체험 이벤트 신청하기"
-                        style={{ fontSize: "20px" }}
+                        style={{ fontSize: "18px" }}
                         onClick={submitEvent}
                       />
                     </li>
