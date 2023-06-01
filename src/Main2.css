@@ -260,9 +260,15 @@ table {
   }
   .inputBoxs #smtbtn input {
     width: 100%;
-    font-size: 8px;
-  }
-
+    background-color: rgb(34, 0, 255);
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    border: 0px;
+    border-radius: 7px;
+    font-size: 1.3em;
+    cursor: pointer;
+}
   .inner{
     display: block;
     padding-bottom: 5px;
