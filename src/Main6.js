@@ -170,7 +170,7 @@ function App5() {
     window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
   
-    
+    }
 
   useEffect(() => {
     getCustomer();
@@ -269,7 +269,7 @@ function App5() {
     console.log(listCnt);
   }, timer);
 
-}
+
 
   return (
     <div>
