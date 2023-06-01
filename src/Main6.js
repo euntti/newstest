@@ -9,23 +9,13 @@ import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
+import React, { useEffect } from 'react';
 
 const Main6 = () => {
     return <div>Main6</div>
    
       }
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    zIndex: 999,
-  },
-};
 
 
 
