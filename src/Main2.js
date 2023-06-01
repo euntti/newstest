@@ -246,10 +246,10 @@ function Main2() {
                     <li id="line01">
                       <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
                     </li>
-                    <li id="line02" style="padding-bottom: 25px;">
+                    <li id="line02">
                       개인정보는 암호화하여 안전하게 처리됩니다.
                     </li>
-                    <li id="line03" cond="off" style=" line-height: 1.2;">
+                    <li id="line03" cond="off" >
                       <span>애널리스트들의 기밀정보<p>30일동안 받아보세요.</p></span>
                     </li>
                     <br />
