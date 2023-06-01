@@ -81,10 +81,6 @@ table {
 .head{
   padding:0 20px 20px;
 }
-.span, p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
 .title{
   font-size: 40px;
@@ -142,6 +138,10 @@ table {
   margin-bottom: 25px;
   line-height: 1.5;
 }
+.line03 span {
+  line-height: 1.5; /* 원하는 line-height 값으로 설정 */
+}
+
 .imgdesc {
   padding-top: 8px;
   text-align: center;
