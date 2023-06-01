@@ -504,6 +504,7 @@ function App4() {
                       <input
                         id="btn"
                         type="submit"
+                        style={{ fontSize: "18px" }}
                         value="급등종목 무료제공 이벤트 신청하기"
                         onClick={submitEvent}
                       />
