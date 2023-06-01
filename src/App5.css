@@ -209,7 +209,7 @@ table {
 }
 .inputBoxs input[type="text"]{
   display:inline-block;
-  border:1px solid #ccc;
+  border:1px solid #cccccc63;
   height:50px;
   width:100%;
   box-sizing: border-box;
@@ -401,27 +401,6 @@ table {
   max-height: 100%;
 }
 
-.rounded-option-horizontal {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 10px;
-  width: 100%;
-}
-
-.rounded-option-horizontal select {
-  flex: 1;
-  padding: 5px 10px;
-  appearance: none;
-  border: none;
-  background-color: transparent;
-  font-size: inherit;
-  cursor: pointer;
-}
-
-.rounded-option-horizontal option {
-  padding: 5px 10px;
-}
 
 @media (max-width: 700px) {
   .box_container{
