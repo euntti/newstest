@@ -12,6 +12,106 @@ import React from 'react';
 
 const Main6 = () => {
     return <div>Main6</div>
+    const Main6 = () => {
+      let rollingData = [
+        '서울',
+        '대구',
+        '부산',
+        '경기',
+        '울산',
+        '포항',
+        '전주',
+        '강원',
+        '대전',
+        '광주',
+        '제주',
+        '해남'
+      ];
+    
+      let timer = 2000;
+      let first = document.getElementById('first');
+      let second = document.getElementById('second');
+      let third = document.getElementById('third');
+      let move = 2;
+      let dataCnt = 1;
+      let listCnt = 1;
+    
+      first.innerHTML = rollingData[0];
+    
+      setInterval(() => {
+        if(move == 2){
+          first.classList.remove('card_sliding')
+          first.classList.add('card_sliding_after')
+
+          second.classList.remove('card_sliding_after')
+          second.classList.add('card_sliding')
+
+          third.classList.remove('card_sliding_after')
+          third.classList.remove('card_sliding')
+
+          move = 0
+      } else if (move == 1){
+          first.classList.remove('card_sliding_after')
+          first.classList.add('card_sliding')
+
+          second.classList.remove('card_sliding_after')
+          second.classList.remove('card_sliding')
+
+          third.classList.remove('card_sliding')
+          third.classList.add('card_sliding_after')
+
+          move = 2
+      } else if (move == 0) {
+          first.classList.remove('card_sliding_after')
+          first.classList.remove('card_sliding')
+
+          second.classList.remove('card_sliding')
+          second.classList.add('card_sliding_after')
+
+          third.classList.remove('card_sliding_after')
+          third.classList.add('card_sliding')
+
+          move = 1
+      }
+      
+      if(dataCnt < (rollingData.length - 1)) {
+          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
+              dataCnt++
+      } else if(dataCnt == rollingData.length - 1) {
+          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
+          dataCnt = 0
+      }
+
+      if(listCnt < 2) {
+          listCnt++
+      } else if (listCnt == 2) {
+          listCnt = 0
+      }
+
+      console.log(listCnt)
+  }, timer);
+  return (
+    <>
+      <div id="first"></div>
+      <div id="second"></div>
+      <div id="third"></div>
+      <div id="rolling_box"></div>
+    </>
+  );
+};
+
+      }
+
+const customStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    zIndex: 999,
+  },
 };
 
 
@@ -264,7 +364,9 @@ function App5() {
                 <br />
                 김진환 씨(50대) 인터뷰中
               </p>
-            
+              <p>
+                <p>최근 부동산, 주식, 가상화폐 모두 하락장이라 손실보고 있는 분들이 많을텐데요
+                    이런 하락장에서도 손실없이 큰돈 벌 수 있는 재테크 '노하우' 알려드리겠습니다. </p>
 
                     <p class="imgbox banner">
                 <img
@@ -274,13 +376,53 @@ function App5() {
                 />
               </p>
 
-               
-              <div className="inputBoxes">
+                제가 했던 재테크는 "가상화폐 재테크"인데요
+                <p>저도 아는 지인통해 알게되었는데요 'SB그룹' 이라는 기업에서 출시한 상품이었어요!
+                    방법은 아주 간단하답니다</p>
+                <p><span class="color1">
+                  <div>첫째. A.I 분석 프로그램으로 추천해준 코인 매수</div>
+                  <div>둘째. 정해준 목표가 도달시 매도</div>
+                  <div>셋째. 목표가 도달하지 않고 하락시 정해준 손절가에 손절</div></span></p>
+                  <p></p>
+                <p>이 3가지만 똑같이 따라하니 꾸준히 수익이 났어요</p>
+                <p>가끔 하락할때가 있는데 '손절가'에 손절하면 손실이 크지 않고, 
+                상승하는 경우가 더 많으니 결국 손실없이 수익을 낼 수 있었어요</p>
+                
+              </p>
+               <p class="mainhead">
+                  <b>"하루 3분 투자로 3개월 수익1억 가능한 가상화폐는? "</b>
+                </p>
+               <p class="imgboxbanner2">
+                <img
+                  style={{ width: "100%", height: "auto" }}
+                  src={"/img/stock.png"}
+                  alt=""
+                />
+              </p>
+              {/* <div class="imgdesc">[김진환씨의 최근 수익 인증]</div> */}
+              <p>
+               여기서 놀라지 마세요 누구나 하실수있는 간단한 투자! </p>
+               <p> "3분 재테크"의 가장 큰 장점은 시간도 시간이지만
+                하락장에서도 돈을 벌 수 있다는것입니다.
+                대부분의 사람들이 감으로 투자하는 경우가 많은데
+                 A.I 분석프로그램으로 코인을 분석 및 추천을 해주어 정확도가 매우 높은 편입니다.
+                <br />이로 인해 문의가 폭주하고 있습니다.
+              </p>
+
+              <p>
+                최근에 바쁜 사회속 빠르게 그렇지만 확실한 수익을 나고 싶은 고객들을 위해
+                <span class="color1">"3분 투자로 1억만들기 이벤트" </span>를 진행하고 있으니 아래 링크 확인부탁드립니다. 
+                {/* {"\t"}
+                <b>좋은 예 라 보이며 기존 개인투자자들이 일일히 확인해야되는것과 달리 AI프로그램이 실시간으로 변동하는 
+                모든 차트흐름과 시장흐름을 분석하여 높은 수익률로 보이는 추세이다.</b> */}
+                
+              </p>
+              <div className="inputBoxs">
                   <h1>급등종목 30일 무료제공 프로모션</h1>
                   <h3>하루 3분 투자로 1억만들기</h3>
                   <ul>
                     <li id="line01">
-                      <img src="/img/loading.gif" />
+                      <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
                     </li>
                     <li id="line02">
                       개인정보는 암호화하여 안전하게 처리됩니다.
@@ -290,40 +432,34 @@ function App5() {
                     </li>
                     <br />
                     <li>
-                    <input
-                        type="text"
-                        id="f1"
-                        name="user_name"
-                        required=""
-                        placeholder="성함을 입력하세요"
-                        value={nickName}
-                        maxLength={4}
-                        onChange={(e) => setNickName(e.target.value)}
+                      <input
+                       type="text"
+                       id="f1"
+                       name="user_name"
+                       required=""
+                       placeholder="성함을 입력하세요"
+                       value={nickName}
+                       maxLength={4}
+                       onChange={(e) => setNickName(e.target.value)}
+                        
                       />
                     </li>
                     <li>
-                    <input
-                       type="tel"
+                      <input
+                       type="number"
+    
                        name="user_name"
+                       required=""
                        placeholder="연락처를 입력하세요"
-                       maxLength={13}
+                       onkeyPress="onlyNumber(this)"
+                      maxLength={13}
+                      pattern="[0-9]{13}"
                        value={phoneNumber}
-                       onChange={handlePhoneNumberChange}
+                       onChange={(e) => {
+                         setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
+                       }}
                       />
-                      
                     </li>
-                    <li>
-                    <input
-                       type="tel"
-                       name="user_name"
-                       placeholder="연락처를 입력하세요"
-                       maxLength={13}
-                       value={phoneNumber}
-                       onChange={handlePhoneNumberChange}
-                      />
-                      
-                    </li>
-                    
                     <br />
                     <li id="chkline">
                       <label>
