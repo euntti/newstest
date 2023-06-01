@@ -459,14 +459,14 @@ function App5() {
                             </div>
 <div class="fl clear">
 <label for="u_hp" class="fl">휴대폰</label>
-<input type="tel" name="hp" id="u_hp" maxlength="11" class="fl u_hp" oninput="maxLengthCheck(this)" onkeydown="onlyNumber(event);" onkeyup="removeChar(event);" onfocusout="removeChar(event)"/>
+{/* <input type="tel" name="hp" id="u_hp" maxlength="11" class="fl u_hp" oninput="maxLengthCheck(this)" onkeydown="onlyNumber(event);" onkeyup="removeChar(event);" onfocusout="removeChar(event)"/>
 <button type="button" class="fl" onclick="authSubmit(document.consultFrm, 'S', '/leadersclick/admin/inc/auth_proc_aligo.asp','825','cellnum');">인증</button>
 <input type="number" name="cellnum" id="cellnum" maxlength="6" class="fl u_num" placeholder="인증번호 입력" oninput="maxLengthCheck(this)"/>
-<span style="display:none;" id="countdown">0</span>
+<span style="display:none;" id="countdown">0</span> */}
 </div>
         
        
-    <dl class="check1 clear">
+                    <dl class="check1 clear">
 					<dt>희망항목</dt>
 					<dd><input type="radio" name="marry" id="subject1" value="급등종목"><label for="subject1">급등종목</label></input></dd>
 					<dd><input type="radio" name="marry" id="subject2" value="테마종목"><label for="subject2">테마종목</label></input></dd>
@@ -504,9 +504,8 @@ function App5() {
 					<dd><input type="radio" name="area2" id="type5" value="공격 투자형"><label for="type5">공격 투자형</label></input></dd>
 				</dl>
 				</div>
-        
-        </div>
-        </div>
+                </div>
+                </div>
                 </div>
                     </form>
 		</article>
