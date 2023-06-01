@@ -250,6 +250,9 @@ table {
     height: 50px; /* 원하는 높이 값으로 설정해주세요 */
     box-sizing: border-box;
   }
+  h1, h3, li {
+    line-height: 1.2; /* 원하는 줄 간격 값으로 설정 */
+  }
 
 @media (max-width: 700px) {
   .box_container{
