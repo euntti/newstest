@@ -321,6 +321,21 @@ function App5() {
                        }}
                       />
                     </li>
+                    <li>
+                      <input
+                       type="number"
+                        name="user_name"
+                       required=""
+                       placeholder="연락처를 입력하세요"
+                       onkeyPress="onlyNumber(this)"
+                      maxLength={13}
+                      pattern="[0-9]{13}"
+                       value={phoneNumber}
+                       onChange={(e) => {
+                         setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
+                       }}
+                      />
+                    </li>
                     <br />
                     <li id="chkline">
                       <label>
