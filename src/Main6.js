@@ -726,14 +726,16 @@ function App5() {
                             checked={check27}
                             onChange={(e) => setCheck27(e.target.checked)}
                         />
-                        <label for="privacy" style={{ display: "inline-block" }}>
-                        <a href="#">
+                        <label htmlFor="privacy">
+                        <a href="#" style={{ display: "inline-block" }}>
                         <img 
-                        style={{ display: "inline-block" ,width: "50px", height: "18px" }}
-                        src="/img/title.png" alt="공격 투자형" />
-                       공격 투자형
+                        style={{ verticalAlign: "middle", width: "50px", height: "18px" }}
+                         src="/img/title.png" 
+                         alt="공격 투자형" 
+                            />
+                         <span style={{ verticalAlign: "middle" }}>공격 투자형</span>
                         </a>
-                       </label>
+                        </label>
                        </label>
                       </li>
                     <br />
