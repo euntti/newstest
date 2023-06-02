@@ -15,10 +15,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/news" element={<Main2 />}></Route>
-          <Route path="/test" element={<Main3 />}></Route>
+          <Route path="/mainnews1" element={<Main3 />}></Route>
           <Route path="/notice" element={<Main4 />}></Route>
           <Route path="/gallery" element={<Main5 />}></Route>
-          <Route path="/member" element={<Main6 />}></Route>
+          <Route path="/mainnews2" element={<Main6 />}></Route>
 
           {/* 상단에 위치하는 라우트들의 규칙을 모두 확인, 일치하는 라우트가 없는경우 처리 */}
         </Routes>
