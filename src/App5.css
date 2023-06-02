@@ -266,35 +266,6 @@ table {
   display: flex;
 }
 
-.rounded-option-horizontal {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 10px;
-    width: 100%;
-  }
-  
-  .rounded-option-horizontal select {
-    flex: 1;
-    padding: 5px 10px;
-    appearance: none;
-    border: none;
-    background-color: transparent;
-    font-size: inherit;
-    cursor: pointer;
-  }
-  
-  .rounded-option-horizontal option {
-    padding: 5px 10px;
-    background-color: #ffffff;
-    color: #000000;
-  }
-
-  .rounded-option-horizontal {
-    border-radius: 5px;
-    /* 추가적인 스타일 속성들 */
-  }
-
 .news {
   border: 1px solid #ff9500;
   padding: 20px;
@@ -349,6 +320,10 @@ table {
 .tablelive td {
   text-align: center;
 }
+.line01 img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 .news img {
   display: block;
   width: 100%;
