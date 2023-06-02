@@ -729,7 +729,7 @@ function App5() {
                         <label for="privacy" style={{ display: "inline-block" }}>
                         <a href="#">
                         <img 
-                        style={{ width: "50px", height: "18px" }}
+                        style={{ display: "inline-block" ,width: "50px", height: "18px" }}
                         src="/img/title.png" alt="공격 투자형" />
                        공격 투자형
                         </a>
