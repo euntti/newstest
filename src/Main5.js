@@ -463,14 +463,15 @@ function App4() {
                        }}
                       />
                     </li>
-                    <li >
+                    <li  id="chkline2">
                       <label>
                         <input
                           type="checkbox"
-                          id="privacy"
+                          id="privacy1"
                           name="agree1"
-                          required=""
-                          value={marry}
+                          value="1"
+                          required="1"
+                          checked={marry}
                           onChange={(e) =>  setMarry(e.target.value)}
                           >
                             희망항목
