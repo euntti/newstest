@@ -50,7 +50,15 @@ function App2() {
     setPhoneNumber(inputValue);
   };
 
- 
+  const [phone2, setPhone2] = useState("");
+  const onlyNumber = (e) => {
+    const keyCode = e.keyCode || e.which;
+    const keyValue = String.fromCharCode(keyCode);
+
+    if (!/^[0-9]+$/.test(keyValue)) {
+      e.preventDefault();
+    }
+  };
 
   const [num, setNum] = useState(331231);
   const [time, setTime] = useState("");
@@ -386,12 +394,13 @@ function App2() {
               <div className="phone">
               <input
                        type="tel"
-                       name="user_name"
+                       name="phone"
                        placeholder="휴대폰"
                        maxLength={13}
                        value={phone1}
                        onChange={handlePhoneNumberChange}
                       />
+             
               </div>
               <div className="time">
                 <select value={time} onChange={(e) => setTime(e.target.value)}>
