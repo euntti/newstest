@@ -149,6 +149,23 @@ function App5() {
   const [check14, setCheck14] = useState(false);
   const [check15, setCheck15] = useState(false);
   const [check16, setCheck16] = useState(false);
+  const [check17, setCheck17] = useState(false);
+  const [check18, setCheck18] = useState(false);
+  const [check19, setCheck19] = useState(false);
+  const [check20, setCheck20] = useState(false);
+  const [check21, setCheck21] = useState(false);
+  const [check22, setCheck22] = useState(false);
+  const [check23, setCheck23] = useState(false);
+  const [check24, setCheck24] = useState(false);
+  const [check25, setCheck25] = useState(false);
+  const [check26, setCheck26] = useState(false);
+  const [check27, setCheck27] = useState(false);
+  const [check28, setCheck28] = useState(false);
+  const [check29, setCheck29] = useState(false);
+  const [check30, setCheck30] = useState(false);
+  const [check31, setCheck31] = useState(false);
+  const [check32, setCheck32] = useState(false);
+  const [check33, setCheck33] = useState(false);
 
   
   const [progress, setProgress] = useState(0);
@@ -597,6 +614,117 @@ function App5() {
                           onChange={(e) => setCheck16(e.target.checked)}
                           />
                        <a>30% 목표</a>  
+                       </label>
+                      </li>
+                    <br />
+                    <li id="chkline">
+                      <label>
+                      희망수익금
+                        <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check17}
+                          onChange={(e) => setCheck17(e.target.checked)}
+                          />
+                       <a>5백만 원</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check18}
+                          onChange={(e) => setCheck18(e.target.checked)}
+                          />
+                       <a>1천만 원</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check19}
+                          onChange={(e) => setCheck19(e.target.checked)}
+                          />
+                       <a>3천만 원</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check20}
+                          onChange={(e) => setCheck20(e.target.checked)}
+                          />
+                       <a>5천만 원</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check21}
+                          onChange={(e) => setCheck21(e.target.checked)}
+                          />
+                       <a>7천만 원</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check22}
+                          onChange={(e) => setCheck22(e.target.checked)}
+                          />
+                       <a>1억 원 이상</a>  
+                       </label>
+                      </li>
+                    <br />
+                    <li id="chkline">
+                      <label>
+                      투자성향
+                        <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check23}
+                          onChange={(e) => setCheck23(e.target.checked)}
+                          />
+                       <a>안정형</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check24}
+                          onChange={(e) => setCheck24(e.target.checked)}
+                          />
+                       <a>안정 추구형</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check25}
+                          onChange={(e) => setCheck25(e.target.checked)}
+                          />
+                       <a>위험 추구형</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check26}
+                          onChange={(e) => setCheck26(e.target.checked)}
+                          />
+                       <a>적극 투자형</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check27}
+                          onChange={(e) => setCheck27(e.target.checked)}
+                          />
+                       <a>공격 투자형</a>
                        </label>
                       </li>
                     <br />
