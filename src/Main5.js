@@ -136,7 +136,6 @@ function App4() {
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
-  const [marry, setMarry] = useState(false);
 
   
   const [progress, setProgress] = useState(0);
@@ -191,9 +190,6 @@ function App4() {
       return alert("마케팅수신동의보기를 체크해주세요.");
     }
     if (!check3) {
-      return alert("광고성문자동의 체크해주세요.");
-    }
-    if (!marry) {
       return alert("광고성문자동의 체크해주세요.");
     }
     
@@ -463,14 +459,14 @@ function App4() {
                        }}
                       />
                     </li>
-                    <li  id="chkline2">
+                    <li >
                       <label>
                         <input
                           type="checkbox"
-                          id="privacy1"
+                          id="privacy"
                           name="agree1"
-                          value="1"
-                          required="1"
+                          required=""
+                          value={marry}
                           checked={marry}
                           onChange={(e) =>  setMarry(e.target.value)}
                           >
