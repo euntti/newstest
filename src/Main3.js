@@ -50,15 +50,7 @@ function App2() {
     setPhoneNumber(inputValue);
   };
 
-  const [phone2, setPhone2] = useState("");
-  const onlyNumber = (e) => {
-    const keyCode = e.keyCode || e.which;
-    const keyValue = String.fromCharCode(keyCode);
-
-    if (!/^[0-9]+$/.test(keyValue)) {
-      e.preventDefault();
-    }
-  };
+ 
 
   const [num, setNum] = useState(331231);
   const [time, setTime] = useState("");
