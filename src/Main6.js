@@ -726,7 +726,7 @@ function App5() {
     value="1"
     checked={check27}
     onChange={(e) => setCheck27(e.target.checked)}
-    style={{ transform: "scale(1.5)", width: "50px", height: "18px", margin: "0" }}
+    style={{ width: "50px", height: "18px", margin: "0" }}
   />
   공격 투자형
 </label>
