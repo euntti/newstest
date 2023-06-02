@@ -452,7 +452,9 @@ function App5() {
                   <h3>하루 3분 투자로 1억만들기</h3>
                   <ul>
                     <li id="line01">
-                      <img src="/img/loading.gif" />
+                      <img
+                      style={{ width: "100%", height: "auto" }}
+                      src="/img/loading.gif" />
                     </li>
                     <li id="line02">
                       개인정보는 암호화하여 안전하게 처리됩니다.
