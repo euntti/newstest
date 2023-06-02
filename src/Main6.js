@@ -718,8 +718,8 @@ function App5() {
                           onChange={(e) => setCheck26(e.target.checked)}
                           />
                        <a>적극 투자형</a>
-                       <label htmlFor="privacy" style={{ display: "inline-block" }}>
-            <input
+                       <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
+  <input
     type="checkbox"
     id="privacy"
     name="agree1"
@@ -734,6 +734,8 @@ function App5() {
       width: "50px",
       height: "18px",
       background: check27 ? "#f00" : "#ccc",
+      lineHeight: "18px",
+      textAlign: "center",
     }}
   >
     공격 투자형
