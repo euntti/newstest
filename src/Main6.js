@@ -441,14 +441,12 @@ function App5() {
                        value={nickName}
                        maxLength={4}
                        onChange={(e) => setNickName(e.target.value)}
-                        
                       />
                     </li>
                     <li>
                       <input
                        type="number"
-    
-                       name="user_name"
+                        name="user_name"
                        required=""
                        placeholder="연락처를 입력하세요"
                        onkeyPress="onlyNumber(this)"
