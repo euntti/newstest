@@ -468,7 +468,6 @@ function App4() {
                           name="agree1"
                           required=""
                           value={marry}
-                          checked={marry}
                           onChange={(e) =>  setMarry(e.target.value)}
                           >
                             희망항목
