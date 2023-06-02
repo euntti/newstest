@@ -460,6 +460,7 @@ function App5() {
                     </li>
                     <li id="chkline">
                       <label>
+                      희망항목
                         <input
                           type="checkbox"
                           id="privacy"
@@ -468,14 +469,13 @@ function App5() {
                           checked={check1}
                           onChange={(e) => setCheck1(e.target.checked)}
                         />
-                        개인정보취급방침동의
-                            <a
-                                 href="javascript:void(0);"
-                                 onClick={() => setIsOpen2(true)}
-                                 // onclick="privacy_pop('show', '.pop-policy',2)"
-                                >
-                                [보기]
-                            </a>
+                       <a>급등종목</a>
+                       <a>테마종목</a>
+                       <a>가치투자</a>
+                       <a>스윙종목</a>
+                       <a>인공지능</a>
+                       <a>단기투자</a>  
+                       <a>투자초보</a>  
                       </label>
                       </li>
                     <br />
