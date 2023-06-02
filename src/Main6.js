@@ -727,13 +727,13 @@ function App5() {
                             onChange={(e) => setCheck27(e.target.checked)}
                         />
                         <label for="privacy">
-                       
+                        <a href="#">
                         <img 
                         style={{ width: "50px", height: "18px" }}
                         src="/img/title.png" alt="공격 투자형" />
-                       
-                       
-                        </label>
+                       공격 투자형
+                        </a>
+                       </label>
                        </label>
                       </li>
                     <br />
