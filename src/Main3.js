@@ -44,10 +44,10 @@ function App2() {
     } else if (formattedNumber.length >= 6) {
       formattedNumber = formattedNumber.replace(/(\d{3})(\d{3})(\d{0,4})/, "$1-$2-$3"); // 첫 번째와 두 번째 하이픈 추가
     }
-    setPhoneNumber(formattedNumber);
+    setPhone1(formattedNumber);
 
     const inputValue = e.target.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
-    setPhoneNumber(inputValue);
+    setPhone1(inputValue);
   };
 
   
@@ -119,7 +119,7 @@ function App2() {
     if (!check3) {
       return alert("광고성문자동의 체크해주세요.");
     }
-    
+
     const phoneNumber = `${phone1}`;
     const name = `${userName}`;
     const selectedTime = `${time}`;
