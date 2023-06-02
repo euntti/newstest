@@ -10,6 +10,97 @@ import { ColorRing } from "react-loader-spinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 
+const Main6 = () => {
+    return <div>Main6</div>
+    const Main6 = () => {
+      let rollingData = [
+        '서울',
+        '대구',
+        '부산',
+        '경기',
+        '울산',
+        '포항',
+        '전주',
+        '강원',
+        '대전',
+        '광주',
+        '제주',
+        '해남'
+      ];
+    
+      let timer = 2000;
+      let first = document.getElementById('first');
+      let second = document.getElementById('second');
+      let third = document.getElementById('third');
+      let move = 2;
+      let dataCnt = 1;
+      let listCnt = 1;
+    
+      first.innerHTML = rollingData[0];
+    
+      setInterval(() => {
+        if(move == 2){
+          first.classList.remove('card_sliding')
+          first.classList.add('card_sliding_after')
+
+          second.classList.remove('card_sliding_after')
+          second.classList.add('card_sliding')
+
+          third.classList.remove('card_sliding_after')
+          third.classList.remove('card_sliding')
+
+          move = 0
+      } else if (move == 1){
+          first.classList.remove('card_sliding_after')
+          first.classList.add('card_sliding')
+
+          second.classList.remove('card_sliding_after')
+          second.classList.remove('card_sliding')
+
+          third.classList.remove('card_sliding')
+          third.classList.add('card_sliding_after')
+
+          move = 2
+      } else if (move == 0) {
+          first.classList.remove('card_sliding_after')
+          first.classList.remove('card_sliding')
+
+          second.classList.remove('card_sliding')
+          second.classList.add('card_sliding_after')
+
+          third.classList.remove('card_sliding_after')
+          third.classList.add('card_sliding')
+
+          move = 1
+      }
+      
+      if(dataCnt < (rollingData.length - 1)) {
+          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
+              dataCnt++
+      } else if(dataCnt == rollingData.length - 1) {
+          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
+          dataCnt = 0
+      }
+
+      if(listCnt < 2) {
+          listCnt++
+      } else if (listCnt == 2) {
+          listCnt = 0
+      }
+
+      console.log(listCnt)
+  }, timer);
+  return (
+    <>
+      <div id="first"></div>
+      <div id="second"></div>
+      <div id="third"></div>
+      <div id="rolling_box"></div>
+    </>
+  );
+};
+
+      }
 
 const customStyles = {
   content: {
@@ -28,249 +119,222 @@ const customStyles = {
 
 function App5() {
 
-    const ConsultForm = () => {
-        const [authButton, setAuthButton] = useState("");
-        const [cellnumInput, setCellnumInput] = useState("");
-        const [marryRadios, setMarryRadios] = useState("");
-        const [ageRadios, setAgeRadios] = useState("");
-        const [areaRadios, setAreaRadios] = useState("");
-        const [area2Radios, setArea2Radios] = useState("");
-        const [agreeCheckbox, setAgreeCheckbox] = useState(false);
-        const [agree2Checkbox, setAgree2Checkbox] = useState(false);
-        const [submitButton, setSubmitButton] = useState("");
-      
-        const handleAuthSubmit = () => {
-          authSubmit(document.consultFrm, 'S', '/leadersclick/admin/inc/auth_proc_aligo.asp', '825', 'cellnum');
-        };
-      
-        const handleSubmit = () => {
-          consult_input_check('consultFrm', 'https://leaderscpa.com');
-        };
-      
-        const handleNameChange = (e) => {
-          setNickName(e.target.value);
-        };
-      
-        const handlePhoneChange = (e) => {
-          const inputValue = e.target.value;
-      
-          const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
-      
-          if (phoneRegex.test(inputValue)) {
-            setPhoneNumber(inputValue);
-          }
-        };
-      
-        const [users, setUsers] = useState([]);
-        const [nickName, setNickName] = useState("");
-        const [phoneNumber, setPhoneNumber] = useState("");
-      
-        useEffect(() => {
-          const fetchUsers = async () => {
-            try {
-              const response = await axios.get("http://localhost:3000/users");
-              setUsers(response.data);
-            } catch (error) {
-              console.error("Error fetching users:", error);
-            }
-          };
-      
-          fetchUsers();
-        }, []);
-
-    <input type="text" value={name} onChange={handleNameChange} />
-
-  
-        let subtitle;
+    const [users, setUsers] = useState([]);
+    const [nickName, setNickName] = useState("");
+    const [Name, setName1] = useState("");
+    const [phoneNumber, setPhoneNumber] = useState("");
+      let subtitle;
     const onlyNumber = (e) => {
-    const keyCode = e.keyCode || e.which;
-    const keyValue = String.fromCharCode(keyCode);
+      const keyCode = e.keyCode || e.which;
+      const keyValue = String.fromCharCode(keyCode);
+  
+      if (!/^[0-9]+$/.test(keyValue)) {
+        e.preventDefault();
+      }
+    };
     
-    if (!/^[0-9]+$/.test(keyValue)) {
+    const [phoneNumber1, setPhoneNumber1] = useState("");
+    let subtitle1;
+    const onlyNumber1 = (e) => {
+      const keyCode = e.keyCode || e.which;
+      const keyValue = String.fromCharCode(keyCode);
+  
+      if (!/^[0-9]+$/.test(keyValue)) {
+        e.preventDefault();
+      }
+    };
+
+    const [check1, setCheck1] = useState(false);
+    const [check2, setCheck2] = useState(false);
+    const [check3, setCheck3] = useState(false);
+  
+    
+    const [progress, setProgress] = useState(0);
+    useEffect(() => {
+      const id = setInterval(() => {
+        setProgress(100);
+      }, 2000);
+      return () => {
+        clearInterval(id);
+      };
+    }, []);
+   
+    const handlePhoneChange = (e) => {
+      const inputValue = e.target.value;
+      
+      const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
+    
+      if (phoneRegex.test(inputValue)) {
+        setPhoneNumber(inputValue);
+      }
+    };
+  
+    const [modalIsOpen, setIsOpen] = useState(false);
+    const [modalIsOpen2, setIsOpen2] = useState(false);
+  
+    function openModal() {
+      setIsOpen(true);
+    }
+  
+    function closeModal() {
+      setIsOpen(false);
+    }
+    const getCustomer = () => {
+      axios.get("http://localhost:3000/users").then((res) => {
+        setUsers(res.data);
+      });
+    };
+  
+    const submitEvent = (e) => {
       e.preventDefault();
-    }
-  };
-  const [form, consultFrm] = useState([]);
-
-
-
-  const [check1, setCheck1] = useState(false);
-  const [check2, setCheck2] = useState(false);
-  const [check3, setCheck3] = useState(false);
-
   
-  const [progress, setProgress] = useState(0);
-  useEffect(() => {
-    const id = setInterval(() => {
-      setProgress(100);
-    }, 2000);
-    return () => {
-      clearInterval(id);
+      if (nickName == "") {
+        return alert("이름을 입력해주세요.");
+      }
+      if (Name == "") {
+        return alert("고객명을 입력해주세요.");
+      }
+
+      if (phoneNumber == "") {
+        return alert("연락처를 입력해주세요.");
+      }
+      if (!check1) {
+        return alert("개인정보취급방침동의보기를 체크해주세요.");
+      }
+      if (!check2) {
+        return alert("마케팅수신동의보기를 체크해주세요.");
+      }
+      if (!check3) {
+        return alert("광고성문자동의 체크해주세요.");
+      }
+      
+      const TELEGRAM_TOKEN = "6005561467:AAEza5i8zIr7i0IqBVuaFhTl47I7ZK65AfU";
+      const TELEGRAM_CHAT_ID = -1001932031818;
+      const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
+  
+      telegramApi.sendMessage(
+        TELEGRAM_CHAT_ID,
+        nickName + "님이 신청했습니다" + "폰번호는 " + phoneNumber
+      );
+      alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다. ");
+      // console.log("as");
+      // var customer = {};
+      // customer.nickName = nickName;
+      // customer.phoneNumber = phoneNumber;
+  
+      // axios.post("http://localhost:3000/users", customer).then((res) => {
+      //   alert("등록을 성공했습니다.");
+      //   getCustomer();
+      // });
     };
-  }, []);
- 
- 
-
-  const [modalIsOpen, setIsOpen] = useState(false);
-  const [modalIsOpen2, setIsOpen2] = useState(false);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-  const getCustomer = () => {
-    axios.get("http://localhost:3000/users").then((res) => {
-      setUsers(res.data);
-    });
-  };
-
-  const submitEvent = (e) => {
-    e.preventDefault();
-
-    if (nickName == "") {
-      return alert("이름을 입력해주세요.");
-    }
-    if (phoneNumber == "") {
-      return alert("연락처를 입력해주세요.");
-    }
-    if (!check1) {
-      return alert("개인정보취급방침동의보기를 체크해주세요.");
-    }
-    if (!check2) {
-      return alert("마케팅수신동의보기를 체크해주세요.");
-    }
-    if (!check3) {
-      return alert("광고성문자동의 체크해주세요.");
-    }
+  
+    const sendKaKao = () => {
+      window.open("https://open.kakao.com/me/shon04Se", "_blank")
+      };
     
-    const TELEGRAM_TOKEN = "6005561467:AAEza5i8zIr7i0IqBVuaFhTl47I7ZK65AfU";
-    const TELEGRAM_CHAT_ID = -1001932031818;
-    const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
-
-    telegramApi.sendMessage(
-      TELEGRAM_CHAT_ID,
-      nickName + "님이 신청했습니다" + "폰번호는 " + phoneNumber
-    );
-    alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다. ");
-
-    // console.log("as");
-    // var customer = {};
-    // customer.nickName = nickName;
-    // customer.phoneNumber = phoneNumber;
-
-    // axios.post("http://localhost:3000/users", customer).then((res) => {
-    //   alert("등록을 성공했습니다.");
-    //   getCustomer();
-    // });
-  };
-
-  const sendKaKao = () => {
-    window.open("https://open.kakao.com/me/shon04Se", "_blank")
+      
+  
+    useEffect(() => {
+      getCustomer();
+    }, []);
+    const settings = {
+      dots: false,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
     };
   
-    }
-
-  useEffect(() => {
-    getCustomer();
-  }, []);
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  };
-
-  const rollingData = [
-    '김*영 010-****-8245',
-    '박*주 010-****-2543',
-    '최*팔 010-****-7786',
-    '심*정 010-****-9406',
-    '최*영 010-****-3066',
-    '이*수 010-****-2657',
-    '김*영 010-****-9007',
-    '김*양 010-****-3025',
-    '이*연 010-****-6055',
-    '정*정 010-****-1059',
-    '신*영 010-****-4405',
-    '공*구 010-****-2034',
-    '지*리 010-****-3374',
-  ];
-  const timer = 2000;
-  let move = 2;
-  let dataCnt = 1;
-  let listCnt = 1;
+    const rollingData = [
+      '김*영 010-****-8245',
+      '박*주 010-****-2543',
+      '최*팔 010-****-7786',
+      '심*정 010-****-9406',
+      '최*영 010-****-3066',
+      '이*수 010-****-2657',
+      '김*영 010-****-9007',
+      '김*양 010-****-3025',
+      '이*연 010-****-6055',
+      '정*정 010-****-1059',
+      '신*영 010-****-4405',
+      '공*구 010-****-2034',
+      '지*리 010-****-3374',
+    ];
+    const timer = 2000;
+    let move = 2;
+    let dataCnt = 1;
+    let listCnt = 1;
+    
+    const first = document.getElementById('first');
+    const second = document.getElementById('second');
+    const third = document.getElementById('third');
+    
+    // first.children[0].innerHTML = rollingData[0];
+    // second.children[0].innerHTML = rollingData[1];
+    // third.children[0].innerHTML = rollingData[2];
   
-  const first = document.getElementById('first');
-  const second = document.getElementById('second');
-  const third = document.getElementById('third');
+    // first.children[0].innerHTML = rollingData[0];
+    
+    setInterval(() => {
+      if (move === 2) {
+        first.classList.remove('card_sliding');
+        first.classList.add('card_sliding_after');
+    
+        second.classList.remove('card_sliding_after');
+        second.classList.add('card_sliding');
+    
+        third.classList.remove('card_sliding_after');
+        third.classList.remove('card_sliding');
+    
+        move = 0;
+      } else if (move === 1) {
+        first.classList.remove('card_sliding_after');
+        first.classList.add('card_sliding');
+    
+        second.classList.remove('card_sliding_after');
+        second.classList.remove('card_sliding');
+    
+        third.classList.remove('card_sliding');
+        third.classList.add('card_sliding_after');
+    
+        move = 2;
+      } else if (move === 0) {
+        first.classList.remove('card_sliding_after');
+        first.classList.remove('card_sliding');
+    
+        second.classList.remove('card_sliding');
+        second.classList.add('card_sliding_after');
+    
+        third.classList.remove('card_sliding_after');
+        third.classList.add('card_sliding');
+    
+        move = 1;
+      }
+    
+      if (dataCnt < rollingData.length - 1) {
+        document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
+        document.getElementById('rolling_box').children[(listCnt + 1) % 3].children[0].innerHTML = rollingData[dataCnt + 1];
+        document.getElementById('rolling_box').children[(listCnt + 2) % 3].children[0].innerHTML = rollingData[dataCnt + 2];
   
+        dataCnt++;
+      } else if (dataCnt === rollingData.length - 1) {
+        document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
+        document.getElementById('rolling_box').children[(listCnt + 1) % 3].children[0].innerHTML = rollingData[0];
+        document.getElementById('rolling_box').children[(listCnt + 2) % 3].children[0].innerHTML = rollingData[1];
   
-  setInterval(() => {
-    if (move === 2) {
-      first.classList.remove('card_sliding');
-      first.classList.add('card_sliding_after');
-  
-      second.classList.remove('card_sliding_after');
-      second.classList.add('card_sliding');
-  
-      third.classList.remove('card_sliding_after');
-      third.classList.remove('card_sliding');
-  
-      move = 0;
-    } else if (move === 1) {
-      first.classList.remove('card_sliding_after');
-      first.classList.add('card_sliding');
-  
-      second.classList.remove('card_sliding_after');
-      second.classList.remove('card_sliding');
-  
-      third.classList.remove('card_sliding');
-      third.classList.add('card_sliding_after');
-  
-      move = 2;
-    } else if (move === 0) {
-      first.classList.remove('card_sliding_after');
-      first.classList.remove('card_sliding');
-  
-      second.classList.remove('card_sliding');
-      second.classList.add('card_sliding_after');
-  
-      third.classList.remove('card_sliding_after');
-      third.classList.add('card_sliding');
-  
-      move = 1;
-    }
-  
-    if (dataCnt < rollingData.length - 1) {
-      document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
-      document.getElementById('rolling_box').children[(listCnt + 1) % 3].children[0].innerHTML = rollingData[dataCnt + 1];
-      document.getElementById('rolling_box').children[(listCnt + 2) % 3].children[0].innerHTML = rollingData[dataCnt + 2];
-
-      dataCnt++;
-    } else if (dataCnt === rollingData.length - 1) {
-      document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
-      document.getElementById('rolling_box').children[(listCnt + 1) % 3].children[0].innerHTML = rollingData[0];
-      document.getElementById('rolling_box').children[(listCnt + 2) % 3].children[0].innerHTML = rollingData[1];
-
-      dataCnt = 0;
-    }
-  
-    if (listCnt < 2) {
-      listCnt++;
-    } else if (listCnt === 2) {
-      listCnt = 0;
-    }
-  
-    console.log(listCnt);
-  }, timer);
-
-
+        dataCnt = 0;
+      }
+    
+      if (listCnt < 2) {
+        listCnt++;
+      } else if (listCnt === 2) {
+        listCnt = 0;
+      }
+    
+      console.log(listCnt);
+    }, timer);
 
   return (
     <div>
@@ -522,12 +586,12 @@ function App5() {
                       <input
                        type="text"
                        id="f1"
-                       name="user_name"
+                       name="user_name1"
                        required=""
                        placeholder="성함을 입력하세요"
-                       value={nickName}
+                       value={Name1}
                        maxLength={4}
-                       onChange={(e) => setNickName(e.target.value)}
+                       onChange={(e) => setName1(e.target.value)}
                         
                       />
                     </li>
@@ -535,14 +599,13 @@ function App5() {
                             휴대폰
                       <input
                        type="number"
-    
-                       name="user_name"
+                       name="user_name2"
                        required=""
                        placeholder="연락처를 입력하세요"
-                       onkeyPress="onlyNumber(this)"
+                       onkeyPress="onlyNumber1(this)"
                       maxLength={13}
                       pattern="[0-9]{13}"
-                       value={phoneNumber}
+                       value={phoneNumber1}
                        onChange={(e) => {
                          setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
                        }}
@@ -552,42 +615,53 @@ function App5() {
         
        
                     <li class="check1 clear">
-					<p>희망항목</p>
-					<p><input type="radio" name="marry" id="subject1" value="급등종목"><label for="subject1">급등종목</label></input></p>
-					<p><input type="radio" name="marry" id="subject2" value="테마종목"><label for="subject2">테마종목</label></input></p>
-					<p><input type="radio" name="marry" id="subject3" value="가치투자"><label for="subject3">가치투자</label></input></p>
-					<p><input type="radio" name="marry" id="subject4" value="스윙종목"><label for="subject4">스윙종목</label></input></p>
-					<p><input type="radio" name="marry" id="subject5" value="인공지능"><label for="subject5">인공지능</label></input></p>
-					<p><input type="radio" name="marry" id="subject6" value="단기투자"><label for="subject6">단기투자</label></input></p>
-					<p><input type="radio" name="marry" id="subject7" value="원금회복"><label for="subject7">원금회복</label></input></p>
-					<p><input type="radio" name="marry" id="subject8" value="투자초보"><label for="subject8">투자초보</label></input></p>
-				</li>
-				<li class="check2 clear">
-					<dt>희망수익률</dt>
-					<p><input type="radio" name="age" id="hope1" value="5% 목표"><label for="hope1">5% 목표</label></input></p>
-					<p><input type="radio" name="age" id="hope2" value="10% 목표"><label for="hope2">10% 목표</label></input></p>
-					<p><input type="radio" name="age" id="hope3" value="15% 목표"><label for="hope3">15% 목표</label></input></p>
-					<p><input type="radio" name="age" id="hope4" value="20% 목표"><label for="hope4">20% 목표</label></input></p>
-					<p><input type="radio" name="age" id="hope5" value="25% 목표"><label for="hope5">25% 목표</label></input></p>
-					<p><input type="radio" name="age" id="hope6" value="30% 목표"><label for="hope6">30% 목표</label></input></p>
-				</li>
-				<li class="check3 clear">
-					<p>희망수익금</p>
-					<p><input type="radio" name="area" id="profit1" value="5백만 원"><label for="profit1">5백만 원</label></input></p>
-					<p><input type="radio" name="area" id="profit2" value="1천만 원"><label for="profit2">1천만 원</label></input></p>
-					<p><input type="radio" name="area" id="profit3" value="3천만 원"><label for="profit3">3천만 원</label></input></p>
-					<p><input type="radio" name="area" id="profit4" value="5천만 원"><label for="profit4">5천만 원</label></input></p>
-					<p><input type="radio" name="area" id="profit5" value="7천만 원"><label for="profit5">7천만 원</label></input></p>
-					<p><input type="radio" name="area" id="profit6" value="1억 원 이상"><label for="profit6">1억 원 이상 </label></input></p>
-				</li>
+					<label for="marry">희망항목</label>
+                     <select name="marry" id="marry">
+                     <option value="급등종목">급등종목</option>
+                     <option value="테마종목">테마종목</option>
+                     <option value="가치투자">가치투자</option>
+                    <option value="스윙종목">스윙종목</option>
+                     <option value="인공지능">인공지능</option>
+                     <option value="단기투자">단기투자</option>
+                    <option value="원금회복">원금회복</option>
+                     <option value="투자초보">투자초보</option>
+                     </select>
+	                </li>
+
+                <li class="check2 clear">
+	            <label for="hope">희망수익률</label>
+	            <select name="hope" id="hope">
+		        <option value="5% 목표">5% 목표</option>
+		        <option value="10% 목표">10% 목표</option>
+		        <option value="15% 목표">15% 목표</option>
+		        <option value="20% 목표">20% 목표</option>
+		        <option value="25% 목표">25% 목표</option>
+		        <option value="30% 목표">30% 목표</option>
+	            </select>
+                </li>
+
+                <li class="check3 clear">
+	            <label for="profit">희망수익금</label>
+                <select name="profit" id="profit">
+                 <option value="5백만 원">5백만 원</option>
+                <option value="1천만 원">1천만 원</option>
+                <option value="3천만 원">3천만 원</option>
+                <option value="5천만 원">5천만 원</option>
+                <option value="7천만 원">7천만 원</option>
+                <option value="1억 원 이상">1억 원 이상</option>
+                </select>
+                </li>
+
 				<li class="check4 clear">
-					<p>투자성향</p>
-					<p><input type="radio" name="area2" id="type1" value="안정형"><label for="type1">안정형</label></input></p>
-					<p><input type="radio" name="area2" id="type2" value="안정 추구형"><label for="type2">안정 추구형</label></input></p>
-					<p><input type="radio" name="area2" id="type3" value="위험 추구형"><label for="type3">위험 추구형</label></input></p>
-					<p><input type="radio" name="area2" id="type4" value="적극 투자형"><label for="type4">적극 투자형</label></input></p>
-					<p><input type="radio" name="area2" id="type5" value="공격 투자형"><label for="type5">공격 투자형</label></input></p>
-				</li>
+	            <label for="investment">투자성향</label>
+	            <select name="investment" id="investment">
+			    <option value="안정형">안정형</option>
+			    <option value="안정 추구형">안정 추구형</option>
+			    <option value="위험 추구형">위험 추구형</option>
+			    <option value="적극 투자형">적극 투자형</option>
+			    <option value="공격 투자형">공격 투자형</option>
+	            </select>
+                </li>
 				
                 </div>
                 </div>
