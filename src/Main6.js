@@ -542,6 +542,66 @@ function App5() {
                     <br />
                     <li id="chkline">
                       <label>
+                      희망수익률
+                        <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check11}
+                          onChange={(e) => setCheck11(e.target.checked)}
+                          />
+                       <a>5% 목표</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check12}
+                          onChange={(e) => setCheck12(e.target.checked)}
+                          />
+                       <a>10% 목표</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check13}
+                          onChange={(e) => setCheck13(e.target.checked)}
+                          />
+                       <a>15% 목표</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check14}
+                          onChange={(e) => setCheck14(e.target.checked)}
+                          />
+                       <a>20% 목표</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check15}
+                          onChange={(e) => setCheck15(e.target.checked)}
+                          />
+                       <a>25% 목표</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check16}
+                          onChange={(e) => setCheck16(e.target.checked)}
+                          />
+                       <a>30% 목표</a>  
+                       </label>
+                      </li>
+                    <br />
+                    <li id="chkline">
+                      <label>
                         <input
                           type="checkbox"
                           id="privacy"
