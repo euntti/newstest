@@ -37,17 +37,16 @@ function App2() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
-  const handlePhoneChange = (e) => {
-    const inputValue = e.target.value;
-    
-    const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
-  
-    if (phoneRegex.test(inputValue)) {
-      setPhone1(inputValue);
+  const [phone2, setPhone2] = useState("");
+  const onlyNumber = (e) => {
+    const keyCode = e.keyCode || e.which;
+    const keyValue = String.fromCharCode(keyCode);
+
+    if (!/^[0-9]+$/.test(keyValue)) {
+      e.preventDefault();
     }
   };
 
-  const [phone2, setPhone2] = useState("");
   const [num, setNum] = useState(331231);
   const [time, setTime] = useState("");
 
