@@ -374,19 +374,20 @@ function App2() {
                   type="text"
                   className="username"
                   placeholder="이름"
-                  maxLength="4"
+                  maxLength={4}
                   onChange={(e) => setUserName(e.target.value)}
                 />
               </div>
               {"\t"}
               <div className="phone">
                 <input
-                 type="tel"
-                className="phone"
-                placeholder="휴대폰"
-                value={phone1}
-                onChange={handlePhoneChange}
-                maxLength="13"
+                  type="number"
+                  className="phone"
+                  placeholder="휴대폰"
+                  onChange={(e) => setPhone1(e.target.value)}
+                  onkeyPress="onlyNumber(this)"
+                  maxLength={13}
+                  pattern="[0-9]{13}"
                 />
               </div>
               <div className="time">
@@ -465,16 +466,16 @@ function App2() {
             </div>
           </div>
         </Slider>
-        <div className="profit">
+        {/* <div className="profit">
           {isBrowser ? (
             <img src={"/img/titleprofit.png"}></img>
           ) : (
             <img style={{ width: "390px" }} src={"/img/mtitleprofit.png"}></img>
           )}
-        </div>
-        <div className="profit1">
+        </div> */}
+        {/* <div className="profit1">
           <img src={"/img/profit.jpeg"}></img>
-        </div>
+        </div> */}
         <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
