@@ -433,48 +433,32 @@ function App4() {
                     <br />
                     <li>
                       <input
-                       type="text"
-                       id="f1"
-                       name="user_name"
-                       required=""
-                       placeholder="성함을 입력하세요"
-                       value={nickName}
-                       maxLength={4}
-                       onChange={(e) => setNickName(e.target.value)}
-                        
+                        type="text"
+                        id="f1"
+                        name="user_name"
+                        required=""
+                        placeholder="성함을 입력하세요"
+                        value={nickName}
+                        maxLength={4}
+                        onChange={(e) => setNickName(e.target.value)}
                       />
                     </li>
                     <li>
                       <input
-                       type="number"
-                      name="user_name"
-                       required=""
-                       placeholder="연락처를 입력하세요"
-                       onkeyPress="onlyNumber(this)"
-                      maxLength={13}
-                      pattern="[0-9]{13}"
-                       value={phoneNumber}
-                       onChange={(e) => {
-                         setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
-                       }}
+                        type="number"
+                        id="f1"
+                        name="user_name"
+                        required=""
+                        placeholder="연락처를 입력하세요"
+                        onkeyPress="onlyNumber(this)"
+                       maxLength={13}
+                       pattern="[0-9]{13}"
+                        value={phoneNumber}
+                        onChange={(e) => {
+                          setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
+                        }}
                       />
                     </li>
-                    <li >
-                      <label>
-                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          required=""
-                          value={marry}
-                          checked={marry}
-                          onChange={(e) =>  setMarry(e.target.value)}
-                          >
-                            희망항목
-                        </input>
-                      
-                      </label>
-                      </li>
                     <br />
                     <li id="chkline">
                       <label>
@@ -519,7 +503,6 @@ function App4() {
                       <input
                         id="btn"
                         type="submit"
-                        style={{ fontSize: "18px" }}
                         value="급등종목 무료제공 이벤트 신청하기"
                         onClick={submitEvent}
                       />
