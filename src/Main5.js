@@ -447,8 +447,7 @@ function App4() {
                     <li>
                       <input
                        type="number"
-    
-                       name="user_name"
+                      name="user_name"
                        required=""
                        placeholder="연락처를 입력하세요"
                        onkeyPress="onlyNumber(this)"
@@ -460,6 +459,21 @@ function App4() {
                        }}
                       />
                     </li>
+                    <li id="chk1">
+                      <label>
+                        <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value={marry}
+                          checked={check1}
+                          onChange={(e) =>  setmarry(e.target.value)}
+                          >
+                            희망항목
+                        </input>
+                      
+                      </label>
+                      </li>
                     <br />
                     <li id="chkline">
                       <label>
