@@ -468,7 +468,7 @@ function App5() {
                           value="1"
                           checked={check1}
                           onChange={(e) => setCheck1(e.target.checked)}
-                        />
+                          급등종목/>
                        <a>급등종목</a>
                        <a>테마종목</a>
                        <a>가치투자</a>
