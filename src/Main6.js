@@ -155,6 +155,7 @@ function App5() {
       nickName + "님이 신청했습니다" + "폰번호는 " + phoneNumber
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다. ");
+
     // console.log("as");
     // var customer = {};
     // customer.nickName = nickName;
@@ -293,18 +294,82 @@ function App5() {
           <div className="inner">
             <div className="head">
               <h1 className="title">
-                하루에 3분투자로 {" "}
-                <p><span class="color1">" 억대 만들기 노하우는 ?"</span> </p>
+                 삼성전자 이번에는 십만전자? {" "}
+                <p><span class="color1">“반도체는 이성이 아니라 가슴으로 투자해야 하는 산업"</span> </p>
              
               </h1>
             </div>
           </div>
           <div className="writer">
             <div class="writer-info">
-              기자 - 김진우ㅣ 조회수 : 1202 ㅣ 날짜 :{""}
-              <span id="regdate">2023-05-31</span>
+              기자 - 강재우ㅣ 조회수 : 30293 ㅣ 날짜 :{""}
+              <span id="regdate">2023-06-05</span>
             </div>
           </div>
+
+          <div className="content-wrap">
+            <div className="content">
+             
+              <p>
+                <b>"외국인 투자자 10조2619억원 순매수"</b>
+                <br />
+                김진환 씨(50대) 인터뷰中
+              </p>
+              <p>
+                <p>노 센터장은 국내 메모리 반도체 업체인 삼성전자, SK하이닉스
+                    등은 내년 실적이 좋아질 것이란 기대로 어느 정도 주가가 올라 있는 상태라고 진단했습니다. </p>
+
+                    <p class="imgbox banner">
+                <img
+                  style={{ width: 620, height: "auto" }}
+                  src={"/img/sbmain41.png"}
+                  alt=""
+                />
+              </p>
+
+              <p> 노 센터장은 “메모리 반도체 가격이 올해 상승할 것이란 기대까지 반영돼 있어 보인다”며 
+              “다만 얼마나 오를지, 어느 기간 동안 오를지 정도가 반영돼 있지 않은 것 같다”고 했습니다.</p>
+
+                <p>저도 아는 지인통해 알게되었는데요 'SB그룹' 이라는 기업에서 출시한 상품이었어요!
+                    방법은 아주 간단하답니다</p>
+                <p><span class="color1">
+                  <div>첫째. A.I 분석 프로그램으로 추천해준 코인 매수</div>
+                  <div>둘째. 정해준 목표가 도달시 매도</div>
+                  <div>셋째. 목표가 도달하지 않고 하락시 정해준 손절가에 손절</div></span></p>
+                  <p></p>
+                <p>이 3가지만 똑같이 따라하니 꾸준히 수익이 났어요</p>
+                <p>가끔 하락할때가 있는데 '손절가'에 손절하면 손실이 크지 않고, 
+                상승하는 경우가 더 많으니 결국 손실없이 수익을 낼 수 있었어요</p>
+                
+              </p>
+               <p class="mainhead">
+                  <b>"하루 3분 투자로 3개월 수익1억 가능한 가상화폐는? "</b>
+                </p>
+               <p class="imgboxbanner2">
+                <img
+                  style={{ width: "100%", height: "auto" }}
+                  src={"/img/stock.png"}
+                  alt=""
+                />
+              </p>
+              {/* <div class="imgdesc">[김진환씨의 최근 수익 인증]</div> */}
+              <p>
+               여기서 놀라지 마세요 누구나 하실수있는 간단한 투자! </p>
+               <p> "3분 재테크"의 가장 큰 장점은 시간도 시간이지만
+                하락장에서도 돈을 벌 수 있다는것입니다.
+                대부분의 사람들이 감으로 투자하는 경우가 많은데
+                 A.I 분석프로그램으로 코인을 분석 및 추천을 해주어 정확도가 매우 높은 편입니다.
+                <br />이로 인해 문의가 폭주하고 있습니다.
+              </p>
+
+              <p>
+                최근에 바쁜 사회속 빠르게 그렇지만 확실한 수익을 나고 싶은 고객들을 위해
+                <span class="color1">"3분 투자로 1억만들기 이벤트" </span>를 진행하고 있으니 아래 링크 확인부탁드립니다. 
+                {/* {"\t"}
+                <b>좋은 예 라 보이며 기존 개인투자자들이 일일히 확인해야되는것과 달리 AI프로그램이 실시간으로 변동하는 
+                모든 차트흐름과 시장흐름을 분석하여 높은 수익률로 보이는 추세이다.</b> */}
+                
+              </p>
 
           <div className="content-wrap">
             <div className="content">
@@ -486,50 +551,50 @@ function App5() {
                         
         
        
-                    <dl class="check1 clear">
-					<dt>희망항목</dt>
-					<dd><input type="radio" name="marry" id="subject1" value="급등종목"><label for="subject1">급등종목</label></input></dd>
-					<dd><input type="radio" name="marry" id="subject2" value="테마종목"><label for="subject2">테마종목</label></input></dd>
-					<dd><input type="radio" name="marry" id="subject3" value="가치투자"><label for="subject3">가치투자</label></input></dd>
-					<dd><input type="radio" name="marry" id="subject4" value="스윙종목"><label for="subject4">스윙종목</label></input></dd>
-					<dd><input type="radio" name="marry" id="subject5" value="인공지능"><label for="subject5">인공지능</label></input></dd>
-					<dd><input type="radio" name="marry" id="subject6" value="단기투자"><label for="subject6">단기투자</label></input></dd>
-					<dd><input type="radio" name="marry" id="subject7" value="원금회복"><label for="subject7">원금회복</label></input></dd>
-					<dd><input type="radio" name="marry" id="subject8" value="투자초보"><label for="subject8">투자초보</label></input></dd>
-				</dl>
-				<dl class="check2 clear">
+                    <li class="check1 clear">
+					<p>희망항목</p>
+					<p><input type="radio" name="marry" id="subject1" value="급등종목"><label for="subject1">급등종목</label></input></p>
+					<p><input type="radio" name="marry" id="subject2" value="테마종목"><label for="subject2">테마종목</label></input></p>
+					<p><input type="radio" name="marry" id="subject3" value="가치투자"><label for="subject3">가치투자</label></input></p>
+					<p><input type="radio" name="marry" id="subject4" value="스윙종목"><label for="subject4">스윙종목</label></input></p>
+					<p><input type="radio" name="marry" id="subject5" value="인공지능"><label for="subject5">인공지능</label></input></p>
+					<p><input type="radio" name="marry" id="subject6" value="단기투자"><label for="subject6">단기투자</label></input></p>
+					<p><input type="radio" name="marry" id="subject7" value="원금회복"><label for="subject7">원금회복</label></input></p>
+					<p><input type="radio" name="marry" id="subject8" value="투자초보"><label for="subject8">투자초보</label></input></p>
+				</li>
+				<li class="check2 clear">
 					<dt>희망수익률</dt>
-					<dd><input type="radio" name="age" id="hope1" value="5% 목표"><label for="hope1">5% 목표</label></input></dd>
-					<dd><input type="radio" name="age" id="hope2" value="10% 목표"><label for="hope2">10% 목표</label></input></dd>
-					<dd><input type="radio" name="age" id="hope3" value="15% 목표"><label for="hope3">15% 목표</label></input></dd>
-					<dd><input type="radio" name="age" id="hope4" value="20% 목표"><label for="hope4">20% 목표</label></input></dd>
-					<dd><input type="radio" name="age" id="hope5" value="25% 목표"><label for="hope5">25% 목표</label></input></dd>
-					<dd><input type="radio" name="age" id="hope6" value="30% 목표"><label for="hope6">30% 목표</label></input></dd>
-				</dl>
-				<dl class="check3 clear">
-					<dt>희망수익금</dt>
-					<dd><input type="radio" name="area" id="profit1" value="5백만 원"><label for="profit1">5백만 원</label></input></dd>
-					<dd><input type="radio" name="area" id="profit2" value="1천만 원"><label for="profit2">1천만 원</label></input></dd>
-					<dd><input type="radio" name="area" id="profit3" value="3천만 원"><label for="profit3">3천만 원</label></input></dd>
-					<dd><input type="radio" name="area" id="profit4" value="5천만 원"><label for="profit4">5천만 원</label></input></dd>
-					<dd><input type="radio" name="area" id="profit5" value="7천만 원"><label for="profit5">7천만 원</label></input></dd>
-					<dd><input type="radio" name="area" id="profit6" value="1억 원 이상"><label for="profit6">1억 원 이상 </label></input></dd>
-				</dl>
-				<dl class="check4 clear">
-					<dt>투자성향</dt>
-					<dd><input type="radio" name="area2" id="type1" value="안정형"><label for="type1">안정형</label></input></dd>
-					<dd><input type="radio" name="area2" id="type2" value="안정 추구형"><label for="type2">안정 추구형</label></input></dd>
-					<dd><input type="radio" name="area2" id="type3" value="위험 추구형"><label for="type3">위험 추구형</label></input></dd>
-					<dd><input type="radio" name="area2" id="type4" value="적극 투자형"><label for="type4">적극 투자형</label></input></dd>
-					<dd><input type="radio" name="area2" id="type5" value="공격 투자형"><label for="type5">공격 투자형</label></input></dd>
-				</dl>
+					<p><input type="radio" name="age" id="hope1" value="5% 목표"><label for="hope1">5% 목표</label></input></p>
+					<p><input type="radio" name="age" id="hope2" value="10% 목표"><label for="hope2">10% 목표</label></input></p>
+					<p><input type="radio" name="age" id="hope3" value="15% 목표"><label for="hope3">15% 목표</label></input></p>
+					<p><input type="radio" name="age" id="hope4" value="20% 목표"><label for="hope4">20% 목표</label></input></p>
+					<p><input type="radio" name="age" id="hope5" value="25% 목표"><label for="hope5">25% 목표</label></input></p>
+					<p><input type="radio" name="age" id="hope6" value="30% 목표"><label for="hope6">30% 목표</label></input></p>
+				</li>
+				<li class="check3 clear">
+					<p>희망수익금</p>
+					<p><input type="radio" name="area" id="profit1" value="5백만 원"><label for="profit1">5백만 원</label></input></p>
+					<p><input type="radio" name="area" id="profit2" value="1천만 원"><label for="profit2">1천만 원</label></input></p>
+					<p><input type="radio" name="area" id="profit3" value="3천만 원"><label for="profit3">3천만 원</label></input></p>
+					<p><input type="radio" name="area" id="profit4" value="5천만 원"><label for="profit4">5천만 원</label></input></p>
+					<p><input type="radio" name="area" id="profit5" value="7천만 원"><label for="profit5">7천만 원</label></input></p>
+					<p><input type="radio" name="area" id="profit6" value="1억 원 이상"><label for="profit6">1억 원 이상 </label></input></p>
+				</li>
+				<li class="check4 clear">
+					<p>투자성향</p>
+					<p><input type="radio" name="area2" id="type1" value="안정형"><label for="type1">안정형</label></input></p>
+					<p><input type="radio" name="area2" id="type2" value="안정 추구형"><label for="type2">안정 추구형</label></input></p>
+					<p><input type="radio" name="area2" id="type3" value="위험 추구형"><label for="type3">위험 추구형</label></input></p>
+					<p><input type="radio" name="area2" id="type4" value="적극 투자형"><label for="type4">적극 투자형</label></input></p>
+					<p><input type="radio" name="area2" id="type5" value="공격 투자형"><label for="type5">공격 투자형</label></input></p>
+				</li>
 				
                 </div>
                 </div>
                 </div>
                     </form>
 		</article>
-                    
+        </div>            
          <div className="footerInfo1">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
@@ -612,6 +677,7 @@ function App5() {
           판촉행사 등의 유익한 정보를 받으실 수 없습니다.
         </div>
       </Modal>
+      </div>
       </div>
   );
 }
