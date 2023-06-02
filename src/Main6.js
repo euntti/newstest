@@ -198,6 +198,18 @@ function App5() {
         return alert("고객명을 입력해주세요.");
       }
 
+      if (investment == "") {
+        return alert("클릭해주세요.");
+      }
+      if (profit == "") {
+        return alert("클릭해주세요.");
+      }
+      if (hope == "") {
+        return alert("클릭해주세요.");
+      }
+      if (marry == "") {
+        return alert("클릭해주세요.");
+      }
       if (phoneNumber == "") {
         return alert("연락처를 입력해주세요.");
       }
@@ -560,7 +572,7 @@ function App5() {
                     <li class="" id ="third"><p></p></li>
                      </ul>
                   </div>
-</div>
+                    </div>
 
                 <div className="talk" style={{ display: "block"}}>
                    <div className="talk1">
