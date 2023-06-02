@@ -343,7 +343,7 @@ function App3() {
           <div className="inner">
             <div className="head">
               <h1 className="title">
-                하루에 3분투자로 {" "}
+                하루에 30분투자로 {" "}
                 <p><span class="color1">" 억대 만들기 노하우는 ?"</span> </p>
              
               </h1>
