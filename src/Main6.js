@@ -729,7 +729,7 @@ function App5() {
                         <label for="privacy">
                        
                         <img 
-                        style={{ width: "100%", height: "auto" }}
+                        style={{ width: "50px", height: "18px" }}
                         src="/img/title.png" alt="공격 투자형" />
                        
                        
