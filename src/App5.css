@@ -320,9 +320,20 @@ table {
 .tablelive td {
   text-align: center;
 }
-#line01 img {
-    max-width: 100%;
-    max-height: 100%;
+
+#privacy-label {
+    display: inline-block;
+    line-height: 18px;
+  }
+  
+  #privacy-input {
+    width: 50px;
+    height: 18px;
+    margin: 0;
+  }
+  
+  #privacy-text {
+    vertical-align: middle;
   }
   
 .news img {
