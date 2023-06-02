@@ -717,14 +717,16 @@ function App5() {
                           />
                        <a>적극 투자형</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check27}
-                          onChange={(e) => setCheck27(e.target.checked)}
-                          />
-                       <a>공격 투자형</a>
+                        type="checkbox"
+                        id="privacy"
+                        name="agree1"
+                        value="1"
+                        checked={check27}
+                        onChange={(e) => setCheck27(e.target.checked)}
+                        />
+                        <label htmlFor="privacy">
+                         <a>공격 투자형</a>
+                        </label>
                        </label>
                       </li>
                     <br />
