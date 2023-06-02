@@ -717,15 +717,18 @@ function App5() {
                           />
                        <a>적극 투자형</a>
                        <input
-                        type="checkbox"
-                        id="privacy"
-                        name="agree1"
-                        value="1"
-                        checked={check27}
-                        onChange={(e) => setCheck27(e.target.checked)}
+                         type="checkbox"
+                         id="privacy"
+                            name="agree1"
+                            value="1"
+                            checked={check27}
+                            onChange={(e) => setCheck27(e.target.checked)}
                         />
-                        <label htmlFor="privacy">
-                         <a>공격 투자형</a>
+                        <label for="privacy">
+                        <a href="#">
+                        <img src="title.png" alt="공격 투자형" />
+                        공격 투자형
+                        </a>
                         </label>
                        </label>
                       </li>
