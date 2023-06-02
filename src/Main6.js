@@ -132,7 +132,7 @@ function App5() {
         e.preventDefault();
       }
     };
-    
+  
     const [phoneNumber1, setPhoneNumber1] = useState("");
     let subtitle1;
     const onlyNumber1 = (e) => {
@@ -143,7 +143,10 @@ function App5() {
         e.preventDefault();
       }
     };
-
+    const [investment, setinvestment] = useState("");
+    const [profit, setprofit] = useState("");
+    const [hope, sethope] = useState("");
+    const [marry, setmarry] = useState("");
     const [check1, setCheck1] = useState(false);
     const [check2, setCheck2] = useState(false);
     const [check3, setCheck3] = useState(false);
@@ -157,7 +160,7 @@ function App5() {
       return () => {
         clearInterval(id);
       };
-    }, []);
+    }, []);2
    
     const handlePhoneChange = (e) => {
       const inputValue = e.target.value;
@@ -614,7 +617,8 @@ function App5() {
         
        
                     <li class="check1 clear">
-					<input for="marry">희망항목</input>
+					<input value={marry} onChange={(e) => setmarry(e.target.value)} >
+                        희망항목</input>
                      <select name="marry" id="marry">
                      <option value="급등종목">급등종목</option>
                      <option value="테마종목">테마종목</option>
@@ -628,7 +632,7 @@ function App5() {
 	                </li>
 
                 <li class="check2 clear">
-	            <input for="hope">희망수익률</input>
+	            <input value={hope} onChange={(e) => sethope(e.target.value)} >희망수익률</input>
 	            <select name="hope" id="hope">
 		        <option value="5% 목표">5% 목표</option>
 		        <option value="10% 목표">10% 목표</option>
@@ -640,7 +644,7 @@ function App5() {
                 </li>
 
                 <li class="check3 clear">
-	            <input for="profit">희망수익금</input>
+	            <input value={profit} onChange={(e) => setprofit(e.target.value)} >희망수익금</input>
                 <select name="profit" id="profit">
                  <option value="5백만 원">5백만 원</option>
                 <option value="1천만 원">1천만 원</option>
@@ -652,7 +656,7 @@ function App5() {
                 </li>
 
 				<li class="check4 clear">
-	            <input for="investment">투자성향</input>
+	            <input value={investment} onChange={(e) => setinvestment(e.target.value)} >투자성향</input>
 	            <select name="investment" id="investment">
 			    <option value="안정형">안정형</option>
 			    <option value="안정 추구형">안정 추구형</option>
