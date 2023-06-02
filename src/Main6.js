@@ -136,6 +136,19 @@ function App5() {
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
+  const [check4, setCheck4] = useState(false);
+  const [check5, setCheck5] = useState(false);
+  const [check6, setCheck6] = useState(false);
+  const [check7, setCheck7] = useState(false);
+  const [check8, setCheck8] = useState(false);
+  const [check9, setCheck9] = useState(false);
+  const [check10, setCheck10] = useState(false);
+  const [check11, setCheck11] = useState(false);
+  const [check12, setCheck12] = useState(false);
+  const [check13, setCheck13] = useState(false);
+  const [check14, setCheck14] = useState(false);
+  const [check15, setCheck15] = useState(false);
+  const [check16, setCheck16] = useState(false);
 
   
   const [progress, setProgress] = useState(0);
@@ -466,15 +479,63 @@ function App5() {
                           id="privacy"
                           name="agree1"
                           value="1"
-                          checked={check1}
-                          onChange={(e) => setCheck1(e.target.checked)}
-                          급등종목/>
-                       {/* <a>급등종목</a> */}
+                          checked={check4}
+                          onChange={(e) => setCheck4(e.target.checked)}
+                          />
+                       <a>급등종목</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check5}
+                          onChange={(e) => setCheck5(e.target.checked)}
+                          />
                        <a>테마종목</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check6}
+                          onChange={(e) => setCheck6(e.target.checked)}
+                          />
                        <a>가치투자</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check7}
+                          onChange={(e) => setCheck7(e.target.checked)}
+                          />
                        <a>스윙종목</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check8}
+                          onChange={(e) => setCheck8(e.target.checked)}
+                          />
                        <a>인공지능</a>
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check9}
+                          onChange={(e) => setCheck9(e.target.checked)}
+                          />
                        <a>단기투자</a>  
+                       <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check10}
+                          onChange={(e) => setCheck10(e.target.checked)}
+                          />
                        <a>투자초보</a>  
                       </label>
                       </li>
