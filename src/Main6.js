@@ -728,7 +728,7 @@ function App5() {
     onChange={(e) => setCheck27(e.target.checked)}
     style={{ width: "50px", height: "18px", margin: "0" }}
   />
-  공격 투자형
+  <span style={{ verticalAlign: "middle" }}>공격 투자형</span>
 </label>
                        </label>
                       </li>
