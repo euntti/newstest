@@ -384,7 +384,12 @@ function App2() {
                   className="phone"
                   placeholder="휴대폰"
                   onChange={(e) => setPhone1(e.target.value)}
-                  onkeyPress="onlyNumber(this)"
+                  onKeyPress={(e) => {
+                    const onlyNumberRegex = /^[0-9\b]+$/; // 숫자와 백스페이스만 허용하는 정규식
+                    if (!onlyNumberRegex.test(e.key)) {
+                      e.preventDefault();
+                    }
+                  }}
                   maxLength={13}
                   pattern="[0-9]{13}"
                 />
