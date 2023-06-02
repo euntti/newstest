@@ -719,28 +719,28 @@ function App5() {
                           />
                        <a>적극 투자형</a>
                        <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
-  <input
-    type="checkbox"
-    id="privacy"
-    name="agree1"
-    value="1"
-    checked={check27}
-    onChange={(e) => setCheck27(e.target.checked)}
-    style={{ display: "none" }}
-  />
-  <span
-    style={{
-      display: "inline-block",
-      width: "50px",
-      height: "18px",
-      background: check27 ? "#f00" : "#ccc",
-      lineHeight: "18px",
-      textAlign: "center",
-    }}
-  >
-    공격 투자형
-  </span>
-</label>
+                        <input
+                        type="checkbox"
+                        id="privacy"
+                        name="agree1"
+                        value="1"
+                        checked={check27}
+                        onChange={(e) => setCheck27(e.target.checked)}
+                        style={{ display: "none" }}
+                        />
+                        <span
+                        style={{
+                        display: "inline-block",
+                        width: "50px",
+                        height: "18px",
+                        background: check27 ? "#f00" : "#ccc",
+                        lineHeight: "18px",
+                        textAlign: "center",
+                        }}
+                        >
+                         공격 투자형
+                        </span>
+                            </label>
                        </label>
                       </li>
                     <br />
