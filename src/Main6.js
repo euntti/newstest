@@ -458,20 +458,26 @@ function App5() {
                        }}
                       />
                     </li>
-                    <li>
-                        <label>
+                    <li id="chkline">
+                      <label>
                         <input
-                        type="checkbox"
-                        id="name"
-                        name="user_hope"
-                       required=""
-                       value={check4}
-                       onChange={(e) => {
-                         setCheck4(e.target.value.replace(/[^0-9]/g, ""));
-                       }}
-                      />
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check1}
+                          onChange={(e) => setCheck1(e.target.checked)}
+                        />
+                        개인정보취급방침동의
+                            <a
+                                 href="javascript:void(0);"
+                                 onClick={() => setIsOpen2(true)}
+                                 // onclick="privacy_pop('show', '.pop-policy',2)"
+                                >
+                                [보기]
+                            </a>
                       </label>
-                    </li>
+                      </li>
                     <br />
                     <li id="chkline">
                       <label>
