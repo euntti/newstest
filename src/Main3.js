@@ -37,6 +37,19 @@ function App2() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
+  const handlePhoneNumberChange = (e) => {
+    let formattedNumber = e.target.value.replace(/-/g, ""); // 하이픈 제거
+    if (formattedNumber.length > 2 && formattedNumber.length < 6) {
+      formattedNumber = formattedNumber.replace(/(\d{3})(\d{1,3})/, "$1-$2"); // 첫 번째 하이픈 추가
+    } else if (formattedNumber.length >= 6) {
+      formattedNumber = formattedNumber.replace(/(\d{3})(\d{3})(\d{0,4})/, "$1-$2-$3"); // 첫 번째와 두 번째 하이픈 추가
+    }
+    setPhoneNumber(formattedNumber);
+
+    const inputValue = e.target.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
+    setPhoneNumber(inputValue);
+  };
+
   const [phone2, setPhone2] = useState("");
   const onlyNumber = (e) => {
     const keyCode = e.keyCode || e.which;
@@ -379,16 +392,14 @@ function App2() {
               </div>
               {"\t"}
               <div className="phone">
-                
                 <input
-                  type="number"
-                  className="phone"
-                  placeholder="휴대폰"
-                  onChange={(e) => setPhone1(e.target.value)}
-                  oneyPress="onlyNumber(this)"
-                  maxLength={13}
-                  pattern="[0-9]{13}"
-                />
+                       type="tel"
+                       name="user_name"
+                       placeholder="휴대폰"
+                       maxLength={13}
+                       value={phone1}
+                       onChange={handlePhoneNumberChange}
+                      />
               </div>
               <div className="time">
                 <select value={time} onChange={(e) => setTime(e.target.value)}>
