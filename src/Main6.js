@@ -718,16 +718,18 @@ function App5() {
                           onChange={(e) => setCheck26(e.target.checked)}
                           />
                        <a>적극 투자형</a>
-                       <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check27}
-                          onChange={(e) => setCheck27(e.target.checked)}
-                          style={{ transform: "scale(1.5)" }}
-                          />
-                       <a>공격 투자형</a>
+                       <label htmlFor="privacy" style={{ display: "inline-block" }}>
+  <input
+    type="checkbox"
+    id="privacy"
+    name="agree1"
+    value="1"
+    checked={check27}
+    onChange={(e) => setCheck27(e.target.checked)}
+    style={{ transform: "scale(1.5)", width: "50px", height: "18px", margin: "0" }}
+  />
+  공격 투자형
+</label>
                        </label>
                       </li>
                     <br />
