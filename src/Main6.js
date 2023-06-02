@@ -726,7 +726,7 @@ function App5() {
                             checked={check27}
                             onChange={(e) => setCheck27(e.target.checked)}
                         />
-                        <label for="privacy">
+                        <label for="privacy" style={{ display: "inline-block" }}>
                         <a href="#">
                         <img 
                         style={{ width: "50px", height: "18px" }}
