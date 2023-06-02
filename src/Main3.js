@@ -16,7 +16,7 @@ import AnimatedNumbers from "react-animated-numbers";
 import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
 import Modal from "react-modal";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const customStyles = {
   content: {
