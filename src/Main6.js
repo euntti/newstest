@@ -458,6 +458,18 @@ function App5() {
                        }}
                       />
                     </li>
+                    <li>
+                        <input
+                        type="checkbox"
+                        id="name"
+                        name="user_hope"
+                       required=""
+                       value={check4}
+                       onChange={(e) => {
+                         setCheck4(e.target.value.replace(/[^0-9]/g, ""));
+                       }}
+                      />
+                    </li>
                     <br />
                     <li id="chkline">
                       <label>
@@ -470,13 +482,13 @@ function App5() {
                           onChange={(e) => setCheck1(e.target.checked)}
                         />
                         개인정보취급방침동의
-                <a
-                  href="javascript:void(0);"
-                  onClick={() => setIsOpen2(true)}
-                  // onclick="privacy_pop('show', '.pop-policy',2)"
-                >
-                  [보기]
-                </a>
+                            <a
+                                 href="javascript:void(0);"
+                                 onClick={() => setIsOpen2(true)}
+                                 // onclick="privacy_pop('show', '.pop-policy',2)"
+                                >
+                                [보기]
+                            </a>
                       </label>
                       
                       <label>
