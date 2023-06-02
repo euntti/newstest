@@ -459,6 +459,7 @@ function App5() {
                       />
                     </li>
                     <li>
+                        <label>
                         <input
                         type="checkbox"
                         id="name"
@@ -469,6 +470,7 @@ function App5() {
                          setCheck4(e.target.value.replace(/[^0-9]/g, ""));
                        }}
                       />
+                      </label>
                     </li>
                     <br />
                     <li id="chkline">
