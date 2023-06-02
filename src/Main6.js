@@ -576,9 +576,8 @@ function App5() {
                      </div>
                     </div>  
 
-                    <article class="form_wrap">
-						<form name="consultFrm" method="post">
-                            <div className="newbox">
+            
+                    <div className="newbox">
                     <div className="content">
                         <div className="newBoxs">
                         <li>
@@ -615,7 +614,7 @@ function App5() {
         
        
                     <li class="check1 clear">
-					<label for="marry">희망항목</label>
+					<input for="marry">희망항목</input>
                      <select name="marry" id="marry">
                      <option value="급등종목">급등종목</option>
                      <option value="테마종목">테마종목</option>
@@ -629,7 +628,7 @@ function App5() {
 	                </li>
 
                 <li class="check2 clear">
-	            <label for="hope">희망수익률</label>
+	            <input for="hope">희망수익률</input>
 	            <select name="hope" id="hope">
 		        <option value="5% 목표">5% 목표</option>
 		        <option value="10% 목표">10% 목표</option>
@@ -641,7 +640,7 @@ function App5() {
                 </li>
 
                 <li class="check3 clear">
-	            <label for="profit">희망수익금</label>
+	            <input for="profit">희망수익금</input>
                 <select name="profit" id="profit">
                  <option value="5백만 원">5백만 원</option>
                 <option value="1천만 원">1천만 원</option>
@@ -653,7 +652,7 @@ function App5() {
                 </li>
 
 				<li class="check4 clear">
-	            <label for="investment">투자성향</label>
+	            <input for="investment">투자성향</input>
 	            <select name="investment" id="investment">
 			    <option value="안정형">안정형</option>
 			    <option value="안정 추구형">안정 추구형</option>
@@ -666,8 +665,7 @@ function App5() {
                 </div>
                 </div>
                 </div>
-                    </form>
-		</article>
+                   
         </div>            
          <div className="footerInfo1">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
