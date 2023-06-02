@@ -386,10 +386,10 @@ function App2() {
               <div className="phone">
               <input
                        type="tel"
-                       name="phone"
+                       name="user_name"
                        placeholder="휴대폰"
                        maxLength={13}
-                       value={phoneNumber}
+                       value={phone1}
                        onChange={handlePhoneNumberChange}
                       />
               </div>
