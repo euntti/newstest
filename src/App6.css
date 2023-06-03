@@ -274,7 +274,10 @@ table {
   .phone {
     margin-left: 10px;
   }
-  
+  .namephone.phone {
+    display: block;
+
+  }
   .btnArea {
     margin-left: auto;
   }
