@@ -263,15 +263,20 @@ table {
 }
 
 
-.bottom-bar .content-column {
-flex: 1;
- }
-    
- .row.btnArea {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
+.bottom-bar .row {
+    display: flex;
+   justify-content: space-between;
+  }
+  
+  .bottom-bar .content-column {
+  flex: 1;
+  }
+  
+  .bottom-bar .btnArea {
+display: flex;
+align-items: center;
+  }
+  
 
 
   @media (max-width: 600px) {
