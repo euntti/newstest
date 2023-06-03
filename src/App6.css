@@ -255,13 +255,15 @@ table {
     color: #fff;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
   }
   
   .botitle {
     font-size: 18px;
     font-weight: bold;
+    flex-basis: 100%;
+    margin-bottom: 10px;
   }
   
   .namephone,
@@ -269,6 +271,8 @@ table {
     display: flex;
     align-items: center;
     margin-right: 10px;
+    flex-basis: 50%;
+    margin-bottom: 10px;
   }
   
   .namephone .username {
@@ -284,14 +288,19 @@ table {
     display: flex;
     align-items: center;
     margin-right: 10px;
+    flex-basis: 100%;
+    margin-bottom: 10px;
   }
   
   .btnArea {
+    display: flex;
+    align-items: center;
     margin-left: 10px;
+    flex-basis: 100%;
   }
   
   .btnArea button {
-   
+
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -300,6 +309,13 @@ table {
   
   .btnArea button img {
     width: 390px;
+  }
+  
+  @media (max-width: 600px) {
+    .namephone,
+    .phone {
+      flex-basis: 100%;
+    }
   }
  
   
