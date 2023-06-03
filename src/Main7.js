@@ -404,22 +404,7 @@ function App6() {
                        onChange={handlePhoneNumberChange}
                       />
               </div>
-              <div className="time">
-                <select value={time} onChange={(e) => setTime(e.target.value)}>
-                  <option value="">통화가능시간(필수)</option>
-                  <option value="06:00-09:00">06:00-09:00</option>
-                  <option value="09:00-11:00">09:00-11:00</option>
-                  <option value="11:00-13:00">11:00-13:00</option>
-                  <option value="13:00-15:00">13:00-15:00</option>
-                  <option value="15:00-17:00">15:00-17:00</option>
-                  <option value="17:00-19:00">17:00-19:00</option>
-                  <option value="19:00-21:00">19:00-21:00</option>
-                  <option value="21:00-23:00">21:00-23:00</option>
-                  <option value="23:00-06:00">23:00-06:00</option>
-                </select>
-                {"통화가능시간 "}
-              </div>
-            
+           
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
                 <input
