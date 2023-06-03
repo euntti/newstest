@@ -188,10 +188,7 @@ table {
   margin-left: 80px;
 }
 
-.btnArea {
-  display: flex;
-  justify-content: center;
-}
+
 .btnArea button {
   background-color: transparent;
   border: 0px;
@@ -274,20 +271,16 @@ table {
      align-items: center;
   }
 
-
- 
-    .bottom-bar .btnArea {
-      
-     
-    float: left;
-      
-     
-    width: 30%;
-      
-     
-    text-align: right;
+.bottom-bar .row {
+  float: left;
+  width: 70%;
     }
-  
+
+.bottom-bar .btnArea {
+     float: left;
+      width: 30%;
+      text-align: right;
+    }
 
   @media (max-width: 600px) {
     .namephone,
