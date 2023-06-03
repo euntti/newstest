@@ -271,12 +271,8 @@ table {
      align-items: center;
   }
 
-.bottom-bar .row {
-  float: left;
-  width: 70%;
-    }
 
-.bottom-bar .btnArea {
+.row .btnArea {
      float: left;
       width: 30%;
       text-align: right;
