@@ -416,7 +416,7 @@ function App6() {
                 </select>
                 {"통화가능시간 "}
               </div>
-            </div>
+            
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
                 <input
@@ -475,6 +475,7 @@ function App6() {
                 )}
               </button>
             </div>
+          </div>
           </div>
           </div>
         
