@@ -275,6 +275,18 @@ align-items: center;
 
 @media (max-width: 412px) 
 {
+
+    .box_container{
+        width:auto;
+        display:block;
+      }
+      .box{
+        float: none;
+        width: auto;
+        font-weight: normal;
+        border: 0;
+      }
+      
   .container {
     display: flex;
     align-items: center;
@@ -395,7 +407,7 @@ align-items: center;
     align-items:  flex-start;
     flex-direction: column;
     overflow: hidden;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 
