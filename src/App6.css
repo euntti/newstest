@@ -247,8 +247,9 @@ table {
     align-items:  flex-start;
     flex-direction: column;
     overflow: hidden;
-  
+    justify-content: center;
 }
+
 
   .botitle {
     margin-bottom: 10px;
