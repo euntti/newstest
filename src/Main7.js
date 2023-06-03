@@ -372,6 +372,7 @@ function App6() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
+            <div className="bottom-bar">
               <div className="namephone ">
                 {/* {<select>
                 <option key="1" value="1">
@@ -472,6 +473,7 @@ function App6() {
                 )}
               </button>
             </div>
+          </div>
           </div>
         </Slider>
         {/* <div className="profit">
