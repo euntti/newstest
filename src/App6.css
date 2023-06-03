@@ -263,12 +263,30 @@ table {
   }
 
 
-.row .btnArea {
-     float: left;
-      width: 30%;
-      text-align: right;
+  .row {
+  
+ 
+    display: flex;
+      
+     
+    align-items: center;
     }
 
+    .btnArea {
+  
+ 
+        display: flex;
+          
+         
+        justify-content: center;
+          
+         
+        margin-top: 20px; /* 필요한 경우 조정하세요 */
+        }
+        
+        
+        
+        
 
 
 @media (max-width: 600px) 
