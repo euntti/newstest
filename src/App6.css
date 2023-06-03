@@ -262,7 +262,7 @@ table {
      align-items: center;
   }
 
-  .btnArea {
+.row.btnArea {
 display: flex;
 justify-content: center;
 margin-top: 20px; /* 필요한 경우 조정하세요 */
