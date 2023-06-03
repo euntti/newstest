@@ -262,27 +262,11 @@ table {
      align-items: center;
   }
 
-
-  .row {
-  
- 
-    display: flex;
-      
-     
-    align-items: center;
-    }
-
-    .btnArea {
-  
- 
-        display: flex;
-          
-         
-        justify-content: center;
-          
-         
-        margin-top: 20px; /* 필요한 경우 조정하세요 */
-        }
+  .btnArea {
+display: flex;
+justify-content: center;
+margin-top: 20px; /* 필요한 경우 조정하세요 */
+ }
         
         
         
