@@ -407,6 +407,7 @@ function App6() {
            
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
+              {check1 && <span className="check-mark">✓</span>}
                 <input
                   type="checkbox"
                   id="privacy"
@@ -436,6 +437,7 @@ function App6() {
                 마케팅수신동의
               </label> */}
               <label style={{ color: "#fff" }}>
+              {check3 && <span className="check-mark">✓</span>}
                 <input
                   type="checkbox"
                   id="privacy"
@@ -459,7 +461,7 @@ function App6() {
                 {isBrowser ? (
                   <img src={"/img/mainbtn.png"}></img>
                 ) : (
-                  <img style={{ width: "390px" }} src={"/img/btn.gif"}></img>
+                  <img style={{ width: "300px" }} src={"/img/btn.gif"}></img>
                 )}
               </button>
             </div>
