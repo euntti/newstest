@@ -262,13 +262,47 @@ table {
      align-items: center;
   }
 
-  .btnArea {
-display: flex;
-justify-content: center;
-margin-top: 20px; /* 필요한 경우 조정하세요 */
-float: right;
- }
-        
+  .bottom-bar {
+  
+ 
+    display: flex;
+      
+     
+    flex-direction: row;
+      
+     
+    justify-content: space-between;
+      
+     
+    align-items: center;
+    }
+    
+    .row {
+      
+     
+    display: flex;
+      
+     
+    flex-direction: row;
+      
+     
+    align-items: center;
+    }
+    
+    .btnArea {
+      
+     
+    display: flex;
+      flex-direction: row;
+      
+     
+    justify-content: flex-end;
+      
+     
+    
+     
+    align-items: center;
+    }
 @media (max-width: 600px) 
 {
   .container {
