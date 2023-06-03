@@ -277,19 +277,10 @@ table {
     margin-bottom: 10px; /* 각 요소 사이의 간격 조정 */
   }
   
-  .row  > * {
-    margin-bottom: 10px;
-    align-self: flex-end;
-  }
   
   .btnArea {
     align-self: flex-end;
     margin-left: auto;
-  }
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
   
 
