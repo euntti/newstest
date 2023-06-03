@@ -171,81 +171,6 @@ function App6() {
       <div className="container">
         <div className="sub">
           <div className="App">
-          <div className={style.container2}>
-      <div className={style.box}>
-        <img className={style.best} src="/static/images/best.png" />
-
-        <div>
-          <div>
-            <div className={style.boxInput}>
-              <Form.Group className="" controlId="formBasic">
-                <Form.Control
-                type="email"
-                className="username"
-                placeholder="이름"
-                maxLength={4}
-                onChange={(e) => setUserName(e.target.value)}
-                />
-              </Form.Group>
-              <div className={style.boxInputContainer}>
-                <div className={style.boxInput2}>
-                  <Form.Select
-                    className="custom-select custom-select-lg ."
-                    aria-label="Default select example"
-                  >
-                    <option value="010">010</option>
-                  </Form.Select>
-                  <Form.Group className="" controlId="formBasic">
-                    <Form.Control
-                      onChange={(e) => setPhoneNumber1(e.target.value)}
-                      type="number"
-                      maxLength={4}
-                      pattern="[0-9]{4}"
-                      placeholder="0000"
-                    />
-                  </Form.Group>
-                  <Form.Group className="" controlId="formBasic">
-                    <Form.Control
-                     onChange={(e) => setPhoneNumber2(e.target.value)}
-                     type="number"
-                     maxLength={4}
-                     pattern="[0-9]{4}"
-                     placeholder="0000"
-                    />
-                  </Form.Group>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={style.chkLinear}>
-            <input
-              type="checkbox"
-              onChange={(e) => setCheck1(e.target.checked)}
-              disabled={false}
-              checked={check1}
-            />
-            <div className={style.chkTitle}>(필수)개인정보 수집 및 활용동의</div>
-            <input
-              type="checkbox"
-              onChange={(e) => setCheck2(e.target.checked)}
-              disabled={false}
-              checked={check2}
-            />
-            <div className={style.chkTitle}>(필수)마케팅수신동의</div>
-          </div>
-        </div>
-
-        <div onClick={() => sendApply()} className={style.consulting}>
-          <img src= "/static/images/click.png" />
-          {/* <button>상담하기</button> */}
-        </div>
-      
-        <div onClick={() => sendKaKao()} className={style.consulting1}>
-        <img src="/static/images/kakao.png" />
-        </div>
-        </div>
-        
-    </div>
             <div className="appPictureContainer">
               {isBrowser ? (
                 <div
@@ -264,7 +189,7 @@ function App6() {
                   /> */}
                   <img
                     src={"/img/sbstock.png"}
-                    style={{ width: 1920 , height:"auto", marginLeft: 20 }}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />
                   {/* <img
@@ -447,27 +372,32 @@ function App6() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
-             <div className="bottom-bar">
-  <div className="namephone">
-  <input
-      type="text"
-      className="username"
-      placeholder="이름"
-      maxLength={4}
-      onChange={(e) => setUserName(e.target.value)}
-    />
-  </div>
-  <div className="phone">
-    <input
-      type="tel"
-      name="user_name"
-      placeholder="휴대폰"
-      maxLength={13}
-      value={phone1}
-      onChange={handlePhoneNumberChange}
-    />
-  </div>
-</div>
+              <div className="namephone ">
+                {/* {<select>
+                <option key="1" value="1">
+                  010
+                </option> 
+              </select>{" "}
+              -{"\t"}} */}
+                <input
+                  type="text"
+                  className="username"
+                  placeholder="이름"
+                  maxLength={4}
+                  onChange={(e) => setUserName(e.target.value)}
+                />
+              </div>
+              {"\t"}
+              <div className="phone">
+                <input
+                       type="tel"
+                       name="user_name"
+                       placeholder="휴대폰"
+                       maxLength={13}
+                       value={phone1}
+                       onChange={handlePhoneNumberChange}
+                      />
+              </div>
               <div className="time">
                 <select value={time} onChange={(e) => setTime(e.target.value)}>
                   <option value="">통화가능시간(필수)</option>
