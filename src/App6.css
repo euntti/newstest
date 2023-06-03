@@ -278,7 +278,9 @@ table {
   .btnArea {
     align-self: flex-end;
     margin-left: auto;
+    float: left;
   }
+  
   
 
   @media (max-width: 600px) {
