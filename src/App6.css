@@ -262,11 +262,7 @@ table {
   
 }
 
-.bottom-bar .row {
-  display: flex;
-  flex-direction: row;
-    }
-    
+
 .bottom-bar .content-column {
 flex: 1;
  }
