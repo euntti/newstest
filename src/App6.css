@@ -274,14 +274,6 @@ table {
     flex-basis: 50%;
     margin-bottom: 10px;
   }
-  .namephone {
-    display: inline-block;
-  }
-  
-  .phone {
-    display: inline-block;
-    margin-left: 10px;
-  }
   .namephone .username {
     margin-right: 10px;
     padding: 5px;
