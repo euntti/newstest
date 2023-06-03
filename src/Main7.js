@@ -106,19 +106,8 @@ function App6() {
     if (phone1 == "") {
       return alert("'-'없이 입력을 해주세요.");
     }
-    if (time == "") {
-      return alert("통화시간 선택해주세요");
-    }
 
-    if (!check1) {
-      return alert("개인정보취급방침동의보기를 체크해주세요.");
-    }
-    // if (!check2) {
-    //   return alert("마케팅수신동의보기를 체크해주세요.");
-    // }
-    if (!check3) {
-      return alert("광고성문자동의 체크해주세요.");
-    }
+  
 
     const phoneNumber = `${phone1}`;
     const name = `${userName}`;
@@ -415,7 +404,7 @@ function App6() {
                  id="privacy"
                  name="agree1"
                   value="1"
-                 checked={check1}
+                 checked={true}
                   onChange={(e) => setCheck1(e.target.checked)}
                     />
                  개인정보취급방침동의
@@ -444,7 +433,7 @@ function App6() {
                   id="privacy"
                   name="agree3"
                   value="1"
-                  checked={check3}
+                  checked={true}
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 광고성문자수신동의
