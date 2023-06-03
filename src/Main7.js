@@ -171,6 +171,7 @@ function App6() {
       <div className="container">
         <div className="sub">
           <div className="App">
+            
             <div className="appPictureContainer">
               {isBrowser ? (
                 <div
@@ -362,6 +363,7 @@ function App6() {
               </>
             )}
           </div> */}
+          </Slider>
           <div>
             <div className="nameArea">
               {/* <div className="nameArea">
@@ -475,7 +477,7 @@ function App6() {
             </div>
           </div>
           </div>
-        </Slider>
+        
         {/* <div className="profit">
           {isBrowser ? (
             <img src={"/img/titleprofit.png"}></img>
