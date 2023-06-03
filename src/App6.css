@@ -268,7 +268,8 @@ table {
   
   .namephone,
   .phone {
-    display: flex;
+    display: inline-block;
+    margin-left: 10px;
     align-items: center;
     margin-right: 10px;
     flex-basis: 50%;
