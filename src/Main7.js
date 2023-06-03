@@ -189,7 +189,7 @@ function App6() {
                   /> */}
                   <img
                     src={"/img/sbstock.png"}
-                    style={{ width: 1920 , height: 1023, marginLeft: 20 }}
+                    style={{ width: 1920 , height:"auto", marginLeft: 20 }}
                     alt="logo "
                   />
                   {/* <img
