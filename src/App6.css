@@ -262,22 +262,20 @@ table {
   
 }
 
-
 .bottom-bar .row {
-    display: flex;
-   justify-content: space-between;
-  }
+  display: flex;
+  flex-direction: row;
+    }
+    
+.bottom-bar .content-column {
+flex: 1;
+ }
+    .bottom-bar .btnArea {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
   
-  .bottom-bar .content-column {
-  flex: 1;
-  }
-  
-  .bottom-bar .btnArea {
-display: flex;
-align-items: center;
-  }
-  
-
 
   @media (max-width: 600px) {
     .namephone,
