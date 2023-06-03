@@ -338,6 +338,39 @@ table {
     width: 150px;
   }
 
+  .checkbox-label {
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .checkbox-label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+  }
+  
+  .checkbox-label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%) scale(0);
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .checkbox-label input[type="checkbox"]:checked + .checkbox-label::after {
+    transform: translateY(-50%) scale(1);
+  }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
