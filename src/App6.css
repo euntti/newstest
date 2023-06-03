@@ -275,9 +275,8 @@ table {
   }
 
   
-  .btnArea {
-    align-self: flex-end;
-    margin-left: auto;
+  .row.btnArea {
+   
     float: left;
   }
   
