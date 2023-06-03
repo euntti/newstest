@@ -262,17 +262,13 @@ table {
      align-items: center;
   }
 
-.row.btnArea {
+  .btnArea {
 display: flex;
 justify-content: center;
 margin-top: 20px; /* 필요한 경우 조정하세요 */
+float: right;
  }
         
-        
-        
-        
-
-
 @media (max-width: 600px) 
 {
   .container {
