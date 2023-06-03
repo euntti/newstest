@@ -190,7 +190,7 @@ function App6() {
                   /> */}
                   <img
                     src={"/img/sbstock.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    style={{ width: 1268 , height: "auto", marginLeft: 20 }}
                     alt="logo "
                   />
                   {/* <img
@@ -375,6 +375,9 @@ function App6() {
               ></input>
             </div> */}
             <div className="bottom-bar">
+                <div className="botitle">
+                    2023년 하반기 급등 예상 종목 무료 받기
+                </div>
               <div className="namephone ">
                 {/* {<select>
                 <option key="1" value="1">
