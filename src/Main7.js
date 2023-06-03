@@ -372,32 +372,27 @@ function App6() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
-              <div className="namephone ">
-                {/* {<select>
-                <option key="1" value="1">
-                  010
-                </option> 
-              </select>{" "}
-              -{"\t"}} */}
-                <input
-                  type="text"
-                  className="username"
-                  placeholder="이름"
-                  maxLength={4}
-                  onChange={(e) => setUserName(e.target.value)}
-                />
-              </div>
-              {"\t"}
-              <div className="phone">
-                <input
-                       type="tel"
-                       name="user_name"
-                       placeholder="휴대폰"
-                       maxLength={13}
-                       value={phone1}
-                       onChange={handlePhoneNumberChange}
-                      />
-              </div>
+             <div className="bottom-bar">
+  <div className="namephone">
+  <input
+      type="text"
+      className="username"
+      placeholder="이름"
+      maxLength={4}
+      onChange={(e) => setUserName(e.target.value)}
+    />
+  </div>
+  <div className="phone">
+    <input
+      type="tel"
+      name="user_name"
+      placeholder="휴대폰"
+      maxLength={13}
+      value={phone1}
+      onChange={handlePhoneNumberChange}
+    />
+  </div>
+</div>
               <div className="time">
                 <select value={time} onChange={(e) => setTime(e.target.value)}>
                   <option value="">통화가능시간(필수)</option>
