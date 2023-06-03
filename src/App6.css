@@ -269,15 +269,13 @@ table {
   .namephone,
   .phone,
   .checkbox-label {
-    margin-bottom: 10px;
     display: flex;
      align-items: center;
   }
 
   
-  .row.btnArea {
-   
-    float: left;
+  .row .btnArea {
+   float: left;
   }
   
   
