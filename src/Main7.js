@@ -408,7 +408,7 @@ function App6() {
                       />
               </div>
            
-                <div style={{ marginLeft: 10 }}>
+                <div style={{  }}>
                  <label className="checkbox-label" style={{ color: "#fff" }}>
                 <input
                  type="checkbox"
