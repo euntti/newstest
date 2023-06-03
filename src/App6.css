@@ -262,23 +262,20 @@ table {
   
 }
 
-  .botitle {
-    margin-bottom: 10px;
-  }
-  
-  .namephone,
-  .phone,
-  .checkbox-label {
-    margin-bottom: 10px;
-    display: flex;
-     align-items: center;
-  }
-
-  
-  .btnArea {
-    align-self: flex-end;
-    margin-left: auto;
-  }
+.bottom-bar .row {
+  display: flex;
+  flex-direction: row;
+    }
+    
+.bottom-bar .content-column {
+flex: 1;
+ }
+    
+ .bottom-bar .btnArea {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
   
 
   @media (max-width: 600px) {
