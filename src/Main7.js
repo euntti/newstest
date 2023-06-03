@@ -374,6 +374,8 @@ function App6() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
+             </div>
+             </div>
             <div className="bottom-bar">
             <div className="row">
                 <div className="botitle">
@@ -406,8 +408,8 @@ function App6() {
                       />
               </div>
            
-            <div style={{ marginLeft: 10 }}>
-            <label className="checkbox-label" style={{ color: "#fff" }}>
+                <div style={{ marginLeft: 10 }}>
+                 <label className="checkbox-label" style={{ color: "#fff" }}>
                 <input
                  type="checkbox"
                  id="privacy"
@@ -465,8 +467,6 @@ function App6() {
                 )}
               </button>
             </div>
-          </div>
-          </div>
           </div>
         
         {/* <div className="profit">
