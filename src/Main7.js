@@ -455,6 +455,7 @@ function App6() {
                 </a>
               </label>
             </div>
+            </div>
             <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
@@ -463,7 +464,6 @@ function App6() {
                   <img style={{ width: "300px" }} src={"/img/btn.gif"}></img>
                 )}
               </button>
-            </div>
             </div>
           </div>
           </div>

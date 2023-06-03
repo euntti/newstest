@@ -267,12 +267,12 @@ table {
 flex: 1;
  }
     
- .bottom-bar .btnArea {
+ .row.btnArea {
       display: flex;
       justify-content: flex-end;
       align-items: center;
     }
-  
+
 
   @media (max-width: 600px) {
     .namephone,
