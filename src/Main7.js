@@ -375,6 +375,7 @@ function App6() {
               ></input>
             </div> */}
             <div className="bottom-bar">
+            <div className="row">
                 <div className="botitle">
                     2023년 하반기 급등 예상 종목 무료 받기
                 </div>
@@ -406,25 +407,24 @@ function App6() {
               </div>
            
             <div style={{ marginLeft: 10 }}>
-              <label style={{ color: "#fff" }}>
-              {check1 && <span className="check-mark">✓</span>}
+            <label className="checkbox-label" style={{ color: "#fff" }}>
                 <input
-                  type="checkbox"
-                  id="privacy"
-                  name="agree1"
+                 type="checkbox"
+                 id="privacy"
+                 name="agree1"
                   value="1"
-                  checked={check1}
+                 checked={check1}
                   onChange={(e) => setCheck1(e.target.checked)}
-                />
-                개인정보취급방침동의
-                <a
-                  href="javascript:void(0);"
+                    />
+                 개인정보취급방침동의
+                 <a
+                 href="javascript:void(0);"
                   onClick={() => setIsOpen2(true)}
                   // onclick="privacy_pop('show', '.pop-policy',2)"
-                >
+                    >
                   [보기]
-                </a>
-              </label>
+                  </a>
+                </label>
               {/* <label style={{ color: "#fff" }}>
                 <input
                   type="checkbox"
@@ -437,7 +437,6 @@ function App6() {
                 마케팅수신동의
               </label> */}
               <label style={{ color: "#fff" }}>
-              {check3 && <span className="check-mark">✓</span>}
                 <input
                   type="checkbox"
                   id="privacy"
@@ -464,6 +463,7 @@ function App6() {
                   <img style={{ width: "300px" }} src={"/img/btn.gif"}></img>
                 )}
               </button>
+            </div>
             </div>
           </div>
           </div>

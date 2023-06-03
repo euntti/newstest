@@ -283,7 +283,13 @@ table {
     align-self: flex-end;
     margin-left: auto;
   }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   
+
   @media (max-width: 600px) {
     .namephone,
     .phone {
