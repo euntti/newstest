@@ -265,19 +265,18 @@ table {
   }
   
   .namephone,
-  .phone,
-  .time {
+  .phone {
     display: flex;
     align-items: center;
     margin-right: 10px;
   }
   
-  .username {
+  .namephone .username {
     margin-right: 10px;
     padding: 5px;
   }
   
-  select {
+  .phone input {
     margin-right: 10px;
   }
   
@@ -293,7 +292,6 @@ table {
   
   .btnArea button {
    
- 
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -303,6 +301,7 @@ table {
   .btnArea button img {
     width: 390px;
   }
+ 
   
   .namephone,
   .phone {
