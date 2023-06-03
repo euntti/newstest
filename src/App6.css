@@ -257,7 +257,6 @@ table {
   .namephone,
   .phone,
   .checkbox-label {
-    display: flex;
      align-items: center;
   }
 
