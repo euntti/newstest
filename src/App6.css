@@ -273,10 +273,7 @@ table {
     display: flex;
      align-items: center;
   }
-  .checkbox-label {
-    margin-bottom: 10px; /* 각 요소 사이의 간격 조정 */
-  }
-  
+
   
   .btnArea {
     align-self: flex-end;
