@@ -256,11 +256,29 @@ table {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items:  flex-start;
     justify-content: space-between;
+    flex-direction: column;
   
 }
+
+  .botitle {
+    margin-bottom: 10px;
+  }
   
+  .namephone,
+  .phone,
+  .checkbox-label {
+    margin-bottom: 10px;
+  }
+  
+  .bottom-bar > * {
+    margin-bottom: 10px;
+  }
+  
+  .btnArea {
+    align-self: flex-end;
+  }
   
   @media (max-width: 600px) {
     .namephone,
