@@ -259,6 +259,7 @@ table {
     align-items:  flex-start;
     justify-content: space-between;
     flex-direction: column;
+    overflow: hidden;
   
 }
 
@@ -273,11 +274,27 @@ table {
      align-items: center;
   }
 
+
+  .bottom-bar .row {
   
-  .row .btnArea {
-   float: left;
-  }
-  
+ 
+    float: left;
+      
+     
+    width: 70%;
+    }
+    
+    .bottom-bar .btnArea {
+      
+     
+    float: left;
+      
+     
+    width: 30%;
+      
+     
+    text-align: right;
+    }
   
 
   @media (max-width: 600px) {
