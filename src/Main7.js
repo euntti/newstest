@@ -189,7 +189,7 @@ function App6() {
           style={{
             maxWidth: "600px",
             height: "auto",
-            marginLeft: "auto",
+            marginLeft: "130px",
             marginRight: "auto",
             display: "block",
           }}
@@ -203,7 +203,7 @@ function App6() {
       style={{
         maxWidth: "600px",
         height: "auto",
-        marginLeft: "auto",
+        marginLeft: "130px",
         marginRight: "auto",
         display: "block",
       }}
@@ -466,7 +466,7 @@ function App6() {
       </h4>
       <h1
         style={{
-          // color: "#fff",
+          color: "#fff",
           fontSize: 50,
           textAlign: "center",
           marginTop: 20,
