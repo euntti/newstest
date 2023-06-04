@@ -214,6 +214,11 @@ function App6() {
                     alignItems: "center",
                   }}
                 >
+                   <img
+                    src={"/img/sbstock.png"}
+                    style={{ width: 1268 , height: "auto", marginLeft: 20 }}
+                    alt="logo "
+                  />
                   {/* <img
                     className="appPicture"
                     src={"/img/logo.png"}
