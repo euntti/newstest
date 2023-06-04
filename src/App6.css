@@ -140,6 +140,7 @@ table {
 .namephone {
   display: flex;
   align-items: center;
+ 
   margin-right: 10px;
 }
 
@@ -229,6 +230,7 @@ table {
 }
 
 .bottom-bar {
+ 
     position: fixed;
     bottom: 0;
     left: 0;
@@ -285,9 +287,10 @@ table {
   .row {
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 10px;
     gap: 10px;
     width: 300px;
+    display: flex;
    
   }   
 
@@ -308,11 +311,12 @@ table {
   display: flex;
   align-items: center;
   color: #fff;
-}
+  margin-bottom: 10px;}
 
 .btnArea {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
 }
  
   
