@@ -144,6 +144,7 @@ function App6() {
     autoplaySpeed: 3000,
   };
   return (
+    <div>
     <div
       style={{
         backgroundImage: isMobile
@@ -161,23 +162,23 @@ function App6() {
         <div className="sub">
           <div className="App">
             
-            <div className="appPictureContainer">
-              {isBrowser ? (
-                 <div
-                 style={{
-                   display: "flex",
-                   flexDirection: "column",
-                   justifyContent: "center",
-                   alignItems: "center",
-                 }}
-               >
-                  {/* <img
-                    className="appPicture"
-                    src={"/img/logo.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
-                  /> */}
-                  {isBrowser ? (
+          <div className="appPictureContainer">
+  {isBrowser ? (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      {/* <img
+        className="appPicture"
+        src={"/img/logo.png"}
+        // style={{ width: 800, height: 1023, marginLeft: 20 }}
+        alt="logo "
+      /> */}
+      {isBrowser ? (
         <img
           style={{ width: "1260px", height: "auto", marginLeft: "auto" }}
           src={"/img/sbstock.png"}
@@ -195,82 +196,23 @@ function App6() {
           src={"/img/sbstock.png"}
           alt="image"
         ></img>
-      )} : (
-        <img
-          style={{
-            maxWidth: "600px",
-            height: "auto",
-            marginLeft: "auto",
-            marginRight: "auto",
-            display: "block",
-          }}
-          src={"/img/sbstock.png"}
-          alt="image"
-        ></img>
       )}
-                  {/* <img
-                    src={"/img/theme2.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
-                  />{" "} */}
-                  {/* <img
-                    style={{ width: 500 }}
-                    src={"/img/theme4.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
-                  /> */}
-                  {/* <div
-                    style={{ color: "#fff", fontSize: 30, margin: "30px 0" }}
-                  >
-                    1억만들기 프로젝트 30일 무료체험 신청하세요
-                  </div> */}
-                </div>
-              ) : (
-                // <img
-                //   className="appPicture"
-                //   src={"/img/ms.jpeg"}
-                //   // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                //   alt="logo "
-                // />
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                   {isBrowser ? (
-            <img style={{ width: "1000px" , height: "auto", marginLeft: 20 }} src={"/img/sbstock.png"}></img>
-            ) : (
-              <img style={{ width: "550px" , height: "auto", marginLeft: "auto" , marginRight : "auto"  }} src={"/img/sbstock.png"}></img>
-            )}
-                  {/* <img
-                    className="appPicture"
-                    src={"/img/logo.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
-                  /> */}
-                 
-                  {/* <img
-                    style={{ width: 300 }}
-                    src={"/img/theme2.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
-                  />{" "} */}
-                  {/* <img
-                    style={{ width: 300 }}
-                    src={"/img/theme4.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
-                  /> */}
-                  {/* <div
-                    style={{ color: "#fff", fontSize: 20, margin: "30px 0" }}
-                  >
-                    1억만들기 프로젝트 30일 무료체험 신청하세요
-                  </div> */}
-                </div>
-              )}
+    </div>
+  ) : (
+    <img
+      style={{
+        maxWidth: "600px",
+        height: "auto",
+        marginLeft: "auto",
+        marginRight: "auto",
+        display: "block",
+      }}
+      src={"/img/sbstock.png"}
+      alt="image"
+    ></img>
+  )}
+</div>
+
             </div>
           </div>
           <div></div>
