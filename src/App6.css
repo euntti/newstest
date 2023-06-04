@@ -342,20 +342,6 @@ table {
     color: #fff;
     margin-right: 10px;
   }
-  .row2 > .btnArea {
-  
- 
-    flex: 1;
-      
-     
-    display: flex;
-      
-     
-    align-items: center;
-      
-     
-    justify-content: center;
-    }
   
   /* .namephone,
   .phone
@@ -368,7 +354,7 @@ table {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   
  
