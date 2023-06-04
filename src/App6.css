@@ -254,12 +254,21 @@ table {
   .botitle {
     margin-bottom: 10px;
   }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
   
   .namephone,
-  .phone,
+  .phone {
+    flex: 1;
+  }
+  /* .namephone,
+  .phone
   .checkbox-label {
      align-items: center;
-  }
+  } */
 
   .bottom-bar {
   flex-direction: row;
@@ -370,6 +379,17 @@ align-items: center;
     display: flex;
     justify-content: center;
   }
+
+  .App .namephone,
+  .phone,
+  .checkbox-label {
+     align-items: center;
+  }
+
+  .App .bottom-bar {
+    flex-direction: row;
+    align-items: center;
+    }
 
 
    .profit {
