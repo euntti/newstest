@@ -380,7 +380,7 @@ function App6() {
                     2023년 하반기 급등 예상 종목 무료 받기
                 </div>
                 <div className="row">
-              <div className="namephone ">
+              <div className="namephone7 ">
                 {/* {<select>
                 <option key="1" value="1">
                   010
@@ -396,7 +396,7 @@ function App6() {
                 />
               </div>
               {"\t"}
-              <div className="phone">
+              <div className="phone7">
                 <input
                        type="tel"
                        name="user_name"
@@ -409,7 +409,7 @@ function App6() {
            </div>
            
                 <div style={{  }}>
-                 <label className="checkbox-label" style={{ color: "#fff" }}>
+                 <label className="checkbox-label7" style={{ color: "#fff" }}>
                 <input
                  type="checkbox"
                  id="privacy"
@@ -459,7 +459,7 @@ function App6() {
             
             </div>
 
-            <div className="btnArea">
+            <div className="btnArea7">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
                   <img  style={{ width: "200px", display: "flex"  }} src={"/img/mainbtn.png"}></img>
