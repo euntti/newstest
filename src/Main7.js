@@ -446,9 +446,9 @@ function App6() {
             <div className="btnArea7">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
-                  <img  style={{ width: "200px", display: "flex"  }} src={"/img/mainbtn.png"}></img>
+                  <img  style={{   }} src={"/img/mainbtn.png"}></img>
                 ) : (
-                  <img style={{ width: "200px" , display: "flex" }} src={"/img/mainbtn.png"}></img>
+                  <img style={{ }} src={"/img/mainbtn.png"}></img>
                 )}
               </button>
             </div>
