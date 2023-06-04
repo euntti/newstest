@@ -239,9 +239,9 @@ table {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     overflow: hidden;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     padding: 20px;
 }
@@ -269,10 +269,8 @@ table {
 
 .btnArea button {
 
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  font-size: 14px;
+  width: 200px;
+  display: flex;
   cursor: pointer;
 }
 
@@ -314,8 +312,7 @@ table {
 
 .btnArea {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
+  flex-direction: row;
 }
  
   
