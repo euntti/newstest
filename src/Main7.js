@@ -187,9 +187,9 @@ function App6() {
       ) : (
         <img
           style={{
-            maxWidth: "600px",
+            maxWidth: "412px",
             height: "auto",
-            marginLeft: "auto",
+            marginLeft: "110px",
             marginRight: "auto",
             display: "block",
           }}
@@ -203,7 +203,7 @@ function App6() {
       style={{
         maxWidth: "600px",
         height: "auto",
-        marginLeft: "130px",
+        marginLeft: "auto",
         marginRight: "auto",
         display: "block",
       }}
