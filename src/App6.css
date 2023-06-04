@@ -285,6 +285,11 @@ table {
 }
 
 
+.checkbox-label.btnArea {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
 .btnArea button {
 
   border: none;
