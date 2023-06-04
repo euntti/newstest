@@ -141,7 +141,11 @@ table {
   flex-wrap: nowrap;
   justify-content: center;
 }
-.username {
+.username input{
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #000000;
   display: flex;
   width: 600px;
   height: 75px;
@@ -161,6 +165,10 @@ table {
   margin: 0 12.5px 0;
 }
 .phone input {
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #000000;
   display: flex;
   width: 600px;
   height: 75px;
@@ -262,11 +270,7 @@ table {
   
   .namephone,
   .phone {
-  width: 300px;
-  box-sizing: border-box;
-  padding: 10px;
-  border-radius: 20px;
-  border: 1px solid #000000;
+ 
   flex: 1;
   }
   /* .namephone,
