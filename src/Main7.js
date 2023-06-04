@@ -19,6 +19,8 @@ import Modal from "react-modal";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from 'react';
 const LazyImage = lazy(() => import('./LazyImage'));
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 
 const customStyles = {
   content: {
@@ -179,13 +181,19 @@ function App6() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                <Suspense fallback={<div>Loading...</div>}>
-                <LazyImage />
-                </Suspense>
+                    <Suspense fallback={<div>Loading...</div>}>
+                    <LazyImage />
+                     {isBrowser || isMobile ? (
+                      <img src="/img/sbstock.png" style={{ width: 1268 }} alt="button" />
+                     ) : (
+                     <img src="//img/sbstock.png" style={{ width: "auto", display: "flex" }} alt="button" />
+                        )}
+                    </Suspense>
                  <img
                 src={"/img/sbstock.png"}
                 style={{ width: 1268, height: "auto", marginLeft: 20 }}
                 alt="logo"
+                
                 />
                 
                   {/* <img
