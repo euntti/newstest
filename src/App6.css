@@ -336,8 +336,10 @@ table {
  .btnArea {
   display: flex;
  justify-content: flex-start;
+ align-items: center;
  margin-top: 10px;
  }
+
 
  
 @media (max-width: 600px) 
