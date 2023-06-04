@@ -371,10 +371,10 @@ function App6() {
              </div>
              </div>
             <div className="bottom-bar">
-              <div className="row">
-                <div className="botitle">
+              <div className="botitle">
                     2023년 하반기 급등 예상 종목 무료 받기
                 </div>
+                <div className="row">
               <div className="namephone ">
                 {/* {<select>
                 <option key="1" value="1">

@@ -137,7 +137,7 @@ table {
   margin-left: 20px;
 }
 .namephone{
-  display:inline-flex;
+  display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
@@ -163,8 +163,7 @@ table {
 }
 
 .phone {
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
   align-items: center;
 
   }
@@ -259,6 +258,7 @@ table {
     overflow: hidden;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
 
@@ -276,7 +276,7 @@ table {
 .checkbox-label {
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 10px; 
 }
 
 .checkbox-label a {
@@ -295,7 +295,7 @@ table {
 }
   .botitle {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
   .row {
@@ -307,6 +307,7 @@ table {
     width: 300px;
     margin-bottom: 10px;
   }
+
   
   .namephone,
   .phone {
@@ -328,6 +329,7 @@ table {
     }
 
  .btnArea {
+  
   display: flex;
   flex-direction: row;
  justify-content: center;
