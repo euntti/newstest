@@ -422,7 +422,7 @@ table {
     display: block;
   }
   .appPictureContainer img{
-    width: auto;
+    width: 600px;
     
   }
 }
