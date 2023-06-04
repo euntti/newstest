@@ -359,17 +359,6 @@ function App6() {
           </div> */}
           </Slider>
           <div>
-            <div className="nameArea">
-              {/* <div className="nameArea">
-              <input
-                type="text"
-                className="username"
-                placeholder="이름"
-                onChange={(e) => setUserName(e.target.value)}
-              ></input>
-            </div> */}
-             </div>
-             </div>
             <div className="bottom-bar">
               <div className="botitle">
                     2023년 하반기 급등 예상 종목 무료 받기
