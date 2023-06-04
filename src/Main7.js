@@ -453,6 +453,7 @@ function App6() {
               </label>
             </div>
             </div>
+            </div>
             <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
@@ -462,7 +463,7 @@ function App6() {
                 )}
               </button>
             </div>
-          </div>
+       
         
         {/* <div className="profit">
           {isBrowser ? (
