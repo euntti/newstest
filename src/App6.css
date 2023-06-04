@@ -277,11 +277,11 @@ table {
   display: flex;
   align-items: center;
   margin-right: 10px; 
+  text-decoration: none;
 }
 
 .checkbox-label a {
   margin-left: 5px;
-  color: #fff;
   text-decoration: none;
 }
 
@@ -314,6 +314,7 @@ table {
   align-items: center;
   flex: 1;
   }
+  
   .row2 {
     display: flex;
     align-items: center;
@@ -335,14 +336,7 @@ table {
   justify-content: flex-end;
  }
 
- .btnArea button {
 
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  font-size: 14px;
-  cursor: pointer;
-}
  
 @media (max-width: 600px) 
 {
