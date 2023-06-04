@@ -163,25 +163,51 @@ function App6() {
             
             <div className="appPictureContainer">
               {isBrowser ? (
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
+                 <div
+                 style={{
+                   display: "flex",
+                   flexDirection: "column",
+                   justifyContent: "center",
+                   alignItems: "center",
+                 }}
+               >
                   {/* <img
                     className="appPicture"
                     src={"/img/logo.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                   {isBrowser ? (
-            <img style={{ width: "1260px" , height: "auto", marginLeft: "auto" }} src={"/img/sbstock.png"}></img>
-          ) : (
-            <img style={{ width: "600px" , height: "auto", marginLeft: "auto" , marginRight:"auto" , display: "block" }} src={"/img/sbstock.png"}></img>
-          )}
+                  {isBrowser ? (
+        <img
+          style={{ width: "1260px", height: "auto", marginLeft: "auto" }}
+          src={"/img/sbstock.png"}
+          alt="image"
+        ></img>
+      ) : (
+        <img
+          style={{
+            maxWidth: "600px",
+            height: "auto",
+            marginLeft: "auto",
+            marginRight: "auto",
+            display: "block",
+          }}
+          src={"/img/sbstock.png"}
+          alt="image"
+        ></img>
+      )} : (
+        <img
+          style={{
+            maxWidth: "600px",
+            height: "auto",
+            marginLeft: "auto",
+            marginRight: "auto",
+            display: "block",
+          }}
+          src={"/img/sbstock.png"}
+          alt="image"
+        ></img>
+      )}
                   {/* <img
                     src={"/img/theme2.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
