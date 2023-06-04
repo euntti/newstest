@@ -299,9 +299,15 @@ table {
   .btnArea7{
     padding: 0 0 0 0;
     margin: 0 0 0 0;
+    background-color: #c10000;
   }
 
- 
+  .btnArea7 button {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    cursor: pointer;
+    background-color: #c10000;
+  }
 
 
  
@@ -388,6 +394,7 @@ table {
     margin: 0 0 0 0;
     display: flex;
     justify-content: center;
+    background-color: #c10000;
   }
 
   .App .namephone7,
