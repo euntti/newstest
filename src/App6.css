@@ -274,7 +274,7 @@ table {
 }
 
 .checkbox-label {
-  flex: 2;
+  flex: 1;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -324,19 +324,13 @@ table {
   }
   
  
-  .checkbox-label,
+.checkbox-label,
 .btnArea {
-  flex-direction: column;
   display: flex;
   align-items: center;
   flex: 1;
 }
-.checkbox-label,
-.btnArea {
-  
- 
-flex: 1;
-}
+
   .row2 label {
     color: #fff;
     margin-right: 10px;
@@ -350,7 +344,7 @@ flex: 1;
 
  
   .btnArea {
-    flex: 2;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
