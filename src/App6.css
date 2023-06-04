@@ -377,8 +377,8 @@ table {
   }
  
   .App .btnArea7 button {
- 
-    /* height: 50px; */
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
     cursor: pointer;
   }
   .App .btnArea7 {
