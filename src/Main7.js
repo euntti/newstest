@@ -216,9 +216,9 @@ function App6() {
                 >
                    {isBrowser ? (
             <img style={{ width: "1000px" , height: "auto", marginLeft: 20 }} src={"/img/sbstock.png"}></img>
-          ) : (
-            <img style={{ width: "600px" , height: "auto", marginLeft: 20 }} src={"/img/sbstock.png"}></img>
-          )}
+            ) : (
+              <img style={{ width: "550px" , height: "auto", marginLeft: 30 }} src={"/img/sbstock.png"}></img>
+            )}
                   {/* <img
                     className="appPicture"
                     src={"/img/logo.png"}
