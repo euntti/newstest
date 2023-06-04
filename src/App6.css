@@ -141,7 +141,7 @@ table {
   flex-wrap: nowrap;
   justify-content: center;
 }
-.username {
+.username input{
   display: flex;
   width: 600px;
   height: 75px;
@@ -149,6 +149,10 @@ table {
   margin-right: 4px;
   margin-bottom: 10px;
   font-size: 18pt;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
 }
 .phone {
   display: flex;
@@ -168,19 +172,12 @@ table {
   margin-right: 4px;
   margin-bottom: 10px;
   font-size: 18pt;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
 }
-.time select {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 600px;
-  height: 75px;
-  margin-right: 4px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  font-size: 18pt;
 
-}
 .time {
   justify-content: center;
   align-items: center;
@@ -258,6 +255,7 @@ table {
     display: flex;
     align-items: center;
     gap: 10px;
+    width: auto;
   }
   
   .namephone,
