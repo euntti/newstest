@@ -214,11 +214,16 @@ function App6() {
                     alignItems: "center",
                   }}
                 >
-                   <img
-                    src={"/img/sbstock.png"}
-                    style={{ width: 1268 , height: "auto", marginLeft: 20 }}
-                    alt="logo "
-                  />
+                  <a img
+                style={{ width: 300, height: "auto" }}
+                 src={"/img//sbstock.png"}
+                 href="#"
+                 onClick={() => {
+                   window.open("https://sbstock.kr/", "_blank");
+                 }}
+               >
+                </a>
+                   
                   {/* <img
                     className="appPicture"
                     src={"/img/logo.png"}
