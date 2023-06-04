@@ -422,18 +422,7 @@ function App6() {
                   [보기]
                   </a>
                 </label>
-              {/* <label style={{ color: "#fff" }}>
-                <input
-                  type="checkbox"
-                  id="privacy"
-                  name="agree2"
-                  value="1"
-                  checked={check2}
-                  onChange={(e) => setCheck2(e.target.checked)}
-                />
-                마케팅수신동의
-              </label> */}
-              <label style={{ color: "#fff" }}>
+              <label className="checkbox-label7" style={{ color: "#fff" }}>
                 <input
                   type="checkbox"
                   id="privacy"
