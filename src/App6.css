@@ -274,10 +274,8 @@ table {
   }
 
   .row {
-    display: flex;
-    align-items: center;
     margin-bottom: 10px;
-    gap: 10px;
+    gap: 0px;
     display: flex;
    align-items: center;
   
@@ -354,9 +352,14 @@ table {
    
     justify-content: center;
     height: 45px;
-    width: 100px;
+    width: 150px;
   }
 
+  .App .row {
+    gap: 0px;
+    width: 412px;
+
+  }
   .App .phone7 {
     display: block;
     justify-content: center;
@@ -435,4 +438,5 @@ table {
     width: 600px;
     
   }
+  
 }
