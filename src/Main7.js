@@ -178,7 +178,7 @@ function App6() {
                     alt="logo "
                   /> */}
                    {isBrowser ? (
-            <img style={{ width: "1920px" , height: "auto", marginLeft: 20 }} src={"/img/sbstock.png"}></img>
+            <img style={{ width: "1260px" , height: "auto", marginLeft: "auto" }} src={"/img/sbstock.png"}></img>
           ) : (
             <img style={{ width: "600px" , height: "auto", marginLeft: "auto" , marginRight:"auto" , display: "block" }} src={"/img/sbstock.png"}></img>
           )}

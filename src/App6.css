@@ -297,6 +297,7 @@ table {
     margin-bottom: 10px;
   }
   .btnArea7{
+    padding: 0 0 0 0;
     margin: 0 0 0 0;
   }
 
@@ -383,6 +384,8 @@ table {
     background-color: #c10000;
   }
   .App .btnArea7 {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
     display: flex;
     justify-content: center;
   }
