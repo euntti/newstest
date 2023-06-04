@@ -35,8 +35,8 @@ const Main7 = () => {
 
 function App6() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
-  const [userName, setUserName] = useState("");
-  const [phone1, setPhone1] = useState("");
+  const [userName7, setUserName7] = useState("");
+  const [phone17, setPhone17] = useState("");
   const handlePhoneNumberChange = (e) => {
     let formattedNumber = e.target.value.replace(/-/g, ""); // 하이픈 제거
     if (formattedNumber.length > 2 && formattedNumber.length < 6) {
@@ -100,17 +100,17 @@ function App6() {
 
   const submitEvent = (e) => {
     e.preventDefault();
-    if (userName == "") {
+    if (userName7 == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phone1 == "") {
+    if (phone17 == "") {
       return alert("'-'없이 입력을 해주세요.");
     }
 
   
 
-    const phoneNumber = `${phone1}`;
-    const name = `${userName}`;
+    const phoneNumber = `${phone17}`;
+    const name = `${userName7}`;
     const selectedTime = `${time}`;
     const param = {
       phoneNumber: phoneNumber,
@@ -129,7 +129,7 @@ function App6() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
+      `sb글로벌 ${userName7} 휴대폰 번호 ${phone17}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
   };
@@ -384,7 +384,7 @@ function App6() {
               -{"\t"}} */}
                 <input
                   type="text"
-                  className="username"
+                  className="username7"
                   placeholder="이름"
                   maxLength={4}
                   onChange={(e) => setUserName(e.target.value)}
@@ -394,7 +394,7 @@ function App6() {
               <div className="phone7">
                 <input
                        type="tel"
-                       name="user_name"
+                       name="user_name7"
                        placeholder="휴대폰"
                        maxLength={13}
                        value={phone1}
