@@ -342,7 +342,7 @@ table {
     color: #fff;
     margin-right: 10px;
   }
-  .row2 > div {
+  .row2 > .btnArea {
   
  
     flex: 1;
@@ -370,8 +370,9 @@ table {
     align-items: center;
     justify-content: space-between;
   }
+  
  
-@media (max-width: 300px) 
+@media (max-width: 600px) 
 {
   .container {
     display: flex;
