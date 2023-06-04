@@ -326,6 +326,7 @@ table {
   align-items: center;
   flex: 1;
   justify-content: center;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -346,6 +347,7 @@ table {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex-direction: column;
   }
   
  
