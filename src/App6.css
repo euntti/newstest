@@ -280,7 +280,11 @@ align-items: center;
     align-items: center;
     /* justify-content: center; */
   }
-  .App {
+  .App .bottom-bar {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .appPictureContainer {
     display: flex;
