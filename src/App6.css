@@ -273,12 +273,7 @@ table {
   border: 1px solid #ccc;
 }
 
-.checkbox-label {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
+
 
 .checkbox-label a {
   margin-left: 5px;
@@ -320,35 +315,26 @@ table {
   }
   
  
-.checkbox-label,
-.btnArea button {
+
+
+.row2 {
   display: flex;
   align-items: center;
-  flex: 1;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
 }
 
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
 
-
-
-  
-  /* .namephone,
-  .phone
-  .checkbox-label {
-     align-items: center;
-  } */
-
+.btnArea {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
  
-  .btnArea {
-    width: 250px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-  }
   
  
 @media (max-width: 600px) 
