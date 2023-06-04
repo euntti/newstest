@@ -330,6 +330,12 @@ table {
   align-items: center;
 
 }
+.checkbox-label,
+.btnArea {
+  
+ 
+flex: 1;
+}
   .row2 label {
     color: #fff;
     margin-right: 10px;
