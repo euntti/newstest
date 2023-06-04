@@ -137,10 +137,15 @@ table {
   margin-left: 20px;
 }
 .namephone{
-  display: inline-flex;
+  display:inline-flex;
   flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
 
+}
+.namephone input,
+.phone input {
+  margin-right: 5px;
 }
 .username {
   display: flex;
@@ -157,15 +162,20 @@ table {
 }
 
 .phone {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-}
+
+  }
+
 .phone select {
   width: 484px;
   height: 48px;
   margin: 0 12.5px 0;
 }
+
+
+
 .phone input {
   display: flex;
   width: 600px;
@@ -268,10 +278,21 @@ table {
   margin-right: 10px;
 }
 
-.btnArea {
-  margin-top: 10px;
+.checkbox-label a {
+  margin-left: 5px;
+  color: #fff;
+  text-decoration: none;
 }
 
+
+.btnArea button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
   .botitle {
     font-weight: bold;
     font-size: 18px;
@@ -308,11 +329,12 @@ table {
 
  .btnArea {
   display: flex;
-flex-direction: row;
- justify-content: flex-end;
-align-items: center;
+  flex-direction: row;
+ justify-content: center;
+  align-items: center;
+    margin-top: 10px; 
  }
-
+ 
 @media (max-width: 600px) 
 {
   .container {
