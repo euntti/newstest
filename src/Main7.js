@@ -189,7 +189,7 @@ function App6() {
           style={{
             maxWidth: "600px",
             height: "auto",
-            marginLeft: "130px",
+            marginLeft: "auto",
             marginRight: "auto",
             display: "block",
           }}
