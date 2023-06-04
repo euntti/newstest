@@ -134,7 +134,7 @@ table {
 .appPicture {
   width: 800px;
   height: 1023px;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 .namephone {
@@ -142,10 +142,7 @@ table {
   align-items: center;
   margin-right: 10px;
 }
-.namephone input,
-.phone input {
-  margin-right: 5px;
-}
+
 
 .username {
   display: inline-flex;
@@ -190,14 +187,6 @@ table {
 }
 
 
-.time {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-left: 80px;
-}
-
-
 .container {
   display: flex;
   justify-content: center;
@@ -207,16 +196,12 @@ table {
 
 .profit {
   display: block;
- 
-  justify-content: center;
-
-  
+ justify-content: center;
 }
+
 .profit1 {
   display: flex;
-  justify-content: center;
-  
- 
+  justify-content: center; 
 }
 
 .footerInfo {
@@ -298,6 +283,7 @@ table {
     margin-bottom: 10px;
     text-align: center;
   }
+
   .row {
     display: flex;
     align-items: center;
@@ -313,10 +299,7 @@ table {
   align-items: center;
   flex: 1;
   }
-  
  
-
-
 .row2 {
   display: flex;
   align-items: center;
@@ -370,22 +353,19 @@ table {
   }
 
   .namephone {
-   
-    /* background-color: red; */
-
-    
+  
     display: block;
     justify-content: center;
     
   }
+
   .namephone input {
-    /* padding-left: 10px;
-    width: 80vw;
-    height: 50px; */
+   
     justify-content: center;
     height: 45px;
     width: 370px;
   }
+  
   .App .phone {
     display: block;
     justify-content: center;
