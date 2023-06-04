@@ -184,7 +184,7 @@ function App6() {
                     <Suspense fallback={<div>Loading...</div>}>
                     {isMobile ? (
                      <img
-                      src="/img/sbstock-mobile.png"
+                      src="/img/sbstock.png"
                      style={{ width: "100%", height: "auto", marginLeft: 20 }}
                       alt="logo"
                      />
@@ -195,7 +195,7 @@ function App6() {
 
 
                  <img
-                src={"/img/sbstock.png"}
+                src={{"/img/sbstock.png"}}
                 style={{  height: "auto", marginLeft: 20 }}
                 alt="logo"
                 
