@@ -347,7 +347,7 @@ table {
    
     justify-content: center;
     height: 45px;
-    width: 200px;
+    width: 100px;
   }
 
   .App .phone7 {
@@ -365,7 +365,7 @@ table {
     height: 50px;
     justify-content: center */
     height: 45px;
-    width: 300px;
+    width: 220px;
   }
   .App .time select {
     /* background-color:red; */
@@ -380,6 +380,7 @@ table {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     cursor: pointer;
+    background-color: #c10000;
   }
   .App .btnArea7 {
     display: flex;
