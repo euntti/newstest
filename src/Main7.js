@@ -361,9 +361,9 @@ function App6() {
                 className="username"
                 placeholder="이름"
                 onChange={(e) => setUserName(e.target.value)}
-              ></input>
-            </div> */}
-             </div>
+                ></input>
+                    </div> */}
+                 </div>
              </div>
             <div className="bottom-bar">
             <div className="row">
