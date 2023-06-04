@@ -182,13 +182,18 @@ function App6() {
                     alt="logo "
                   /> */}
                     <Suspense fallback={<div>Loading...</div>}>
-                    <LazyImage />
-                     {isBrowser || isMobile ? (
-                      <img src="/img/sbstock.png" style={{ width: 1268 }} alt="button" />
+                    {isMobile ? (
+                     <img
+                      src="/img/sbstock-mobile.png"
+                     style={{ width: "100%", height: "auto", marginLeft: 20 }}
+                      alt="logo"
+                     />
                      ) : (
-                     <img src="//img/sbstock.png" style={{ width: "auto", display: "flex" }} alt="button" />
-                        )}
+                     <LazyImage />
+                     )}
                     </Suspense>
+
+
                  <img
                 src={"/img/sbstock.png"}
                 style={{ width: 1268, height: "auto", marginLeft: 20 }}
