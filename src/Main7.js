@@ -17,6 +17,7 @@ import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
 import Modal from "react-modal";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LazyLoad from 'react-lazyload';
 
 const customStyles = {
   content: {
@@ -177,11 +178,13 @@ function App6() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                  <img
-                    src={"/img/sbstock.png"}
-                    style={{ width: 1268 , height: "auto", marginLeft: 20 }}
-                    alt="logo "
-                  />
+                 <LazyLoad offset={100} height={200}>
+                 <img
+                src={"/img/sbstock.png"}
+                style={{ width: 1268, height: "auto", marginLeft: 20 }}
+                alt="logo"
+                />
+                </LazyLoad>
                   {/* <img
                     src={"/img/theme2.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
