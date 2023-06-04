@@ -274,6 +274,7 @@ table {
 }
 
 .checkbox-label {
+  flex: 2;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -323,11 +324,10 @@ table {
   }
   
  
-  .row2 .btnArea {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
+  .row2,
+.btnArea {
+  display: flex;
+}
   .row2 label {
     color: #fff;
     margin-right: 10px;
@@ -341,10 +341,12 @@ table {
 
  
   .btnArea {
+    flex: 2;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
   }
-
+  
  
 @media (max-width: 600px) 
 {
