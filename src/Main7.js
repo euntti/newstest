@@ -201,7 +201,7 @@ function App6() {
   ) : (
     <img
       style={{
-        maxWidth: "600px",
+        maxWidth: "412px",
         height: "auto",
         marginLeft: "auto",
         marginRight: "auto",
