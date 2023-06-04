@@ -318,7 +318,7 @@ table {
   }
   
  
-  .row2 {
+  .row2 .btnArea {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
