@@ -328,7 +328,7 @@ table {
 .btnArea {
   display: flex;
   align-items: center;
-
+  flex: 1;
 }
 .checkbox-label,
 .btnArea {
