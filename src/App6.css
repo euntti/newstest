@@ -301,15 +301,13 @@ table {
   }
   .row {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 10px;
     width: 300px;
    
   }   
-  
-  
+
   .namephone,
   .phone {
     display: flex;
@@ -327,6 +325,7 @@ table {
 
  .btnArea {
   margin-left: auto;
+  justify-content: flex-end;
  }
 
  .btnArea button {
