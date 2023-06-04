@@ -328,9 +328,7 @@ table {
 .btnArea {
   display: flex;
   align-items: center;
-  
- 
-margin-left: auto;
+
 }
   .row2 label {
     color: #fff;
