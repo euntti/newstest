@@ -140,7 +140,6 @@ table {
 .namephone {
   display: flex;
   align-items: center;
- 
   margin-right: 10px;
 }
 
@@ -289,9 +288,9 @@ table {
     align-items: center;
     margin-bottom: 10px;
     gap: 10px;
-    width: 300px;
     display: flex;
-   
+   align-items: center;
+  
   }   
 
   .namephone,
@@ -311,12 +310,11 @@ table {
   display: flex;
   align-items: center;
   color: #fff;
-  margin-bottom: 10px;}
+}
 
 .btnArea {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 10px;
+  flex-direction: row;
 }
  
   
@@ -383,7 +381,6 @@ table {
     justify-content: center */
     height: 45px;
     width: 300px;
-    display: flex;
   }
   .App .time select {
     /* background-color:red; */
