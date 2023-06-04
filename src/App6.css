@@ -257,9 +257,7 @@ table {
   border: 1px solid #ccc;
 }
 
-.plus2{
-  display: flex;
-}
+
 
 .checkbox-label a {
   margin-left: 5px;
@@ -300,26 +298,9 @@ table {
   }
   
 
-  .btnArea7 {
-    margin-top: 10px;
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-.btnArea7 button {
  
-  display: flex;
 
-  cursor: pointer;
-}
 
-.row2 {
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: space-between;
-}
  
 @media (max-width: 600px) 
 {
