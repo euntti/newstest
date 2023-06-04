@@ -401,7 +401,8 @@ function App6() {
                        onChange={handlePhoneNumberChange}
                       />
               </div>
-           
+           </div>
+           <div className="row2">
                 <div style={{  }}>
                  <label className="checkbox-label" style={{ color: "#fff" }}>
                 <input
