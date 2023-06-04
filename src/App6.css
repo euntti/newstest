@@ -363,7 +363,7 @@ table {
    
     justify-content: center;
     height: 45px;
-    width: 370px;
+    width: 200px;
   }
 
   .App .phone {
@@ -381,7 +381,7 @@ table {
     height: 50px;
     justify-content: center */
     height: 45px;
-    width: 370px;
+    width: 300px;
   }
   .App .time select {
     /* background-color:red; */
@@ -391,19 +391,7 @@ table {
     height: 45px;
     width: 370px;
   }
-  .App .time {
-    /* background-color:red; */
-    align-items: center;
-    display: block;
-    justify-content: center;
-    /* padding-left: 10px;
-    width: 80vw;
-    height: 50px;
-    justify-content: center */
-    height: 45px;
-    width: 600px;
-    margin-left: 0px;
-  }
+ 
   .App .btnArea button {
  
     /* height: 50px; */
