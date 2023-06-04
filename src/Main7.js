@@ -19,7 +19,7 @@ import Modal from "react-modal";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from 'react';
 const LazyImage = lazy(() => import('./LazyImage'));
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
 
 
 const customStyles = {
