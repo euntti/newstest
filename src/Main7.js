@@ -195,7 +195,7 @@ function App6() {
 
 
                  <img
-                src={{"/img/sbstock.png"}}
+                src={"/img/sbstock.png"}
                 style={{  height: "auto", marginLeft: 20 }}
                 alt="logo"
                 
