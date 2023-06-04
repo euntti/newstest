@@ -158,13 +158,13 @@ table {
   border: 1px solid #ccc;
 }
 
-.phone {
+.phone7 {
   display: flex;
   align-items: center;
 
   }
 
-.phone select {
+.phone7 select {
   width: 484px;
   height: 48px;
   margin: 0 12.5px 0;
@@ -172,7 +172,7 @@ table {
 
 
 
-.phone input {
+.phone7 input {
   display: inline-flex;
   width: 600px;
   height: 50px;
@@ -251,7 +251,7 @@ table {
 
 
 .username,
-.phone input {
+.phone7 input {
   width: 200px;
   box-sizing: border-box;
   padding: 10px;
@@ -266,14 +266,6 @@ table {
   text-decoration: none;
 }
 
-
-
-.btnArea button {
-
- width: 200px;
-    display: flex;
-  cursor: pointer;
-}
 
 
   .botitle {
@@ -292,9 +284,9 @@ table {
    align-items: center;
   
   }   
-
-  .namephone,
-  .phone {
+  
+  .namephone7,
+  .phone7 {
     display: flex;
   align-items: center;
   flex: 1;
@@ -310,13 +302,18 @@ table {
   display: flex;
   align-items: center;
   color: #fff;
+  margin-bottom: 10px;
 }
 
-.btnArea {
-  display: flex;
-  flex-direction: row;
+.btnArea7 {
+  margin-left: auto;
 }
+.btnArea7 button {
  
+  display: flex;
+
+  cursor: pointer;
+}
   
  
 @media (max-width: 600px) 
@@ -351,29 +348,29 @@ table {
     
   }
 
-  .namephone {
+  .namephone7 {
   
     display: block;
     justify-content: center;
     
   }
 
-  .namephone input {
+  .namephone7 input {
    
     justify-content: center;
     height: 45px;
     width: 200px;
   }
 
-  .App .phone {
+  .App .phone7 {
     display: block;
     justify-content: center;
     /* background-color:red; */
   }
-  .App .phone select {
+  .App .phone7 select {
     /* width: 15vw; */
   }
-  .App .phone input {
+  .App .phone7 input {
     justify-content: center;
     /* padding-left: 10px;
     width: 80vw;
@@ -391,19 +388,19 @@ table {
     width: 370px;
   }
  
-  .App .btnArea button {
+  .App .btnArea7 button {
  
     /* height: 50px; */
     cursor: pointer;
   }
-  .App .btnArea {
+  .App .btnArea7 {
     display: flex;
     justify-content: center;
   }
 
-  .App .namephone,
-  .phone,
-  .checkbox-label {
+  .App .namephone7,
+  .phone7,
+  .checkbox-label7 {
      align-items: center;
   }
 
@@ -412,8 +409,8 @@ table {
     align-items: center;
     }
 
-    .username,
-    .phone input {
+    .username7,
+    .phone7 input {
       width: 200px;
     }
    .profit {
