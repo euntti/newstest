@@ -296,7 +296,7 @@ table {
   .botitle {
     font-weight: bold;
     font-size: 20px;
-    margin-bottom: 10px;
+
     text-align: center;
   }
   .row {
@@ -306,7 +306,7 @@ table {
     justify-content: center;
     gap: 10px;
     width: 300px;
-    margin-bottom: 10px;
+   
   }   
   
   
@@ -314,7 +314,7 @@ table {
   .phone {
     display: flex;
   align-items: center;
-  margin-bottom: 10px;
+ 
   flex: 1;
   }
   /* .namephone,
