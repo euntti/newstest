@@ -180,7 +180,7 @@ function App6() {
                    {isBrowser ? (
             <img style={{ width: "1000px" , height: "auto", marginLeft: 20 }} src={"/img/sbstock.png"}></img>
           ) : (
-            <img style={{ width: "600px" , height: "auto", marginLeft: 20 }} src={"/img/mainbtn.png"}></img>
+            <img style={{ width: "600px" , height: "auto", marginLeft: 20 }} src={"/img/sbstock.png"}></img>
           )}
                   {/* <img
                     src={"/img/theme2.png"}
