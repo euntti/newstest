@@ -286,8 +286,9 @@ table {
 
 
 .btnArea button {
+
   border: none;
-  padding: 10px ;
+  padding: 10px 20px;
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
@@ -316,15 +317,16 @@ table {
   flex: 1;
   }
   
+ 
   .row2 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    width: 202px;
-   
-  }   
- 
+    margin-bottom: 10px;
+  }
+  .row2 label {
+    color: #fff;
+    margin-right: 10px;
+  }
   
   /* .namephone,
   .phone
@@ -333,14 +335,10 @@ table {
   } */
 
  
-
- .btnArea {
-  display: flex;
- justify-content: flex-start;
- align-items: center;
- margin-top: 10px;
- }
-
+  .btnArea {
+    display: flex;
+    align-items: center;
+  }
 
  
 @media (max-width: 600px) 
