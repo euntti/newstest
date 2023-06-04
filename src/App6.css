@@ -383,6 +383,7 @@ table {
     justify-content: center */
     height: 45px;
     width: 300px;
+    display: flex;
   }
   .App .time select {
     /* background-color:red; */
