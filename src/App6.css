@@ -325,16 +325,11 @@ table {
   display: flex;
   align-items: center;
   flex: 1;
-}
-
-.row2 {
-  display: flex;
-  align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 300px;
- 
 }
+
+
 
 
   
