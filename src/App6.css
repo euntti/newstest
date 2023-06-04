@@ -262,7 +262,12 @@ table {
   
   .namephone,
   .phone {
-    flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  flex: 1;
   }
   /* .namephone,
   .phone
