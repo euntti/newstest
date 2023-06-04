@@ -434,7 +434,7 @@ function App6() {
         {/* <div className="profit1">
           <img src={"/img/profit.jpeg"}></img>
         </div> */}
-        <div className="footerInfo">
+        {/* <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
 
@@ -463,7 +463,7 @@ function App6() {
         }}
       >
         해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.
-      </h4>
+      </h4> */}
       <h1
         style={{
           color: "#fff",
@@ -505,6 +505,7 @@ function App6() {
           판촉행사 등의 유익한 정보를 받으실 수 없습니다.
         </div>
       </Modal>
+    </div>
     </div>
   );
 }
