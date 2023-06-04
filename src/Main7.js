@@ -151,14 +151,14 @@ function App6() {
     <div
       style={{
         backgroundImage: isMobile
-        //   ? `url("/img/bg.jpeg")`
-        //   : `url("/img/bg.jpeg")`,
-        // backgroundRepeat: "no-repeat",
-        // backgroundPosition: "center",
-        // backgroundSize: "cover",
-        // backgroundAttachment: "fixed",
-        // // width: "auto",
-        // height: "3000px",
+           ? `url("/img/bg.jpeg")`
+           : `url("/img/bg.jpeg")`,
+         backgroundRepeat: "no-repeat",
+         backgroundPosition: "center",
+         backgroundSize: "cover",
+         backgroundAttachment: "fixed",
+         width: "auto",
+         height: "3000px",
       }}
     >
       <div className="container">
