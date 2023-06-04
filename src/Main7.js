@@ -44,10 +44,10 @@ function App6() {
     } else if (formattedNumber.length >= 6) {
       formattedNumber = formattedNumber.replace(/(\d{3})(\d{3})(\d{0,4})/, "$1-$2-$3"); // 첫 번째와 두 번째 하이픈 추가
     }
-    setPhone1(formattedNumber);
+    setPhone17(formattedNumber);
 
     const inputValue = e.target.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
-    setPhone1(inputValue);
+    setPhone17(inputValue);
   };
 
   
