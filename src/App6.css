@@ -276,7 +276,6 @@ table {
 .checkbox-label {
   display: flex;
   align-items: center;
-
   text-decoration: none;
 }
 
@@ -288,7 +287,7 @@ table {
 
 .btnArea button {
   border: none;
-  padding: 10px 20px;
+  padding: 10px ;
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
@@ -450,7 +449,10 @@ table {
     align-items: center;
     }
 
-
+    .username,
+    .phone input {
+      width: 200px;
+    }
    .profit {
     display: flex;
     justify-content: center;
