@@ -136,12 +136,11 @@ table {
   height: 1023px;
   margin-left: 20px;
 }
-.namephone{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
 
+.namephone {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
 .namephone input,
 .phone input {
@@ -307,7 +306,7 @@ table {
     width: 300px;
     margin-bottom: 10px;
   }
-
+  
   
   .namephone,
   .phone {
@@ -323,10 +322,7 @@ table {
      align-items: center;
   } */
 
-  .bottom-bar {
-  flex-direction: row;
- align-items: center;
-    }
+ 
 
  .btnArea {
   
