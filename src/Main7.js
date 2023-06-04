@@ -17,10 +17,6 @@ import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
 import Modal from "react-modal";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { lazy, Suspense } from 'react';
-const LazyImage = lazy(() => import('./LazyImage'));
-
-
 
 const customStyles = {
   content: {
@@ -150,15 +146,15 @@ function App6() {
   return (
     <div
       style={{
-        // backgroundImage: isMobile
-        //    ? `url("/img/sbstock.png")`
-        //    : `url("/img/sbstock.png")`,
-         backgroundRepeat: "no-repeat",
-         backgroundPosition: "center",
-         backgroundSize: "cover",
-         backgroundAttachment: "fixed",
-         width: "auto",
-         height: "3000px",
+        backgroundImage: isMobile
+        //   ? `url("/img/bg.jpeg")`
+        //   : `url("/img/bg.jpeg")`,
+        // backgroundRepeat: "no-repeat",
+        // backgroundPosition: "center",
+        // backgroundSize: "cover",
+        // backgroundAttachment: "fixed",
+        // // width: "auto",
+        // height: "3000px",
       }}
     >
       <div className="container">
@@ -181,26 +177,11 @@ function App6() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                    <Suspense fallback={<div>Loading...</div>}>
-                    {isMobile ? (
-                     <img
-                      src="/img/sbstock.png"
-                     style={{ width: "100%", height: "auto", marginLeft: 20 }}
-                      alt="logo"
-                     />
-                     ) : (
-                     <LazyImage />
-                     )}
-                    </Suspense>
-
-
-                 <img
-                src={"/img/sbstock.png"}
-                style={{  height: "auto", marginLeft: 20 }}
-                alt="logo"
-                
-                />
-                
+                  <img
+                    src={"/img/sbstock.png"}
+                    style={{ width: 1268 , height: "auto", marginLeft: 20 }}
+                    alt="logo "
+                  />
                   {/* <img
                     src={"/img/theme2.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
@@ -380,9 +361,9 @@ function App6() {
                 className="username"
                 placeholder="이름"
                 onChange={(e) => setUserName(e.target.value)}
-                ></input>
-                    </div> */}
-                 </div>
+              ></input>
+            </div> */}
+             </div>
              </div>
             <div className="bottom-bar">
             <div className="row">
