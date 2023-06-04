@@ -150,9 +150,9 @@ function App6() {
   return (
     <div
       style={{
-        backgroundImage: isMobile
-           ? `url("/img/sbstock.png")`
-           : `url("/img/sbstock.png")`,
+        // backgroundImage: isMobile
+        //    ? `url("/img/sbstock.png")`
+        //    : `url("/img/sbstock.png")`,
          backgroundRepeat: "no-repeat",
          backgroundPosition: "center",
          backgroundSize: "cover",
