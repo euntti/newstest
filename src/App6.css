@@ -253,7 +253,7 @@ table {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    align-items:  flex-start;
+    align-items: center;
     flex-direction: column;
     overflow: hidden;
     justify-content: center;
@@ -296,6 +296,7 @@ table {
   .botitle {
     font-weight: bold;
     font-size: 20px;
+
     text-align: center;
   }
   .row {
@@ -309,7 +310,7 @@ table {
 
   .namephone,
   .phone {
-  display: flex;
+    display: flex;
   align-items: center;
   flex: 1;
   }
