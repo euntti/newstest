@@ -469,4 +469,8 @@ table {
   .imgGrid {
     display: block;
   }
+  .appPictureContainer img{
+    width: auto;
+    
+  }
 }
