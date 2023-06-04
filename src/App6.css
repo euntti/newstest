@@ -286,11 +286,7 @@ table {
 }
 
 
-.checkbox-label.btnArea {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
+
 .btnArea button {
 
   border: none;
@@ -332,16 +328,15 @@ table {
 }
 
 .row2 {
-  
- 
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 300px;
+ 
 }
 
-  .row2 label {
-    color: #fff;
-    margin-right: 10px;
-  }
+
   
   /* .namephone,
   .phone
