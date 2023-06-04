@@ -214,16 +214,11 @@ function App6() {
                     alignItems: "center",
                   }}
                 >
-                  <a img
-                style={{ width: 300, height: "auto" }}
-                 src={"/img//sbstock.png"}
-                 href="#"
-                 onClick={() => {
-                   window.open("https://sbstock.kr/", "_blank");
-                 }}
-               >
-                </a>
-                   
+                   <img
+                    src={"/img/sbstock.png"}
+                    style={{ width: 1268 , height: "auto", marginLeft: 20 }}
+                    alt="logo "
+                  />
                   {/* <img
                     className="appPicture"
                     src={"/img/logo.png"}
@@ -380,7 +375,7 @@ function App6() {
                     2023년 하반기 급등 예상 종목 무료 받기
                 </div>
                 <div className="row">
-              <div className="namephone7 ">
+              <div className="namephone ">
                 {/* {<select>
                 <option key="1" value="1">
                   010
@@ -396,7 +391,7 @@ function App6() {
                 />
               </div>
               {"\t"}
-              <div className="phone7">
+              <div className="phone">
                 <input
                        type="tel"
                        name="user_name"
@@ -407,9 +402,9 @@ function App6() {
                       />
               </div>
            </div>
-           
+           <div className="row2">
                 <div style={{  }}>
-                 <label className="checkbox-label7" style={{ color: "#fff" }}>
+                 <label className="checkbox-label" style={{ color: "#fff" }}>
                 <input
                  type="checkbox"
                  id="privacy"
@@ -456,10 +451,10 @@ function App6() {
                   [보기]
                 </a>
               </label>
-            
+            </div>
             </div>
 
-            <div className="btnArea7">
+            <div className="btnArea">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
                   <img  style={{ width: "200px", display: "flex"  }} src={"/img/mainbtn.png"}></img>
