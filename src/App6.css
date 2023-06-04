@@ -331,6 +331,13 @@ table {
   flex: 1;
 }
 
+.row2 {
+  
+ 
+  display: flex;
+  justify-content: space-between;
+}
+
   .row2 label {
     color: #fff;
     margin-right: 10px;
@@ -347,7 +354,7 @@ table {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
   
  
