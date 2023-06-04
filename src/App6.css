@@ -147,8 +147,9 @@ table {
 .phone input {
   margin-right: 5px;
 }
+
 .username {
-  display: flex;
+  display: inline-flex;
   width: 600px;
   height: 75px;
   margin-left: 12px;
@@ -177,7 +178,7 @@ table {
 
 
 .phone input {
-  display: flex;
+  display: inline-flex;
   width: 600px;
   height: 75px;
   margin-left: 12px;
@@ -286,7 +287,6 @@ table {
 
 
 .btnArea button {
-  background-color: #fff;
   border: none;
   padding: 10px 20px;
   font-weight: bold;
