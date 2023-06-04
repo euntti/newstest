@@ -177,11 +177,11 @@ function App6() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                  <img
-                    src={"/img/sbstock.png"}
-                    style={{ width: "1000px" , height: "auto", marginLeft: 20 }}
-                    alt="logo "
-                  />
+                   {isBrowser ? (
+            <img style={{ width: "1000px" , height: "auto", marginLeft: 20 }} src={"/img/sbstock.png"}></img>
+          ) : (
+            <img style={{ width: "600px" , height: "auto", marginLeft: 20 }} src={"/img/mainbtn.png"}></img>
+          )}
                   {/* <img
                     src={"/img/theme2.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
@@ -214,11 +214,11 @@ function App6() {
                     alignItems: "center",
                   }}
                 >
-                   <img
-                    src={"/img/sbstock.png"}
-                    style={{ width: "1000px" , height: "auto", marginLeft: 20 }}
-                    alt="logo "
-                  />
+                   {isBrowser ? (
+            <img style={{ width: "1000px" , height: "auto", marginLeft: 20 }} src={"/img/sbstock.png"}></img>
+          ) : (
+            <img style={{ width: "600px" , height: "auto", marginLeft: 20 }} src={"/img/mainbtn.png"}></img>
+          )}
                   {/* <img
                     className="appPicture"
                     src={"/img/logo.png"}
