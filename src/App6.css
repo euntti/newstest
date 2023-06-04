@@ -141,7 +141,7 @@ table {
   flex-wrap: nowrap;
   justify-content: center;
 }
-.username input{
+.username {
   display: flex;
   width: 600px;
   height: 75px;
