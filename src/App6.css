@@ -258,6 +258,7 @@ table {
 }
 
 .botitle {
+  order: -1;
   margin-bottom: 10px;
 }
 
