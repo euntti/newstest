@@ -17,7 +17,7 @@ import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
 import Modal from "react-modal";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from 'react-lazy';
 
 const customStyles = {
   content: {
