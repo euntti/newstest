@@ -471,7 +471,7 @@ function App() {
         </div> */}
         <div className="footerInfo">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
-          <div>대표자:엄원택 </div>
+          <div>대표자 ; 엄원택 </div>
 
           <div>사업자등록번호: 178-88-01858 </div>
           <div>
