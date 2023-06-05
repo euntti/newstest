@@ -203,7 +203,7 @@ function App6() {
       style={{
         maxWidth: "515px",
         height: "auto",
-        marginLeft: "100px",
+        marginLeft: "auto",
         marginRight: "auto",
         display: "block",
       }}
@@ -374,7 +374,7 @@ function App6() {
   <div className="plus2">
     <div style={{ display: "flex", justifyContent: "space-between" }}>
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <label className="checkbox-label7" style={{ marginright:"10px" , color: "#fff" }}>
+        <label className="checkbox-label7" style={{ color: "#fff" }}>
           <input
             type="checkbox"
             id="privacy"
@@ -392,7 +392,7 @@ function App6() {
             [보기]
           </a>
         </label>
-        <label className="checkbox-label7" style={{ marginright:"10px" , color: "#fff" }}>
+        <label className="checkbox-label7" style={{ color: "#fff" }}>
           <input
             type="checkbox"
             id="privacy"
