@@ -203,7 +203,7 @@ function App6() {
       style={{
         maxWidth: "515px",
         height: "auto",
-        marginLeft: "auto",
+        marginLeft: "110px",
         marginRight: "auto",
         display: "block",
       }}
@@ -434,7 +434,7 @@ function App6() {
         {/* <div className="profit1">
           <img src={"/img/profit.jpeg"}></img>
         </div> */}
-        {/* <div className="footerInfo">
+        {/* <div className="footerInfo7">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
 
