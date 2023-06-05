@@ -210,7 +210,7 @@ function App() {
                     alt="logo "
                   /> */}
                   <img
-                    style={{ width: 400, height: "auto", marginLeft: 20  }}
+                    style={{ width: 400, height: "auto", marginLeft: 120  }}
                     src={"/img/mbg.png"}
                     alt="logo "
                   />
