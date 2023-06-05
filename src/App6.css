@@ -309,7 +309,7 @@ table {
 
 
  
-@media (max-width: 600px) 
+@media (max-width: 412px) 
 {
   .container {
     width: 300px;
