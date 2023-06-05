@@ -162,7 +162,7 @@ function App6() {
         <div className="sub">
           <div className="App">
             
-          <div className="appPictureContainer">
+          <div className="appPictureContainer7">
   {isBrowser ? (
     <div
       style={{
