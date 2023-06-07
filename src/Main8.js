@@ -657,15 +657,30 @@ function App7() {
                           onChange={(e) => setCheck21(e.target.checked)}
                           />
                        <a>7천만 원</a>
+                       <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
+                       <span
+                        style={{
+                        display: "inline-block",
+                        width: "50px",
+                        height: "18px",
+                        background: check23 ? "#f00" : "#ccc",
+                        lineHeight: "18px",
+                        textAlign: "center",
+                        marginRight:"5px"
+                        }}
+                        >
                        <input
                           type="checkbox"
                           id="privacy"
                           name="agree1"
                           value="1"
                           checked={check22}
+                          style={{ display: "none" }}
                           onChange={(e) => setCheck22(e.target.checked)}
                           />
                        <a>1억 원 이상</a>  
+                       </span>
+                       </label>
                        </label>
                       </li>
                     <br />
@@ -681,6 +696,7 @@ function App7() {
                         background: check23 ? "#f00" : "#ccc",
                         lineHeight: "18px",
                         textAlign: "center",
+                        marginRight:"5px"
                         }}
                         >
                         <input
@@ -704,6 +720,7 @@ function App7() {
                         background: check24 ? "#f00" : "#ccc",
                         lineHeight: "18px",
                         textAlign: "center",
+                        marginRight:"5px"
                         }}
                         >
                        <input
@@ -727,6 +744,7 @@ function App7() {
                         background: check25 ? "#f00" : "#ccc",
                         lineHeight: "18px",
                         textAlign: "center",
+                        marginRight:"5px"
                         }}
                         >
                        <input
@@ -750,6 +768,7 @@ function App7() {
                         background: check26 ? "#f00" : "#ccc",
                         lineHeight: "18px",
                         textAlign: "center",
+                        marginRight:"5px"
                         }}
                         >
                        <input
@@ -782,6 +801,7 @@ function App7() {
                         background: check27 ? "#f00" : "#ccc",
                         lineHeight: "18px",
                         textAlign: "center",
+                        marginRight:"5px"
                         }}
                         >
                          공격 투자형
