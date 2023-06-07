@@ -45,14 +45,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.nav1{
+.nav{
   width:100%;
   height:53px;
   background-color: #ff9100;
   display:flex;
   align-items: center;
 }
-.nav1 div{
+.nav div{
   color:#fff;
   padding-left:20px;
   font-weight: 800;
@@ -74,54 +74,54 @@ table {
   cursor: pointer;
   z-index: 1;
 }
-.box_container8{
+.box_container{
   display:flex;
   justify-content:center
 }
-.box8{
+.box{
   width:688px;
   height:auto;
   border:5px solid #eee;
   background-color:#fff;
   margin-top:30px;
 }
-.subTitle8{
+.subTitle{
   padding: 20px 20px 0;
   color: #477cdc;
   font-weight: bold;
 }
-.inner8{
+.inner{
   padding:20px 0;
 }
-.head8{
+.head{
   padding:0 20px 20px;
 }
-.title8{
+.title{
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: -0.05em;
 }
-.color2 {
+.color1 {
   color: #f00;
   font-weight: bold;
 }
-.writer8{
+.writer{
   padding: 6px 10px;
   border-bottom: 1px solid #ccc;
   letter-spacing: 0;
   box-sizing: border-box;
 }
 
-.writer-info8 {
+.writer-info {
   clear: both;
   padding: 10px;
   font-size: 14px;
 }
-.content-wrap8 {
+.content-wrap {
   margin-top: 40px;
   margin-bottom: 30px;
 }
-.content8 {
+.content {
   width: 96%;
   margin: 0 auto;
   padding: 0 15px;
@@ -130,31 +130,35 @@ table {
   font-size: 17px;
   letter-spacing: 0;
 }
-.mainhead8{
+.mainhead{
   font-weight: bold;
   font-size: 15px;
   text-align: center;
   color: rgb(51, 0, 255);
 }
-
-.content8 .imgbox {
+.mainhead2{
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+.content .imgbox {
   margin-top: 15px;
   margin-bottom: 0;
   text-align: center;
 }
-.content8 p {
+.content p {
   margin-top: 25px;
   margin-bottom: 25px;
   line-height: 2.0;
 }
-/* .imgdesc {
+.imgdesc {
   padding-top: 8px;
   text-align: center;
   color: #000;
   font-weight: bold;
   font-size: 0.9em;
-} */
-.inputBoxs {
+}
+.inputBox {
   /* z-index: 2; */
   position: relative;
   background-image: url(https://i.ibb.co/CmTK0TM/inbox.png);
@@ -164,19 +168,19 @@ table {
   margin: 50px 0;
   letter-spacing: -0.075em;
 }
-.inputBoxs h1 {
+.inputBox h1 {
   color: #ffffffd2;
   font-size: 16px;
   font-weight: normal;
 }
-.inputBoxs h3 {
+.inputBox h3 {
   font-size: 36px;
   font-weight: normal;
   color: #fff;
   margin: 0px;
   padding: 0px;
 }
-.inputBoxs ul {
+.inputBox ul {
   width: 94%;
   max-width: 560px;
   background-color: #fff;
@@ -186,24 +190,24 @@ table {
   margin: 1em auto;
   box-sizing: border-box;
 }
-.inputBoxs ul li{
+.inputBox ul li{
   padding:2px 0;
 }
-.inputBoxs #line01{
+.inputBox #line01{
   text-align: center;
 }
-.inputBoxs #line02{
+.inputBox #line02{
   font-weight: bolder;
   color:#09F;
   font-size:12px;
   text-align: center;
 }
-.inputBoxs8 #line03{
+.inputBox #line03{
   font-weight: bolder;
   font-size:26px;
   text-align: center;
 }
-.inputBoxs input[type="text"]{
+.inputBox input[type="text"]{
   display:inline-block;
   border:1px solid #ccc;
   height:50px;
@@ -212,22 +216,22 @@ table {
 }
 
 
-.inputBoxs #chkline {
+.inputBox #chkline {
     text-align: center;
     font-size: 12px;
     color: #666;
     padding: 10px 0;
 }
 
-.inputBoxs #chkline label {
+.inputBox #chkline label {
     width: auto;
     font-weight: normal;
 }
-.inputBoxs #smtbtn{
+.inputBox #smtbtn{
   text-align: center;
   padding:10px 0;
 }
-.inputBoxs #smtbtn input {
+.inputBox #smtbtn input {
     width: 100%;
     background-color: rgb(255, 187, 0);
     color: #000000;
@@ -251,12 +255,12 @@ table {
   display: flex;
 
 }
-.fullkName{
+.username{
   justify-content: center;
   align-items: center;
   display: flex;
 }
-.telNumber{
+.tel{
   justify-content: center;
   align-items: center;
   display: flex;
@@ -316,6 +320,22 @@ table {
 .tablelive td {
   text-align: center;
 }
+
+#privacy-label {
+    display: inline-block;
+    line-height: 18px;
+  }
+  
+  #privacy-input {
+    width: 50px;
+    height: 18px;
+    margin: 0;
+  }
+  
+  #privacy-text {
+    vertical-align: middle;
+  }
+  
 .news img {
   display: block;
   width: 100%;
@@ -399,35 +419,35 @@ table {
 
 
 @media (max-width: 700px) {
-  .box_container8{
+  .box_container{
     width:auto;
     display:block;
   }
-  .box8{
+  .box{
     float: none;
     width: auto;
     font-weight: normal;
     border: 0;
   }
-  .inner8{
+  .inner{
     display: block;
     padding-bottom: 5px;
   }
-  .inner8 .head8{
+  .inner .head{
     display:table-cell;
     padding:0 10px;
   }
-  .head8 .title8 {
+  .head .title {
     width:100%;
     font-size: 28px;
     /* color:red; */
   }
-  .writer-info8{
+  .writer-info{
     padding: 10px 0;
     font-size: 12px;
 
   }
-  .content8{
+  .content{
     padding:0;
   }
   .latest img{ 
@@ -454,7 +474,7 @@ table {
     line-height: 60px;
     border: 0px;
     border-radius: 7px;
-    font-size: 0.8em;
+    font-size: 0.3em;
     cursor: pointer;
 }
 
@@ -470,7 +490,7 @@ table {
 }
 
 
-  .content8 .imgbox img {
+  .content .imgbox img {
     max-width: 100%;
     margin: 0 ;
   }
