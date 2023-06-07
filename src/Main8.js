@@ -691,7 +691,7 @@ function App7() {
                        <span
                         style={{
                         display: "inline-block",
-                        width: "50px",
+                        width: "auto",
                         height: "18px",
                         background: check23 ? "#f00" : "#ccc",
                         lineHeight: "18px",
