@@ -403,7 +403,7 @@ function App7() {
                     <p class="imgbox banner">
                 <img
                   style={{ width: 620, height: "auto" }}
-                  src={"/img/sbmain41.png"}
+                  src={"/img/sbglobal.jpeg"}
                   alt=""
                 />
               </p>
