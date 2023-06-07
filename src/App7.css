@@ -207,13 +207,20 @@ table {
   font-size:26px;
   text-align: center;
 }
-.inputBoxs8 input[type="text"]{
+.inputBoxs8 input[type="number"]{
   display:inline-block;
   border:1px solid #ccc;
   height:50px;
   width:100%;
   box-sizing: border-box;
 }
+.inputBoxs8 input[type="text"]{
+    display:inline-block;
+    border:1px solid #ccc;
+    height:50px;
+    width:100%;
+    box-sizing: border-box;
+  }
 
 
 .inputBoxs8 #chkline {
