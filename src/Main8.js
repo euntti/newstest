@@ -468,6 +468,7 @@ function App7() {
                     <li>
                       <input
                        type="number"
+                       id="f1"
                         name="user_name"
                        required=""
                        placeholder="연락처를 입력하세요"
