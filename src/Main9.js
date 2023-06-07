@@ -355,7 +355,7 @@ function App8() {
                   className="username9"
                   placeholder="이름"
                   maxLength={4}
-                  onChange={(e) => setUserName7(e.target.value)}
+                  onChange={(e) => setUserName9(e.target.value)}
                 />
               </div>
               {"\t"}
@@ -365,7 +365,7 @@ function App8() {
                        name="user_name9"
                        placeholder="휴대폰"
                        maxLength={13}
-                       value={phone17}
+                       value={phone19}
                        onChange={handlePhoneNumberChange}
                       />
               </div>
