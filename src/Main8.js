@@ -798,7 +798,7 @@ function App7() {
                         display: "inline-block",
                         width: "50px",
                         height: "18px",
-                        background: check27 ? "#f00" : "#ccc",
+                        background: check27 ? "#f00" : "#fff",
                         lineHeight: "18px",
                         textAlign: "center",
                         marginRight:"5px"
