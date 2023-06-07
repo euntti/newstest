@@ -391,11 +391,7 @@ function App7() {
           <div className="content-wrap">
             <div className="content">
              
-              <p>
-                <b>"가상화폐 3분투자로 1억씩 수익내고있어요"</b>
-                <br />
-                김진환 씨(50대) 인터뷰中
-              </p>
+             
               <p>
                 <p>최근 부동산, 주식, 가상화폐 모두 하락장이라 손실보고 있는 분들이 많을텐데요
                     이런 하락장에서도 손실없이 큰돈 벌 수 있는 재테크 '노하우' 알려드리겠습니다. </p>
@@ -403,7 +399,7 @@ function App7() {
                     <p class="imgbox banner">
                 <img
                   style={{ width: 620, height: "auto" }}
-                  src={"/img/sbglobal.jpeg"}
+                  src={"/img/sbglobal.jpg"}
                   alt=""
                 />
               </p>
