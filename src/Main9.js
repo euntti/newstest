@@ -399,7 +399,7 @@ function App8() {
             name="agree3"
             value="1"
             checked={true}
-            onChange={(e) => setCheck3(e.target.checked)}
+            onChange={(e) => setCheck1(e.target.checked)}
           />
           광고성문자수신동의
           <a
