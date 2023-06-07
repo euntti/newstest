@@ -158,7 +158,7 @@ table {
   font-weight: bold;
   font-size: 0.9em;
 }
-.inputBox {
+.inputBox8 {
   /* z-index: 2; */
   position: relative;
   background-image: url(https://i.ibb.co/CmTK0TM/inbox.png);
@@ -168,19 +168,19 @@ table {
   margin: 50px 0;
   letter-spacing: -0.075em;
 }
-.inputBox h1 {
+.inputBox8 h1 {
   color: #ffffffd2;
   font-size: 16px;
   font-weight: normal;
 }
-.inputBox h3 {
+.inputBox8 h3 {
   font-size: 36px;
   font-weight: normal;
   color: #fff;
   margin: 0px;
   padding: 0px;
 }
-.inputBox ul {
+.inputBox8 ul {
   width: 94%;
   max-width: 560px;
   background-color: #fff;
@@ -190,24 +190,24 @@ table {
   margin: 1em auto;
   box-sizing: border-box;
 }
-.inputBox ul li{
+.inputBox8 ul li{
   padding:2px 0;
 }
-.inputBox #line01{
+.inputBox8 #line0108{
   text-align: center;
 }
-.inputBox #line02{
+.inputBox8 #line0208{
   font-weight: bolder;
   color:#09F;
   font-size:12px;
   text-align: center;
 }
-.inputBox #line03{
+.inputBox8 #line0308{
   font-weight: bolder;
   font-size:26px;
   text-align: center;
 }
-.inputBox input[type="text"]{
+.inputBox8 input[type="text"]{
   display:inline-block;
   border:1px solid #ccc;
   height:50px;
@@ -216,22 +216,22 @@ table {
 }
 
 
-.inputBox #chkline {
+.inputBox8 #chkline {
     text-align: center;
     font-size: 12px;
     color: #666;
     padding: 10px 0;
 }
 
-.inputBox #chkline label {
+.inputBox8 #chkline label {
     width: auto;
     font-weight: normal;
 }
-.inputBox #smtbtn{
+.inputBox8 #smtbtn{
   text-align: center;
   padding:10px 0;
 }
-.inputBox #smtbtn input {
+.inputBox8 #smtbtn input {
     width: 100%;
     background-color: rgb(255, 187, 0);
     color: #000000;
