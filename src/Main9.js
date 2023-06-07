@@ -1,3 +1,4 @@
+
 import "./App6.css";
 import React from "react"
 import TelegramApi from "node-telegram-api";
@@ -28,11 +29,11 @@ const customStyles = {
   },
 };
 
-const Main7 = () => {
-  return <div>Main7</div>
+const Main9 = () => {
+  return <div>Main9</div>
 }
 
-function App6() {
+function App8() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName7, setUserName7] = useState("");
   const [phone17, setPhone17] = useState("");
@@ -509,4 +510,4 @@ function App6() {
   );
 }
 
-export default App6;
+export default App8;
