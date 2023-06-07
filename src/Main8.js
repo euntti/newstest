@@ -798,7 +798,7 @@ function App7() {
                         display: "inline-block",
                         width: "50px",
                         height: "18px",
-                        background: check27 ? "linear-gradient(#000, #000) no-repeat 0 50%/100% 1px, transparent" : "#000",
+                        background: check27 ? "linear-gradient(#000, #ccc) no-repeat 0 50%/100% 1px, transparent" : "#000",
                         lineHeight: "18px",
                         textAlign: "center",
                         marginRight:"5px"
