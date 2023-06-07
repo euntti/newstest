@@ -44,7 +44,7 @@ function App8() {
     } else if (formattedNumber.length >= 6) {
       formattedNumber = formattedNumber.replace(/(\d{3})(\d{3})(\d{0,4})/, "$1-$2-$3"); // 첫 번째와 두 번째 하이픈 추가
     }
-    setPhone199(formattedNumber);
+    setPhone19(formattedNumber);
 
     const inputValue = e.target.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
     setPhone17(inputValue);
@@ -100,10 +100,10 @@ function App8() {
 
   const submitEvent = (e) => {
     e.preventDefault();
-    if (userName7 == "") {
+    if (userName9 == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phone17 == "") {
+    if (phone19 == "") {
       return alert("'-'없이 입력을 해주세요.");
     }
 
@@ -158,9 +158,9 @@ function App8() {
         // height: "3000px",
       }}
     >
-      <div className="container9">
-        <div className="sub9">
-          <div className="App9">
+      <div className="container">
+        <div className="sub">
+          <div className="App">
             
           <div className="appPictureContainer9">
   {isBrowser ? (
