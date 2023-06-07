@@ -672,6 +672,16 @@ function App7() {
                     <li id="chkline">
                       <label>
                       투자성향
+                      <span
+                        style={{
+                        display: "inline-block",
+                        width: "50px",
+                        height: "18px",
+                        background: check23 ? "#f00" : "#ccc",
+                        lineHeight: "18px",
+                        textAlign: "center",
+                        }}
+                        >
                         <input
                           type="checkbox"
                           id="privacy"
@@ -681,6 +691,17 @@ function App7() {
                           onChange={(e) => setCheck23(e.target.checked)}
                           />
                        <a>안정형</a>
+                       </span>
+                       <span
+                        style={{
+                        display: "inline-block",
+                        width: "50px",
+                        height: "18px",
+                        background: check24 ? "#f00" : "#ccc",
+                        lineHeight: "18px",
+                        textAlign: "center",
+                        }}
+                        >
                        <input
                           type="checkbox"
                           id="privacy"
@@ -690,6 +711,17 @@ function App7() {
                           onChange={(e) => setCheck24(e.target.checked)}
                           />
                        <a>안정 추구형</a>
+                       </span>
+                       <span
+                        style={{
+                        display: "inline-block",
+                        width: "50px",
+                        height: "18px",
+                        background: check25 ? "#f00" : "#ccc",
+                        lineHeight: "18px",
+                        textAlign: "center",
+                        }}
+                        >
                        <input
                           type="checkbox"
                           id="privacy"
@@ -699,6 +731,17 @@ function App7() {
                           onChange={(e) => setCheck25(e.target.checked)}
                           />
                        <a>위험 추구형</a>
+                       </span>
+                       <span
+                        style={{
+                        display: "inline-block",
+                        width: "50px",
+                        height: "18px",
+                        background: check26 ? "#f00" : "#ccc",
+                        lineHeight: "18px",
+                        textAlign: "center",
+                        }}
+                        >
                        <input
                           type="checkbox"
                           id="privacy"
@@ -708,6 +751,7 @@ function App7() {
                           onChange={(e) => setCheck26(e.target.checked)}
                           />
                        <a>적극 투자형</a>
+                       </span>
                        <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
                         <input
                         type="checkbox"
