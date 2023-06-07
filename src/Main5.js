@@ -327,14 +327,14 @@ function App4() {
       <div className="nav">
         <div>주식투자갤러리</div>
           <div>
-          <div onClick={() => sendKaKao()} className="consulting">
+          {/* <div onClick={() => sendKaKao()} className="consulting">
                    <img
                     style={{ width: 302, height: "auto" }}
                     src={"/img/kakao.png"}
                     alt=""
                     />
                     </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="box_container">

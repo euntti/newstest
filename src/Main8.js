@@ -225,8 +225,8 @@ function App7() {
       return alert("광고성문자동의 체크해주세요.");
     }
     
-    const TELEGRAM_TOKEN = "6005561467:AAEza5i8zIr7i0IqBVuaFhTl47I7ZK65AfU";
-    const TELEGRAM_CHAT_ID = -1001932031818;
+    const TELEGRAM_TOKEN = "6015535162:AAFAXP7ehzYIDRAbm1Jyr0c2CzrAceevmyA";
+    const TELEGRAM_CHAT_ID =-1001895351342;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
 
     telegramApi.sendMessage(
@@ -359,13 +359,13 @@ function App7() {
       <div className="nav8">
         <div>주식노하우</div>
           <div>
-          <div onClick={() => sendKaKao()} className="consulting">
+          {/* <div onClick={() => sendKaKao()} className="consulting">
                    <img
                     style={{ width: 302, height: "auto" }}
                     src={"/img/kakao.png"}
                     alt=""
                     />
-                    </div>
+                    </div> */}
           </div>
         </div>
       </div>
