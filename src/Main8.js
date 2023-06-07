@@ -9,8 +9,7 @@ import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
-var now = new Date();	// 현재 날짜 및 시간
-console.log("현재 : ", now);
+
 
 const Main8= () => {
     return <div>Main8</div>
@@ -293,7 +292,26 @@ function App7() {
   // third.children[0].innerHTML = rollingData[2];
 
   // first.children[0].innerHTML = rollingData[0];
-  
+  var d = new Date(); 
+
+    var s =
+        leadingZeros(d.getFullYear(), 4) + '-' +
+        leadingZeros(d.getMonth() + 1, 2) + '-' +
+        leadingZeros(d.getDate(), 2); 
+
+    return s;
+} 
+
+function leadingZeros(n, digits) {
+    var zero = '';
+    n = n.toString(); 
+
+    if (n.length < digits) {
+        for (i = 0; i < digits - n.length; i++)
+            zero += '0';
+    }
+
+    
   setInterval(() => {
     if (move === 2) {
       first.classList.remove('card_sliding');
