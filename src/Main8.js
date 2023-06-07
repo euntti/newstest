@@ -689,6 +689,7 @@ function App7() {
                           name="agree1"
                           value="1"
                           checked={check23}
+                          style={{ display: "none" }}
                           onChange={(e) => setCheck23(e.target.checked)}
                           />
                        <a>안정형</a>
@@ -711,6 +712,7 @@ function App7() {
                           name="agree1"
                           value="1"
                           checked={check24}
+                          style={{ display: "none" }}
                           onChange={(e) => setCheck24(e.target.checked)}
                           />
                        <a>안정 추구형</a>
@@ -733,6 +735,7 @@ function App7() {
                           name="agree1"
                           value="1"
                           checked={check25}
+                          style={{ display: "none" }}
                           onChange={(e) => setCheck25(e.target.checked)}
                           />
                        <a>위험 추구형</a>
@@ -755,6 +758,7 @@ function App7() {
                           name="agree1"
                           value="1"
                           checked={check26}
+                          style={{ display: "none" }}
                           onChange={(e) => setCheck26(e.target.checked)}
                           />
                        <a>적극 투자형</a>
