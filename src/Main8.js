@@ -672,7 +672,8 @@ function App7() {
                     <li id="chkline">
                       <label>
                       투자성향
-                      <span
+                      <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
+                       <span
                         style={{
                         display: "inline-block",
                         width: "50px",
@@ -692,6 +693,8 @@ function App7() {
                           />
                        <a>안정형</a>
                        </span>
+                       </label>
+                       <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
                        <span
                         style={{
                         display: "inline-block",
@@ -712,6 +715,8 @@ function App7() {
                           />
                        <a>안정 추구형</a>
                        </span>
+                       </label>
+                       <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
                        <span
                         style={{
                         display: "inline-block",
@@ -732,7 +737,9 @@ function App7() {
                           />
                        <a>위험 추구형</a>
                        </span>
-                       <span
+                       </label>
+                       <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
+                        <span
                         style={{
                         display: "inline-block",
                         width: "50px",
@@ -752,6 +759,7 @@ function App7() {
                           />
                        <a>적극 투자형</a>
                        </span>
+                       </label>
                        <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
                         <input
                         type="checkbox"
