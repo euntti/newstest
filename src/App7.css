@@ -45,14 +45,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.nav{
+.nav1{
   width:100%;
   height:53px;
   background-color: #ff9100;
   display:flex;
   align-items: center;
 }
-.nav div{
+.nav1 div{
   color:#fff;
   padding-left:20px;
   font-weight: 800;
@@ -74,54 +74,54 @@ table {
   cursor: pointer;
   z-index: 1;
 }
-.box_container{
+.box_container8{
   display:flex;
   justify-content:center
 }
-.box{
+.box8{
   width:688px;
   height:auto;
   border:5px solid #eee;
   background-color:#fff;
   margin-top:30px;
 }
-.subTitle{
+.subTitle8{
   padding: 20px 20px 0;
   color: #477cdc;
   font-weight: bold;
 }
-.inner{
+.inner8{
   padding:20px 0;
 }
-.head{
+.head8{
   padding:0 20px 20px;
 }
-.title{
+.title8{
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: -0.05em;
 }
-.color1 {
+.color2 {
   color: #f00;
   font-weight: bold;
 }
-.writer{
+.writer8{
   padding: 6px 10px;
   border-bottom: 1px solid #ccc;
   letter-spacing: 0;
   box-sizing: border-box;
 }
 
-.writer-info {
+.writer-info8 {
   clear: both;
   padding: 10px;
   font-size: 14px;
 }
-.content-wrap {
+.content-wrap8 {
   margin-top: 40px;
   margin-bottom: 30px;
 }
-.content {
+.content8 {
   width: 96%;
   margin: 0 auto;
   padding: 0 15px;
@@ -130,34 +130,30 @@ table {
   font-size: 17px;
   letter-spacing: 0;
 }
-.mainhead{
+.mainhead8{
   font-weight: bold;
   font-size: 15px;
   text-align: center;
   color: rgb(51, 0, 255);
 }
-.mainhead2{
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
-}
-.content .imgbox {
+
+.content8 .imgbox {
   margin-top: 15px;
   margin-bottom: 0;
   text-align: center;
 }
-.content p {
+.content8 p {
   margin-top: 25px;
   margin-bottom: 25px;
   line-height: 2.0;
 }
-.imgdesc {
+/* .imgdesc {
   padding-top: 8px;
   text-align: center;
   color: #000;
   font-weight: bold;
   font-size: 0.9em;
-}
+} */
 .inputBoxs {
   /* z-index: 2; */
   position: relative;
@@ -202,7 +198,7 @@ table {
   font-size:12px;
   text-align: center;
 }
-.inputBoxs #line03{
+.inputBoxs8 #line03{
   font-weight: bolder;
   font-size:26px;
   text-align: center;
@@ -255,12 +251,12 @@ table {
   display: flex;
 
 }
-.username{
+.fullkName{
   justify-content: center;
   align-items: center;
   display: flex;
 }
-.tel{
+.telNumber{
   justify-content: center;
   align-items: center;
   display: flex;
@@ -403,35 +399,35 @@ table {
 
 
 @media (max-width: 700px) {
-  .box_container{
+  .box_container8{
     width:auto;
     display:block;
   }
-  .box{
+  .box8{
     float: none;
     width: auto;
     font-weight: normal;
     border: 0;
   }
-  .inner{
+  .inner8{
     display: block;
     padding-bottom: 5px;
   }
-  .inner .head{
+  .inner8 .head8{
     display:table-cell;
     padding:0 10px;
   }
-  .head .title {
+  .head8 .title8 {
     width:100%;
     font-size: 28px;
     /* color:red; */
   }
-  .writer-info{
+  .writer-info8{
     padding: 10px 0;
     font-size: 12px;
 
   }
-  .content{
+  .content8{
     padding:0;
   }
   .latest img{ 
@@ -474,7 +470,7 @@ table {
 }
 
 
-  .content .imgbox img {
+  .content8 .imgbox img {
     max-width: 100%;
     margin: 0 ;
   }
