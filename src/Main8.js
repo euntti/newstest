@@ -9,6 +9,8 @@ import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
+var now = new Date();	// 현재 날짜 및 시간
+console.log("현재 : ", now);
 
 const Main8= () => {
     return <div>Main8</div>
@@ -354,8 +356,8 @@ function App7() {
   return (
     <div>
       <div>
-      <div className="nav">
-        <div>주식투자갤러리</div>
+      <div className="nav8">
+        <div>주식노하우</div>
           <div>
           <div onClick={() => sendKaKao()} className="consulting">
                    <img
@@ -369,19 +371,19 @@ function App7() {
       </div>
       <div className="box_container">
         <div className="box">
-          <div className="subTitle">■ 떠오르는 이슈</div>
+          <div className="subTitle">■ 방금올라온 뉴스</div>
           <div className="inner">
             <div className="head">
               <h1 className="title">
-                하루에 3분투자로 {" "}
-                <p><span class="color1">" 억대 만들기 노하우는 ?"</span> </p>
+              국내증시는 우량주보단 {" "}
+                <p><span class="color1">" 테마주가 강세 "</span> </p>
              
               </h1>
             </div>
           </div>
           <div className="writer">
             <div class="writer-info">
-              기자 - 김진우ㅣ 조회수 : 1202 ㅣ 날짜 :{""}
+              기자 - 서이준ㅣ 조회수 : 6782 ㅣ 날짜 :{""}
               <span id="regdate">2023-05-31</span>
             </div>
           </div>
