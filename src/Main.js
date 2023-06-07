@@ -143,7 +143,7 @@ function App() {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
-        // width: "auto",
+        width: "auto",
         height: "1400px",
       }}
     >
