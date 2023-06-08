@@ -155,17 +155,17 @@ function App8() {
   };
   return (
     <div
-    //   style={{
-    //     backgroundImage: isMobile
-    //       ? `url("/img/bg3.png")`
-    //       : `url("/img/bg3.png")`,
-    //     backgroundRepeat: "no-repeat",
-    //     backgroundPosition: "center",
-    //     backgroundSize: "cover",
-    //     backgroundAttachment: "fixed",
-    //     // width: "auto",
-    //     height: "3000px",
-    //   }}
+      style={{
+        backgroundImage: isMobile
+          ? `url("/img/bg3.png")`
+          : `url("/img/bg3.png")`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
+        // width: "auto",
+        height: "4000px",
+      }}
     >
       <div className="container">
         <div className="sub">
@@ -230,7 +230,7 @@ function App8() {
                     alt="logo "
                   /> */}
                   <img
-                    style={{ width: "auto" , height: 1000 }}
+                    style={{ width: "autp" , height: 2500 }}
                     src={"/img/30day.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
