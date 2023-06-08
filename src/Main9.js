@@ -155,7 +155,7 @@ function App8() {
   };
   return (
     <div>
-    <div
+    <div className="main9"
       style={{
         backgroundImage: isMobile
           ? `url("/img/bg3.png")`
