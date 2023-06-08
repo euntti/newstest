@@ -230,7 +230,7 @@ function App8() {
                     alt="logo "
                   /> */}
                   <img
-                    style={{ width: 1920 , height: 1000 }}
+                    style={{ width: "auto" , height: 1000 }}
                     src={"/img/30day.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
