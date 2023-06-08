@@ -157,8 +157,8 @@ function App8() {
     <div
       style={{
         backgroundImage: isMobile
-          ? `url("/img/30day.png")`
-          : `url("/img/30day.png")`,
+          ? `url("/img/bg3.png")`
+          : `url("/img/bg3.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
@@ -186,11 +186,11 @@ function App8() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                  <img
+                  {/* <img
                     src={"/img/theme1.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
-                  />
+                  /> */}
                   {/* <img
                     src={"/img/theme2.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
@@ -230,8 +230,8 @@ function App8() {
                     alt="logo "
                   /> */}
                   <img
-                    style={{ width: 400 }}
-                    src={"/img/bg2.png"}
+                    style={{ width: 1920 , height: 1000 }}
+                    src={"/img/30day.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />
