@@ -150,7 +150,7 @@ table {
 
 
 
-.username {
+.username9 {
   display: flex;
   width: 608px;
   height: 81  px;
@@ -159,17 +159,17 @@ table {
   margin-bottom: 10px;
   font-size: 18pt;
 }
-.phone {
+.phone9 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.phone select {
+.phone9 select {
   width: 484px;
   height: 48px;
   margin: 0 12.5px 0;
 }
-.phone input {
+.phone9 input {
   display: flex;
   width: 600px;
   height: 75px;
@@ -178,11 +178,11 @@ table {
   margin-bottom: 10px;
   font-size: 18pt;
 }
-.btnArea {
+.btnArea9 {
   display: flex;
   justify-content: center;
 }
-.btnArea button {
+.btnArea9 button {
   background-color: transparent;
   border: 0px;
   /* width: 812px;
@@ -199,19 +199,9 @@ table {
   align-items: center;
 }
 
-.profit {
-  display: block;
- 
-  justify-content: center;
 
-  
-}
-.profit1 {
-  display: flex;
-  justify-content: center;
-  
  
-}
+
 .bottom-bar9{ 
     position: fixed;
     bottom: 0;
