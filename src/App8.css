@@ -211,7 +211,7 @@ display: flex;
       
      
     text-align: center;
-      
+    display: block;
      
     flex: 1;
     }
