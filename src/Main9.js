@@ -180,13 +180,11 @@ function App8() {
                     alignItems: "center",
                   }}
                 >
-                    <img
-                   className="app30Picture"
-                  src={"/img/day.png"}
-                  style={{ width: "auto" , height: 2500}}
-                   alt="logo "
-                />
-                
+                     <img
+                    style={{ width: "100%", height: "auto" }}
+                    src={"/img/day.png"}
+                    alt=""
+                    />
                 </div>
               ) : (
                 <div
@@ -242,7 +240,12 @@ function App8() {
       </div>
       <div
         style={{ display: "block", position: "relative", textAlign: "center" }}
-      >
+      > <img
+      className="app30Picture"
+     src={"/img/day.png"}
+     style={{ width: "auto" , height: 2500}}
+      alt="logo "
+   />
         <Slider {...settings}>
           {/* <div>
             <ColorRing
