@@ -221,7 +221,7 @@ function App8() {
        
             
        <div className="bottom-bar9">
-            <div className="nameArea">
+            <div className="nameArea9">
               {/* <div className="nameArea">
               <input
                 type="text"
@@ -230,7 +230,7 @@ function App8() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
-              <div className="namephone ">
+              <div className="namephone9 ">
                 {/* {<select>
                 <option key="1" value="1">
                   010
@@ -246,7 +246,7 @@ function App8() {
                 />
               </div>
               {"\t"}
-              <div className="phone">
+              <div className="phone9">
                 <input
                        type="tel"
                        name="user_name"
@@ -256,7 +256,7 @@ function App8() {
                        onChange={handlePhoneNumberChange}
                       />
               </div>
-              <div className="time">
+              <div className="time9">
                 <select value={time} onChange={(e) => setTime(e.target.value)}>
                   <option value="">통화가능시간(필수)</option>
                   <option value="06:00-09:00">06:00-09:00</option>
@@ -321,7 +321,7 @@ function App8() {
                 </a>
               </label>
             </div>
-            <div className="btnArea">
+            <div className="btnArea9">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
                   <img src={"/img/btn.gif"}></img>
