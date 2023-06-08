@@ -249,7 +249,7 @@ table {
     width: 100%;
     background-color: #25a5ff;
     color: #fff;
-    padding: 10px;
+   
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -257,7 +257,7 @@ table {
     overflow: hidden;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+   
     height: 300px;
 
 }
