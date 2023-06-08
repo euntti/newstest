@@ -157,7 +157,9 @@ function App2() {
   return (
     <div
       style={{
-        background_color: "#ffffff"
+        backgroundImage: isMobile
+          ? `url("/img/bg2.png")`
+          : `url("/img/bg2.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
