@@ -28,7 +28,7 @@ const customStyles = {
 
 function App() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
-  const [userName, setUserName] = useState("");
+  const [userName1, setUserName1] = useState("");
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
   const onlyNumber = (e) => {
@@ -88,7 +88,7 @@ function App() {
 
   const submitEvent = (e) => {
     e.preventDefault();
-    if (userName == "") {
+    if (userName1 == "") {
       return alert("이름을 입력해주세요.");
     }
     if (phone1 == "") {
@@ -99,7 +99,7 @@ function App() {
     }
 
     const phoneNumber = `${phone1}`;
-    const name = `${userName}`;
+    const name = `${userName1}`;
     const selectedTime = `${time}`;
     const param = {
       phoneNumber: phoneNumber,
@@ -118,7 +118,7 @@ function App() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
+      `sb글로벌 ${userName1} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
     );
     alert(
       "[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다."
@@ -364,10 +364,10 @@ function App() {
               -{"\t"}} */}
                 <input
                   type="text"
-                  className="username"
+                  className="username1"
                   placeholder="이름"
                   maxLength={4}
-                  onChange={(e) => setUserName(e.target.value)}
+                  onChange={(e) => setUserName1(e.target.value)}
                 />
               </div>
               {"\t"}
