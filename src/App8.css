@@ -199,7 +199,42 @@ table {
   align-items: center;
 }
 
-
+.nameArea {
+display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .namephone,
+    .phone,
+    .time {
+      
+     
+    text-align: center;
+      
+     
+    flex: 1;
+    }
+    
+    .username,
+    select,
+    
+    select
+    input[type="tel"] {
+      
+     
+    width: 100%;
+    }
+    
+    .btnArea {
+      
+     
+    display: flex;
+      
+     
+    justify-content: center;
+    }
+    
  
 
 .bottom-bar9{ 
