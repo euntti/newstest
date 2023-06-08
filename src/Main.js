@@ -28,7 +28,7 @@ const customStyles = {
 
 function App() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
-  const [userName, setUserName] = useState("");
+  const [userName1, setUserName] = useState("");
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
   const onlyNumber = (e) => {
@@ -88,7 +88,7 @@ function App() {
 
   const submitEvent = (e) => {
     e.preventDefault();
-    if (userName == "") {
+    if (userName1 == "") {
       return alert("이름을 입력해주세요.");
     }
     if (phone1 == "") {
@@ -99,7 +99,7 @@ function App() {
     }
 
     const phoneNumber = `${phone1}`;
-    const name = `${userName}`;
+    const name = `${userName1}`;
     const selectedTime = `${time}`;
     const param = {
       phoneNumber: phoneNumber,
@@ -355,7 +355,7 @@ function App() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
-              <div className="namephone ">
+              <div className="name">
                 {/* {<select>
                 <option key="1" value="1">
                   010
@@ -364,10 +364,10 @@ function App() {
               -{"\t"}} */}
                 <input
                   type="text"
-                  className="username"
+                  className="username1"
                   placeholder="이름"
                   maxLength={4}
-                  onChange={(e) => setUserName(e.target.value)}
+                  onChange={(e) => setUserName1(e.target.value)}
                 />
               </div>
               {"\t"}
