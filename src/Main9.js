@@ -165,16 +165,14 @@ function App8() {
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         // width: "auto",
-        height: "4000px",
+        height: "3600px",
       }}
     >
-      {/* Rest of the code */}
       <div className="container">
         <div className="sub">
           <div className="App">
             <div className="appPictureContainer3">
               {isBrowser ? (
-                // Browser View
                 <div
                   style={{
                     display: "flex",
@@ -183,27 +181,28 @@ function App8() {
                     alignItems: "center",
                   }}
                 >
-                  <img
+                     <img
                     style={{ width: "100%", height: "auto" }}
                     src={"/img/day.png"}
                     alt=""
-                  />
+                    />
                 </div>
               ) : (
-                // Mobile View
                 <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
                   <img
-                    style={{ width: "auto", height: 2500 }}
+                    style={{ width: "auto" , height: "auto" }}
                     src={"/img/day.png"}
-                    alt="logo"
+                    
+                    alt="logo "
                   />
+                 
                 </div>
               )}
             </div>
@@ -213,29 +212,47 @@ function App8() {
       </div>
       <div
         style={{ display: "block", position: "relative", textAlign: "center" }}
-      >
-        <div className="nameArea">
-          <div className="namephone">
-            {/* Move "namephone" below the image */}
-            <input
-              type="text"
-              className="username"
-              placeholder="이름"
-              maxLength={4}
-              onChange={(e) => setUserName(e.target.value)}
-            />
-          </div>
-          <div className="phone">
-            {/* Move "phone" below the image */}
-            <input
-              type="tel"
-              name="user_name"
-              placeholder="휴대폰"
-              maxLength={13}
-              value={phone1}
-              onChange={handlePhoneNumberChange}
-            />
-          </div>
+      > 
+       
+          
+       
+            
+       <div className="bottom-bar9">
+            <div className="nameArea">
+              {/* <div className="nameArea">
+              <input
+                type="text"
+                className="username"
+                placeholder="이름"
+                onChange={(e) => setUserName(e.target.value)}
+              ></input>
+            </div> */}
+              <div className="namephone ">
+                {/* {<select>
+                <option key="1" value="1">
+                  010
+                </option> 
+              </select>{" "}
+              -{"\t"}} */}
+                <input
+                  type="text"
+                  className="username"
+                  placeholder="이름"
+                  maxLength={4}
+                  onChange={(e) => setUserName(e.target.value)}
+                />
+              </div>
+              {"\t"}
+              <div className="phone">
+                <input
+                       type="tel"
+                       name="user_name"
+                       placeholder="휴대폰"
+                       maxLength={13}
+                       value={phone1}
+                       onChange={handlePhoneNumberChange}
+                      />
+              </div>
               <div className="time">
                 <select value={time} onChange={(e) => setTime(e.target.value)}>
                   <option value="">통화가능시간(필수)</option>
@@ -311,7 +328,7 @@ function App8() {
               </button>
             </div>
           </div>
-     
+     </div>
         {/* <div className="profit">
           {isBrowser ? (
             <img src={"/img/titleprofit.png"}></img>
