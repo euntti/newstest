@@ -151,15 +151,6 @@ table {
 
 
 
-.username {
-  display: flex;
-  width: 608px;
-  height: 81  px;
-  margin-left: 12px;
-  margin-right: 4px;
-  margin-bottom: 10px;
-  font-size: 18pt;
-}
 .phone {
   display: flex;
   justify-content: center;
