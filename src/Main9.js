@@ -180,6 +180,12 @@ function App8() {
                     alignItems: "center",
                   }}
                 >
+                     <img
+                   className="app30Picture"
+                  src={"/img/30day.png"}
+                  style={{ width: "auto" , height: 2500}}
+                   alt="logo "
+                />
                 </div>
               ) : (
                 <div
