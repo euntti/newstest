@@ -137,8 +137,8 @@ function App() {
     <div
       style={{
         backgroundImage: isMobile
-          ? `url("/img/bg2.png")`
-          : `url("/img/bg2.png")`,
+          ? `url("/img/bg.jpeg")`
+          : `url("/img/bg.jpeg")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
@@ -166,7 +166,11 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                
+                  <img
+                    src={"/img/theme1.png"}
+                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    alt="logo "
+                  />
                   {/* <img
                     src={"/img/theme2.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
@@ -205,102 +209,11 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                
-
-                   <div className="inputBoxs">
-                  <h1>급등종목 30일 무료제공 프로모션</h1>
-                  <h3>하루 3분 투자로 1억만들기</h3>
-                  <ul>
-                    <li id="line01">
-                      <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
-                    </li>
-                    <li id="line02">
-                      개인정보는 암호화하여 안전하게 처리됩니다.
-                    </li>
-                    <li id="line03" cond="off">
-                      <span> 30일 급등주 신청하기.</span>
-                    </li>
-                    <br />
-                    <li>
-                      <input
-                        type="text"
-                        id="f1"
-                        name="user_name"
-                        required=""
-                        placeholder="성함을 입력하세요"
-                        value={nickName}
-                        maxLength={4}
-                        onChange={(e) => setNickName(e.target.value)}
-                      />
-                    </li>
-                    <li>
-                      <input
-                        type="number"
-                        id="f1"
-                        name="user_name"
-                        required=""
-                        placeholder="연락처를 입력하세요"
-                        onkeyPress="onlyNumber(this)"
-                       maxLength={13}
-                       pattern="[0-9]{13}"
-                        value={phoneNumber}
-                        onChange={(e) => {
-                          setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
-                        }}
-                        
-                      />
-                    </li>
-                    <br />
-                    <li id="chkline">
-                      <label>
-                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check1}
-                          onChange={(e) => setCheck1(e.target.checked)}
-                        />
-                        개인정보취급방침동의
-                <a
-                  href="javascript:void(0);"
-                  onClick={() => setIsOpen2(true)}
-                  // onclick="privacy_pop('show', '.pop-policy',2)"
-                >
-                  [보기]
-                </a>
-                      </label>
-                      
-                      <label>
-                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree3"
-                          value="1"
-                          checked={check3}
-                          onChange={(e) => setCheck3(e.target.checked)}
-                        />
-                        광고성문자수신동의
-                <a
-                  href="javascript:void(0);"
-                  onClick={() => setIsOpen(true)}
-                  // onclick="Popup1('show', '.popup',2)"
-                >
-                  [보기]
-                </a>
-                      </label>
-                    </li>
-                    <li id="smtbtn">
-                      <input
-                        id="btn"
-                        type="submit"
-                        value="급등종목 무료제공 이벤트 신청하기"
-                        onClick={submitEvent}
-                      />
-                    </li>
-                  </ul>
-                  </div>
-
+                  <img
+                    style={{ width: 400, height: "auto"  }}
+                    src={"/img/mbg.png"}
+                    alt="logo "
+                  />
                   {/* <img
                     style={{ width: 300 }}
                     src={"/img/theme2.png"}
@@ -328,7 +241,223 @@ function App() {
       <div
         style={{ display: "block", position: "relative", textAlign: "center" }}
       >
-        
+        <Slider {...settings}>
+          {/* <div>
+            <ColorRing
+              visible={true}
+              height="160"
+              width="160"
+              ariaLabel="blocks-loading"
+              wrapperStyle={{}}
+              wrapperClass="blocks-wrapper"
+              colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
+            />
+            <div style={{ color: "#fff", fontSize: 35 }}>Loading....</div>
+          </div> */}
+          {/* <div
+            style={{ display: "flex", justifyContent: "center", marginTop: 20 }}
+          >
+            {isBrowser ? (
+              <>
+                <Progressbar value={progress} />
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: 25,
+                  }}
+                >
+                  <h2
+                    style={{
+                      fontSize: 35,
+                      display: "flex",
+                      alignItems: "center",
+                      color: "#fff",
+                    }}
+                  >
+                    신청자 수
+                  </h2>
+                  <AnimatedNumbers
+                    includeComma
+                    animateToNumber={num}
+                    fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
+                    locale="en-US"
+                    configs={[{ mass: 1, tension: 220, friction: 100 }]}
+                  />
+                  <h2
+                    style={{
+                      fontSize: 35,
+                      color: "#fff",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    명
+                  </h2>
+                </div>
+                <div style={{ fontSize: 25, color: "#fffc02 " }}>
+                  거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
+                </div>
+              </>
+            ) : (
+              <>
+                <div style={{ width: 300 }}>
+                  <Progressbar value={progress} />
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: 25,
+                  }}
+                >
+                  <h2
+                    style={{
+                      fontSize: 35,
+                      display: "flex",
+                      alignItems: "center",
+                      color: "#fff",
+                    }}
+                  >
+                    신청자 수
+                  </h2>
+                  <AnimatedNumbers
+                    includeComma
+                    animateToNumber={num}
+                    fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
+                    locale="en-US"
+                    configs={[{ mass: 1, tension: 220, friction: 100 }]}
+                  />
+                  <h2
+                    style={{
+                      fontSize: 35,
+                      color: "#fff",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    명
+                  </h2>
+                </div>
+                <div style={{ fontSize: 25, color: "#fffc02 " }}>
+                  거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
+                </div>
+              </>
+            )}
+          </div> */}
+          <div>
+            <div className="nameArea">
+              {/* <div className="nameArea">
+              <input
+                type="text"
+                className="username"
+                placeholder="이름"
+                onChange={(e) => setUserName(e.target.value)}
+              ></input>
+            </div> */}
+              <div className="namephone ">
+                {/* {<select>
+                <option key="1" value="1">
+                  010
+                </option> 
+              </select>{" "}
+              -{"\t"}} */}
+                <input
+                  type="text"
+                  className="username"
+                  placeholder="이름"
+                  maxLength={4}
+                  onChange={(e) => setUserName(e.target.value)}
+                />
+              </div>
+              {"\t"}
+              <div className="phone">
+                <input
+                  type="number"
+                  className="phone"
+                  placeholder="휴대폰"
+                  onChange={(e) => setPhone1(e.target.value)}
+                  onkeyPress="onlyNumber(this)"
+                  maxLength={13}
+                  pattern="[0-9]{13}"
+                />
+              </div>
+              <div className="time">
+                <select value={time} onChange={(e) => setTime(e.target.value)}>
+                  <option value="">통화가능시간(필수)</option>
+                  <option value="06:00-09:00">06:00-09:00</option>
+                  <option value="09:00-11:00">09:00-11:00</option>
+                  <option value="11:00-13:00">11:00-13:00</option>
+                  <option value="13:00-15:00">13:00-15:00</option>
+                  <option value="15:00-17:00">15:00-17:00</option>
+                  <option value="17:00-19:00">17:00-19:00</option>
+                  <option value="19:00-21:00">19:00-21:00</option>
+                  <option value="21:00-23:00">21:00-23:00</option>
+                  <option value="23:00-06:00">23:00-06:00</option>
+                </select>
+                {"통화가능시간 "}
+              </div>
+            </div>
+            <div style={{ marginLeft: 10 }}>
+              <label style={{ color: "#fff" }}>
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="agree1"
+                  value="1"
+                  checked={check1}
+                  onChange={(e) => setCheck1(e.target.checked)}
+                />
+                개인정보취급방침동의
+                <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen2(true)}
+                  // onclick="privacy_pop('show', '.pop-policy',2)"
+                >
+                  [보기]
+                </a>
+              </label>
+              {/* <label style={{ color: "#fff" }}>
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="agree2"
+                  value="1"
+                  checked={check2}
+                  onChange={(e) => setCheck2(e.target.checked)}
+                />
+                마케팅수신동의
+              </label> */}
+              <label style={{ color: "#fff" }}>
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="agree3"
+                  value="1"
+                  checked={check3}
+                  onChange={(e) => setCheck3(e.target.checked)}
+                />
+                광고성문자수신동의
+                <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen(true)}
+                  // onclick="Popup1('show', '.popup',2)"
+                >
+                  [보기]
+                </a>
+              </label>
+            </div>
+            <div className="btnArea">
+              <button onClick={(e) => submitEvent(e)}>
+                {isBrowser ? (
+                  <img src={"/img/btn.gif"}></img>
+                ) : (
+                  <img style={{ width: "390px" }} src={"/img/btn.gif"}></img>
+                )}
+              </button>
+            </div>
+          </div>
+        </Slider>
         {/* <div className="profit">
           {isBrowser ? (
             <img src={"/img/titleprofit.png"}></img>
