@@ -34,8 +34,8 @@ const Main9 = () => {
 
 function App8() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
-  const [userName, setUserName] = useState("");
-  const [phone1, setPhone1] = useState("");
+  const [userName9, setUserName9] = useState("");
+  const [phone9, setPhone9] = useState("");
   const handlePhoneNumberChange = (e) => {
     let formattedNumber = e.target.value.replace(/-/g, ""); // 하이픈 제거
     if (formattedNumber.length > 2 && formattedNumber.length < 6) {
@@ -43,16 +43,16 @@ function App8() {
     } else if (formattedNumber.length >= 6) {
       formattedNumber = formattedNumber.replace(/(\d{3})(\d{3})(\d{0,4})/, "$1-$2-$3"); // 첫 번째와 두 번째 하이픈 추가
     }
-    setPhone1(formattedNumber);
+    setPhone9(formattedNumber);
 
     const inputValue = e.target.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
-    setPhone1(inputValue);
+    setPhone9(inputValue);
   };
 
   
 
   const [num, setNum] = useState(331231);
-  const [time, setTime] = useState("");
+  const [time9, setTime9] = useState("");
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
@@ -99,13 +99,13 @@ function App8() {
 
   const submitEvent = (e) => {
     e.preventDefault();
-    if (userName == "") {
+    if (userName9 == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phone1 == "") {
+    if (phone9 == "") {
       return alert("'-'없이 입력을 해주세요.");
     }
-    if (time == "") {
+    if (time9 == "") {
       return alert("통화시간 선택해주세요");
     }
 
@@ -119,9 +119,9 @@ function App8() {
       return alert("광고성문자동의 체크해주세요.");
     }
 
-    const phoneNumber = `${phone1}`;
-    const name = `${userName}`;
-    const selectedTime = `${time}`;
+    const phoneNumber = `${phone9}`;
+    const name = `${userName9}`;
+    const selectedTime = `${time9}`;
     const param = {
       phoneNumber: phoneNumber,
       name: name,
@@ -139,7 +139,7 @@ function App8() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
+      `sb글로벌 ${userName9} 휴대폰 번호 ${phone9}님이 신청하였습니다. 통화가능한 시간은 ${time9} 입니다. `
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
   };
@@ -165,7 +165,7 @@ function App8() {
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         // width: "auto",
-        height: "3600px",
+        height: "2000px",
       }}
     >
       <div className="container">
@@ -227,7 +227,7 @@ function App8() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
-              <div className="namephone ">
+              <div className="namephone9 ">
                 {/* {<select>
                 <option key="1" value="1">
                   010
@@ -236,24 +236,24 @@ function App8() {
               -{"\t"}} */}
                 <input
                   type="text"
-                  className="username"
+                  className="username9"
                   placeholder="이름"
                   maxLength={4}
-                  onChange={(e) => setUserName(e.target.value)}
+                  onChange={(e) => setUserName9(e.target.value)}
                 />
               </div>
               {"\t"}
-              <div className="phone">
+              <div className="phone9">
                 <input
                        type="tel"
-                       name="user_name"
+                       name="user_name9"
                        placeholder="휴대폰"
                        maxLength={13}
                        value={phone1}
                        onChange={handlePhoneNumberChange}
                       />
               </div>
-              <div className="time">
+              <div className="time9">
                 <select value={time} onChange={(e) => setTime(e.target.value)}>
                   <option value="">통화가능시간(필수)</option>
                   <option value="06:00-09:00">06:00-09:00</option>
@@ -318,7 +318,7 @@ function App8() {
                 </a>
               </label>
             </div>
-            <div className="btnArea">
+            <div className="btnArea9">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
                   <img src={"/img/btn.gif"}></img>
