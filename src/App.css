@@ -327,7 +327,7 @@ table {
     height: 45px;
     width: 370px;
   }
-  .App .time {
+  .App .time select {
     /* background-color:red; */
     align-items: center;
     display: block;
@@ -337,7 +337,7 @@ table {
     height: 50px;
     justify-content: center */
     height: 45px;
-    width: 600px;
+    width: 370px;
     margin-left: 0px;
   }
   .App .btnArea button {
