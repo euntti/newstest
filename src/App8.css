@@ -136,10 +136,9 @@ table {
 }
 .sub {
 }
-.appPicture {
-  width: 800px;
+.app30Picture {
+  width: 1200px;
   height: 1023px;
-  margin-left: 20px;
 }
 .nameArea{
   display: block;
