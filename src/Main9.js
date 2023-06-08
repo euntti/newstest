@@ -181,11 +181,10 @@ function App8() {
                   }}
                 >
                      <img
-                   className="app30Picture"
-                  src={"/img/30day.png"}
-                  style={{ width: "auto" , height: 2500}}
-                   alt="logo "
-                />
+                    style={{ width: "100%", height: "auto" }}
+                    src={"/img/30days.png"}
+                    alt=""
+                    />
                 </div>
               ) : (
                 <div
