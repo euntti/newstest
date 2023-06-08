@@ -44,7 +44,7 @@ function App8() {
     } else if (formattedNumber.length >= 6) {
       formattedNumber = formattedNumber.replace(/(\d{3})(\d{3})(\d{0,4})/, "$1-$2-$3"); // 첫 번째와 두 번째 하이픈 추가
     }
-    setPhone19(formattedNumber);
+    setPhone199(formattedNumber);
 
     const inputValue = e.target.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
     setPhone17(inputValue);
@@ -100,10 +100,10 @@ function App8() {
 
   const submitEvent = (e) => {
     e.preventDefault();
-    if (userName9 == "") {
+    if (userName7 == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phone19 == "") {
+    if (phone17 == "") {
       return alert("'-'없이 입력을 해주세요.");
     }
 
@@ -158,9 +158,9 @@ function App8() {
         // height: "3000px",
       }}
     >
-      <div className="container">
-        <div className="sub">
-          <div className="App">
+      <div className="container9">
+        <div className="sub9">
+          <div className="App9">
             
           <div className="appPictureContainer9">
   {isBrowser ? (
@@ -355,7 +355,7 @@ function App8() {
                   className="username9"
                   placeholder="이름"
                   maxLength={4}
-                  onChange={(e) => setUserName9(e.target.value)}
+                  onChange={(e) => setUserName7(e.target.value)}
                 />
               </div>
               {"\t"}
@@ -365,7 +365,7 @@ function App8() {
                        name="user_name9"
                        placeholder="휴대폰"
                        maxLength={13}
-                       value={phone19}
+                       value={phone17}
                        onChange={handlePhoneNumberChange}
                       />
               </div>
@@ -399,7 +399,7 @@ function App8() {
             name="agree3"
             value="1"
             checked={true}
-            onChange={(e) => setCheck1(e.target.checked)}
+            onChange={(e) => setCheck3(e.target.checked)}
           />
           광고성문자수신동의
           <a
