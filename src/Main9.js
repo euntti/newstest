@@ -180,49 +180,23 @@ function App8() {
                     alignItems: "center",
                   }}
                 >
-                  {/* <img
-                    className="appPicture"
-                    src={"/img/logo.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
-                  /> */}
-                  {/* <img
-                    src={"/img/theme1.png"}
-                    style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
-                  /> */}
-                  {/* <img
-                    src={"/img/theme2.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
-                  />{" "} */}
-                  {/* <img
-                    style={{ width: 500 }}
-                    src={"/img/theme4.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
-                  /> */}
-                  {/* <div
-                    style={{ color: "#fff", fontSize: 30, margin: "30px 0" }}
-                  >
-                    1억만들기 프로젝트 30일 무료체험 신청하세요
-                  </div> */}
                 </div>
               ) : (
-                // <img
-                //   className="appPicture"
-                //   src={"/img/ms.jpeg"}
-                //   // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                //   alt="logo "
-                // />
                 <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                 <img
+                   className="app30Picture"
+                  src={"/img/30day.png"}
+                  style={{ width: "auto" , height: 2500}}
+                   alt="logo "
+                />
+                
                   {/* <img
                     className="appPicture"
                     src={"/img/logo.png"}
@@ -232,7 +206,7 @@ function App8() {
                   <img
                     style={{ width: "autp" , height: 2500 }}
                     src={"/img/30day.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
+                    
                     alt="logo "
                   />
                   {/* <img
