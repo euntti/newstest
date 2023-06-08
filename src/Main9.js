@@ -164,7 +164,7 @@ function App8() {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
-        width: "853px",
+        width: "1300px",
         height: "2000px",
       }}
     >
