@@ -416,7 +416,7 @@ function App2() {
                   <option value="21:00-23:00">21:00-23:00</option>
                   <option value="23:00-06:00">23:00-06:00</option>
                 </select>
-                {"통화가능시간 "}
+               
               </div>
             </div>
             <div style={{ marginLeft: 10 }}>
