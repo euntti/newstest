@@ -199,7 +199,7 @@ table {
   align-items: center;
 }
 
-.nameArea {
+.nameArea9 {
   
  
     display: flex;
@@ -211,9 +211,9 @@ table {
     align-items: center;
     }
     
-    .namephone,
-    .phone,
-    .time {
+    .namephone9,
+    .phone9,
+    .time9 {
     margin: 0 0 0 0;
      
     text-align: center;
@@ -222,7 +222,7 @@ table {
     width: 100%;
     }
     
-    .username,
+    .username9,
     select,
     
     select
@@ -232,7 +232,7 @@ table {
     width: 100%;
     }
     
-    .btnArea {
+    .btnArea9 {
       
      
     display: flex;
