@@ -154,6 +154,7 @@ function App8() {
     autoplaySpeed: 3000,
   };
   return (
+    <div>
     <div
       style={{
         backgroundImage: isMobile
@@ -212,111 +213,9 @@ function App8() {
       <div
         style={{ display: "block", position: "relative", textAlign: "center" }}
       > 
-        <Slider {...settings}>
-          {/* <div>
-            <ColorRing
-              visible={true}
-              height="160"
-              width="160"
-              ariaLabel="blocks-loading"
-              wrapperStyle={{}}
-              wrapperClass="blocks-wrapper"
-              colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
-            />
-            <div style={{ color: "#fff", fontSize: 35 }}>Loading....</div>
-          </div> */}
-          {/* <div
-            style={{ display: "flex", justifyContent: "center", marginTop: 20 }}
-          >
-            {isBrowser ? (
-              <>
-                <Progressbar value={progress} />
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginTop: 25,
-                  }}
-                >
-                  <h2
-                    style={{
-                      fontSize: 35,
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#fff",
-                    }}
-                  >
-                    신청자 수
-                  </h2>
-                  <AnimatedNumbers
-                    includeComma
-                    animateToNumber={num}
-                    fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
-                    locale="en-US"
-                    configs={[{ mass: 1, tension: 220, friction: 100 }]}
-                  />
-                  <h2
-                    style={{
-                      fontSize: 35,
-                      color: "#fff",
-                      display: "flex",
-                      alignItems: "center",
-                    }}
-                  >
-                    명
-                  </h2>
-                </div>
-                <div style={{ fontSize: 25, color: "#fffc02 " }}>
-                  거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
-                </div>
-              </>
-            ) : (
-              <>
-                <div style={{ width: 300 }}>
-                  <Progressbar value={progress} />
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginTop: 25,
-                  }}
-                >
-                  <h2
-                    style={{
-                      fontSize: 35,
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#fff",
-                    }}
-                  >
-                    신청자 수
-                  </h2>
-                  <AnimatedNumbers
-                    includeComma
-                    animateToNumber={num}
-                    fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
-                    locale="en-US"
-                    configs={[{ mass: 1, tension: 220, friction: 100 }]}
-                  />
-                  <h2
-                    style={{
-                      fontSize: 35,
-                      color: "#fff",
-                      display: "flex",
-                      alignItems: "center",
-                    }}
-                  >
-                    명
-                  </h2>
-                </div>
-                <div style={{ fontSize: 25, color: "#fffc02 " }}>
-                  거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
-                </div>
-              </>
-            )}
-          </div> */}
-          <div>
+       
+          
+       
             <div className="nameArea">
               {/* <div className="nameArea">
               <input
@@ -427,7 +326,7 @@ function App8() {
               </button>
             </div>
           </div>
-        </Slider>
+     
         {/* <div className="profit">
           {isBrowser ? (
             <img src={"/img/titleprofit.png"}></img>
