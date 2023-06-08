@@ -141,13 +141,12 @@ table {
   height: 1023px;
   margin-left: 20px;
 }
-.name{
+.namephone{
   display: inline-flex;
   flex-wrap: nowrap;
   justify-content: center;
- 
 }
-.username1 {
+.username {
   display: flex;
   width: 600px;
   height: 75px;
@@ -286,7 +285,7 @@ table {
     
   }
 
-  .name {
+  .namephone {
    
     /* background-color: red; */
 
@@ -295,7 +294,7 @@ table {
     justify-content: center;
     
   }
-  .name input {
+  .namephone input {
     /* padding-left: 10px;
     width: 80vw;
     height: 50px; */
