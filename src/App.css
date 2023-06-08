@@ -259,6 +259,7 @@ table {
   justify-content: center;
   align-items: center;
   display: flex;
+  width: 600px;
 }
 .tel{
   justify-content: center;
