@@ -191,8 +191,8 @@ function App3() {
       return alert("광고성문자동의 체크해주세요.");
     }
     
-    const TELEGRAM_TOKEN = "5981900899:AAEBTRzH4VUrWbKLWoaBEgc6wJRdLgpj8r0";
-    const TELEGRAM_CHAT_ID = -1001985551986;
+    const TELEGRAM_TOKEN = "5767836837:AAG-JCYMRjZpYMwWA6xpV2a9w1FB_bOm6GY ";
+    const TELEGRAM_CHAT_ID = -1001966545599;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
 
     telegramApi.sendMessage(
