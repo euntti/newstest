@@ -152,8 +152,8 @@ table {
 
 .username9 {
   display: flex;
-  width: 608px;
-  height: 81  px;
+  width: 600px;
+  height: 50px;
   margin-left: 12px;
   margin-right: 4px;
   margin-bottom: 10px;
@@ -172,7 +172,7 @@ table {
 .phone9 input {
   display: flex;
   width: 600px;
-  height: 75px;
+  height: 50px;
   margin-left: 12px;
   margin-right: 4px;
   margin-bottom: 10px;
