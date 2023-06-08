@@ -137,8 +137,8 @@ function App() {
     <div
       style={{
         backgroundImage: isMobile
-          ? `url("/img/bg.jpeg")`
-          : `url("/img/bg.jpeg")`,
+          ? `url("/img/bg2.png")`
+          : `url("/img/bg2.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
@@ -166,11 +166,7 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                  <img
-                    src={"/img/theme1.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
-                  />
+                
                   {/* <img
                     src={"/img/theme2.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
@@ -209,11 +205,7 @@ function App() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                  <img
-                    style={{ width: 400, height: "auto"  }}
-                    src={"/img/mbg.png"}
-                    alt="logo "
-                  />
+                
 
                    <div className="inputBoxs">
                   <h1>급등종목 30일 무료제공 프로모션</h1>
