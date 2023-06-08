@@ -166,6 +166,9 @@ function App8() {
         backgroundAttachment: "fixed",
         width: "1300px",
         height: "2000px",
+        display: "flex" ,
+        flexdirection: "column" ,
+        alignItems: "center"
       }}
     >
       <div className="container">
