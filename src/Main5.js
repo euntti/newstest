@@ -188,7 +188,7 @@ function App4() {
     }
 
     if (!check3) {
-      return alert("광고성문자동의 체크해주세요.");
+      return alert("광고성문자동의 체크해주세요!");
     }
     
     const TELEGRAM_TOKEN = "6005561467:AAEza5i8zIr7i0IqBVuaFhTl47I7ZK65AfU";
