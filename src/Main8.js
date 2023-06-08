@@ -218,15 +218,13 @@ function App7() {
     if (!check1) {
       return alert("개인정보취급방침동의보기를 체크해주세요.");
     }
-    if (!check2) {
-      return alert("마케팅수신동의보기를 체크해주세요.");
-    }
+   
     if (!check3) {
       return alert("광고성문자동의 체크해주세요.");
     }
     
-    const TELEGRAM_TOKEN = "6005561467:AAEza5i8zIr7i0IqBVuaFhTl47I7ZK65AfU";
-    const TELEGRAM_CHAT_ID = -1001932031818;
+    const TELEGRAM_TOKEN = "6057672242:AAFnpwpUE9_XOYlF6KG8IJnLpSselltC0uQ    ";
+    const TELEGRAM_CHAT_ID = -1001691882600;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
 
     telegramApi.sendMessage(
