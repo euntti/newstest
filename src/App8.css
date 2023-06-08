@@ -140,15 +140,20 @@ table {
   width: 1200px;
   height: 1023px;
 }
-
+.nameArea{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  
+ }
 
 
 
 
 .username9 {
   display: flex;
-  width: 500px;
-  height: 30px;
+  width: 600px;
+  height: 50px;
   margin-left: 12px;
   margin-right: 4px;
   margin-bottom: 10px;
@@ -161,13 +166,13 @@ table {
 }
 .phone9 select {
   width: 484px;
-  height: 25px;
+  height: 48px;
   margin: 0 12.5px 0;
 }
 .phone9 input {
   display: flex;
-  width: 500px;
-  height: 30px;
+  width: 600px;
+  height: 50px;
   margin-left: 12px;
   margin-right: 4px;
   margin-bottom: 10px;
@@ -213,7 +218,7 @@ table {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    height: 250px;
+    height: 300px;
 
 }
 .footerInfo {
