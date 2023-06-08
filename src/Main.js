@@ -214,6 +214,100 @@ function App() {
                     src={"/img/mbg.png"}
                     alt="logo "
                   />
+                  
+                   <div className="inputBoxs">
+                  <h1>급등종목 30일 무료제공 프로모션</h1>
+                  <h3>하루 3분 투자로 1억만들기</h3>
+                  <ul>
+                    <li id="line01">
+                      <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
+                    </li>
+                    <li id="line02">
+                      개인정보는 암호화하여 안전하게 처리됩니다.
+                    </li>
+                    <li id="line03" cond="off">
+                      <span> 30일 급등주 신청하기.</span>
+                    </li>
+                    <br />
+                    <li>
+                      <input
+                        type="text"
+                        id="f1"
+                        name="user_name"
+                        required=""
+                        placeholder="성함을 입력하세요"
+                        value={nickName}
+                        maxLength={4}
+                        onChange={(e) => setNickName(e.target.value)}
+                      />
+                    </li>
+                    <li>
+                      <input
+                        type="number"
+                        id="f1"
+                        name="user_name"
+                        required=""
+                        placeholder="연락처를 입력하세요"
+                        onkeyPress="onlyNumber(this)"
+                       maxLength={13}
+                       pattern="[0-9]{13}"
+                        value={phoneNumber}
+                        onChange={(e) => {
+                          setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
+                        }}
+                      />
+                    </li>
+                    <br />
+                    <li id="chkline">
+                      <label>
+                        <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree1"
+                          value="1"
+                          checked={check1}
+                          onChange={(e) => setCheck1(e.target.checked)}
+                        />
+                        개인정보취급방침동의
+                <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen2(true)}
+                  // onclick="privacy_pop('show', '.pop-policy',2)"
+                >
+                  [보기]
+                </a>
+                      </label>
+                      
+                      <label>
+                        <input
+                          type="checkbox"
+                          id="privacy"
+                          name="agree3"
+                          value="1"
+                          checked={check3}
+                          onChange={(e) => setCheck3(e.target.checked)}
+                        />
+                        광고성문자수신동의
+                <a
+                  href="javascript:void(0);"
+                  onClick={() => setIsOpen(true)}
+                  // onclick="Popup1('show', '.popup',2)"
+                >
+                  [보기]
+                </a>
+                      </label>
+                    </li>
+                    <li id="smtbtn">
+                      <input
+                        id="btn"
+                        type="submit"
+                        value="급등종목 무료제공 이벤트 신청하기"
+                        onClick={submitEvent}
+                      />
+                    </li>
+                  </ul>
+                  </div>
+
                   {/* <img
                     style={{ width: 300 }}
                     src={"/img/theme2.png"}
