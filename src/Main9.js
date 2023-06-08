@@ -155,17 +155,17 @@ function App8() {
   };
   return (
     <div
-      style={{
-        backgroundImage: isMobile
-          ? `url("/img/bg3.png")`
-          : `url("/img/bg3.png")`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        // width: "auto",
-        height: "3000px",
-      }}
+    //   style={{
+    //     backgroundImage: isMobile
+    //       ? `url("/img/bg3.png")`
+    //       : `url("/img/bg3.png")`,
+    //     backgroundRepeat: "no-repeat",
+    //     backgroundPosition: "center",
+    //     backgroundSize: "cover",
+    //     backgroundAttachment: "fixed",
+    //     // width: "auto",
+    //     height: "3000px",
+    //   }}
     >
       <div className="container">
         <div className="sub">
