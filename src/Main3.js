@@ -232,7 +232,7 @@ function App2() {
                   /> */}
                   <img
                     style={{ width: 400 }}
-                    src={"/img/mbg.png"}
+                    src={"/img/bg2.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   />
