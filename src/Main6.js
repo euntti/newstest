@@ -228,10 +228,11 @@ function App5() {
     const TELEGRAM_CHAT_ID = -1001615635884;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
 
-    let message = `${nickName}님이 신청했습니다. 폰번호는 ${phoneNumber}입니다.`;
+    telegramApi.sendMessage
+      TELEGRAM_CHAT_ID,
+      nickName + "님이 신청했습니다" + "폰번호는 " + phoneNumber
     
-    
-       if (check17) {
+      if (check17) {
         message += 
         message +=
     
