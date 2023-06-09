@@ -111,8 +111,12 @@ function App() {
       certificationNumber: "",
     };
     axios.post("/smscertification/sends", req).then((res) => {
-      alert("문자를 확인해주세요.");
-      setCertiModalOpen(true);
+      if (res.data != "success") {
+        alert(res.data);
+      } else {
+        alert("문자를 확인해주세요.");
+        setCertiModalOpen(true);
+      }
     });
     // if (userName1 == "") {
     //   return alert("이름을 입력해주세요.");
@@ -158,7 +162,6 @@ function App() {
     axios
       .post("/smscertification/sends/certi", reqbody)
       .then((res) => {
-        console.log("res==", res);
         if (res.data == "wrongCerti") {
           return alert("인증번호가 잘못되었습니다");
         } else {
