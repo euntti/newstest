@@ -500,7 +500,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType1"
-            value="rapidIncrease"
+            value="rapidIncrease1"
             checked={check4}
             onChange={(e) => setCheck4(e.target.value)}
             />
@@ -508,8 +508,8 @@ function App5() {
         <input
             type="radio"
             id="privacy"
-            name="investmentType"
-            value="themeInvest"
+            name="investmentType1"
+            value="themeInvest1"
             checked={check5}
             onChange={(e) => setCheck5(e.target.value)}
             />
@@ -518,7 +518,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType1"
-            value="valueInvest"
+            value="valueInvest1"
             checked={check6}
             onChange={(e) => setCheck6(e.target.value)}
             />
@@ -527,7 +527,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType1"
-            value="valueInvest"
+            value="valueInvest1"
             checked={check7}
             onChange={(e) => setCheck7(e.target.value)}
             />
@@ -536,7 +536,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType1"
-            value="valueInvest"
+            value="valueInvest1"
             checked={check8}
             onChange={(e) => setCheck8(e.target.value)}
             />
@@ -545,7 +545,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType1"
-            value="valueInvest"
+            value="valueInvest1"
             checked={check9}
             onChange={(e) => setCheck9(e.target.value)}
             />
@@ -554,7 +554,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType1"
-            value="valueInvest"
+            value="valueInvest1"
             checked={check10}
             onChange={(e) => setCheck10(e.target.value)}
             />
@@ -569,7 +569,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType2"
-            value="valueInvest"
+            value="valueInvest2"
             checked={check11}
             onChange={(e) => setCheck11(e.target.value)}
             />
@@ -578,7 +578,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType2"
-            value="valueInvest"
+            value="valueInvest2"
             checked={check12}
             onChange={(e) => setCheck12(e.target.value)}
             />
@@ -587,7 +587,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType2"
-            value="valueInvest"
+            value="valueInvest2"
             checked={check13}
             onChange={(e) => setCheck13(e.target.value)}
             />
@@ -596,7 +596,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType2"
-            value="valueInvest"
+            value="valueInvest2"
             checked={check14}
             onChange={(e) => setCheck14(e.target.value)}
             />
@@ -605,7 +605,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType2"
-            value="valueInvest"
+            value="valueInvest2"
             checked={check15}
             onChange={(e) => setCheck15(e.target.value)}
             />
@@ -614,7 +614,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType2"
-            value="valueInvest"
+            value="valueInvest2"
             checked={check16}
             onChange={(e) => setCheck16(e.target.value)}
             />
@@ -629,7 +629,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType3"
-            value="valueInvest"
+            value="valueInvest3"
             checked={check17}
             onChange={(e) => setCheck17(e.target.value)}
             />
@@ -638,7 +638,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType3"
-            value="valueInvest"
+            value="valueInvest3"
             checked={check18}
             onChange={(e) => setCheck18(e.target.value)}
             />
@@ -647,7 +647,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType3"
-            value="valueInvest"
+            value="valueInvest3"
             checked={check19}
             onChange={(e) => setCheck19(e.target.value)}
             />
@@ -656,7 +656,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType3"
-            value="valueInvest"
+            value="valueInvest3"
             checked={check21}
             onChange={(e) => setCheck21(e.target.value)}
             />
@@ -665,7 +665,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType3"
-            value="valueInvest"
+            value="valueInvest3"
             checked={check21}
             onChange={(e) => setCheck21(e.target.value)}
             />
@@ -674,7 +674,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType3"
-            value="valueInvest"
+            value="valueInvest3"
             checked={check22}
             onChange={(e) => setCheck22(e.target.value)}
             />
@@ -689,7 +689,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType4"
-            value="valueInvest"
+            value="valueInvest4"
             checked={check23}
             onChange={(e) => setCheck23(e.target.value)}
             />
@@ -698,7 +698,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType4"
-            value="valueInvest"
+            value="valueInvest4"
             checked={check24}
             onChange={(e) => setCheck24(e.target.value)}
             />
@@ -707,7 +707,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType4"
-            value="valueInvest"
+            value="valueInvest4"
             checked={check25}
             onChange={(e) => setCheck25(e.target.value)}
             />
@@ -716,7 +716,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType4"
-            value="valueInvest"
+            value="valueInvest4"
             checked={check26}
             onChange={(e) => setCheck26(e.target.value)}
             />
@@ -726,7 +726,7 @@ function App5() {
             type="radio"
             id="privacy"
             name="investmentType4"
-            value="valueInvest"
+            value="valueInvest4"
             checked={check27}
             onChange={(e) => setCheck27(e.target.value)}
             />
