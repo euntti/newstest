@@ -14,6 +14,7 @@ import AnimatedNumbers from "react-animated-numbers";
 import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
 import Modal from "react-modal";
+import CertiModal from "./components/certimodal/CertiModal";
 
 const customStyles = {
   content: {
@@ -28,9 +29,11 @@ const customStyles = {
 
 function App() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
+  // axios.defaults.baseURL = "http://localhost:8080";
   const [userName1, setUserName1] = useState("");
   const [phone1, setPhone1] = useState("");
   const [phone2, setPhone2] = useState("");
+  const [certiNum, setCertiNum] = useState("");
   const onlyNumber = (e) => {
     const keyCode = e.keyCode || e.which;
     const keyValue = String.fromCharCode(keyCode);
@@ -52,6 +55,7 @@ function App() {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [modalIsOpen2, setIsOpen2] = useState(false);
 
+  const [certiModalOpen, setCertiModalOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
   }
@@ -98,31 +102,96 @@ function App() {
       return alert("통화시간 선택해주세요");
     }
 
-    const phoneNumber = `${phone1}`;
-    const name = `${userName1}`;
-    const selectedTime = `${time}`;
-    const param = {
-      phoneNumber: phoneNumber,
-      name: name,
-      time: selectedTime,
+    if (phone1.length !== 11) {
+      return alert("폰번호는 11자리가 나와야합니다.");
+    }
+
+    const req = {
+      phone: phone1,
+      certificationNumber: "",
     };
-
-    axios.post("/client", param).then((res) => {
-      console.log("res=", res);
+    axios.post("/smscertification/sends", req).then((res) => {
+      alert("문자를 확인해주세요.");
+      setCertiModalOpen(true);
     });
+    // if (userName1 == "") {
+    //   return alert("이름을 입력해주세요.");
+    // }
+    // if (phone1 == "") {
+    //   return alert("'-'없이 입력을 해주세요.");
+    // }
+    // if (time == "") {
+    //   return alert("통화시간 선택해주세요");
+    // }
 
-    // const TELEGRAM_TOKEN = "5964017003:AAH3LVmpPgezxLrs2-q53OLpYVdbCIybqjk";
-    // const TELEGRAM_CHAT_ID = -1001643618319; // your telegram chat ID
-    const TELEGRAM_TOKEN = "5483771483:AAHFxQtin81-Hcf-xNd_GdVoV_PAnkZq1k8";
-    const TELEGRAM_CHAT_ID = -1001848471389;
-    const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
-    telegramApi.sendMessage(
-      TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName1} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
-    );
-    alert(
-      "[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다."
-    );
+    // const phoneNumber = `${phone1}`;
+    // const name = `${userName1}`;
+    // const selectedTime = `${time}`;
+    // const param = {
+    //   phoneNumber: phoneNumber,
+    //   name: name,
+    //   time: selectedTime,
+    // };
+
+    // axios.post("/client", param).then((res) => {
+    //   console.log("res=", res);
+    // });
+
+    // // const TELEGRAM_TOKEN = "5964017003:AAH3LVmpPgezxLrs2-q53OLpYVdbCIybqjk";
+    // // const TELEGRAM_CHAT_ID = -1001643618319; // your telegram chat ID
+    // const TELEGRAM_TOKEN = "5483771483:AAHFxQtin81-Hcf-xNd_GdVoV_PAnkZq1k8";
+    // const TELEGRAM_CHAT_ID = -1001848471389;
+    // const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
+    // telegramApi.sendMessage(
+    //   TELEGRAM_CHAT_ID,
+    //   `sb글로벌 ${userName1} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
+    // );
+    // alert(
+    //   "[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다."
+    // );
+  };
+  const certiSubmit = () => {
+    const reqbody = {
+      phone: "",
+      certificationNumber: certiNum,
+    };
+    axios
+      .post("/smscertification/sends/certi", reqbody)
+      .then((res) => {
+        console.log("res==", res);
+        if (res.data == "wrongCerti") {
+          return alert("인증번호가 잘못되었습니다");
+        } else {
+          const phoneNumber = `${phone1}`;
+          const name = `${userName1}`;
+          const selectedTime = `${time}`;
+          const param = {
+            phoneNumber: phoneNumber,
+            name: name,
+            time: selectedTime,
+          };
+
+          axios.post("/client", param).then((res) => {
+            console.log("res=", res);
+          });
+
+          // const TELEGRAM_TOKEN = "5964017003:AAH3LVmpPgezxLrs2-q53OLpYVdbCIybqjk";
+          // const TELEGRAM_CHAT_ID = -1001643618319; // your telegram chat ID
+          const TELEGRAM_TOKEN =
+            "5483771483:AAHFxQtin81-Hcf-xNd_GdVoV_PAnkZq1k8";
+          const TELEGRAM_CHAT_ID = -1001848471389;
+          const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
+          telegramApi.sendMessage(
+            TELEGRAM_CHAT_ID,
+            `sb글로벌 ${userName1} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
+          );
+          alert(
+            "[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다."
+          );
+          setCertiModalOpen(false);
+        }
+      })
+      .catch((e) => {});
   };
   const settings = {
     dots: false,
@@ -210,7 +279,7 @@ function App() {
                     alt="logo "
                   /> */}
                   <img
-                    style={{ width: 400, height: "auto"  }}
+                    style={{ width: 400, height: "auto" }}
                     src={"/img/mbg.png"}
                     alt="logo "
                   />
@@ -507,6 +576,29 @@ function App() {
         }}
       ></h1>
       <div className="imgGrid"></div>
+      {/* {certiModalOpen && <CertiModal />} */}
+      <Modal
+        isOpen={certiModalOpen}
+        onRequestClose={() => setCertiModalOpen(false)}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100%",
+          }}
+        >
+          <h2>문자로 온 인증번호를 입력해주세요</h2>
+          <input
+            value={certiNum}
+            onChange={(e) => setCertiNum(e.target.value)}
+          ></input>
+          <button onClick={() => certiSubmit()}>인증</button>
+        </div>
+      </Modal>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -515,12 +607,12 @@ function App() {
       >
         <div>
           광고성 정보수신 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자 :
-          SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
-          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
-          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
-          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
-          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
-          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
+          SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및
+          이용권유, 사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스
+          개발연구 등 고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④
+          수집 및 이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가
+          있으며 동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스
+          이용권유, 판촉행사 등의 유익한 정보를 받으실 수 없습니다.
         </div>
       </Modal>
       <Modal
@@ -531,12 +623,12 @@ function App() {
       >
         <div>
           개인정보 제3자 제공 동의 (1) 서비스 안내 및 이용권유 등 ① 제공받는 자
-          : SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및 이용권유,
-          사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스 개발연구 등
-          고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④ 수집 및
-          이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가 있으며
-          동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스 이용권유,
-          판촉행사 등의 유익한 정보를 받으실 수 없습니다.
+          : SB글로벌 투자그룹 급등주 주식종목 ② 제공목적 : 서비스 안내 및
+          이용권유, 사은·판촉행사 등의 마케팅 활동, 시장조사 및 상품·서비스
+          개발연구 등 고객데이터 수집 및 관리 ③ 수집항목 : 이름, 휴대폰번호 ④
+          수집 및 이용기간 : 문의 종료일로 2년까지 회원님은 동의를 거부할 권리가
+          있으며 동의 거부 시에도 서비스 이용에 제한이 없습니다. 다만 서비스
+          이용권유, 판촉행사 등의 유익한 정보를 받으실 수 없습니다.
         </div>
       </Modal>
     </div>
