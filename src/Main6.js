@@ -136,7 +136,7 @@ function App5() {
   const [investmentType2, setInvestmentType2] = useState(null);
   const [investmentType3, setInvestmentType3] = useState(null);
   const [investmentType4, setInvestmentType4] = useState(null);
-  
+
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
@@ -224,10 +224,19 @@ function App5() {
     if (!check3) {
       return alert("광고성문자동의 체크해주세요.");
     }
+    if (!check4 && !check5 && !check6 && !check7 && !check8 && !check9&& !check10) {
+      return alert("희망종목을 선택해주세요.");
+    }
+    if (!check11 && !check12 && !check13 && !check14 && !check15 && !check16) {
+      return alert("희망수익률을 선택해주세요.");
+    }
     if (!check17 && !check18 && !check19 && !check20 && !check21 && !check22) {
       return alert("희망수익금을 선택해주세요.");
     }
-    
+    if (!check23 && !check24 && !check25 && !check26 && !check27) {
+      return alert("투자성향을 선택해주세요.");
+    }
+
     const TELEGRAM_TOKEN = "6040101542:AAEGwQ9N-8QcXqR1PmH2yROvEWoD7MgA7TQ";
     const TELEGRAM_CHAT_ID = -1001615635884;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
@@ -571,7 +580,7 @@ function App5() {
                       희망수익률
                       <input
             type="radio"
-            id="privacy"
+            id="privacy1"
             name="investmentType2"
             value="valueInvest2"
             checked={check11}
@@ -580,7 +589,7 @@ function App5() {
                        <a>5% 목표</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy1"
             name="investmentType2"
             value="valueInvest2"
             checked={check12}
@@ -589,7 +598,7 @@ function App5() {
                        <a>10% 목표</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy1"
             name="investmentType2"
             value="valueInvest2"
             checked={check13}
@@ -598,7 +607,7 @@ function App5() {
                        <a>15% 목표</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy1"
             name="investmentType2"
             value="valueInvest2"
             checked={check14}
@@ -607,7 +616,7 @@ function App5() {
                        <a>20% 목표</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy1"
             name="investmentType2"
             value="valueInvest2"
             checked={check15}
@@ -616,7 +625,7 @@ function App5() {
                        <a>25% 목표</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy1"
             name="investmentType2"
             value="valueInvest2"
             checked={check16}
@@ -631,7 +640,7 @@ function App5() {
                       희망수익금
                       <input
             type="radio"
-            id="privacy"
+            id="privacy2"
             name="investmentType3"
             value="valueInvest3"
             checked={check17}
@@ -640,7 +649,7 @@ function App5() {
                        <a>5백만 원</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy2"
             name="investmentType3"
             value="valueInvest3"
             checked={check18}
@@ -649,7 +658,7 @@ function App5() {
                        <a>1천만 원</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy2"
             name="investmentType3"
             value="valueInvest3"
             checked={check19}
@@ -658,7 +667,7 @@ function App5() {
                        <a>3천만 원</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy2"
             name="investmentType3"
             value="valueInvest3"
             checked={check21}
@@ -667,7 +676,7 @@ function App5() {
                        <a>5천만 원</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy2"
             name="investmentType3"
             value="valueInvest3"
             checked={check21}
@@ -676,7 +685,7 @@ function App5() {
                        <a>7천만 원</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy2"
             name="investmentType3"
             value="valueInvest3"
             checked={check22}
@@ -691,7 +700,7 @@ function App5() {
                       투자성향
                       <input
             type="radio"
-            id="privacy"
+            id="privacy3"
             name="investmentType4"
             value="valueInvest4"
             checked={check23}
@@ -700,7 +709,7 @@ function App5() {
                        <a>안정형</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy3"
             name="investmentType4"
             value="valueInvest4"
             checked={check24}
@@ -709,7 +718,7 @@ function App5() {
                        <a>안정 추구형</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy3"
             name="investmentType4"
             value="valueInvest4"
             checked={check25}
@@ -718,7 +727,7 @@ function App5() {
                        <a>위험 추구형</a>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy3"
             name="investmentType4"
             value="valueInvest4"
             checked={check26}
@@ -728,7 +737,7 @@ function App5() {
                        <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
                        <input
             type="radio"
-            id="privacy"
+            id="privacy3"
             name="investmentType4"
             value="valueInvest4"
             checked={check27}
