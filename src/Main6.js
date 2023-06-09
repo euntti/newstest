@@ -228,37 +228,59 @@ function App5() {
     const TELEGRAM_CHAT_ID = -1001615635884;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
 
-    telegramApi.sendMessage
-      TELEGRAM_CHAT_ID,
-      nickName + "님이 신청했습니다" + "폰번호는 " + phoneNumber
     
-      if (check17) {
-        message += 
-        message +=
-    
-        message
-    
-       
-    " (희망수익금: 5백만 원)";
-      } else if (check18) {
-        message += " (희망수익금: 1천만 원)";
-      } else if (check19) {
-        message += " (희망수익금: 3천만 원)";
-      } else if (check20) {
-        message += " (희망수익금: 5천만 원)";
-      } else if (check21) {
-        message += " (희망수익금: 7천만 원)";
-      } else if (check22) {
-        message += 
-        message +=
-    
-        message
-    " (희망수익금: 1억 원 이상)";
-      }
-    
-      alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
-    };
-    
+
+
+let message = `${nickName}님이 신청했습니다. 폰번호는 ${phoneNumber}입니다.`;
+
+  
+
+ 
+
+
+if (check17) {
+    message += 
+    message +=
+
+    message
+
+   
+" (희망수익금: 5백만 원)";
+  } else if (check18) {
+    message += " (희망수익금: 1천만 원)";
+  } else if (check19) {
+    message += " (희망수익금: 3천만 원)";
+  } else if (check20) {
+    message += " (희망수익금: 5천만 원)";
+  } else if (check21) {
+    message += " (희망수익금: 7천만 원)";
+  } else if (check22) {
+    message += 
+    message +=
+
+    message
+" (희망수익금: 1억 원 이상)";
+  }
+
+  telegramApi.
+
+  telegram
+sendMessage(TELEGRAM_CHAT_ID, message);
+  alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
+};
+
+    // console.log("as");
+    // var customer = {};
+    // customer.nickName = nickName;
+    // customer.phoneNumber = phoneNumber;
+
+    // axios.post("http://localhost:3000/users", customer).then((res) => {
+    //   alert("등록을 성공했습니다.");
+    //   getCustomer();
+    // });
+
+  };
+
   const sendKaKao = () => {
     window.open("https://open.kakao.com/me/shon04Se", "_blank")
     };
@@ -1088,7 +1110,7 @@ function App5() {
       </Modal>
       </div>
   );
-}
+
 
 export default App5;
 
