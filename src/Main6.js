@@ -488,244 +488,243 @@ function App5() {
                        }}
                       />
                     </li>
-                    <li id="chkline">
-                      <label>
-                      희망항목
-                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check4}
-                          onChange={(e) => setCheck4(e.target.checked)}
-                          />
-                       <a>급등종목</a>
-                       <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check5}
-                          onChange={(e) => setCheck5(e.target.checked)}
-                          />
-                       <a>테마종목</a>
-                       <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check6}
-                          onChange={(e) => setCheck6(e.target.checked)}
-                          />
-                       <a>가치투자</a>
-                       <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check7}
-                          onChange={(e) => setCheck7(e.target.checked)}
-                          />
+                    <li id="chklin1"> 
+    <label>
+    희망항목
+        <input
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="rapidIncrease"
+            checked={selected === "check4"}
+            onChange={(e) => setCheck4(e.target.value)}
+            />
+        <a>급등종목</a>
+        <input
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="themeInvest"
+            checked={selected === "check5"}
+            onChange={(e) => setCheck5(e.target.value)}
+            />
+        <a>테마종목</a>
+        <input
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check6"}
+            onChange={(e) => setCheck6(e.target.value)}
+            />
+        <a>가치투자</a>
+        <input
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check7"}
+            onChange={(e) => setCheck7(e.target.value)}
+            />
                        <a>스윙종목</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check8}
-                          onChange={(e) => setCheck8(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check8"}
+            onChange={(e) => setCheck8(e.target.value)}
+            />
                        <a>인공지능</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check9}
-                          onChange={(e) => setCheck9(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check9"}
+            onChange={(e) => setCheck9(e.target.value)}
+            />
                        <a>단기투자</a>  
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check10}
-                          onChange={(e) => setCheck10(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check10"}
+            onChange={(e) => setCheck10(e.target.value)}
+            />
                        <a>투자초보</a>  
                       </label>
                       </li>
                     <br />
-                    <li id="chkline">
+                    <li id="chkline2">
                       <label>
                       희망수익률
-                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check11}
-                          onChange={(e) => setCheck11(e.target.checked)}
-                          />
+                      <input
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check11"}
+            onChange={(e) => setCheck11(e.target.value)}
+            />
                        <a>5% 목표</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check12}
-                          onChange={(e) => setCheck12(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check12"}
+            onChange={(e) => setCheck12(e.target.value)}
+            />
                        <a>10% 목표</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check13}
-                          onChange={(e) => setCheck13(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check13"}
+            onChange={(e) => setCheck13(e.target.value)}
+            />
                        <a>15% 목표</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check14}
-                          onChange={(e) => setCheck14(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check14"}
+            onChange={(e) => setCheck14(e.target.value)}
+            />
                        <a>20% 목표</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check15}
-                          onChange={(e) => setCheck15(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check15"}
+            onChange={(e) => setCheck15(e.target.value)}
+            />
                        <a>25% 목표</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check16}
-                          onChange={(e) => setCheck16(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check16"}
+            onChange={(e) => setCheck16(e.target.value)}
+            />
                        <a>30% 목표</a>  
                        </label>
                       </li>
                     <br />
-                    <li id="chkline">
+                    <li id="chkline3">
                       <label>
                       희망수익금
-                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check17}
-                          onChange={(e) => setCheck17(e.target.checked)}
-                          />
+                      <input
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check17"}
+            onChange={(e) => setCheck17(e.target.value)}
+            />
                        <a>5백만 원</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check18}
-                          onChange={(e) => setCheck18(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check18"}
+            onChange={(e) => setCheck18(e.target.value)}
+            />
                        <a>1천만 원</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check19}
-                          onChange={(e) => setCheck19(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check19"}
+            onChange={(e) => setCheck19(e.target.value)}
+            />
                        <a>3천만 원</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check20}
-                          onChange={(e) => setCheck20(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check20"}
+            onChange={(e) => setCheck21(e.target.value)}
+            />
                        <a>5천만 원</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check21}
-                          onChange={(e) => setCheck21(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check21"}
+            onChange={(e) => setCheck21(e.target.value)}
+            />
                        <a>7천만 원</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check22}
-                          onChange={(e) => setCheck22(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check22"}
+            onChange={(e) => setCheck22(e.target.value)}
+            />
                        <a>1억 원 이상</a>  
                        </label>
                       </li>
                     <br />
-                    <li id="chkline">
+                    <li id="chkline4">
                       <label>
                       투자성향
-                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check23}
-                          onChange={(e) => setCheck23(e.target.checked)}
-                          />
+                      <input
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check23"}
+            onChange={(e) => setCheck23(e.target.value)}
+            />
                        <a>안정형</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check24}
-                          onChange={(e) => setCheck24(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check24"}
+            onChange={(e) => setCheck24(e.target.value)}
+            />
                        <a>안정 추구형</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check25}
-                          onChange={(e) => setCheck25(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check25"}
+            onChange={(e) => setCheck25(e.target.value)}
+            />
                        <a>위험 추구형</a>
                        <input
-                          type="checkbox"
-                          id="privacy"
-                          name="agree1"
-                          value="1"
-                          checked={check26}
-                          onChange={(e) => setCheck26(e.target.checked)}
-                          />
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check26"}
+            onChange={(e) => setCheck26(e.target.value)}
+            />
                        <a>적극 투자형</a>
                        <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
-                        <input
-                        type="checkbox"
-                        id="privacy"
-                        name="agree1"
-                        value="1"
-                        checked={check27}
-                        onChange={(e) => setCheck27(e.target.checked)}
-                        style={{ display: "none" }}
-                        />
+                       <input
+            type="radio"
+            id="privacy"
+            name="investmentType"
+            value="valueInvest"
+            checked={selected === "check27"}
+            onChange={(e) => setCheck27(e.target.value)}
+            />
                         <span
                         style={{
                         display: "inline-block",
