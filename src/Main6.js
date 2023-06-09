@@ -132,10 +132,10 @@ function App5() {
       e.preventDefault();
     }
   };
-  const [investmentType1, setInvestmentType1] = useState(null);
-  const [investmentType2, setInvestmentType2] = useState(null);
-  const [investmentType3, setInvestmentType3] = useState(null);
-  const [investmentType4, setInvestmentType4] = useState(null);
+  const [investmentType1, setInvestmentType1] = useState("");
+  const [investmentType2, setInvestmentType2] = useState("");
+  const [investmentType3, setInvestmentType3] = useState("");
+  const [investmentType4, setInvestmentType4] = useState("");
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
@@ -509,68 +509,68 @@ function App5() {
                     <li id="chklin1"> 
     <label>
     희망항목
-        <input
-            type="radio"
-            id="privacy"
-            name="investmentType1"
-            value={check4}
-            checked={check4}
-            onChange={(e) => setCheck4(e.target.value)}
-            />
+    <input
+        type="radio"
+        id="privacy"
+        name="investmentType1"
+        value="급등종목"
+        checked={investmentType1 === "급등종목"}
+        onChange={(e) => setInvestmentType1(e.target.value)}
+        />
         <a>급등종목</a>
         <input
-            type="radio"
-            id="privacy"
-            name="investmentType1"
-            value={check5}
-            checked={check5}
-            onChange={(e) => setCheck5(e.target.value)}
-            />
+        type="radio"
+        id="privacy"
+        name="investmentType1"
+        value="테마종목"
+        checked={investmentType1 === "테마종목"}
+        onChange={(e) => setInvestmentType1(e.target.value)}
+        />
         <a>테마종목</a>
         <input
-            type="radio"
-            id="privacy"
-            name="investmentType1"
-            value={check6}
-            checked={check6}
-            onChange={(e) => setCheck6(e.target.value)}
-            />
+        type="radio"
+        id="privacy"
+        name="investmentType1"
+        value="가치투자"
+        checked={investmentType1 === "가치투자"}
+        onChange={(e) => setInvestmentType1(e.target.value)}
+        />
         <a>가치투자</a>
         <input
-            type="radio"
-            id="privacy"
-            name="investmentType1"
-            value={check7}
-            checked={check7}
-            onChange={(e) => setCheck7(e.target.value)}
-            />
+        type="radio"
+        id="privacy"
+        name="investmentType1"
+        value="스윙종목"
+        checked={investmentType1 === "스윙종목"}
+        onChange={(e) => setInvestmentType1(e.target.value)}
+        />
                        <a>스윙종목</a>
                        <input
-            type="radio"
-            id="privacy"
-            name="investmentType1"
-            value={check8}
-            checked={check8}
-            onChange={(e) => setCheck8(e.target.value)}
-            />
+        type="radio"
+        id="privacy"
+        name="investmentType1"
+        value="인공지능"
+        checked={investmentType1 === "인공지능"}
+        onChange={(e) => setInvestmentType1(e.target.value)}
+        />
                        <a>인공지능</a>
                        <input
-            type="radio"
-            id="privacy"
-            name="investmentType1"
-            value={check9}
-            checked={check9}
-            onChange={(e) => setCheck9(e.target.value)}
-            />
+        type="radio"
+        id="privacy"
+        name="investmentType1"
+        value="단기투자"
+        checked={investmentType1 === "단기투자"}
+        onChange={(e) => setInvestmentType1(e.target.value)}
+        />
                        <a>단기투자</a>  
                        <input
-            type="radio"
-            id="privacy"
-            name="investmentType1"
-            value={check10}
-            checked={check10}
-            onChange={(e) => setCheck10(e.target.value)}
-            />
+        type="radio"
+        id="privacy"
+        name="investmentType1"
+        value="투자초보"
+        checked={investmentType1 === "투자초보"}
+        onChange={(e) => setInvestmentType1(e.target.value)}
+        />
                        <a>투자초보</a>  
                       </label>
                       </li>
@@ -579,58 +579,58 @@ function App5() {
                       <label>
                       희망수익률
                       <input
-            type="radio"
-            id="privacy1"
-            name="investmentType2"
-            value={check11}
-            checked={check11}
-            onChange={(e) => setCheck11(e.target.value)}
-            />
+        type="radio"
+        id="privacy1"
+        name="investmentType2"
+        value="5% 목표"
+        checked={investmentType2 === "5% 목표"}
+        onChange={(e) => setInvestmentType2(e.target.value)}
+        />
                        <a>5% 목표</a>
                        <input
-            type="radio"
-            id="privacy1"
-            name="investmentType2"
-            value={check12}
-            checked={check12}
-            onChange={(e) => setCheck12(e.target.value)}
-            />
+        type="radio"
+        id="privacy1"
+        name="investmentType2"
+        value="10% 목표"
+        checked={investmentType2 === "10% 목표"}
+        onChange={(e) => setInvestmentType2(e.target.value)}
+        />
                        <a>10% 목표</a>
                        <input
-            type="radio"
-            id="privacy1"
-            name="investmentType2"
-            value={check13}
-            checked={check13}
-            onChange={(e) => setCheck13(e.target.value)}
-            />
+        type="radio"
+        id="privacy1"
+        name="investmentType2"
+        value="15% 목표"
+        checked={investmentType2 === "15% 목표"}
+        onChange={(e) => setInvestmentType2(e.target.value)}
+        />
                        <a>15% 목표</a>
                        <input
-            type="radio"
-            id="privacy1"
-            name="investmentType2"
-            value={check14}
-            checked={check14}
-            onChange={(e) => setCheck14(e.target.value)}
-            />
+        type="radio"
+        id="privacy1"
+        name="investmentType2"
+        value="20% 목표"
+        checked={investmentType2 === "20% 목표"}
+        onChange={(e) => setInvestmentType2(e.target.value)}
+        />
                        <a>20% 목표</a>
                        <input
-            type="radio"
-            id="privacy1"
-            name="investmentType2"
-            value={check15}
-            checked={check15}
-            onChange={(e) => setCheck15(e.target.value)}
-            />
+        type="radio"
+        id="privacy1"
+        name="investmentType2"
+        value="25% 목표"
+        checked={investmentType2 === "25% 목표"}
+        onChange={(e) => setInvestmentType2(e.target.value)}
+        />
                        <a>25% 목표</a>
                        <input
-            type="radio"
-            id="privacy1"
-            name="investmentType2"
-            value={check16}
-            checked={check16}
-            onChange={(e) => setCheck16(e.target.value)}
-            />
+        type="radio"
+        id="privacy1"
+        name="investmentType2"
+        value="30% 목표"
+        checked={investmentType2 === "30% 목표"}
+        onChange={(e) => setInvestmentType2(e.target.value)}
+        />
                        <a>30% 목표</a>  
                        </label>
                       </li>
@@ -639,58 +639,58 @@ function App5() {
                       <label>
                       희망수익금
                       <input
-            type="radio"
-            id="privacy2"
-            name="investmentType3"
-            value={check17}
-            checked={check17}
-            onChange={(e) => setCheck17(e.target.value)}
-            />
-                       <a>5백만 원</a>
-                       <input
-            type="radio"
-            id="privacy2"
-            name="investmentType3"
-            value={check18}
-            checked={check18}
-            onChange={(e) => setCheck18(e.target.value)}
-            />
+        type="radio"
+        id="privacy2"
+        name="investmentType3"
+        value="5백만 원"
+        checked={investmentType3 === "5백만 원"}
+        onChange={(e) => setInvestmentType3(e.target.value)}
+        />
+   <a>5백만 원</a>
+   <input
+        type="radio"
+        id="privacy2"
+        name="investmentType3"
+        value="1천만 원"
+        checked={investmentType3 === "1천만 원"}
+        onChange={(e) => setInvestmentType3(e.target.value)}
+        />
                        <a>1천만 원</a>
                        <input
-            type="radio"
-            id="privacy2"
-            name="investmentType3"
-            value={check19}
-            checked={check19}
-            onChange={(e) => setCheck19(e.target.value)}
-            />
+        type="radio"
+        id="privacy2"
+        name="investmentType3"
+        value="3천만 원"
+        checked={investmentType3 === "3천만 원"}
+        onChange={(e) => setInvestmentType3(e.target.value)}
+        />
                        <a>3천만 원</a>
                        <input
-            type="radio"
-            id="privacy2"
-            name="investmentType3"
-            value={check20}
-            checked={check20}
-            onChange={(e) => setCheck20(e.target.value)}
-            />
+        type="radio"
+        id="privacy2"
+        name="investmentType3"
+        value="5천만 원"
+        checked={investmentType3 === "5천만 원"}
+        onChange={(e) => setInvestmentType3(e.target.value)}
+        />
                        <a>5천만 원</a>
                        <input
-            type="radio"
-            id="privacy2"
-            name="investmentType3"
-            value={check21}
-            checked={check21}
-            onChange={(e) => setCheck21(e.target.value)}
-            />
+        type="radio"
+        id="privacy2"
+        name="investmentType3"
+        value="7천만 원"
+        checked={investmentType3 === "7천만 원"}
+        onChange={(e) => setInvestmentType3(e.target.value)}
+        />
                        <a>7천만 원</a>
                        <input
-            type="radio"
-            id="privacy2"
-            name="investmentType3"
-            value={check22}
-            checked={check22}
-            onChange={(e) => setCheck22(e.target.value)}
-            />
+        type="radio"
+        id="privacy2"
+        name="investmentType3"
+        value="1억 원 이상"
+        checked={investmentType3 === "1억 원 이상"}
+        onChange={(e) => setInvestmentType3(e.target.value)}
+        />
                        <a>1억 원 이상</a>  
                        </label>
                       </li>
@@ -699,50 +699,50 @@ function App5() {
                       <label>
                       투자성향
                       <input
-            type="radio"
-            id="privacy3"
-            name="investmentType4"
-            value={check23}
-            checked={check23}
-            onChange={(e) => setCheck23(e.target.value)}
-            />
+        type="radio"
+        id="privacy3"
+        name="investmentType4"
+        value="안정형"
+        checked={investmentType4 === "안정형"}
+        onChange={(e) => setInvestmentType4(e.target.value)}
+        />
                        <a>안정형</a>
                        <input
-            type="radio"
-            id="privacy3"
-            name="investmentType4"
-            value={check24}
-            checked={check24}
-            onChange={(e) => setCheck24(e.target.value)}
-            />
+        type="radio"
+        id="privacy3"
+        name="investmentType4"
+        value="안정 추구형"
+        checked={investmentType4 === "안정 추구형"}
+        onChange={(e) => setInvestmentType4(e.target.value)}
+        />
                        <a>안정 추구형</a>
                        <input
-            type="radio"
-            id="privacy3"
-            name="investmentType4"
-            value={check25}
-            checked={check25}
-            onChange={(e) => setCheck25(e.target.value)}
-            />
+        type="radio"
+        id="privacy3"
+        name="investmentType4"
+        value="위험 추구형"
+        checked={investmentType4 === "위험 추구형"}
+        onChange={(e) => setInvestmentType4(e.target.value)}
+        />
                        <a>위험 추구형</a>
                        <input
-            type="radio"
-            id="privacy3"
-            name="investmentType4"
-            value={check26}
-            checked={check26}
-            onChange={(e) => setCheck26(e.target.value)}
-            />
+        type="radio"
+        id="privacy3"
+        name="investmentType4"
+        value="적극 투자형"
+        checked={investmentType4 === "적극 투자형"}
+        onChange={(e) => setInvestmentType4(e.target.value)}
+        />
                        <a>적극 투자형</a>
                        <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
                        <input
-            type="radio"
-            id="privacy3"
-            name="investmentType4"
-            value={check27}
-            checked={check27}
-            onChange={(e) => setCheck27(e.target.value)}
-            />
+        type="radio"
+        id="privacy3"
+        name="investmentType4"
+        value="공격 투자형"
+        checked={investmentType4 === "공격 투자형"}
+        onChange={(e) => setInvestmentType4(e.target.value)}
+        />
                         <span
                         style={{
                         display: "inline-block",
