@@ -10,7 +10,97 @@ import { ColorRing } from "react-loader-spinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 
+const Main6 = () => {
+    return <div>Main6</div>
+    const Main6 = () => {
+      let rollingData = [
+        '서울',
+        '대구',
+        '부산',
+        '경기',
+        '울산',
+        '포항',
+        '전주',
+        '강원',
+        '대전',
+        '광주',
+        '제주',
+        '해남'
+      ];
+    
+      let timer = 2000;
+      let first = document.getElementById('first');
+      let second = document.getElementById('second');
+      let third = document.getElementById('third');
+      let move = 2;
+      let dataCnt = 1;
+      let listCnt = 1;
+    
+      first.innerHTML = rollingData[0];
+    
+      setInterval(() => {
+        if(move == 2){
+          first.classList.remove('card_sliding')
+          first.classList.add('card_sliding_after')
 
+          second.classList.remove('card_sliding_after')
+          second.classList.add('card_sliding')
+
+          third.classList.remove('card_sliding_after')
+          third.classList.remove('card_sliding')
+
+          move = 0
+      } else if (move == 1){
+          first.classList.remove('card_sliding_after')
+          first.classList.add('card_sliding')
+
+          second.classList.remove('card_sliding_after')
+          second.classList.remove('card_sliding')
+
+          third.classList.remove('card_sliding')
+          third.classList.add('card_sliding_after')
+
+          move = 2
+      } else if (move == 0) {
+          first.classList.remove('card_sliding_after')
+          first.classList.remove('card_sliding')
+
+          second.classList.remove('card_sliding')
+          second.classList.add('card_sliding_after')
+
+          third.classList.remove('card_sliding_after')
+          third.classList.add('card_sliding')
+
+          move = 1
+      }
+      
+      if(dataCnt < (rollingData.length - 1)) {
+          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
+              dataCnt++
+      } else if(dataCnt == rollingData.length - 1) {
+          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
+          dataCnt = 0
+      }
+
+      if(listCnt < 2) {
+          listCnt++
+      } else if (listCnt == 2) {
+          listCnt = 0
+      }
+
+      console.log(listCnt)
+  }, timer);
+  return (
+    <>
+      <div id="first"></div>
+      <div id="second"></div>
+      <div id="third"></div>
+      <div id="rolling_box"></div>
+    </>
+  );
+};
+
+      }
 
 const customStyles = {
   content: {
@@ -51,7 +141,35 @@ function App5() {
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
   const [check4, setCheck4] = useState(false);
-  
+  const [check5, setCheck5] = useState(false);
+  const [check6, setCheck6] = useState(false);
+  const [check7, setCheck7] = useState(false);
+  const [check8, setCheck8] = useState(false);
+  const [check9, setCheck9] = useState(false);
+  const [check10, setCheck10] = useState(false);
+  const [check11, setCheck11] = useState(false);
+  const [check12, setCheck12] = useState(false);
+  const [check13, setCheck13] = useState(false);
+  const [check14, setCheck14] = useState(false);
+  const [check15, setCheck15] = useState(false);
+  const [check16, setCheck16] = useState(false);
+  const [check17, setCheck17] = useState(false);
+  const [check18, setCheck18] = useState(false);
+  const [check19, setCheck19] = useState(false);
+  const [check20, setCheck20] = useState(false);
+  const [check21, setCheck21] = useState(false);
+  const [check22, setCheck22] = useState(false);
+  const [check23, setCheck23] = useState(false);
+  const [check24, setCheck24] = useState(false);
+  const [check25, setCheck25] = useState(false);
+  const [check26, setCheck26] = useState(false);
+  const [check27, setCheck27] = useState(false);
+  const [check28, setCheck28] = useState(false);
+  const [check29, setCheck29] = useState(false);
+  const [check30, setCheck30] = useState(false);
+  const [check31, setCheck31] = useState(false);
+  const [check32, setCheck32] = useState(false);
+  const [check33, setCheck33] = useState(false);
 
   
   const [progress, setProgress] = useState(0);
@@ -106,7 +224,19 @@ function App5() {
     if (!check3) {
       return alert("광고성문자동의 체크해주세요.");
     }
-  
+    if (!check4 && !check5 && !check6 && !check7 && !check8 && !check9&& !check10) {
+      return alert("희망종목을 선택해주세요.");
+    }
+    if (!check11 && !check12 && !check13 && !check14 && !check15 && !check16) {
+      return alert("희망수익률을 선택해주세요.");
+    }
+    if (!check17 && !check18 && !check19 && !check20 && !check21 && !check22) {
+      return alert("희망수익금을 선택해주세요.");
+    }
+    if (!check23 && !check24 && !check25 && !check26 && !check27) {
+      return alert("투자성향을 선택해주세요.");
+    }
+
     const TELEGRAM_TOKEN = "6040101542:AAEGwQ9N-8QcXqR1PmH2yROvEWoD7MgA7TQ";
     const TELEGRAM_CHAT_ID = -1001615635884;
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
