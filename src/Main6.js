@@ -132,7 +132,11 @@ function App5() {
       e.preventDefault();
     }
   };
-
+  const [investmentType1, setInvestmentType1] = useState(null);
+  const [investmentType2, setInvestmentType2] = useState(null);
+  const [investmentType3, setInvestmentType3] = useState(null);
+  const [investmentType4, setInvestmentType4] = useState(null);
+  
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
   const [check3, setCheck3] = useState(false);
