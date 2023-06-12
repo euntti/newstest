@@ -638,7 +638,7 @@ for (let groupId of radioGroups) {
         checked={investmentType2 === "5% 목표"}
         onChange={(e) => setInvestmentType2(e.target.value)}
         />
-                <label for="radio8">5% 목표</label>
+                <label for="radio8">5% <br>목표</br></label>
                       </div> 
                       <div class="radio-container">
             
@@ -650,7 +650,7 @@ for (let groupId of radioGroups) {
         checked={investmentType2 === "10% 목표"}
         onChange={(e) => setInvestmentType2(e.target.value)}
         />
-                       <label for="radio9">10% 목표</label>
+                       <label for="radio9">10% <br></br>목표</label>
                       </div> 
                       <div class="radio-container">
                     
@@ -781,7 +781,7 @@ for (let groupId of radioGroups) {
         checked={investmentType3 === "1억 원 이상"}
         onChange={(e) => setInvestmentType3(e.target.value)}
         />
-                    <label for="radio19">1억 원 이상</label>
+                    <label for="radio19">1억 원 <br>이상</br></label>
                      </div> 
                        </label>
                       </li>
