@@ -351,16 +351,11 @@ table {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; 
-  border-radius: 5px solid #000;
+  border: 2px solid #000; /* 설정하려는 테두리 스타일 */
+  border-radius: 5px; /* 둥근 모서리의 크기 */
   /* If you want equal spacing between the radio buttons */
 }
-input[type='radio'] {
-  opacity: 0;  /* Makes the radio buttons transparent */
-  position: absolute;  /* This takes the radio button out of the document flow, essentially hiding it from view */
-}
-input[type='radio']:checked + label {
-  color: blue;
-}
+
 
 #chkline2 {
   display: flex;
