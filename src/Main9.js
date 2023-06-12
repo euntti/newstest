@@ -166,7 +166,7 @@ function App8() {
         backgroundAttachment: "fixed",
         width: "1300px",
         height: "2000px",
-        display: "flex" ,
+      
      
       }}
     >
@@ -177,7 +177,7 @@ function App8() {
               {isBrowser ? (
                 <div
                   style={{
-                    display: "flex",
+              
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
@@ -192,7 +192,7 @@ function App8() {
               ) : (
                 <div
                 style={{
-                  display: "flex",
+            
                   flexDirection: "column",
                   justifyContent: "center",
                   alignItems: "center",
