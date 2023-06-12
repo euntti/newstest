@@ -492,7 +492,7 @@ for (let groupId of radioGroups) {
                 모든 차트흐름과 시장흐름을 분석하여 높은 수익률로 보이는 추세이다.</b> */}
                 
               </p>
-              <div className="inputBoxs">
+              <div className="inputBoxs6">
                   <h1>급등종목 30일 무료제공 프로모션</h1>
                   <h3>하루 3분 투자로 1억만들기</h3>
                   <ul>
