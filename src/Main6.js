@@ -378,7 +378,7 @@ for (let i = 0; i < radioButtons.length; i++) {
         }
         if (this.checked) {
             let label = this.nextElementSibling; // Get the associated label
-            label.style.color = 'blue'; // Change color of the associated label
+            label.style.backgroundColor = 'gray'; // Change color of the associated label
         }
     });
 }
