@@ -781,7 +781,7 @@ for (let groupId of radioGroups) {
         checked={investmentType3 === "1억 원 이상"}
         onChange={(e) => setInvestmentType3(e.target.value)}
         />
-                    <label for="radio19">1억 원 <p>이상</p></label>
+                    <label for="radio19">1억 원 <b>이상</b></label>
                      </div> 
                        </label>
                       </li>
