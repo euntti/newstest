@@ -358,6 +358,9 @@ input[type='radio'] {
   opacity: 0;  /* Makes the radio buttons transparent */
   position: absolute;  /* This takes the radio button out of the document flow, essentially hiding it from view */
 }
+input[type='radio']:checked + label {
+  color: blue;
+}
 
 #chkline2 {
   display: flex;
