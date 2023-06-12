@@ -368,36 +368,34 @@ function App5() {
     console.log(listCnt);
   }, timer);
 
-  
-  let radioGroups = ["chklin1", "chkline2", "chkline3", "chkline4"];
+  window.onload = function() {
+    let radioGroups = ["chklin1", "chkline2", "chkline3", "chkline4"];
 
-for (let groupId of radioGroups) {
-    let group = document.getElementById(groupId);
-    
-    // group이 존재하는지 확인
-    if (group) {
-        let radioButtons = group.querySelectorAll("input[type='radio']");
+    for (let groupId of radioGroups) {
+        let group = document.getElementById(groupId);
+        if (group) {
+          let radioButtons = group.querySelectorAll("input[type='radio']");
 
-        for (let i = 0; i < radioButtons.length; i++) {
-            radioButtons[i].style.opacity = '0';
-            radioButtons[i].addEventListener('change', function() {
-                let labels = group.querySelectorAll('label');
-                for (let j = 0; j < labels.length; j++) {
-                    labels[j].style.color = 'initial'; // Reset color of all labels
-                    labels[j].style.backgroundColor = 'initial'; // Reset background color of all labels
-                }
-                if (this.checked) {
-                    let label = this.nextElementSibling; // Get the associated label
-                    label.style.color = 'initial'; // Change color of the associated label
-                    label.style.backgroundColor = 'gray'; // Change background color of the associated label
-                }
-            });
-        }
-    } else {
-        console.log('Element with ID ' + groupId + ' does not exist.');
-    }
+          for (let i = 0; i < radioButtons.length; i++) {
+              radioButtons[i].style.opacity = '0';
+              radioButtons[i].addEventListener('change', function() {
+                  let labels = group.querySelectorAll('label');
+                  for (let j = 0; j < labels.length; j++) {
+                      labels[j].style.color = 'initial'; // Reset color of all labels
+                      labels[j].style.backgroundColor = 'initial'; // Reset background color of all labels
+                  }
+                  if (this.checked) {
+                      let label = this.nextElementSibling; // Get the associated label
+                      label.style.color = 'initial'; // Change color of the associated label
+                      label.style.backgroundColor = 'gray'; // Change background color of the associated label
+                  }
+              });
+          }
+      } else {
+          console.log('Element with ID ' + groupId + ' does not exist.');
+      }
+  }
 }
-
 
   return (
     <div>
@@ -710,7 +708,7 @@ for (let groupId of radioGroups) {
                     <br />
                     <li id="chkline3">
                       <label>
-                      희망\n수익금
+                      희망 <br />수익금
                       <div class="radio-container">
              
                       <input
@@ -791,7 +789,7 @@ for (let groupId of radioGroups) {
                     <br />
                     <li id="chkline4">
                       <label>
-                      투자\n성향
+                      투자 <br />성향
                       <div class="radio-container">
                      
                       <input
@@ -814,7 +812,7 @@ for (let groupId of radioGroups) {
         checked={investmentType4 === "안정 추구형"}
         onChange={(e) => setInvestmentType4(e.target.value)}
         />
-           <label for="radio21">안정 추구형</label>
+           <label for="radio21">안정<br /> 추구형</label>
                      </div> 
                      <div class="radio-container">
                     
@@ -826,7 +824,7 @@ for (let groupId of radioGroups) {
         checked={investmentType4 === "위험 추구형"}
         onChange={(e) => setInvestmentType4(e.target.value)}
         />
-                 <label for="radio22">위험 추구형</label>
+                 <label for="radio22">위험<br /> 추구형</label>
                      </div> 
                      <div class="radio-container">
                
@@ -838,7 +836,7 @@ for (let groupId of radioGroups) {
         checked={investmentType4 === "적극 투자형"}
         onChange={(e) => setInvestmentType4(e.target.value)}
         />
-         <label for="radio23">적극 투자형</label>
+         <label for="radio23">적극<br /> 투자형</label>
                      </div> 
                      <div class="radio-container">
                      
@@ -850,7 +848,7 @@ for (let groupId of radioGroups) {
         checked={investmentType4 === "공격 투자형"}
         onChange={(e) => setInvestmentType4(e.target.value)}
         />
-        <label for="radio24">공격 투자형</label>
+        <label for="radio24">공격<br /> 투자형</label>
                      </div> 
                        
                           
