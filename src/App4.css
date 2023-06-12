@@ -331,6 +331,33 @@ table {
   text-align: center;
   width: 100%;
 }
+#chklin1, #chkline2, #chkline3, #chkline4 {
+  margin: 1rem 0;
+}
+
+#chklin1 label, #chkline2 label, #chkline3 label, #chkline4 label {
+  display: flex;
+  flex-direction: column;
+}
+
+#chklin1 div, #chkline2 div, #chkline3 div, #chkline4 div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#chklin1 .radio-container, #chkline2 .radio-container, #chkline3 .radio-container, #chkline4 .radio-container {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.radio-container a {
+  margin-left: 0.5rem;
+}
+
 .rolling_box {
   width: 660px;
   height: 178px;
