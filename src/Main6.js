@@ -516,30 +516,28 @@ function App5() {
                     
     <label>
     희망항목
-        <div class="radio-container">
-        <label for="radio1">급등종목</label>
-        <input
-        type="radio"
-        id="radio1"
-        name="investmentType1"
-        value="급등종목"
-        checked={investmentType1 === "급등종목"}
-        onChange={(e) => setInvestmentType1(e.target.value)}
-        />
-      
-        </div>
-        <div class="radio-container">
-        <label for="radio2">테마종목</label>
-        <input
-        type="radio"
-        id="radio2"
-        name="investmentType1"
-        value="테마종목"
-        checked={investmentType1 === "테마종목"}
-        onChange={(e) => setInvestmentType1(e.target.value)}
-        />
-       
-        </div>
+    <div class="radio-container">
+    <input
+    type="radio"
+    id="radio1"
+    name="investmentType1"
+    value="급등종목"
+    checked={investmentType1 === "급등종목"}
+    onChange={(e) => setInvestmentType1(e.target.value)}
+    />
+    <label for="radio1">급등종목</label>
+</div>
+<div class="radio-container">
+    <input
+    type="radio"
+    id="radio2"
+    name="investmentType1"
+    value="테마종목"
+    checked={investmentType1 === "테마종목"}
+    onChange={(e) => setInvestmentType1(e.target.value)}
+    />
+    <label for="radio2">테마종목</label>
+</div>
         <div class="radio-container">
         <label for="radio3">가치투자</label>
         <input
