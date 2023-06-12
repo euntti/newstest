@@ -399,7 +399,7 @@ for (let groupId of radioGroups) {
 }
 
 const style = {
-  margin: 0
+  margin: '1px'  // 이 값을 조절해보세요. 작을수록 p 태그 주변의 공간이 작아집니다.
 };
 
   return (
@@ -633,10 +633,9 @@ const style = {
                     <li id="chkline2">
                       <label>
                       <>
-                       <p style={style}>희망</p>
-                       <p style={style}>수익률</p>
-                      </>
-
+    <p style={style}>희망</p>
+    <p style={style}>수익률</p>
+  </>
                       <div class="radio-container">
            
                       <input
