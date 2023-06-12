@@ -734,8 +734,7 @@ function App5() {
         onChange={(e) => setInvestmentType4(e.target.value)}
         />
                        <a>적극 투자형</a>
-                       <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
-                       <input
+                      <input
         type="radio"
         id="radio24"
         name="investmentType4"
@@ -743,19 +742,9 @@ function App5() {
         checked={investmentType4 === "공격 투자형"}
         onChange={(e) => setInvestmentType4(e.target.value)}
         />
-                        <span
-                        style={{
-                        display: "inline-block",
-                        width: "50px",
-                        height: "18px",
-                        background: check27 ? "#f00" : "#ccc",
-                        lineHeight: "18px",
-                        textAlign: "center",
-                        }}
-                        >
                          공격 투자형
-                        </span>
-                            </label>
+                       
+                          
                        </label>
                       </li>
                     <br />
