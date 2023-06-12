@@ -377,7 +377,7 @@ for (let groupId of radioGroups) {
     for (let i = 0; i < radioButtons.length; i++) {
         radioButtons[i].style.opacity = '0';
         radioButtons[i].addEventListener('change', function() {
-            let labels = group.getElementsByTagName('label');
+            let labels = group.querySelectorAll('label');
             for (let j = 0; j < labels.length; j++) {
                 labels[j].style.color = 'initial'; // Reset color of all labels
                 labels[j].style.backgroundColor = 'initial'; // Reset background color of all labels
