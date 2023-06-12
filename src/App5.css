@@ -357,6 +357,7 @@ table {
 
 .radio-container {
   margin-right: 10px; /* Adjust as needed */
+  width: 50px;
 }
 
 #chkline2 {
