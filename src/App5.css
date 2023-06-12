@@ -369,6 +369,15 @@ table {
   justify-content: space-between;
 }
 
+.label-text {
+  color: #333; /* 텍스트 색상은 약간 어두운 회색으로 설정 */
+  font-family: 'Arial', sans-serif; /* Arial 글꼴 사용 */
+  font-size: 13px; /* 글자 크기는 13px로 설정 */
+  text-align: center; /* 텍스트는 가운데 정렬 */
+  margin-bottom: 10px; /* 텍스트 아래에 약간의 공간 추가 */
+  display: block; /* 각 텍스트는 자신만의 줄을 가지도록 설정 */
+}
+
 .radio-container {
   margin-right: 5px; /* Adjust as needed */
 
