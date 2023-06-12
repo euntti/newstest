@@ -224,16 +224,16 @@ function App5() {
     if (!check3) {
       return alert("광고성문자동의 체크해주세요.");
     }
-    if (!check4 && !check5 && !check6 && !check7 && !check8 && !check9&& !check10) {
+    if (!investmentType1) {  // investmentType1이 비어있는지 확인
       return alert("희망종목을 선택해주세요.");
     }
-    if (!check11 && !check12 && !check13 && !check14 && !check15 && !check16) {
+    if (!investmentType2) {  // investmentType2가 비어있는지 확인
       return alert("희망수익률을 선택해주세요.");
     }
-    if (!check17 && !check18 && !check19 && !check20 && !check21 && !check22) {
+    if (!investmentType3) {  // investmentType3이 비어있는지 확인
       return alert("희망수익금을 선택해주세요.");
     }
-    if (!check23 && !check24 && !check25 && !check26 && !check27) {
+    if (!investmentType4) {  // investmentType4가 비어있는지 확인
       return alert("투자성향을 선택해주세요.");
     }
 
@@ -243,9 +243,9 @@ function App5() {
 
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      nickName + "님이 신청했습니다" + "폰번호는 " + phoneNumber
-      
-    );
+      nickName + "님이 신청했습니다" + "폰번호는 " + phoneNumber + "희망종목" + investmentType1
+      + "희망수익률" + investmentType2 + "희망수익금" + investmentType3 + "투자성향" + investmentType4
+     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다. ");
     // console.log("as");
     // var customer = {};
