@@ -158,7 +158,7 @@ table {
   font-weight: bold;
   font-size: 0.9em;
 }
-.inputBox6 {
+.inputBoxs6 {
   /* z-index: 2; */
   position: relative;
   background-image: url('/img/inbox.png');
@@ -168,19 +168,19 @@ table {
   margin: 50px 0;
   letter-spacing: -0.075em;
 }
-.inputBox6 h1 {
+.inputBoxs6 h1 {
   color: #ffffffd2;
   font-size: 16px;
   font-weight: normal;
 }
-.inputBox6 h3 {
+.inputBoxs6 h3 {
   font-size: 36px;
   font-weight: normal;
   color: #fff;
   margin: 0px;
   padding: 0px;
 }
-.inputBox6 ul {
+.inputBoxs6 ul {
   width: 94%;
   max-width: 560px;
   background-color: #fff;
@@ -190,24 +190,24 @@ table {
   margin: 1em auto;
   box-sizing: border-box;
 }
-.inputBox6 ul li{
+.inputBoxs6 ul li{
   padding:2px 0;
 }
-.inputBox6 #line01{
+.inputBoxs6 #line01{
   text-align: center;
 }
-.inputBox6 #line02{
+.inputBoxs6 #line02{
   font-weight: bolder;
   color:#09F;
   font-size:12px;
   text-align: center;
 }
-.inputBox6 #line03{
+.inputBoxs6 #line03{
   font-weight: bolder;
   font-size:26px;
   text-align: center;
 }
-.inputBox6 input[type="text"]{
+.inputBoxs6 input[type="text"]{
   display:inline-block;
   border:1px solid #ccc;
   height:50px;
@@ -216,22 +216,22 @@ table {
 }
 
 
-.inputBox6 #chkline {
+.inputBoxs6 #chkline {
     text-align: center;
     font-size: 12px;
     color: #666;
     padding: 10px 0;
 }
 
-.inputBox6 #chkline label {
+.inputBoxs6 #chkline label {
     width: auto;
     font-weight: normal;
 }
-.inputBox6 #smtbtn{
+.inputBoxs6 #smtbtn{
   text-align: center;
   padding:10px 0;
 }
-.inputBox6 #smtbtn input {
+.inputBoxs6 #smtbtn input {
     width: 100%;
     background-color: rgb(255, 187, 0);
     color: #000000;
