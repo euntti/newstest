@@ -385,7 +385,6 @@ function App5() {
     });
 }
 
-
   return (
     <div>
       <div>
@@ -828,7 +827,7 @@ function App5() {
          <label for="radio23">적극 투자형</label>
                      </div> 
                      <div class="radio-container">
-                  
+                     <label for="radio24">공격 투자형</label>
                       <input
         type="radio"
         id="radio24"
