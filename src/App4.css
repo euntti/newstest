@@ -331,36 +331,6 @@ table {
   text-align: center;
   width: 100%;
 }
-/* style.css */
-#chklin1, #chkline2, #chkline3, #chkline4 {
-  margin: 1rem 0;
-  border: 2px solid #000; /* 네모난 테두리를 추가합니다. */
-  padding: 1rem;
-  border-radius: 5px; /* 테두리의 모서리를 둥글게 만듭니다. */
-}
-
-#chklin1 label, #chkline2 label, #chkline3 label, #chkline4 label {
-  display: flex;
-  flex-direction: column;
-}
-
-#chklin1 div, #chkline2 div, #chkline3 div, #chkline4 div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.radio-container {
-  display: flex;
-  align-items: center;
-  margin-right: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.radio-container a {
-  margin-left: 0.5rem;
-}
 
 .rolling_box {
   width: 660px;
