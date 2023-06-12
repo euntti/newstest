@@ -343,13 +343,16 @@ table {
 
 .radio-container {
   margin-right: 10px; /* Adjust as needed */
-  width: 100px;
+
 }
+
 #chklin1 label {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between; /* If you want equal spacing between the radio buttons */
+  justify-content: space-between; 
+  border: 1px solid #000;
+  /* If you want equal spacing between the radio buttons */
 }
 #chkline2 {
   display: flex;
