@@ -838,7 +838,7 @@ for (let groupId of radioGroups) {
          <label for="radio23">적극 투자형</label>
                      </div> 
                      <div class="radio-container">
-                     <label for="radio24">공격 투자형</label>
+                     
                       <input
         type="radio"
         id="radio24"

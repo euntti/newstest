@@ -356,33 +356,35 @@ table {
   padding: 10px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
 }
 
-#chkline2 {
-  display: flex;
+#chkline2 label {
+  display: inline-flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
-  border: 1px solid #000;
-  padding: 20px;
+  justify-content: space-between; 
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
 }
 
-#cchkline3 {
-  display: flex;
+#chkline3 label {
+  display: inline-flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
-  border: 1px solid #000;
-  padding: 20px;
+  justify-content: space-between; 
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
 }
 
-#chkline4 {
-  display: flex;
+#chkline4 label {
+  display: inline-flex;
   flex-direction: row;
-  justify-content: space-around;
   flex-wrap: wrap;
-  border: 1px solid #000;
-  padding: 20px;
+  justify-content: space-between; 
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
 }
-
 
 
 .rolling_box {
