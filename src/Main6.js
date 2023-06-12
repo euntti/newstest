@@ -367,6 +367,12 @@ function App5() {
     console.log(listCnt);
   }, timer);
 
+  let radioButtons = document.querySelectorAll("input[type='radio']");
+  for (let i = 0; i < radioButtons.length; i++) {
+    radioButtons[i].style.opacity = '0';
+    radioButtons[i].style.position = 'absolute';
+}
+
   return (
     <div>
       <div>
@@ -507,6 +513,7 @@ function App5() {
                       />
                     </li>
                     <li id="chklin1"> 
+                    
     <label>
     희망항목
         <div class="radio-container">
