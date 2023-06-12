@@ -331,8 +331,12 @@ table {
   text-align: center;
   width: 100%;
 }
+/* style.css */
 #chklin1, #chkline2, #chkline3, #chkline4 {
   margin: 1rem 0;
+  border: 2px solid #000; /* 네모난 테두리를 추가합니다. */
+  padding: 1rem;
+  border-radius: 5px; /* 테두리의 모서리를 둥글게 만듭니다. */
 }
 
 #chklin1 label, #chkline2 label, #chkline3 label, #chkline4 label {
@@ -347,7 +351,7 @@ table {
   justify-content: flex-start;
 }
 
-#chklin1 .radio-container, #chkline2 .radio-container, #chkline3 .radio-container, #chkline4 .radio-container {
+.radio-container {
   display: flex;
   align-items: center;
   margin-right: 1rem;
