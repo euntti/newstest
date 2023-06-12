@@ -10,6 +10,7 @@ import { ColorRing } from "react-loader-spinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 
+
 const Main6 = () => {
     return <div>Main6</div>
     const Main6 = () => {
@@ -626,7 +627,7 @@ for (let groupId of radioGroups) {
                     <br />
                     <li id="chkline2">
                       <label>
-                      희망\n수익률
+                      희망/n수익률
                       <div class="radio-container">
            
                       <input
