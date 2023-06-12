@@ -368,7 +368,7 @@ function App5() {
   }, timer);
 
   
-  let radioGroups = ["chkline1", "chkline2", "chkline3", "chkline4"];
+  let radioGroups = ["chklin1", "chkline2", "chkline3", "chkline4"];
 
 for (let groupId of radioGroups) {
     let group = document.getElementById(groupId);
