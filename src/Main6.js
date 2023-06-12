@@ -367,7 +367,7 @@ function App5() {
     console.log(listCnt);
   }, timer);
 
-  let radioGroups = ["chklin1", "chklin2", "chklin3", "chklin4"];
+  let radioGroups = ["chklin1", "chkline2", "chkline3","chkline4"];
 
 for (let group of radioGroups) {
     let radioButtons = document.getElementById(group).querySelectorAll("input[type='radio']");
