@@ -397,7 +397,6 @@ for (let groupId of radioGroups) {
         console.log('Element with ID ' + groupId + ' does not exist.');
     }
 }
-console.log("희망\n수익률");
 
 
   return (
@@ -630,7 +629,7 @@ console.log("희망\n수익률");
                     <br />
                     <li id="chkline2">
                       <label>
-                      희망\n수익률
+                      희망 <br />수익률
                       <div class="radio-container">
            
                       <input
@@ -642,7 +641,7 @@ console.log("희망\n수익률");
         checked={investmentType2 === "5% 목표"}
         onChange={(e) => setInvestmentType2(e.target.value)}
         />
-                <label for="radio8">5%\n목표</label>
+                <label for="radio8">5%<br />목표</label>
                       </div> 
                       <div class="radio-container">
             
@@ -654,7 +653,7 @@ console.log("희망\n수익률");
         checked={investmentType2 === "10% 목표"}
         onChange={(e) => setInvestmentType2(e.target.value)}
         />
-                       <label for="radio9">10%\n목표</label>
+                       <label for="radio9">10%<br />목표</label>
                       </div> 
                       <div class="radio-container">
                     
@@ -666,7 +665,7 @@ console.log("희망\n수익률");
         checked={investmentType2 === "15% 목표"}
         onChange={(e) => setInvestmentType2(e.target.value)}
         />
-                     <label for="radio10">15%\n목표</label>
+                     <label for="radio10">15%<br />목표</label>
                       </div>
                       <div class="radio-container">
                      
@@ -678,7 +677,7 @@ console.log("희망\n수익률");
         checked={investmentType2 === "20% 목표"}
         onChange={(e) => setInvestmentType2(e.target.value)}
         />
-                     <label for="radio11">20%\n목표</label>
+                     <label for="radio11">20%<br />목표</label>
                       </div>
                       <div class="radio-container">
                 
@@ -690,7 +689,7 @@ console.log("희망\n수익률");
         checked={investmentType2 === "25% 목표"}
         onChange={(e) => setInvestmentType2(e.target.value)}
         />
-                    <label for="radio12">25%\n목표</label>
+                    <label for="radio12">25%<br />목표</label>
                       </div>
                       <div class="radio-container">
                
@@ -703,7 +702,7 @@ console.log("희망\n수익률");
         onChange={(e) => setInvestmentType2(e.target.value)}
         />
                      
-                     <label for="radio13">30%\n목표</label>
+                     <label for="radio13">30%<br />목표</label>
                       </div> 
 
                        </label>
@@ -785,7 +784,7 @@ console.log("희망\n수익률");
         checked={investmentType3 === "1억 원 이상"}
         onChange={(e) => setInvestmentType3(e.target.value)}
         />
-                    <label for="radio19">1억 원\n이상</label>
+                    <label for="radio19">1억 원<br />이상</label>
                      </div> 
                        </label>
                       </li>
