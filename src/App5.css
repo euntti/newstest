@@ -192,6 +192,18 @@ table {
 }
 .inputBoxs6 ul li{
   padding:2px 0;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid #000;
+  border-radius: 20px; /* 둥글게 */
+  font-size: 13px;
+  text-align: center;
+  background-color: #f9f9f9; /* 배경색 변경 */
+  color: #333; /* 텍스트 색상 변경 */
+  font-family: 'Arial', sans-serif; /* 글꼴 변경 */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
+  line-height: 100%;
 }
 .inputBoxs6 #line01{
   text-align: center;
