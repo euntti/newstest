@@ -511,7 +511,7 @@ function App5() {
     희망항목
     <input
         type="radio"
-        id="privacy"
+        id="radio1"
         name="investmentType1"
         value="급등종목"
         checked={investmentType1 === "급등종목"}
@@ -520,7 +520,7 @@ function App5() {
         <a>급등종목</a>
         <input
         type="radio"
-        id="privacy"
+        id="radio2"
         name="investmentType1"
         value="테마종목"
         checked={investmentType1 === "테마종목"}
@@ -529,7 +529,7 @@ function App5() {
         <a>테마종목</a>
         <input
         type="radio"
-        id="privacy"
+        id="radio3"
         name="investmentType1"
         value="가치투자"
         checked={investmentType1 === "가치투자"}
@@ -538,7 +538,7 @@ function App5() {
         <a>가치투자</a>
         <input
         type="radio"
-        id="privacy"
+        id="radio4"
         name="investmentType1"
         value="스윙종목"
         checked={investmentType1 === "스윙종목"}
@@ -547,7 +547,7 @@ function App5() {
                        <a>스윙종목</a>
                        <input
         type="radio"
-        id="privacy"
+        id="radio5"
         name="investmentType1"
         value="인공지능"
         checked={investmentType1 === "인공지능"}
@@ -556,7 +556,7 @@ function App5() {
                        <a>인공지능</a>
                        <input
         type="radio"
-        id="privacy"
+        id="radio6"
         name="investmentType1"
         value="단기투자"
         checked={investmentType1 === "단기투자"}
@@ -565,7 +565,7 @@ function App5() {
                        <a>단기투자</a>  
                        <input
         type="radio"
-        id="privacy"
+        id="radio7"
         name="investmentType1"
         value="투자초보"
         checked={investmentType1 === "투자초보"}
@@ -580,7 +580,7 @@ function App5() {
                       희망수익률
                       <input
         type="radio"
-        id="privacy1"
+        id="radio8"
         name="investmentType2"
         value="5% 목표"
         checked={investmentType2 === "5% 목표"}
@@ -589,7 +589,7 @@ function App5() {
                        <a>5% 목표</a>
                        <input
         type="radio"
-        id="privacy1"
+        id="radio9"
         name="investmentType2"
         value="10% 목표"
         checked={investmentType2 === "10% 목표"}
@@ -598,7 +598,7 @@ function App5() {
                        <a>10% 목표</a>
                        <input
         type="radio"
-        id="privacy1"
+        id="radio10"
         name="investmentType2"
         value="15% 목표"
         checked={investmentType2 === "15% 목표"}
@@ -607,7 +607,7 @@ function App5() {
                        <a>15% 목표</a>
                        <input
         type="radio"
-        id="privacy1"
+        id="radio11"
         name="investmentType2"
         value="20% 목표"
         checked={investmentType2 === "20% 목표"}
@@ -616,7 +616,7 @@ function App5() {
                        <a>20% 목표</a>
                        <input
         type="radio"
-        id="privacy1"
+        id="radio12"
         name="investmentType2"
         value="25% 목표"
         checked={investmentType2 === "25% 목표"}
@@ -625,7 +625,7 @@ function App5() {
                        <a>25% 목표</a>
                        <input
         type="radio"
-        id="privacy1"
+        id="radio13"
         name="investmentType2"
         value="30% 목표"
         checked={investmentType2 === "30% 목표"}
@@ -640,7 +640,7 @@ function App5() {
                       희망수익금
                       <input
         type="radio"
-        id="privacy2"
+        id="radio14"
         name="investmentType3"
         value="5백만 원"
         checked={investmentType3 === "5백만 원"}
@@ -649,7 +649,7 @@ function App5() {
    <a>5백만 원</a>
    <input
         type="radio"
-        id="privacy2"
+        id="radio15"
         name="investmentType3"
         value="1천만 원"
         checked={investmentType3 === "1천만 원"}
@@ -658,7 +658,7 @@ function App5() {
                        <a>1천만 원</a>
                        <input
         type="radio"
-        id="privacy2"
+        id="radio16"
         name="investmentType3"
         value="3천만 원"
         checked={investmentType3 === "3천만 원"}
@@ -667,7 +667,7 @@ function App5() {
                        <a>3천만 원</a>
                        <input
         type="radio"
-        id="privacy2"
+        id="radio17"
         name="investmentType3"
         value="5천만 원"
         checked={investmentType3 === "5천만 원"}
@@ -676,7 +676,7 @@ function App5() {
                        <a>5천만 원</a>
                        <input
         type="radio"
-        id="privacy2"
+        id="radio18"
         name="investmentType3"
         value="7천만 원"
         checked={investmentType3 === "7천만 원"}
@@ -685,7 +685,7 @@ function App5() {
                        <a>7천만 원</a>
                        <input
         type="radio"
-        id="privacy2"
+        id="radio19"
         name="investmentType3"
         value="1억 원 이상"
         checked={investmentType3 === "1억 원 이상"}
@@ -700,7 +700,7 @@ function App5() {
                       투자성향
                       <input
         type="radio"
-        id="privacy3"
+        id="radio20"
         name="investmentType4"
         value="안정형"
         checked={investmentType4 === "안정형"}
@@ -709,7 +709,7 @@ function App5() {
                        <a>안정형</a>
                        <input
         type="radio"
-        id="privacy3"
+        id="radio21"
         name="investmentType4"
         value="안정 추구형"
         checked={investmentType4 === "안정 추구형"}
@@ -718,7 +718,7 @@ function App5() {
                        <a>안정 추구형</a>
                        <input
         type="radio"
-        id="privacy3"
+        id="radio22"
         name="investmentType4"
         value="위험 추구형"
         checked={investmentType4 === "위험 추구형"}
@@ -727,7 +727,7 @@ function App5() {
                        <a>위험 추구형</a>
                        <input
         type="radio"
-        id="privacy3"
+        id="radio23"
         name="investmentType4"
         value="적극 투자형"
         checked={investmentType4 === "적극 투자형"}
@@ -737,7 +737,7 @@ function App5() {
                        <label htmlFor="privacy" style={{ display: "inline-flex", alignItems: "center" }}>
                        <input
         type="radio"
-        id="privacy3"
+        id="radio24"
         name="investmentType4"
         value="공격 투자형"
         checked={investmentType4 === "공격 투자형"}
