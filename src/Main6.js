@@ -538,7 +538,7 @@ function App5() {
                     </li>
                     <li id="chklin1"> 
                     
-    
+    <label>
     희망항목
     <div class="radio-container">
     <input
@@ -622,10 +622,11 @@ function App5() {
         />
                      <label for="radio7">투자초보</label>
                        </div> 
+                      </label>
                       </li>
                     <br />
                     <li id="chkline2">
-                      
+                      <label>
                       <span class="label-header">희망 <br />수익률</span>
                       <div class="radio-container">
            
@@ -702,11 +703,11 @@ function App5() {
                      <label for="radio13">30%<br />목표</label>
                       </div> 
 
-                       
+                       </label>
                       </li>
                     <br />
                     <li id="chkline3">
-                      
+                      <label>
                       희망 <br />수익금
                       <div class="radio-container">
              
@@ -783,11 +784,11 @@ function App5() {
         />
                     <label for="radio19">1억 원<br />이상</label>
                      </div> 
-                     
+                       </label>
                       </li>
                     <br />
                     <li id="chkline4">
-              
+                      <label>
                       투자 <br />성향
                       <div class="radio-container">
                      
@@ -851,7 +852,7 @@ function App5() {
                      </div> 
                        
                           
-                    
+                       </label>
                       </li>
                     <br />
                     <li id="chkline">
