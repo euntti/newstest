@@ -650,7 +650,7 @@ for (let groupId of radioGroups) {
         checked={investmentType2 === "10% 목표"}
         onChange={(e) => setInvestmentType2(e.target.value)}
         />
-                       <label for="radio9">10% <br></br>목표</label>
+                       <label for="radio9">10% <br>목표</br></label>
                       </div> 
                       <div class="radio-container">
                     
