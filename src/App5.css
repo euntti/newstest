@@ -347,15 +347,14 @@ table {
 }
 
 #chklin1 label {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; 
-  border: 2px solid #000; /* 설정하려는 테두리 스타일 */
-  border-radius: 5px; /* 둥근 모서리의 크기 */
-  /* If you want equal spacing between the radio buttons */
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 10px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
 }
-
 
 #chkline2 {
   display: flex;
