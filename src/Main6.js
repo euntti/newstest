@@ -627,7 +627,7 @@ function App5() {
                     <br />
                     <li id="chkline2">
                       <label>
-                      <span class="label-text">희망</span> <br /><span class="label-text">수익률</span>
+                      <span class="label-header">희망 <br />수익률</span>
                       <div class="radio-container">
            
                       <input
