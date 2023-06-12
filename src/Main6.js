@@ -367,10 +367,8 @@ function App5() {
     console.log(listCnt);
   }, timer);
 
-  let radioGroups = ["chklin1", "chkline2", "chkline3", "chkline4"];
+  let radioButtons = document.querySelectorAll("input[type='radio']");
 
-
-  
   for (let i = 0; i < radioButtons.length; i++) {
     radioButtons[i].style.opacity = '0';
     radioButtons[i].addEventListener('change', function() {
