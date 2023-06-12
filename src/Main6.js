@@ -367,8 +367,17 @@ function App5() {
     console.log(listCnt);
   }, timer);
 
-  let radioButtons = document.querySelectorAll("input[type='radio']");
+  let radioGroups = ["chklin1", "chkline2", "chkline3", "chkline4"];
 
+for (let group of radioGroups) {
+    let groupElement = document.getElementById(group);
+    if(groupElement === null) {
+        console.error(`No element found with ID "${group}"`);
+    } else {
+        // Do the usual processing here.
+    }
+}
+  
   for (let i = 0; i < radioButtons.length; i++) {
     radioButtons[i].style.opacity = '0';
     radioButtons[i].addEventListener('change', function() {
