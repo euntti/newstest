@@ -369,20 +369,21 @@ function App5() {
 
   let radioButtons = document.querySelectorAll("input[type='radio']");
 
-for (let i = 0; i < radioButtons.length; i++) {
+  for (let i = 0; i < radioButtons.length; i++) {
     radioButtons[i].style.opacity = '0';
     radioButtons[i].addEventListener('change', function() {
         let labels = document.getElementsByTagName('label');
         for (let j = 0; j < labels.length; j++) {
             labels[j].style.color = 'initial'; // Reset color of all labels
+            labels[j].style.backgroundColor = 'initial'; // Reset background color of all labels
         }
         if (this.checked) {
             let label = this.nextElementSibling; // Get the associated label
-            label.style.backgroundColor = 'gray'; // Change color of the associated label
+            label.style.color = 'initial'; // Change color of the associated label
+            label.style.backgroundColor = 'gray'; // Change background color of the associated label
         }
     });
 }
-
   return (
     <div>
       <div>
