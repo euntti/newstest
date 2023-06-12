@@ -397,6 +397,11 @@ for (let groupId of radioGroups) {
         console.log('Element with ID ' + groupId + ' does not exist.');
     }
 }
+
+const style = {
+  margin: 0
+};
+
   return (
     <div>
       <div>
@@ -627,7 +632,11 @@ for (let groupId of radioGroups) {
                     <br />
                     <li id="chkline2">
                       <label>
-                      희망/n수익률
+                      <>
+                       <p style={style}>희망</p>
+                       <p style={style}>수익률</p>
+                      </>
+
                       <div class="radio-container">
            
                       <input
