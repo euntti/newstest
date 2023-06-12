@@ -349,41 +349,49 @@ table {
 #chklin1 label {
   display: inline-flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between; 
   border: 2px solid #000;
   border-radius: 5px;
-  padding: 10px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
+  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
+  font-size: 13px;
+  text-align: center;
 }
 
 #chkline2 label {
   display: inline-flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between; 
   border: 2px solid #000;
   border-radius: 5px;
-  padding: 10px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
+  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
+  font-size: 13px;
+  text-align: center;
 }
 
 #chkline3 label {
   display: inline-flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between; 
   border: 2px solid #000;
   border-radius: 5px;
-  padding: 10px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
+  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
+  font-size: 13px;
+  text-align: center;
 }
 
 #chkline4 label {
   display: inline-flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between; 
   border: 2px solid #000;
   border-radius: 5px;
-  padding: 10px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
+  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
+  font-size: 13px;
+  text-align: center;
 }
 
 
