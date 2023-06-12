@@ -380,7 +380,7 @@ table {
   justify-content: flex-start;  /* 가로축 왼쪽 정렬 */
   align-items: center;  /* 이 값을 조정하여 간격을 원하는대로 조절하세요 */
 }
-#chklin1 {
+#chklin1 label {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
@@ -396,7 +396,7 @@ table {
   line-height: 100%;
 }
 
-#chkline2  {
+#chkline2 label {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
@@ -412,7 +412,7 @@ table {
   line-height: 100%;
 }
 
-#chkline3  {
+#chkline3 label {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
@@ -428,7 +428,7 @@ table {
   line-height: 100%;
 }
 
-#chkline4  {
+#chkline4 label {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
