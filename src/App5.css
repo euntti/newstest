@@ -357,9 +357,8 @@ table {
 }
 
 .radio-container {
-  display: flex;
-  align-items: center;
-  margin: 10px;
+  display: inline-block;
+  margin-right: 20px;  /* 원하는 간격을 조절하세요 */
 }
 
 .radio-container input {
