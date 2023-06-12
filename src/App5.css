@@ -374,8 +374,8 @@ table {
 
 }
 .label-header {
-  display: block;
-  margin-right: 5px; 
+  display: flex;
+  margin-left: 10px; 
   width: 50px;
   justify-content: flex-start;  /* 가로축 왼쪽 정렬 */
   align-items: center;  /* 이 값을 조정하여 간격을 원하는대로 조절하세요 */
