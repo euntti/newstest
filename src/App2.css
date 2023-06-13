@@ -260,7 +260,7 @@ body {
 }
 
 #chklin31, #chkline32, #chkline33, #chkline34 {
- 
+  width: 614px;
   margin: 5px 0;
   display: inline-block;
   border: 1px solid #ccc;
