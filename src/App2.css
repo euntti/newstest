@@ -282,8 +282,7 @@ body {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
-  height: 71px; /* 또는 원하는 높이로 설정 */
-  width: 614px; /* 또는 원하는 넓이로 설정 */
+
 }
 #chkline32 label {
   display: inline-flex;
@@ -300,8 +299,7 @@ body {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
-  height: 71px; /* 또는 원하는 높이로 설정 */
-  width: 614px; /* 또는 원하는 넓이로 설정 */
+
 }
 #chkline33 label {
   display: inline-flex;
@@ -318,8 +316,7 @@ body {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
-  height: 71px; /* 또는 원하는 높이로 설정 */
-  width: 614px; /* 또는 원하는 넓이로 설정 */
+
 }
 #chkline34 label {
   display: inline-flex;
@@ -336,8 +333,7 @@ body {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
-  height: 71px; /* 또는 원하는 높이로 설정 */
-  width: 614px; /* 또는 원하는 넓이로 설정 */
+ 
 }
 .footerInfo31 {
   margin-top: 10px;
