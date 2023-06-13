@@ -158,8 +158,8 @@ function App2() {
     <div
       style={{
         backgroundImage: isMobile
-          ? `url("/img/inbox.png")`
-          : `url("/img/inbox.png")`,
+          ? `url("/img/bg2.png")`
+          : `url("/img/bg2.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
@@ -168,7 +168,7 @@ function App2() {
         height: "3000px",
       }}
     >
-      <div className="container3">
+      <div className="container">
         <div className="sub">
           <div className="App">
             <div className="appPictureContainer3">
@@ -368,7 +368,7 @@ function App2() {
             )}
           </div> */}
           <div>
-            <div className="nameArea3">
+            <div className="nameArea">
               {/* <div className="nameArea">
               <input
                 type="text"
@@ -377,7 +377,7 @@ function App2() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
-              <div className="namephone3 ">
+              <div className="namephone ">
                 {/* {<select>
                 <option key="1" value="1">
                   010
@@ -386,25 +386,25 @@ function App2() {
               -{"\t"}} */}
                 <input
                   type="text"
-                  className="username3"
+                  className="username"
                   placeholder="이름"
                   maxLength={4}
-                  onChange={(e) => setUserName3(e.target.value)}
+                  onChange={(e) => setUserName(e.target.value)}
                 />
               </div>
               {"\t"}
-              <div className="phone3">
+              <div className="phone">
                 <input
                        type="tel"
                        name="user_name"
                        placeholder="휴대폰"
                        maxLength={13}
-                       value={phone3}
-                       onChange={handlePhoneNumber3Change}
+                       value={phone1}
+                       onChange={handlePhoneNumberChange}
                       />
               </div>
-              <div className="time3">
-                <select value={time3} onChange={(e) => setTime3(e.target.value)}>
+              <div className="time">
+                <select value={time} onChange={(e) => setTime(e.target.value)}>
                   <option value="">통화가능시간(필수)</option>
                   <option value="06:00-09:00">06:00-09:00</option>
                   <option value="09:00-11:00">09:00-11:00</option>

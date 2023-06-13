@@ -127,7 +127,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.container3 {
+.container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -136,12 +136,12 @@ table {
 }
 .sub {
 }
-.appPicture3 {
+.appPicture {
   width: 800px;
   height: 1023px;
   margin-left: 20px;
 }
-.nameArea3{
+.nameArea{
   display: block;
   justify-content: center;
   align-items: center;
@@ -151,17 +151,17 @@ table {
 
 
 
-.phone3 {
+.phone {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.phone3 select {
+.phone select {
   width: 484px;
   height: 48px;
   margin: 0 12.5px 0;
 }
-.phone3 input {
+.phone input {
   display: flex;
   width: 600px;
   height: 75px;
@@ -170,11 +170,11 @@ table {
   margin-bottom: 10px;
   font-size: 18pt;
 }
-.btnArea3 {
+.btnArea {
   display: flex;
   justify-content: center;
 }
-.btnArea3 button {
+.btnArea button {
   background-color: transparent;
   border: 0px;
   /* width: 812px;
@@ -184,87 +184,7 @@ table {
   color: white;
   font-size: 30px; */
 }
-.label-header31 {
-  display: flex;
-  margin-left: 0px; 
-  width: 50px;
-  justify-content: flex-start;  /* 가로축 왼쪽 정렬 */
-  align-items: center;  /* 이 값을 조정하여 간격을 원하는대로 조절하세요 */
-}
-.radio-container3 {
-  margin-right: 10px; /* Adjust as needed */
-
-}
-#chklin31 label {
-  display: inline-flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  border: 3px solid #000;
-  border-radius: 20px; /* 둥글게 */
-  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
-  font-size: 13px;
-  text-align: center;
-  background-color: #f9f9f9; /* 배경색 변경 */
-  color: #333; /* 텍스트 색상 변경 */
-  font-family: 'Arial', sans-serif; /* 글꼴 변경 */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
-  line-height: 100%;
-}
-
-#chkline32 label {
-  align-items: center;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border: 3px solid #000;
-  border-radius: 20px; /* 둥글게 */
-  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
-  font-size: 13px;
-  text-align: center;
-  background-color: #f9f9f9; /* 배경색 변경 */
-  color: #333; /* 텍스트 색상 변경 */
-  font-family: 'Arial', sans-serif; /* 글꼴 변경 */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
-  line-height: 100%;
-}
-
-#chkline33 label {
-  align-items: center;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border: 3px solid #000;
-  border-radius: 20px; /* 둥글게 */
-  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
-  font-size: 13px;
-  text-align: center;
-  background-color: #f9f9f9; /* 배경색 변경 */
-  color: #333; /* 텍스트 색상 변경 */
-  font-family: 'Arial', sans-serif; /* 글꼴 변경 */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
-  line-height: 100%;
-}
-
-#chkline34 label {
-  align-items: center;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border: 3px solid #000;
-  border-radius: 20px; /* 둥글게 */
-  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
-  font-size: 13px;
-  text-align: center;
-  background-color: #f9f9f9; /* 배경색 변경 */
-  color: #333; /* 텍스트 색상 변경 */
-  font-family: 'Arial', sans-serif; /* 글꼴 변경 */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
-  line-height: 100%;
-}
-
-
-.container3 {
+.container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -334,14 +254,14 @@ table {
     /* width:10vw; */
     /* height:300px; */
   }
-  .nameArea3{
+  .nameArea{
     display: block;
     justify-content: center;
     align-items: center;
     
    }
 
-  .namephone3 {
+  .namephone {
    
     /* background-color: red; */
 
@@ -350,7 +270,7 @@ table {
     justify-content: center;
     
   }
-  .namephone3 input {
+  .namephone input {
     /* padding-left: 10px;
     width: 80vw;
     height: 50px; */
