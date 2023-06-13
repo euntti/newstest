@@ -127,7 +127,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.container {
+.container3 {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -136,12 +136,12 @@ table {
 }
 .sub {
 }
-.appPicture {
+.appPicture3 {
   width: 800px;
   height: 1023px;
   margin-left: 20px;
 }
-.nameArea{
+.nameArea3{
   display: block;
   justify-content: center;
   align-items: center;
@@ -151,17 +151,17 @@ table {
 
 
 
-.phone {
+.phone3 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.phone select {
+.phone3 select {
   width: 484px;
   height: 48px;
   margin: 0 12.5px 0;
 }
-.phone input {
+.phone3 input {
   display: flex;
   width: 600px;
   height: 75px;
@@ -170,11 +170,11 @@ table {
   margin-bottom: 10px;
   font-size: 18pt;
 }
-.btnArea {
+.btnArea3 {
   display: flex;
   justify-content: center;
 }
-.btnArea button {
+.btnArea3 button {
   background-color: transparent;
   border: 0px;
   /* width: 812px;
@@ -184,7 +184,7 @@ table {
   color: white;
   font-size: 30px; */
 }
-.container {
+.container3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -254,14 +254,14 @@ table {
     /* width:10vw; */
     /* height:300px; */
   }
-  .nameArea{
+  .nameArea3{
     display: block;
     justify-content: center;
     align-items: center;
     
    }
 
-  .namephone {
+  .namephone3 {
    
     /* background-color: red; */
 
@@ -270,7 +270,7 @@ table {
     justify-content: center;
     
   }
-  .namephone input {
+  .namephone3 input {
     /* padding-left: 10px;
     width: 80vw;
     height: 50px; */
@@ -278,15 +278,15 @@ table {
     height: 45px;
     width: 370px;
   }
-  .App .phone {
+  .App .phone3 {
     display: block;
     justify-content: center;
     /* background-color:red; */
   }
-  .App .phone select {
+  .App .phone3 select {
     /* width: 15vw; */
   }
-  .App .phone input {
+  .App .phone3 input {
     justify-content: center;
     /* padding-left: 10px;
     width: 80vw;
