@@ -368,34 +368,36 @@ function App5() {
     console.log(listCnt);
   }, timer);
 
-  window.onload = function() {
-    let radioGroups = ["chklin1", "chkline2", "chkline3", "chkline4"];
+  
+  let radioGroups = ["chklin1", "chkline2", "chkline3", "chkline4"];
 
-    for (let groupId of radioGroups) {
-        let group = document.getElementById(groupId);
-        if (group) {
-          let radioButtons = group.querySelectorAll("input[type='radio']");
+for (let groupId of radioGroups) {
+    let group = document.getElementById(groupId);
+    
+    // group이 존재하는지 확인
+    if (group) {
+        let radioButtons = group.querySelectorAll("input[type='radio']");
 
-          for (let i = 0; i < radioButtons.length; i++) {
-              radioButtons[i].style.opacity = '0';
-              radioButtons[i].addEventListener('change', function() {
-                  let labels = group.querySelectorAll('label');
-                  for (let j = 0; j < labels.length; j++) {
-                      labels[j].style.color = 'initial'; // Reset color of all labels
-                      labels[j].style.backgroundColor = 'initial'; // Reset background color of all labels
-                  }
-                  if (this.checked) {
-                      let label = this.nextElementSibling; // Get the associated label
-                      label.style.color = 'initial'; // Change color of the associated label
-                      label.style.backgroundColor = 'gray'; // Change background color of the associated label
-                  }
-              });
-          }
-      } else {
-          console.log('Element with ID ' + groupId + ' does not exist.');
-      }
-  }
+        for (let i = 0; i < radioButtons.length; i++) {
+            radioButtons[i].style.opacity = '0';
+            radioButtons[i].addEventListener('change', function() {
+                let labels = group.querySelectorAll('label');
+                for (let j = 0; j < labels.length; j++) {
+                    labels[j].style.color = 'initial'; // Reset color of all labels
+                    labels[j].style.backgroundColor = 'initial'; // Reset background color of all labels
+                }
+                if (this.checked) {
+                    let label = this.nextElementSibling; // Get the associated label
+                    label.style.color = 'initial'; // Change color of the associated label
+                    label.style.backgroundColor = 'gray'; // Change background color of the associated label
+                }
+            });
+        }
+    } else {
+        console.log('Element with ID ' + groupId + ' does not exist.');
+    }
 }
+
 
   return (
     <div>
@@ -627,7 +629,7 @@ function App5() {
                     <br />
                     <li id="chkline2">
                       <label>
-                      <span class="label-header">희망 <br />수익률</span>
+                      희망 <br />수익률
                       <div class="radio-container">
            
                       <input
@@ -848,7 +850,7 @@ function App5() {
         checked={investmentType4 === "공격 투자형"}
         onChange={(e) => setInvestmentType4(e.target.value)}
         />
-        <label for="radio24">공격<br /> 투자형</label>
+        <label for="radio24">공격 투자형</label>
                      </div> 
                        
                           
