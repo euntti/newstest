@@ -134,8 +134,45 @@ table {
   align-items: center;
   /* justify-content: center; */
 }
-.sub31 {
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.namephone31, .phone31, .time31, .radio-container3 {
+  flex: 0 0 calc(25% - 10px);
+  margin: 5px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.total3 {
+  width: 100%;
+  padding: 15px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+input[type=text], input[type=tel], select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
 .appPictureContainer31 {
   width: 800px;
   height: 790px;
@@ -177,9 +214,7 @@ table {
   display: flex;
   width: 600px;
   height: 75px;
-  margin-left: 12px;
-  margin-right: 4px;
-  margin-bottom: 10px;
+  
   font-size: 18pt;
 }
 .btnArea31 {
