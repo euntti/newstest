@@ -238,10 +238,10 @@ function App8() {
               -{"\t"}} */}
                 <input
                   type="text"
-                  className="username9"
+                  className="username"
                   placeholder="이름"
                   maxLength={4}
-                  onChange={(e) => setUserName9(e.target.value)}
+                  onChange={(e) => setUserName(e.target.value)}
                 />
               </div>
               {"\t"}
