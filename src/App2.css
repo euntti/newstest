@@ -293,7 +293,7 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border: 3px solid #000;
+  
   border-radius: 20px; /* 둥글게 */
   padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
   font-size: 13px;
@@ -310,7 +310,7 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border: 3px solid #000;
+  
   border-radius: 20px; /* 둥글게 */
   padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
   font-size: 13px;
@@ -327,7 +327,7 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border: 3px solid #000;
+  
   border-radius: 20px; /* 둥글게 */
   padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
   font-size: 13px;
@@ -344,7 +344,7 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border: 3px solid #000;
+  
   border-radius: 20px; /* 둥글게 */
   padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
   font-size: 13px;
