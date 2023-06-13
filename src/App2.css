@@ -153,6 +153,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: aqua;
 }
 
 .namephone31 input[type=text], .phone31 input[type=tel], .time31 select {
