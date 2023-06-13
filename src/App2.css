@@ -265,13 +265,18 @@ body {
   /* border: 1px solid #ccc; */
   border-radius: 5px;
   box-sizing: border-box;
+  width: 614px;
+  height: 71px;
 }
+
 #chkline32{
   margin: 5px 0;
   display: inline-block;
   /* border: 1px solid #ccc; */
   border-radius: 5px;
   box-sizing: border-box;
+  width: 614px;
+  height: 71px;
 
 }
 #chkline33{
@@ -280,6 +285,8 @@ body {
   /* border: 1px solid #ccc; */
   border-radius: 5px;
   box-sizing: border-box;
+  width: 614px;
+  height: 71px;
 }
 #chkline34{
   margin: 5px 0;
@@ -287,6 +294,8 @@ body {
   /* border: 1px solid #ccc; */
   border-radius: 5px;
   box-sizing: border-box;
+  width: 614px;
+  height: 71px;
 }
 #chklin31 label {
   display: inline-flex;
