@@ -788,7 +788,7 @@ function App2() {
         checked={investmentType34 === "공격 투자형"}
         onChange={(e) => setInvestmentType34(e.target.value)}
         />
-        <label for="radio24">공격 투자형</label>
+        <label for="radio24">공격 <br /> 투자형</label>
                      </div> 
                        
                           
