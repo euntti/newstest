@@ -155,6 +155,17 @@ body {
 }
 
 
+
+.namephone31 input[type=text], .phone31 input[type=tel], .time31 select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
 .appPictureContainer31 {
   width: 800px;
   height: 790px;
