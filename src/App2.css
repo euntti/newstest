@@ -151,7 +151,7 @@ body {
   justify-content: space-around;
 }
 
-.namephone31, .phone31, .time31, .radio-container3 {
+.nameArea31{
   display: flex;
   justify-content: center;
   align-items: center;
