@@ -127,21 +127,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.container3 {
+.container31 {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
 }
-.sub {
+.sub31 {
 }
-.appPictureContainer {
+.appPictureContainer31 {
   width: 800px;
   height: 790px;
   margin-left: 20px;
 }
-.nameArea3{
+.nameArea31{
   display: block;
   justify-content: center;
   align-items: center;
@@ -151,17 +151,17 @@ table {
 
 
 
-.phone3 {
+.phone31{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.phone3 select {
+.phone31 select {
   width: 484px;
   height: 48px;
   margin: 0 12.5px 0;
 }
-.phone3 input {
+.phone31 input {
   display: flex;
   width: 600px;
   height: 75px;
@@ -170,11 +170,11 @@ table {
   margin-bottom: 10px;
   font-size: 18pt;
 }
-.btnArea {
+.btnArea31 {
   display: flex;
   justify-content: center;
 }
-.btnArea button {
+.btnArea31 button {
   background-color: transparent;
   border: 0px;
   /* width: 812px;
@@ -184,32 +184,19 @@ table {
   color: white;
   font-size: 30px; */
 }
-.container3 {
+.container31 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.profit {
-  display: block;
- 
-  justify-content: center;
 
-  
-}
-.profit1 {
-  display: flex;
-  justify-content: center;
-  
- 
-}
-
-.footerInfo {
+.footerInfo31 {
   margin-top: 10px;
   margin-left: 12px;
 }
-.footerInfo div {
+.footerInfo31 div {
   /* margin-bottom: 10px; */
   padding-bottom: 10px;
   font-weight: bold;
@@ -237,31 +224,31 @@ table {
 }
 @media (max-width: 600px) 
 {
-  .container3 {
+  .container31 {
     display: flex;
     align-items: center;
     /* justify-content: center; */
   }
-  .App {
+  .App31 {
   }
-  .appPictureContainer3 {
+  .appPictureContainer31 {
     display: flex;
     justify-content: center;
   }
-  .appPicture {
+  .appPicture31 {
     width: 90vw;
     margin-left: 0px;
     /* width:10vw; */
     /* height:300px; */
   }
-  .nameArea3{
+  .nameArea31{
     display: block;
     justify-content: center;
     align-items: center;
     
    }
 
-  .namephone3 {
+  .namephone31 {
    
     /* background-color: red; */
 
@@ -270,7 +257,7 @@ table {
     justify-content: center;
     
   }
-  .namephone3 input {
+  .namephone31 input {
     /* padding-left: 10px;
     width: 80vw;
     height: 50px; */
@@ -278,15 +265,15 @@ table {
     height: 45px;
     width: 370px;
   }
-  .App .phone3 {
+  .App31 .phone31 {
     display: block;
     justify-content: center;
     /* background-color:red; */
   }
-  .App .phone3 select {
+  .App31 .phone31 select {
     /* width: 15vw; */
   }
-  .App .phone3 input {
+  .App31 .phone31 input {
     justify-content: center;
     /* padding-left: 10px;
     width: 80vw;
@@ -295,7 +282,7 @@ table {
     height: 45px;
     width: 370px;
   }
-  .App .btnArea button {
+  .App31 .btnArea31 button {
     display: flex; 
     width: 500px;
  
