@@ -154,14 +154,7 @@ body {
   text-align: center;
 }
 
-.total3 {
-  flex: 0 0 calc(25% - 10px);
-  margin: 5px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
-}
+
 
 input[type=text], input[type=tel], select {
   width: 100%;
