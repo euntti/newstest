@@ -152,15 +152,11 @@ body {
 }
 
 .namephone31, .phone31, .time31, .radio-container3 {
-  flex: 0 0 calc(25% - 10px);
-  margin: 5px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
-
-
 
 .namephone31 input[type=text], .phone31 input[type=tel], .time31 select {
   width: 100%;
