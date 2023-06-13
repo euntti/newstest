@@ -147,9 +147,21 @@ table {
   align-items: center;
   
  }
+ .nameArea31 select {
+  width: 484px;
+  height: 48px;
+  margin: 0 12.5px 0;
+}
 
-
-
+.nameArea31 input {
+  display: flex;
+  width: 600px;
+  height: 75px;
+  margin-left: 12px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  font-size: 18pt;
+}
 
 .phone31{
   display: flex;
@@ -209,7 +221,7 @@ table {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
-
+  width: 592px;
 }
 .phone31{
   
@@ -226,6 +238,7 @@ table {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
+  width: 592px;
 }
 .time31{
   
@@ -242,6 +255,7 @@ table {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
+  width: 592px;
 }
 .label-header31 {
   display: flex;
