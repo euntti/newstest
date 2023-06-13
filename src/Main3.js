@@ -33,27 +33,28 @@ const Main3 = () => {
   return <div>Main3</div>
 }
 
+
 function App2() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
-  const [userName, setUserName] = useState("");
-  const [phone1, setPhone1] = useState("");
-  const handlePhoneNumberChange = (e) => {
+  const [userName3, setUserName3] = useState("");
+  const [phone3, setPhone3] = useState("");
+  const handlePhoneNumber3Change = (e) => {
     let formattedNumber = e.target.value.replace(/-/g, ""); // 하이픈 제거
     if (formattedNumber.length > 2 && formattedNumber.length < 6) {
       formattedNumber = formattedNumber.replace(/(\d{3})(\d{1,3})/, "$1-$2"); // 첫 번째 하이픈 추가
     } else if (formattedNumber.length >= 6) {
       formattedNumber = formattedNumber.replace(/(\d{3})(\d{3})(\d{0,4})/, "$1-$2-$3"); // 첫 번째와 두 번째 하이픈 추가
     }
-    setPhone1(formattedNumber);
+    setPhone3(formattedNumber);
 
     const inputValue = e.target.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
-    setPhone1(inputValue);
+    setPhone3(inputValue);
   };
 
   
 
   const [num, setNum] = useState(331231);
-  const [time, setTime] = useState("");
+  const [time3, setTime3] = useState("");
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
@@ -63,6 +64,11 @@ function App2() {
 
   const [modalIsOpen, setIsOpen] = useState(false);
   const [modalIsOpen2, setIsOpen2] = useState(false);
+
+  const [investmentType1, setInvestmentType1] = useState('급등종목');
+  const [investmentType2, setInvestmentType2] = useState('5% 목표');
+  const [investmentType3, setInvestmentType3] = useState('5백만 원');
+  const [investmentType4, setInvestmentType4] = useState('안정형');
 
   function openModal() {
     setIsOpen(true);
@@ -100,13 +106,13 @@ function App2() {
 
   const submitEvent = (e) => {
     e.preventDefault();
-    if (userName == "") {
+    if (userName3 == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phone1 == "") {
+    if (phone3 == "") {
       return alert("'-'없이 입력을 해주세요.");
     }
-    if (time == "") {
+    if (time3 == "") {
       return alert("통화시간 선택해주세요");
     }
 
@@ -120,13 +126,34 @@ function App2() {
       return alert("광고성문자동의 체크해주세요.");
     }
 
+    if (!investmentType1) {  // investmentType1이 비어있는지 확인
+      return alert("희망종목을 선택해주세요.");
+    }
+    if (!investmentType2) {  // investmentType2가 비어있는지 확인
+      return alert("희망수익률을 선택해주세요.");
+    }
+    if (!investmentType3) {  // investmentType3이 비어있는지 확인
+      return alert("희망수익금을 선택해주세요.");
+    }
+    if (!investmentType4) {  // investmentType4가 비어있는지 확인
+      return alert("투자성향을 선택해주세요.");
+    }
+
     const phoneNumber = `${phone1}`;
     const name = `${userName}`;
     const selectedTime = `${time}`;
+    const investmentType1 = `${hope}`;
+    const investmentType2 = `${percen}`;
+    const investmentType3 = `${money}`;
+    const investmentType4 = `${disposition}`;
     const param = {
       phoneNumber: phoneNumber,
       name: name,
       time: selectedTime,
+      hope: investmentType1,
+      percen : investmentType2,
+      money : investmentType3,
+      disposition : investmentType4
     };
 
     axios.post("/client", param).then((res) => {
@@ -140,11 +167,13 @@ function App2() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
+      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. 
+      고객님의 희망항목은 ${hope} 희망수익률은 ${percen} 희망수익금 ${money} 투자성향 ${disposition}입니다.`
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
   };
 
+  
   const settings = {
     dots: false,
     infinite: false,
@@ -154,12 +183,42 @@ function App2() {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+
+  window.onload = function() {
+    let radioGroups = ["chklin1", "chkline2", "chkline3", "chkline4"];
+
+    for (let groupId of radioGroups) {
+        let group = document.getElementById(groupId);
+        if (group) {
+          let radioButtons = group.querySelectorAll("input[type='radio']");
+
+          for (let i = 0; i < radioButtons.length; i++) {
+              radioButtons[i].style.opacity = '0';
+              radioButtons[i].addEventListener('change', function() {
+                  let labels = group.querySelectorAll('label');
+                  for (let j = 0; j < labels.length; j++) {
+                      labels[j].style.color = 'initial'; // Reset color of all labels
+                      labels[j].style.backgroundColor = 'initial'; // Reset background color of all labels
+                  }
+                  if (this.checked) {
+                      let label = this.parentNode.querySelector('label'); // Get the associated label
+                      label.style.color = 'initial'; // Change color of the associated label
+                      label.style.backgroundColor = 'gray'; // Change background color of the associated label
+                  }
+              });
+          }
+      } else {
+          console.log('Element with ID ' + groupId + ' does not exist.');
+      }
+  }
+}
+
   return (
     <div
       style={{
         backgroundImage: isMobile
-          ? `url("/img/bg2.png")`
-          : `url("/img/bg2.png")`,
+          ? `url("/img/inbox.png")`
+          : `url("/img/inbox.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
@@ -168,7 +227,7 @@ function App2() {
         height: "3000px",
       }}
     >
-      <div className="container">
+      <div className="container3">
         <div className="sub">
           <div className="App">
             <div className="appPictureContainer3">
@@ -264,111 +323,9 @@ function App2() {
         style={{ display: "block", position: "relative", textAlign: "center" }}
       >
         <Slider {...settings}>
-          {/* <div>
-            <ColorRing
-              visible={true}
-              height="160"
-              width="160"
-              ariaLabel="blocks-loading"
-              wrapperStyle={{}}
-              wrapperClass="blocks-wrapper"
-              colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
-            />
-            <div style={{ color: "#fff", fontSize: 35 }}>Loading....</div>
-          </div> */}
-          {/* <div
-            style={{ display: "flex", justifyContent: "center", marginTop: 20 }}
-          >
-            {isBrowser ? (
-              <>
-                <Progressbar value={progress} />
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginTop: 25,
-                  }}
-                >
-                  <h2
-                    style={{
-                      fontSize: 35,
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#fff",
-                    }}
-                  >
-                    신청자 수
-                  </h2>
-                  <AnimatedNumbers
-                    includeComma
-                    animateToNumber={num}
-                    fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
-                    locale="en-US"
-                    configs={[{ mass: 1, tension: 220, friction: 100 }]}
-                  />
-                  <h2
-                    style={{
-                      fontSize: 35,
-                      color: "#fff",
-                      display: "flex",
-                      alignItems: "center",
-                    }}
-                  >
-                    명
-                  </h2>
-                </div>
-                <div style={{ fontSize: 25, color: "#fffc02 " }}>
-                  거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
-                </div>
-              </>
-            ) : (
-              <>
-                <div style={{ width: 300 }}>
-                  <Progressbar value={progress} />
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    marginTop: 25,
-                  }}
-                >
-                  <h2
-                    style={{
-                      fontSize: 35,
-                      display: "flex",
-                      alignItems: "center",
-                      color: "#fff",
-                    }}
-                  >
-                    신청자 수
-                  </h2>
-                  <AnimatedNumbers
-                    includeComma
-                    animateToNumber={num}
-                    fontStyle={{ fontSize: 40, color: "#FFFFFF" }}
-                    locale="en-US"
-                    configs={[{ mass: 1, tension: 220, friction: 100 }]}
-                  />
-                  <h2
-                    style={{
-                      fontSize: 35,
-                      color: "#fff",
-                      display: "flex",
-                      alignItems: "center",
-                    }}
-                  >
-                    명
-                  </h2>
-                </div>
-                <div style={{ fontSize: 25, color: "#fffc02 " }}>
-                  거래량 , 주식시장 , 언론이슈, 기업공시 분석완료
-                </div>
-              </>
-            )}
-          </div> */}
+         
           <div>
-            <div className="nameArea">
+            <div className="nameArea3">
               {/* <div className="nameArea">
               <input
                 type="text"
@@ -376,8 +333,8 @@ function App2() {
                 placeholder="이름"
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
-            </div> */}
-              <div className="namephone ">
+              </div> */}
+              <div className="namephone3">
                 {/* {<select>
                 <option key="1" value="1">
                   010
@@ -386,25 +343,345 @@ function App2() {
               -{"\t"}} */}
                 <input
                   type="text"
-                  className="username"
+                  className="username3"
                   placeholder="이름"
                   maxLength={4}
-                  onChange={(e) => setUserName(e.target.value)}
+                  onChange={(e) => setUserName3(e.target.value)}
                 />
               </div>
-              {"\t"}
-              <div className="phone">
+              
+              <div className="phone3">
                 <input
                        type="tel"
                        name="user_name"
                        placeholder="휴대폰"
                        maxLength={13}
-                       value={phone1}
-                       onChange={handlePhoneNumberChange}
+                       value={phone3}
+                       onChange={handlePhoneNumber3Change}
                       />
               </div>
-              <div className="time">
-                <select value={time} onChange={(e) => setTime(e.target.value)}>
+              <li id="chkline31"> 
+                    
+                    <label>
+                    <span class="label-header31">희망 항목</span>
+                    <div class="radio-container3">
+                    <input
+                    type="radio"
+                    id="radio1"
+                    name="investmentType1"
+                    value="급등종목"
+                    checked={investmentType1 === "급등종목"}
+                    onChange={(e) => setInvestmentType1(e.target.value)}
+                    />
+                    <label for="radio1">급등종목</label>
+                </div>
+                <div class="radio-container3">
+                    <input
+                    type="radio"
+                    id="radio2"
+                    name="investmentType1"
+                    value="테마종목"
+                    checked={investmentType1 === "테마종목"}
+                    onChange={(e) => setInvestmentType1(e.target.value)}
+                    />
+                    <label for="radio2">테마종목</label>
+                </div>
+                        <div class="radio-container3">
+                       
+                        <input
+                        type="radio"
+                        id="radio3"
+                        name="investmentType1"
+                        value="가치투자"
+                        checked={investmentType1 === "가치투자"}
+                        onChange={(e) => setInvestmentType1(e.target.value)}
+                        />
+                       <label for="radio3">가치투자</label>
+                        </div>
+                        <div class="radio-container3">
+                      
+                        <input
+                        type="radio"
+                        id="radio4"
+                        name="investmentType1"
+                        value="스윙종목"
+                        checked={investmentType1 === "스윙종목"}
+                        onChange={(e) => setInvestmentType1(e.target.value)}
+                        />
+                  <label for="radio4">스윙종목</label>
+                          </div>
+                          <div class="radio-container3">
+                      
+                        <input
+                        type="radio"
+                        id="radio5"
+                        name="investmentType1"
+                        value="인공지능"
+                        checked={investmentType1 === "인공지능"}
+                        onChange={(e) => setInvestmentType1(e.target.value)}
+                        />
+                   <label for="radio5">인공지능</label>
+                                       </div>
+                                       <div class="radio-container3">
+                                    
+                                       <input
+                        type="radio"
+                        id="radio6"
+                        name="investmentType1"
+                        value="단기투자"
+                        checked={investmentType1 === "단기투자"}
+                        onChange={(e) => setInvestmentType1(e.target.value)}
+                        />
+                              <label for="radio6">단기투자</label>
+                                       </div>
+                                       <div class="radio-container3">
+                                      
+                                       <input
+                        type="radio"
+                        id="radio7"
+                        name="investmentType1"
+                        value="투자초보"
+                        checked={investmentType1 === "투자초보"}
+                        onChange={(e) => setInvestmentType1(e.target.value)}
+                        />
+                                     <label for="radio7">투자초보</label>
+                                       </div> 
+                                      </label>
+                                      </li>
+                                    <br />
+                   <li id="chkline32">
+                                      <label>
+                
+                                      <span class="label-header31">희망 <br />수익률</span>
+                                      <div class="radio-container3">
+                           
+                                      <input
+                
+                        type="radio"
+                        id="radio8"
+                        name="investmentType2"
+                        value="5% 목표"
+                        checked={investmentType2 === "5% 목표"}
+                        onChange={(e) => setInvestmentType2(e.target.value)}
+                        />
+                                <label for="radio8">5%<br />목표</label>
+                                      </div> 
+                                      <div class="radio-container3">
+                            
+                                       <input
+                        type="radio"
+                        id="radio9"
+                        name="investmentType2"
+                        value="10% 목표"
+                        checked={investmentType2 === "10% 목표"}
+                        onChange={(e) => setInvestmentType2(e.target.value)}
+                        />
+                                       <label for="radio9">10%<br />목표</label>
+                                      </div> 
+                                      <div class="radio-container3">
+                                    
+                                       <input
+                        type="radio"
+                        id="radio10"
+                        name="investmentType2"
+                        value="15% 목표"
+                        checked={investmentType2 === "15% 목표"}
+                        onChange={(e) => setInvestmentType2(e.target.value)}
+                        />
+                                     <label for="radio10">15%<br />목표</label>
+                                      </div>
+                                      <div class="radio-container3">
+                                     
+                                       <input
+                        type="radio"
+                        id="radio11"
+                        name="investmentType2"
+                        value="20% 목표"
+                        checked={investmentType2 === "20% 목표"}
+                        onChange={(e) => setInvestmentType2(e.target.value)}
+                        />
+                                     <label for="radio11">20%<br />목표</label>
+                                      </div>
+                                      <div class="radio-container3">
+                                
+                                       <input
+                        type="radio"
+                        id="radio12"
+                        name="investmentType2"
+                        value="25% 목표"
+                        checked={investmentType2 === "25% 목표"}
+                        onChange={(e) => setInvestmentType2(e.target.value)}
+                        />
+                                    <label for="radio12">25%<br />목표</label>
+                                      </div>
+                                      <div class="radio-container3">
+                               
+                                       <input
+                        type="radio"
+                        id="radio13"
+                        name="investmentType2"
+                        value="30% 목표"
+                        checked={investmentType2 === "30% 목표"}
+                        onChange={(e) => setInvestmentType2(e.target.value)}
+                        />
+                                     
+                                     <label for="radio13">30%<br />목표</label>
+                                      </div> 
+                
+                                       </label>
+                                      </li>
+                                    <br />
+                                    <li id="chkline3">
+                                      <label>
+                                     <span class="label-header31">희망 <br />수익금</span>
+                                      <div class="radio-container3">
+                             
+                                      <input
+                        type="radio"
+                        id="radio14"
+                        name="investmentType3"
+                        value="5백만 원"
+                        checked={investmentType3 === "5백만 원"}
+                        onChange={(e) => setInvestmentType3(e.target.value)}
+                        />
+                    <label for="radio14">5백만 원</label>
+                                        
+                                        </div> 
+                                        <div class="radio-container3">
+                                
+                                             <input
+                        type="radio"
+                        id="radio15"
+                        name="investmentType3"
+                        value="1천만 원"
+                        checked={investmentType3 === "1천만 원"}
+                        onChange={(e) => setInvestmentType3(e.target.value)}
+                        />
+                            <label for="radio15">1천만 원</label>
+                                        
+                                        </div> 
+                                        <div class="radio-container3">
+                                     
+                                       <input
+                        type="radio"
+                        id="radio16"
+                        name="investmentType3"
+                        value="3천만 원"
+                        checked={investmentType3 === "3천만 원"}
+                        onChange={(e) => setInvestmentType3(e.target.value)}
+                        />
+                                     <label for="radio16">3천만 원</label> 
+                                        </div> 
+                                        <div class="radio-container3">
+                                      
+                                       <input
+                        type="radio"
+                        id="radio17"
+                        name="investmentType3"
+                        value="5천만 원"
+                        checked={investmentType3 === "5천만 원"}
+                        onChange={(e) => setInvestmentType3(e.target.value)}
+                        />
+                                  <label for="radio17">5천만 원</label>
+                                     </div> 
+                                     <div class="radio-container3">
+                
+                                  
+                                       <input
+                        type="radio"
+                        id="radio18"
+                        name="investmentType3"
+                        value="7천만 원"
+                        checked={investmentType3 === "7천만 원"}
+                        onChange={(e) => setInvestmentType3(e.target.value)}
+                        />
+                     <label for="radio18">7천만 원</label>
+                                     </div> 
+                                     <div class="radio-container3">
+                              
+                                       <input
+                        type="radio"
+                        id="radio19"
+                        name="investmentType3"
+                        value="1억 원 이상"
+                        checked={investmentType3 === "1억 원 이상"}
+                        onChange={(e) => setInvestmentType3(e.target.value)}
+                        />
+                                    <label for="radio19">1억 원<br />이상</label>
+                                     </div> 
+                                       </label>
+                                      </li>
+                                    <br />
+                                    <li id="chkline34">
+                                      <label>
+                                      <span class="label-header31"> 투자 성향</span>
+                                      <div class="radio-containe3r">
+                                     
+                                      <input
+                        type="radio"
+                        id="radio20"
+                        name="investmentType4"
+                        value="안정형"
+                        checked={investmentType4 === "안정형"}
+                        onChange={(e) => setInvestmentType4(e.target.value)}
+                        />
+                         <label for="radio20">안정형</label>
+                                     </div> 
+                                     <div class="radio-container3">
+                          
+                                       <input
+                        type="radio"
+                        id="radio21"
+                        name="investmentType4"
+                        value="안정 추구형"
+                        checked={investmentType4 === "안정 추구형"}
+                        onChange={(e) => setInvestmentType4(e.target.value)}
+                        />
+                           <label for="radio21">안정<br /> 추구형</label>
+                                     </div> 
+                                     <div class="radio-container3">
+                                    
+                                       <input
+                        type="radio"
+                        id="radio22"
+                        name="investmentType4"
+                        value="위험 추구형"
+                        checked={investmentType4 === "위험 추구형"}
+                        onChange={(e) => setInvestmentType4(e.target.value)}
+                        />
+                                 <label for="radio22">위험<br /> 추구형</label>
+                                     </div> 
+                                     <div class="radio-container3">
+                               
+                                       <input
+                        type="radio"
+                        id="radio23"
+                        name="investmentType4"
+                        value="적극 투자형"
+                        checked={investmentType4 === "적극 투자형"}
+                        onChange={(e) => setInvestmentType4(e.target.value)}
+                        />
+                         <label for="radio23">적극<br /> 투자형</label>
+                                     </div> 
+                                     <div class="radio-container3">
+                                     
+                                      <input
+                        type="radio"
+                        id="radio24"
+                        name="investmentType4"
+                        value="공격 투자형"
+                        checked={investmentType4 === "공격 투자형"}
+                        onChange={(e) => setInvestmentType4(e.target.value)}
+                        />
+                        <label for="radio24">공격 투자형</label>
+                                     </div> 
+                                       
+                                          
+                                       </label>
+                                      </li>
+                                    <br />
+              <div className="time3">
+                <select value={time3} onChange={(e) => setTime3(e.target.value)}>
                   <option value="">통화가능시간(필수)</option>
                   <option value="06:00-09:00">06:00-09:00</option>
                   <option value="09:00-11:00">09:00-11:00</option>
@@ -468,7 +745,7 @@ function App2() {
                 </a>
               </label>
             </div>
-            <div className="btnArea">
+            <div className="btnArea3">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
                   <img src={"/img/btn.gif"}></img>
