@@ -259,12 +259,13 @@ body {
   align-items: center;  /* 이 값을 조정하여 간격을 원하는대로 조절하세요 */
 }
 #chklin31, #chkline32, #chkline33, #chkline34 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 71px; /* 또는 원하는 높이로 설정 */
-  width: 614px; /* 또는 원하는 넓이로 설정 */
+  width: 100%; 
+  padding: 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 #chklin31 label {
   display: inline-flex;
@@ -281,6 +282,8 @@ body {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
+  height: 71px; /* 또는 원하는 높이로 설정 */
+  width: 614px; /* 또는 원하는 넓이로 설정 */
 }
 #chkline32 label {
   display: inline-flex;
@@ -297,6 +300,8 @@ body {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
+  height: 71px; /* 또는 원하는 높이로 설정 */
+  width: 614px; /* 또는 원하는 넓이로 설정 */
 }
 #chkline33 label {
   display: inline-flex;
@@ -313,6 +318,8 @@ body {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
+  height: 71px; /* 또는 원하는 높이로 설정 */
+  width: 614px; /* 또는 원하는 넓이로 설정 */
 }
 #chkline34 label {
   display: inline-flex;
@@ -329,6 +336,8 @@ body {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
+  height: 71px; /* 또는 원하는 높이로 설정 */
+  width: 614px; /* 또는 원하는 넓이로 설정 */
 }
 .footerInfo31 {
   margin-top: 10px;
