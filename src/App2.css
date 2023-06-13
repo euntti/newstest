@@ -262,14 +262,14 @@ body {
 #chklin31 {
   margin: 5px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 5px;
   box-sizing: border-box;
 }
 #chkline32{
   margin: 5px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 5px;
   box-sizing: border-box;
 
@@ -277,14 +277,14 @@ body {
 #chkline33{
   margin: 5px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 5px;
   box-sizing: border-box;
 }
 #chkline34{
   margin: 5px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 5px;
   box-sizing: border-box;
 }
