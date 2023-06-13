@@ -201,8 +201,8 @@ body {
 
 }
 .namephone31{
- 
-  align-items: center;
+/*  
+  align-items: center; */
   flex-direction: row;
   /* justify-content: space-between; */
   border: 3px solid #000;
@@ -219,7 +219,7 @@ body {
 }
 .phone31{
   
-  align-items: center;
+  /* align-items: center; */
   flex-direction: row;
   /* justify-content: space-between; */
   border: 3px solid #000;
@@ -236,7 +236,7 @@ body {
 }
 .time31{
   
-  align-items: center;
+  /* align-items: center; */
   flex-direction: row;
   /* justify-content: space-between; */
   border: 3px solid #000;
