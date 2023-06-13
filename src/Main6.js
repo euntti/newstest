@@ -540,7 +540,7 @@ function App5() {
                     <li id="chklin1"> 
                     
     <label>
-    <span class="label-header">희망 항목</span>
+    <span class="label-header1">희망 항목</span>
     <div class="radio-container">
     <input
     type="radio"
@@ -710,7 +710,7 @@ function App5() {
                     <br />
                     <li id="chkline3">
                       <label>
-                     <span class="label-header">희망 <br />수익금</span>
+                     <span class="label-header1">희망 <br />수익금</span>
                       <div class="radio-container">
              
                       <input
@@ -791,7 +791,7 @@ function App5() {
                     <br />
                     <li id="chkline4">
                       <label>
-                      <span class="label-header"> 투자 성향</span>
+                      <span class="label-header1"> 투자 성향</span>
                       <div class="radio-container">
                      
                       <input
