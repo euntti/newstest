@@ -140,24 +140,18 @@ body {
 }
 .sbdiv3 {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-}
-
-
-.nameArea31{
-  display: block;
-  justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color: aqua;
 }
 
-.namephone31 input[type=text], .phone31 input[type=tel], .time31 select {
+.namephone31, .phone31, .time31 {
   width: 100%;
+}
+
+.namephone31 input[type=text], 
+.phone31 input[type=tel], 
+.time31 select {
+  width: 100%; 
   padding: 10px;
   margin: 5px 0;
   display: inline-block;
@@ -165,6 +159,16 @@ body {
   border-radius: 5px;
   box-sizing: border-box;
 }
+.nameArea31{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+ 
+}
+
 
 .appPictureContainer31 {
   width: 800px;
