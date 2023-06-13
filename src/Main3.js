@@ -419,6 +419,7 @@ function App2() {
                
               </div>
             </div>
+            <div className="total">
             <li id="chklin1"> 
                     
                     <label>
@@ -739,6 +740,7 @@ function App2() {
                                        </label>
                                       </li>
                                     <br />
+                                    </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
                 <input
