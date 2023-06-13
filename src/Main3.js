@@ -419,6 +419,326 @@ function App2() {
                
               </div>
             </div>
+            <li id="chklin1"> 
+                    
+                    <label>
+                    <span class="label-header1">희망 항목</span>
+                    <div class="radio-container">
+                    <input
+                    type="radio"
+                    id="radio1"
+                    name="investmentType1"
+                    value="급등종목"
+                    checked={investmentType1 === "급등종목"}
+                    onChange={(e) => setInvestmentType1(e.target.value)}
+                    />
+                    <label for="radio1">급등종목</label>
+                </div>
+                <div class="radio-container">
+                    <input
+                    type="radio"
+                    id="radio2"
+                    name="investmentType1"
+                    value="테마종목"
+                    checked={investmentType1 === "테마종목"}
+                    onChange={(e) => setInvestmentType1(e.target.value)}
+                    />
+                    <label for="radio2">테마종목</label>
+                </div>
+                        <div class="radio-container">
+                       
+                        <input
+                        type="radio"
+                        id="radio3"
+                        name="investmentType1"
+                        value="가치투자"
+                        checked={investmentType1 === "가치투자"}
+                        onChange={(e) => setInvestmentType1(e.target.value)}
+                        />
+                       <label for="radio3">가치투자</label>
+                        </div>
+                        <div class="radio-container">
+                      
+                        <input
+                        type="radio"
+                        id="radio4"
+                        name="investmentType1"
+                        value="스윙종목"
+                        checked={investmentType1 === "스윙종목"}
+                        onChange={(e) => setInvestmentType1(e.target.value)}
+                        />
+                  <label for="radio4">스윙종목</label>
+                          </div>
+                          <div class="radio-container">
+                      
+                        <input
+                        type="radio"
+                        id="radio5"
+                        name="investmentType1"
+                        value="인공지능"
+                        checked={investmentType1 === "인공지능"}
+                        onChange={(e) => setInvestmentType1(e.target.value)}
+                        />
+                   <label for="radio5">인공지능</label>
+                                       </div>
+                                       <div class="radio-container">
+                                    
+                                       <input
+                        type="radio"
+                        id="radio6"
+                        name="investmentType1"
+                        value="단기투자"
+                        checked={investmentType1 === "단기투자"}
+                        onChange={(e) => setInvestmentType1(e.target.value)}
+                        />
+                              <label for="radio6">단기투자</label>
+                                       </div>
+                                       <div class="radio-container">
+                                      
+                                       <input
+                        type="radio"
+                        id="radio7"
+                        name="investmentType1"
+                        value="투자초보"
+                        checked={investmentType1 === "투자초보"}
+                        onChange={(e) => setInvestmentType1(e.target.value)}
+                        />
+                                     <label for="radio7">투자초보</label>
+                                       </div> 
+                                      </label>
+                                      </li>
+                                    <br />
+                                    <li id="chkline2">
+                                      <label>
+                
+                                      <span class="label-header">희망 <br />수익률</span>
+                                      <div class="radio-container">
+                           
+                                      <input
+                
+                        type="radio"
+                        id="radio8"
+                        name="investmentType2"
+                        value="5% 목표"
+                        checked={investmentType2 === "5% 목표"}
+                        onChange={(e) => setInvestmentType2(e.target.value)}
+                        />
+                                <label for="radio8">5%<br />목표</label>
+                                      </div> 
+                                      <div class="radio-container">
+                            
+                                       <input
+                        type="radio"
+                        id="radio9"
+                        name="investmentType2"
+                        value="10% 목표"
+                        checked={investmentType2 === "10% 목표"}
+                        onChange={(e) => setInvestmentType2(e.target.value)}
+                        />
+                                       <label for="radio9">10%<br />목표</label>
+                                      </div> 
+                                      <div class="radio-container">
+                                    
+                                       <input
+                        type="radio"
+                        id="radio10"
+                        name="investmentType2"
+                        value="15% 목표"
+                        checked={investmentType2 === "15% 목표"}
+                        onChange={(e) => setInvestmentType2(e.target.value)}
+                        />
+                                     <label for="radio10">15%<br />목표</label>
+                                      </div>
+                                      <div class="radio-container">
+                                     
+                                       <input
+                        type="radio"
+                        id="radio11"
+                        name="investmentType2"
+                        value="20% 목표"
+                        checked={investmentType2 === "20% 목표"}
+                        onChange={(e) => setInvestmentType2(e.target.value)}
+                        />
+                                     <label for="radio11">20%<br />목표</label>
+                                      </div>
+                                      <div class="radio-container">
+                                
+                                       <input
+                        type="radio"
+                        id="radio12"
+                        name="investmentType2"
+                        value="25% 목표"
+                        checked={investmentType2 === "25% 목표"}
+                        onChange={(e) => setInvestmentType2(e.target.value)}
+                        />
+                                    <label for="radio12">25%<br />목표</label>
+                                      </div>
+                                      <div class="radio-container">
+                               
+                                       <input
+                        type="radio"
+                        id="radio13"
+                        name="investmentType2"
+                        value="30% 목표"
+                        checked={investmentType2 === "30% 목표"}
+                        onChange={(e) => setInvestmentType2(e.target.value)}
+                        />
+                                     
+                                     <label for="radio13">30%<br />목표</label>
+                                      </div> 
+                
+                                       </label>
+                                      </li>
+                                    <br />
+                                    <li id="chkline3">
+                                      <label>
+                                     <span class="label-header1">희망 <br />수익금</span>
+                                      <div class="radio-container">
+                             
+                                      <input
+                        type="radio"
+                        id="radio14"
+                        name="investmentType3"
+                        value="5백만 원"
+                        checked={investmentType3 === "5백만 원"}
+                        onChange={(e) => setInvestmentType3(e.target.value)}
+                        />
+                    <label for="radio14">5백만 원</label>
+                                        
+                                        </div> 
+                                        <div class="radio-container">
+                                
+                                             <input
+                        type="radio"
+                        id="radio15"
+                        name="investmentType3"
+                        value="1천만 원"
+                        checked={investmentType3 === "1천만 원"}
+                        onChange={(e) => setInvestmentType3(e.target.value)}
+                        />
+                            <label for="radio15">1천만 원</label>
+                                        
+                                        </div> 
+                                        <div class="radio-container">
+                                     
+                                       <input
+                        type="radio"
+                        id="radio16"
+                        name="investmentType3"
+                        value="3천만 원"
+                        checked={investmentType3 === "3천만 원"}
+                        onChange={(e) => setInvestmentType3(e.target.value)}
+                        />
+                                     <label for="radio16">3천만 원</label> 
+                                        </div> 
+                                        <div class="radio-container">
+                                      
+                                       <input
+                        type="radio"
+                        id="radio17"
+                        name="investmentType3"
+                        value="5천만 원"
+                        checked={investmentType3 === "5천만 원"}
+                        onChange={(e) => setInvestmentType3(e.target.value)}
+                        />
+                                  <label for="radio17">5천만 원</label>
+                                     </div> 
+                                     <div class="radio-container">
+                
+                                  
+                                       <input
+                        type="radio"
+                        id="radio18"
+                        name="investmentType3"
+                        value="7천만 원"
+                        checked={investmentType3 === "7천만 원"}
+                        onChange={(e) => setInvestmentType3(e.target.value)}
+                        />
+                     <label for="radio18">7천만 원</label>
+                                     </div> 
+                                     <div class="radio-container">
+                              
+                                       <input
+                        type="radio"
+                        id="radio19"
+                        name="investmentType3"
+                        value="1억 원 이상"
+                        checked={investmentType3 === "1억 원 이상"}
+                        onChange={(e) => setInvestmentType3(e.target.value)}
+                        />
+                                    <label for="radio19">1억 원<br />이상</label>
+                                     </div> 
+                                       </label>
+                                      </li>
+                                    <br />
+                                    <li id="chkline4">
+                                      <label>
+                                      <span class="label-header1"> 투자 성향</span>
+                                      <div class="radio-container">
+                                     
+                                      <input
+                        type="radio"
+                        id="radio20"
+                        name="investmentType4"
+                        value="안정형"
+                        checked={investmentType4 === "안정형"}
+                        onChange={(e) => setInvestmentType4(e.target.value)}
+                        />
+                         <label for="radio20">안정형</label>
+                                     </div> 
+                                     <div class="radio-container">
+                          
+                                       <input
+                        type="radio"
+                        id="radio21"
+                        name="investmentType4"
+                        value="안정 추구형"
+                        checked={investmentType4 === "안정 추구형"}
+                        onChange={(e) => setInvestmentType4(e.target.value)}
+                        />
+                           <label for="radio21">안정<br /> 추구형</label>
+                                     </div> 
+                                     <div class="radio-container">
+                                    
+                                       <input
+                        type="radio"
+                        id="radio22"
+                        name="investmentType4"
+                        value="위험 추구형"
+                        checked={investmentType4 === "위험 추구형"}
+                        onChange={(e) => setInvestmentType4(e.target.value)}
+                        />
+                                 <label for="radio22">위험<br /> 추구형</label>
+                                     </div> 
+                                     <div class="radio-container">
+                               
+                                       <input
+                        type="radio"
+                        id="radio23"
+                        name="investmentType4"
+                        value="적극 투자형"
+                        checked={investmentType4 === "적극 투자형"}
+                        onChange={(e) => setInvestmentType4(e.target.value)}
+                        />
+                         <label for="radio23">적극<br /> 투자형</label>
+                                     </div> 
+                                     <div class="radio-container">
+                                     
+                                      <input
+                        type="radio"
+                        id="radio24"
+                        name="investmentType4"
+                        value="공격 투자형"
+                        checked={investmentType4 === "공격 투자형"}
+                        onChange={(e) => setInvestmentType4(e.target.value)}
+                        />
+                        <label for="radio24">공격 투자형</label>
+                                     </div> 
+                                       
+                                          
+                                       </label>
+                                      </li>
+                                    <br />
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
                 <input
