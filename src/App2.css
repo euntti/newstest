@@ -166,7 +166,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
- display: inline-block;
+  display: inline-block;
 }
 
 
@@ -258,7 +258,14 @@ body {
   justify-content: flex-start;  /* 가로축 왼쪽 정렬 */
   align-items: center;  /* 이 값을 조정하여 간격을 원하는대로 조절하세요 */
 }
-
+#chklin31, #chkline32, #chkline33, #chkline34 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 71px; /* 또는 원하는 높이로 설정 */
+  width: 614px; /* 또는 원하는 넓이로 설정 */
+}
 #chklin31 label {
   display: inline-flex;
   align-items: center;
