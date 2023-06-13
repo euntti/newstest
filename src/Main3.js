@@ -422,7 +422,7 @@ function App2() {
               </>
             )}
           </div> */}
-          <div>
+          <div className="sbdiv3">
             <div className="nameArea31">
               {/* <div className="nameArea">
               <input
@@ -478,7 +478,7 @@ function App2() {
             <li id="chklin31"> 
                     
     <label>
-    <span class="label-header31">희망 항목</span>
+    <span class="label-header31">희망 <br /> 항목</span>
     <div class="radio-container3">
     <input
     type="radio"
@@ -488,7 +488,7 @@ function App2() {
     checked={investmentType31 === "급등종목"}
     onChange={(e) => setInvestmentType31(e.target.value)}
     />
-    <label for="radio1">급등종목</label>
+    <label for="radio1">급등<br /> 종목</label>
 </div>
 <div class="radio-container3">
     <input
@@ -499,7 +499,7 @@ function App2() {
     checked={investmentType31 === "테마종목"}
     onChange={(e) => setInvestmentType31(e.target.value)}
     />
-    <label for="radio2">테마종목</label>
+    <label for="radio2">테마<br /> 종목</label>
 </div>
         <div class="radio-container3">
        
@@ -511,7 +511,7 @@ function App2() {
         checked={investmentType31 === "가치투자"}
         onChange={(e) => setInvestmentType31(e.target.value)}
         />
-       <label for="radio3">가치투자</label>
+       <label for="radio3">가치<br /> 투자</label>
         </div>
         <div class="radio-container3">
       
@@ -523,7 +523,7 @@ function App2() {
         checked={investmentType31 === "스윙종목"}
         onChange={(e) => setInvestmentType31(e.target.value)}
         />
-  <label for="radio4">스윙종목</label>
+  <label for="radio4">스윙<br /> 종목</label>
           </div>
           <div class="radio-container3">
       
@@ -535,7 +535,7 @@ function App2() {
         checked={investmentType31 === "인공지능"}
         onChange={(e) => setInvestmentType31(e.target.value)}
         />
-   <label for="radio5">인공지능</label>
+   <label for="radio5">인공<br /> 지능</label>
                        </div>
                        <div class="radio-containe3">
                     
@@ -547,7 +547,7 @@ function App2() {
         checked={investmentType31 === "단기투자"}
         onChange={(e) => setInvestmentType31(e.target.value)}
         />
-              <label for="radio6">단기투자</label>
+              <label for="radio6">단기<br /> 투자</label>
                        </div>
                        <div class="radio-container3">
                       
@@ -559,7 +559,7 @@ function App2() {
         checked={investmentType31 === "투자초보"}
         onChange={(e) => setInvestmentType31(e.target.value)}
         />
-                     <label for="radio7">투자초보</label>
+                     <label for="radio7">투자<br /> 초보</label>
                        </div> 
                       </label>
                       </li>
