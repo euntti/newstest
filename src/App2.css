@@ -253,14 +253,14 @@ body {
 }
 .label-header31 {
   display: flex;
-  margin-left: 0px; 
+  margin-left: 10px; 
   width: 50px;
   justify-content: flex-start;  /* 가로축 왼쪽 정렬 */
   align-items: center;  /* 이 값을 조정하여 간격을 원하는대로 조절하세요 */
 }
+
 #chklin31, #chkline32, #chkline33, #chkline34 {
-  width: 100%; 
-  padding: 10px;
+ 
   margin: 5px 0;
   display: inline-block;
   border: 1px solid #ccc;
