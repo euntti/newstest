@@ -50,7 +50,11 @@ function App2() {
     setPhone31 (inputValue);
   };
 
-  
+  const [investmentType31, setInvestmentType31] = useState('급등종목');
+  const [investmentType32, setInvestmentType32] = useState('');
+  const [investmentType33, setInvestmentType33] = useState('');
+  const [investmentType34, setInvestmentType34] = useState('');
+
 
   const [num31, setNum31] = useState(331231);
   const [time31, setTime31] = useState("");
@@ -109,7 +113,9 @@ function App2() {
     if (time31 == "") {
       return alert("통화시간 선택해주세요");
     }
-
+    if (!investmentType31) {  // investmentType1이 비어있는지 확인
+      return alert("희망종목을 선택해주세요.");
+    }
     if (!check1) {
       return alert("개인정보취급방침동의보기를 체크해주세요.");
     }
@@ -123,10 +129,12 @@ function App2() {
     const phoneNumber = `${phone31}`;
     const name = `${userName31}`;
     const selectedTime = `${time31}`;
+    const investmentType31 = `${investmentType31}`;
     const param = {
       phoneNumber31: phoneNumber,
       name31: name,
       time31: selectedTime,
+      investmentType31:investmentType31
     };
 
     axios.post("/client", param).then((res) => {
@@ -419,6 +427,97 @@ function App2() {
                
               </div>
             </div>
+            <div class="total3">
+            <li id="chklin1"> 
+                    
+    <label>
+    <span class="label-header1">희망 항목</span>
+    <div class="radio-container3">
+    <input
+    type="radio"
+    id="radio1"
+    name="investmentType31"
+    value="급등종목"
+    checked={investmentType31 === "급등종목"}
+    onChange={(e) => setInvestmentType31(e.target.value)}
+    />
+    <label for="radio1">급등종목</label>
+</div>
+<div class="radio-container3">
+    <input
+    type="radio"
+    id="radio2"
+    name="investmentType31"
+    value="테마종목"
+    checked={investmentType31 === "테마종목"}
+    onChange={(e) => setInvestmentType31(e.target.value)}
+    />
+    <label for="radio2">테마종목</label>
+</div>
+        <div class="radio-container3">
+       
+        <input
+        type="radio"
+        id="radio3"
+        name="investmentType31"
+        value="가치투자"
+        checked={investmentType31 === "가치투자"}
+        onChange={(e) => setInvestmentType31(e.target.value)}
+        />
+       <label for="radio3">가치투자</label>
+        </div>
+        <div class="radio-container3">
+      
+        <input
+        type="radio"
+        id="radio4"
+        name="investmentType31"
+        value="스윙종목"
+        checked={investmentType31 === "스윙종목"}
+        onChange={(e) => setInvestmentType31(e.target.value)}
+        />
+  <label for="radio4">스윙종목</label>
+          </div>
+          <div class="radio-container3">
+      
+        <input
+        type="radio"
+        id="radio5"
+        name="investmentType31"
+        value="인공지능"
+        checked={investmentType31 === "인공지능"}
+        onChange={(e) => setInvestmentType31(e.target.value)}
+        />
+   <label for="radio5">인공지능</label>
+                       </div>
+                       <div class="radio-containe3">
+                    
+                       <input
+        type="radio"
+        id="radio6"
+        name="investmentType31"
+        value="단기투자"
+        checked={investmentType31 === "단기투자"}
+        onChange={(e) => setInvestmentType31(e.target.value)}
+        />
+              <label for="radio6">단기투자</label>
+                       </div>
+                       <div class="radio-container3">
+                      
+                       <input
+        type="radio"
+        id="radio7"
+        name="investmentType31"
+        value="투자초보"
+        checked={investmentType31 === "투자초보"}
+        onChange={(e) => setInvestmentType31(e.target.value)}
+        />
+                     <label for="radio7">투자초보</label>
+                       </div> 
+                      </label>
+                      </li>
+                    <br />
+                    </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
                 <input
