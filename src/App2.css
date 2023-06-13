@@ -136,7 +136,7 @@ table {
 }
 .sub {
 }
-.appPicture3 {
+.appPictureContainer {
   width: 800px;
   height: 1023px;
   margin-left: 20px;
@@ -170,11 +170,11 @@ table {
   margin-bottom: 10px;
   font-size: 18pt;
 }
-.btnArea3 {
+.btnArea {
   display: flex;
   justify-content: center;
 }
-.btnArea3 button {
+.btnArea button {
   background-color: transparent;
   border: 0px;
   /* width: 812px;
@@ -237,7 +237,7 @@ table {
 }
 @media (max-width: 600px) 
 {
-  .container {
+  .container3 {
     display: flex;
     align-items: center;
     /* justify-content: center; */
