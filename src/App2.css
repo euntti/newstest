@@ -178,45 +178,7 @@ input[type=text], input[type=tel], select {
   height: 790px;
   margin-left: 20px;
 }
-.nameArea31{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  
- }
- .nameArea31 select {
-  width: 484px;
-  height: 48px;
-  margin: 0 12.5px 0;
-}
 
-.nameArea31 input {
-  display: flex;
-  width: 600px;
-  height: 75px;
-  margin-left: 12px;
-  margin-right: 4px;
-  margin-bottom: 10px;
-  font-size: 18pt;
-}
-
-.phone31{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.phone31 select {
-  width: 484px;
-  height: 48px;
-  margin: 0 12.5px 0;
-}
-.phone31 input {
-  display: flex;
-  width: 600px;
-  height: 75px;
-  
-  font-size: 18pt;
-}
 .btnArea31 {
   display: flex;
   justify-content: center;
