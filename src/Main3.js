@@ -35,8 +35,8 @@ const Main3 = () => {
 
 function App2() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
-  const [userName, setUserName] = useState("");
-  const [phone1, setPhone1] = useState("");
+  const [userName31, setUserName31] = useState("");
+  const [phone31, setPhone31] = useState("");
   const handlePhoneNumberChange = (e) => {
     let formattedNumber = e.target.value.replace(/-/g, ""); // 하이픈 제거
     if (formattedNumber.length > 2 && formattedNumber.length < 6) {
@@ -44,16 +44,16 @@ function App2() {
     } else if (formattedNumber.length >= 6) {
       formattedNumber = formattedNumber.replace(/(\d{3})(\d{3})(\d{0,4})/, "$1-$2-$3"); // 첫 번째와 두 번째 하이픈 추가
     }
-    setPhone1(formattedNumber);
+    setPhone31(formattedNumber);
 
     const inputValue = e.target.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
-    setPhone1(inputValue);
+    setPhone31 (inputValue);
   };
 
   
 
-  const [num, setNum] = useState(331231);
-  const [time, setTime] = useState("");
+  const [num31, setNum31] = useState(331231);
+  const [time31, setTime31] = useState("");
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
@@ -100,13 +100,13 @@ function App2() {
 
   const submitEvent = (e) => {
     e.preventDefault();
-    if (userName == "") {
+    if (userName31 == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phone1 == "") {
+    if (phone31 == "") {
       return alert("'-'없이 입력을 해주세요.");
     }
-    if (time == "") {
+    if (time31 == "") {
       return alert("통화시간 선택해주세요");
     }
 
@@ -120,13 +120,13 @@ function App2() {
       return alert("광고성문자동의 체크해주세요.");
     }
 
-    const phoneNumber = `${phone1}`;
-    const name = `${userName}`;
-    const selectedTime = `${time}`;
+    const phoneNumber = `${phone31}`;
+    const name = `${userName31}`;
+    const selectedTime = `${time31}`;
     const param = {
-      phoneNumber: phoneNumber,
-      name: name,
-      time: selectedTime,
+      phoneNumber31: phoneNumber,
+      name31: name,
+      time31: selectedTime,
     };
 
     axios.post("/client", param).then((res) => {
@@ -140,7 +140,7 @@ function App2() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
+      `sb글로벌 ${userName31} 휴대폰 번호 ${phone31}님이 신청하였습니다. 통화가능한 시간은 ${time31} 입니다. `
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
   };
@@ -158,8 +158,8 @@ function App2() {
     <div
       style={{
         backgroundImage: isMobile
-          ? `url("/img/bg2.png")`
-          : `url("/img/bg2.png")`,
+          ? `url("/img/inbox.png")`
+          : `url("/img/inbox.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
@@ -168,10 +168,10 @@ function App2() {
         height: "3000px",
       }}
     >
-      <div className="container">
-        <div className="sub">
-          <div className="App">
-            <div className="appPictureContainer3">
+      <div className="container31">
+        <div className="sub31">
+          <div className="App31">
+            <div className="appPictureContainer31">
               {isBrowser ? (
                 <div
                   style={{
@@ -368,7 +368,7 @@ function App2() {
             )}
           </div> */}
           <div>
-            <div className="nameArea">
+            <div className="nameArea31">
               {/* <div className="nameArea">
               <input
                 type="text"
@@ -377,7 +377,7 @@ function App2() {
                 onChange={(e) => setUserName(e.target.value)}
               ></input>
             </div> */}
-              <div className="namephone ">
+              <div className="namephone31">
                 {/* {<select>
                 <option key="1" value="1">
                   010
@@ -386,25 +386,25 @@ function App2() {
               -{"\t"}} */}
                 <input
                   type="text"
-                  className="username"
+                  className="username31"
                   placeholder="이름"
                   maxLength={4}
-                  onChange={(e) => setUserName(e.target.value)}
+                  onChange={(e) => setUserName31(e.target.value)}
                 />
               </div>
               {"\t"}
-              <div className="phone">
+              <div className="phone31">
                 <input
                        type="tel"
-                       name="user_name"
+                       name="user_name31"
                        placeholder="휴대폰"
                        maxLength={13}
-                       value={phone1}
+                       value={phone31}
                        onChange={handlePhoneNumberChange}
                       />
               </div>
-              <div className="time">
-                <select value={time} onChange={(e) => setTime(e.target.value)}>
+              <div className="time31">
+                <select value={time31} onChange={(e) => setTime31(e.target.value)}>
                   <option value="">통화가능시간(필수)</option>
                   <option value="06:00-09:00">06:00-09:00</option>
                   <option value="09:00-11:00">09:00-11:00</option>
@@ -468,7 +468,7 @@ function App2() {
                 </a>
               </label>
             </div>
-            <div className="btnArea">
+            <div className="btnArea31">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
                   <img src={"/img/btn.gif"}></img>
@@ -489,7 +489,7 @@ function App2() {
         {/* <div className="profit1">
           <img src={"/img/profit.jpeg"}></img>
         </div> */}
-        <div className="footerInfo">
+        <div className="footerInfo31">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
 
