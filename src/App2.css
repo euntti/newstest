@@ -163,8 +163,8 @@ body {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
-  width: 620px;
-  height: 58px;
+  width: 640px;
+  height: 38px;
 }
 .nameArea31{
   display: block;
