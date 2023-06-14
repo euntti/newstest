@@ -181,11 +181,11 @@ function App8() {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
-                    height: "100vh",  // 뷰포트의 높이를 100%로 설정
+                    height: "auto",  // 뷰포트의 높이를 100%로 설정
                 }}
             >
                 <img
-                    style={{ width: isBrowser ? "100%" : "400px", height: "auto" }}
+                    style={{ width: isBrowser ? "100%" : "400px" }}
                     src={"/img/day.gif"}
                     alt="logo"
                 />
