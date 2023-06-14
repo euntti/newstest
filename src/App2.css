@@ -138,11 +138,11 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
-/* .sbdiv3 {
+.sbdiv3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-} */
+}
 
 .namephone31, .phone31, .time31 {
   width: 100%;
@@ -234,7 +234,7 @@ body {
   line-height: 100%;
   width: 592px;
 }
-.time31{
+.chkline31 label{
   
   /* align-items: center; */
   flex-direction: row;
@@ -251,76 +251,84 @@ body {
   line-height: 100%;
   width: 592px;
 }
+
 .label-header31 {
   display: inline-flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border: 3px solid #000;
+  
   border-radius: 20px; /* 둥글게 */
   padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
   font-size: 13px;
   text-align: center;
-  background-color: #333; /* 배경색 변경 */
+  background-color: #f9f9f9; /* 배경색 변경 */
   color: #333; /* 텍스트 색상 변경 */
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
 }
 
-#chkline31{
-  margin: 5px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  /* background-color: #000; */
-}
-#chkline32{
-  margin: 5px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+
+
+.chkline32 label{
+display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  border-radius: 20px; /* 둥글게 */
+  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
+  font-size: 13px;
+  text-align: center;
+  background-color: #f9f9f9; /* 배경색 변경 */
+  color: #333; /* 텍스트 색상 변경 */
+  font-family: 'Arial', sans-serif; /* 글꼴 변경 */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
+  line-height: 100%;
 
 }
-#chkline33{
+.chkline33 label{
   margin: 5px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 5px;
   box-sizing: border-box;
+  width: 614px;
+  height: 71px;
 }
 #chkline34{
   margin: 5px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 5px;
   box-sizing: border-box;
+  width: 614px;
+  height: 71px;
 }
-.chkline31 label {
+#chklin31 label {
   display: inline-flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border: 3px solid #000;
+  
   border-radius: 20px; /* 둥글게 */
   padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
   font-size: 13px;
   text-align: center;
-  background-color: #333; /* 배경색 변경 */
+  background-color: #f9f9f9; /* 배경색 변경 */
   color: #333; /* 텍스트 색상 변경 */
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
-}
 
+}
 #chkline32 label {
   display: inline-flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border: 3px solid #000;
+  
   border-radius: 20px; /* 둥글게 */
   padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
   font-size: 13px;
@@ -337,7 +345,7 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border: 3px solid #000;
+  
   border-radius: 20px; /* 둥글게 */
   padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
   font-size: 13px;
@@ -354,7 +362,7 @@ body {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  border: 3px solid #000;
+  
   border-radius: 20px; /* 둥글게 */
   padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
   font-size: 13px;
