@@ -149,7 +149,22 @@ body {
 } */
 
 .namephone31 input[type=text], 
-.phone31 input[type=tel], 
+.phone31 input[type=tel] {
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* border: 3px solid #000; */
+  border-radius: 20px; /* 둥글게 */
+  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
+  font-size: 13px;
+  text-align: center;
+  /* background-color: #f9f9f9; 배경색 변경 */
+  color: #333; /* 텍스트 색상 변경 */
+  font-family: 'Arial', sans-serif; /* 글꼴 변경 */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
+  line-height: 100%;
+  width: 620px;
+  height: 38px;
+}
 .time31 select {
   flex-direction: row;
   /* justify-content: space-between; */
