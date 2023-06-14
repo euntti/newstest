@@ -172,12 +172,14 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px;
 }
 
 .nameArea31 input,
-.nameArea31 select {
+.nameArea31 select,
+.total3 input[type="radio"],
+.total3 label {
   width: 150px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -194,6 +196,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  list-style: none;
 }
 
 .radio-container3 {
@@ -228,21 +231,9 @@ body {
   width: 170px;
 }
 
-.total3 li {
-  list-style: none;
-}
-
 .total3 label {
   display: flex;
   align-items: center;
-}
-
-.total3 label span.label-header31 {
-  font-weight: bold;
-}
-
-.total3 .radio-container3 {
-  margin-right: 20px;
 }
 
 .total3 input[type="radio"] {
@@ -275,7 +266,6 @@ body {
 .total3 input[type="radio"]:hover {
   border-color: #0056b3;
 }
-
 .footerInfo31 {
   margin-top: 10px;
   margin-left: 12px;
