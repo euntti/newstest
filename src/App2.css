@@ -259,7 +259,16 @@ body {
   align-items: center;  /* 이 값을 조정하여 간격을 원하는대로 조절하세요 */
 }
 
-#rd1,#rd2,#rd3,#rd4{
+.rd1 {
+  width: 612px;
+}
+.rd2 {
+  width: 612px;
+}
+.rd3 {
+  width: 612px;
+}
+.rd4 {
   width: 612px;
 }
 #chklin31{
