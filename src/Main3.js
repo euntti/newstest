@@ -111,6 +111,10 @@ function App2() {
     if (phone31 == "") {
       return alert("'-'없이 입력을 해주세요.");
     }
+    if (phone31.length !== 11) {
+      return alert("폰번호는 11자리가 나와야합니다.");
+    }
+
     if (time31 == "") {
       return alert("통화시간 선택해주세요");
     }
@@ -135,7 +139,20 @@ function App2() {
     if (!check3) {
       return alert("광고성문자동의 체크해주세요.");
     }
-
+    const req = {
+      phone: phone1,
+      certificationNumber: "",
+    };
+    axios.post("/smscertification/sends", req).then((res) => {
+      if (res.data != "success") {
+        alert(res.data);
+      } else {
+        alert("문자를 확인해주세요.");
+        setCertiModalOpen(true);
+      }
+    });
+    
+    
     const phoneNumber = `${phone31}`;
     const name = `${userName31}`;
     const selectedTime = `${time31}`;
