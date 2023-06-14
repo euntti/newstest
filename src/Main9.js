@@ -178,7 +178,7 @@ function App8() {
               {isBrowser ? (
                 <div
                   style={{
-              
+                    display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
@@ -194,13 +194,14 @@ function App8() {
                 <div
                 style={{
             
+                  display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
                   alignItems: "center",
                 }}
               >
                   <img
-                    style={{ width: "auto" , height: "auto" }}
+                    style={{ width: "400" , height: "auto" }}
                     src={"/img/day.gif"}
                     
                     alt="logo "
