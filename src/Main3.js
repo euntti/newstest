@@ -479,7 +479,7 @@ function App2() {
             <li id="chklin31"> 
                     
             <label style={{ width : "614px" }}>
-    <span class="label-header31">희망 <br /> 항목</span>
+    <span class="label-header31"> 희망 <br /> 항목</span>
     <div class="radio-container3">
     <input
     type="radio"
