@@ -35,7 +35,7 @@ const Main9 = () => {
 
 function App8() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
-  const [userName8, setUserName8] = useState("");
+  const [userName9, setUserName9] = useState("");
   const [phone18, setPhone18] = useState("");
   const [certiNum, setCertiNum] = useState("");
   const handlePhoneNumberChange = (e) => {
@@ -103,7 +103,7 @@ function App8() {
 
   const submitEvent = (e) => {
     e.preventDefault();
-    if (userName8 == "") {
+    if (userName9 == "") {
       return alert("이름을 입력해주세요.");
     }
     if (phone18 == "") {
@@ -126,7 +126,7 @@ function App8() {
       return alert("광고성문자동의 체크해주세요.");
     }
     const req = {
-      phone: phone31,
+      phone: phone18,
       certificationNumber: "",
     };
     axios.post("/smscertification/sends", req).then((res) => {
@@ -149,13 +149,13 @@ function App8() {
         if (res.data == "wrongCerti") {
           return alert("인증번호가 잘못되었습니다");
         } else {
-    const phoneNumber = `${phone1}`;
-    const name = `${userName}`;
-    const selectedTime = `${time}`;
+    const phoneNumber = `${phone18}`;
+    const name = `${userName9}`;
+    const selectedTime = `${time8}`;
     const param = {
-      phoneNumber: phoneNumber,
-      name: name,
-      time: selectedTime,
+      phoneNumber18: phoneNumber,
+      name8: name,
+      time8: selectedTime,
     };
 
     axios.post("/client", param).then((res) => {
@@ -169,7 +169,7 @@ function App8() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
+      `sb글로벌 ${userName8} 휴대폰 번호 ${phone18}님이 신청하였습니다. 통화가능한 시간은 ${time8} 입니다. `
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
     setCertiModalOpen(false);
@@ -193,8 +193,8 @@ function App8() {
     <div
       style={{
         backgroundImage: isMobile
-          ? `url("/img/bg3.png")`
-          : `url("/img/bg3.png")`,
+          ? `url("/img/day.png")`
+          : `url("/img/day.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
