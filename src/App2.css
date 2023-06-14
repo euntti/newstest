@@ -163,7 +163,7 @@ body {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
-  width: 592px;
+  width: 630px;
 }
 .nameArea31{
   display: block;
@@ -221,7 +221,7 @@ body {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
-  width: 592px;
+  width: 625px;
 }
 .phone31{
   
@@ -238,7 +238,7 @@ body {
   font-family: 'Arial', sans-serif; /* 글꼴 변경 */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
   line-height: 100%;
-  width: 592px;
+  width: 625px;
 }
 .time31{
    /* align-items: center; */
@@ -254,7 +254,7 @@ body {
    font-family: 'Arial', sans-serif; /* 글꼴 변경 */
    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
    line-height: 100%;
-   width: 592px;
+   width: 625px;
 
 }
 .chkline31 label{
