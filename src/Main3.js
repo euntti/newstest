@@ -198,7 +198,7 @@ function App2() {
                   if (this.checked) {
                       let label = this.parentNode.querySelector('label'); // Get the associated label
                       label.style.color = 'initial'; // Change color of the associated label
-                      label.style.backgroundColor = 'gray'; // Change background color of the associated label
+                      label.style.backgroundColor = 'white'; // Change background color of the associated label
                   }
               });
           }
@@ -207,8 +207,6 @@ function App2() {
       }
   }
 }
-
-
   return (
     <div
       style={{

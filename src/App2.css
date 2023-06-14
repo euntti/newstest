@@ -138,6 +138,10 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+.total3 label.selected {
+  color: initial;
+  background-color: gray;
+}
 .sbdiv3 {
   display: flex;
   flex-direction: column;
