@@ -181,31 +181,37 @@ function App2() {
 
   window.onload = function() {
     let radioGroups = ["chklin31", "chkline32", "chkline33", "chkline34"];
+    let lastChecked = null;  // Variable to hold the last checked radio button
 
     for (let groupId of radioGroups) {
         let group = document.getElementById(groupId);
         if (group) {
-          let radioButtons = group.querySelectorAll("input[type='radio']");
+            let radioButtons = group.querySelectorAll("input[type='radio']");
 
-          for (let i = 0; i < radioButtons.length; i++) {
-              radioButtons[i].style.opacity = '0';
-              radioButtons[i].addEventListener('change', function() {
-                  let labels = group.querySelectorAll('label');
-                  for (let j = 0; j < labels.length; j++) {
-                      labels[j].style.color = 'initial'; // Reset color of all labels
-                      labels[j].style.backgroundColor = 'initial'; // Reset background color of all labels
-                  }
-                  if (this.checked) {
-                      let label = this.parentNode.querySelector('label'); // Get the associated label
-                      label.style.color = 'initial'; // Change color of the associated label
-                      label.style.backgroundColor = 'white'; // Change background color of the associated label
-                  }
-              });
-          }
-      } else {
-          console.log('Element with ID ' + groupId + ' does not exist.');
-      }
-  }
+            for (let i = 0; i < radioButtons.length; i++) {
+                radioButtons[i].style.opacity = '0';
+                radioButtons[i].addEventListener('click', function() {
+                    let labels = group.querySelectorAll('label');
+                    for (let j = 0; j < labels.length; j++) {
+                        labels[j].style.color = 'initial'; // Reset color of all labels
+                        labels[j].style.backgroundColor = 'initial'; // Reset background color of all labels
+                    }
+
+                    if (this == lastChecked) {
+                        this.checked = false; // Uncheck the radio button
+                        lastChecked = null;   // Reset lastChecked
+                    } else {
+                        let label = this.parentNode.querySelector('label'); // Get the associated label
+                        label.style.color = 'initial'; // Change color of the associated label
+                        label.style.backgroundColor = 'white'; // Change background color of the associated label
+                        lastChecked = this; // Update lastChecked
+                    }
+                });
+            }
+        } else {
+            console.log('Element with ID ' + groupId + ' does not exist.');
+        }
+    }
 }
   return (
     <div
