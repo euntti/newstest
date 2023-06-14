@@ -206,7 +206,6 @@ function App2() {
           console.log('Element with ID ' + groupId + ' does not exist.');
       }
   }
-  
 }
 
 
@@ -476,6 +475,7 @@ function App2() {
               </div>
             </div>
             <div class="total3">
+            <div class="rd1"> 
             <li id="chklin31"> 
                     
     <label>
@@ -565,14 +565,10 @@ function App2() {
                       </label>
                       </li>
                     <br />
+                    </div>
+                    <div class="rd2"> 
                     <li id="chkline32">
-                      <label style="
-    width: 614px;
-    padding-left: 0px;
-    border-left-width: 0px;
-    padding-right: 0px;
-    border-right-width: 0px;
-">
+                      <label>
 
                       <span class="label-header31">희망 <br />수익률</span>
                       <div class="radio-container3">
@@ -653,14 +649,10 @@ function App2() {
                        </label>
                       </li>
                     <br />
+                    </div>
+                    <div class="rd3"> 
                     <li id="chkline33">
-                    <label style="
-    width: 614px;
-    padding-left: 0px;
-    border-left-width: 0px;
-    padding-right: 0px;
-    border-right-width: 0px;
-">
+                      <label>
                      <span class="label-header31">희망 <br />수익금</span>
                       <div class="radio-container3">
              
@@ -740,14 +732,10 @@ function App2() {
                        </label>
                       </li>
                     <br />
+                    </div>
+                    <div class="rd4"> 
                     <li id="chkline34">
-                    <label style="
-    width: 614px;
-    padding-left: 0px;
-    border-left-width: 0px;
-    padding-right: 0px;
-    border-right-width: 0px;
-">
+                      <label>
                       <span class="label-header31"> 투자 성향</span>
                       <div class="radio-container3">
                      
@@ -814,6 +802,7 @@ function App2() {
                        </label>
                       </li>
                     <br />
+                    </div>
                     </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
