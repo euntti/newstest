@@ -475,7 +475,6 @@ function App2() {
               </div>
             </div>
             <div class="total3">
-            <div class="rd1"> 
             <li id="chklin31"> 
                     
     <label>
@@ -565,8 +564,6 @@ function App2() {
                       </label>
                       </li>
                     <br />
-                    </div>
-                    <div class="rd2"> 
                     <li id="chkline32">
                       <label>
 
@@ -649,8 +646,6 @@ function App2() {
                        </label>
                       </li>
                     <br />
-                    </div>
-                    <div class="rd3"> 
                     <li id="chkline33">
                       <label>
                      <span class="label-header31">희망 <br />수익금</span>
@@ -732,8 +727,6 @@ function App2() {
                        </label>
                       </li>
                     <br />
-                    </div>
-                    <div class="rd4"> 
                     <li id="chkline34">
                       <label>
                       <span class="label-header31"> 투자 성향</span>
@@ -802,7 +795,6 @@ function App2() {
                        </label>
                       </li>
                     <br />
-                    </div>
                     </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
