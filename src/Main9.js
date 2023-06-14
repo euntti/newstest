@@ -35,9 +35,8 @@ const Main9 = () => {
 
 function App8() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
-  const [userName9, setUserName9] = useState("");
-  const [phone18, setPhone18] = useState("");
-  const [certiNum, setCertiNum] = useState("");
+  const [userName, setUserName] = useState("");
+  const [phone1, setPhone1] = useState("");
   const handlePhoneNumberChange = (e) => {
     let formattedNumber = e.target.value.replace(/-/g, ""); // 하이픈 제거
     if (formattedNumber.length > 2 && formattedNumber.length < 6) {
@@ -45,16 +44,16 @@ function App8() {
     } else if (formattedNumber.length >= 6) {
       formattedNumber = formattedNumber.replace(/(\d{3})(\d{3})(\d{0,4})/, "$1-$2-$3"); // 첫 번째와 두 번째 하이픈 추가
     }
-    setPhone18(formattedNumber);
+    setPhone1(formattedNumber);
 
     const inputValue = e.target.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
-    setPhone18(inputValue);
+    setPhone1(inputValue);
   };
 
   
 
   const [num, setNum] = useState(331231);
-  const [time8, setTime8] = useState("");
+  const [time, setTime] = useState("");
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
@@ -72,8 +71,6 @@ function App8() {
   function closeModal() {
     setIsOpen(false);
   }
-  const [certiModalOpen, setCertiModalOpen] = useState(false);
-  
 
   const [progress, setProgress] = useState(0);
   const insertHistory = () => {
@@ -103,16 +100,13 @@ function App8() {
 
   const submitEvent = (e) => {
     e.preventDefault();
-    if (userName9 == "") {
+    if (userName == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phone18 == "") {
+    if (phone1 == "") {
       return alert("'-'없이 입력을 해주세요.");
     }
-    if (phone18.length !== 11) {
-      return alert("폰번호는 11자리가 나와야합니다.");
-    }
-    if (time8 == "") {
+    if (time == "") {
       return alert("통화시간 선택해주세요");
     }
 
@@ -125,37 +119,14 @@ function App8() {
     if (!check3) {
       return alert("광고성문자동의 체크해주세요.");
     }
-    const req = {
-      phone: phone18,
-      certificationNumber: "",
-    };
-    axios.post("/smscertification/sends", req).then((res) => {
-      if (res.data != "success") {
-        alert(res.data);
-      } else {
-        alert("문자를 확인해주세요.");
-        setCertiModalOpen(true);
-      }
-    });
-  };
-  const certiSubmit = () => {
-    const reqbody = {
-      phone: "",
-      certificationNumber: certiNum,
-    };
-    axios
-      .post("/smscertification/sends/certi", reqbody)
-      .then((res) => {
-        if (res.data == "wrongCerti") {
-          return alert("인증번호가 잘못되었습니다");
-        } else {
-    const phoneNumber = `${phone18}`;
-    const name = `${userName9}`;
-    const selectedTime = `${time8}`;
+
+    const phoneNumber = `${phone1}`;
+    const name = `${userName}`;
+    const selectedTime = `${time}`;
     const param = {
-      phoneNumber18: phoneNumber,
-      name8: name,
-      time8: selectedTime,
+      phoneNumber: phoneNumber,
+      name: name,
+      time: selectedTime,
     };
 
     axios.post("/client", param).then((res) => {
@@ -169,15 +140,10 @@ function App8() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName8} 휴대폰 번호 ${phone18}님이 신청하였습니다. 통화가능한 시간은 ${time8} 입니다. `
+      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
-    setCertiModalOpen(false);
-  }
-})
-.catch((e) => {});
-};
-
+  };
 
   const settings = {
     dots: false,
@@ -193,7 +159,7 @@ function App8() {
     <div
       style={{
         backgroundImage: isMobile
-          ? `url("/img/day.png")`
+          ? `url("/img/ day.png")`
           : `url("/img/day.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -205,10 +171,10 @@ function App8() {
      
       }}
     >
-      <div className="container8">
-        <div className="sub8">
-          <div className="App8">
-            <div className="appPictureContainer38">
+      <div className="container9">
+        <div className="sub9">
+          <div className="App9">
+            <div className="appPictureContainer9">
               {isBrowser ? (
                 <div
                   style={{
@@ -276,7 +242,7 @@ function App8() {
                   className="username9"
                   placeholder="이름"
                   maxLength={4}
-                  onChange={(e) => setUserName8(e.target.value)}
+                  onChange={(e) => setUserName(e.target.value)}
                 />
               </div>
               {"\t"}
@@ -286,12 +252,12 @@ function App8() {
                        name="user_name"
                        placeholder="휴대폰"
                        maxLength={13}
-                       value={phone18}
+                       value={phone1}
                        onChange={handlePhoneNumberChange}
                       />
               </div>
               <div className="time9">
-                <select value={time8} onChange={(e) => setTime8(e.target.value)}>
+                <select value={time} onChange={(e) => setTime(e.target.value)}>
                   <option value="">통화가능시간(필수)</option>
                   <option value="06:00-09:00">06:00-09:00</option>
                   <option value="09:00-11:00">09:00-11:00</option>
@@ -415,28 +381,6 @@ function App8() {
         }}
       ></h1>
       <div className="imgGrid"></div>
-      <Modal
-        isOpen={certiModalOpen}
-        onRequestClose={() => setCertiModalOpen(false)}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "100%",
-          }}
-        >
-          <h2>문자로 온 인증번호를 입력해주세요</h2>
-          <input
-            value={certiNum}
-            onChange={(e) => setCertiNum(e.target.value)}
-          ></input>
-          <button onClick={() => certiSubmit()}>인증</button>
-        </div>
-      </Modal>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
