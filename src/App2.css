@@ -207,6 +207,7 @@ body {
 
 .radio-container3 input[type="radio"] {
   margin-right: 5px;
+  width: 50px;
 }
 
 .label-header31 {
