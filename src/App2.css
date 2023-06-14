@@ -138,11 +138,11 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
-.sbdiv3 {
+/* .sbdiv3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .namephone31, .phone31, .time31 {
   width: 100%;
@@ -259,7 +259,7 @@ body {
   align-items: center;  /* 이 값을 조정하여 간격을 원하는대로 조절하세요 */
 }
 
-#chklin31{
+#chkline31{
   margin: 5px 0;
   display: inline-block;
   border: 1px solid #ccc;
@@ -289,7 +289,7 @@ body {
   border-radius: 5px;
   box-sizing: border-box;
 }
-.chklin31 label {
+.chkline31 label {
   display: inline-flex;
   align-items: center;
   flex-direction: row;

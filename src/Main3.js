@@ -50,7 +50,7 @@ function App2() {
     setPhone31 (inputValue);
   };
 
-  const [investmentType31, setInvestmentType31] = useState('급등종목');
+  const [investmentType31, setInvestmentType31] = useState('희망 항목');
   const [investmentType32, setInvestmentType32] = useState('5% 목표');
   const [investmentType33, setInvestmentType33] = useState('5백만 원');
   const [investmentType34, setInvestmentType34] = useState('안정형');
@@ -477,7 +477,7 @@ function App2() {
             <div class="total3">
             <li id="chkline31">
                       <label>
- <span class="label-header31">급등 <br />종목</span>
+ <span class="label-header31">희망 <br />종목</span>
                       <div class="radio-container3">
            
            <input
