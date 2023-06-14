@@ -1,5 +1,4 @@
 
-
 import "./App2.css";
 import React from "react"
 import TelegramApi from "node-telegram-api";
@@ -476,10 +475,10 @@ function App2() {
               </div>
             </div>
             <div class="total3">
-           
+            <div class="rd1"> 
             <li id="chklin31"> 
                     
-            <label style={{ width : "614px" }}>
+    <label>
     <span class="label-header31">희망 <br /> 항목</span>
     <div class="radio-container3">
     <input
@@ -566,10 +565,10 @@ function App2() {
                       </label>
                       </li>
                     <br />
-                   
-                   
+                    </div>
+                    <div class="rd2"> 
                     <li id="chkline32">
-                    <label style={{ width : "614px" }}>
+                      <label>
 
                       <span class="label-header31">희망 <br />수익률</span>
                       <div class="radio-container3">
@@ -650,9 +649,10 @@ function App2() {
                        </label>
                       </li>
                     <br />
-                   
+                    </div>
+                    <div class="rd3"> 
                     <li id="chkline33">
-                    <label style={{ width : "614px" }}>
+                      <label>
                      <span class="label-header31">희망 <br />수익금</span>
                       <div class="radio-container3">
              
@@ -732,9 +732,10 @@ function App2() {
                        </label>
                       </li>
                     <br />
-                   
+                    </div>
+                    <div class="rd4"> 
                     <li id="chkline34">
-                    <label style={{ width : "614px" }}>
+                      <label>
                       <span class="label-header31"> 투자 성향</span>
                       <div class="radio-container3">
                      
@@ -801,7 +802,7 @@ function App2() {
                        </label>
                       </li>
                     <br />
-                   
+                    </div>
                     </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
