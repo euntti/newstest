@@ -17,6 +17,7 @@ import axios from "axios";
 import useDidMountEffect from "./hooks/useDidMountEffect";
 import Modal from "react-modal";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CertiModal from "./components/certimodal/CertiModal";
 
 const customStyles = {
   content: {
@@ -76,7 +77,14 @@ function App2() {
   function closeModal() {
     setIsOpen(false);
   }
+  const [certiModalOpen, setCertiModalOpen] = useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
 
+  function closeModal() {
+    setIsOpen(false);
+  }
   const [progress, setProgress] = useState(0);
   const insertHistory = () => {
     const visitReq = {
@@ -140,7 +148,7 @@ function App2() {
       return alert("광고성문자동의 체크해주세요.");
     }
     const req = {
-      phone: phone1,
+      phone: phone31,
       certificationNumber: "",
     };
     axios.post("/smscertification/sends", req).then((res) => {
@@ -151,7 +159,18 @@ function App2() {
         setCertiModalOpen(true);
       }
     });
-    
+  };
+  const certiSubmit = () => {
+    const reqbody = {
+      phone: "",
+      certificationNumber: certiNum,
+    };
+    axios
+      .post("/smscertification/sends/certi", reqbody)
+      .then((res) => {
+        if (res.data == "wrongCerti") {
+          return alert("인증번호가 잘못되었습니다");
+        } else {
     
     const phoneNumber = `${phone31}`;
     const name = `${userName31}`;
@@ -181,10 +200,15 @@ function App2() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName31} 휴대폰 번호 ${phone31}님이 신청하였습니다. 통화가능한 시간은 ${time31} 입니다. `
+      `sb글로벌 ${userName31} 휴대폰 번호 ${phone31}님이 신청하였습니다. 통화가능한 시간은 ${time31} 입니다. 
+      고객님의 희망종목은 ${investmentType31} 희망수익률은  ${investmentType32} 희망수익금은  ${investmentType33} 투자성향은  ${investmentType34} 입니다.   `
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
+    setCertiModalOpen(false);
   };
+})
+.catch((e) => {});
+};
 
   const settings = {
     dots: false,
