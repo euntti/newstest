@@ -265,6 +265,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  background-color: #000;
 }
 #chkline32{
   margin: 5px 0;
