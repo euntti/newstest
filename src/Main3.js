@@ -38,6 +38,7 @@ function App2() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
   const [userName31, setUserName31] = useState("");
   const [phone31, setPhone31] = useState("");
+  const [certiNum, setCertiNum] = useState("");
   const handlePhoneNumberChange = (e) => {
     let formattedNumber = e.target.value.replace(/-/g, ""); // 하이픈 제거
     if (formattedNumber.length > 2 && formattedNumber.length < 6) {
@@ -78,6 +79,7 @@ function App2() {
     setIsOpen(false);
   }
   const [certiModalOpen, setCertiModalOpen] = useState(false);
+  
   function openModal() {
     setIsOpen(true);
   }
@@ -950,6 +952,28 @@ function App2() {
         }}
       ></h1>
       <div className="imgGrid"></div>
+      <Modal
+        isOpen={certiModalOpen}
+        onRequestClose={() => setCertiModalOpen(false)}
+        style={customStyles}
+        contentLabel="Example Modal"
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100%",
+          }}
+        >
+          <h2>문자로 온 인증번호를 입력해주세요</h2>
+          <input
+            value={certiNum}
+            onChange={(e) => setCertiNum(e.target.value)}
+          ></input>
+          <button onClick={() => certiSubmit()}>인증</button>
+        </div>
+      </Modal>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
