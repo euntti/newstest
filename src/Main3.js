@@ -478,7 +478,7 @@ function App2() {
            
             <li id="chklin31"> 
                     
-    <label>
+            <label style={{ color: "#fff" }}>
     <span class="label-header31">희망 <br /> 항목</span>
     <div class="radio-container3">
     <input
