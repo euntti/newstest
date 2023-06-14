@@ -138,37 +138,6 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
-.sbdiv3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.namephone31, .phone31, .time31 {
-  width: 100%;
-}
-
-.namephone31 input[type=text], 
-.phone31 input[type=tel], 
-.time31 select {
-  width: 100%; 
-  padding: 10px;
-  margin: 5px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-.nameArea31{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: inline-block;
-}
-
 
 .appPictureContainer31 {
   width: 800px;
@@ -190,55 +159,12 @@ body {
   color: white;
   font-size: 30px; */
 }
-.container31 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.radio-container3 {
-  margin-right: 10px; /* Adjust as needed */
-
-}
-.namephone31{
-/*  
-  align-items: center; */
-  flex-direction: row;
-  /* justify-content: space-between; */
-  border: 3px solid #000;
-  border-radius: 20px; /* 둥글게 */
-  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
-  font-size: 13px;
-  text-align: center;
-  background-color: #f9f9f9; /* 배경색 변경 */
-  color: #333; /* 텍스트 색상 변경 */
-  font-family: 'Arial', sans-serif; /* 글꼴 변경 */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
-  line-height: 100%;
-  width: 592px;
-}
-.phone31{
-  
-  /* align-items: center; */
-  flex-direction: row;
-  /* justify-content: space-between; */
-  border: 3px solid #000;
-  border-radius: 20px; /* 둥글게 */
-  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
-  font-size: 13px;
-  text-align: center;
-  background-color: #f9f9f9; /* 배경색 변경 */
-  color: #333; /* 텍스트 색상 변경 */
-  font-family: 'Arial', sans-serif; /* 글꼴 변경 */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
-  line-height: 100%;
-  width: 592px;
-}
 .sbdiv3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .nameArea31,
@@ -247,13 +173,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
-}
-
-.nameArea31 .namephone31,
-.nameArea31 .phone31,
-.nameArea31 .time31 {
-  margin: 0 10px;
+  gap: 10px;
 }
 
 .nameArea31 input,
@@ -264,27 +184,96 @@ body {
   border-radius: 10px;
 }
 
+.time31 select {
+  width: 200px;
+}
+
 .total3 li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.label-header31 {
-  margin-right: 10px;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 .radio-container3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
 }
 
 .radio-container3 input[type="radio"] {
   margin-right: 5px;
+}
+
+.label-header31 {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Additional Styling */
+
+.sbdiv3 {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nameArea31 input.username31 {
+  text-align: center;
+}
+
+.nameArea31 .phone31 input[type="tel"] {
+  width: 170px;
+}
+
+.total3 li {
+  list-style: none;
+}
+
+.total3 label {
+  display: flex;
+  align-items: center;
+}
+
+.total3 label span.label-header31 {
+  font-weight: bold;
+}
+
+.total3 .radio-container3 {
+  margin-right: 20px;
+}
+
+.total3 input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.total3 input[type="radio"]:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.total3 input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 2px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.total3 input[type="radio"]:hover {
+  border-color: #0056b3;
 }
 
 .footerInfo31 {
