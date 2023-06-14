@@ -186,7 +186,7 @@ function App8() {
                 >
                      <img
                     style={{ width: "100%", height: "auto" }}
-                    src={"/img/day.png"}
+                    src={"/img/day.gif"}
                     alt=""
                     />
                 </div>
@@ -201,7 +201,7 @@ function App8() {
               >
                   <img
                     style={{ width: "auto" , height: "auto" }}
-                    src={"/img/day.png"}
+                    src={"/img/day.gif"}
                     
                     alt="logo "
                   />
