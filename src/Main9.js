@@ -177,19 +177,19 @@ function App8() {
             <div className="appPictureContainer9">
               {isBrowser ? (
                 <div
-                  style={{
+                style={{
                     display: "flex",
-                    flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
-                  }}
-                >
-                     <img
-                    style={{ width: "100%", height: "auto" }}
+                    height: "100vh",  // 뷰포트의 높이를 100%로 설정
+                }}
+            >
+                <img
+                    style={{ width: isBrowser ? "100%" : "400px", height: "auto" }}
                     src={"/img/day.gif"}
-                    alt=""
-                    />
-                </div>
+                    alt="logo"
+                />
+            </div>
               ) : (
                 <div
                 style={{
