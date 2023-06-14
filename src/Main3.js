@@ -174,23 +174,23 @@ function App2() {
           return alert("인증번호가 잘못되었습니다");
         } else {
     
-    const phoneNumber = `${phone31}`;
-    const name = `${userName31}`;
-    const selectedTime = `${time31}`;
+   
     const investmentType31 = `${investmentType31}`;
     const investmentType32 = `${investmentType32}`;
     const investmentType33 = `${investmentType33}`;
     const investmentType34 = `${investmentType34}`;
-    const param = {
-      phoneNumber31: phoneNumber,
-      name31: name,
-      time31: selectedTime,
-      investmentType31:investmentType31,
-      investmentType32:investmentType32,
-      investmentType33:investmentType33,
-      investmentType34:investmentType34
-    };
-
+    const phoneNumber = phone31;
+    const name = userName31;
+    const selectedTime = time31;
+const param = {
+  phoneNumber31: phoneNumber,
+  name31: name,
+  time31: selectedTime,
+  investmentType31: investmentType31,
+  investmentType32: investmentType32,
+  investmentType33: investmentType33,
+  investmentType34: investmentType34
+};
     axios.post("/client", param).then((res) => {
       console.log("res=", res);
     });
@@ -202,8 +202,8 @@ function App2() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName31} 휴대폰 번호 ${phone31}님이 신청하였습니다. 통화가능한 시간은 ${time31} 입니다. 
-      고객님의 희망종목은 ${investmentType31} 희망수익률은  ${investmentType32} 희망수익금은  ${investmentType33} 투자성향은  ${investmentType34} 입니다.   `
+      `sb글로벌 ${name} 휴대폰 번호 ${phoneNumber}님이 신청하였습니다. 통화가능한 시간은 ${selectedTime} 입니다. 
+      고객님의 희망종목은 ${investmentType31} 희망수익률은 ${investmentType32} 희망수익금은 ${investmentType33} 투자성향은 ${investmentType34} 입니다.   `
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
     setCertiModalOpen(false);
@@ -806,7 +806,7 @@ function App2() {
                        <input
         type="radio"
         id="radio22"
-        name="investmentType4"
+        name="investmentType34"
         value="위험 추구형"
         checked={investmentType34 === "위험 추구형"}
         onChange={(e) => setInvestmentType34(e.target.value)}
