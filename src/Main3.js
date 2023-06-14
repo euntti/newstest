@@ -475,10 +475,9 @@ function App2() {
               </div>
             </div>
             <div class="total3">
+            <li id="chklin31">
+                      <label>
            
-            <li id="chklin31"> 
-                    
-            <label style={{ color: "#fff" }}>
     <span class="label-header31">희망 <br /> 항목</span>
     <div class="radio-container3">
     <input
