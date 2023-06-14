@@ -194,7 +194,7 @@ function App2() {
                     let labels = group.querySelectorAll('label');
                     for (let j = 0; j < labels.length; j++) {
                         labels[j].style.color = 'initial'; // Reset color of all labels
-                        labels[j].style.backgroundColor = 'initial'; // Reset background color of all labels
+                        labels[j].style.backgroundColor = 'white'; // Reset background color of all labels
                     }
 
                     if (this == lastChecked) {
@@ -203,7 +203,7 @@ function App2() {
                     } else {
                         let label = this.parentNode.querySelector('label'); // Get the associated label
                         label.style.color = 'initial'; // Change color of the associated label
-                        label.style.backgroundColor = 'white'; // Change background color of the associated label
+                        label.style.backgroundColor = 'gray'; // Change background color of the associated label
                         lastChecked = this; // Update lastChecked
                     }
                 });
