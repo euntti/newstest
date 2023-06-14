@@ -127,20 +127,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.container {
+.container8 {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
 }
-.sub {
+.sub8 {
 }
-.app30Picture {
+.appPictureContainer38 {
   width: 1200px;
   height: 1023px;
 }
-.nameArea{
+.nameArea9{
   display: block;
   justify-content: center;
   align-items: center;
@@ -170,11 +170,20 @@ table {
 
 }
 .phone9 input {
-  display: flex;
-  width: 600px;
-  height: 50px;
-  margin :0 0 0 0;
-  font-size: 18pt;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* border: 3px solid #000; */
+  border-radius: 20px; /* 둥글게 */
+  padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
+  font-size: 13px;
+  text-align: center;
+  /* background-color: #f9f9f9; 배경색 변경 */
+  color: #333; /* 텍스트 색상 변경 */
+  font-family: 'Arial', sans-serif; /* 글꼴 변경 */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
+  line-height: 100%;
+  width: 620px;
+  height: 38px;
 }
 .btnArea9 {
   margin :0 0 0 0;
@@ -192,7 +201,7 @@ table {
   color: white;
   font-size: 30px; */
 }
-.container {
+.container8 {
   display: flex;
   justify-content: center;
   flex-direction: column;
