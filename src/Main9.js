@@ -168,7 +168,7 @@ function App8() {
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         width: "1300px",
-        height: "2300px",
+        height: "2500px",
       }}
     >
       <div className="container9">
@@ -185,7 +185,7 @@ function App8() {
                 }}
             >
                 <img
-                    style={{ width: isBrowser ? "100%" : "400px" , paddingLeft: "150px"}}
+                    style={{ width: isBrowser ? "100%" : "400px" }}
                     src={"/img/day.gif"}
                     alt="logo"
                 />
