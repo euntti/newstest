@@ -229,22 +229,21 @@ table {
  
 
 .bottom-bar9{ 
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #25a5ff;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-    justify-content: center;
-    text-align: center;
-    width: 1050px;
-    height: 200px;
-
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 1050px;
+  height: 200px;
+  background-color: #25a5ff;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
 }
 .footerInfo {
   margin-top: 10px;
