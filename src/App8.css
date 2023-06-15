@@ -164,8 +164,6 @@ table {
   line-height: 100%;
   padding: 8px;
   text-align: center;
-  width: 200px;
-  height: 58px;
 }
  .time9 select {
   flex-direction: row;
@@ -234,6 +232,7 @@ table {
  
 
 .bottom-bar9{ 
+    display: flex; 
     position: fixed;
     bottom: 0;
     left: 0;

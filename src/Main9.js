@@ -233,7 +233,7 @@ function App8() {
             </div> */}
               <div className="namephone9 ">
               <div className="input-container9">
-  <div className="input-label9">이름</div>
+  <div className="input-label9"></div>
   <div className="namephone9">
     <input
       type="text"
@@ -246,7 +246,7 @@ function App8() {
 </div>
 
 <div className="input-container9">
-  <div className="input-label9">휴대폰</div>
+  <div className="input-label9"></div>
   <div className="phone9">
     <input
       type="tel"
