@@ -200,13 +200,11 @@ function App8() {
                   alignItems: "center",
                 }}
               >
-                  <img
-                    style={{ width: "400" , height: "auto" }}
-                    src={"/img/day.gif"}
-                    
-                    alt="logo "
-                  />
-                 
+                <img
+  style={{ width: isBrowser ? "100%" : "400px", height: "auto", paddingLeft: isBrowser ? "150px" : "0px"}}
+  src={"/img/day.gif"}
+  alt="logo"
+/>
                 </div>
               )}
             </div>
