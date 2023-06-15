@@ -180,18 +180,15 @@ function App8() {
                 <div
                     style={{
                         display: "flex",
-                        flexDirection: "column",
                         justifyContent: "center",
                         alignItems: "center",
-                        width: "100%",  // Set the width to 100%
-                        height: "auto",
+                        height: "100vh", // This makes the div take the full height of the viewport
                     }}
                 >
                     <img
                         style={{
                             maxWidth: "100%",  // The image will take the maximum width up to 100%.
                             height: "auto",
-                            margin: "0 auto",  // This centers the image horizontally.
                         }}
                         src={"/img/day.gif"}
                         alt="logo"
@@ -213,9 +210,7 @@ function App8() {
         <div>
             소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
         </div>
-    </div>
-
-            
+    </div> 
        <div className="bottom-bar9">
             <div className="nameArea9" style={{ marginLeft: 200 }}>
               {/* <div className="nameArea">

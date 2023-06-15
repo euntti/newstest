@@ -353,7 +353,24 @@ table {
     /* height: 50px; */
     cursor: pointer;
   }
-  
+  .bottom-bar9{ 
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 100px;
+    background-color: #25a5ff;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    height: 160px;
+  }
    .profit {
     display: flex;
     justify-content: center;
