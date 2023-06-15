@@ -245,14 +245,14 @@ table {
   justify-content: center;
   text-align: center;
 }
-.footerInfo {
+.footerInfo9 {
 
   margin-top: 10px;
   margin-left: 12px;
 }
 
-.footerInfo div {
-  
+.footerInfo9 div {
+
          display: flex;
         flex-direction: column;
         align-items: center;
