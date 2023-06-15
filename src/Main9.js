@@ -167,44 +167,45 @@ function App8() {
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
-        width: "1300px",
-        height: "2200px",
-      }}
+        width: isMobile ? "100vw" : "1300px", // For mobile screens, use 100% of the viewport width
+        height: isMobile ? "100vh" : "2200px", // For mobile screens, use 100% of the viewport height
+ 
+    }}
+     
     >
       <div className="container9">
         <div className="sub9">
           <div className="App9">
             <div className="appPictureContainer9">
-              {isBrowser ? (
-                <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "auto",  // 뷰포트의 높이를 100%로 설정
-                }}
+            {isBrowser ? (
+                        <div
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                height: "auto",
+                            }}
             >
                 <img
-                    style={{ width: isBrowser ? "100%" : "400px" ,paddingLeft:"150px"}}
-                    src={"/img/day.gif"}
-                    alt="logo"
-                />
+                                style={{ width: "100%", paddingLeft:"150px"}}
+                                src={"/img/day.gif"}
+                                alt="logo"
+                            />
             </div>
               ) : (
                 <div
                 style={{
-            
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
                 }}
-              >
-                <img
-  style={{ width: isBrowser ? "100%" : "400px", height: "auto", paddingLeft: isBrowser ? "150px" : "0px"}}
-  src={"/img/day.gif"}
-  alt="logo"
-/>
+            >
+                 <img
+                                style={{ width: "100%", height: "auto" }} // On mobile screens, the image will take 100% of the width
+                                src={"/img/day.gif"}
+                                alt="logo"
+                            />
                 </div>
               )}
             </div>
@@ -232,7 +233,7 @@ function App8() {
       </div>
       <div
         style={{ display: "block", position: "relative", textAlign: "center" }}
-      > 
+    >  
         <div className="footerInfo9">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
