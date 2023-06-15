@@ -214,7 +214,7 @@ function App8() {
           <div></div>
         </div>
       </div>
-      <div className="footerInfo">
+      <div className="footerInfo9">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
 
