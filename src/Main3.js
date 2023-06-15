@@ -250,18 +250,21 @@ function App2() {
 }
   return (
     <div
-      style={{
-        backgroundImage: isMobile
-          ? `url("/img/inbox.png")`
-          : `url("/img/inbox.png")`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        // width: "auto",
-        height: "3000px",
-      }}
-    >
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundImage: isMobile
+        ? `url("/img/inbox.png")`
+        : `url("/img/inbox.png")`,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundAttachment: "fixed",
+      height: "3000px",
+    }}
+  >
+    
       <div className="container31">
         <div className="sub31">
           <div className="App31">
@@ -281,11 +284,11 @@ function App2() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                  <img
-                    src={"/img/theme1.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
-                  />
+                   <img
+                     style={{ width: "100%", height: "auto" }}
+                      src={"/img/theme1.png"}
+                      alt="logo"
+                      />
                   {/* <img
                     src={"/img/theme2.png"}
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
@@ -324,11 +327,10 @@ function App2() {
                     // style={{ width: 800, height: 1023, marginLeft: 20 }}
                     alt="logo "
                   /> */}
-                  <img
-                    style={{ width: 400 }}
-                    src={"/img/bg2.png"}
-                    // style={{ width: 800, height: 1023, marginLeft: 20 }}
-                    alt="logo "
+                 <img
+                  style={{ width: "400px", height: "auto" }}
+                  src={"/img/bg2.png"}
+                  alt="logo"
                   />
                   {/* <img
                     style={{ width: 300 }}
