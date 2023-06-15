@@ -333,9 +333,9 @@ function App8() {
             <div className="btnArea9">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
-                  <img src={"/img/btn.gif"}></img>
+                  <img src={"/img/click.gif"}></img>
                 ) : (
-                  <img style={{ width: "390px" }} src={"/img/btn.gif"}></img>
+                  <img style={{ width: "390px" }} src={"/img/click.gif"}></img>
                 )}
               </button>
             </div>
