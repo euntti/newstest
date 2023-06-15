@@ -214,7 +214,10 @@ function App8() {
           <div></div>
         </div>
       </div>
-      <div className="footerInfo9">
+      <div
+        style={{ display: "block", position: "relative", textAlign: "center" }}
+      > 
+        <div className="footerInfo9">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
 
@@ -223,10 +226,6 @@ function App8() {
             소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
           </div>
         </div>
-      <div
-        style={{ display: "block", position: "relative", textAlign: "center" }}
-      > 
-       
           
        
             
