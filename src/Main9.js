@@ -280,7 +280,6 @@ function App8() {
                 </select>
                
               </div> */}
-            </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
                 <input
@@ -330,10 +329,11 @@ function App8() {
                 </a>
               </label>
             </div>
+            </div>
             <div className="btnArea9">
               <button onClick={(e) => submitEvent(e)}>
                 {isBrowser ? (
-                  <img src={"/img/click.gif"}></img>
+                  <img src={"/img/click.gif"} style={{ width: "150px", paddingRight:"400px" }}></img>
                 ) : (
                   <img style={{ width: "390px" }} src={"/img/click.gif"}></img>
                 )}
