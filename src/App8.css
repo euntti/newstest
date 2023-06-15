@@ -242,7 +242,7 @@ table {
     overflow: hidden;
     justify-content: center;
     text-align: center;
-   
+    width: 1050px;
     height: 200px;
 
 }
