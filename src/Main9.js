@@ -257,7 +257,7 @@ function App8() {
                        onChange={handlePhoneNumberChange}
                       />
               </div>
-              <div className="time9">
+              {/* <div className="time9">
                 <select value={time9} onChange={(e) => setTime9(e.target.value)}>
                   <option value="">통화가능시간(필수)</option>
                   <option value="06:00-09:00">06:00-09:00</option>
@@ -271,7 +271,7 @@ function App8() {
                   <option value="23:00-06:00">23:00-06:00</option>
                 </select>
                
-              </div>
+              </div> */}
             </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
