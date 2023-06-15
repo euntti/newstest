@@ -161,7 +161,8 @@ function App8() {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'space-between',
+        justifyContent: 'center',  // This will center the children vertically
+        alignItems: 'center',     // This will center the children horizontally
         backgroundImage: isMobile ? `url("/img/bg2.png")` : `url("/img/bg2.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -169,39 +170,46 @@ function App8() {
         backgroundAttachment: "fixed",
         width: isMobile ? "100vw" : "1300px", // For mobile screens, use 100% of the viewport width
         height: isMobile ? "100vh" : "2200px", // For mobile screens, use 100% of the viewport height
- 
     }}
-     
     >
-   <div className="container9">
-    <div className="sub9">
-        <div className="App9">
-            <div className="appPictureContainer9">
-                <div
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        height: "100vh", // This makes the div take the full height of the viewport
-                    }}
-                >
-                    <img
+    <div className="container9">
+        <div className="sub9">
+            <div className="App9">
+                <div className="appPictureContainer9">
+                    <div
                         style={{
-                            maxWidth: "100%",  // The image will take the maximum width up to 100%.
-                            height: "auto",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            height: "100vh", // This makes the div take the full height of the viewport
                         }}
-                        src={"/img/day.gif"}
-                        alt="logo"
-                    />
+                    >
+                        <img
+                            style={{
+                                maxWidth: "100%",  // The image will take the maximum width up to 100%.
+                                height: "auto",
+                            }}
+                            src={"/img/day.gif"}
+                            alt="logo"
+                        />
+                    </div>
                 </div>
+                <div></div>
             </div>
-            <div></div>
         </div>
     </div>
-</div>
-<div
-    style={{ display: "block", position: "relative", textAlign: "center" }}
->    
+    <div
+        style={{ display: "block", position: "relative", textAlign: "center" }}
+    >    
+        <div className="footerInfo9">
+            <div>상호명:(주)SB 글로벌 투자그룹 </div>
+            <div>대표자:엄원택 </div>
+            <div>사업자등록번호: 178-88-01858 </div>
+            <div>
+                소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
+            </div>
+        </div>
+    
     <div className="footerInfo9">
         <div>상호명:(주)SB 글로벌 투자그룹 </div>
         <div>대표자:엄원택 </div>
