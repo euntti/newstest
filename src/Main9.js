@@ -230,7 +230,7 @@ function App8() {
        
             
        <div className="bottom-bar9">
-            <div className="nameArea9">
+            <div className="nameArea9" style="padding-left:200px">
               {/* <div className="nameArea">
               <input
                 type="text"
