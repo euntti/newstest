@@ -140,12 +140,12 @@ table {
   width: 1200px;
   height: 1023px;
 }
-.nameArea9{
+/* .nameArea9{
   display: block;
   justify-content: center;
   align-items: center;
   
- }
+ } */
  .input-container9 {
   display: flex;
   justify-content: space-around;  /* 내부 아이템들 사이에 여백을 분배 */
@@ -164,6 +164,7 @@ table {
   line-height: 100%;
   padding: 8px;
   text-align: center;
+  width: 200px;
 }
  .time9 select {
   flex-direction: row;
