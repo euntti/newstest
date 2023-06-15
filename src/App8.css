@@ -146,7 +146,7 @@ table {
   align-items: center;
   
  }
- .username9  input[type=text], 
+ .namephone9  input[type=text], 
  .phone9 input[type=tel] {
    flex-direction: row;
    /* justify-content: space-between; */
@@ -181,7 +181,7 @@ table {
   height: 58px;
 }
 
-.username9 {
+.namephone9 {
   flex-direction: row;
   /* justify-content: space-between; */
   /* border: 3px solid #000; */
