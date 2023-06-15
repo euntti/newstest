@@ -35,8 +35,8 @@ const Main9 = () => {
 
 function App8() {
   axios.defaults.baseURL = "https://sbstock.co.kr";
-  const [userName, setUserName] = useState("");
-  const [phone1, setPhone1] = useState("");
+  const [userName9, setUserName9] = useState("");
+  const [phone19, setPhone19] = useState("");
   const handlePhoneNumberChange = (e) => {
     let formattedNumber = e.target.value.replace(/-/g, ""); // 하이픈 제거
     if (formattedNumber.length > 2 && formattedNumber.length < 6) {
@@ -53,7 +53,7 @@ function App8() {
   
 
   const [num, setNum] = useState(331231);
-  const [time, setTime] = useState("");
+  const [time9, setTime9] = useState("");
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
@@ -100,13 +100,13 @@ function App8() {
 
   const submitEvent = (e) => {
     e.preventDefault();
-    if (userName == "") {
+    if (userName9 == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phone1 == "") {
+    if (phone19 == "") {
       return alert("'-'없이 입력을 해주세요.");
     }
-    if (time == "") {
+    if (time9 == "") {
       return alert("통화시간 선택해주세요");
     }
 
@@ -120,13 +120,13 @@ function App8() {
       return alert("광고성문자동의 체크해주세요.");
     }
 
-    const phoneNumber = `${phone1}`;
-    const name = `${userName}`;
-    const selectedTime = `${time}`;
+    const phoneNumber = `${phone19}`;
+    const name = `${userName9}`;
+    const selectedTime = `${time9}`;
     const param = {
-      phoneNumber: phoneNumber,
-      name: name,
-      time: selectedTime,
+      phoneNumber99: phoneNumber,
+      name99: name,
+      time99: selectedTime,
     };
 
     axios.post("/client", param).then((res) => {
@@ -140,7 +140,7 @@ function App8() {
     const telegramApi = new TelegramApi(TELEGRAM_TOKEN);
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      `sb글로벌 ${userName} 휴대폰 번호 ${phone1}님이 신청하였습니다. 통화가능한 시간은 ${time} 입니다. `
+      `sb글로벌 ${userName9} 휴대폰 번호 ${phone19}님이 신청하였습니다. 통화가능한 시간은 ${time9} 입니다. `
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다.");
   };
@@ -243,22 +243,22 @@ function App8() {
                   className="username9"
                   placeholder="이름"
                   maxLength={4}
-                  onChange={(e) => setUserName(e.target.value)}
+                  onChange={(e) => setUserName9(e.target.value)}
                 />
               </div>
               {"\t"}
               <div className="phone9">
                 <input
                        type="tel"
-                       name="user_name"
+                       name="user_name9"
                        placeholder="휴대폰"
                        maxLength={13}
-                       value={phone1}
+                       value={phone19}
                        onChange={handlePhoneNumberChange}
                       />
               </div>
               <div className="time9">
-                <select value={time} onChange={(e) => setTime(e.target.value)}>
+                <select value={time9} onChange={(e) => setTime9(e.target.value)}>
                   <option value="">통화가능시간(필수)</option>
                   <option value="06:00-09:00">06:00-09:00</option>
                   <option value="09:00-11:00">09:00-11:00</option>
