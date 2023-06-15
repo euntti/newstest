@@ -282,50 +282,52 @@ table {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 600px) 
+{
+ 
   .container9 {
     width: 100%;
     display: flex;
     flex-direction: column; /* This aligns the items in a vertical column */
     align-items: center; /* This centers the items horizontally */
-    justify-content: center; /* This centers the items vertically */
+    justify-content: center
+    /* justify-content: center; */
   }
-
   .App9 {
-    width: 90%; /* Adjust width according to your need */
-    margin: 0 auto; /* Center the App9 horizontally */
   }
-
   .appPictureContainer9 {
     display: flex;
     justify-content: center;
-    width: 100%; /* Make this element take full width */
   }
-
   .appPicture {
-    width: 100%; /* Make the picture take full width */
-    max-width: 600px; /* To keep image from stretching beyond its maximum resolution */
-    height: auto; /* Keep aspect ratio */
+    width: 90vw;
+    margin-left: 0px;
+    /* width:10vw; */
+    /* height:300px; */
   }
-
-  .nameArea9 {
-    display: flex;
-    flex-direction: column; /* Stack the items vertically */
-    align-items: center; /* Center the items horizontally */
-    width: 100%; /* Make this element take full width */
-  }
+  .nameArea9{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+   }
 
   .namephone9 {
-    display: flex;
-    justify-content: center;
-    width: 100%; /* Make this element take full width */
-  }
+   
+    /* background-color: red; */
 
+    
+    display: block;
+    justify-content: center;
+    
+  }
   .namephone9 input {
-    width: 90%; /* Adjust according to your need */
-    max-width: 370px; /* Keep input field from getting too large */
+    /* padding-left: 10px;
+    width: 80vw;
+    height: 50px; */
+    justify-content: center;
     height: 45px;
-    margin-bottom: 10px; /* Add some space below each input field */
+    width: 370px;
   }
   .App9 .phone9 {
     display: block;
