@@ -185,7 +185,7 @@ function App8() {
                 }}
             >
                 <img
-                    style={{ width: isBrowser ? "100%" : "400px" }}
+                    style={{ width: isBrowser ? "100%" : "400px" , paddingLeft: "150px"}}
                     src={"/img/day.gif"}
                     alt="logo"
                 />
