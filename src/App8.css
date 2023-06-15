@@ -150,6 +150,7 @@ table {
  .phone9 input[type=tel] {
    flex-direction: row;
    justify-content: space-between; 
+   display: flex;
    /* border: 3px solid #000; */
    border-radius: 20px; /* 둥글게 */
    padding: 8px; /* padding을 추가하여 테두리와 내용 사이에 간격을 만듭니다. */
@@ -160,7 +161,7 @@ table {
    font-family: 'Arial', sans-serif; /* 글꼴 변경 */
    box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* 그림자 효과 추가 */
    line-height: 100%;
-   width: 620px;
+   width: 150px;
    height: 38px;
  }
 
