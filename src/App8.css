@@ -146,6 +146,15 @@ table {
   align-items: center;
   
  }
+ .input-container9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-label9 {
+  margin-right: 10px; /* 레이블과 입력 필드 사이의 간격 */
+}
  .namephone9  input[type=text], 
  .phone9 input[type=tel] {
    flex-direction: row;
@@ -246,7 +255,7 @@ table {
     justify-content: center;
     text-align: center;
    
-    height: 200px;
+    height: 150px;
 
 }
 .footerInfo {

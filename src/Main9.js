@@ -232,31 +232,32 @@ function App8() {
               ></input>
             </div> */}
               <div className="namephone9 ">
-                {/* {<select>
-                <option key="1" value="1">
-                  010
-                </option> 
-              </select>{" "}
-              -{"\t"}} */}
-                <input
-                  type="text"
-                  className="username9"
-                  placeholder="이름"
-                  maxLength={4}
-                  onChange={(e) => setUserName9(e.target.value)}
-                />
-              </div>
-              {"\t"}
-              <div className="phone9">
-                <input
-                       type="tel"
-                       name="user_name9"
-                       placeholder="휴대폰"
-                       maxLength={13}
-                       value={phone19}
-                       onChange={handlePhoneNumberChange}
-                      />
-              </div>
+              <div className="input-container9">
+  <div className="input-label9">이름</div>
+  <div className="namephone9">
+    <input
+      type="text"
+      className="username9"
+      placeholder="이름"
+      maxLength={4}
+      onChange={(e) => setUserName9(e.target.value)}
+    />
+  </div>
+</div>
+
+<div className="input-container9">
+  <div className="input-label9">휴대폰</div>
+  <div className="phone9">
+    <input
+      type="tel"
+      name="user_name9"
+      placeholder="휴대폰"
+      maxLength={13}
+      value={phone19}
+      onChange={handlePhoneNumberChange}
+    />
+  </div>
+</div>
               <div className="time9">
                 <select value={time9} onChange={(e) => setTime9(e.target.value)}>
                   <option value="">통화가능시간(필수)</option>
@@ -272,6 +273,7 @@ function App8() {
                 </select>
                
               </div>
+            </div>
             </div>
             <div style={{ marginLeft: 10 }}>
               <label style={{ color: "#fff" }}>
