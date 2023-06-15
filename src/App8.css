@@ -233,7 +233,7 @@ table {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 1200px;
+  width: 1190px;
   height: 150px;
   background-color: #25a5ff;
   color: #fff;
@@ -246,10 +246,13 @@ table {
   text-align: center;
 }
 .footerInfo {
+
   margin-top: 10px;
   margin-left: 12px;
 }
+
 .footerInfo div {
+  
          display: flex;
         flex-direction: column;
         align-items: center;

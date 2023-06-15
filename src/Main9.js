@@ -155,20 +155,20 @@ function App8() {
     autoplaySpeed: 3000,
   };
   return (
+    
     <div>
     <div
       style={{
-        backgroundImage: isMobile
-          ? `url("/img/bg2.png")`
-          : `url("/img/bg2.png")`,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        backgroundImage: isMobile ? `url("/img/bg2.png")` : `url("/img/bg2.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         width: "1300px",
         height: "2000px",
-      
-     
       }}
     >
       <div className="container9">
