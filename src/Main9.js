@@ -173,7 +173,7 @@ function App8() {
     }}
      
     >
-     <div className="container9">
+   <div className="container9">
     <div className="sub9">
         <div className="App9">
             <div className="appPictureContainer9">
@@ -183,13 +183,15 @@ function App8() {
                         flexDirection: "column",
                         justifyContent: "center",
                         alignItems: "center",
+                        width: "100%",  // Set the width to 100%
+                        height: "auto",
                     }}
                 >
                     <img
                         style={{
-                            width: isBrowser ? "100%" : "100%",  // If it's a browser, the image will take 100% of the width. If it's mobile, it will also take 100% of the width.
+                            maxWidth: "100%",  // The image will take the maximum width up to 100%.
                             height: "auto",
-                            paddingLeft: isBrowser ? "150px" : "0px",  // If it's a browser, there will be 150px padding on the left. If it's mobile, there will be no padding on the left.
+                            margin: "0 auto",  // This centers the image horizontally.
                         }}
                         src={"/img/day.gif"}
                         alt="logo"
@@ -213,7 +215,6 @@ function App8() {
         </div>
     </div>
 
-       
             
        <div className="bottom-bar9">
             <div className="nameArea9" style={{ marginLeft: 200 }}>
