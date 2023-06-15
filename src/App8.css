@@ -312,14 +312,14 @@ table {
 }
 @media (max-width: 600px) 
 {
-  .container {
+  .container9 {
     display: flex;
     align-items: center;
     /* justify-content: center; */
   }
-  .App {
+  .App9 {
   }
-  .appPictureContainer3 {
+  .appPictureContainer9 {
     display: flex;
     justify-content: center;
   }
@@ -329,14 +329,14 @@ table {
     /* width:10vw; */
     /* height:300px; */
   }
-  .nameArea{
+  .nameArea9{
     display: block;
     justify-content: center;
     align-items: center;
     
    }
 
-  .namephone {
+  .namephone9 {
    
     /* background-color: red; */
 
@@ -345,7 +345,7 @@ table {
     justify-content: center;
     
   }
-  .namephone input {
+  .namephone9 input {
     /* padding-left: 10px;
     width: 80vw;
     height: 50px; */
@@ -353,15 +353,15 @@ table {
     height: 45px;
     width: 370px;
   }
-  .App .phone {
+  .App9 .phone9 {
     display: block;
     justify-content: center;
     /* background-color:red; */
   }
-  .App .phone select {
+  .App9 .phone9 select {
     /* width: 15vw; */
   }
-  .App .phone input {
+  .App9 .phone9 input {
     justify-content: center;
     /* padding-left: 10px;
     width: 80vw;
@@ -370,7 +370,7 @@ table {
     height: 45px;
     width: 370px;
   }
-  .App .btnArea button {
+  .App9 .btnArea9 button {
     display: flex; 
     width: 500px;
  
