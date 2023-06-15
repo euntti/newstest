@@ -165,6 +165,7 @@ table {
   padding: 8px;
   text-align: center;
   width: 200px;
+  height: 58px;
 }
  .time9 select {
   flex-direction: row;
