@@ -168,7 +168,7 @@ function App8() {
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         width: "1300px",
-        height: "2000px",
+        height: "2300px",
       }}
     >
       <div className="container9">
