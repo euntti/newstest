@@ -208,6 +208,24 @@ function App8() {
                 </div>
               )}
             </div>
+            <div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  }}
+>
+  <img
+    style={{
+      width: isMobile ? "100%" : "400px",  // If it's mobile, the image will take 100% of the width. If it's not, it will be 400px.
+      height: "auto",
+      paddingLeft: isMobile ? "0px" : "150px",  // If it's mobile, there will be no padding on the left. If it's not, it will be 150px.
+    }}
+    src={"/img/day.gif"}
+    alt="logo"
+  />
+</div>
           </div>
           <div></div>
         </div>
