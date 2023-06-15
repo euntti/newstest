@@ -130,9 +130,9 @@ table {
 .container9 {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
+  flex-direction: column; /* This aligns the items in a vertical column */
+  align-items: center; /* This centers the items horizontally */
+  justify-content: center
 }
 .sub9 {
 }
