@@ -173,77 +173,46 @@ function App8() {
     }}
      
     >
-      <div className="container9">
-        <div className="sub9">
-          <div className="App9">
+     <div className="container9">
+    <div className="sub9">
+        <div className="App9">
             <div className="appPictureContainer9">
-            {isBrowser ? (
-                        <div
-                            style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                height: "auto",
-                            }}
-            >
-                <img
-                                style={{ width: "100%", paddingLeft:"150px"}}
-                                src={"/img/day.gif"}
-                                alt="logo"
-                            />
-            </div>
-              ) : (
                 <div
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}
-            >
-                 <img
-                                style={{ width: "100%", height: "auto" }} // On mobile screens, the image will take 100% of the width
-                                src={"/img/day.gif"}
-                                alt="logo"
-                            />
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
+                    <img
+                        style={{
+                            width: isBrowser ? "100%" : "100%",  // If it's a browser, the image will take 100% of the width. If it's mobile, it will also take 100% of the width.
+                            height: "auto",
+                            paddingLeft: isBrowser ? "150px" : "0px",  // If it's a browser, there will be 150px padding on the left. If it's mobile, there will be no padding on the left.
+                        }}
+                        src={"/img/day.gif"}
+                        alt="logo"
+                    />
                 </div>
-              )}
             </div>
-            <div
-  style={{
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  }}
->
-  <img
-    style={{
-      width: isMobile ? "100%" : "400px",  // If it's mobile, the image will take 100% of the width. If it's not, it will be 400px.
-      height: "auto",
-      paddingLeft: isMobile ? "0px" : "150px",  // If it's mobile, there will be no padding on the left. If it's not, it will be 150px.
-    }}
-    src={"/img/day.gif"}
-    alt="logo"
-  />
+            <div></div>
+        </div>
+    </div>
 </div>
-          </div>
-          <div></div>
-        </div>
-      </div>
-      <div
-        style={{ display: "block", position: "relative", textAlign: "center" }}
-    >  
-        <div className="footerInfo9">
-          <div>상호명:(주)SB 글로벌 투자그룹 </div>
-          <div>대표자:엄원택 </div>
+<div
+    style={{ display: "block", position: "relative", textAlign: "center" }}
+>    
+    <div className="footerInfo9">
+        <div>상호명:(주)SB 글로벌 투자그룹 </div>
+        <div>대표자:엄원택 </div>
 
-          <div>사업자등록번호: 178-88-01858 </div>
-          <div>
+        <div>사업자등록번호: 178-88-01858 </div>
+        <div>
             소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
-          </div>
         </div>
-          
+    </div>
+
        
             
        <div className="bottom-bar9">
