@@ -371,21 +371,21 @@ table {
    {
     width: 150px;
      align-items: center;
-     
+
   }
 
-  .App .bottom-bar9 {
-    flex-direction: row;
-    align-items: center;
-    }
+.App .bottom-bar9 {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* 추가: 가로 중앙 정렬 */
+}
 
-  
-
-  .App .namephone9 input[type=text], 
- .phone9 input[type=tel] {
-      width: 200px;
-    }
-
+.App .namephone9 input[type="text"],
+.App .phone9 input[type="tel"] {
+  width: 200px;
+  margin-left: auto; /* 추가: 왼쪽 여백을 auto로 설정하여 가운데로 정렬 */
+  margin-right: auto; /* 추가: 오른쪽 여백을 auto로 설정하여 가운데로 정렬 */
+}
    .profit {
     display: flex;
     justify-content: center;
