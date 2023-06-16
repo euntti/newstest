@@ -175,10 +175,14 @@ function App8() {
     <div className="container9">
         <div className="sub9">
             <div className="App9">
-            <div className="appPictureContainer9"
+            <div 
+    className="appPictureContainer9"
     style={{
         height: "100%", 
-        width: "100%" 
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
     }}
 >
     <img
@@ -187,14 +191,20 @@ function App8() {
             maxWidth: "100%", 
             maxHeight: "85%", 
             height: "auto",
-            objectFit: "contain",
-            margin: "auto"   // This will center the image
+            objectFit: "contain"
         }}
         src={"/img/day.gif"}
         alt="logo"
     />
 </div>
- 
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div
+        style={{ display: "block", position: "relative", textAlign: "center" }}
+    > 
+    
     <div className="footerInfo9">
         <div>상호명:(주)SB 글로벌 투자그룹 </div>
         <div>대표자:엄원택 </div>
