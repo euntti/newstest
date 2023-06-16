@@ -371,6 +371,7 @@ table {
    {
     width: 150px;
      align-items: center;
+     
   }
 
   .App .bottom-bar9 {
@@ -380,9 +381,9 @@ table {
 
   
 
-    .App .namephone9  input[type=text], 
+  .App .namephone9 input[type=text], 
  .phone9 input[type=tel] {
-      width: 150px;
+      width: 200px;
     }
 
    .profit {
