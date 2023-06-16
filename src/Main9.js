@@ -178,26 +178,25 @@ function App8() {
             <div className="appPictureContainer9"
     style={{
         display: "flex",
-        flexDirection: "column", // Change layout direction to column
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         height: "100vh", 
         width: "100vw" 
     }}
 >
-    <h1 style={{ margin: 0 }}>Title</h1>  // Add your title here
+    <h1 style={{ margin: 0 }}>Title</h1>
     <img
         style={{
-            maxWidth: "100%",  
+            maxWidth: "100%", 
+            maxHeight: "85%", // This will limit the height of the image to 85% of its parent container
             height: "auto",
+            objectFit: "contain" // This will make sure your image scales correctly to its container
         }}
         src={"/img/day.gif"}
         alt="logo"
     />
-</div>
-
-
-           
+</div>         
                 <div></div>
             </div>
         </div>
