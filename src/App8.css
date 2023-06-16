@@ -288,13 +288,6 @@ table {
   .appPictureContainer9 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .appPictureContainer9 img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
   }
   .appPicture9 {
     width: 90vw;
@@ -399,6 +392,9 @@ table {
   .imgGrid {
     display: block;
   }
-
+  .appPictureContainer9 img{
+    width: 600px;
+    
+  }
   
 }
