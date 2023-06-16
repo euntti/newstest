@@ -377,9 +377,11 @@ table {
     align-items: center;
     }
 
-    .username9,
-    .phone9 input {
-      width: 200px;
+  
+
+ .namephone9  input[type=text], 
+ .phone9 input[type=tel] {
+      width: 150px;
     }
    .profit {
     display: flex;
