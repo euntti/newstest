@@ -181,11 +181,11 @@ function App8() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh", 
-        width: "100vw" 
+        height: "100%", 
+        width: "100%" 
     }}
 >
-    <h1 style={{ margin: 0 }}>Title</h1>
+   
     <img
         style={{
             maxWidth: "100%", 
