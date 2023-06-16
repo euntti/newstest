@@ -193,15 +193,7 @@ function App8() {
         style={{ display: "block", position: "relative", textAlign: "center" }}
     > 
     
-    <div className="footerInfo9">
-        <div>상호명:(주)SB 글로벌 투자그룹 </div>
-        <div>대표자:엄원택 </div>
-
-        <div>사업자등록번호: 178-88-01858 </div>
-        <div>
-            소재지: 고양시 대자동 업종:증권정보교육 프로그램개발 및 판매
-        </div>
-    </div> 
+    
        <div className="bottom-bar9">
             <div className="nameArea9" style={{ marginLeft: 200 }}>
               {/* <div className="nameArea">

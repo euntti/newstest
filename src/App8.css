@@ -355,12 +355,15 @@ table {
     background-color: #c10000;
   }
   .App .btnArea9 {
-    width: auto;
+    width: 100px;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     display: flex;
     justify-content: center;
     background-color: #c10000;
+  }
+    .btnArea9 img {
+    width: 100px; /* 모바일 장치에 맞는 크기로 조정 */
   }
 
   .App .namephone9,
