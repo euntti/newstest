@@ -271,7 +271,7 @@ table {
 }
 
 
-@media (max-width: 412px) 
+@media (max-width: 600px) 
 {
   .container9 {
     width: 300px;
@@ -348,21 +348,25 @@ table {
     width: 370px;
   }
  
-  .App .btnArea9 button {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    cursor: pointer;
-    background-color: #c10000;
-  }
   .App .btnArea9 {
-    width: 100px;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #c10000;
   }
-    .btnArea9 img {
+  
+  .App .btnArea9 button {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: #c10000;
+    border: none; /* 필요에 따라 테두리 스타일 제거 */
+  }
+  
+  .App .btnArea9 img {
     width: 100px; /* 모바일 장치에 맞는 크기로 조정 */
   }
 
@@ -375,16 +379,16 @@ table {
   }
 
 .App .bottom-bar9 {
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: center; /* 추가: 가로 중앙 정렬 */
+  justify-content: center;
 }
 
 .App .namephone9 input[type="text"],
 .App .phone9 input[type="tel"] {
-  width: 200px;
-  margin-left: auto; /* 추가: 왼쪽 여백을 auto로 설정하여 가운데로 정렬 */
-  margin-right: auto; /* 추가: 오른쪽 여백을 auto로 설정하여 가운데로 정렬 */
+  width: 100%; /* 100% 너비로 설정하여 가로 폭을 차지하도록 변경 */
+  max-width: 200px; /* 필요한 경우 최대 너비를 지정합니다 */
+  margin: 10px 0; /* 필요한 여백을 지정합니다 */
 }
    .profit {
     display: flex;
