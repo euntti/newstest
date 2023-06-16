@@ -379,10 +379,11 @@ table {
 
   
 
- .namephone9  input[type=text], 
+    .App .namephone9  input[type=text], 
  .phone9 input[type=tel] {
       width: 150px;
     }
+
    .profit {
     display: flex;
     justify-content: center;
