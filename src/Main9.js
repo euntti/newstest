@@ -175,25 +175,26 @@ function App8() {
     <div className="container9">
         <div className="sub9">
             <div className="App9">
-                <div className="appPictureContainer9">
-                    <div
-                        style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            height: "100vh", // This makes the div take the full height of the viewport
-                        }}
-                    >
-                        <img
-                            style={{
-                                maxWidth: "100%",  // The image will take the maximum width up to 100%.
-                                height: "auto",
-                            }}
-                            src={"/img/day.gif"}
-                            alt="logo"
-                        />
-                    </div>
-                </div>
+            <div className="appPictureContainer9"
+    style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh", // This makes the div take the full height of the viewport
+        width: "100vw" // This makes the div take the full width of the viewport
+    }}
+>
+    <img
+        style={{
+            maxWidth: "100%",  // The image will take the maximum width up to 100%.
+            height: "auto",
+        }}
+        src={"/img/day.gif"}
+        alt="logo"
+    />
+</div>
+
+           
                 <div></div>
             </div>
         </div>
