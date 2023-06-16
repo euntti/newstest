@@ -308,7 +308,7 @@ function App8() {
                 {isBrowser ? (
                   <img src={"/img/click.gif"} style={{ width: "150px", paddingRight:"400px" }}></img>
                 ) : (
-                  <img style={{ width: "390px" }} src={"/img/click.gif"}></img>
+                  <img style={{ width: "150px", paddingRight:"400px" }} src={"/img/click.gif"}></img>
                 )}
               </button>
             </div>
