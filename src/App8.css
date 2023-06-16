@@ -271,27 +271,25 @@ table {
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-@media (max-width: 600px) 
+@media (max-width: 412px) 
 {
- 
-  .App9, .appPictureContainer9 {
+  .container9 {
+    width: 300px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
-}
-  .App9 {
+    /* justify-content: center; */
+  }
+  .App9 .bottom-bar9 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .appPictureContainer9 {
     display: flex;
     justify-content: center;
   }
-  .appPicture {
+  .appPicture9 {
     width: 90vw;
     margin-left: 0px;
     /* width:10vw; */
@@ -302,67 +300,83 @@ table {
     justify-content: center;
     align-items: center;
     
-   }
+    
+  }
 
   .namephone9 {
-   
-    /* background-color: red; */
-
-    
+  
     display: block;
     justify-content: center;
     
   }
+
   .namephone9 input {
-    /* padding-left: 10px;
-    width: 80vw;
-    height: 50px; */
+   
     justify-content: center;
     height: 45px;
-    width: 370px;
+    width: 150px;
   }
-  .App9 .phone9 {
+
+  .App9 .row {
+    gap: 0px;
+    width: 412px;
+
+  }
+  .App .phone9 {
     display: block;
     justify-content: center;
     /* background-color:red; */
   }
-  .App9 .phone9 select {
+  .App .phone9 select {
     /* width: 15vw; */
   }
-  .App9 .phone9 input {
+  .App .phone9 input {
     justify-content: center;
     /* padding-left: 10px;
     width: 80vw;
     height: 50px;
     justify-content: center */
     height: 45px;
+    width: 220px;
+  }
+  .App .time9 select {
+    /* background-color:red; */
+    align-items: center;
+    display: block;
+    justify-content: center;
+    height: 45px;
     width: 370px;
   }
-  .App9 .btnArea9 button {
-    display: flex; 
-    width: 500px;
  
-    /* height: 50px; */
+  .App .btnArea9 button {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
     cursor: pointer;
+    background-color: #c10000;
   }
-  .bottom-bar9{ 
-    position: fixed;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 300px;
-    height: 100px;
-    background-color: #25a5ff;
-    color: #fff;
+  .App .btnArea9 {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
     justify-content: center;
-    text-align: center;
-    height: 160px;
+    background-color: #c10000;
   }
+
+  .App .namephone9,
+  .phone9
+   {
+     align-items: center;
+  }
+
+  .App .bottom-bar9 {
+    flex-direction: row;
+    align-items: center;
+    }
+
+    .username9,
+    .phone9 input {
+      width: 200px;
+    }
    .profit {
     display: flex;
     justify-content: center;
@@ -381,6 +395,10 @@ table {
   } */
   .imgGrid {
     display: block;
+  }
+  .appPictureContainer9 img{
+    width: 600px;
+    
   }
   
 }
