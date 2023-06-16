@@ -355,6 +355,7 @@ table {
     background-color: #c10000;
   }
   .App .btnArea9 {
+    width: auto;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     display: flex;
