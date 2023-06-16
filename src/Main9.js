@@ -175,21 +175,12 @@ function App8() {
     <div className="container9">
         <div className="sub9">
             <div className="App9">
-            <div 
-    className="appPictureContainer9"
-    style={{
-        height: "100%", 
-        width: "100%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center"
-    }}
->
+            <div className="appPictureContainer9" style={{ textAlign: "center" }}>
     <img
         style={{
-            display: "block", // This ensures the margin is applied properly
-            maxWidth: "100%", 
-            maxHeight: "85%", 
+            display: "block",
+            maxWidth: "100%",
+            maxHeight: "85%",
             height: "auto",
             objectFit: "contain"
         }}
@@ -197,6 +188,7 @@ function App8() {
         alt="logo"
     />
 </div>
+
                 <div></div>
             </div>
         </div>
