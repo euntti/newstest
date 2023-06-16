@@ -159,10 +159,6 @@ function App8() {
     <div>
     <div
       style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',  // This will center the children vertically
-        alignItems: 'center',     // This will center the children horizontally
         backgroundImage: isMobile ? `url("/img/bg2.png")` : `url("/img/bg2.png")`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
