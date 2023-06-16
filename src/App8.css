@@ -348,23 +348,7 @@ table {
     width: 370px;
   }
  
-  .App .btnArea9 {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #c10000;
-  }
   
-  .App .btnArea9 button {
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    background-color: #c10000;
-    border: none; /* 필요에 따라 테두리 스타일 제거 */
-  }
   
   .App .btnArea9 img {
     width: 100px; /* 모바일 장치에 맞는 크기로 조정 */
