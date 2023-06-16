@@ -169,7 +169,7 @@ function App8() {
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         width: isMobile ? "100vw" : "1300px", // For mobile screens, use 100% of the viewport width
-        height: isMobile ? "100vh" : "2200px", // For mobile screens, use 100% of the viewport height
+        height: isMobile ? "130vh" : "2400px", // For mobile screens, use 100% of the viewport height
     }}
     >
     <div className="container9">
