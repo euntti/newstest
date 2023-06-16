@@ -179,24 +179,23 @@ function App8() {
     style={{
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
+        justifyContent: "center", // centers children along the vertical axis
+        alignItems: "center",    // centers children along the horizontal axis
         height: "100%", 
         width: "100%" 
     }}
 >
-   
     <img
         style={{
             maxWidth: "100%", 
-            maxHeight: "85%", // This will limit the height of the image to 85% of its parent container
+            maxHeight: "85%", 
             height: "auto",
-            objectFit: "contain" // This will make sure your image scales correctly to its container
+            objectFit: "contain" 
         }}
         src={"/img/day.gif"}
         alt="logo"
     />
-</div>         
+</div>
                 <div></div>
             </div>
         </div>
