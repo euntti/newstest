@@ -154,6 +154,27 @@ function App8() {
     autoplay: true,
     autoplaySpeed: 3000,
   };
+  const [imageWidth, setImageWidth] = useState('150px'); // 초기값으로 원하는 크기를 설정
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth; // 브라우저의 너비를 가져옴
+      if (width <= 422) {
+        setImageWidth('100px'); // 모바일 장치에 맞는 크기로 변경
+      } else {
+        setImageWidth('150px'); // 다른 화면 크기에 대한 기본 크기로 변경
+      }
+    };
+  
+    handleResize(); // 초기 로드 시에도 크기를 설정하기 위해 호출
+  
+    window.addEventListener('resize', handleResize); // 화면 크기가 변경될 때 크기를 다시 설정
+  
+    return () => {
+      window.removeEventListener('resize', handleResize); // 컴포넌트가 언마운트될 때 이벤트 리스너 제거
+    };
+  }, []);
+  
   return (
     
     <div>
@@ -296,13 +317,13 @@ function App8() {
             </div>
             </div>
             <div className="btnArea9">
-              <button onClick={(e) => submitEvent(e)}>
-                {isBrowser ? (
-                  <img src={"/img/click.gif"} style={{ width: "150px", paddingRight:"400px" }}></img>
-                ) : (
-                  <img style={{ width: "150px", paddingRight:"400px" }} src={"/img/click.gif"}></img>
-                )}
-              </button>
+    <button onClick={(e) => submitEvent(e)}>
+      {isBrowser ? (
+        <img src={"/img/click.gif"} style={{ width: imageWidth, paddingRight: "400px" }}></img>
+      ) : (
+        <img style={{ width: imageWidth, paddingRight: "400px" }} src={"/img/click.gif"}></img>
+      )}
+    </button>
             </div>
           </div>
      </div>
