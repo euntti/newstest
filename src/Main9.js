@@ -324,7 +324,7 @@ function App8() {
         {/* <div className="profit1">
           <img src={"/img/profit.jpeg"}></img>
         </div> */}
-       <div className="footerInfo" style={{ textAlign: "center" }}>
+        <div className="footerInfo" style={{ textAlign: "center" }}>
     <div>상호명:(주)SB 글로벌 투자그룹</div>
     <div>대표자:엄원택</div>
     <div>사업자등록번호: 178-88-01858</div>
@@ -334,6 +334,7 @@ function App8() {
 <h4 style={{ fontSize: 9, textAlign: "center", color: "#fff" }}>
     해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.
 </h4>
+      </div>
       <h1
         style={{
           color: "#fff",
