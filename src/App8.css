@@ -369,6 +369,7 @@ table {
   .App .namephone9,
   .phone9
    {
+    width: 150px;
      align-items: center;
   }
 
