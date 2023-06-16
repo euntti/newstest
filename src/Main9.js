@@ -178,21 +178,24 @@ function App8() {
             <div className="appPictureContainer9"
     style={{
         display: "flex",
+        flexDirection: "column", // Change layout direction to column
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh", // This makes the div take the full height of the viewport
-        width: "100vw" // This makes the div take the full width of the viewport
+        height: "100vh", 
+        width: "100vw" 
     }}
 >
+    <h1 style={{ margin: 0 }}>Title</h1>  // Add your title here
     <img
         style={{
-            maxWidth: "100%",  // The image will take the maximum width up to 100%.
+            maxWidth: "100%",  
             height: "auto",
         }}
         src={"/img/day.gif"}
         alt="logo"
     />
 </div>
+
 
            
                 <div></div>
