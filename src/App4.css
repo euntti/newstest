@@ -173,7 +173,8 @@ table {
   position: relative;
   background-color: #3a0a08;
   background-size: auto 100%;
-  padding: 5% 0;
+  padding: 5% 0 0 0;
+  padding-bottom: 0px;
   text-align: center;
   margin: 50px 0;
   letter-spacing: -0.075em;
