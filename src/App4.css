@@ -117,11 +117,11 @@ table {
   padding: 10px;
   font-size: 14px;
 }
-.content-wrap {
+.content-wrap5 {
   margin-top: 40px;
   margin-bottom: 30px;
 }
-.content {
+.content5 {
   width: 96%;
   margin: 0 auto;
   padding: 0 15px;
@@ -130,7 +130,7 @@ table {
   font-size: 17px;
   letter-spacing: 0;
 }
-.box_container {
+.box_container5 {
   display: flex;
   flex-wrap: wrap;
 }
@@ -151,12 +151,12 @@ table {
   font-size: 18px;
   text-align: center;
 }
-.content .imgbox {
+.content5 .imgbox {
   margin-top: 15px;
   margin-bottom: 0;
   text-align: center;
 }
-.content p {
+.content5 p {
   margin-top: 25px;
   margin-bottom: 25px;
   line-height: 2.0;

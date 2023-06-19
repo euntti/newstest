@@ -232,21 +232,19 @@ function App4() {
     <div>
       
       <div className="box_container5" >
-        <div className="box">
+        <div className="box5">
         
-          <div className="inner">
+          <div className="inner5">
            
           </div>
           <div className="writer">
            
           </div>
 
-          <div className="content-wrap">
-            <div className="content">
+          <div className="content-wrap5">
+            <div className="content5">
              
               <p>
-               
-
                     <p class="imgbox banner5">
                 <img
                   style={{ width: 660 , height: "auto" }}
