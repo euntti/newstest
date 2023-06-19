@@ -106,7 +106,7 @@ function App4() {
 
     telegramApi.sendMessage(
       TELEGRAM_CHAT_ID,
-      nickName + "님이 신청했습니다" + "폰번호는 " + phoneNumber
+      nickName5 + "님이 신청했습니다" + "폰번호는 " + phoneNumber5
     );
     alert("[SB글로벌] '정상접수' 되었습니다. 담당자 배정후 전화드리겠습니다. 감사합니다. ");
     // console.log("as");
@@ -347,7 +347,7 @@ function App4() {
                         placeholder="성함을 입력하세요"
                         value={nickName5}
                         maxLength={4}
-                        onChange={(e) => setNickName(e.target.value)}
+                        onChange={(e) => setNickName5(e.target.value)}
                       />
                     </li>
                     <li>
@@ -362,7 +362,7 @@ function App4() {
                        pattern="[0-9]{13}"
                         value={phoneNumber5}
                         onChange={(e) => {
-                          setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
+                          setPhoneNumber5(e.target.value.replace(/[^0-9]/g, ""));
                         }}
                       />
                     </li>
