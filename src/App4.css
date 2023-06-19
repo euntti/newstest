@@ -192,7 +192,7 @@ table {
   max-width: 560px;
   /* background-color: #fff; */
   border-radius: 10px;
-  padding: 0 50px 0 50px;
+  padding: 0 50px 50px 50px;
   text-align: left;
   margin: 1em auto;
   box-sizing: border-box;
