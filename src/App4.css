@@ -74,7 +74,22 @@ table {
   cursor: pointer;
   z-index: 1;
 }
-
+.box_container{
+  display:flex;
+  justify-content:center
+}
+/* .box{
+  width:688px;
+  height:auto;
+  border:5px solid #eee;
+  background-color:#fff;
+  margin-top:30px;
+} */
+.subTitle{
+  padding: 20px 20px 0;
+  color: #477cdc;
+  font-weight: bold;
+}
 .inner{
   padding:20px 0;
 }
@@ -86,8 +101,22 @@ table {
   line-height: 1.2;
   letter-spacing: -0.05em;
 }
+.color1 {
+  color: #f00;
+  font-weight: bold;
+}
+.writer{
+  padding: 6px 10px;
+  border-bottom: 1px solid #ccc;
+  letter-spacing: 0;
+  box-sizing: border-box;
+}
 
-
+.writer-info {
+  clear: both;
+  padding: 10px;
+  font-size: 14px;
+}
 .content-wrap {
   margin-top: 40px;
   margin-bottom: 30px;
@@ -129,7 +158,7 @@ table {
   font-weight: bold;
   font-size: 0.9em;
 }
-.inputBoxs5 {
+.inputBoxs {
   /* z-index: 2; */
   position: relative;
   background-image: url(https://i.ibb.co/CmTK0TM/inbox.png);
@@ -139,19 +168,19 @@ table {
   margin: 50px 0;
   letter-spacing: -0.075em;
 }
-.inputBoxs5 h1 {
+.inputBoxs h1 {
   color: #ffffffd2;
   font-size: 16px;
   font-weight: normal;
 }
-.inputBoxs5 h3 {
+.inputBoxs h3 {
   font-size: 36px;
   font-weight: normal;
   color: #fff;
   margin: 0px;
   padding: 0px;
 }
-.inputBoxs5 ul {
+.inputBoxs ul {
   width: 94%;
   max-width: 560px;
   background-color: #fff;
@@ -161,24 +190,24 @@ table {
   margin: 1em auto;
   box-sizing: border-box;
 }
-.inputBoxs5 ul li{
+.inputBoxs ul li{
   padding:2px 0;
 }
-.inputBoxs5 #line01{
+.inputBoxs #line01{
   text-align: center;
 }
-.inputBoxs5 #line02{
+.inputBoxs #line02{
   font-weight: bolder;
   color:#09F;
   font-size:12px;
   text-align: center;
 }
-.inputBoxs5 #line03{
+.inputBoxs #line03{
   font-weight: bolder;
   font-size:26px;
   text-align: center;
 }
-.inputBoxs5 input[type="text"]{
+.inputBoxs input[type="text"]{
   display:inline-block;
   border:1px solid #ccc;
   height:50px;
@@ -187,22 +216,22 @@ table {
 }
 
 
-.inputBoxs5 #chkline {
+.inputBoxs #chkline {
     text-align: center;
     font-size: 12px;
     color: #666;
     padding: 10px 0;
 }
 
-.inputBoxs5 #chkline label {
+.inputBoxs #chkline label {
     width: auto;
     font-weight: normal;
 }
-.inputBoxs5 #smtbtn{
+.inputBoxs #smtbtn{
   text-align: center;
   padding:10px 0;
 }
-.inputBoxs5 #smtbtn input {
+.inputBoxs #smtbtn input {
     width: 100%;
     background-color: rgb(255, 187, 0);
     color: #000000;
