@@ -349,7 +349,7 @@ function App4() {
              
               
               
-              <div className="inputBoxs">
+              <div className="inputBoxs5">
                   <h3>2023 하반기 급등 예상 종목 무료 받기</h3>
                   <ul>
                     {/* <li id="line01">
