@@ -358,9 +358,9 @@ function App4() {
                   <h1>2023 하반기 급등 예상 종목 무료 받기</h1>
                   <h3>하루 3분 투자로 1억만들기</h3>
                   <ul>
-                    <li id="line01">
+                    {/* <li id="line01">
                       <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
-                    </li>
+                    </li> */}
                     <li id="line02">
                       개인정보는 암호화하여 안전하게 처리됩니다.
                     </li>
