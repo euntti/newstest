@@ -249,7 +249,7 @@ function App4() {
 
                     <p class="imgbox banner5">
                 <img
-                  style={{ width: 690 , height: "auto" }}
+                  style={{ width: 660 , height: "auto" }}
                   src={"/img/gundy1.png"}
                   alt=""
                 />
