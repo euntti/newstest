@@ -213,9 +213,7 @@ table {
   font-size:26px;
   text-align: center;
 }
-.inputBoxs5 #line035 span {
-  color: white;
-}
+
 .inputBoxs5 input[type="text"]{
   display: flex;
   align-items: center;
@@ -311,6 +309,9 @@ table {
   justify-content: center;
   align-items: center;
 
+}
+#chkline5 label {
+  color: white;
 }
 .latest {
   display: flex;

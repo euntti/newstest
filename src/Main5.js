@@ -264,12 +264,8 @@ function App4() {
                     {/* <li id="line01">
                       <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
                     </li> */}
-                    <li id="line025">
-                      개인정보는 암호화하여 안전하게 처리됩니다.
-                    </li>
-                    <li id="line035" cond="off">
-                      <span> 30일 급등주 신청하기.</span>
-                    </li>
+                   
+                   
                     <br />
                     <li id="line55">
                     <li>
