@@ -226,7 +226,14 @@ table {
     color: #666;
     padding: 10px 0;
 }
+.inputBoxs5 li {
+  display: flex;
+  align-items: center;
+}
 
+.inputBoxs5 li input {
+  margin-right: 10px;
+}
 .inputBoxs5 #chkline label {
     width: auto;
     font-weight: normal;
