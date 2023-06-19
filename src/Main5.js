@@ -271,6 +271,7 @@ function App4() {
                       <span> 30일 급등주 신청하기.</span>
                     </li>
                     <br />
+                    <li id="line55">
                     <li>
                       <input
                         type="text"
@@ -300,6 +301,7 @@ function App4() {
                       />
                     </li>
                     <br />
+                    </li>
                     <li id="chkline5">
                       <label>
                         <input
