@@ -355,7 +355,7 @@ function App4() {
               
               
               <div className="inputBoxs">
-                  <h1>급등종목 30일 무료제공 프로모션</h1>
+                  <h1>2023 하반기 급등 예상 종목 무료 받기</h1>
                   <h3>하루 3분 투자로 1억만들기</h3>
                   <ul>
                     <li id="line01">

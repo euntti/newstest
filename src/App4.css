@@ -161,7 +161,7 @@ table {
 .inputBoxs {
   /* z-index: 2; */
   position: relative;
-  background-image: url(https://i.ibb.co/CmTK0TM/inbox.png);
+  background-color: #3a0a08;
   background-size: auto 100%;
   padding: 5% 0;
   text-align: center;
