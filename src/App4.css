@@ -74,7 +74,7 @@ table {
   cursor: pointer;
   z-index: 1;
 }
-.box_container{
+.box_container5{
   display:flex;
   justify-content:center
 }
@@ -130,7 +130,7 @@ table {
   font-size: 17px;
   letter-spacing: 0;
 }
-.box_container5 {
+.box_container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -138,7 +138,7 @@ table {
 .imgboxbanner5,
 .inputBoxs5,
 .imgboxbanner2 {
-  flex: 0.5;
+  flex: 1;
 }
 .mainhead{
   font-weight: bold;
