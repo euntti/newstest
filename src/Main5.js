@@ -39,7 +39,7 @@ function App4() {
   const [nickName5, setNickName5] = useState("");
   const [phoneNumber5, setPhoneNumber5] = useState("");
     let subtitle;
-  const onlyNumber5 = (e) => {
+  const onlyNumber = (e) => {
     const keyCode = e.keyCode || e.which;
     const keyValue = String.fromCharCode(keyCode);
 
@@ -63,7 +63,7 @@ function App4() {
     };
   }, []);
  
-  const handlePhoneChange5 = (e) => {
+  const handlePhoneChange = (e) => {
     const inputValue = e.target.value;
     
     const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
@@ -92,10 +92,10 @@ function App4() {
   const submitEvent = (e) => {
     e.preventDefault();
 
-    if (nickName == "") {
+    if (nickName5 == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phoneNumber == "") {
+    if (phoneNumber5 == "") {
       return alert("연락처를 입력해주세요.");
     }
     if (!check1) {
@@ -348,27 +348,27 @@ function App4() {
                       <input
                         type="text"
                         id="f1"
-                        name="user_name"
+                        name="user_name5"
                         required=""
                         placeholder="성함을 입력하세요"
-                        value={nickName}
+                        value={nickName5}
                         maxLength={4}
-                        onChange={(e) => setNickName(e.target.value)}
+                        onChange={(e) => setNickName5(e.target.value)}
                       />
                     </li>
                     <li>
                       <input
                         type="number"
                         id="f1"
-                        name="user_name"
+                        name="user_name5"
                         required=""
                         placeholder="연락처를 입력하세요"
                         onkeyPress="onlyNumber(this)"
                        maxLength={13}
                        pattern="[0-9]{13}"
-                        value={phoneNumber}
+                        value={phoneNumber5}
                         onChange={(e) => {
-                          setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
+                          setPhoneNumber5(e.target.value.replace(/[^0-9]/g, ""));
                         }}
                       />
                     </li>
@@ -417,7 +417,7 @@ function App4() {
                         id="btn"
                         type="submit"
                         value="급등종목 무료제공 이벤트 신청하기"
-                        onClick={submitEvent}
+                        onClick={submitEvent5}
                       />
                     </li>
                   </ul>
@@ -433,16 +433,7 @@ function App4() {
                     />
                   </div>
 
-                  <div class="rolling_box">
-                
-                    <ul id ="rolling_box"
-                    style={{ width: "100%", height: "50px" }}>
-                    <li class="card_sliding" id ="first"><p></p></li>
-                   <li class="" id ="second"><p></p></li>
-                    <li class="" id ="third"><p></p></li>
-                     </ul>
-                  </div>
-
+                 
                   {/* <table className="tablelive" >
                    <thead> */}
                     {/* <tr>
