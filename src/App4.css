@@ -168,22 +168,18 @@ table {
   margin: 50px 0;
   letter-spacing: -0.075em;
 }
-.inputBoxs h1 {
-  /* color: #ffffffd2; */
-  font-size: 16px;
-  font-weight: normal;
-}
+
 .inputBoxs h3 {
   font-size: 36px;
   font-weight: normal;
-  color: #fff;
+  /* color: #fff; */
   margin: 0px;
   padding: 0px;
 }
 .inputBoxs ul {
   width: 94%;
   max-width: 560px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 10px;
   padding: 25px 50px;
   text-align: left;
