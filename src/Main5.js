@@ -324,7 +324,7 @@ function App4() {
       
       <div className="box_container">
         <div className="box">
-          <div className="subTitle">■ 떠오르는 이슈</div>
+        
           <div className="inner">
            
           </div>
