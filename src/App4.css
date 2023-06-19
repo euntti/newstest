@@ -204,14 +204,16 @@ table {
   text-align: center;
 }
 .inputBoxs5 input[type="text"]{
-  display:inline-block;
+  display: flex;
+  align-items: center;
   border:1px solid #3a0a08;
   height:50px;
   width:100%;
   box-sizing: border-box;
 }
 .inputBoxs5 input[type="number"]{
-  display:inline-block;
+  display: flex;
+  align-items: center;
   border:1px solid #3a0a08;
   height:50px;
   width:100%;

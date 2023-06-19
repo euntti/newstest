@@ -277,7 +277,7 @@ function App4() {
                         id="f1"
                         name="user_name5"
                         required=""
-                        placeholder="성함을 입력하세요"
+                        placeholder="성함"
                         value={nickName}
                         maxLength={4}
                         onChange={(e) => setNickName(e.target.value)}
@@ -289,7 +289,7 @@ function App4() {
                         id="f1"
                         name="user_name5"
                         required=""
-                        placeholder="연락처를 입력하세요"
+                        placeholder="연락처"
                         onkeyPress="onlyNumber(this)"
                        maxLength={13}
                        pattern="[0-9]{13}"
