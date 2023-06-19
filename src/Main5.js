@@ -10,97 +10,6 @@ import { ColorRing } from "react-loader-spinner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 
-const Main5 = () => {
-    return <div>Main5</div>
-    const Main5 = () => {
-      let rollingData = [
-        '서울',
-        '대구',
-        '부산',
-        '경기',
-        '울산',
-        '포항',
-        '전주',
-        '강원',
-        '대전',
-        '광주',
-        '제주',
-        '해남'
-      ];
-    
-      let timer = 2000;
-      let first = document.getElementById('first');
-      let second = document.getElementById('second');
-      let third = document.getElementById('third');
-      let move = 2;
-      let dataCnt = 1;
-      let listCnt = 1;
-    
-      first.innerHTML = rollingData[0];
-    
-      setInterval(() => {
-        if(move == 2){
-          first.classList.remove('card_sliding')
-          first.classList.add('card_sliding_after')
-
-          second.classList.remove('card_sliding_after')
-          second.classList.add('card_sliding')
-
-          third.classList.remove('card_sliding_after')
-          third.classList.remove('card_sliding')
-
-          move = 0
-      } else if (move == 1){
-          first.classList.remove('card_sliding_after')
-          first.classList.add('card_sliding')
-
-          second.classList.remove('card_sliding_after')
-          second.classList.remove('card_sliding')
-
-          third.classList.remove('card_sliding')
-          third.classList.add('card_sliding_after')
-
-          move = 2
-      } else if (move == 0) {
-          first.classList.remove('card_sliding_after')
-          first.classList.remove('card_sliding')
-
-          second.classList.remove('card_sliding')
-          second.classList.add('card_sliding_after')
-
-          third.classList.remove('card_sliding_after')
-          third.classList.add('card_sliding')
-
-          move = 1
-      }
-      
-      if(dataCnt < (rollingData.length - 1)) {
-          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
-              dataCnt++
-      } else if(dataCnt == rollingData.length - 1) {
-          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
-          dataCnt = 0
-      }
-
-      if(listCnt < 2) {
-          listCnt++
-      } else if (listCnt == 2) {
-          listCnt = 0
-      }
-
-      console.log(listCnt)
-  }, timer);
-  return (
-    <>
-      <div id="first"></div>
-      <div id="second"></div>
-      <div id="third"></div>
-      <div id="rolling_box"></div>
-    </>
-  );
-};
-
-      }
 
 const customStyles = {
   content: {
@@ -120,9 +29,9 @@ const customStyles = {
 function App4() {
 
 
-  const [users, setUsers] = useState([]);
-  const [nickName, setNickName] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [users5, setUsers5] = useState([]);
+  const [nickName5, setNickName5] = useState("");
+  const [phoneNumber5, setPhoneNumber5] = useState("");
     let subtitle;
   const onlyNumber = (e) => {
     const keyCode = e.keyCode || e.which;
@@ -177,10 +86,10 @@ function App4() {
   const submitEvent = (e) => {
     e.preventDefault();
 
-    if (nickName == "") {
+    if (nickName5 == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phoneNumber == "") {
+    if (phoneNumber5 == "") {
       return alert("연락처를 입력해주세요.");
     }
     if (!check1) {
@@ -415,7 +324,7 @@ function App4() {
                 모든 차트흐름과 시장흐름을 분석하여 높은 수익률로 보이는 추세이다.</b> */}
                 
               </p>
-              <div className="inputBoxs">
+              <div className="inputBoxs5">
                   <h1>급등종목 30일 무료제공 프로모션</h1>
                   <h3>하루 3분 투자로 1억만들기</h3>
                   <ul>
@@ -433,27 +342,27 @@ function App4() {
                       <input
                         type="text"
                         id="f1"
-                        name="user_name"
+                        name="user_name5"
                         required=""
                         placeholder="성함을 입력하세요"
-                        value={nickName}
+                        value={nickName5}
                         maxLength={4}
-                        onChange={(e) => setNickName(e.target.value)}
+                        onChange={(e) => setNickName5(e.target.value)}
                       />
                     </li>
                     <li>
                       <input
                         type="number"
                         id="f1"
-                        name="user_name"
+                        name="user_name5"
                         required=""
                         placeholder="연락처를 입력하세요"
                         onkeyPress="onlyNumber(this)"
                        maxLength={13}
                        pattern="[0-9]{13}"
-                        value={phoneNumber}
+                        value={phoneNumber5}
                         onChange={(e) => {
-                          setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
+                          setPhoneNumber5(e.target.value.replace(/[^0-9]/g, ""));
                         }}
                       />
                     </li>
