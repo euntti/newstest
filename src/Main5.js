@@ -374,31 +374,8 @@ function App4() {
                 
               </p>
              
-               <p class="imgboxbanner2">
-                <img
-                  style={{ width: "100%", height: "auto" }}
-                  src={"/img/gundy2.png"}
-                  alt=""
-                />
-              </p>
-              {/* <div class="imgdesc">[김진환씨의 최근 수익 인증]</div> */}
-              <p>
-               여기서 놀라지 마세요 누구나 하실수있는 간단한 투자! </p>
-               <p> "3분 재테크"의 가장 큰 장점은 시간도 시간이지만
-                하락장에서도 돈을 벌 수 있다는것입니다.
-                대부분의 사람들이 감으로 투자하는 경우가 많은데
-                 A.I 분석프로그램으로 코인을 분석 및 추천을 해주어 정확도가 매우 높은 편입니다.
-                <br />이로 인해 문의가 폭주하고 있습니다.
-              </p>
-
-              <p>
-                최근에 바쁜 사회속 빠르게 그렇지만 확실한 수익을 나고 싶은 고객들을 위해
-                <span class="color1">"3분 투자로 1억만들기 이벤트" </span>를 진행하고 있으니 아래 링크 확인부탁드립니다. 
-                {/* {"\t"}
-                <b>좋은 예 라 보이며 기존 개인투자자들이 일일히 확인해야되는것과 달리 AI프로그램이 실시간으로 변동하는 
-                모든 차트흐름과 시장흐름을 분석하여 높은 수익률로 보이는 추세이다.</b> */}
-                
-              </p>
+              
+              
               <div className="inputBoxs">
                   <h1>급등종목 30일 무료제공 프로모션</h1>
                   <h3>하루 3분 투자로 1억만들기</h3>
@@ -492,26 +469,18 @@ function App4() {
                   </ul>
                   </div>
                 <br />
-        
-                <div className="latest">
-                  <div className="latimgbox" id="latest_list">
-                    <img
-                    style={{ width: "100%", height: "auto" }}
-                    src={"/img/member.png"}
-                    alt=""
-                    />
-                  </div>
-
-                  <div class="rolling_box">
+                        
                 
-                    <ul id ="rolling_box"
-                    style={{ width: "100%", height: "50px" }}>
-                    <li class="card_sliding" id ="first"><p></p></li>
-                   <li class="" id ="second"><p></p></li>
-                    <li class="" id ="third"><p></p></li>
-                     </ul>
-                  </div>
+               <p class="imgboxbanner2">
+                <img
+                  style={{ width: "100%", height: "auto" }}
+                  src={"/img/gundy2.png"}
+                  alt=""
+                />
+              </p>
 
+                <div className="latest">
+                 
                   {/* <table className="tablelive" >
                    <thead> */}
                     {/* <tr>
@@ -570,22 +539,7 @@ function App4() {
 </table> */}
  </div>
 
-                <div className="talk" style={{ display: "block"}}>
-                   <div className="talk1">
-                   <img
-                    style={{ width: 512, height: "auto" }}
-                    src={"/img/talk.png"}
-                    alt=""
-                    />
-                    </div>
-                    <div className="talk2">
-                    <img
-                    style={{  width: "100%",height: "auto"  }}
-                    src={"/img/review2.png"}
-                    alt=""
-                    />
-                     </div>
-                    </div>
+              
                     
          <div className="footerInfo1">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
