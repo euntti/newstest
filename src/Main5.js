@@ -247,20 +247,18 @@ function App4() {
               <p>
                
 
-            
-              
-              
-              <div className="inputBoxs5">
-
-              <p class="imgbox banner5">
+                    <p class="imgbox banner5">
                 <img
                   style={{ width: 690 , height: "auto" }}
                   src={"/img/gundy1.png"}
                   alt=""
                 />
               </p>
+              </p>
+             
               
-
+              
+              <div className="inputBoxs5">
                   <h3>2023 하반기 급등 예상 종목 무료 받기</h3>
                   <ul>
                     {/* <li id="line01">
