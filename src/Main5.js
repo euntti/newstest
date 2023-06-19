@@ -326,19 +326,10 @@ function App4() {
         <div className="box">
           <div className="subTitle">■ 떠오르는 이슈</div>
           <div className="inner">
-            <div className="head">
-              <h1 className="title">
-                하루에 3분투자로 {" "}
-                <p><span class="color1">" 억대 만들기 노하우는 ?"</span> </p>
-             
-              </h1>
-            </div>
+           
           </div>
           <div className="writer">
-            <div class="writer-info">
-              기자 - 김진우ㅣ 조회수 : 1202 ㅣ 날짜 :{""}
-              <span id="regdate">2023-05-31</span>
-            </div>
+           
           </div>
 
           <div className="content-wrap">
