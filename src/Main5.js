@@ -299,6 +299,14 @@ function App4() {
                           setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
                         }}
                       />
+                       <li id="smtbtn">
+                      <input
+                        id="btn"
+                        type="submit"
+                        value="무료 신청하기"
+                        onClick={submitEvent}
+                      />
+                    </li>
                     </li>
                     <br />
                     </li>
@@ -341,14 +349,7 @@ function App4() {
                 </a>
                       </label>
                     </li>
-                    <li id="smtbtn">
-                      <input
-                        id="btn"
-                        type="submit"
-                        value="무료 신청하기"
-                        onClick={submitEvent}
-                      />
-                    </li>
+                    
                   </ul>
                   </div>
                 <br />
