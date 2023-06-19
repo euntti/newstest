@@ -347,7 +347,7 @@ function App4() {
                         placeholder="성함을 입력하세요"
                         value={nickName5}
                         maxLength={4}
-                        onChange={(e) => setNickName5(e.target.value)}
+                        onChange={(e) => setNickName(e.target.value)}
                       />
                     </li>
                     <li>
@@ -362,7 +362,7 @@ function App4() {
                        pattern="[0-9]{13}"
                         value={phoneNumber5}
                         onChange={(e) => {
-                          setPhoneNumber5(e.target.value.replace(/[^0-9]/g, ""));
+                          setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
                         }}
                       />
                     </li>
