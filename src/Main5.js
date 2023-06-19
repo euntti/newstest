@@ -69,7 +69,7 @@ function App4() {
     const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
   
     if (phoneRegex.test(inputValue)) {
-      setPhoneNumber5(inputValue);
+      setPhoneNumber(inputValue);
     }
   };
 
@@ -92,10 +92,10 @@ function App4() {
   const submitEvent = (e) => {
     e.preventDefault();
 
-    if (nickName5 == "") {
+    if (nickName == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phoneNumber5 == "") {
+    if (phoneNumber == "") {
       return alert("연락처를 입력해주세요.");
     }
     if (!check1) {
@@ -145,7 +145,94 @@ function App4() {
     autoplaySpeed: 2000,
   };
 
+  const rollingData = [
+    '김*영 010-****-8245',
+    '박*주 010-****-2543',
+    '최*팔 010-****-7786',
+    '심*정 010-****-9406',
+    '최*영 010-****-3066',
+    '이*수 010-****-2657',
+    '김*영 010-****-9007',
+    '김*양 010-****-3025',
+    '이*연 010-****-6055',
+    '정*정 010-****-1059',
+    '신*영 010-****-4405',
+    '공*구 010-****-2034',
+    '지*리 010-****-3374',
+  ];
+  const timer = 2000;
+  let move = 2;
+  let dataCnt = 1;
+  let listCnt = 1;
+  
+  const first = document.getElementById('first');
+  const second = document.getElementById('second');
+  const third = document.getElementById('third');
+  
+  // first.children[0].innerHTML = rollingData[0];
+  // second.children[0].innerHTML = rollingData[1];
+  // third.children[0].innerHTML = rollingData[2];
 
+  // first.children[0].innerHTML = rollingData[0];
+  
+  setInterval(() => {
+    if (move === 2) {
+      first.classList.remove('card_sliding');
+      first.classList.add('card_sliding_after');
+  
+      second.classList.remove('card_sliding_after');
+      second.classList.add('card_sliding');
+  
+      third.classList.remove('card_sliding_after');
+      third.classList.remove('card_sliding');
+  
+      move = 0;
+    } else if (move === 1) {
+      first.classList.remove('card_sliding_after');
+      first.classList.add('card_sliding');
+  
+      second.classList.remove('card_sliding_after');
+      second.classList.remove('card_sliding');
+  
+      third.classList.remove('card_sliding');
+      third.classList.add('card_sliding_after');
+  
+      move = 2;
+    } else if (move === 0) {
+      first.classList.remove('card_sliding_after');
+      first.classList.remove('card_sliding');
+  
+      second.classList.remove('card_sliding');
+      second.classList.add('card_sliding_after');
+  
+      third.classList.remove('card_sliding_after');
+      third.classList.add('card_sliding');
+  
+      move = 1;
+    }
+  
+    if (dataCnt < rollingData.length - 1) {
+      document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
+      document.getElementById('rolling_box').children[(listCnt + 1) % 3].children[0].innerHTML = rollingData[dataCnt + 1];
+      document.getElementById('rolling_box').children[(listCnt + 2) % 3].children[0].innerHTML = rollingData[dataCnt + 2];
+
+      dataCnt++;
+    } else if (dataCnt === rollingData.length - 1) {
+      document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
+      document.getElementById('rolling_box').children[(listCnt + 1) % 3].children[0].innerHTML = rollingData[0];
+      document.getElementById('rolling_box').children[(listCnt + 2) % 3].children[0].innerHTML = rollingData[1];
+
+      dataCnt = 0;
+    }
+  
+    if (listCnt < 2) {
+      listCnt++;
+    } else if (listCnt === 2) {
+      listCnt = 0;
+    }
+  
+    console.log(listCnt);
+  }, timer);
 
   return (
     <div>
