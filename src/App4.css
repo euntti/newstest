@@ -133,7 +133,6 @@ table {
 .box_container5 {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .imgboxbanner5,
@@ -177,7 +176,7 @@ table {
   padding: 5% 0 0 0;
   padding-bottom: 0px;
   text-align: center;
-  margin: 0;
+  margin: 50px 0;
   letter-spacing: -0.075em;
 }
 
