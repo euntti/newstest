@@ -133,15 +133,13 @@ table {
 .box_container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  gap: 0;
+  
 }
 
 .imgboxbanner5,
 .inputBoxs5,
 .imgboxbanner2 {
   flex: 0.5;
-  gap: 0;
 }
 .mainhead{
   font-weight: bold;
