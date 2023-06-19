@@ -87,10 +87,10 @@ function App4() {
     e.preventDefault();
 
     if (nickName == "") {
-      return alert("이름을 입력해주세요.");
+      return alert("이름");
     }
     if (phoneNumber == "") {
-      return alert("연락처를 입력해주세요.");
+      return alert("연락처");
     }
     if (!check1) {
       return alert("개인정보취급방침동의보기를 체크해주세요.");
@@ -264,10 +264,10 @@ function App4() {
                     {/* <li id="line01">
                       <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
                     </li> */}
-                    <li id="line02">
+                    <li id="line025">
                       개인정보는 암호화하여 안전하게 처리됩니다.
                     </li>
-                    <li id="line03" cond="off">
+                    <li id="line035" cond="off">
                       <span> 30일 급등주 신청하기.</span>
                     </li>
                     <br />
@@ -275,7 +275,7 @@ function App4() {
                       <input
                         type="text"
                         id="f1"
-                        name="user_name"
+                        name="user_name5"
                         required=""
                         placeholder="성함을 입력하세요"
                         value={nickName}
@@ -287,7 +287,7 @@ function App4() {
                       <input
                         type="number"
                         id="f1"
-                        name="user_name"
+                        name="user_name5"
                         required=""
                         placeholder="연락처를 입력하세요"
                         onkeyPress="onlyNumber(this)"
@@ -300,7 +300,7 @@ function App4() {
                       />
                     </li>
                     <br />
-                    <li id="chkline">
+                    <li id="chkline5">
                       <label>
                         <input
                           type="checkbox"
@@ -343,7 +343,7 @@ function App4() {
                       <input
                         id="btn"
                         type="submit"
-                        value="급등종목 무료제공 이벤트 신청하기"
+                        value="무료 신청하기"
                         onClick={submitEvent}
                       />
                     </li>

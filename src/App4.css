@@ -189,16 +189,16 @@ table {
 .inputBoxs5 ul li{
   padding:2px 0;
 }
-.inputBoxs5 #line01{
+.inputBoxs5 #line015{
   text-align: center;
 }
-.inputBoxs5 #line02{
+.inputBoxs5 #line025{
   font-weight: bolder;
   color:#09F;
   font-size:12px;
   text-align: center;
 }
-.inputBoxs5 #line03{
+.inputBoxs5 #line035{
   font-weight: bolder;
   font-size:26px;
   text-align: center;
@@ -210,7 +210,13 @@ table {
   width:100%;
   box-sizing: border-box;
 }
-
+.inputBoxs5 input[type="number"]{
+  display:inline-block;
+  border:1px solid #3a0a08;
+  height:50px;
+  width:100%;
+  box-sizing: border-box;
+}
 
 .inputBoxs5 #chkline {
     text-align: center;
@@ -229,8 +235,8 @@ table {
 }
 .inputBoxs5 #smtbtn input {
     width: 100%;
-    background-color: rgb(255, 187, 0);
-    color: #000000;
+    background-color: rgb(255, 0, 0);
+    color: #f9f7f7;
     height: 60px;
     line-height: 60px;
     border: 0px;
