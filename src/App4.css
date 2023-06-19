@@ -151,17 +151,12 @@ table {
   font-size: 18px;
   text-align: center;
 }
-.content5 .imgbox {
-  position: relative;
-  background-color: #3a0a08;
-  background-size: auto 100%;
-  padding: 5% 0 0 0;
-  padding-bottom: 0px;
+.content .imgbox {
+  margin-top: 15px;
+  margin-bottom: 0;
   text-align: center;
-  margin: 0;
-  letter-spacing: -0.075em;
 }
-.content5 p {
+.content p {
   margin-top: 25px;
   margin-bottom: 25px;
   line-height: 2.0;
