@@ -345,11 +345,6 @@ function App4() {
                   alt=""
                 />
               </p>
-              
-
-                
-               
-                
               </p>
              
               
@@ -446,17 +441,14 @@ function App4() {
                   </ul>
                   </div>
                 <br />
-                        
-                
-               <p class="imgboxbanner2">
+                <p class="imgboxbanner2">
                 <img
                   style={{ width: "100%", height: "auto" }}
                   src={"/img/gundy2.png"}
                   alt=""
                 />
               </p>
-
-                <div className="latest">
+               <div className="latest">
                  
                   {/* <table className="tablelive" >
                    <thead> */}
