@@ -7,100 +7,15 @@ import Modal from "react-modal";
 import Progressbar from "./components/progressbar";
 import Slider from "react-slick";
 import { ColorRing } from "react-loader-spinner";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from "react-device-detect";
 import React from 'react';
-
-const Main5 = () => {
-    return <div>Main5</div>
-    const Main5 = () => {
-      let rollingData = [
-        '서울',
-        '대구',
-        '부산',
-        '경기',
-        '울산',
-        '포항',
-        '전주',
-        '강원',
-        '대전',
-        '광주',
-        '제주',
-        '해남'
-      ];
-    
-      let timer = 2000;
-      let first = document.getElementById('first');
-      let second = document.getElementById('second');
-      let third = document.getElementById('third');
-      let move = 2;
-      let dataCnt = 1;
-      let listCnt = 1;
-    
-      first.innerHTML = rollingData[0];
-    
-      setInterval(() => {
-        if(move == 2){
-          first.classList.remove('card_sliding')
-          first.classList.add('card_sliding_after')
-
-          second.classList.remove('card_sliding_after')
-          second.classList.add('card_sliding')
-
-          third.classList.remove('card_sliding_after')
-          third.classList.remove('card_sliding')
-
-          move = 0
-      } else if (move == 1){
-          first.classList.remove('card_sliding_after')
-          first.classList.add('card_sliding')
-
-          second.classList.remove('card_sliding_after')
-          second.classList.remove('card_sliding')
-
-          third.classList.remove('card_sliding')
-          third.classList.add('card_sliding_after')
-
-          move = 2
-      } else if (move == 0) {
-          first.classList.remove('card_sliding_after')
-          first.classList.remove('card_sliding')
-
-          second.classList.remove('card_sliding')
-          second.classList.add('card_sliding_after')
-
-          third.classList.remove('card_sliding_after')
-          third.classList.add('card_sliding')
-
-          move = 1
-      }
-      
-      if(dataCnt < (rollingData.length - 1)) {
-          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
-              dataCnt++
-      } else if(dataCnt == rollingData.length - 1) {
-          document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt]
-          dataCnt = 0
-      }
-
-      if(listCnt < 2) {
-          listCnt++
-      } else if (listCnt == 2) {
-          listCnt = 0
-      }
-
-      console.log(listCnt)
-  }, timer);
-  return (
-    <>
-      <div id="first"></div>
-      <div id="second"></div>
-      <div id="third"></div>
-      <div id="rolling_box"></div>
-    </>
-  );
-};
-
-      }
+import AnimatedNumbers from "react-animated-numbers";
+import CertiModal from "./components/certimodal/CertiModal";
 
 const customStyles = {
   content: {
@@ -120,11 +35,11 @@ const customStyles = {
 function App4() {
 
 
-  const [users, setUsers] = useState([]);
-  const [nickName, setNickName] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [users5, setUsers5] = useState([]);
+  const [nickName5, setNickName5] = useState("");
+  const [phoneNumber5, setPhoneNumber5] = useState("");
     let subtitle;
-  const onlyNumber = (e) => {
+  const onlyNumber5 = (e) => {
     const keyCode = e.keyCode || e.which;
     const keyValue = String.fromCharCode(keyCode);
 
@@ -148,13 +63,13 @@ function App4() {
     };
   }, []);
  
-  const handlePhoneChange = (e) => {
+  const handlePhoneChange5 = (e) => {
     const inputValue = e.target.value;
     
     const phoneRegex = /^(010|011|016|017|018|019)-[^0][0-9]{3,4}-[0-9]{4}$/;
   
     if (phoneRegex.test(inputValue)) {
-      setPhoneNumber(inputValue);
+      setPhoneNumber5(inputValue);
     }
   };
 
@@ -177,10 +92,10 @@ function App4() {
   const submitEvent = (e) => {
     e.preventDefault();
 
-    if (nickName == "") {
+    if (nickName5 == "") {
       return alert("이름을 입력해주세요.");
     }
-    if (phoneNumber == "") {
+    if (phoneNumber5 == "") {
       return alert("연락처를 입력해주세요.");
     }
     if (!check1) {
@@ -230,94 +145,6 @@ function App4() {
     autoplaySpeed: 2000,
   };
 
-  const rollingData = [
-    '김*영 010-****-8245',
-    '박*주 010-****-2543',
-    '최*팔 010-****-7786',
-    '심*정 010-****-9406',
-    '최*영 010-****-3066',
-    '이*수 010-****-2657',
-    '김*영 010-****-9007',
-    '김*양 010-****-3025',
-    '이*연 010-****-6055',
-    '정*정 010-****-1059',
-    '신*영 010-****-4405',
-    '공*구 010-****-2034',
-    '지*리 010-****-3374',
-  ];
-  const timer = 2000;
-  let move = 2;
-  let dataCnt = 1;
-  let listCnt = 1;
-  
-  const first = document.getElementById('first');
-  const second = document.getElementById('second');
-  const third = document.getElementById('third');
-  
-  // first.children[0].innerHTML = rollingData[0];
-  // second.children[0].innerHTML = rollingData[1];
-  // third.children[0].innerHTML = rollingData[2];
-
-  // first.children[0].innerHTML = rollingData[0];
-  
-  setInterval(() => {
-    if (move === 2) {
-      first.classList.remove('card_sliding');
-      first.classList.add('card_sliding_after');
-  
-      second.classList.remove('card_sliding_after');
-      second.classList.add('card_sliding');
-  
-      third.classList.remove('card_sliding_after');
-      third.classList.remove('card_sliding');
-  
-      move = 0;
-    } else if (move === 1) {
-      first.classList.remove('card_sliding_after');
-      first.classList.add('card_sliding');
-  
-      second.classList.remove('card_sliding_after');
-      second.classList.remove('card_sliding');
-  
-      third.classList.remove('card_sliding');
-      third.classList.add('card_sliding_after');
-  
-      move = 2;
-    } else if (move === 0) {
-      first.classList.remove('card_sliding_after');
-      first.classList.remove('card_sliding');
-  
-      second.classList.remove('card_sliding');
-      second.classList.add('card_sliding_after');
-  
-      third.classList.remove('card_sliding_after');
-      third.classList.add('card_sliding');
-  
-      move = 1;
-    }
-  
-    if (dataCnt < rollingData.length - 1) {
-      document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
-      document.getElementById('rolling_box').children[(listCnt + 1) % 3].children[0].innerHTML = rollingData[dataCnt + 1];
-      document.getElementById('rolling_box').children[(listCnt + 2) % 3].children[0].innerHTML = rollingData[dataCnt + 2];
-
-      dataCnt++;
-    } else if (dataCnt === rollingData.length - 1) {
-      document.getElementById('rolling_box').children[listCnt].children[0].innerHTML = rollingData[dataCnt];
-      document.getElementById('rolling_box').children[(listCnt + 1) % 3].children[0].innerHTML = rollingData[0];
-      document.getElementById('rolling_box').children[(listCnt + 2) % 3].children[0].innerHTML = rollingData[1];
-
-      dataCnt = 0;
-    }
-  
-    if (listCnt < 2) {
-      listCnt++;
-    } else if (listCnt === 2) {
-      listCnt = 0;
-    }
-  
-    console.log(listCnt);
-  }, timer);
 
   return (
     <div>
@@ -337,54 +164,28 @@ function App4() {
       </div>
       <div className="box_container">
         <div className="box">
-          <div className="subTitle">■ 떠오르는 이슈</div>
+          <div className="subTitle"></div>
           <div className="inner">
             <div className="head">
-              <h1 className="title">
-                하루에 3분투자로 {" "}
-                <p><span class="color1">" 억대 만들기 노하우는 ?"</span> </p>
              
-              </h1>
             </div>
           </div>
-          <div className="writer">
-            <div class="writer-info">
-              기자 - 김진우ㅣ 조회수 : 1202 ㅣ 날짜 :{""}
-              <span id="regdate">2023-05-31</span>
-            </div>
-          </div>
+         
 
           <div className="content-wrap">
-            <div className="content">
+            <div className="content5">
              
               <p>
-                <b>"가상화폐 3분투자로 1억씩 수익내고있어요"</b>
-                <br />
-                김진환 씨(50대) 인터뷰中
-              </p>
-              <p>
-                <p>최근 부동산, 주식, 가상화폐 모두 하락장이라 손실보고 있는 분들이 많을텐데요
-                    이런 하락장에서도 손실없이 큰돈 벌 수 있는 재테크 '노하우' 알려드리겠습니다. </p>
+                <p> </p>
 
-                    <p class="imgbox banner">
+                    <p class="imgbox banner5">
                 <img
                   style={{ width: 620, height: "auto" }}
-                  src={"/img/sbmain41.png"}
+                  src={"/img/gundy1.png"}
                   alt=""
                 />
               </p>
 
-                제가 했던 재테크는 "가상화폐 재테크"인데요
-                <p>저도 아는 지인통해 알게되었는데요 'SB그룹' 이라는 기업에서 출시한 상품이었어요!
-                    방법은 아주 간단하답니다</p>
-                <p><span class="color1">
-                  <div>첫째. A.I 분석 프로그램으로 추천해준 코인 매수</div>
-                  <div>둘째. 정해준 목표가 도달시 매도</div>
-                  <div>셋째. 목표가 도달하지 않고 하락시 정해준 손절가에 손절</div></span></p>
-                  <p></p>
-                <p>이 3가지만 똑같이 따라하니 꾸준히 수익이 났어요</p>
-                <p>가끔 하락할때가 있는데 '손절가'에 손절하면 손실이 크지 않고, 
-                상승하는 경우가 더 많으니 결국 손실없이 수익을 낼 수 있었어요</p>
                 
               </p>
                <p class="mainhead">
