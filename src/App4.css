@@ -130,6 +130,16 @@ table {
   font-size: 17px;
   letter-spacing: 0;
 }
+.box_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgboxbanner5,
+.inputBoxs5,
+.imgboxbanner2 {
+  flex: 1;
+}
 .mainhead{
   font-weight: bold;
   font-size: 15px;
