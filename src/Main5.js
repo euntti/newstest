@@ -416,7 +416,7 @@ function App4() {
 
               
                     
-         <div className="footerInfo1">
+         <div className="footerInfo4">
           <div>상호명:(주)SB 글로벌 투자그룹 </div>
           <div>대표자:엄원택 </div>
 
@@ -444,7 +444,7 @@ function App4() {
           color: "#fff",
         }}
       >
-       <div className="footerInfo1"> AD - 해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</div>
+       <div className="footerInfo4"> AD - 해당 정보는 참고용이며 투자에 대한 절대적인 지표가 될 수 없습니다.</div>
       </h4>
 
               {/* <div className="inputBoxs">
