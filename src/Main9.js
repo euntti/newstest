@@ -273,7 +273,7 @@ function App8() {
                   id="privacy"
                   name="agree1"
                   value="1"
-                  checked={check1}
+                  checked={true}
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                 개인정보취급방침동의
@@ -302,7 +302,7 @@ function App8() {
                   id="privacy"
                   name="agree3"
                   value="1"
-                  checked={check3}
+                  checked={true}
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 광고성문자수신동의
