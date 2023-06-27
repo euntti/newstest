@@ -274,7 +274,7 @@ function App8() {
                   name="agree1"
                   value="1"
                   checked={check91}
-                  onChange={(e) => setCheck1(e.target.checked)}
+                  onChange={(e) => setCheck91(e.target.checked)}
                 />
                 개인정보취급방침동의
                 <a
@@ -303,7 +303,7 @@ function App8() {
                   name="agree3"
                   value="1"
                   checked={check93}
-                  onChange={(e) => setCheck3(e.target.checked)}
+                  onChange={(e) => setCheck93(e.target.checked)}
                 />
                 광고성문자수신동의
                 <a
