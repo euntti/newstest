@@ -55,9 +55,9 @@ function App8() {
   const [num, setNum] = useState(331231);
   const [time9, setTime9] = useState("");
 
-  const [check91, setCheck91] = useState(true);
+  const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
-  const [check93, setCheck93] = useState(true);
+  const [check3, setCheck3] = useState(false);
   const [check4, setCheck4] = useState(false);
   const [check5, setCheck5] = useState(false);
 
@@ -110,13 +110,13 @@ function App8() {
       return alert("통화시간 선택해주세요");
     }
 
-    if (!check91) {
+    if (!check1) {
       return alert("개인정보취급방침동의보기를 체크해주세요.");
     }
     // if (!check2) {
     //   return alert("마케팅수신동의보기를 체크해주세요.");
     // }
-    if (!check93) {
+    if (!check3) {
       return alert("광고성문자동의 체크해주세요.");
     }
 
@@ -273,8 +273,8 @@ function App8() {
                   id="privacy"
                   name="agree1"
                   value="1"
-                  checked={check91}
-                  onChange={(e) => setCheck91(e.target.checked)}
+                  checked={check1}
+                  onChange={(e) => setCheck1(e.target.checked)}
                 />
                 개인정보취급방침동의
                 <a
@@ -302,8 +302,8 @@ function App8() {
                   id="privacy"
                   name="agree3"
                   value="1"
-                  checked={check93}
-                  onChange={(e) => setCheck93(e.target.checked)}
+                  checked={check3}
+                  onChange={(e) => setCheck3(e.target.checked)}
                 />
                 광고성문자수신동의
                 <a

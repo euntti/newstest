@@ -32,19 +32,15 @@ function App4() {
   const [users, setUsers] = useState([]);
   const [nickName, setNickName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const handlePhoneNumberChange = (e) => {
-    let formattedNumber = e.target.value.replace(/-/g, ""); // 하이픈 제거
-    if (formattedNumber.length > 2 && formattedNumber.length < 6) {
-      formattedNumber = formattedNumber.replace(/(\d{3})(\d{1,3})/, "$1-$2"); // 첫 번째 하이픈 추가
-    } else if (formattedNumber.length >= 6) {
-      formattedNumber = formattedNumber.replace(/(\d{3})(\d{3})(\d{0,4})/, "$1-$2-$3"); // 첫 번째와 두 번째 하이픈 추가
+    let subtitle;
+  const onlyNumber = (e) => {
+    const keyCode = e.keyCode || e.which;
+    const keyValue = String.fromCharCode(keyCode);
+
+    if (!/^[0-9]+$/.test(keyValue)) {
+      e.preventDefault();
     }
-    setphoneNumber(formattedNumber);
-
-    const inputValue = e.target.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
-    setphoneNumber(inputValue);
   };
-
 
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
@@ -283,13 +279,19 @@ function App4() {
                       />
                     </li>
                     <li>
-                    <input
-                       type="tel"
-                       name="user_name9"
-                       placeholder="휴대폰"
+                      <input
+                        type="number"
+                        id="f1"
+                        name="user_name5"
+                        required=""
+                        placeholder="연락처"
+                        onkeyPress="onlyNumber(this)"
                        maxLength={13}
-                       value={phoneNumber}
-                       onChange={handlePhoneNumberChange}
+                       pattern="[0-9]{13}"
+                        value={phoneNumber}
+                        onChange={(e) => {
+                          setPhoneNumber(e.target.value.replace(/[^0-9]/g, ""));
+                        }}
                       />
                        <li id="smtbtn">
                       <input
