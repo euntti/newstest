@@ -248,7 +248,7 @@ function Main2() {
                     <li id="line02">
                       개인정보는 암호화하여 안전하게 처리됩니다.
                     </li>
-                    <li id="line03" cond="off">
+                    <li id="line23" cond="off">
   
                       <span>S사 전문가 애널리스트의 <br />기밀정보 30일동안 받아보세요.</span>
                     </li>
