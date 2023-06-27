@@ -227,7 +227,7 @@ table {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 1190px;
+  /* width: 1190px; */
   height: 150px;
   background-color: #25a5ff;
   color: #fff;
