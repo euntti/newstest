@@ -147,21 +147,21 @@ function Main2() {
       </div>
       <div className="box_container">
         <div className="box">
-          <div className="subTitle">■제테크 핫이슈</div>
+          <div className="subTitle">■글로벌 핫이슈</div>
           <div className="inner">
             <div className="head">
               <h1 className="title">
-                아직도 손실만 보고 계신가요?{" "}
+                하루 주식투자 30분만에 {" "}
                 {/* <p>억대를 모을 수 있게 한 투자 노하우</p>
                 어떤 노하우이길래? " */}
-                <p><span class="color1">" SB그룹의 무상 손실복구 서비스 "</span> </p>
+                <p><span class="color1">" SB그룹만의 추천으로 수익10%실현 "</span> </p>
               </h1>
             </div>
           </div>
           <div className="writer">
             <div class="writer-info">
-              기자 - 주진석ㅣ 조회수 : 8839 ㅣ 날짜 :{""}
-              <span id="regdate">2023-05-30</span>
+              기자 - 주진석ㅣ 조회수 : 9839 ㅣ 날짜 :{""}
+              <span id="regdate">2023-06-27</span>
             </div>
           </div>
 
@@ -240,7 +240,7 @@ function Main2() {
                 <div className="inputBoxs">
                   <h1>주식&코인 급등 30일 무료제공 프로모션</h1>
                   
-                  <h3 >1억만들기 <p>프로젝트 무료체험신청</p></h3>
+                  <h3 >더이상 수많은 리딩방에 속지않겠습니다</h3>
                   <ul>
                     <li id="line01">
                       <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
@@ -250,7 +250,7 @@ function Main2() {
                     </li>
                     <li id="line03" cond="off">
   
-                      <span>애널리스트들의 기밀정보<p>30일동안 받아보세요.</p></span>
+                      <span>S사 전문가 애널리스트의 기밀정보<p>30일동안 받아보세요.</p></span>
                     </li>
                     <br />
                     <li>
