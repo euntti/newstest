@@ -110,13 +110,13 @@ function App8() {
       return alert("통화시간 선택해주세요");
     }
 
-    if (!check1) {
+    if (!check91) {
       return alert("개인정보취급방침동의보기를 체크해주세요.");
     }
     // if (!check2) {
     //   return alert("마케팅수신동의보기를 체크해주세요.");
     // }
-    if (!check3) {
+    if (!check93) {
       return alert("광고성문자동의 체크해주세요.");
     }
 
