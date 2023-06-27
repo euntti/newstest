@@ -250,7 +250,7 @@ function Main2() {
                     </li>
                     <li id="line03" cond="off">
   
-                      <span>S사 전문가 애널리스트의 기밀정보 30일동안 받아보세요.</span>
+                      <span>S사 전문가 애널리스트의 <br />기밀정보 30일동안 받아보세요.</span>
                     </li>
                     <br />
                     <li>
