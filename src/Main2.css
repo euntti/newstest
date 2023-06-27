@@ -196,10 +196,11 @@ table {
   font-size:12px;
   text-align: center;
 }
-.inputBoxs #line03{
+.inputBoxs #line23{
   font-weight: bolder;
   font-size:26px;
   text-align: center;
+  line-height: 1.5;
 }
 .inputBoxs input[type="text"]{
   display:inline-block;
