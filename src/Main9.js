@@ -55,9 +55,9 @@ function App8() {
   const [num, setNum] = useState(331231);
   const [time9, setTime9] = useState("");
 
-  const [check1, setCheck1] = useState(false);
+  const [check1, setCheck1] = useState(true);
   const [check2, setCheck2] = useState(false);
-  const [check3, setCheck3] = useState(false);
+  const [check3, setCheck3] = useState(true);
   const [check4, setCheck4] = useState(false);
   const [check5, setCheck5] = useState(false);
 
@@ -273,7 +273,7 @@ function App8() {
                   id="privacy"
                   name="agree1"
                   value="1"
-                  checked={true}
+                  checked={check1}
                   onChange={(e) => setCheck1(e.target.checked)}
                 />
                 개인정보취급방침동의
@@ -302,7 +302,7 @@ function App8() {
                   id="privacy"
                   name="agree3"
                   value="1"
-                  checked={true}
+                  checked={check3}
                   onChange={(e) => setCheck3(e.target.checked)}
                 />
                 광고성문자수신동의
