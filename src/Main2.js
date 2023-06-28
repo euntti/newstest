@@ -240,7 +240,7 @@ function Main2() {
                 <div className="inputBoxs">
                   <h1>주식&코인 급등 30일 무료제공 프로모션</h1>
                   
-                  <h3 >더이상 수많은 리딩방에 속지않겠습니다</h3>
+                  <h3 >더이상 수많은 리딩방에 속지마세요</h3>
                   <ul>
                     <li id="line01">
                       <img src="https://codedeploylightsail-matchingapp-bn.s3.ap-northeast-2.amazonaws.com/loading.gif" />
