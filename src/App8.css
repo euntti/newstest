@@ -364,7 +364,6 @@ table {
   flex-direction: row;
   align-items: center;
   justify-content: center; /* 추가: 가로 중앙 정렬 */
-  
 }
 
 .App .namephone9 input[type="text"],
