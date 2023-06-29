@@ -361,9 +361,22 @@ table {
   }
 
 .App .bottom-bar9 {
-  flex-direction: row;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 150px;
+  background-color: #25a5ff;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center; /* 추가: 가로 중앙 정렬 */
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  text-align: center;
+  height: 160px;
 }
 
 .App .namephone9 input[type="text"],
